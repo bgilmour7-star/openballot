@@ -45,11 +45,18 @@ export async function lookupPostal(code: string): Promise<Located> {
   const cached = await one<{ result: Located }>(`select result from postal_cache where postal_code=$1`, [code]);
   if (cached) return cached.result;
   const data = await getJson(`${REP}/postcodes/${code}/`);
-  const centroid = fromBoundaries(data.boundaries_centroid ?? []);
+  // Postcode results don't always include the census subdivision (city), so look up the centroid point.
+  let centroid = fromBoundaries(data.boundaries_centroid ?? []);
+  const [lng, lat] = data.centroid?.coordinates ?? [];
+  if (lat != null && lng != null && (!centroid.cityName || !centroid.riding)) {
+    const b = await getJson(`${REP}/boundaries/?contains=${lat},${lng}&limit=100`);
+    const pt = fromBoundaries(b.objects ?? []);
+    centroid = { city: pt.city ?? centroid.city, cityName: pt.cityName ?? centroid.cityName, riding: pt.riding ?? centroid.riding, ridingName: pt.ridingName ?? centroid.ridingName };
+  }
   const conc = (data.boundaries_concordance ?? []) as any[];
   const concCities = new Set(conc.filter((b) => setOf(b) === CSD_SET).map((b) => String(b.external_id)));
   const concEds = new Set(conc.filter((b) => setOf(b) === ED_SET).map((b) => b.name));
-  const ambiguous = concCities.size > 1 || concEds.size > 1 || !centroid.cityName || !centroid.riding;
+  const ambiguous = concCities.size > 1 || concEds.size > 1 || !centroid.riding;
   const result: Located = { ...centroid, ambiguous };
   await q(`insert into postal_cache (postal_code, result) values ($1,$2) on conflict (postal_code) do update set result=excluded.result`,
     [code, JSON.stringify(result)]);
