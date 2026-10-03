@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from "next";
 import Link from "next/link";
 import { currentUser } from "@/lib/auth/server";
 import Feedback from "@/components/Feedback";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "Openballot · Start with the issues. Choose the person.",
@@ -40,6 +41,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
             </div>
           </div>
         </footer>
+        <Analytics />
       </body>
     </html>
   );
