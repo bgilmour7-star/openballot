@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Openballot · Start with the issues. Choose the person.",
   description: "A neutral guide to your 2026 votes in Nanaimo and Victoria, BC. Rank the issues first, then see which candidates speak to them.",
 };
-export const viewport: Viewport = { width: "device-width", initialScale: 1, themeColor: "#5B3FA0" };
+export const viewport: Viewport = { width: "device-width", initialScale: 1, themeColor: "#1D1B2B" };
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const user = await currentUser();
