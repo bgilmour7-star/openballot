@@ -56,8 +56,10 @@ export default function SignIn() {
 
   return (
     <div className="card stack">
-      <button className="btn secondary block" onClick={google} disabled={busy}>Continue with Google</button>
-      <p className="xs muted" style={{ textAlign: "center", margin: 0 }}>or with email</p>
+      {process.env.NEXT_PUBLIC_GOOGLE_SIGNIN === "1" && <>
+        <button className="btn secondary block" onClick={google} disabled={busy}>Continue with Google</button>
+        <p className="xs muted" style={{ textAlign: "center", margin: 0 }}>or with email</p>
+      </>}
       <form onSubmit={submit} className="stack">
         <div>
           <label htmlFor="email">Email</label>
