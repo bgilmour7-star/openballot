@@ -1,0 +1,101 @@
+import { q, one } from "./db";
+import type { Voter } from "./voter";
+import { COVERED_RIDINGS } from "./location";
+
+export type Gov = { id: string; name: string; level: string; how_built: string | null };
+export type Election = {
+  id: string; government_id: string; name: string; level: string; voting_day: string | null; voting_hours: string | null;
+  advance_voting: any[]; how_to_vote: string | null; mail_ballot: string | null; official_url: string | null; sources: string[];
+};
+export type Race = { id: string; election_id: string; office: string; seats: number; area: string; area_name: string; area_note: string | null };
+export type Candidate = {
+  id: string; race_id: string; name: string; ballot_name: string | null; incumbent: boolean | null;
+  affiliation_id: string | null; affiliation_name: string | null; affiliation_type: string | null; affiliation_source: string | null;
+  affiliation_website: string | null; declared_independent: boolean; website: string | null; links: { label: string; url: string }[];
+  sources: string[]; status: string; nomination_note: string | null;
+};
+export type Issue = {
+  id: string; government_id: string; title: string; description: string; what_it_affects: string; who_decides: string;
+  question: string; pole_a: string; pole_b: string; sources: string[]; sort: number;
+};
+export type Position = { id: number; candidacy_id: string; issue_id: string | null; topic: string | null; summary: string; source_url: string | null; source_type: string; lean: number | null };
+
+export const getGov = (id: string) => one<Gov>(`select * from governments where id=$1`, [id]);
+export const getIssues = (govId: string) =>
+  q<Issue>(`select * from issues where government_id=$1 and active order by sort, title`, [govId]);
+
+/** The races a voter can vote in for one government. */
+export async function racesFor(v: Pick<Voter, "city" | "riding">, govId: string): Promise<Race[]> {
+  if (govId === "province-of-bc") {
+    if (!v.riding || !COVERED_RIDINGS.includes(v.riding)) return [];
+    return q<Race>(`select r.* from races r join elections e on e.id=r.election_id where e.government_id=$1 and r.area=$2 order by r.sort`, [govId, v.riding]);
+  }
+  return q<Race>(`select r.* from races r join elections e on e.id=r.election_id where e.government_id=$1 and r.area=$2 order by r.sort`, [govId, v.city]);
+}
+export const electionFor = (govId: string) => one<Election>(`select * from elections where government_id=$1 order by voting_day limit 1`, [govId]);
+
+const CAND_SELECT = `select c.*, a.name as affiliation_name, a.type as affiliation_type, a.website as affiliation_website
+  from candidacies c left join affiliations a on a.id=c.affiliation_id`;
+export const candidatesForRaces = (raceIds: string[]) =>
+  raceIds.length ? q<Candidate>(`${CAND_SELECT} where c.race_id = any($1) and c.status <> 'withdrawn'`, [raceIds]) : Promise.resolve([] as Candidate[]);
+export const getCandidate = (id: string) => one<Candidate>(`${CAND_SELECT} where c.id=$1`, [id]);
+export const positionsFor = (candIds: string[]) =>
+  candIds.length ? q<Position>(`select * from positions where candidacy_id = any($1) order by id`, [candIds]) : Promise.resolve([] as Position[]);
+
+export async function rankingFor(voterId: string | undefined, govId: string): Promise<string[] | null> {
+  if (!voterId) return null;
+  const r = await one<{ issue_ids: string[] }>(`select issue_ids from rankings where voter_id=$1 and government_id=$2`, [voterId, govId]);
+  return r?.issue_ids ?? null;
+}
+export async function viewsFor(voterId: string | undefined): Promise<Record<string, number>> {
+  if (!voterId) return {};
+  const rows = await q<{ issue_id: string; value: number }>(`select issue_id, value from views where voter_id=$1`, [voterId]);
+  return Object.fromEntries(rows.map((r) => [r.issue_id, r.value]));
+}
+
+/** Deterministic shuffle per visitor, so order is random but stable for that person. */
+export function shuffleFor<T extends { id: string }>(items: T[], seed: string): T[] {
+  const h = (s: string) => { let x = 2166136261; for (let i = 0; i < s.length; i++) { x ^= s.charCodeAt(i); x = Math.imul(x, 16777619); } return x >>> 0; };
+  return [...items].sort((a, b) => h(seed + a.id) - h(seed + b.id));
+}
+
+export type FitGroup = "strong" | "some" | "unknown";
+export const FIT_LABEL: Record<FitGroup, string> = {
+  strong: "Speaks to your top issues",
+  some: "Speaks to some of them",
+  unknown: "Not enough information yet",
+};
+/** Fit = how many of the voter's top 3 issues a candidate has sourced positions on; never a recommendation. */
+export function fitFor(positions: Position[], top: string[], views: Record<string, number>) {
+  const covered = new Set(positions.filter((p) => p.issue_id && top.includes(p.issue_id)).map((p) => p.issue_id!));
+  let agree = 0, differ = 0;
+  for (const p of positions) {
+    if (!p.issue_id || p.lean == null || !top.includes(p.issue_id) || views[p.issue_id] == null || views[p.issue_id] === 0 || p.lean === 0) continue;
+    if (Math.sign(p.lean) === Math.sign(views[p.issue_id])) agree++; else differ++;
+  }
+  const group: FitGroup = covered.size >= 2 ? "strong" : covered.size === 1 ? "some" : "unknown";
+  return { group, covered: [...covered], agree, differ };
+}
+
+export const SOURCE_LABEL: Record<string, string> = {
+  candidate: "Candidate's own statement",
+  official_guide: "Official candidate guide",
+  affiliation_platform: "Affiliation platform",
+  party_platform: "Party platform",
+  news: "News Q&A or coverage",
+  other: "Other source",
+};
+
+export function fmtDate(d: string | Date | null | undefined, opts: Intl.DateTimeFormatOptions = { weekday: "short", month: "short", day: "numeric" }) {
+  if (!d) return "";
+  const s = typeof d === "string" ? d.slice(0, 10) : d.toISOString().slice(0, 10);
+  const [y, m, day] = s.split("-").map(Number);
+  return new Date(Date.UTC(y, m - 1, day, 12)).toLocaleDateString("en-CA", { ...opts, timeZone: "UTC" });
+}
+export function daysUntil(d: string | Date | null) {
+  if (!d) return null;
+  const s = typeof d === "string" ? d.slice(0, 10) : d.toISOString().slice(0, 10);
+  const target = Date.parse(s + "T12:00:00-07:00");
+  return Math.ceil((target - Date.now()) / 86400000);
+}
+export const host = (u?: string | null) => { try { return u ? new URL(u).hostname.replace(/^www\./, "") : ""; } catch { return u ?? ""; } };
