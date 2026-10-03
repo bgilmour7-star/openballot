@@ -24,7 +24,7 @@ header.top .wrap { display: flex; align-items: center; justify-content: space-be
 .brand .dot { width: 22px; height: 22px; border-radius: 6px; background: var(--action); display: inline-block; position: relative; }
 .brand .dot::after { content: ""; position: absolute; left: 5px; right: 5px; top: 10px; height: 3px; background: #fff; border-radius: 2px; }
 .tag { font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 999px; background: var(--selected); color: var(--done); }
-nav.top a { margin-left: 16px; font-size: 14px; text-decoration: none; font-weight: 700; }
+nav.top a { white-space: nowrap; margin-left: 16px; font-size: 14px; text-decoration: none; font-weight: 700; }
 main { padding: 20px 0 48px; }
 .card { background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; margin-bottom: 16px; }
 .card.flat { box-shadow: none; }
@@ -108,3 +108,6 @@ table.adm th, table.adm td { text-align: left; border-bottom: 1px solid var(--li
 @media (min-width: 900px) {
   .split { display: grid; grid-template-columns: 1.1fr .9fr; gap: 20px; align-items: start; }
 }
+
+.src, .xs, .small, .notice { overflow-wrap: anywhere; }
+main { overflow-x: hidden; }

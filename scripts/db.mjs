@@ -157,9 +157,9 @@ const issueFor = (gov, topic) => {
 };
 const sourceType = (url, cand) => {
   if (!url) return "other";
+  if (/realnanaimo|victoriaforall/.test(url)) return "affiliation_platform";
   if (cand.website && url.startsWith(cand.website.replace(/\/$/, ""))) return "candidate";
   if (/victoria\.ca|nanaimo\.ca|sd6[18]\.bc\.ca/.test(url)) return "official_guide";
-  if (/realnanaimo|victoriaforall/.test(url)) return "affiliation_platform";
   if (/news|sounder|bulletin|cbc|ctv|times|chek|capital/.test(url)) return "news";
   return "candidate";
 };
