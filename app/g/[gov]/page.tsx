@@ -20,7 +20,7 @@ export default async function IssuesPage({ params }: { params: Promise<{ gov: st
     return [i.id, h % 2 === 1];
   }));
   return (
-    <div className="wrap">
+    <div className="wrap wide">
       <p className="small" style={{ margin: 0 }}><Link href="/votes">← Your votes</Link></p>
       <h1>{gov.name}</h1>
       <GovTabs gov={govId} on="issues" />

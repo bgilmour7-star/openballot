@@ -26,7 +26,7 @@ export default async function Votes() {
   const byDate = [...blocks].sort((a, b) => String(a.election?.voting_day).localeCompare(String(b.election?.voting_day)));
 
   return (
-    <div className="wrap">
+    <div className="wrap wide">
       <div className="row between" style={{ alignItems: "flex-start" }}>
         <div>
           <h1>Your votes</h1>
@@ -40,6 +40,7 @@ export default async function Votes() {
       {!v.city && (
         <p className="notice">Your local council and school board races aren&apos;t covered yet. Openballot covers the City of Nanaimo and the City of Victoria in this alpha. {v.riding && !COVERED_RIDINGS.includes(v.riding) ? "Your provincial riding isn't covered yet either." : ""} <Link href="/where">Wrong area? Check your street address.</Link></p>
       )}
+      <div className="votes-grid">
       {byDate.map(({ gov, election, races, counts, questions }) => {
         const days = daysUntil(election?.voting_day);
         return (
@@ -90,7 +91,8 @@ export default async function Votes() {
           </section>
         );
       })}
-      <Share voterId={v.id} />
+      </div>
+      <div style={{ marginTop: 16 }}><Share voterId={v.id} /></div>
     </div>
   );
 }
