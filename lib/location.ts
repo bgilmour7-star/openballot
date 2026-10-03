@@ -42,7 +42,7 @@ async function getJson(url: string) {
 }
 
 export async function lookupPostal(code: string): Promise<Located> {
-  const cached = await one<{ result: Located }>(`select result from postal_cache where postal_code=$1`, [code]);
+  const cached = await one<{ result: Located }>(`select result from postal_cache where postal_code=$1`, [`v2:${code}`]);
   if (cached) return cached.result;
   const data = await getJson(`${REP}/postcodes/${code}/`);
   // Postcode results don't always include the census subdivision (city), so look up the centroid point.
@@ -59,7 +59,7 @@ export async function lookupPostal(code: string): Promise<Located> {
   const ambiguous = concCities.size > 1 || concEds.size > 1 || !centroid.riding;
   const result: Located = { ...centroid, ambiguous };
   await q(`insert into postal_cache (postal_code, result) values ($1,$2) on conflict (postal_code) do update set result=excluded.result`,
-    [code, JSON.stringify(result)]);
+    [`v2:${code}`, JSON.stringify(result)]);
   return result;
 }
 
