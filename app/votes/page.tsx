@@ -31,11 +31,11 @@ export default async function Votes() {
         <div>
           <h1>Your votes</h1>
           <p className="muted small">
-            <span className="badge done">Added from {v.located_by === "address" ? "your address" : `postal code ${postal}`}</span>{" "}
+            <span className="badge done">Added from {v.located_by === "address" ? "your street address" : "your postal code"}</span>{" "}
             Results are likely, not official. <a href="https://elections.bc.ca/" target="_blank" rel="noreferrer">Confirm with Elections BC</a>.
           </p>
         </div>
-        <form action={forgetLocation}><button className="btn ghost small">Change</button></form>
+        <form action={forgetLocation}><button className="btn secondary small">Change location{postal ? ` (${postal})` : ""}</button></form>
       </div>
       {!v.city && (
         <p className="notice">Your local council and school board races aren&apos;t covered yet. Openballot covers the City of Nanaimo and the City of Victoria in this alpha. {v.riding && !COVERED_RIDINGS.includes(v.riding) ? "Your provincial riding isn't covered yet either." : ""} <Link href="/where">Wrong area? Check your street address.</Link></p>
