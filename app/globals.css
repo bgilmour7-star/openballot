@@ -277,3 +277,36 @@ main:has(.landing) + footer.bottom { margin-top: 0; }
   .steps, .why { grid-template-columns: repeat(3, 1fr); }
 }
 @media (max-width: 520px) { .postal-form { flex-direction: column; } .hero-title { font-size: 34px; } }
+/* Stronger hover states (desktop pointers) */
+.btn, .icon-btn, .seg a, .scale button, .tabs a, .cand-row, .rank-title, a, .faq summary, details > summary { transition: background-color .15s, color .15s, border-color .15s, box-shadow .15s, transform .15s, text-decoration-color .15s; }
+@media (hover: hover) {
+  .btn:hover { background: #000; border-color: #000; box-shadow: 0 6px 16px rgba(29,27,43,.28); transform: translateY(-1px); }
+  .btn.secondary:hover { background: var(--ink); color: #fff; border-color: var(--ink); }
+  .btn.ghost:hover { background: var(--caution-bg); border-color: var(--caution-bg); color: var(--ink); box-shadow: none; transform: none; text-decoration: underline; text-underline-offset: 3px; }
+  .cta-band .btn:hover { background: #fff; color: var(--ink); box-shadow: 0 0 0 4px rgba(255,255,255,.35); }
+  .btn[disabled]:hover, .icon-btn:disabled:hover { transform: none; box-shadow: none; }
+  .btn.ghost[disabled]:hover { background: transparent; text-decoration: none; }
+  .btn.secondary[disabled]:hover { background: #fff; color: var(--ink); }
+  a:not(.btn):not(.cand-row):not(.brand):not(.aff):hover { text-decoration-thickness: 2px; background: var(--caution-bg); border-radius: 3px; }
+  nav.top a:hover { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; background: none; }
+  .brand:hover .dot { transform: rotate(-8deg); }
+  .brand .dot { transition: transform .15s; }
+  .tabs a:hover { color: var(--ink); border-color: var(--caution); background: var(--soft); text-decoration: none; }
+  .tabs a.on:hover { border-color: var(--ink); }
+  .icon-btn:not(:disabled):hover { border-color: var(--ink); background: var(--ink); color: #fff; }
+  .seg a:not(.on):hover { border-color: var(--ink); color: var(--ink); background: #fff; text-decoration: none; }
+  .scale button:not(.on):hover { border-color: var(--ink); background: var(--soft); font-weight: 700; }
+  .cand-row:hover { border-color: var(--ink); box-shadow: 0 6px 18px rgba(29,27,43,.12); transform: translateY(-1px); }
+  .cand-row:hover .chev { transform: translateX(3px); }
+  .chev { transition: transform .15s; }
+  .rank-title:hover span:first-child { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; }
+  .rank-item:not(.sel):hover { border-color: var(--caution); }
+  .grip:hover { background: var(--caution-bg); color: var(--ink); }
+  details > summary:hover, .faq summary:hover { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; }
+  a.aff:hover { background: var(--ink); color: #fff; border-color: var(--ink); }
+  .faq details:hover { border-color: var(--caution); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn:hover, .cand-row:hover { transform: none !important; }
+  .cand-row:hover .chev, .brand:hover .dot { transform: none; }
+}
