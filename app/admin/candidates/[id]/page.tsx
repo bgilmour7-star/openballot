@@ -52,6 +52,10 @@ export default async function EditCand({ params, searchParams }: { params: Promi
           <div className="field"><label>Official website</label><input name="website" type="url" defaultValue={c.website ?? ""} /></div>
           <div className="field"><label><input type="checkbox" name="declared_independent" defaultChecked={c.declared_independent} /> Declared independent</label></div>
         </div>
+        <div className="grid2">
+          <div className="field"><label>Professional summary <span className="hint">max 35 words, neutral; shows once the whole race has one</span></label><textarea name="summary" defaultValue={c.summary ?? ""} /></div>
+          <div className="field"><label>Summary source URL</label><input name="summary_source" type="url" defaultValue={c.summary_source ?? ""} /></div>
+        </div>
         <div className="field"><label>Other links <span className="hint">one per line, &quot;Label | URL&quot;</span></label><textarea name="links" defaultValue={(c.links ?? []).map((l: any) => `${l.label} | ${l.url}`).join("\n")} /></div>
         <div className="field"><label>Profile sources <span className="hint">one URL per line</span></label><textarea name="sources" defaultValue={(c.sources ?? []).join("\n")} /></div>
         <button className="btn">Save candidate</button>

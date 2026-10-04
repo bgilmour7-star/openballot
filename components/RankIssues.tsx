@@ -3,10 +3,9 @@ import { useEffect, useRef, useState, useTransition } from "react";
 import Link from "next/link";
 import { saveRanking, saveView } from "@/app/actions";
 import type { Issue } from "@/lib/data";
+import IssueDetail from "./IssueDetail";
 
 const TOP = 3;
-const LABELS = ["Strongly", "Lean", "Unsure", "Lean", "Strongly"];
-const host = (u: string) => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return u; } };
 
 export default function RankIssues({ govId, issues, initialOrder, initialViews, saved, flip }: {
   govId: string; issues: Issue[]; initialOrder: string[]; initialViews: Record<string, number>; saved: boolean; flip: Record<string, boolean>;
@@ -45,32 +44,65 @@ export default function RankIssues({ govId, issues, initialOrder, initialViews, 
     });
   }
 
-  // Pointer-based drag (mouse and touch) on the grip handle.
+  // Drag on the grip handle. Listeners live on window so the drag survives React moving the row
+  // (iOS drops pointer capture when a captured element moves in the DOM).
+  const dragRef = useRef<string | null>(null);
+  const orderRef = useRef(order);
+  orderRef.current = order;
+  useEffect(() => {
+    if (!dragId) return;
+    const move = (y: number) => {
+      const id = dragRef.current; if (!id) return;
+      const ids = orderRef.current;
+      for (let k = 0; k < ids.length; k++) {
+        const el = refs.current[ids[k]];
+        if (!el || ids[k] === id) continue;
+        const r = el.getBoundingClientRect();
+        if (y > r.top && y < r.bottom) {
+          const from = ids.indexOf(id), mid = r.top + r.height / 2;
+          if ((from < k && y > mid) || (from > k && y < mid)) moveTo(id, k, false);
+          break;
+        }
+      }
+      // Auto-scroll near the screen edges.
+      if (y < 60) window.scrollBy(0, -12); else if (y > window.innerHeight - 60) window.scrollBy(0, 12);
+    };
+    const onPM = (e: PointerEvent) => { e.preventDefault(); move(e.clientY); };
+    const onTM = (e: TouchEvent) => { e.preventDefault(); if (e.touches[0]) move(e.touches[0].clientY); };
+    const end = () => {
+      const id = dragRef.current;
+      if (id) setAnnounce(`${byId[id].title} is now number ${orderRef.current.indexOf(id) + 1}`);
+      dragRef.current = null; setDragId(null);
+    };
+    window.addEventListener("pointermove", onPM, { passive: false });
+    window.addEventListener("touchmove", onTM, { passive: false });
+    window.addEventListener("pointerup", end); window.addEventListener("pointercancel", end); window.addEventListener("touchend", end);
+    return () => {
+      window.removeEventListener("pointermove", onPM); window.removeEventListener("touchmove", onTM);
+      window.removeEventListener("pointerup", end); window.removeEventListener("pointercancel", end); window.removeEventListener("touchend", end);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [dragId]);
   function onPointerDown(e: React.PointerEvent, id: string) {
     e.preventDefault();
-    (e.currentTarget as HTMLElement).setPointerCapture(e.pointerId);
-    setDragId(id);
+    dragRef.current = id; setDragId(id);
   }
-  function onPointerMove(e: React.PointerEvent) {
-    if (!dragId) return;
-    const y = e.clientY;
-    const ids = order;
-    for (let k = 0; k < ids.length; k++) {
-      const el = refs.current[ids[k]];
-      if (!el || ids[k] === dragId) continue;
-      const r = el.getBoundingClientRect();
-      if (y > r.top && y < r.bottom) {
-        const from = ids.indexOf(dragId);
-        const mid = r.top + r.height / 2;
-        if ((from < k && y > mid) || (from > k && y < mid)) moveTo(dragId, k, false);
-        break;
-      }
-    }
+
+  // Phone: details open in a bottom sheet so the list stays in view behind it.
+  const [sheet, setSheet] = useState(false);
+  function openIssue(id: string) {
+    setSelected(id);
+    if (typeof window !== "undefined" && window.matchMedia("(max-width: 899px)").matches) setSheet(true);
   }
-  function onPointerUp() {
-    if (dragId) setAnnounce(`${byId[dragId].title} is now number ${order.indexOf(dragId) + 1}`);
-    setDragId(null);
-  }
+  useEffect(() => {
+    if (!sheet) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    const esc = (e: KeyboardEvent) => { if (e.key === "Escape") setSheet(false); };
+    window.addEventListener("keydown", esc);
+    document.getElementById("sheet-close")?.focus();
+    return () => { document.body.style.overflow = prev; window.removeEventListener("keydown", esc); };
+  }, [sheet]);
 
   function pick(issueId: string, canonical: number) {
     const value = views[issueId] === canonical ? null : canonical;
@@ -83,43 +115,11 @@ export default function RankIssues({ govId, issues, initialOrder, initialViews, 
   const selIdx = order.indexOf(selected);
 
   const Detail = ({ id }: { id: string }) => {
-    const i = byId[id];
-    if (!i) return null;
-    const f = flip[id];
-    const left = f ? i.pole_b : i.pole_a, right = f ? i.pole_a : i.pole_b;
     const idx = order.indexOf(id);
     return (
-      <div className="detail">
-        <p className="xs muted" style={{ margin: 0, fontWeight: 700 }}>#{idx + 1} on your list</p>
-        <h2 style={{ marginBottom: 6 }}>{i.title}</h2>
-        <p>{i.description}</p>
-        <dl className="facts small">
-          <dt>Who it affects</dt><dd>{i.what_it_affects}</dd>
-          <dt>What this government can do</dt><dd>{i.who_decides}</dd>
-        </dl>
-        <div className="view-box">
-          <h3>{i.question}</h3>
-          <p className="xs muted" style={{ margin: "0 0 8px" }}>Optional. Two fair positions people hold. Tap again to clear.</p>
-          <div className="poles"><span>{left}</span><span>{right}</span></div>
-          <div className="scale" role="group" aria-label={i.question}>
-            {[0, 1, 2, 3, 4].map((k) => {
-              const canonical = f ? 2 - k : k - 2;
-              const side = k < 2 ? left : k > 2 ? right : "";
-              return (
-                <button key={k} className={views[id] === canonical ? "on" : ""} aria-pressed={views[id] === canonical}
-                  aria-label={k === 2 ? "Unsure or in between" : `${LABELS[k]}: ${side}`} onClick={() => pick(id, canonical)}>{LABELS[k]}</button>
-              );
-            })}
-          </div>
-        </div>
-        {i.sources?.length ? (
-          <p className="xs muted" style={{ marginTop: 12 }}>Why it&apos;s on the list: {i.sources.slice(0, 3).map((s, k) => <a key={k} href={s} target="_blank" rel="noreferrer" style={{ marginRight: 8 }}>{host(s)}</a>)}</p>
-        ) : null}
-        <div className="row between" style={{ marginTop: 8 }}>
-          <button className="btn ghost small" disabled={idx <= 0} onClick={() => setSelected(order[idx - 1])}>← Previous issue</button>
-          <button className="btn ghost small" disabled={idx >= order.length - 1} onClick={() => setSelected(order[idx + 1])}>Next issue →</button>
-        </div>
-      </div>
+      <IssueDetail issue={byId[id]} rank={idx + 1} flip={flip[id]} value={views[id]} onPick={(c) => pick(id, c)}
+        onPrev={idx > 0 ? () => setSelected(order[idx - 1]) : undefined}
+        onNext={idx < order.length - 1 ? () => setSelected(order[idx + 1]) : undefined} />
     );
   };
 
@@ -129,14 +129,14 @@ export default function RankIssues({ govId, issues, initialOrder, initialViews, 
         <div className="row between" style={{ alignItems: "flex-end" }}>
           <div>
             <h2 style={{ margin: 0 }}>Which issues matter most to you?</h2>
-            <p className="muted small" style={{ margin: "4px 0 0" }}>Drag the handle, or use the arrows, to put them in order. Select an issue to read about it and add your view.</p>
+            <p className="muted small" style={{ margin: "4px 0 0" }}>Drag ⠿ to put them in your order. Tap an issue to read about it and add your view.</p>
           </div>
         </div>
         <div className="row between xs" style={{ margin: "10px 0 6px", minHeight: 20 }}>
           <span aria-live="polite" className="muted">{announce}</span>
-          <span className={`badge ${status === "saved" ? "ok" : ""}`}>{status === "saving" ? "Saving…" : status === "saved" ? "Saved" : "Not saved yet"}</span>
+          <span className={`badge ${status === "saved" ? "ok" : ""}`}>{status === "saving" ? "Saving…" : status === "saved" ? "✓ Order saved" : "Move an issue to save your order"}</span>
         </div>
-        <ol className="rank-list" onPointerMove={onPointerMove} onPointerUp={onPointerUp} onPointerCancel={onPointerUp}>
+        <ol className="rank-list">
           {order.map((id, idx) => {
             const i = byId[id];
             if (!i) return null;
@@ -147,27 +147,47 @@ export default function RankIssues({ govId, issues, initialOrder, initialViews, 
                 <div className="rank-row">
                   <span className="grip" aria-hidden onPointerDown={(e) => onPointerDown(e, id)} title="Drag to reorder">⠿</span>
                   <span className="rank-num">{idx + 1}</span>
-                  <button className="rank-title" aria-expanded={isSel} onClick={() => setSelected(id)}>
+                  <button className="rank-title" aria-current={isSel ? "true" : undefined} onClick={() => openIssue(id)}>
                     <span>{i.title}</span>
-                    {views[id] != null && <span className="xs view-set">View added</span>}
+                    {views[id] != null
+                      ? <span className="xs view-state done"><span className="vi" aria-hidden>✓</span>View added</span>
+                      : <span className="xs view-state todo"><span className="vi" aria-hidden>+</span>Add your view</span>}
                   </button>
-                  <button className="icon-btn" aria-label={`Move ${i.title} up`} disabled={idx === 0} onClick={() => moveTo(id, idx - 1)}>↑</button>
-                  <button className="icon-btn" aria-label={`Move ${i.title} down`} disabled={idx === order.length - 1} onClick={() => moveTo(id, idx + 1)}>↓</button>
+                  <button className="icon-btn arrow" aria-label={`Move ${i.title} up`} disabled={idx === 0} onClick={() => moveTo(id, idx - 1)}>↑</button>
+                  <button className="icon-btn arrow" aria-label={`Move ${i.title} down`} disabled={idx === order.length - 1} onClick={() => moveTo(id, idx + 1)}>↓</button>
                 </div>
-                {isSel && <div className="detail-inline"><Detail id={id} /></div>}
               </li>
             );
           })}
         </ol>
         <div className="row" style={{ marginTop: 12 }}>
           <Link className="btn" href={`/g/${govId}/candidates`}>See candidates</Link>
-          <span className="small muted">{topDone} of {TOP} top issues have your view</span>
+          <span className={`small ${topDone < TOP ? "nudge" : "muted"}`}>{topDone < TOP ? `Add your view on ${TOP - topDone} more of your top ${TOP}` : `✓ Views added on your top ${TOP}`}</span>
         </div>
         {!everSaved && <p className="xs muted" style={{ marginTop: 8 }}>Saved on this device as you go. <Link href="/signin">Sign in</Link> to make your ranking count toward your community&apos;s list.</p>}
       </div>
       <aside className="detail-aside card" aria-live="polite">
         {sel ? <Detail key={selected + selIdx} id={selected} /> : <p className="muted">Select an issue to see details.</p>}
       </aside>
+      {sheet && sel && (
+        <div className="sheet-wrap" role="dialog" aria-modal="true" aria-label={sel.title}>
+          <button className="sheet-backdrop" aria-label="Close" onClick={() => setSheet(false)} />
+          <div className="sheet">
+            <div className="sheet-head">
+              <span className="sheet-grab" aria-hidden />
+              <div className="row between" style={{ width: "100%" }}>
+                <div className="row" style={{ gap: 6 }}>
+                  <button className="btn secondary small" disabled={selIdx === 0} onClick={() => moveTo(selected, selIdx - 1)} aria-label="Move this issue up">↑ Up</button>
+                  <button className="btn secondary small" disabled={selIdx === order.length - 1} onClick={() => moveTo(selected, selIdx + 1)} aria-label="Move this issue down">↓ Down</button>
+                  <button className="btn ghost small" disabled={selIdx === 0} onClick={() => moveTo(selected, 0)}>To top</button>
+                </div>
+                <button id="sheet-close" className="btn ghost small" onClick={() => setSheet(false)}>Done</button>
+              </div>
+            </div>
+            <div className="sheet-body"><Detail key={selected + selIdx} id={selected} /></div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

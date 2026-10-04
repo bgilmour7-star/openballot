@@ -1,0 +1,1041 @@
+{
+  "generatedAt": "2026-10-03",
+  "note": "Draft trade-offs written for balance; under review",
+  "issues": {
+    "city-of-nanaimo--housing-costs-and-supply": {
+      "context": "Most housing choices trade how fast new homes get built against how much existing neighbourhoods change.",
+      "a": {
+        "gains": [
+          "More homes could be built sooner, easing pressure on rents and prices",
+          "Denser areas may support more transit, shops, and local services"
+        ],
+        "costs": [
+          "Neighbourhoods may see more traffic, shade, and changes in character",
+          "Roads, schools, and pipes may need costly upgrades to keep up"
+        ]
+      },
+      "b": {
+        "gains": [
+          "Existing neighbourhoods may keep their current look, scale, and feel",
+          "Growth may be easier to match with roads, parks, and services"
+        ],
+        "costs": [
+          "Fewer new homes could keep rents and prices higher for longer",
+          "Growth may spread outward, adding car trips and longer commutes"
+        ]
+      }
+    },
+    "city-of-nanaimo--community-safety-and-street-disorder": {
+      "context": "Safety budgets are limited, so more spending on enforcement often means less for outreach, and the reverse.",
+      "a": {
+        "gains": [
+          "A visible patrol presence may help people feel safer downtown",
+          "Officers could respond faster to calls about crime and disorder"
+        ],
+        "costs": [
+          "Policing costs may raise taxes or take money from other services",
+          "Enforcement may move problems to other areas rather than resolve them"
+        ]
+      },
+      "b": {
+        "gains": [
+          "Outreach could address addiction and mental health behind some disorder",
+          "Trained workers may handle some calls that do not need police"
+        ],
+        "costs": [
+          "Results may take longer to show and be harder to measure",
+          "Some residents and businesses may see less change in street conditions"
+        ]
+      }
+    },
+    "city-of-nanaimo--homelessness-and-shelter": {
+      "context": "Cities often weigh adding shelter and housing sites against setting clearer rules for how public spaces are used.",
+      "a": {
+        "gains": [
+          "More people may move indoors and connect with health and support services",
+          "Fewer people may need to camp in parks and on streets"
+        ],
+        "costs": [
+          "Nearby residents and businesses may raise concerns about new sites",
+          "Sites need ongoing funding and partners the city does not control"
+        ]
+      },
+      "b": {
+        "gains": [
+          "Parks, sidewalks, and public spaces may stay more open for all users",
+          "Clear rules may be easier for residents and businesses to understand"
+        ],
+        "costs": [
+          "Without enough indoor spaces, people may be moved between areas repeatedly",
+          "Enforcing limits may take staff time and could face legal challenges"
+        ]
+      }
+    },
+    "city-of-nanaimo--property-taxes-and-city-spending": {
+      "context": "City budgets trade the size of yearly tax increases against the level of services and the timing of projects.",
+      "a": {
+        "gains": [
+          "Homeowners and renters may face smaller yearly increases in costs",
+          "Council may look harder for savings and ways to work efficiently"
+        ],
+        "costs": [
+          "Some services may be reduced or projects pushed back",
+          "Delayed repairs and projects may cost more when finally done"
+        ]
+      },
+      "b": {
+        "gains": [
+          "Services and facilities may keep pace as the city grows",
+          "Projects done now may avoid higher costs from waiting"
+        ],
+        "costs": [
+          "Higher taxes may strain households and businesses on tight budgets",
+          "Landlords may pass higher taxes on to their tenants"
+        ]
+      }
+    },
+    "city-of-nanaimo--downtown-and-waterfront": {
+      "context": "Downtown choices weigh the city leading with public money against waiting for private investors to act.",
+      "a": {
+        "gains": [
+          "Public projects may draw visitors and spark private investment nearby",
+          "The city may have more say in what gets built and where"
+        ],
+        "costs": [
+          "Projects may cost more than planned and take money from other needs",
+          "Results may be uncertain if visitors or investors do not follow"
+        ]
+      },
+      "b": {
+        "gains": [
+          "Taxpayers may carry less financial risk from large projects",
+          "Private investors may move faster and respond to market demand"
+        ],
+        "costs": [
+          "Change downtown may be slower if investors hold back",
+          "The city may have less say over design and public access"
+        ]
+      }
+    },
+    "city-of-nanaimo--permit-and-approval-times": {
+      "context": "Approval systems balance how quickly projects move ahead against how closely they are reviewed and how much public input is heard.",
+      "a": {
+        "gains": [
+          "Homes and businesses may open sooner with lower carrying costs",
+          "Clearer rules may make costs and timelines easier to predict"
+        ],
+        "costs": [
+          "Neighbours may have fewer chances to comment on nearby projects",
+          "Problems with design or fit may be missed with less review"
+        ]
+      },
+      "b": {
+        "gains": [
+          "Projects may better fit their surroundings after closer review",
+          "Residents may have more say in changes to their neighbourhoods"
+        ],
+        "costs": [
+          "Longer timelines may add costs that get passed on to buyers and renters",
+          "Some builders and businesses may choose to invest elsewhere"
+        ]
+      }
+    },
+    "city-of-nanaimo--roads-water-and-sewer": {
+      "context": "Infrastructure choices trade higher costs today against the risk of failures and bigger repair bills later.",
+      "a": {
+        "gains": [
+          "Fixing pipes and roads early may prevent breaks and emergency repairs",
+          "Systems may be ready to serve new homes as the city grows"
+        ],
+        "costs": [
+          "Taxes or utility fees may rise more in the near term",
+          "Other projects may wait while money goes to repairs"
+        ]
+      },
+      "b": {
+        "gains": [
+          "Yearly costs to taxpayers and utility users may stay steadier",
+          "The city may keep money available for other services and projects"
+        ],
+        "costs": [
+          "Aging systems may break down before they are repaired",
+          "Repairs may cost more later as conditions worsen and prices rise"
+        ]
+      }
+    },
+    "city-of-nanaimo--getting-around-the-city": {
+      "context": "Street space and budgets are limited, so choices often favour some ways of travelling over others.",
+      "a": {
+        "gains": [
+          "Drivers may see smoother traffic and easier parking",
+          "Deliveries, trades, and people who rely on cars may get around more easily"
+        ],
+        "costs": [
+          "People who walk, bike, or take the bus may see fewer improvements",
+          "More road space may lead to more driving and traffic over time"
+        ]
+      },
+      "b": {
+        "gains": [
+          "More people may have safe, low-cost options for getting around",
+          "Fewer car trips may reduce traffic and emissions over time"
+        ],
+        "costs": [
+          "Drivers may face less parking and slower trips on some streets",
+          "Benefits may depend on whether enough people change how they travel"
+        ]
+      }
+    },
+    "city-of-nanaimo--trees-climate-and-natural-areas": {
+      "context": "Rules for trees and natural areas often weigh protecting green space against the cost and flexibility of using land.",
+      "a": {
+        "gains": [
+          "More trees and green space may provide shade, habitat, and storm protection",
+          "Natural areas may be kept for future generations to enjoy"
+        ],
+        "costs": [
+          "Building costs may rise, which could affect housing prices",
+          "Landowners may have less say over how they use their property"
+        ]
+      },
+      "b": {
+        "gains": [
+          "Homes and projects may be built faster and at lower cost",
+          "Landowners may have more freedom to decide how to use their land"
+        ],
+        "costs": [
+          "Tree cover and natural areas may shrink as land is developed",
+          "The city may face more heat and flooding risks over time"
+        ]
+      }
+    },
+    "city-of-victoria--housing-costs-and-supply": {
+      "context": "Housing choices often trade the pace and scale of new building against how much established neighbourhoods change.",
+      "a": {
+        "gains": [
+          "More homes near jobs and transit could ease pressure on rents",
+          "More residents may support local shops, services, and bus routes"
+        ],
+        "costs": [
+          "Taller buildings may change views, sunlight, and the feel of streets",
+          "Heritage areas and older rental buildings may face pressure to redevelop"
+        ]
+      },
+      "b": {
+        "gains": [
+          "Heritage buildings and neighbourhood character may be better kept",
+          "Residents may have more time to shape how their area changes"
+        ],
+        "costs": [
+          "Housing supply may stay tight, keeping rents and prices high",
+          "Some people who work in the city may need to live farther away"
+        ]
+      }
+    },
+    "city-of-victoria--community-safety-and-street-disorder": {
+      "context": "Safety budgets are limited and policing costs are shared with Esquimalt, so more for one approach leaves less for another.",
+      "a": {
+        "gains": [
+          "More officers on patrol may deter crime and reassure residents",
+          "Bylaw officers could deal faster with issues in parks and streets"
+        ],
+        "costs": [
+          "Policing costs may raise taxes or reduce other city services",
+          "Enforcement may move problems elsewhere without addressing root causes"
+        ]
+      },
+      "b": {
+        "gains": [
+          "Crisis teams may handle mental health calls without police involvement",
+          "Police time could be freed up for more serious crimes"
+        ],
+        "costs": [
+          "New teams may take time to set up and show results",
+          "Some people may still feel unsafe if visible enforcement stays the same"
+        ]
+      }
+    },
+    "city-of-victoria--homelessness-and-sheltering": {
+      "context": "Cities often weigh adding shelter and housing sites against setting clearer limits on how parks and public spaces are used.",
+      "a": {
+        "gains": [
+          "More people may move indoors and get access to health supports",
+          "Fewer people may need to shelter in parks overnight"
+        ],
+        "costs": [
+          "Neighbours may have concerns about the effects of new sites",
+          "Opening and running sites depends on provincial funding and partners"
+        ]
+      },
+      "b": {
+        "gains": [
+          "Parks and public spaces may be more available for everyone to use",
+          "Clear rules may reduce conflicts over shared public spaces"
+        ],
+        "costs": [
+          "People may be moved around without a stable place to go",
+          "Enforcement may use staff time and could face court challenges"
+        ]
+      }
+    },
+    "city-of-victoria--property-taxes-and-city-spending": {
+      "context": "Budgets trade smaller yearly tax increases against keeping services and projects on schedule.",
+      "a": {
+        "gains": [
+          "Households and businesses may face smaller yearly tax increases",
+          "Council may look for savings across city departments"
+        ],
+        "costs": [
+          "Services may be trimmed or projects pushed back",
+          "Delayed maintenance may cost more when it is finally done"
+        ]
+      },
+      "b": {
+        "gains": [
+          "Services may keep pace with demand as the city grows",
+          "Projects may proceed before construction costs rise further"
+        ],
+        "costs": [
+          "Higher taxes may strain households on fixed incomes",
+          "Landlords may pass tax increases on to renters"
+        ]
+      }
+    },
+    "city-of-victoria--downtown-and-local-business": {
+      "context": "Both approaches aim to bring people downtown, but they differ on whether order or new activity comes first.",
+      "a": {
+        "gains": [
+          "Cleaner, more orderly streets may make visitors and shoppers feel welcome",
+          "Businesses may spend less on cleanup, repairs, and security"
+        ],
+        "costs": [
+          "Ongoing cleaning and enforcement may add lasting costs to the budget",
+          "Enforcement may move problems elsewhere rather than resolve them"
+        ]
+      },
+      "b": {
+        "gains": [
+          "More residents and events may keep streets busy at more hours",
+          "New public spaces may give people more reasons to come downtown"
+        ],
+        "costs": [
+          "Events and public spaces may not draw people if safety concerns remain",
+          "New housing and projects may take years before effects are felt"
+        ]
+      }
+    },
+    "city-of-victoria--streets-transit-and-parking": {
+      "context": "Street space is fixed, so giving more to one way of travelling usually means less for another.",
+      "a": {
+        "gains": [
+          "Drivers may see shorter trips and easier parking downtown",
+          "Businesses that rely on customers who drive may benefit"
+        ],
+        "costs": [
+          "Bike lanes and transit priority may expand more slowly",
+          "More traffic may affect safety for people walking and cycling"
+        ]
+      },
+      "b": {
+        "gains": [
+          "People without cars may get safer, more reliable ways to travel",
+          "Fewer car trips may cut emissions and wear on roads"
+        ],
+        "costs": [
+          "Drivers may lose parking spaces and see slower trips",
+          "Some businesses may see fewer customers who arrive by car"
+        ]
+      }
+    },
+    "city-of-victoria--victoria-saanich-amalgamation": {
+      "context": "The ballot question is non-binding; merging would need provincial approval and another vote, and trades scale against local control.",
+      "a": {
+        "gains": [
+          "Shared services may reduce duplication and could lower some costs",
+          "The region may plan housing, transit, and services in a more unified way"
+        ],
+        "costs": [
+          "Merging may bring large one-time costs and years of transition work",
+          "Residents may feel further from a larger council"
+        ]
+      },
+      "b": {
+        "gains": [
+          "Each community may keep decisions closer to its own residents",
+          "Residents may avoid the cost and disruption of a merger process"
+        ],
+        "costs": [
+          "Duplicated services and staff may continue at extra cost",
+          "Regional issues may stay harder to coordinate across borders"
+        ]
+      }
+    },
+    "city-of-victoria--climate-and-tree-canopy": {
+      "context": "Climate and tree rules often weigh environmental protection against the cost and speed of new building.",
+      "a": {
+        "gains": [
+          "More tree cover may provide shade and cooling during heat waves",
+          "Climate actions may lower emissions and prepare the city for storms"
+        ],
+        "costs": [
+          "Stricter rules may add costs to building homes and projects",
+          "Some climate projects may need more city spending or staff"
+        ]
+      },
+      "b": {
+        "gains": [
+          "Homes and projects may cost less and be built sooner",
+          "Property owners may face fewer rules and permit steps"
+        ],
+        "costs": [
+          "Tree canopy may shrink as more land is developed",
+          "The city may be less prepared for heat, drought, and storms"
+        ]
+      }
+    },
+    "city-of-victoria--recreation-and-community-facilities": {
+      "context": "Facility choices weigh the cost of major new buildings against the age and limits of existing ones.",
+      "a": {
+        "gains": [
+          "New facilities may serve more people and add modern features",
+          "Replacing old buildings may avoid rising repair costs over time"
+        ],
+        "costs": [
+          "Large projects may require borrowing or higher property taxes",
+          "Costs may grow if projects run over budget or schedule"
+        ]
+      },
+      "b": {
+        "gains": [
+          "Lower spending may keep taxes and program fees steadier",
+          "Money may be spread across more facilities and neighbourhoods"
+        ],
+        "costs": [
+          "Aging buildings may need costly repairs or close unexpectedly",
+          "Facilities may not keep up with a growing population's needs"
+        ]
+      }
+    },
+    "city-of-victoria--relations-with-lekwungen-nations": {
+      "context": "Choices here weigh deeper partnership with local nations against keeping final decisions with the elected council.",
+      "a": {
+        "gains": [
+          "Partnerships may build trust and support reconciliation with local nations",
+          "Local nations' knowledge may inform land use and heritage decisions"
+        ],
+        "costs": [
+          "Shared processes may add steps and time to some decisions",
+          "Some residents may be unsure how shared decisions are made or reviewed"
+        ]
+      },
+      "b": {
+        "gains": [
+          "Accountability to city voters may stay simple and clear",
+          "Decisions may move faster with fewer parties involved"
+        ],
+        "costs": [
+          "Relationships with local nations may develop more slowly",
+          "The city may miss input that could help avoid later disputes"
+        ]
+      }
+    },
+    "sd68--aging-school-buildings": {
+      "context": "With limited provincial capital money, districts weigh full replacement of a few schools against upgrades to many.",
+      "a": {
+        "gains": [
+          "Students may get modern, safer buildings that last for decades",
+          "New schools may cost less to run and maintain over time"
+        ],
+        "costs": [
+          "Other schools may wait longer for needed repairs",
+          "Approval depends on the province and may take years"
+        ]
+      },
+      "b": {
+        "gains": [
+          "More schools may see improvements sooner",
+          "Upgrades may cost less per school than full replacement"
+        ],
+        "costs": [
+          "Older buildings may keep limits that upgrades cannot fix",
+          "Repeated repairs may cost more over the long run"
+        ]
+      }
+    },
+    "sd68--district-budget-and-enrolment": {
+      "context": "As enrolment dips, provincial funding per student falls, so districts weigh drawing on reserves against cutting costs.",
+      "a": {
+        "gains": [
+          "Class sizes and programs may stay stable for students",
+          "Staff may be kept for when enrolment rises again"
+        ],
+        "costs": [
+          "Lower reserves may leave less room for emergencies or surprises",
+          "Larger cuts may be needed later if funding stays low"
+        ]
+      },
+      "b": {
+        "gains": [
+          "The district may keep a cushion for future emergencies",
+          "Spending may better match the number of students enrolled"
+        ],
+        "costs": [
+          "Some staff positions or programs may be reduced",
+          "Students and families may notice fewer supports or choices"
+        ]
+      }
+    },
+    "sd68--before-and-after-school-care": {
+      "context": "Schools have space and families need care, but running child care takes district staff time and money.",
+      "a": {
+        "gains": [
+          "Families may get more care spaces close to where kids learn",
+          "Care hours may line up more easily with school schedules"
+        ],
+        "costs": [
+          "District staff and money may be stretched beyond teaching",
+          "Running care may add costs if provincial funding falls short"
+        ]
+      },
+      "b": {
+        "gains": [
+          "Staff and budgets may stay focused on classroom learning",
+          "Experienced child care groups may run programs using their own expertise"
+        ],
+        "costs": [
+          "Families may face fewer spaces or longer waitlists",
+          "Care may be less convenient if it is offered off school sites"
+        ]
+      }
+    },
+    "sd68--reading-and-math-skills": {
+      "context": "Districts weigh standard measures that track progress across schools against flexibility for teachers to judge each student.",
+      "a": {
+        "gains": [
+          "Students who are falling behind may be spotted sooner",
+          "Families and the board may get clearer information on progress"
+        ],
+        "costs": [
+          "More testing may take time away from teaching",
+          "Teaching may narrow toward what is measured on tests"
+        ]
+      },
+      "b": {
+        "gains": [
+          "Teachers may adapt lessons to each student's needs",
+          "Students may spend more class time learning and less time testing"
+        ],
+        "costs": [
+          "Gaps between schools or groups may be harder to see",
+          "Families may get less consistent information about progress"
+        ]
+      }
+    },
+    "sd68--student-and-staff-wellbeing": {
+      "context": "With a fixed budget, money for counsellors and wellness staff may mean less for other classroom needs.",
+      "a": {
+        "gains": [
+          "Students may get help at school without long waits",
+          "Teachers may have more support with students in distress"
+        ],
+        "costs": [
+          "Money for wellness staff may mean less for other programs",
+          "Hiring may be hard if qualified people are in short supply"
+        ]
+      },
+      "b": {
+        "gains": [
+          "Budgets may stay focused on teaching and learning",
+          "Students may be referred to specialists with deeper training"
+        ],
+        "costs": [
+          "Outside services may have waitlists or be harder to reach",
+          "Teachers may handle more student needs without extra support"
+        ]
+      }
+    },
+    "sd68--support-for-diverse-learners": {
+      "context": "Districts weigh including students in regular classes against offering separate settings designed for specific needs.",
+      "a": {
+        "gains": [
+          "Students may learn alongside peers and feel part of their school",
+          "Classmates may learn to work with people of different abilities"
+        ],
+        "costs": [
+          "Classes may be harder to manage without enough support staff",
+          "Some students may not get the focused help they need"
+        ]
+      },
+      "b": {
+        "gains": [
+          "Students may get focused teaching suited to their needs",
+          "Specialized staff may be grouped where they are most needed"
+        ],
+        "costs": [
+          "Students may spend less time with peers in regular classes",
+          "Programs may require travel or space that some schools lack"
+        ]
+      }
+    },
+    "sd68--indigenous-learning": {
+      "context": "Districts weigh building Indigenous learning into every subject against keeping it as one area within a broad curriculum.",
+      "a": {
+        "gains": [
+          "All students may learn more about local nations' history and culture",
+          "Indigenous students may see their culture reflected across school life"
+        ],
+        "costs": [
+          "Teachers may need more training and time to prepare",
+          "Time and money may be drawn from other subject areas"
+        ]
+      },
+      "b": {
+        "gains": [
+          "Class time may stay focused on a broad range of core subjects",
+          "Teachers may face fewer new demands on planning and training"
+        ],
+        "costs": [
+          "Students may get less exposure to local Indigenous knowledge",
+          "Relationships with local nations may develop more slowly"
+        ]
+      }
+    },
+    "sd68--advocacy-to-the-province": {
+      "context": "Trustees weigh public pressure, which draws attention, against quieter talks, which may preserve working relationships.",
+      "a": {
+        "gains": [
+          "Public attention may push the province to act on funding",
+          "Families may learn more about the district's needs"
+        ],
+        "costs": [
+          "Relationships with provincial officials may become strained",
+          "Public campaigns may not change funding decisions"
+        ]
+      },
+      "b": {
+        "gains": [
+          "Steady relationships may help when projects are being chosen",
+          "The board may avoid conflict that distracts from schools"
+        ],
+        "costs": [
+          "District needs may get less public attention",
+          "Funding gaps may continue with few changes from the province"
+        ]
+      }
+    },
+    "sd61--board-governance-and-accountability": {
+      "context": "After the province removed and later reinstated trustees, the board weighs local independence against close cooperation.",
+      "a": {
+        "gains": [
+          "Local voters may see more of their priorities reflected",
+          "The board may speak up where it sees district needs differently"
+        ],
+        "costs": [
+          "Conflict with the province may lead to delays or intervention",
+          "Disagreements may draw attention away from students"
+        ]
+      },
+      "b": {
+        "gains": [
+          "Fewer conflicts may keep the board's focus on schools",
+          "Working closely may help the district get provincial support"
+        ],
+        "costs": [
+          "Local priorities may be set aside to match provincial views",
+          "Voters may feel the board answers less to them"
+        ]
+      }
+    },
+    "sd61--budget-and-program-choices": {
+      "context": "When funding is tight, districts weigh protecting programs like music against keeping a balanced budget and reserves.",
+      "a": {
+        "gains": [
+          "Students may keep access to programs like music and early learning",
+          "Cuts may fall on offices rather than classrooms"
+        ],
+        "costs": [
+          "Lower reserves may leave less room for future emergencies",
+          "Administration cuts may slow support services for schools"
+        ]
+      },
+      "b": {
+        "gains": [
+          "The district may stay on stable financial footing",
+          "Reserves may cover unexpected costs in future years"
+        ],
+        "costs": [
+          "Students may lose programs that families value",
+          "Program cuts may be hard to restore later"
+        ]
+      }
+    },
+    "sd61--police-presence-in-schools": {
+      "context": "Districts weigh the safety and relationship benefits some see in police liaisons against concerns others raise about student comfort.",
+      "a": {
+        "gains": [
+          "Officers may build relationships with students and respond quickly",
+          "Some families and staff may feel schools are safer"
+        ],
+        "costs": [
+          "Some students may feel uneasy or watched at school",
+          "Minor issues may be more likely to involve police"
+        ]
+      },
+      "b": {
+        "gains": [
+          "Students may feel more comfortable going to staff with concerns",
+          "Counsellors may address underlying causes of behaviour issues"
+        ],
+        "costs": [
+          "Response to serious incidents may take longer",
+          "Some families and staff may feel schools are less safe"
+        ]
+      }
+    },
+    "sd61--school-building-safety-and-space": {
+      "context": "Districts weigh full replacements, which take longer, against upgrades that reach more schools sooner.",
+      "a": {
+        "gains": [
+          "Students may get modern buildings built to current earthquake standards",
+          "Expanded schools may keep up with growing neighbourhoods"
+        ],
+        "costs": [
+          "Fewer schools may get attention while big projects proceed",
+          "Provincial approval may take years, and plans may change"
+        ]
+      },
+      "b": {
+        "gains": [
+          "Seismic and safety upgrades may reach more schools sooner",
+          "Limited money may stretch across more buildings"
+        ],
+        "costs": [
+          "Older schools may keep space and design limits",
+          "Short-term fixes may cost more over the life of a building"
+        ]
+      }
+    },
+    "sd61--trustee-electoral-areas": {
+      "context": "Area-based voting is new in 2026; the choice weighs local representation against every trustee answering to the whole district.",
+      "a": {
+        "gains": [
+          "Each community may have a trustee who knows its schools",
+          "Voters may find it easier to know who represents them"
+        ],
+        "costs": [
+          "Trustees may focus on their area over district-wide needs",
+          "Some areas may have fewer candidates to choose from"
+        ]
+      },
+      "b": {
+        "gains": [
+          "Every trustee may weigh the needs of the whole district",
+          "Voters may choose from all candidates across the district"
+        ],
+        "costs": [
+          "Some neighbourhoods may end up without a trustee from their area",
+          "Campaigning district-wide may cost candidates more"
+        ]
+      }
+    },
+    "sd61--early-learning-and-child-care": {
+      "context": "Districts weigh funding early learning staff and child care against keeping limited money focused on K-12 teaching.",
+      "a": {
+        "gains": [
+          "Young children may get more support as they start school",
+          "Families may find child care closer to where children learn"
+        ],
+        "costs": [
+          "Money for early learning may mean less for other grades",
+          "Programs may depend on provincial funding that could change"
+        ]
+      },
+      "b": {
+        "gains": [
+          "K-12 classrooms may keep more staff and resources",
+          "The district may avoid new costs outside its core role"
+        ],
+        "costs": [
+          "Kindergarten classes may have less support for young learners",
+          "Families may have fewer child care options at schools"
+        ]
+      }
+    },
+    "sd61--support-for-diverse-learners": {
+      "context": "Districts weigh including students in regular classes against offering separate settings built around specific needs.",
+      "a": {
+        "gains": [
+          "Students may learn alongside peers and feel part of their school",
+          "Classmates may learn to work with people of different abilities"
+        ],
+        "costs": [
+          "Classes may be harder to manage without enough support staff",
+          "Some students may not get the focused help they need"
+        ]
+      },
+      "b": {
+        "gains": [
+          "Students may get teaching and spaces suited to their needs",
+          "Specialists may be grouped where they are most needed"
+        ],
+        "costs": [
+          "Students may spend less time with peers in regular classes",
+          "Programs may require travel or space that some schools lack"
+        ]
+      }
+    },
+    "sd61--use-of-school-land": {
+      "context": "School land is hard to get back once sold, so districts weigh future needs against funding today's needs.",
+      "a": {
+        "gains": [
+          "Land may be ready if enrolment grows in the future",
+          "Communities may keep open space and places for local use"
+        ],
+        "costs": [
+          "Holding unused land may carry upkeep costs",
+          "Money that could help current students may stay tied up"
+        ]
+      },
+      "b": {
+        "gains": [
+          "Funds from sales or leases may support current programs",
+          "Unused land may be put to other uses, such as housing"
+        ],
+        "costs": [
+          "The district may lack land if enrolment rises later",
+          "Communities may lose fields or open space they use now"
+        ]
+      }
+    },
+    "province-of-bc--cost-of-living": {
+      "context": "Both approaches aim to lower costs, but differ on leaving more money with people or funding programs directly.",
+      "a": {
+        "gains": [
+          "People may keep more of their paycheque to spend as they choose",
+          "Lower business costs may encourage hiring and investment"
+        ],
+        "costs": [
+          "Less revenue may mean cuts to public services or more debt",
+          "Benefits may vary depending on income and how much tax people pay"
+        ]
+      },
+      "b": {
+        "gains": [
+          "Programs may target help to people who need it most",
+          "Rebates and lower fees may cut costs like child care directly"
+        ],
+        "costs": [
+          "Programs may require higher taxes or more public debt",
+          "Some people may not qualify for or use the programs"
+        ]
+      }
+    },
+    "province-of-bc--health-care-access": {
+      "context": "Both approaches aim to shorten waits within public coverage, but differ on how much care private or contracted providers deliver.",
+      "a": {
+        "gains": [
+          "More staff and spaces may be added within the public system",
+          "Public money may stay in a system with public oversight"
+        ],
+        "costs": [
+          "Building and staffing new sites may take years",
+          "Costs may rise for the province, adding budget pressure"
+        ]
+      },
+      "b": {
+        "gains": [
+          "Contracted clinics may add capacity and shorten some waits sooner",
+          "Patients may have more places to get covered care"
+        ],
+        "costs": [
+          "Private options may draw staff away from public hospitals",
+          "Contracts may cost more per procedure in some cases"
+        ]
+      }
+    },
+    "province-of-bc--housing-affordability": {
+      "context": "Both approaches aim to build more homes, but differ on whether government or the private market should lead.",
+      "a": {
+        "gains": [
+          "More homes may be approved even where local opposition exists",
+          "Public housing may serve people the market does not reach"
+        ],
+        "costs": [
+          "Cities may have less local control over growth",
+          "Public housing may require large spending or borrowing"
+        ]
+      },
+      "b": {
+        "gains": [
+          "Builders may start more projects with lower costs and fewer delays",
+          "Public spending may stay lower while supply increases"
+        ],
+        "costs": [
+          "New homes may still be priced beyond many people's reach",
+          "Lower taxes may reduce money for other public services"
+        ]
+      }
+    },
+    "province-of-bc--jobs-and-the-economy": {
+      "context": "Both approaches aim to grow jobs, but differ on leaning on existing resource industries or building new ones.",
+      "a": {
+        "gains": [
+          "Major projects may bring jobs and revenue sooner",
+          "Faster approvals may make B.C. more attractive to investors"
+        ],
+        "costs": [
+          "Quicker reviews may raise environmental or consultation concerns",
+          "Reliance on resource prices may make the economy less stable"
+        ]
+      },
+      "b": {
+        "gains": [
+          "New industries may spread jobs across more sectors",
+          "Training may help workers adapt to changing jobs"
+        ],
+        "costs": [
+          "Results from new industries may take longer to appear",
+          "Public investment may not pay off if industries do not grow"
+        ]
+      }
+    },
+    "province-of-bc--provincial-deficit-and-spending": {
+      "context": "Closing a deficit faster limits borrowing but usually requires cuts, while going slower keeps services but adds debt.",
+      "a": {
+        "gains": [
+          "Less borrowing may lower interest costs over time",
+          "A balanced budget may support the province's credit rating"
+        ],
+        "costs": [
+          "Services such as health and education may face cuts",
+          "Spending cuts may slow the economy in the short term"
+        ]
+      },
+      "b": {
+        "gains": [
+          "Services people rely on may stay at current levels",
+          "Spending may support jobs and the economy during slow times"
+        ],
+        "costs": [
+          "Debt and interest payments may keep growing",
+          "Future budgets may face harder choices and less room"
+        ]
+      }
+    },
+    "province-of-bc--crime-and-public-safety": {
+      "context": "Both approaches aim to reduce crime, but differ on putting more into enforcement or into causes like addiction.",
+      "a": {
+        "gains": [
+          "More police and stricter enforcement may deter repeat offending",
+          "People may feel safer seeing quick action on crime"
+        ],
+        "costs": [
+          "Police, courts, and jails may require much more funding",
+          "Underlying causes such as addiction may remain unaddressed"
+        ]
+      },
+      "b": {
+        "gains": [
+          "Treatment and supports may reduce crime linked to addiction",
+          "Prevention may lower long-term costs for courts and jails"
+        ],
+        "costs": [
+          "Results may take years to show up in crime levels",
+          "Some people may feel repeat offenders face too few consequences"
+        ]
+      }
+    },
+    "province-of-bc--addictions-and-mental-health": {
+      "context": "Approaches differ on how much to rely on required treatment versus voluntary services and harm reduction.",
+      "a": {
+        "gains": [
+          "People in severe crisis may get care they would not seek",
+          "More treatment beds may shorten waits for those wanting help"
+        ],
+        "costs": [
+          "Involuntary care may raise concerns about personal rights and consent",
+          "Beds and staff may be costly and slow to add"
+        ]
+      },
+      "b": {
+        "gains": [
+          "Harm reduction may keep people alive while they consider treatment",
+          "Voluntary care may build trust that leads people to seek help"
+        ],
+        "costs": [
+          "Some people in severe crisis may not get the care they need",
+          "Harm reduction may raise concerns about public drug use"
+        ]
+      }
+    },
+    "province-of-bc--indigenous-rights-and-land": {
+      "context": "The choice weighs shared decision-making with First Nations against more predictability for landowners and industry.",
+      "a": {
+        "gains": [
+          "Shared decisions may support reconciliation and reduce legal disputes",
+          "First Nations may gain a greater role on their traditional lands"
+        ],
+        "costs": [
+          "Landowners and industry may face uncertainty about future rules",
+          "Approvals may take longer with more parties involved"
+        ]
+      },
+      "b": {
+        "gains": [
+          "Landowners and businesses may have clearer, more predictable rules",
+          "Investment decisions may be easier with fewer open questions"
+        ],
+        "costs": [
+          "Relationships with First Nations may become strained",
+          "Changes may lead to new court challenges and delays"
+        ]
+      }
+    },
+    "province-of-bc--resources-and-the-environment": {
+      "context": "Resource decisions weigh jobs and revenue from projects against protecting land, water, and the climate.",
+      "a": {
+        "gains": [
+          "Projects may bring jobs, especially in rural communities",
+          "Royalties and taxes may help fund public services"
+        ],
+        "costs": [
+          "Faster approvals may increase risks to land, water, and wildlife",
+          "Climate targets may be harder to meet"
+        ]
+      },
+      "b": {
+        "gains": [
+          "Land, water, and wildlife may be better protected",
+          "B.C. may be better placed to meet its climate goals"
+        ],
+        "costs": [
+          "Some projects and jobs may be delayed or go elsewhere",
+          "Resource communities may see less economic activity"
+        ]
+      }
+    },
+    "province-of-bc--school-funding-and-space": {
+      "context": "Provincial school dollars are limited, so money for buildings and money for classroom staff often compete.",
+      "a": {
+        "gains": [
+          "Crowded or unsafe schools may be replaced or expanded",
+          "New buildings may serve communities for decades"
+        ],
+        "costs": [
+          "Classroom staffing may grow more slowly",
+          "New buildings may take years to plan and open"
+        ]
+      },
+      "b": {
+        "gains": [
+          "Students may get more teacher time and support now",
+          "Class sizes and support needs may be better met"
+        ],
+        "costs": [
+          "Crowded or aging schools may wait longer for replacement",
+          "Portables and older buildings may stay in use longer"
+        ]
+      }
+    }
+  }
+}

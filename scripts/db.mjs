@@ -74,7 +74,34 @@ const schema = [
 ];
 
 for (const s of schema) await sql.query(s);
+await sql.query(`alter table issues add column if not exists tradeoffs jsonb`);
+await sql.query(`alter table candidacies add column if not exists summary text`);
+await sql.query(`alter table candidacies add column if not exists summary_source text`);
+await sql.query(`alter table affiliations add column if not exists blurb text`);
+await sql.query(`alter table affiliations add column if not exists blurb_source text`);
 console.log("[db] schema ok");
+
+
+async function backfillBios() {
+  const ups = [];
+  for (const f of ["bios-nanaimo.json", "bios-victoria.json", "bios-provincial.json"]) {
+    let b; try { b = read(f); } catch { continue; }
+    for (const [id, v] of Object.entries(b.candidates ?? {}))
+      if (v?.summary) ups.push(sql.query(`update candidacies set summary=$2, summary_source=$3 where id=$1 and summary is null`, [id, v.summary, v.sourceUrl ?? null]));
+    for (const [id, v] of Object.entries(b.affiliations ?? {}))
+      if (v?.blurb) ups.push(sql.query(`update affiliations set blurb=$2, blurb_source=$3 where id=$1 and blurb is null`, [id, v.blurb, v.sourceUrl ?? null]));
+  }
+  if (ups.length) { await sql.transaction(ups); console.log(`[db] bios backfilled (${ups.length})`); }
+}
+
+// Backfill content added after first seed (safe to repeat: only fills empty rows).
+try {
+  const t = read("tradeoffs-2026.json");
+  const ups = Object.entries(t.issues ?? {}).map(([id, v]) =>
+    sql.query(`update issues set tradeoffs=$2 where id=$1 and tradeoffs is null`, [id, JSON.stringify(v)]));
+  const [{ n: have }] = await sql`select count(*)::int as n from governments`;
+  if (have > 0) { if (ups.length) { await sql.transaction(ups); console.log(`[db] trade-offs backfilled (${ups.length})`); } await backfillBios(); }
+} catch (e) { console.log("[db] no trade-offs file yet", String(e).slice(0, 80)); }
 
 const [{ n }] = await sql`select count(*)::int as n from governments`;
 if (n > 0) {
@@ -213,3 +240,9 @@ for (const rd of prov.ridings)
 // One transaction, in order, so foreign keys are satisfied and a failed seed leaves nothing behind.
 await sql.transaction(q);
 console.log(`[db] seeded ${q.length} rows`);
+try {
+  const t = read("tradeoffs-2026.json");
+  await sql.transaction(Object.entries(t.issues ?? {}).map(([id, v]) => sql.query(`update issues set tradeoffs=$2 where id=$1 and tradeoffs is null`, [id, JSON.stringify(v)])));
+  console.log("[db] trade-offs added");
+} catch {}
+await backfillBios();

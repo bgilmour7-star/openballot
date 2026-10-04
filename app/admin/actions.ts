@@ -26,12 +26,13 @@ export async function saveCandidate(f: FormData) {
     name: s(f, "name", 200), ballot_name: s(f, "ballot_name", 200), incumbent: f.get("incumbent") === "yes" ? true : f.get("incumbent") === "no" ? false : null,
     affiliation_id: s(f, "affiliation_id", 200), affiliation_source: s(f, "affiliation_source", 500), declared_independent: b(f, "declared_independent"),
     website: s(f, "website", 500), links, sources: jsonList(s(f, "sources")), status: s(f, "status", 30) ?? "active",
+    summary: s(f, "summary", 400), summary_source: s(f, "summary_source", 500),
   };
   if (after.affiliation_id && !after.affiliation_source) redirect(`/admin/candidates/${encodeURIComponent(id)}?err=affsource`);
   await q(`update candidacies set name=$2, ballot_name=$3, incumbent=$4, affiliation_id=$5, affiliation_source=$6, declared_independent=$7,
-           website=$8, links=$9, sources=$10, status=$11, updated_at=now() where id=$1`,
+           website=$8, links=$9, sources=$10, status=$11, summary=$12, summary_source=$13, updated_at=now() where id=$1`,
     [id, after.name, after.ballot_name, after.incumbent, after.affiliation_id, after.affiliation_source, after.declared_independent,
-     after.website, JSON.stringify(after.links), JSON.stringify(after.sources), after.status]);
+     after.website, JSON.stringify(after.links), JSON.stringify(after.sources), after.status, after.summary, after.summary_source]);
   await audit(a.email, "candidacy", id, "update", before, after);
   revalidatePath("/", "layout");
   redirect(`/admin/candidates/${encodeURIComponent(id)}?saved=1`);
@@ -110,10 +111,10 @@ export async function saveAffiliation(f: FormData) {
   const a = await requireAdmin();
   const id = s(f, "id", 100) ?? (s(f, "name", 200) ?? "").toLowerCase().replace(/[^a-z0-9]+/g, "-");
   const before = await one(`select * from affiliations where id=$1`, [id]);
-  const vals = [s(f, "type", 40) ?? "party", s(f, "name", 200), s(f, "website", 500), s(f, "source_url", 500), s(f, "platform_url", 500), s(f, "platform_note", 1000)];
+  const vals = [s(f, "type", 40) ?? "party", s(f, "name", 200), s(f, "website", 500), s(f, "source_url", 500), s(f, "platform_url", 500), s(f, "platform_note", 1000), s(f, "blurb", 600), s(f, "blurb_source", 500)];
   if (!vals[3]) redirect(`/admin/affiliations?err=source`);
-  await q(`insert into affiliations (id,type,name,website,source_url,platform_url,platform_note) values ($1,$2,$3,$4,$5,$6,$7)
-           on conflict (id) do update set type=$2, name=$3, website=$4, source_url=$5, platform_url=$6, platform_note=$7`, [id, ...vals]);
+  await q(`insert into affiliations (id,type,name,website,source_url,platform_url,platform_note,blurb,blurb_source) values ($1,$2,$3,$4,$5,$6,$7,$8,$9)
+           on conflict (id) do update set type=$2, name=$3, website=$4, source_url=$5, platform_url=$6, platform_note=$7, blurb=$8, blurb_source=$9`, [id, ...vals]);
   await audit(a.email, "affiliation", id, before ? "update" : "create", before, vals);
   redirect(`/admin/affiliations?saved=1`);
 }

@@ -31,6 +31,8 @@ export default async function Affs({ searchParams }: { searchParams: Promise<Rec
         <div className="field"><label>Website</label><input name="website" type="url" defaultValue={a?.website ?? ""} /></div>
         <div className="field"><label>Platform URL</label><input name="platform_url" type="url" defaultValue={a?.platform_url ?? ""} /></div>
         <div className="field"><label>Platform note</label><input name="platform_note" type="text" defaultValue={a?.platform_note ?? ""} /></div>
+        <div className="field"><label>Description <span className="hint">1–2 neutral sentences from its own site</span></label><textarea name="blurb" defaultValue={a?.blurb ?? ""} /></div>
+        <div className="field"><label>Description source URL</label><input name="blurb_source" type="url" defaultValue={a?.blurb_source ?? ""} /></div>
       </div>
       <div><button className="btn small">{a ? "Save" : "Add affiliation"}</button></div>
     </form>
