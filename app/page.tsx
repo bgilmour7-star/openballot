@@ -15,10 +15,11 @@ export default async function Home({ searchParams }: { searchParams: Promise<Rec
   return (
     <div className="landing">
       <section className="hero-band">
+        <div className="hero-bg" aria-hidden><i /><i /><i /></div>
         <div className="wrap wide hero-grid">
           <div>
             <p className="eyebrow">Free · Non-partisan · No account needed to start</p>
-            <h1 className="hero-title">Start with the issues.<br />Choose the person.</h1>
+            <h1 className="hero-title">Start with <span className="hl">the issues</span>.<br />Choose the person.</h1>
             <p className="hero-sub">See every vote on your ballot, decide what matters most to you, then see which candidates have actually spoken to it. Every fact has a source, and we never tell you who to vote for.</p>
             {located ? (
               <div className="stack">
@@ -37,9 +38,14 @@ export default async function Home({ searchParams }: { searchParams: Promise<Rec
           <div className="preview" aria-hidden>
             <div className="pv-card">
               <p className="pv-k">Your top issues</p>
-              <div className="pv-rank"><span>1</span>Housing costs and supply</div>
-              <div className="pv-rank"><span>2</span>Community safety</div>
-              <div className="pv-rank"><span>3</span>Property taxes and spending</div>
+              <div className="pv-sort">
+                <div className="pv-nums"><span>1</span><span>2</span><span>3</span></div>
+                <div className="pv-rows">
+                  <div className="pv-row r-housing">Housing costs and supply</div>
+                  <div className="pv-row r-safety">Community safety</div>
+                  <div className="pv-row r-taxes">Property taxes</div>
+                </div>
+              </div>
             </div>
             <div className="pv-card pv-offset">
               <p className="pv-k">Speaks to your top issues</p>

@@ -1,7 +1,6 @@
 "use client";
 import type { Issue } from "@/lib/data";
 
-const LABELS = ["Strongly", "Lean", "Unsure", "Lean", "Strongly"];
 const host = (u: string) => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return u; } };
 
 export default function IssueDetail({ issue: i, rank, flip, value, onPick, onPrev, onNext }: {
@@ -11,19 +10,38 @@ export default function IssueDetail({ issue: i, rank, flip, value, onPick, onPre
   const left = flip ? i.pole_b : i.pole_a, right = flip ? i.pole_a : i.pole_b;
   const t = i.tradeoffs;
   const lt = t ? (flip ? t.b : t.a) : null, rt = t ? (flip ? t.a : t.b) : null;
-  const Side = ({ label, side }: { label: string; side: { gains: string[]; costs: string[] } | null }) => (
-    <div className="side">
-      <p className="side-pos">{label}</p>
-      {side && (
-        <>
-          <p className="side-h">Could help</p>
-          <ul>{side.gains.map((g) => <li key={g}>{g}</li>)}</ul>
-          <p className="side-h">Could cost</p>
-          <ul>{side.costs.map((c) => <li key={c}>{c}</li>)}</ul>
-        </>
-      )}
-    </div>
+  // k: 0 strongly left, 1 lean left, 2 unsure, 3 lean right, 4 strongly right (display order)
+  const canon = (k: number) => (flip ? 2 - k : k - 2);
+  const picked = value == null ? null : flip ? 2 - value : value + 2;
+  const Pick = ({ k, label, side }: { k: number; label: string; side: string }) => (
+    <button type="button" className={picked === k ? "on" : ""} aria-pressed={picked === k}
+      aria-label={k === 2 ? "Unsure or somewhere in between" : `${label}: ${side}`} onClick={() => onPick(canon(k))}>
+      {picked === k && <span aria-hidden>✓ </span>}{label}
+    </button>
   );
+  const Side = ({ letter, label, side, lean, strong }: { letter: string; label: string; side: { gains: string[]; costs: string[] } | null; lean: number; strong: number }) => {
+    const on = picked === lean || picked === strong;
+    return (
+      <div className={`side choice ${on ? "picked" : ""}`}>
+        <p className="side-pos"><span className="side-letter" aria-hidden>{letter}</span>{label}</p>
+        {side && (
+          <>
+            <p className="side-h">Could help</p>
+            <ul>{side.gains.map((g) => <li key={g}>{g}</li>)}</ul>
+            <p className="side-h">Could cost</p>
+            <ul>{side.costs.map((c) => <li key={c}>{c}</li>)}</ul>
+          </>
+        )}
+        <div className="side-pick" role="group" aria-label={`How much do you agree with: ${label}`}>
+          <p className="side-pick-q">{on ? "Your view" : "Closer to your view?"}</p>
+          <div className="side-pick-btns">
+            <Pick k={lean} label="Lean this way" side={label} />
+            <Pick k={strong} label="Strongly" side={label} />
+          </div>
+        </div>
+      </div>
+    );
+  };
   return (
     <div className="detail">
       <p className="xs muted" style={{ margin: 0, fontWeight: 700 }}>#{rank} on your list</p>
@@ -37,23 +55,13 @@ export default function IssueDetail({ issue: i, rank, flip, value, onPick, onPre
         </div>
         <h3 id={`q-${i.id}`}>{i.question}</h3>
         {t?.context && <p className="small muted" style={{ margin: "0 0 10px" }}>{t.context}</p>}
-        <div className="sides">
-          <Side label={left} side={lt} />
-          <Side label={right} side={rt} />
+        <div className="sides" role="group" aria-label={i.question}>
+          <Side letter="A" label={left} side={lt} lean={1} strong={0} />
+          <div className="side-or"><span>or</span></div>
+          <Side letter="B" label={right} side={rt} lean={3} strong={4} />
         </div>
-        <div className="scale big" role="group" aria-label={i.question}>
-          {[0, 1, 2, 3, 4].map((k) => {
-            const canonical = flip ? 2 - k : k - 2;
-            const side = k < 2 ? left : k > 2 ? right : "";
-            return (
-              <button key={k} className={value === canonical ? "on" : ""} aria-pressed={value === canonical}
-                aria-label={k === 2 ? "Unsure or in between" : `${LABELS[k]}: ${side}`} onClick={() => onPick(canonical)}>
-                {LABELS[k]}
-              </button>
-            );
-          })}
-        </div>
-        <p className="xs muted" style={{ margin: "8px 0 0" }}>Trade-offs are a balanced summary, not a prediction. Tap your choice again to clear it.</p>
+        <div className="unsure-pick"><Pick k={2} label="Unsure, or somewhere in between" side="" /></div>
+        <p className="xs muted" style={{ margin: "8px 0 0" }}>Pick the option closer to your view. Trade-offs are a balanced summary, not a prediction. Tap your choice again to clear it.</p>
       </section>
 
       <dl className="facts small">
