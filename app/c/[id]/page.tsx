@@ -27,9 +27,12 @@ export default async function CandidatePage({ params, searchParams }: { params: 
   const showBlurb = !!c.affiliation_blurb && (blurbGap?.n ?? 1) === 0;
   const showSummary = (completeness?.missing ?? 1) === 0 && !!c.summary;
   const issueTitle = Object.fromEntries(issues.map((i) => [i.id, i.title]));
-  const onIssues = positions.filter((p) => p.issue_id);
-  const other = positions.filter((p) => !p.issue_id);
-  const noStance = issues.filter((i) => !onIssues.some((p) => p.issue_id === i.id));
+  const own = positions.filter((p) => !p.inherited);
+  const party = positions.filter((p) => p.inherited && p.issue_id).sort((a, b) => issues.findIndex((i) => i.id === a.issue_id) - issues.findIndex((i) => i.id === b.issue_id));
+  const onIssues = own.filter((p) => p.issue_id);
+  const other = own.filter((p) => !p.issue_id);
+  const noStance = issues.filter((i) => !positions.some((p) => p.issue_id === i.id));
+  const partyNote = c.affiliation_id ? await one<{ positions_note: string | null }>(`select positions_note from affiliations where id=$1`, [c.affiliation_id]) : null;
   const Pos = ({ p }: { p: (typeof positions)[number] }) => (
     <div className="pos">
       <p className="xs muted" style={{ margin: 0, fontWeight: 700, textTransform: p.issue_id ? "none" : "capitalize" }}>{p.issue_id ? issueTitle[p.issue_id] : p.topic}</p>
@@ -60,10 +63,18 @@ export default async function CandidatePage({ params, searchParams }: { params: 
         <div>
           <section className="card">
             <h2>Positions on the issues</h2>
-            <p className="xs muted">Neutral summaries of public statements, each linked to its source. Not the candidate&apos;s exact words.</p>
-            {onIssues.length === 0 && <p className="muted">No sourced positions on this government&apos;s issues yet.</p>}
+            <p className="xs muted">Neutral summaries of public statements, each linked to its source. Not anyone&apos;s exact words.</p>
+            <h3 style={{ marginTop: 12 }}>{c.name}&apos;s own statements</h3>
+            {onIssues.length === 0 && other.length === 0 && <p className="small muted">None on record yet.</p>}
             {onIssues.map((p) => <Pos key={p.id} p={p} />)}
-            {other.length > 0 && <><h3 style={{ marginTop: 16 }}>Other topics</h3>{other.map((p) => <Pos key={p.id} p={p} />)}</>}
+            {other.length > 0 && <><p className="xs muted" style={{ margin: "12px 0 0", fontWeight: 700 }}>Other topics</p>{other.map((p) => <Pos key={p.id} p={p} />)}</>}
+            {c.affiliation_id && (
+              <>
+                <h3 style={{ marginTop: 20 }}>Positions from {c.affiliation_name}</h3>
+                <p className="xs muted" style={{ margin: "0 0 6px" }}>{c.affiliation_type === "party" ? "Party positions apply to all its candidates. MLAs usually vote with their party." : "Positions published by the elector organization for its endorsed candidates."}{partyNote?.positions_note ? ` ${partyNote.positions_note}` : ""}</p>
+                {party.length === 0 ? <p className="small muted">No published positions on these issues yet.</p> : party.map((p) => <Pos key={p.id} p={p} />)}
+              </>
+            )}
             {noStance.length > 0 && <p className="small muted" style={{ marginTop: 12 }}><b>No stance yet on:</b> {noStance.map((i) => i.title).join(" · ")}</p>}
           </section>
         </div>

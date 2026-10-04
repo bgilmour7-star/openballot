@@ -125,6 +125,7 @@ export default async function CandidatesPage({ params, searchParams }: { params:
                               ) : (
                                 <p className="xs muted" style={{ margin: "6px 0 0" }}>{pos.length ? "Positions on other topics only" : "No stance yet on any issue"}</p>
                               )}
+                              {pos.some((p) => p.inherited) && <p className="xs muted" style={{ margin: "4px 0 0" }}>Includes {c.affiliation_type === "party" ? "party" : "slate"} positions</p>}
                               {fit.agree + fit.differ > 0 && <p className="xs muted" style={{ margin: "4px 0 0" }}>Where tagged: {fit.agree} similar to your view, {fit.differ} different</p>}
                             </div>
                             <span className="chev" aria-hidden>›</span>

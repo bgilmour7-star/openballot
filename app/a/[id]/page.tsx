@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { one, q } from "@/lib/db";
-import { host } from "@/lib/data";
+import { host, SOURCE_LABEL } from "@/lib/data";
 import Avatar from "@/components/Avatar";
 
 export const dynamic = "force-dynamic";
@@ -11,6 +11,7 @@ export default async function AffiliationPage({ params }: { params: Promise<{ id
   if (!a) notFound();
   const gap = await one<{ n: number }>(`select count(*)::int n from affiliations where type=$1 and blurb is null`, [a.type]);
   const showBlurb = !!a.blurb && (gap?.n ?? 1) === 0;
+  const aps = await q<any>(`select ap.*, i.title, i.sort from affiliation_positions ap left join issues i on i.id=ap.issue_id where ap.affiliation_id=$1 order by i.sort`, [id]);
   const members = await q<any>(`select c.id, c.name, c.incumbent, c.summary, r.office, r.area_name, r.id race_id, g.name gov, g.id gov_id,
       (select count(*) from candidacies x where x.race_id=r.id and x.status<>'withdrawn' and x.summary is null)::int missing
     from candidacies c join races r on r.id=c.race_id join elections e on e.id=r.election_id join governments g on g.id=e.government_id
@@ -26,7 +27,21 @@ export default async function AffiliationPage({ params }: { params: Promise<{ id
         {a.leader && <p className="small muted" style={{ margin: 0 }}>Leader: <b>{a.leader}</b>{a.leader_riding ? ` · on the ballot in ${a.leader_riding}` : ""}{a.candidate_count ? ` · ${a.candidate_count} candidates across BC` : ""}</p>}
       </header>
       <div className="profile-layout">
-        <div>
+        <div className="stack">
+          {(aps.length > 0 || a.positions_note) && (
+            <section className="card">
+              <h2>Positions on the issues</h2>
+              {a.positions_note && <p className="xs muted">{a.positions_note}</p>}
+              {aps.length === 0 && <p className="small muted">No published positions on these issues yet.</p>}
+              {aps.map((p: any) => (
+                <div className="pos" key={p.id}>
+                  <p className="xs muted" style={{ margin: 0, fontWeight: 700 }}>{p.title}</p>
+                  <p style={{ margin: "2px 0" }}>{p.summary}</p>
+                  <p className="src">{SOURCE_LABEL[p.source_type] ?? "Source"}{p.source_url ? <> · <a href={p.source_url} target="_blank" rel="noreferrer">{host(p.source_url)}</a></> : null}</p>
+                </div>
+              ))}
+            </section>
+          )}
           <section className="card">
             <h2>{a.type === "party" ? `Candidates in ridings we cover (${members.length})` : `Endorsed candidates (${members.length})`}</h2>
             <p className="xs muted">Listed as they appear on official candidate lists. Being on this list says nothing about how these candidates compare to others.</p>

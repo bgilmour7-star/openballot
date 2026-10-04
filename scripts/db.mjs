@@ -82,6 +82,11 @@ await sql.query(`alter table affiliations add column if not exists blurb_source 
 await sql.query(`alter table affiliations add column if not exists leader text`);
 await sql.query(`alter table affiliations add column if not exists leader_riding text`);
 await sql.query(`alter table affiliations add column if not exists candidate_count int`);
+await sql.query(`alter table affiliations add column if not exists positions_note text`);
+await sql.query(`create table if not exists affiliation_positions (
+  id serial primary key, affiliation_id text not null references affiliations(id) on delete cascade,
+  issue_id text references issues(id) on delete set null, summary text not null, source_url text,
+  source_type text default 'party_policy_page', lean int, updated_at timestamptz default now())`);
 console.log("[db] schema ok");
 
 
@@ -109,6 +114,22 @@ async function syncProvincial() {
   if (ops.length) { await sql.transaction(ops); console.log(`[db] provincial synced (${ops.length})`); }
 }
 
+
+// Party positions come from the research file and are replaced on each build (file is the source of truth).
+async function syncPartyPositions() {
+  let f; try { f = read("party-positions-2026.json"); } catch { return; }
+  const ops = [];
+  for (const [aid, v] of Object.entries(f.parties ?? {})) {
+    ops.push(sql.query(`update affiliations set positions_note=$2 where id=$1`, [aid, v.statusNote ?? null]));
+    ops.push(sql.query(`delete from affiliation_positions where affiliation_id=$1`, [aid]));
+    for (const p of v.positions ?? [])
+      ops.push(sql.query(`insert into affiliation_positions (affiliation_id, issue_id, summary, source_url, source_type, lean)
+        select $1, $2, $3, $4, $5, $6 where exists (select 1 from affiliations where id=$1)`,
+        [aid, p.issueId, p.summary, p.sourceUrl ?? null, p.sourceType ?? "party_policy_page", p.lean ?? null]));
+  }
+  if (ops.length) { await sql.transaction(ops); console.log(`[db] party positions synced (${ops.length})`); }
+}
+
 async function backfillBios() {
   const ups = [];
   for (const f of ["bios-nanaimo.json", "bios-victoria.json", "bios-provincial.json"]) {
@@ -127,7 +148,7 @@ try {
   const ups = Object.entries(t.issues ?? {}).map(([id, v]) =>
     sql.query(`update issues set tradeoffs=$2 where id=$1 and tradeoffs is null`, [id, JSON.stringify(v)]));
   const [{ n: have }] = await sql`select count(*)::int as n from governments`;
-  if (have > 0) { if (ups.length) { await sql.transaction(ups); console.log(`[db] trade-offs backfilled (${ups.length})`); } await syncProvincial(); await backfillBios(); }
+  if (have > 0) { if (ups.length) { await sql.transaction(ups); console.log(`[db] trade-offs backfilled (${ups.length})`); } await syncProvincial(); await syncPartyPositions(); await backfillBios(); }
 } catch (e) { console.log("[db] no trade-offs file yet", String(e).slice(0, 80)); }
 
 const [{ n }] = await sql`select count(*)::int as n from governments`;
@@ -273,4 +294,5 @@ try {
   console.log("[db] trade-offs added");
 } catch {}
 await syncProvincial();
+await syncPartyPositions();
 await backfillBios();

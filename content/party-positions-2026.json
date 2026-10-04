@@ -1,0 +1,436 @@
+{
+  "generatedAt": "2026-10-03",
+  "note": "Positions paraphrased neutrally from each party's own published materials (platforms, policy pages, campaign releases) as of 2026-10-03; 'news' entries report explicit party commitments. lean places a position on the issue's viewQuestion scale: -2 strongly poleA, +2 strongly poleB, 0 mixed, null if it does not map clearly. Absence of an issue means no clear position was found, not that the party has none. Campaign positions may change; most parties had not published full platforms.",
+  "parties": {
+    "bc-ndp": {
+      "platformPublished": false,
+      "statusNote": "No full 2026 platform published; positions from 2026 campaign releases, the 'Action for You' page, and news reports.",
+      "positions": [
+        {
+          "issueId": "province-of-bc--cost-of-living",
+          "summary": "Would temporarily cut the provincial fuel tax by 10 cents a litre and have regulators cap excess fuel industry margins.",
+          "sourceUrl": "https://www.bcndp.ca/releases/ebys-plan-will-cut-gas-prices-30-cents-litre-crack-down-gouging",
+          "sourceType": "party_policy_page",
+          "lean": null
+        },
+        {
+          "issueId": "province-of-bc--health-care-access",
+          "summary": "Would triple its recruitment of U.S. health workers, adding loan forgiveness and relocation help, focused on cancer, emergency and rural care.",
+          "sourceUrl": "https://www.bcndp.ca/releases/eby-triple-us-health-worker-recruitment",
+          "sourceType": "party_policy_page",
+          "lean": -1
+        },
+        {
+          "issueId": "province-of-bc--housing-affordability",
+          "summary": "Would raise the speculation and vacancy tax, add a tax on condos left unsold over a year, and put revenue toward affordable homes.",
+          "sourceUrl": "https://www.bcndp.ca/releases/eby-turn-more-empty-condos-homes-people-can-afford",
+          "sourceType": "party_policy_page",
+          "lean": -1
+        },
+        {
+          "issueId": "province-of-bc--jobs-and-the-economy",
+          "summary": "Aims to double critical mineral exports, shorten mine approval timelines, expand Prince Rupert's port, and train a union-led mining workforce.",
+          "sourceUrl": "https://www.bcndp.ca/releases/eby-double-critical-mineral-exports-expand-port-prince-rupert",
+          "sourceType": "party_policy_page",
+          "lean": -1
+        },
+        {
+          "issueId": "province-of-bc--provincial-deficit-and-spending",
+          "summary": "Says it would reduce the deficit by growing the economy and ending wasteful spending; no timeline given.",
+          "sourceUrl": "https://globalnews.ca/news/12076424/bc-election-eby-cut-deficit-wasteful-spending/",
+          "sourceType": "news",
+          "lean": null
+        },
+        {
+          "issueId": "province-of-bc--addictions-and-mental-health",
+          "summary": "Says it is building involuntary care beds across the province and opening more youth mental health centres.",
+          "sourceUrl": "https://www.bcndp.ca/action-for-you",
+          "sourceType": "party_policy_page",
+          "lean": -1
+        },
+        {
+          "issueId": "province-of-bc--resources-and-the-environment",
+          "summary": "Supports continued LNG expansion, requiring new LNG projects to be net-zero-ready by 2030; aims to protect 30% of land by 2030.",
+          "sourceUrl": "https://www.bcndp.ca/releases/bc-conservatives-lng-plan-out-step-reality",
+          "sourceType": "party_policy_page",
+          "lean": 0
+        }
+      ]
+    },
+    "conservative-party": {
+      "platformPublished": false,
+      "statusNote": "Platform page says 'coming soon' and lists topic headings only; positions from 2026 campaign releases and news reports.",
+      "positions": [
+        {
+          "issueId": "province-of-bc--cost-of-living",
+          "summary": "Pledges no new or increased taxes and would remove PST on Canadian beer, wine and spirits.",
+          "sourceUrl": "https://conservativebc.ca/conservative-party-of-bc-pledges-no-new-taxes-on-british-columbians/",
+          "sourceType": "party_policy_page",
+          "lean": -1
+        },
+        {
+          "issueId": "province-of-bc--housing-affordability",
+          "summary": "Says it would lower the cost of building and buying homes by reducing taxes and red tape; opposes new housing taxes.",
+          "sourceUrl": "https://conservativebc.ca/statement-from-interim-leader-lorne-doerkson-on-the-ndps-housing-tax-plan/",
+          "sourceType": "party_policy_page",
+          "lean": 2
+        },
+        {
+          "issueId": "province-of-bc--jobs-and-the-economy",
+          "summary": "Would pass a 120-day permitting law for major projects and aim to double natural gas production by 2032.",
+          "sourceUrl": "https://conservativebc.ca/bc-conservatives-welcome-lng-canada-phase-2-we-will-treat-energy-as-an-urgent-mission/",
+          "sourceType": "party_policy_page",
+          "lean": -2
+        },
+        {
+          "issueId": "province-of-bc--provincial-deficit-and-spending",
+          "summary": "Says it would grow the economy to reduce the deficit, without raising taxes; leader declined to set a date for balance.",
+          "sourceUrl": "https://globalnews.ca/news/12076424/bc-election-eby-cut-deficit-wasteful-spending/",
+          "sourceType": "news",
+          "lean": null
+        },
+        {
+          "issueId": "province-of-bc--indigenous-rights-and-land",
+          "summary": "States it would repeal the Declaration on the Rights of Indigenous Peoples Act (DRIPA).",
+          "sourceUrl": "https://conservativebc.ca/every-conservative-party-of-bc-mla-approved-to-run-as-a-candidate/",
+          "sourceType": "party_policy_page",
+          "lean": 2
+        },
+        {
+          "issueId": "province-of-bc--resources-and-the-environment",
+          "summary": "Plans to cut red tape and speed project approvals to triple LNG production by 2035, with expanded First Nations ownership.",
+          "sourceUrl": "https://conservativebc.ca/make-british-columbia-an-energy-superpower/",
+          "sourceType": "party_policy_page",
+          "lean": -2
+        }
+      ]
+    },
+    "bc-green-party": {
+      "platformPublished": false,
+      "statusNote": "'Our Plan' priorities published, full platform 'coming soon'; positions from Our Plan and 2026 campaign releases.",
+      "positions": [
+        {
+          "issueId": "province-of-bc--cost-of-living",
+          "summary": "Would lift the freeze on $10-a-day child care spaces and reach universal free child care by 2031.",
+          "sourceUrl": "https://bcgreens.ca/announce-plan-to-lift-the-freeze-on-10-a-day-daycare-with-universal-free-child-care-by-2031-alongside-new-candidate-for-victoria-swan-lake/",
+          "sourceType": "party_policy_page",
+          "lean": 2
+        },
+        {
+          "issueId": "province-of-bc--health-care-access",
+          "summary": "Would open community health centres in every region, complete nurse-to-patient ratios, and keep public health funding in public care.",
+          "sourceUrl": "https://bcgreens.ca/our-plan/",
+          "sourceType": "party_policy_page",
+          "lean": -2
+        },
+        {
+          "issueId": "province-of-bc--housing-affordability",
+          "summary": "Would restart community and Indigenous housing funds aiming for 26,000 units yearly, and tie rent limits to the unit.",
+          "sourceUrl": "https://bcgreens.ca/announce-plan-to-support-renters-unveil-two-new-candidates-for-south-island/",
+          "sourceType": "party_policy_page",
+          "lean": -2
+        },
+        {
+          "issueId": "province-of-bc--jobs-and-the-economy",
+          "summary": "Favours community-owned renewable energy and union jobs over new fossil fuel expansion, redirecting public support from LNG.",
+          "sourceUrl": "https://bcgreens.ca/statement-from-emily-lowan-on-lng-canada-phase-2/",
+          "sourceType": "party_policy_page",
+          "lean": 2
+        },
+        {
+          "issueId": "province-of-bc--provincial-deficit-and-spending",
+          "summary": "Would raise revenue from large corporations and very wealthy people, including a windfall tax, to fund housing and health care.",
+          "sourceUrl": "https://bcgreens.ca/emily-lowan-announces-election-plans/",
+          "sourceType": "party_policy_page",
+          "lean": null
+        },
+        {
+          "issueId": "province-of-bc--addictions-and-mental-health",
+          "summary": "Would expand regulated supply, supervised consumption and voluntary treatment, decriminalize personal possession, and opposes involuntary care.",
+          "sourceUrl": "https://bcgreens.ca/announce-toxic-drugs-policy-alongside-former-chief-coroner-and-candidate-for-saanich-south-lisa-lapointe/",
+          "sourceType": "party_policy_page",
+          "lean": 2
+        },
+        {
+          "issueId": "province-of-bc--indigenous-rights-and-land",
+          "summary": "Would implement DRIPA through further legislation and co-develop a dispute-resolution mechanism with Indigenous peoples.",
+          "sourceUrl": "https://bcgreens.ca/statement-on-national-day-for-truth-and-reconciliation/",
+          "sourceType": "party_policy_page",
+          "lean": -2
+        },
+        {
+          "issueId": "province-of-bc--resources-and-the-environment",
+          "summary": "Would stop new fossil fuel development, fully fund old-growth logging deferrals, and update mining laws to protect communities.",
+          "sourceUrl": "https://bcgreens.ca/our-plan/",
+          "sourceType": "party_policy_page",
+          "lean": 2
+        }
+      ]
+    },
+    "centrebc": {
+      "platformPublished": false,
+      "statusNote": "No platform published; positions from party statements dated Nov 2025 to Aug 2026, before the current leader took over.",
+      "positions": [
+        {
+          "issueId": "province-of-bc--cost-of-living",
+          "summary": "Would remove PST on food production and farm equipment and aims to make $10-a-day child care available to every family.",
+          "sourceUrl": "https://www.centrebc.ca/news/budget-2026-managing-decline-is-not-leadership/",
+          "sourceType": "party_policy_page",
+          "lean": 0
+        },
+        {
+          "issueId": "province-of-bc--health-care-access",
+          "summary": "Would expand home care for seniors and reduce doctors' paperwork.",
+          "sourceUrl": "https://www.centrebc.ca/news/budget-2026-managing-decline-is-not-leadership/",
+          "sourceType": "party_policy_page",
+          "lean": null
+        },
+        {
+          "issueId": "province-of-bc--crime-and-public-safety",
+          "summary": "Proposed a three-part extortion plan: a joint financial-police-border unit, business security grants, and a dedicated prosecution team.",
+          "sourceUrl": "https://www.centrebc.ca/news/news-release/centrebc-unveils-3-step-plan-to-crush-transnational-extortion-terrorizing-surrey/",
+          "sourceType": "party_policy_page",
+          "lean": -1
+        },
+        {
+          "issueId": "province-of-bc--indigenous-rights-and-land",
+          "summary": "Does not commit to repealing DRIPA; favours one provincial reconciliation framework, sector agreements, and clear project timelines.",
+          "sourceUrl": "https://www.centrebc.ca/news/statement-reconciliation-certainty-and-prosperity/",
+          "sourceType": "party_policy_page",
+          "lean": 0
+        },
+        {
+          "issueId": "province-of-bc--resources-and-the-environment",
+          "summary": "Supports pipelines only with conditions: Indigenous participation, an energy future fund, safety and climate safeguards, and local jobs.",
+          "sourceUrl": "https://www.centrebc.ca/news/ottawa-and-bc-just-moved-toward-centrebc-pipeline-conditions/",
+          "sourceType": "party_policy_page",
+          "lean": 0
+        }
+      ]
+    },
+    "onebc": {
+      "platformPublished": false,
+      "statusNote": "No formal platform document; positions from the party's 'Priorities' page.",
+      "positions": [
+        {
+          "issueId": "province-of-bc--cost-of-living",
+          "summary": "Would cut every income tax bracket, including corporate, by 25% and reduce PST by two points.",
+          "sourceUrl": "https://1bc.ca/priorities",
+          "sourceType": "party_policy_page",
+          "lean": -2
+        },
+        {
+          "issueId": "province-of-bc--health-care-access",
+          "summary": "Supports private health care alongside public care and shifting administrative spending to frontline staff.",
+          "sourceUrl": "https://1bc.ca/priorities",
+          "sourceType": "party_policy_page",
+          "lean": 2
+        },
+        {
+          "issueId": "province-of-bc--housing-affordability",
+          "summary": "Would eliminate the Step Code building requirements and block municipal rent control programs.",
+          "sourceUrl": "https://1bc.ca/priorities",
+          "sourceType": "party_policy_page",
+          "lean": 2
+        },
+        {
+          "issueId": "province-of-bc--jobs-and-the-economy",
+          "summary": "Would audit provincial regulations to cut them, reduce stumpage fees, and speed forestry permits.",
+          "sourceUrl": "https://1bc.ca/priorities",
+          "sourceType": "party_policy_page",
+          "lean": -2
+        },
+        {
+          "issueId": "province-of-bc--provincial-deficit-and-spending",
+          "summary": "Would balance the budget within four years, aim for surpluses, and use part of surpluses to repay debt.",
+          "sourceUrl": "https://1bc.ca/priorities",
+          "sourceType": "party_policy_page",
+          "lean": -2
+        },
+        {
+          "issueId": "province-of-bc--crime-and-public-safety",
+          "summary": "Would focus justice resources on repeat and violent offenders and have prosecutors weigh past charges as danger indicators.",
+          "sourceUrl": "https://1bc.ca/priorities",
+          "sourceType": "party_policy_page",
+          "lean": -2
+        },
+        {
+          "issueId": "province-of-bc--addictions-and-mental-health",
+          "summary": "Would end safe supply and consumption sites, convert sites to recovery centres, and use involuntary rehab for severe addiction.",
+          "sourceUrl": "https://1bc.ca/priorities",
+          "sourceType": "party_policy_page",
+          "lean": -2
+        },
+        {
+          "issueId": "province-of-bc--indigenous-rights-and-land",
+          "summary": "Would repeal DRIPA, halt voluntary transfers of land and resources to band governments, and restore oversight of band spending.",
+          "sourceUrl": "https://1bc.ca/priorities",
+          "sourceType": "party_policy_page",
+          "lean": 2
+        },
+        {
+          "issueId": "province-of-bc--resources-and-the-environment",
+          "summary": "Would raise the annual allowable forest cut and approve an oil pipeline to Prince Rupert or Kitimat.",
+          "sourceUrl": "https://1bc.ca/priorities",
+          "sourceType": "party_policy_page",
+          "lean": -2
+        }
+      ]
+    },
+    "communist-party-of-bc": {
+      "platformPublished": true,
+      "statusNote": "Positions from the party's 'Our Platform' page (undated).",
+      "positions": [
+        {
+          "issueId": "province-of-bc--cost-of-living",
+          "summary": "Would remove income tax on earnings under $50,000, cap rents at 20% of income, and double social assistance rates.",
+          "sourceUrl": "https://cpcbc.ca/our-platform/",
+          "sourceType": "party_platform",
+          "lean": 1
+        },
+        {
+          "issueId": "province-of-bc--health-care-access",
+          "summary": "Would end private contracting in health care, add hospital beds, and provide universal pharmacare, dental and optical coverage.",
+          "sourceUrl": "https://cpcbc.ca/our-platform/",
+          "sourceType": "party_platform",
+          "lean": -2
+        },
+        {
+          "issueId": "province-of-bc--housing-affordability",
+          "summary": "Would build 100,000 social and low-income public housing units and ban renovictions and no-fault evictions.",
+          "sourceUrl": "https://cpcbc.ca/our-platform/",
+          "sourceType": "party_platform",
+          "lean": -2
+        },
+        {
+          "issueId": "province-of-bc--jobs-and-the-economy",
+          "summary": "Would raise minimum wage to $30, create union jobs through public investment, and retrain fossil fuel workers.",
+          "sourceUrl": "https://cpcbc.ca/our-platform/",
+          "sourceType": "party_platform",
+          "lean": 1
+        },
+        {
+          "issueId": "province-of-bc--provincial-deficit-and-spending",
+          "summary": "Would fund services through higher taxes on wealthy people and corporations and end LNG subsidies.",
+          "sourceUrl": "https://cpcbc.ca/our-platform/",
+          "sourceType": "party_platform",
+          "lean": null
+        },
+        {
+          "issueId": "province-of-bc--crime-and-public-safety",
+          "summary": "Would reduce police spending, increase civilian oversight of police, and remove police from schools.",
+          "sourceUrl": "https://cpcbc.ca/our-platform/",
+          "sourceType": "party_platform",
+          "lean": 2
+        },
+        {
+          "issueId": "province-of-bc--addictions-and-mental-health",
+          "summary": "Would decriminalize drugs, expand safer supply and harm reduction, and end involuntary care in favour of treatment on request.",
+          "sourceUrl": "https://cpcbc.ca/our-platform/",
+          "sourceType": "party_platform",
+          "lean": 2
+        },
+        {
+          "issueId": "province-of-bc--indigenous-rights-and-land",
+          "summary": "Supports Land Back and Indigenous title, keeping DRIPA, and requiring Indigenous approval for resource extraction.",
+          "sourceUrl": "https://cpcbc.ca/our-platform/",
+          "sourceType": "party_platform",
+          "lean": -2
+        },
+        {
+          "issueId": "province-of-bc--resources-and-the-environment",
+          "summary": "Would cut emissions, prioritize renewables, cancel LNG subsidies and the Ksi Lisims project, and protect old-growth forests.",
+          "sourceUrl": "https://cpcbc.ca/our-platform/",
+          "sourceType": "party_platform",
+          "lean": 2
+        },
+        {
+          "issueId": "province-of-bc--school-funding-and-space",
+          "summary": "Would raise per-student funding by $1,000, reduce class sizes, and hire more teachers and support staff.",
+          "sourceUrl": "https://cpcbc.ca/our-platform/",
+          "sourceType": "party_platform",
+          "lean": 2
+        }
+      ]
+    },
+    "christian-heritage-party-of-bc": {
+      "platformPublished": true,
+      "statusNote": "Positions from the party's 'Platform priorities' page.",
+      "positions": [
+        {
+          "issueId": "province-of-bc--cost-of-living",
+          "summary": "Would reduce taxes, fees and regulatory costs, opposing raising costs and then returning money through programs.",
+          "sourceUrl": "https://www.chpbc.ca/platform-priorities/",
+          "sourceType": "party_platform",
+          "lean": -2
+        },
+        {
+          "issueId": "province-of-bc--health-care-access",
+          "summary": "Prioritizes timely care, home and palliative care, and shifting administrative spending to front-line care.",
+          "sourceUrl": "https://www.chpbc.ca/platform-priorities/",
+          "sourceType": "party_platform",
+          "lean": null
+        },
+        {
+          "issueId": "province-of-bc--housing-affordability",
+          "summary": "Would use suitable Crown land near communities for housing and fast-track approvals while cutting government-imposed building costs.",
+          "sourceUrl": "https://www.chpbc.ca/platform-priorities/",
+          "sourceType": "party_platform",
+          "lean": 1
+        },
+        {
+          "issueId": "province-of-bc--jobs-and-the-economy",
+          "summary": "Would streamline permitting, support resource and trades sectors, and expand apprenticeships and training for B.C. residents.",
+          "sourceUrl": "https://www.chpbc.ca/platform-priorities/",
+          "sourceType": "party_platform",
+          "lean": -1
+        },
+        {
+          "issueId": "province-of-bc--provincial-deficit-and-spending",
+          "summary": "Would review administrative and consulting spending, end failing programs, and restore fiscal discipline while protecting core services.",
+          "sourceUrl": "https://www.chpbc.ca/platform-priorities/",
+          "sourceType": "party_platform",
+          "lean": -1
+        },
+        {
+          "issueId": "province-of-bc--crime-and-public-safety",
+          "summary": "Would focus police and prosecutors on violent and repeat offenders and better coordinate with mental health and addiction services.",
+          "sourceUrl": "https://www.chpbc.ca/platform-priorities/",
+          "sourceType": "party_platform",
+          "lean": -1
+        },
+        {
+          "issueId": "province-of-bc--addictions-and-mental-health",
+          "summary": "Makes recovery the goal: more detox and treatment, and involuntary admission when legal standards are met.",
+          "sourceUrl": "https://www.chpbc.ca/platform-priorities/",
+          "sourceType": "party_platform",
+          "lean": -2
+        },
+        {
+          "issueId": "province-of-bc--indigenous-rights-and-land",
+          "summary": "Would repeal DRIPA and replace it with a defined reconciliation framework including landowners, businesses and local governments.",
+          "sourceUrl": "https://www.chpbc.ca/platform-priorities/",
+          "sourceType": "party_platform",
+          "lean": 2
+        },
+        {
+          "issueId": "province-of-bc--resources-and-the-environment",
+          "summary": "Supports forestry, mining and LNG with environmental standards, predictable permitting timelines, and timely approval decisions.",
+          "sourceUrl": "https://www.chpbc.ca/platform-priorities/",
+          "sourceType": "party_platform",
+          "lean": -1
+        }
+      ]
+    },
+    "canwest-party": {
+      "platformPublished": false,
+      "statusNote": "No party website or published positions found.",
+      "positions": []
+    },
+    "freedom-party-of-bc": {
+      "platformPublished": false,
+      "statusNote": "Party website could not be reviewed; no published positions confirmed.",
+      "positions": []
+    }
+  }
+}

@@ -20,7 +20,7 @@ export type Issue = {
   question: string; pole_a: string; pole_b: string; sources: string[]; sort: number;
   tradeoffs: { context?: string; a: { gains: string[]; costs: string[] }; b: { gains: string[]; costs: string[] } } | null;
 };
-export type Position = { id: number; candidacy_id: string; issue_id: string | null; topic: string | null; summary: string; source_url: string | null; source_type: string; lean: number | null };
+export type Position = { id: number; candidacy_id: string; issue_id: string | null; topic: string | null; summary: string; source_url: string | null; source_type: string; lean: number | null; inherited?: boolean; affiliation_name?: string | null };
 
 export const getGov = (id: string) => one<Gov>(`select * from governments where id=$1`, [id]);
 export const getIssues = (govId: string) =>
@@ -41,8 +41,16 @@ const CAND_SELECT = `select c.*, a.name as affiliation_name, a.type as affiliati
 export const candidatesForRaces = (raceIds: string[]) =>
   raceIds.length ? q<Candidate>(`${CAND_SELECT} where c.race_id = any($1) and c.status <> 'withdrawn'`, [raceIds]) : Promise.resolve([] as Candidate[]);
 export const getCandidate = (id: string) => one<Candidate>(`${CAND_SELECT} where c.id=$1`, [id]);
+/** A candidate's own positions plus their affiliation's positions (labelled as inherited). */
 export const positionsFor = (candIds: string[]) =>
-  candIds.length ? q<Position>(`select * from positions where candidacy_id = any($1) order by id`, [candIds]) : Promise.resolve([] as Position[]);
+  candIds.length ? q<Position>(`
+    select id, candidacy_id, issue_id, topic, summary, source_url, source_type, lean, false as inherited, null::text as affiliation_name
+      from positions where candidacy_id = any($1)
+    union all
+    select -ap.id as id, c.id as candidacy_id, ap.issue_id, null as topic, ap.summary, ap.source_url, ap.source_type, ap.lean, true as inherited, a.name as affiliation_name
+      from candidacies c join affiliation_positions ap on ap.affiliation_id=c.affiliation_id join affiliations a on a.id=c.affiliation_id
+      where c.id = any($1)
+    order by inherited, id`, [candIds]) : Promise.resolve([] as Position[]);
 
 export async function rankingFor(voterId: string | undefined, govId: string): Promise<string[] | null> {
   if (!voterId) return null;
@@ -84,6 +92,7 @@ export const SOURCE_LABEL: Record<string, string> = {
   official_guide: "Official candidate guide",
   affiliation_platform: "Affiliation platform",
   party_platform: "Party platform",
+  party_policy_page: "Party policy page",
   news: "News Q&A or coverage",
   other: "Other source",
 };
