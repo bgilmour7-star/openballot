@@ -7,8 +7,9 @@ import IssueDetail from "./IssueDetail";
 
 const TOP = 3;
 
-export default function RankIssues({ govId, issues, initialOrder, initialViews, saved, flip }: {
+export default function RankIssues({ govId, issues, initialOrder, initialViews, saved, flip, community }: {
   govId: string; issues: Issue[]; initialOrder: string[]; initialViews: Record<string, number>; saved: boolean; flip: Record<string, boolean>;
+  community?: Record<string, number>;
 }) {
   const byId = Object.fromEntries(issues.map((i) => [i.id, i]));
   const [order, setOrder] = useState(initialOrder);
@@ -152,6 +153,7 @@ export default function RankIssues({ govId, issues, initialOrder, initialViews, 
                     {views[id] != null
                       ? <span className="xs view-state done"><span className="vi" aria-hidden>✓</span>View added</span>
                       : <span className="xs view-state todo"><span className="vi" aria-hidden>+</span>Add your view</span>}
+                    {community?.[id] && <span className="comm-badge">#{community[id]} in your community</span>}
                   </button>
                   <button className="icon-btn arrow" aria-label={`Move ${i.title} up`} disabled={idx === 0} onClick={() => moveTo(id, idx - 1)}>↑</button>
                   <button className="icon-btn arrow" aria-label={`Move ${i.title} down`} disabled={idx === order.length - 1} onClick={() => moveTo(id, idx + 1)}>↓</button>
@@ -162,6 +164,7 @@ export default function RankIssues({ govId, issues, initialOrder, initialViews, 
         </ol>
         <div className="row" style={{ marginTop: 12 }}>
           <Link className="btn" href={`/g/${govId}/candidates`}>See candidates</Link>
+          {everSaved && <Link className="btn secondary" href={`/g/${govId}/community`}>What your neighbours think</Link>}
           <span className={`small ${topDone < TOP ? "nudge" : "muted"}`}>{topDone < TOP ? `Add your view on ${TOP - topDone} more of your top ${TOP}` : `✓ Views added on your top ${TOP}`}</span>
         </div>
         {!everSaved && <p className="xs muted" style={{ marginTop: 8 }}>Saved on this device as you go. <Link href="/signin">Sign in</Link> to make your ranking count toward your community&apos;s list.</p>}

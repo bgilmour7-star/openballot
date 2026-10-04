@@ -83,6 +83,7 @@ await sql.query(`alter table affiliations add column if not exists leader text`)
 await sql.query(`alter table affiliations add column if not exists leader_riding text`);
 await sql.query(`alter table affiliations add column if not exists candidate_count int`);
 await sql.query(`alter table affiliations add column if not exists positions_note text`);
+await sql.query(`alter table voters add column if not exists exclude_from_results boolean default false`);
 await sql.query(`create table if not exists affiliation_positions (
   id serial primary key, affiliation_id text not null references affiliations(id) on delete cascade,
   issue_id text references issues(id) on delete set null, summary text not null, source_url text,

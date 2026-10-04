@@ -127,3 +127,12 @@ export async function setRequestStatus(f: FormData) {
   await audit(a.email, "claim_request", id, "update", before, { status: s(f, "status", 20) });
   redirect(`/admin/requests?saved=1`);
 }
+
+export async function setExclude(f: FormData) {
+  const a = await requireAdmin();
+  const email = (s(f, "email", 200) ?? "").toLowerCase();
+  const exclude = f.get("exclude") === "true";
+  await q(`update voters set exclude_from_results=$2 where lower(email)=$1`, [email, exclude]);
+  await audit(a.email, "voter", email, exclude ? "exclude" : "include", null, { exclude });
+  redirect(`/admin/community?saved=1`);
+}
