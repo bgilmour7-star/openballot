@@ -617,3 +617,22 @@ a.speakers:hover { border-color: var(--ink); }
 .linklike.xs { font-size: 13px; margin-left: 4px; }
 .linklike:hover { color: var(--accent); }
 .linklike:focus-visible { outline: 3px solid var(--action); outline-offset: 2px; border-radius: 3px; }
+
+/* Landing: Why we built this (values split across candidates) */
+.why-kicker { margin: 0 0 8px; font-size: 13px; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; color: var(--accent-ink); }
+.why-title { font-size: 34px; line-height: 1.1; margin: 0 0 10px; max-width: 760px; }
+.why-you { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin: 4px 0 16px; }
+.why-chip { font-size: 15px; font-weight: 700; border-radius: 999px; padding: 6px 14px; background: var(--selected); color: var(--accent-ink); }
+.why-cards { display: grid; gap: 14px; }
+.why-card { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 16px 20px; }
+.why-cname { margin: 0 0 6px; font-weight: 700; font-size: 18px; }
+.why-row { display: flex; justify-content: space-between; gap: 10px; padding: 8px 0; border-top: 1px solid #EEEBF4; font-size: 15px; }
+.why-row:first-of-type { border-top: 0; }
+.why-st { white-space: nowrap; }
+.why-with { color: var(--accent-ink); font-weight: 700; }
+.why-diff { color: var(--ink); font-weight: 700; }
+.why-none { color: var(--muted); }
+.why-takeaways { display: grid; gap: 18px; margin-top: 24px; padding-top: 22px; border-top: 1px solid var(--line); }
+.why-takeaways h3 { font-size: 17px; margin: 0 0 4px; }
+.why-takeaways p { margin: 0; color: var(--muted); }
+@media (min-width: 760px) { .why-cards, .why-takeaways { grid-template-columns: repeat(3, minmax(0, 1fr)); } .why-title { font-size: 40px; } }

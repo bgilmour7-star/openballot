@@ -64,12 +64,33 @@ export default async function Home({ searchParams }: { searchParams: Promise<Rec
       </section>
 
       <section className="wrap wide band">
-        <h2 className="band-title">Why we built this</h2>
-        <p className="band-sub">Local elections decide your rent, your roads and your schools, but they are the hardest to research.</p>
-        <div className="why-grid">
-          <div className="why-item"><span className="ico-tile"><LandingIcon name="people" /></span><div><h3>Dozens of names</h3><p>Mayor, council and school board races can put dozens of candidates on one ballot.</p></div></div>
-          <div className="why-item"><span className="ico-tile"><LandingIcon name="sign" /></span><div><h3>A lawn sign is a name</h3><p>Not a position. Positions are spread across dozens of websites and forums.</p></div></div>
-          <div className="why-item"><span className="ico-tile"><LandingIcon name="calendar" /></span><div><h3>More than one election</h3><p>Local, school board and provincial races can land weeks apart. Openballot puts every race you can vote in on one ballot.</p></div></div>
+        <p className="why-kicker">Why we built this</p>
+        <h2 className="why-title">Your values don&apos;t come packaged in one candidate.</h2>
+        <p className="band-sub">Most voters agree with different candidates on different things. Campaigns don&apos;t show you that, and piecing it together across dozens of websites takes hours most people don&apos;t have.</p>
+        <div className="why-you">
+          <span className="muted"><b>Say you care most about</b></span>
+          <span className="why-chip">1 · Housing</span><span className="why-chip">2 · Safety</span><span className="why-chip">3 · Parks and trees</span>
+        </div>
+        <div className="why-cards" aria-label="Example: three candidates, each matching you on different issues">
+          {[
+            ["Candidate A", [["Housing", "with"], ["Safety", "diff"], ["Parks and trees", "none"]]],
+            ["Candidate B", [["Housing", "none"], ["Safety", "with"], ["Parks and trees", "with"]]],
+            ["Candidate C", [["Housing", "with"], ["Safety", "none"], ["Parks and trees", "diff"]]],
+          ].map(([name, rows]) => (
+            <article key={name as string} className="why-card">
+              <p className="why-cname">{name as string}</p>
+              {(rows as string[][]).map(([issue, k]) => (
+                <div key={issue} className="why-row"><span>{issue}</span>
+                  <span className={`why-st why-${k}`}>{k === "with" ? "● With you" : k === "diff" ? "○ Different" : "– Nothing said"}</span></div>
+              ))}
+            </article>
+          ))}
+        </div>
+        <p className="xs muted" style={{ fontStyle: "italic", marginTop: 8 }}>Example only.</p>
+        <div className="why-takeaways">
+          <div><h3>You decide what matters most.</h3><p>When no one matches on everything, your ranking tells you which match counts.</p></div>
+          <div><h3>Council is a team, not one pick.</h3><p>You can usually vote for several councillors. Spreading your votes is how your mix of priorities reaches the table.</p></div>
+          <div><h3>Silence counts too.</h3><p>&quot;Nothing said&quot; on your top issue is information. We show it instead of hiding it.</p></div>
         </div>
       </section>
 
