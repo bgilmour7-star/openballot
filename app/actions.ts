@@ -14,7 +14,16 @@ export async function locate(formData: FormData) {
   if (!code) redirect("/?err=postal");
   const v = await ensureVoter(ref);
   let loc;
-  try { loc = await lookupPostal(code!); } catch { redirect(`/?err=lookup&postal=${code}`); }
+  try { loc = await lookupPostal(code!); } catch (e: any) {
+    console.error(`[locate] postal lookup failed for ${code}:`, e?.message ?? e);
+    await logEvent(v.id, "lookup_failed", { postal: code, status: e?.status ?? null });
+    // A code the boundary service doesn't know (often a brand-new one) can still be placed by street address.
+    if (e?.status === 404) {
+      await q(`update voters set postal_code=$2 where id=$1`, [v.id, code]);
+      redirect(`/where?reason=unknown`);
+    }
+    redirect(`/?err=lookup&postal=${code}`);
+  }
   await q(`update voters set postal_code=$2, city=$3, riding=$4, located_by='postal' where id=$1`, [v.id, code, loc!.city, loc!.riding]);
   await logEvent(v.id, "lookup", { postal: code!.slice(0, 3), city: loc!.city, riding: loc!.riding, ambiguous: loc!.ambiguous });
   if (loc!.ambiguous || (!loc!.city && !loc!.riding)) redirect(`/where?reason=${loc!.ambiguous ? "boundary" : "outside"}`);

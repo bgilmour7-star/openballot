@@ -58,6 +58,7 @@ export default async function CandidatePage({ params, searchParams }: { params: 
         </div>
         </div>
       </header>
+      <p className="page-intro">This candidate&apos;s background and positions on the issues, each linked to where it was said. If nothing is on record for an issue, we say so.</p>
 
       <div className="profile-layout">
         <div>

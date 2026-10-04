@@ -4,6 +4,7 @@ import { getVoter } from "@/lib/voter";
 
 export const dynamic = "force-dynamic";
 const MSG: Record<string, string> = {
+  unknown: "We couldn't find that postal code. It may be new, since postal codes for new buildings can take a while to reach the maps we use. Your street address will work instead.",
   boundary: "Your postal code is near a city or riding boundary, so we need your street address to be sure which votes are yours.",
   outside: "That postal code doesn't look like it's in the City of Nanaimo or the City of Victoria. If you think it is, try your street address.",
   address: "Please enter a street address, like 455 Wallace St, Nanaimo.",

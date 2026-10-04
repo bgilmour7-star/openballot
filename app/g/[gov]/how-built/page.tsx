@@ -18,9 +18,10 @@ export default async function HowBuilt({ params }: { params: Promise<{ gov: stri
   const topShare = c.refs.find((r) => r.source !== "direct");
   return (
     <div className="wrap">
-      <p className="small" style={{ margin: 0 }}><Link href="/votes">← Your votes</Link></p>
+      <p className="small" style={{ margin: 0 }}><Link href="/votes">← Your elections</Link></p>
       <h1>{gov.name}</h1>
       <GovTabs gov={govId} on="how" />
+      <p className="page-intro">Where this election&apos;s issue list came from, and how candidate positions were found and checked.</p>
       <div className="card">
         <h2>How this list was built</h2>
         <p>{gov.how_built}</p>

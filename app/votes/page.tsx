@@ -27,7 +27,8 @@ export default async function Votes() {
 
   return (
     <div className="wrap wide">
-      <h1>Your votes</h1>
+      <h1>Your elections</h1>
+      <p className="page-intro">Every election you can vote in, based on your location. For each one, put the issues in your order, then see which candidates have spoken to them. Dates and how to vote are at the bottom of each card.</p>
       <div className="loc-bar">
         <div>
           <div className="loc-code">{postal ?? "Your street address"}</div>

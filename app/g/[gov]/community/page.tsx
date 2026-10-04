@@ -45,9 +45,10 @@ export default async function CommunityPage({ params, searchParams }: { params: 
 
   return (
     <div className="wrap wide">
-      <p className="small" style={{ margin: 0 }}><Link href="/votes">← Your votes</Link></p>
+      <p className="small" style={{ margin: 0 }}><Link href="/votes">← Your elections</Link></p>
       <h1>{gov.name}</h1>
       <GovTabs gov={govId} on="community" />
+      <p className="page-intro">How voters in this area rank the issues, combined. It appears once {THRESHOLD} people with free accounts have ranked, and it never changes the order of candidates.</p>
       {sp.counted && counted && <p className="counted-note">✓ Your ranking now counts in {gov.name}&apos;s community list. Thanks for adding it.</p>}
       <div className="cands-layout">
         <div>

@@ -25,7 +25,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           <div className="wrap wide">
             <Link href="/" className="brand"><span className="dot" aria-hidden />Openballot <span className="tag">Alpha</span></Link>
             <nav className="top">
-              <Link href="/votes">Your votes</Link>
+              <Link href="/votes">Elections</Link>
               {user ? <Link href="/account">Account</Link> : <Link href="/signin">Sign in</Link>}
             </nav>
           </div>

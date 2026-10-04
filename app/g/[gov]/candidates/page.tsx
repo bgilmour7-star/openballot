@@ -60,9 +60,10 @@ export default async function CandidatesPage({ params, searchParams }: { params:
 
   return (
     <div className="wrap wide">
-      <p className="small" style={{ margin: 0 }}><Link href="/votes">← Your votes</Link></p>
+      <p className="small" style={{ margin: 0 }}><Link href="/votes">← Your elections</Link></p>
       <h1>{gov.name}</h1>
       <GovTabs gov={govId} on="candidates" />
+      <p className="page-intro">Everyone running, grouped by how much they&apos;ve said about your top 3 issues. Groups are never a ranking or a recommendation. Tap a name to see their positions and where each came from.</p>
       <div className="cands-layout">
         <div>
           {!ranking && (

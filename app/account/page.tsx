@@ -15,10 +15,11 @@ export default async function Account() {
   return (
     <div className="wrap">
       <h1>Your account</h1>
+      <p className="page-intro">Your sign-in details and the rankings you&apos;ve saved. Your rankings count toward each area&apos;s community list, but your name and email are never shown.</p>
       <div className="card">
         <p>Signed in as <b>{user.email}</b></p>
         <p className="small muted">Rankings saved: {rankings.length ? rankings.map((r) => r.name).join(", ") : "none yet"}.</p>
-        <div className="row"><Link className="btn" href="/votes">Your votes</Link>{admin && <Link className="btn secondary" href="/admin">Admin</Link>}<SignOut /></div>
+        <div className="row"><Link className="btn" href="/votes">Your elections</Link>{admin && <Link className="btn secondary" href="/admin">Admin</Link>}<SignOut /></div>
       </div>
       <p className="small muted">Want your data deleted? Use <b>Send feedback</b> below with the words &quot;delete my data&quot; and the email above, and it will be removed within 7 days.</p>
     </div>

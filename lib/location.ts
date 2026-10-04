@@ -37,7 +37,7 @@ function fromBoundaries(list: any[]) {
 
 async function getJson(url: string) {
   const res = await fetch(url, { headers: { accept: "application/json" }, next: { revalidate: 86400 } });
-  if (!res.ok) throw new Error(`lookup failed ${res.status}`);
+  if (!res.ok) throw Object.assign(new Error(`lookup failed ${res.status}`), { status: res.status });
   return res.json();
 }
 

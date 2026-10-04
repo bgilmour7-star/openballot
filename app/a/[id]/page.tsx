@@ -20,12 +20,13 @@ export default async function AffiliationPage({ params }: { params: Promise<{ id
   const typeLabel = a.type === "party" ? "Registered provincial party" : "Elector organization (local civic slate)";
   return (
     <div className="wrap wide">
-      <p className="small" style={{ margin: 0 }}><Link href="/votes">← Your votes</Link></p>
+      <p className="small" style={{ margin: 0 }}><Link href="/votes">← Your elections</Link></p>
       <header className="cand-hero">
         <p className="xs muted" style={{ margin: 0 }}>{typeLabel}</p>
         <h1 style={{ margin: "2px 0 6px" }}>{a.name}</h1>
         {a.leader && <p className="small muted" style={{ margin: 0 }}>Leader: <b>{a.leader}</b>{a.leader_riding ? ` · on the ballot in ${a.leader_riding}` : ""}{a.candidate_count ? ` · ${a.candidate_count} candidates across BC` : ""}</p>}
       </header>
+      <p className="page-intro">{a.type === "party" ? "A provincial party: who leads it, the positions it has published, and its candidates in the ridings Openballot covers." : "A local slate of candidates running together: what it says it stands for, and who is running with it."}</p>
       <div className="profile-layout">
         <div className="stack">
           {(aps.length > 0 || a.positions_note) && (
