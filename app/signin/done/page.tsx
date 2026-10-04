@@ -4,7 +4,9 @@ import { linkAccount } from "@/app/actions";
 export default function Done() {
   const [failed, setFailed] = useState(false);
   useEffect(() => {
-    linkAccount().then((r) => { if (r?.ok) window.location.href = "/votes"; else setFailed(true); }).catch(() => setFailed(true));
+    const raw = new URLSearchParams(window.location.search).get("next") || "/votes";
+    const next = raw.startsWith("/") && !raw.startsWith("//") ? raw : "/votes";
+    linkAccount().then((r) => { if (r?.ok) window.location.href = next + (next.includes("?") ? "&" : "?") + "counted=1"; else setFailed(true); }).catch(() => setFailed(true));
   }, []);
   return (
     <div className="wrap">

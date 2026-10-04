@@ -4,12 +4,13 @@ import Link from "next/link";
 import { saveRanking, saveView } from "@/app/actions";
 import type { Issue } from "@/lib/data";
 import IssueDetail from "./IssueDetail";
+import Journey from "./Journey";
 
 const TOP = 3;
 
-export default function RankIssues({ govId, issues, initialOrder, initialViews, saved, flip, community }: {
+export default function RankIssues({ govId, issues, initialOrder, initialViews, saved, flip, community, signedIn, govName }: {
   govId: string; issues: Issue[]; initialOrder: string[]; initialViews: Record<string, number>; saved: boolean; flip: Record<string, boolean>;
-  community?: Record<string, number>;
+  community?: Record<string, number>; signedIn: boolean; govName: string;
 }) {
   const byId = Object.fromEntries(issues.map((i) => [i.id, i]));
   const [order, setOrder] = useState(initialOrder);
@@ -127,6 +128,7 @@ export default function RankIssues({ govId, issues, initialOrder, initialViews, 
   return (
     <div className="issues-layout">
       <div>
+        <Journey govId={govId} govName={govName} ranked={everSaved} viewsDone={topDone} signedIn={signedIn} next={`/g/${govId}/community`} />
         <div className="row between" style={{ alignItems: "flex-end" }}>
           <div>
             <h2 style={{ margin: 0 }}>Which issues matter most to you?</h2>
@@ -135,7 +137,7 @@ export default function RankIssues({ govId, issues, initialOrder, initialViews, 
         </div>
         <div className="row between xs" style={{ margin: "10px 0 6px", minHeight: 20 }}>
           <span aria-live="polite" className="muted">{announce}</span>
-          <span className={`badge ${status === "saved" ? "ok" : ""}`}>{status === "saving" ? "Saving…" : status === "saved" ? "✓ Order saved" : "Move an issue to save your order"}</span>
+          <span className={`badge ${status === "saved" ? "ok" : ""}`}>{status === "saving" ? "Saving…" : status === "saved" ? (signedIn ? "✓ Saved to your account" : "✓ Saved on this device") : "Move an issue to save your order"}</span>
         </div>
         <ol className="rank-list">
           {order.map((id, idx) => {
@@ -167,7 +169,6 @@ export default function RankIssues({ govId, issues, initialOrder, initialViews, 
           {everSaved && <Link className="btn secondary" href={`/g/${govId}/community`}>What your neighbours think</Link>}
           <span className={`small ${topDone < TOP ? "nudge" : "muted"}`}>{topDone < TOP ? `Add your view on ${TOP - topDone} more of your top ${TOP}` : `✓ Views added on your top ${TOP}`}</span>
         </div>
-        {!everSaved && <p className="xs muted" style={{ marginTop: 8 }}>Saved on this device as you go. <Link href="/signin">Sign in</Link> to make your ranking count toward your community&apos;s list.</p>}
       </div>
       <aside className="detail-aside card" aria-live="polite">
         {sel ? <Detail key={selected + selIdx} id={selected} /> : <p className="muted">Select an issue to see details.</p>}

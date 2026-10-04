@@ -5,6 +5,9 @@ import { getGov, getIssues, rankingFor } from "@/lib/data";
 import { communityFor, THRESHOLD } from "@/lib/community";
 import GovTabs from "@/components/GovTabs";
 import Share from "@/components/Share";
+import Journey from "@/components/Journey";
+import { currentUser } from "@/lib/auth/server";
+import { viewsFor } from "@/lib/data";
 
 export const dynamic = "force-dynamic";
 
@@ -23,7 +26,8 @@ function ViewsBar({ views, a, b }: { views: number[]; a: string; b: string }) {
   );
 }
 
-export default async function CommunityPage({ params }: { params: Promise<{ gov: string }> }) {
+export default async function CommunityPage({ params, searchParams }: { params: Promise<{ gov: string }>; searchParams: Promise<Record<string, string>> }) {
+  const sp = await searchParams;
   const { gov: govId } = await params;
   const gov = await getGov(govId);
   if (!gov) notFound();
@@ -32,6 +36,11 @@ export default async function CommunityPage({ params }: { params: Promise<{ gov:
   const byId = Object.fromEntries(issues.map((i) => [i.id, i]));
   const c = await communityFor(govId, issues.map((i) => i.id), v?.riding);
   const unlocked = c.signed.n >= THRESHOLD;
+  const user = await currentUser();
+  const views = await viewsFor(v?.id);
+  const viewsDone = (mine ?? []).slice(0, 3).filter((id) => views[id] != null).length;
+  const counted = !!user && !!mine;
+  const signHref = `/signin?next=${encodeURIComponent(`/g/${govId}/community`)}&gov=${govId}`;
   const myRank = Object.fromEntries((mine ?? []).map((id, k) => [id, k + 1]));
 
   return (
@@ -39,8 +48,10 @@ export default async function CommunityPage({ params }: { params: Promise<{ gov:
       <p className="small" style={{ margin: 0 }}><Link href="/votes">← Your votes</Link></p>
       <h1>{gov.name}</h1>
       <GovTabs gov={govId} on="community" />
+      {sp.counted && counted && <p className="counted-note">✓ Your ranking now counts in {gov.name}&apos;s community list. Thanks for adding it.</p>}
       <div className="cands-layout">
         <div>
+          {mine && <Journey govId={govId} govName={gov.name} ranked viewsDone={viewsDone} signedIn={!!user} next={`/g/${govId}/community`} />}
           {!mine ? (
             <div className="card lock">
               <p className="stand-kicker">Community priorities</p>
@@ -53,6 +64,7 @@ export default async function CommunityPage({ params }: { params: Promise<{ gov:
             <div className="card lock">
               <p className="stand-kicker">Almost there</p>
               <h2>{c.signed.n} of {THRESHOLD} neighbours have ranked</h2>
+              {!user && <p className="small" style={{ margin: "0 0 4px" }}><b>Yours would be number {c.signed.n + 1}.</b> <Link href={signHref}>Add your ranking</Link></p>}
               <div className="progress" aria-hidden><span style={{ width: `${(c.signed.n / THRESHOLD) * 100}%` }} /></div>
               <p className="muted">The community list appears once {THRESHOLD} signed-in voters {c.scope === "riding" ? "in your riding" : "here"} have ranked. Only rankings from signed-in voters count.</p>
               <Share voterId={v?.id} />
@@ -63,6 +75,9 @@ export default async function CommunityPage({ params }: { params: Promise<{ gov:
                 <h2 id="c-h">What matters most here</h2>
                 <p className="small muted" style={{ margin: 0 }}>{c.scopeLabel} · {c.signed.n} signed-in {c.signed.n === 1 ? "voter" : "voters"}</p>
               </div>
+              {!counted && (
+                <p className="notyet small">These numbers don&apos;t include your ranking yet. You&apos;re seeing them as a visitor.</p>
+              )}
               <ol className="comm-list">
                 {c.signed.issues.map((s) => {
                   const i = byId[s.id];

@@ -3,20 +3,21 @@ import { useState } from "react";
 import { authClient } from "@/lib/auth/client";
 
 type Mode = "signin" | "signup" | "verify";
-export default function SignIn() {
+export default function SignIn({ next = "/votes" }: { next?: string }) {
   const [mode, setMode] = useState<Mode>("signin");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [code, setCode] = useState("");
   const [msg, setMsg] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
-  const done = () => { window.location.href = "/signin/done"; };
+  const doneUrl = `/signin/done?next=${encodeURIComponent(next)}`;
+  const done = () => { window.location.href = doneUrl; };
   const errText = (e: any) => e?.message || e?.error?.message || "Something went wrong. Please try again.";
 
   async function google() {
     setBusy(true); setMsg(null);
     try {
-      const r: any = await authClient.signIn.social({ provider: "google", callbackURL: `${window.location.origin}/signin/done` });
+      const r: any = await authClient.signIn.social({ provider: "google", callbackURL: `${window.location.origin}${doneUrl}` });
       if (r?.error) setMsg(errText(r.error));
     } catch (e) { setMsg(errText(e)); }
     setBusy(false);
@@ -31,7 +32,7 @@ export default function SignIn() {
           else setMsg(errText(r.error));
         } else done();
       } else if (mode === "signup") {
-        const r: any = await authClient.signUp.email({ email, password, name: email.split("@")[0], callbackURL: `${window.location.origin}/signin/done` } as any);
+        const r: any = await authClient.signUp.email({ email, password, name: email.split("@")[0], callbackURL: `${window.location.origin}${doneUrl}` } as any);
         if (r?.error) setMsg(errText(r.error));
         else if (r?.data?.token || r?.data?.session) done();
         else { setMode("verify"); setMsg("Check your email to confirm your account. Enter the code here, or use the link in the email."); }

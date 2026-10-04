@@ -340,3 +340,29 @@ main:has(.landing) + footer.bottom { margin-top: 0; }
 .vb0 { background: #3E4A63; } .vb1 { background: #8C96AE; } .vb2 { background: #D9D7E0; } .vb3 { background: #C4AE85; } .vb4 { background: #8A6E3E; }
 .vbar-labels { display: grid; grid-template-columns: 1fr auto 1fr; gap: 8px; margin-top: 4px; color: var(--ink); }
 .comm-badge { font-size: 12px; font-weight: 700; color: var(--muted); }
+/* journey tracker */
+.journey { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 12px 14px; margin: 0 0 16px; }
+.jsteps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.jsteps li { display: flex; gap: 10px; align-items: flex-start; font-size: 14px; color: var(--muted); }
+.jsteps li b { display: block; color: var(--muted); font-size: 14px; }
+.jsub { display: block; font-size: 12px; }
+.jdot { width: 26px; height: 26px; flex: 0 0 26px; border-radius: 50%; display: grid; place-items: center; font-weight: 700; font-size: 13px; border: 2px solid var(--line); background: #fff; color: var(--muted); }
+.jsteps li.now b { color: var(--ink); }
+.jsteps li.now .jdot { border-color: var(--ink); color: var(--ink); }
+.jsteps li.done b { color: var(--ink); }
+.jsteps li.done .jdot { background: var(--accent); border-color: var(--accent); color: #fff; }
+.jnext { display: flex; align-items: center; justify-content: space-between; gap: 16px; border-top: 1px solid var(--line); margin-top: 12px; padding-top: 12px; }
+.jnext .btn { flex: 0 0 auto; }
+.jshort { display: none; }
+@media (max-width: 640px) {
+  .journey { padding: 10px 12px; }
+  .jsteps { gap: 4px; }
+  .jsteps li { flex-direction: column; align-items: center; text-align: center; gap: 4px; }
+  .jsteps li b { font-size: 12px; }
+  .jsub { display: none; }
+  .jnext { flex-direction: column; align-items: stretch; gap: 8px; margin-top: 10px; padding-top: 10px; }
+  .jlong { display: none; } .jshort { display: inline; }
+}
+@media (max-width: 420px) { .brand .tag { display: none; } nav.top a { margin-left: 8px; } }
+.counted-note { background: var(--ok-bg); color: var(--ok); border-radius: 10px; padding: 10px 14px; font-weight: 700; font-size: 14px; margin-bottom: 12px; }
+.notyet { background: var(--soft); border: 1px dashed var(--caution); border-radius: 10px; padding: 8px 12px; margin: 10px 0 12px; color: var(--muted); }
