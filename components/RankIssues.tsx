@@ -89,11 +89,11 @@ export default function RankIssues({ govId, issues, initialOrder, initialViews, 
     dragRef.current = id; setDragId(id);
   }
 
-  // Phone: details open in a bottom sheet so the list stays in view behind it.
+  // Details open in a drawer (bottom sheet on phones, right-hand panel on desktop) so the list stays in view.
   const [sheet, setSheet] = useState(false);
   function openIssue(id: string) {
     setSelected(id);
-    if (typeof window !== "undefined" && window.matchMedia("(max-width: 899px)").matches) setSheet(true);
+    setSheet(true);
   }
   useEffect(() => {
     if (!sheet) return;
@@ -144,7 +144,7 @@ export default function RankIssues({ govId, issues, initialOrder, initialViews, 
           {order.map((id, idx) => {
             const i = byId[id];
             if (!i) return null;
-            const isSel = id === selected;
+            const isSel = sheet && id === selected;
             return (
               <li key={id} ref={(el) => { refs.current[id] = el; }}
                 className={`rank-item ${idx < TOP ? "top" : ""} ${isSel ? "sel" : ""} ${dragId === id ? "dragging" : ""}`}>
@@ -171,9 +171,6 @@ export default function RankIssues({ govId, issues, initialOrder, initialViews, 
           <span className={`small ${topDone < TOP ? "nudge" : "muted"}`}>{topDone < TOP ? `Add your view on ${TOP - topDone} more of your top ${TOP}` : `✓ Views added on your top ${TOP}`}</span>
         </div>
       </div>
-      <aside className="detail-aside card" aria-live="polite">
-        {sel ? <Detail key={selected + selIdx} id={selected} /> : <p className="muted">Select an issue to see details.</p>}
-      </aside>
       {sheet && sel && (
         <div className="sheet-wrap" role="dialog" aria-modal="true" aria-label={sel.title}>
           <button className="sheet-backdrop" aria-label="Close" onClick={() => setSheet(false)} />

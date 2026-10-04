@@ -525,3 +525,15 @@ main:has(.landing) + footer.bottom { margin-top: 0; }
 }
 @media (prefers-reduced-motion: reduce) { .drawer { animation: none; } }
 .count-link { font-weight: 700; font-size: 13px; white-space: nowrap; }
+
+/* Issues: one column; details open in the drawer at every size */
+@media (min-width: 900px) {
+  .issues-layout { display: block; }
+  .detail-aside { display: none; }
+  .sheet-wrap { display: flex; flex-direction: row; justify-content: flex-end; }
+  .sheet { width: 520px; max-width: 92vw; height: 100%; max-height: none; border-radius: 0; box-shadow: -8px 0 30px rgba(29,27,43,.2); animation: drawer-in .22s ease-out; }
+  .sheet-head { align-items: stretch; padding: 14px 20px 12px; }
+  .sheet-head .sheet-grab { display: none; }
+  .sheet-body { padding: 18px 24px 32px; }
+}
+.sheet .sides { grid-template-columns: minmax(0, 1fr); gap: 6px; }

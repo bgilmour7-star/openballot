@@ -26,7 +26,7 @@ export default async function IssuesPage({ params, searchParams }: { params: Pro
     return [i.id, h % 2 === 1];
   }));
   return (
-    <div className="wrap wide">
+    <div className="wrap">
       <p className="small" style={{ margin: 0 }}><Link href="/votes">← Your elections</Link></p>
       <h1>{gov.name}</h1>
       <GovTabs gov={govId} on="issues" />
