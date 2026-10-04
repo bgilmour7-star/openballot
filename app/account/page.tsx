@@ -15,7 +15,7 @@ export default async function Account() {
   return (
     <div className="wrap">
       <h1>Your account</h1>
-      <p className="page-intro">Your sign-in details and the rankings you&apos;ve saved. Your rankings count toward each area&apos;s community list, but your name and email are never shown.</p>
+      <p className="page-intro">Your sign-in details and the rankings you&apos;ve saved. Your rankings count toward each area&apos;s community issue ranking, but your name and email are never shown.</p>
       <div className="card">
         <p>Signed in as <b>{user.email}</b></p>
         <p className="small muted">Rankings saved: {rankings.length ? rankings.map((r) => r.name).join(", ") : "none yet"}.</p>

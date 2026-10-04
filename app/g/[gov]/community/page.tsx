@@ -48,15 +48,15 @@ export default async function CommunityPage({ params, searchParams }: { params: 
       <p className="small" style={{ margin: 0 }}><Link href="/votes">← Your elections</Link></p>
       <h1>{gov.name}</h1>
       <GovTabs gov={govId} on="community" />
-      <p className="page-intro">How voters in this area rank the issues, combined. It appears once {THRESHOLD} people with free accounts have ranked, and it never changes the order of candidates.</p>
-      {sp.counted && counted && <p className="counted-note">✓ Your ranking now counts in {gov.name}&apos;s community list. Thanks for adding it.</p>}
+      <p className="page-intro">The community issue ranking shows how voters in this area rank the issues, combined. It appears once {THRESHOLD} people with free accounts have ranked, and it never changes the order of candidates.</p>
+      {sp.counted && counted && <p className="counted-note">✓ Your ranking now counts in {gov.name}&apos;s community issue ranking. Thanks for adding it.</p>}
       <div className="cands-layout">
         <div>
           {!mine ? (
             <div className="card lock">
-              <p className="stand-kicker">Community priorities</p>
-              <h2>Rank the issues to see what your neighbours think</h2>
-              <p className="muted">You&apos;ll see the community list right after you save your own, so your choices are yours first.</p>
+              <p className="stand-kicker">Community issue ranking</p>
+              <h2>Rank the issues to see the community issue ranking</h2>
+              <p className="muted">You&apos;ll see the community issue ranking right after you save your own, so your choices are yours first.</p>
               <Link className="btn" href={`/g/${govId}`}>Rank the issues</Link>
               <p className="xs muted" style={{ marginTop: 12 }}>{c.signed.n} signed-in {c.signed.n === 1 ? "voter has" : "voters have"} ranked so far · {c.scopeLabel.toLowerCase()}</p>
             </div>
@@ -66,13 +66,13 @@ export default async function CommunityPage({ params, searchParams }: { params: 
               <h2>{c.signed.n} of {THRESHOLD} neighbours have ranked</h2>
               {!user && <p className="small" style={{ margin: "0 0 4px" }}><b>Yours would be number {c.signed.n + 1}.</b> <Link href={signHref}>Add your ranking</Link></p>}
               <div className="progress" aria-hidden><span style={{ width: `${(c.signed.n / THRESHOLD) * 100}%` }} /></div>
-              <p className="muted">The community list appears once {THRESHOLD} signed-in voters {c.scope === "riding" ? "in your riding" : "here"} have ranked. Only rankings from signed-in voters count.</p>
+              <p className="muted">The community issue ranking appears once {THRESHOLD} signed-in voters {c.scope === "riding" ? "in your riding" : "here"} have ranked. Only rankings from signed-in voters count.</p>
               <Share voterId={v?.id} />
             </div>
           ) : (
             <section>
               <div className="race-head">
-                <h2 id="c-h">What matters most here</h2>
+                <h2 id="c-h">Community issue ranking</h2>
                 <p className="small muted" style={{ margin: 0 }}>{c.scopeLabel} · {c.signed.n} signed-in {c.signed.n === 1 ? "voter" : "voters"}</p>
               </div>
               {!counted && (
@@ -103,7 +103,7 @@ export default async function CommunityPage({ params, searchParams }: { params: 
               </ol>
               <details className="card" style={{ marginTop: 16 }}>
                 <summary style={{ cursor: "pointer", fontWeight: 700 }}>Visitors without an account ({c.anon.n}) · not counted</summary>
-                <p className="xs muted">Shown for comparison only. Anonymous rankings are easy to repeat, so they never shape the community list.</p>
+                <p className="xs muted">Shown for comparison only. Anonymous rankings are easy to repeat, so they never shape the community issue ranking.</p>
                 {c.anon.n < THRESHOLD ? <p className="small muted">Fewer than {THRESHOLD} so far.</p> : (
                   <ol className="small" style={{ paddingLeft: 20 }}>{c.anon.issues.map((s) => <li key={s.id}>{byId[s.id]?.title} <span className="muted">· {s.top3Pct}% top 3</span></li>)}</ol>
                 )}
@@ -111,7 +111,7 @@ export default async function CommunityPage({ params, searchParams }: { params: 
             </section>
           )}
           <NextBar
-            status={!mine ? <><b>Your ranking comes first</b><span className="muted">Rank the issues to see the community list.</span></>
+            status={!mine ? <><b>Your ranking comes first</b><span className="muted">Rank the issues to see the community issue ranking.</span></>
               : counted ? <><b>✓ Your ranking counts here</b><span className="muted">You can change it any time.</span></>
               : <><b>Your ranking isn&apos;t counted yet</b><span className="muted">A free account adds it. Your name is never shown.</span></>}
             links={mine ? [{ href: `/g/${govId}/candidates`, label: "Candidates" }] : []}
@@ -121,7 +121,7 @@ export default async function CommunityPage({ params, searchParams }: { params: 
         </div>
         <aside className="aside-stack">
           <div className="card">
-            <h2 style={{ fontSize: 16 }}>How the community list works</h2>
+            <h2 style={{ fontSize: 16 }}>How the community issue ranking works</h2>
             <ul className="small" style={{ paddingLeft: 18, margin: 0 }}>
               <li>Only signed-in voters located here count, one ranking each. Your latest ranking replaces earlier ones.</li>
               <li>Order uses points by position: first place earns the most. &quot;Top 3&quot; is the share who put an issue in their top three.</li>

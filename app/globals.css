@@ -612,3 +612,4 @@ a.speakers:hover { border-color: var(--ink); }
 .claim-q:first-of-type { border-top: 0; }
 .claim-opts { display: flex; flex-wrap: wrap; gap: 4px 14px; }
 .claim-opts label { display: flex; gap: 6px; align-items: center; font-size: 14px; min-height: 32px; }
+@media (max-width: 560px) { .nb-link { white-space: normal; flex: 0 1 auto; min-width: 0; font-size: 14px; line-height: 1.2; } .nb-primary { flex: 1 0 auto; } }

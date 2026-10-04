@@ -18,12 +18,12 @@ export default function Journey({ govId, govName, ranked, viewsDone, viewsTotal 
         </li>
         <li className={s3 ? "done" : s1 ? "now" : ""}>
           <span className="jdot" aria-hidden>{s3 ? "✓" : "3"}</span>
-          <span><b>{s3 ? "Counting" : "Make it count"}</b><span className="jsub">{s3 ? `In ${govName}'s community list` : signedIn ? "Rank to be counted" : "Add your ranking to the community"}</span></span>
+          <span><b>{s3 ? "Counting" : "Make it count"}</b><span className="jsub">{s3 ? `In ${govName}'s community issue ranking` : signedIn ? "Rank to be counted" : "Add your ranking to the community"}</span></span>
         </li>
       </ol>
       {ranked && !signedIn && (
         <div className="jnext">
-          <p className="small" style={{ margin: 0 }}><span className="jlong">Your ranking is saved on this device, but it isn&apos;t in {govName}&apos;s community list yet. A free account adds it, keeps it on any device, and only takes a minute. We never show your name or email.</span><span className="jshort">Saved on this device, not yet counted in {govName}&apos;s community list. A free account adds it.</span></p>
+          <p className="small" style={{ margin: 0 }}><span className="jlong">Your ranking is saved on this device, but it isn&apos;t in {govName}&apos;s community issue ranking yet. A free account adds it, keeps it on any device, and only takes a minute. We never show your name or email.</span><span className="jshort">Saved on this device, not yet counted in {govName}&apos;s community issue ranking. A free account adds it.</span></p>
           <Link className="btn" href={`/signin?next=${encodeURIComponent(next)}&gov=${encodeURIComponent(govId)}`}>Make my ranking count</Link>
         </div>
       )}

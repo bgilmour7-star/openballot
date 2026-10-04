@@ -41,7 +41,7 @@ export default async function IssuesPage({ params, searchParams }: { params: Pro
       <h1>{gov.name}</h1>
       <GovTabs gov={govId} on="issues" />
       <p className="page-intro">Start here. Put the issues for this election in the order that matters to you. Your top 3 decide how candidates are grouped on the next tab.</p>
-      {sp.counted && user && <p className="counted-note">✓ Your ranking now counts in {gov.name}&apos;s community list.</p>}
+      {sp.counted && user && <p className="counted-note">✓ Your ranking now counts in {gov.name}&apos;s community issue ranking.</p>}
       <RankIssues govId={govId} issues={issues} initialOrder={order} initialViews={views} saved={!!ranking} flip={flip} community={community} signedIn={!!user} govName={gov.name} speakers={speakers} />
     </div>
   );

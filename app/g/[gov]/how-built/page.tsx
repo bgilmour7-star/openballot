@@ -29,7 +29,7 @@ export default async function HowBuilt({ params }: { params: Promise<{ gov: stri
         <p className="small muted">Issues are named as problems, not solutions, and only include what this government can act on. In this alpha the list is a starting point drawn from public sources; once enough people in your community rank it, rankings from signed-in voters will shape it, with a breakdown of where contributions came from.</p>
       </div>
       <div className="card">
-        <h2>Who contributed to the community list</h2>
+        <h2>Who contributed to the community issue ranking</h2>
         {c.signed.n < THRESHOLD ? (
           <p className="small muted">Contributions are shown once {THRESHOLD} signed-in voters have ranked ({c.signed.n} so far).</p>
         ) : (

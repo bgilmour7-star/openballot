@@ -98,10 +98,10 @@ export default async function Home({ searchParams }: { searchParams: Promise<Rec
       <section className="wrap wide band">
         <h2 className="band-title">Questions</h2>
         <div className="faq">
-          <details><summary>Is it free?</summary><p>Yes. Voters never pay, and you can use it without an account. Signing in lets your ranking count toward your community&apos;s issue list.</p></details>
+          <details><summary>Is it free?</summary><p>Yes. Voters never pay, and you can use it without an account. Signing in lets your ranking count toward the community issue ranking.</p></details>
           <details><summary>Will it tell me who to vote for?</summary><p>No. It shows which candidates have spoken to the issues you care about, with sources, so you can decide.</p></details>
           <details><summary>Who runs Openballot?</summary><p>An independent project. It isn&apos;t run by any government, party or candidate. <Link href="/about">How it works</Link></p></details>
-          <details><summary>What happens to my information?</summary><p>Your postal code finds your elections. Your rankings are yours; community results are only ever shown as totals. <Link href="/privacy">Privacy note</Link></p></details>
+          <details><summary>What happens to my information?</summary><p>Your postal code finds your elections. Your rankings are yours; the community issue ranking is only ever shown as totals. <Link href="/privacy">Privacy note</Link></p></details>
         </div>
       </section>
 

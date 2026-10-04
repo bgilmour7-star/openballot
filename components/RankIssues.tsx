@@ -158,7 +158,7 @@ export default function RankIssues({ govId, issues, initialOrder, initialViews, 
                     {views[id] != null
                       ? <span className="xs view-state done"><span className="vi" aria-hidden>✓</span>View added</span>
                       : <span className="xs view-state todo"><span className="vi" aria-hidden>+</span>Add your view</span>}
-                    {community?.[id] && <span className="comm-badge">#{community[id]} in your community</span>}
+                    {community?.[id] && <span className="comm-badge">#{community[id]} in the community ranking</span>}
                   </button>
                   <button className="icon-btn arrow" aria-label={`Move ${i.title} up`} disabled={idx === 0} onClick={() => moveTo(id, idx - 1)}>↑</button>
                   <button className="icon-btn arrow" aria-label={`Move ${i.title} down`} disabled={idx === order.length - 1} onClick={() => moveTo(id, idx + 1)}>↓</button>
@@ -171,7 +171,7 @@ export default function RankIssues({ govId, issues, initialOrder, initialViews, 
           status={everSaved
             ? <><b>Your top {TOP} are set</b><NbProgress done={topDone} total={TOP} label={topDone < TOP ? `Views added: ${topDone} of ${TOP} (optional)` : `✓ Views added on your top ${TOP}`} /></>
             : <><b>Put the issues in your order</b><span className="muted">Drag, or use the arrows. Your order saves as you go.</span></>}
-          links={everSaved ? [{ href: `/g/${govId}/community`, label: "Community" }] : []}
+          links={everSaved ? [{ href: `/g/${govId}/community`, label: "Community issue ranking" }] : []}
           primary={{ href: `/g/${govId}/candidates`, label: "See candidates →" }} />
       </div>
       {sheet && sel && (
