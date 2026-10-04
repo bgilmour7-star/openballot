@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getVoter } from "@/lib/voter";
 import PostalForm from "@/components/PostalForm";
+import LandingIcon from "@/components/LandingIcon";
 
 export const dynamic = "force-dynamic";
 const ERR: Record<string, string> = {
@@ -19,8 +20,8 @@ export default async function Home({ searchParams }: { searchParams: Promise<Rec
         <div className="wrap wide hero-grid">
           <div>
             <p className="eyebrow">Free · Non-partisan · No account needed to start</p>
-            <h1 className="hero-title">Start with <span className="hl">the issues</span>.<br />Choose the person.</h1>
-            <p className="hero-sub">See every vote on your ballot, decide what matters most to you, then see which candidates have actually spoken to it. Every fact has a source, and we never tell you who to vote for.</p>
+            <h1 className="hero-title"><span className="hl">You</span> set the agenda.<br />Candidates show up to it.</h1>
+            <p className="hero-sub">A local ballot can list dozens of candidates. Instead of starting with their slogans, Openballot starts with what you care about, then shows who has actually spoken to it, with a source for every claim.</p>
             {located ? (
               <div className="stack">
                 <Link className="btn big" href="/votes">Continue to your ballot</Link>
@@ -29,49 +30,68 @@ export default async function Home({ searchParams }: { searchParams: Promise<Rec
             ) : (
               <>
                 <PostalForm refId={sp.r} postal={sp.postal} />
-                <p className="xs muted" style={{ marginTop: 8 }}>Takes about 3 minutes. Your postal code only finds your elections; we never store your address.</p>
+                <p className="xs muted" style={{ marginTop: 8 }}>About 3 minutes. Free, no account needed, and we never store your address.</p>
               </>
             )}
             {sp.err && <p className="notice" style={{ marginTop: 12 }}>{ERR[sp.err] ?? "Something went wrong."}</p>}
             <p className="coverage"><span className="dot-live" aria-hidden /> Now in alpha for elections in Nanaimo and Victoria, BC</p>
           </div>
-          <div className="preview" aria-hidden>
-            <div className="pv-card">
-              <p className="pv-k">Your top issues</p>
-              <div className="pv-sort">
-                <div className="pv-nums"><span>1</span><span>2</span><span>3</span></div>
-                <div className="pv-rows">
-                  <div className="pv-row r-housing">Housing costs and supply</div>
-                  <div className="pv-row r-safety">Community safety</div>
-                  <div className="pv-row r-taxes">Property taxes</div>
+          <div className="phone-wrap" aria-hidden>
+            <div className="phone">
+              <div className="phone-screen">
+                <p className="ph-k">Your city council</p>
+                <p className="ph-h">What matters to you?</p>
+                <div className="pv-sort">
+                  <div className="pv-nums"><span>1</span><span>2</span><span>3</span></div>
+                  <div className="pv-rows">
+                    <div className="pv-row r-housing">Housing costs</div>
+                    <div className="pv-row r-safety">Community safety</div>
+                    <div className="pv-row r-taxes">Property taxes</div>
+                  </div>
+                </div>
+                <div className="ph-match">
+                  <p className="ph-mk">Speaks to your top 3</p>
+                  <div className="ph-c">Candidate A<span>●●</span></div>
+                  <div className="ph-c">Candidate B<span>●●</span></div>
+                  <div className="ph-c">Candidate C<span>●○</span></div>
+                  <p className="ph-note">Random order. Every position links to its source.</p>
                 </div>
               </div>
             </div>
-            <div className="pv-card pv-offset">
-              <p className="pv-k">Speaks to your top issues</p>
-              <div className="pv-cand"><b>Candidate A</b><div className="pv-chips"><i>Housing</i><i>Safety</i></div></div>
-              <div className="pv-cand"><b>Candidate B</b><div className="pv-chips"><i>Housing</i><i>Taxes</i></div></div>
-              <p className="pv-src">Each position links to its source</p>
-            </div>
+            <div className="phone-tag"><LandingIcon name="check" size={20} />You put housing first</div>
           </div>
         </div>
       </section>
 
       <section className="wrap wide band">
+        <h2 className="band-title">Why we built this</h2>
+        <p className="band-sub">Local elections decide your rent, your roads and your schools, but they are the hardest to research.</p>
+        <div className="why-grid">
+          <div className="why-item"><span className="ico-tile"><LandingIcon name="people" /></span><div><h3>Dozens of names</h3><p>Mayor, council and school board races can put dozens of candidates on one ballot.</p></div></div>
+          <div className="why-item"><span className="ico-tile"><LandingIcon name="sign" /></span><div><h3>A lawn sign is a name</h3><p>Not a position. Positions are spread across dozens of websites and forums.</p></div></div>
+          <div className="why-item"><span className="ico-tile"><LandingIcon name="calendar" /></span><div><h3>More than one election</h3><p>Local, school board and provincial races can land weeks apart. Openballot puts every race you can vote in on one ballot.</p></div></div>
+        </div>
+      </section>
+
+      <section className="wrap wide band" id="how">
         <h2 className="band-title">How it works</h2>
         <ol className="steps">
-          <li><span className="step-n">1</span><h3>See your whole ballot</h3><p>Enter a postal code to see every election you can vote in: council, school board and provincial, with dates and how to vote.</p></li>
-          <li><span className="step-n">2</span><h3>Rank what matters</h3><p>Put your community&apos;s issues in order and say where you stand, with the trade-offs of each choice laid out.</p></li>
-          <li><span className="step-n">3</span><h3>See who speaks to it</h3><p>Candidates grouped by how much they&apos;ve said about your top issues. Never ranked, never recommended.</p></li>
+          <li><span className="step-ico"><LandingIcon name="pin" size={36} stroke={1.8} /></span><p className="step-k">Step 1</p><h3>See your whole ballot</h3><p>Your postal code finds every race you can vote in, with dates, voting places and how to vote by mail.</p></li>
+          <li><span className="step-ico"><LandingIcon name="list" size={36} stroke={1.8} /></span><p className="step-k">Step 2</p><h3>Put your issues in order</h3><p>Drag your community&apos;s issues into your order and say where you stand, with the trade-offs of each choice laid out.</p></li>
+          <li><span className="step-ico"><LandingIcon name="search" size={36} stroke={1.8} /></span><p className="step-k">Step 3</p><h3>See who speaks to it</h3><p>Candidates grouped by how much they&apos;ve said about your top issues, each statement linked to where they said it.</p></li>
         </ol>
       </section>
 
-      <section className="wrap wide band">
-        <h2 className="band-title">Why it&apos;s different</h2>
-        <div className="why">
-          <div><h3>Issues first, not platforms</h3><p>Most voting tools ask you to react to what candidates say. Openballot starts with what you care about.</p></div>
-          <div><h3>Neutral by design</h3><p>Candidates appear in random order within groups, and party labels are plain and only shown when official. No ads, and no money from candidates or parties.</p></div>
-          <div><h3>Every fact has a source</h3><p>Positions are short, neutral summaries linked to where they were said. If there&apos;s nothing on record, we say so.</p></div>
+      <section className="rules-band">
+        <div className="wrap wide">
+          <h2>Built so the decision stays yours</h2>
+          <p className="rules-sub">Openballot isn&apos;t run by any government, party or candidate. These rules are built into the product.</p>
+          <div className="rules">
+            <div><LandingIcon name="shield" size={28} /><h3>Never a recommendation</h3><p>We show who has spoken to your issues, not who to vote for.</p></div>
+            <div><LandingIcon name="link" size={28} /><h3>Every claim has a source</h3><p>Each position links to the candidate&apos;s own words or reporting.</p></div>
+            <div><LandingIcon name="shuffle" size={28} /><h3>Random order, every time</h3><p>No candidate gets the top spot by default.</p></div>
+            <div><LandingIcon name="lock" size={28} /><h3>Your address stays yours</h3><p>A postal code finds your races. We never store your street address.</p></div>
+          </div>
         </div>
       </section>
 
@@ -87,8 +107,8 @@ export default async function Home({ searchParams }: { searchParams: Promise<Rec
 
       <section className="cta-band" id="start">
         <div className="wrap wide">
-          <h2>Your next vote is closer than you think.</h2>
-          <p>Find out what&apos;s on your ballot in under a minute.</p>
+          <h2>You do the deciding. We did the reading.</h2>
+          <p>Three minutes now, a lot more confidence at the ballot box.</p>
           <PostalForm id="postal-2" refId={sp.r} />
         </div>
       </section>
