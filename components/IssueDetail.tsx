@@ -78,10 +78,12 @@ export default function IssueDetail({ issue: i, rank, flip, value, onPick, onPre
       {i.sources?.length ? (
         <p className="xs muted">Why it&apos;s on the list: {i.sources.slice(0, 3).map((s, k) => <a key={k} href={s} target="_blank" rel="noreferrer" style={{ marginRight: 8 }}>{host(s)}</a>)}</p>
       ) : null}
-      <div className="row between" style={{ marginTop: 8 }}>
-        <button className="btn ghost small" disabled={!onPrev} onClick={onPrev}>← Previous issue</button>
-        <button className="btn ghost small" disabled={!onNext} onClick={onNext}>Next issue →</button>
-      </div>
+      {(onPrev || onNext) && (
+        <div className="row between" style={{ marginTop: 8 }}>
+          <button className="btn ghost small" disabled={!onPrev} onClick={onPrev}>← Previous issue</button>
+          <button className="btn ghost small" disabled={!onNext} onClick={onNext}>Next issue →</button>
+        </div>
+      )}
     </div>
   );
 }

@@ -4,6 +4,8 @@ import { notFound } from "next/navigation";
 import { one, q } from "@/lib/db";
 import { getCandidate, getIssues, host, positionsFor, rankingFor, SOURCE_LABEL, stanceOn, viewsFor, viewWords, type Stance } from "@/lib/data";
 import { getVoter } from "@/lib/voter";
+import { flipFor } from "@/lib/flip";
+import ViewDrawerButton from "@/components/ViewDrawerButton";
 import Avatar from "@/components/Avatar";
 
 export const dynamic = "force-dynamic";
@@ -94,7 +96,9 @@ export default async function CandidatePage({ params, searchParams }: { params: 
                       <div className="you-grid">
                         <div>
                           <p className="you-k">You</p>
-                          {mine ? <p className="small" style={{ margin: 0 }}>{mine}</p> : <p className="small" style={{ margin: 0 }}><Link href={`/g/${race!.government_id}`}>Add your view</Link> <span className="muted">to compare</span></p>}
+                          {mine
+                            ? <div className="small">{mine} <ViewDrawerButton issue={i} rank={k + 1} flip={flipFor(v?.id ?? "anon", iid)} value={views[iid]} label="Change" className="linklike xs" /></div>
+                            : <div className="small"><ViewDrawerButton issue={i} rank={k + 1} flip={flipFor(v?.id ?? "anon", iid)} value={undefined} label="Add your view" /> <span className="muted">to compare</span></div>}
                         </div>
                         <div>
                           <p className="you-k">{firstName}{theirs?.inherited ? ` (via ${theirs.affiliation_name})` : ""}</p>

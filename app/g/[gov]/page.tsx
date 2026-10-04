@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { getVoter } from "@/lib/voter";
 import { getGov, getIssues, racesFor, rankingFor, viewsFor, type Race } from "@/lib/data";
 import { q } from "@/lib/db";
+import { flipFor } from "@/lib/flip";
 import GovTabs from "@/components/GovTabs";
 import RankIssues from "@/components/RankIssues";
 import { communityFor, THRESHOLD } from "@/lib/community";
@@ -31,10 +32,7 @@ export default async function IssuesPage({ params, searchParams }: { params: Pro
     ) x where issue_id is not null group by 1`, [races.map((r) => r.id)]);
   const speakers = Object.fromEntries(spk.map((r) => [r.issue_id, r.n]));
   const seed = v?.id ?? "anon";
-  const flip = Object.fromEntries(issues.map((i) => {
-    let h = 0; for (const ch of seed + i.id) h = (h * 31 + ch.charCodeAt(0)) >>> 0;
-    return [i.id, h % 2 === 1];
-  }));
+  const flip = Object.fromEntries(issues.map((i) => [i.id, flipFor(seed, i.id)]));
   return (
     <div className="wrap">
       <p className="small" style={{ margin: 0 }}><Link href="/votes">← Your elections</Link></p>
