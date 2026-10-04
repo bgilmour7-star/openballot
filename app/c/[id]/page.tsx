@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { one, q } from "@/lib/db";
 import { getCandidate, getIssues, host, positionsFor, SOURCE_LABEL } from "@/lib/data";
+import Avatar from "@/components/Avatar";
 
 export const dynamic = "force-dynamic";
 
@@ -41,7 +42,9 @@ export default async function CandidatePage({ params, searchParams }: { params: 
     <div className="wrap wide">
       <p className="small" style={{ margin: 0 }}><Link href={`/g/${race!.government_id}/candidates`}>← {race!.gov_name} candidates</Link></p>
       {sp.claimed && <p className="notice info" style={{ marginTop: 12 }}>Thanks. Your request was sent for review. We&apos;ll contact you through your campaign email.</p>}
-      <header className="cand-hero">
+      <header className="cand-hero row" style={{ alignItems: "center", gap: 14, flexWrap: "nowrap" }}>
+        <Avatar name={c.name} size={56} />
+        <div>
         <p className="xs muted" style={{ margin: 0 }}>{race!.office} · {race!.area_name}</p>
         <h1 style={{ margin: "2px 0 6px" }}>{c.name}</h1>
         <div className="cand-meta" style={{ fontSize: 14 }}>
@@ -49,6 +52,7 @@ export default async function CandidatePage({ params, searchParams }: { params: 
           {c.declared_independent && <span className="aff">Independent</span>}
           {c.incumbent && <span>Incumbent</span>}
           {c.status === "unconfirmed" && <span className="badge todo">Nomination not yet confirmed</span>}
+        </div>
         </div>
       </header>
 

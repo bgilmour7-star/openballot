@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { one, q } from "@/lib/db";
 import { host } from "@/lib/data";
+import Avatar from "@/components/Avatar";
 
 export const dynamic = "force-dynamic";
 export default async function AffiliationPage({ params }: { params: Promise<{ id: string }> }) {
@@ -14,7 +15,7 @@ export default async function AffiliationPage({ params }: { params: Promise<{ id
       (select count(*) from candidacies x where x.race_id=r.id and x.status<>'withdrawn' and x.summary is null)::int missing
     from candidacies c join races r on r.id=c.race_id join elections e on e.id=r.election_id join governments g on g.id=e.government_id
     where c.affiliation_id=$1 and c.status <> 'withdrawn' order by g.sort, r.sort, c.name`, [id]);
-  const byRace = members.reduce((m: Record<string, any[]>, x) => { (m[`${x.gov} · ${x.office}${x.gov_id === "province-of-bc" ? "" : ""}`] ||= []).push(x); return m; }, {});
+  const byRace = members.reduce((m: Record<string, any[]>, x) => { (m[x.gov_id === "province-of-bc" ? x.area_name : `${x.gov} · ${x.office}`] ||= []).push(x); return m; }, {});
   const typeLabel = a.type === "party" ? "Registered provincial party" : "Elector organization (local civic slate)";
   return (
     <div className="wrap wide">
@@ -22,11 +23,12 @@ export default async function AffiliationPage({ params }: { params: Promise<{ id
       <header className="cand-hero">
         <p className="xs muted" style={{ margin: 0 }}>{typeLabel}</p>
         <h1 style={{ margin: "2px 0 6px" }}>{a.name}</h1>
+        {a.leader && <p className="small muted" style={{ margin: 0 }}>Leader: <b>{a.leader}</b>{a.leader_riding ? ` · on the ballot in ${a.leader_riding}` : ""}{a.candidate_count ? ` · ${a.candidate_count} candidates across BC` : ""}</p>}
       </header>
       <div className="profile-layout">
         <div>
           <section className="card">
-            <h2>Endorsed candidates ({members.length})</h2>
+            <h2>{a.type === "party" ? `Candidates in ridings we cover (${members.length})` : `Endorsed candidates (${members.length})`}</h2>
             <p className="xs muted">Listed as they appear on official candidate lists. Being on this list says nothing about how these candidates compare to others.</p>
             {Object.entries(byRace).map(([race, list]) => (
               <div key={race} style={{ marginTop: 12 }}>
@@ -35,9 +37,10 @@ export default async function AffiliationPage({ params }: { params: Promise<{ id
                   {(list as any[]).map((m) => (
                     <li key={m.id}>
                       <Link className="cand-row" href={`/c/${encodeURIComponent(m.id)}`}>
+                        <Avatar name={m.name} />
                         <div className="cand-main">
                           <div className="cand-name">{m.name}</div>
-                          <div className="cand-meta">{m.office !== race ? <span>{m.area_name}</span> : null}{m.incumbent ? <span>Incumbent</span> : null}</div>
+                          <div className="cand-meta">{m.incumbent ? <span>Incumbent</span> : null}</div>
                           {m.missing === 0 && m.summary && <p className="xs muted" style={{ margin: "4px 0 0" }}>{m.summary}</p>}
                         </div>
                         <span className="chev" aria-hidden>›</span>

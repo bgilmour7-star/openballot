@@ -79,8 +79,35 @@ await sql.query(`alter table candidacies add column if not exists summary text`)
 await sql.query(`alter table candidacies add column if not exists summary_source text`);
 await sql.query(`alter table affiliations add column if not exists blurb text`);
 await sql.query(`alter table affiliations add column if not exists blurb_source text`);
+await sql.query(`alter table affiliations add column if not exists leader text`);
+await sql.query(`alter table affiliations add column if not exists leader_riding text`);
+await sql.query(`alter table affiliations add column if not exists candidate_count int`);
 console.log("[db] schema ok");
 
+
+
+// Keep provincial parties and candidates in step with the research file (safe to repeat).
+async function syncProvincial() {
+  let p; try { p = read("bc-provincial-2026.json"); } catch { return; }
+  const ops = [];
+  for (const x of p.parties ?? [])
+    ops.push(sql.query(`insert into affiliations (id,type,name,website,source_url,platform_url,platform_note,leader,leader_riding,candidate_count)
+      values ($1,'party',$2,$3,$4,$5,$6,$7,$8,$9)
+      on conflict (id) do update set name=excluded.name, website=coalesce(excluded.website, affiliations.website), platform_url=coalesce(excluded.platform_url, affiliations.platform_url),
+        platform_note=coalesce(excluded.platform_note, affiliations.platform_note), leader=excluded.leader, leader_riding=excluded.leader_riding, candidate_count=excluded.candidate_count`,
+      [x.id, x.shortName || x.name, x.website || null, (x.sourceUrls ?? [])[0] ?? x.website ?? null, x.platformUrl || null, x.platformNote ?? null, x.leader ?? null, x.leaderRiding ?? null, x.candidateCount ?? null]));
+  for (const rd of p.ridings ?? []) for (const r of rd.races ?? []) for (const c of r.candidates ?? []) {
+    const status = /reported|announced|not yet/i.test(c.nominationStatus ?? "") ? "unconfirmed" : "active";
+    ops.push(sql.query(`insert into candidacies (id,race_id,name,ballot_name,incumbent,affiliation_id,affiliation_source,declared_independent,website,links,sources,status,nomination_note)
+      values ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13)
+      on conflict (id) do update set status=excluded.status, affiliation_id=excluded.affiliation_id, nomination_note=excluded.nomination_note,
+        ballot_name=coalesce(excluded.ballot_name, candidacies.ballot_name), website=coalesce(candidacies.website, excluded.website)`,
+      [`${r.id}--${c.id}`, r.id, c.name, c.ballotName || null, c.incumbent ?? null, c.affiliation?.partyId ?? null, c.affiliation?.sourceUrl ?? null,
+       !!c.declaredIndependent, c.website || null, JSON.stringify((c.links ?? []).filter((l) => l.url)), JSON.stringify(c.sourceUrls ?? []), status, c.nominationNote ?? c.nominationStatus ?? null]));
+  }
+  for (const rm of p.removed ?? []) if (rm.raceId && rm.id) ops.push(sql.query(`update candidacies set status='withdrawn' where id=$1`, [`${rm.raceId}--${rm.id}`]));
+  if (ops.length) { await sql.transaction(ops); console.log(`[db] provincial synced (${ops.length})`); }
+}
 
 async function backfillBios() {
   const ups = [];
@@ -100,7 +127,7 @@ try {
   const ups = Object.entries(t.issues ?? {}).map(([id, v]) =>
     sql.query(`update issues set tradeoffs=$2 where id=$1 and tradeoffs is null`, [id, JSON.stringify(v)]));
   const [{ n: have }] = await sql`select count(*)::int as n from governments`;
-  if (have > 0) { if (ups.length) { await sql.transaction(ups); console.log(`[db] trade-offs backfilled (${ups.length})`); } await backfillBios(); }
+  if (have > 0) { if (ups.length) { await sql.transaction(ups); console.log(`[db] trade-offs backfilled (${ups.length})`); } await syncProvincial(); await backfillBios(); }
 } catch (e) { console.log("[db] no trade-offs file yet", String(e).slice(0, 80)); }
 
 const [{ n }] = await sql`select count(*)::int as n from governments`;
@@ -212,7 +239,7 @@ function seedRaces(electionId, govId, races, area, areaName, areaNote) {
            values ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13)`,
         [cid, r.id, c.name, c.ballotName || null, c.incumbent ?? null, aff, c.affiliation?.sourceUrl ?? null,
          !!c.declaredIndependent, c.website || null, JSON.stringify((c.links ?? []).filter((l) => l.url)),
-         JSON.stringify(c.sourceUrls ?? []), (c.withdrawn || /withdr/i.test(c.status ?? "")) ? "withdrawn" : /announced|not yet/i.test(c.nominationStatus ?? "") ? "unconfirmed" : "active", c.nominationStatus ?? null]);
+         JSON.stringify(c.sourceUrls ?? []), (c.withdrawn || /withdr/i.test(c.status ?? "")) ? "withdrawn" : /announced|not yet|reported/i.test(c.nominationStatus ?? "") ? "unconfirmed" : "active", c.nominationStatus ?? null]);
       for (const p of c.positions ?? []) {
         add(`insert into positions (candidacy_id,issue_id,topic,summary,source_url,source_type) values ($1,$2,$3,$4,$5,$6)`,
           [cid, issueFor(govId, p.topic), p.topic ?? null, p.summary, p.sourceUrl ?? null,
@@ -245,4 +272,5 @@ try {
   await sql.transaction(Object.entries(t.issues ?? {}).map(([id, v]) => sql.query(`update issues set tradeoffs=$2 where id=$1 and tradeoffs is null`, [id, JSON.stringify(v)])));
   console.log("[db] trade-offs added");
 } catch {}
+await syncProvincial();
 await backfillBios();

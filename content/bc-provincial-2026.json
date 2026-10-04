@@ -1,1 +1,715 @@
-{"government":"Province of British Columbia","election":{"id":"bc-provincial-2026","name":"BC provincial general election","level":"provincial","votingDay":"2026-10-24","votingDayHours":"8 a.m. to 8 p.m. Pacific time","advanceVoting":[{"date":"2026-10-16","hours":"8 a.m. to 8 p.m. local time","note":"Vote at any advance voting place in B.C."},{"date":"2026-10-17","hours":"8 a.m. to 8 p.m. local time","note":"Vote at any advance voting place in B.C."},{"date":"2026-10-18","hours":"8 a.m. to 8 p.m. local time","note":"Vote at any advance voting place in B.C."},{"date":"2026-10-19","hours":"8 a.m. to 8 p.m. local time","note":"Vote at any advance voting place in B.C."},{"date":"2026-10-20","hours":"8 a.m. to 8 p.m. local time","note":"Vote at any advance voting place in B.C."},{"date":"2026-10-21","hours":"8 a.m. to 8 p.m. local time","note":"Vote at any advance voting place in B.C."}],"voteByMail":"Request a vote-by-mail package by October 18, 2026 (online at elections.bc.ca/votebymail or by phone at 1-800-661-8683). Completed packages must be received by Elections BC by 8 p.m. Pacific time on October 24, 2026; a postmark is not enough.","howToVote":"Eligible voters can vote at any advance voting place from October 16 to 21, at a voting place on October 24, or by mail. Voters who are not registered can register when they vote by showing identification with their name and current address. Check Elections BC for voting locations and accepted ID.","officialUrl":"https://elections.bc.ca/2026-provincial-election/","sources":["https://elections.bc.ca/2026-provincial-election/","https://bcballot.ca/key-dates/","https://bcvotewatch.ca/how-to-vote-bc","https://refdesk.ca/blog/bc-snap-election-october-24-2026-voters-guide","https://vicnews.com/2026/09/22/premier-david-eby-expected-to-call-provincial-snap-election-today/","https://nanaimonewsnow.com/2026/09/22/october-provincial-election-called-in-b-c/","https://en.wikipedia.org/wiki/2026_British_Columbia_general_election"]},"parties":[{"id":"bc-ndp","name":"BC NDP","website":"https://www.bcndp.ca/","platformUrl":"","platformPublished":false,"platformNote":"No 2026 platform found as of 2026-10-03. The party's 'Action for You' page (https://www.bcndp.ca/action-for-you) lists priority areas, mostly as a record of past results; not treated as a platform.","commitments":[]},{"id":"conservative-party","name":"Conservative Party","website":"https://www.conservativebc.ca/","platformUrl":"https://www.conservativebc.ca/our-platform/","platformPublished":false,"platformNote":"Platform page states 'coming soon' as of 2026-10-03.","commitments":[]},{"id":"bc-green-party","name":"BC Green Party","website":"https://bcgreens.ca/","platformUrl":"https://bcgreens.ca/our-plan/","platformPublished":false,"platformNote":"'Our Plan' page with priority areas is published; page states 'Full platform coming soon' as of 2026-10-03.","commitments":[]},{"id":"centrebc","name":"CentreBC","website":"https://www.centrebc.ca/","platformUrl":"https://www.centrebc.ca/our-policy/","platformPublished":false,"platformNote":"Policy page describes the party's policy-development approach and focus areas; no concrete platform commitments as of 2026-10-03.","commitments":[]}],"ridings":[{"id":"nanaimo-gabriola-island","name":"Nanaimo-Gabriola Island","coversCity":["Nanaimo"],"coverageNote":"Central and southern portions of the City of Nanaimo, plus Gabriola Island, Cedar and South Wellington (Regional District of Nanaimo). Exact street-level dividing line with Nanaimo-Lantzville not verified.","races":[{"id":"nanaimo-gabriola-island-mla","office":"Member of the Legislative Assembly (MLA)","seats":1,"candidates":[{"id":"sheila-malcolmson","name":"Sheila Malcolmson","ballotName":"","incumbent":true,"affiliation":{"type":"party","name":"BC NDP","partyId":"bc-ndp","sourceUrl":"https://bcballot.ca/candidates/"},"declaredIndependent":false,"nominationStatus":"filed with Elections BC (per BC Ballot, Elections BC list checked 2026-10-02 10:11 a.m.)","website":"","links":[],"sourceUrls":["https://bcballot.ca/candidates/","https://votemate.org/bc2026provincial/candidates/","https://nanaimonewsnow.com/2026/10/01/challengers-added-for-nanaimo-oceanside-ridings-in-provincial-election/","https://en.wikipedia.org/wiki/Nanaimo-Gabriola_Island"],"positions":[]},{"id":"mark-macdonald","name":"Mark MacDonald","ballotName":"","incumbent":false,"affiliation":{"type":"party","name":"Conservative Party","partyId":"conservative-party","sourceUrl":"https://bcballot.ca/candidates/"},"declaredIndependent":false,"nominationStatus":"filed with Elections BC (per BC Ballot, Elections BC list checked 2026-10-02 10:11 a.m.)","website":"https://conservativebc.ca/candidate/mark-macdonald/","links":[],"sourceUrls":["https://bcballot.ca/candidates/","https://votemate.org/bc2026provincial/candidates/","https://nanaimonewsnow.com/2026/10/01/challengers-added-for-nanaimo-oceanside-ridings-in-provincial-election/","https://conservativebc.ca/candidate/mark-macdonald/"],"positions":[]},{"id":"anna-mary-mckenzie","name":"Anna Mary McKenzie","ballotName":"","incumbent":false,"affiliation":{"type":"party","name":"BC Green Party","partyId":"bc-green-party","sourceUrl":"https://bcballot.ca/candidates/"},"declaredIndependent":false,"nominationStatus":"announced by party; not yet shown as filed (per BC Ballot, 2026-10-02)","website":"https://bcgreens.ca/candidates-2026/anna-mary-mckenzie/","links":[],"sourceUrls":["https://bcballot.ca/candidates/","https://votemate.org/bc2026provincial/candidates/","https://bcgreens.ca/candidates-2026/anna-mary-mckenzie/"],"positions":[]}]}]},{"id":"nanaimo-lantzville","name":"Nanaimo-Lantzville","coversCity":["Nanaimo"],"coverageNote":"Northern portion of the City of Nanaimo and the adjoining District of Lantzville (plus Nanaimo C and Nanoose census subdivisions). Exact street-level dividing line with Nanaimo-Gabriola Island not verified.","races":[{"id":"nanaimo-lantzville-mla","office":"Member of the Legislative Assembly (MLA)","seats":1,"candidates":[{"id":"george-anderson","name":"George Anderson","ballotName":"","incumbent":true,"affiliation":{"type":"party","name":"BC NDP","partyId":"bc-ndp","sourceUrl":"https://bcballot.ca/candidates/"},"declaredIndependent":false,"nominationStatus":"filed with Elections BC (per BC Ballot, Elections BC list checked 2026-10-02 10:11 a.m.)","website":"","links":[],"sourceUrls":["https://bcballot.ca/candidates/","https://votemate.org/bc2026provincial/candidates/","https://nanaimonewsnow.com/2026/10/01/challengers-added-for-nanaimo-oceanside-ridings-in-provincial-election/","https://en.wikipedia.org/wiki/Nanaimo-Lantzville"],"positions":[]},{"id":"kelsey-pringle","name":"Kelsey Pringle","ballotName":"","incumbent":false,"affiliation":{"type":"party","name":"Conservative Party","partyId":"conservative-party","sourceUrl":"https://bcballot.ca/candidates/"},"declaredIndependent":false,"nominationStatus":"filed with Elections BC (per BC Ballot, Elections BC list checked 2026-10-02 10:11 a.m.)","website":"https://conservativebc.ca/candidate/kelsey-pringle/","links":[],"sourceUrls":["https://bcballot.ca/candidates/","https://votemate.org/bc2026provincial/candidates/","https://nanaimonewsnow.com/2026/10/01/challengers-added-for-nanaimo-oceanside-ridings-in-provincial-election/","https://conservativebc.ca/candidate/kelsey-pringle/"],"positions":[]}]}]},{"id":"victoria-beacon-hill","name":"Victoria-Beacon Hill","coversCity":["Victoria"],"coverageNote":"Most of the City of Victoria including the downtown core: bounded by the coastline to the south and west, Oak Bay to the east, and Bay Street and Haultain Street to the north. Victoria West is in Esquimalt-Colwood.","races":[{"id":"victoria-beacon-hill-mla","office":"Member of the Legislative Assembly (MLA)","seats":1,"candidates":[{"id":"grace-lore","name":"Grace Lore","ballotName":"","incumbent":true,"affiliation":{"type":"party","name":"BC NDP","partyId":"bc-ndp","sourceUrl":"https://bcballot.ca/candidates/"},"declaredIndependent":false,"nominationStatus":"filed with Elections BC (per BC Ballot, Elections BC list checked 2026-10-02 10:11 a.m.)","website":"","links":[],"sourceUrls":["https://bcballot.ca/candidates/","https://votemate.org/bc2026provincial/candidates/","https://en.wikipedia.org/wiki/Victoria-Beacon_Hill"],"positions":[]},{"id":"rajinder-sahota","name":"Rajinder Sahota","ballotName":"","incumbent":false,"affiliation":{"type":"party","name":"BC Green Party","partyId":"bc-green-party","sourceUrl":"https://bcballot.ca/candidates/"},"declaredIndependent":false,"nominationStatus":"announced by party; not yet shown as filed (per BC Ballot, 2026-10-02)","website":"https://bcgreens.ca/candidates-2026/rajinder-sahota/","links":[],"sourceUrls":["https://bcballot.ca/candidates/","https://votemate.org/bc2026provincial/candidates/","https://bcgreens.ca/candidates-2026/rajinder-sahota/"],"positions":[]},{"id":"joachim-agou","name":"Joachim Agou","ballotName":"","incumbent":false,"affiliation":{"type":"party","name":"Conservative Party","partyId":"conservative-party","sourceUrl":"https://bcballot.ca/candidates/"},"declaredIndependent":false,"nominationStatus":"announced by party; not yet shown as filed (per BC Ballot, 2026-10-02)","website":"https://conservativebc.ca/candidate/joachim-agou/","links":[],"sourceUrls":["https://bcballot.ca/candidates/","https://votemate.org/bc2026provincial/candidates/","https://conservativebc.ca/candidate/joachim-agou/"],"positions":[]}]}]},{"id":"victoria-swan-lake","name":"Victoria-Swan Lake","coversCity":["Victoria"],"coverageNote":"Northern Victoria north of Bay Street (Burnside-Gorge, Hillside-Quadra, Oaklands), plus southern Saanich (Tillicum-Gorge, Uptown, Quadra-Cedar Hill).","races":[{"id":"victoria-swan-lake-mla","office":"Member of the Legislative Assembly (MLA)","seats":1,"candidates":[{"id":"nina-krieger","name":"Nina Krieger","ballotName":"","incumbent":true,"affiliation":{"type":"party","name":"BC NDP","partyId":"bc-ndp","sourceUrl":"https://bcballot.ca/candidates/"},"declaredIndependent":false,"nominationStatus":"filed with Elections BC (per BC Ballot, Elections BC list checked 2026-10-02 10:11 a.m.)","website":"","links":[],"sourceUrls":["https://bcballot.ca/candidates/","https://votemate.org/bc2026provincial/candidates/","https://en.wikipedia.org/wiki/Victoria-Swan_Lake"],"positions":[]},{"id":"carolyn-howe","name":"Carolyn Howe","ballotName":"","incumbent":false,"affiliation":{"type":"party","name":"BC Green Party","partyId":"bc-green-party","sourceUrl":"https://bcballot.ca/candidates/"},"declaredIndependent":false,"nominationStatus":"filed with Elections BC (per BC Ballot, Elections BC list checked 2026-10-02 10:11 a.m.)","website":"https://bcgreens.ca/candidates-2026/carolyn-howe/","links":[],"sourceUrls":["https://bcballot.ca/candidates/","https://votemate.org/bc2026provincial/candidates/","https://votemate.org/bc2026provincial/candidates/?riding=2137","https://bcgreens.ca/candidates-2026/carolyn-howe/"],"positions":[]},{"id":"tim-taylor","name":"Tim Taylor","ballotName":"","incumbent":false,"affiliation":{"type":"party","name":"Conservative Party","partyId":"conservative-party","sourceUrl":"https://bcballot.ca/candidates/"},"declaredIndependent":false,"nominationStatus":"announced by party; not yet shown as filed (per BC Ballot, 2026-10-02)","website":"https://conservativebc.ca/candidate/tim-taylor/","links":[],"sourceUrls":["https://bcballot.ca/candidates/","https://votemate.org/bc2026provincial/candidates/","https://votemate.org/bc2026provincial/candidates/?riding=2137","https://conservativebc.ca/candidate/tim-taylor/"],"positions":[]}]}]},{"id":"esquimalt-colwood","name":"Esquimalt-Colwood","coversCity":["Victoria"],"coverageNote":"Covers only the Victoria West neighbourhood of the City of Victoria, plus Esquimalt, View Royal and Colwood.","races":[{"id":"esquimalt-colwood-mla","office":"Member of the Legislative Assembly (MLA)","seats":1,"candidates":[{"id":"darlene-rotchford","name":"Darlene Rotchford","ballotName":"","incumbent":true,"affiliation":{"type":"party","name":"BC NDP","partyId":"bc-ndp","sourceUrl":"https://bcballot.ca/candidates/"},"declaredIndependent":false,"nominationStatus":"filed with Elections BC (per BC Ballot, Elections BC list checked 2026-10-02 10:11 a.m.)","website":"","links":[],"sourceUrls":["https://bcballot.ca/candidates/","https://votemate.org/bc2026provincial/candidates/","https://en.wikipedia.org/wiki/Esquimalt-Colwood"],"positions":[]},{"id":"dave-johnston","name":"Dave Johnston","ballotName":"","incumbent":false,"affiliation":{"type":"party","name":"Conservative Party","partyId":"conservative-party","sourceUrl":"https://bcballot.ca/candidates/"},"declaredIndependent":false,"nominationStatus":"filed with Elections BC (per BC Ballot, Elections BC list checked 2026-10-02 10:11 a.m.)","website":"https://conservativebc.ca/candidate/dave-johnston/","links":[],"sourceUrls":["https://bcballot.ca/candidates/","https://votemate.org/bc2026provincial/candidates/","https://conservativebc.ca/candidate/dave-johnston/"],"positions":[]},{"id":"sidney-coles","name":"Sidney Coles","ballotName":"","incumbent":false,"affiliation":{"type":"party","name":"BC Green Party","partyId":"bc-green-party","sourceUrl":"https://bcballot.ca/candidates/"},"declaredIndependent":false,"nominationStatus":"announced by party; not yet shown as filed (per BC Ballot, 2026-10-02)","website":"https://bcgreens.ca/candidates-2026/sidney-coles/","links":[],"sourceUrls":["https://bcballot.ca/candidates/","https://votemate.org/bc2026provincial/candidates/","https://bcgreens.ca/candidates-2026/sidney-coles/"],"positions":[]},{"id":"sid-tobias","name":"Sid Tobias","ballotName":"","incumbent":false,"affiliation":{"type":"party","name":"CentreBC","partyId":"centrebc","sourceUrl":"https://bcballot.ca/candidates/"},"declaredIndependent":false,"nominationStatus":"announced by party; not yet shown as filed (per BC Ballot, 2026-10-02)","website":"https://www.centrebc.ca/candidates/sid-tobias/","links":[],"sourceUrls":["https://bcballot.ca/candidates/","https://votemate.org/bc2026provincial/candidates/","https://www.centrebc.ca/candidates/sid-tobias/"],"positions":[]}]}]}]}
+{
+ "government": "Province of British Columbia",
+ "election": {
+  "id": "bc-provincial-2026",
+  "name": "BC provincial general election",
+  "level": "provincial",
+  "votingDay": "2026-10-24",
+  "votingDayHours": "8 a.m. to 8 p.m. Pacific time",
+  "advanceVoting": [
+   {
+    "date": "2026-10-16",
+    "hours": "8 a.m. to 8 p.m. local time",
+    "note": "Vote at any advance voting place in B.C."
+   },
+   {
+    "date": "2026-10-17",
+    "hours": "8 a.m. to 8 p.m. local time",
+    "note": "Vote at any advance voting place in B.C."
+   },
+   {
+    "date": "2026-10-18",
+    "hours": "8 a.m. to 8 p.m. local time",
+    "note": "Vote at any advance voting place in B.C."
+   },
+   {
+    "date": "2026-10-19",
+    "hours": "8 a.m. to 8 p.m. local time",
+    "note": "Vote at any advance voting place in B.C."
+   },
+   {
+    "date": "2026-10-20",
+    "hours": "8 a.m. to 8 p.m. local time",
+    "note": "Vote at any advance voting place in B.C."
+   },
+   {
+    "date": "2026-10-21",
+    "hours": "8 a.m. to 8 p.m. local time",
+    "note": "Vote at any advance voting place in B.C."
+   }
+  ],
+  "voteByMail": "Request a vote-by-mail package by October 18, 2026 (online at elections.bc.ca/votebymail or by phone at 1-800-661-8683). Completed packages must be received by Elections BC by 8 p.m. Pacific time on October 24, 2026; a postmark is not enough.",
+  "howToVote": "Eligible voters can vote at any advance voting place from October 16 to 21, at a voting place on October 24, or by mail. Voters who are not registered can register when they vote by showing identification with their name and current address. Check Elections BC for voting locations and accepted ID.",
+  "officialUrl": "https://elections.bc.ca/2026-provincial-election/",
+  "sources": [
+   "https://elections.bc.ca/2026-provincial-election/",
+   "https://bcballot.ca/key-dates/",
+   "https://bcvotewatch.ca/how-to-vote-bc",
+   "https://refdesk.ca/blog/bc-snap-election-october-24-2026-voters-guide",
+   "https://vicnews.com/2026/09/22/premier-david-eby-expected-to-call-provincial-snap-election-today/",
+   "https://nanaimonewsnow.com/2026/09/22/october-provincial-election-called-in-b-c/",
+   "https://en.wikipedia.org/wiki/2026_British_Columbia_general_election"
+  ]
+ },
+ "parties": [
+  {
+   "id": "bc-ndp",
+   "name": "BC NDP",
+   "website": "https://www.bcndp.ca/",
+   "platformUrl": "",
+   "platformPublished": false,
+   "platformNote": "No 2026 platform found as of 2026-10-03. The party's 'Action for You' page (https://www.bcndp.ca/action-for-you) lists priority areas, mostly as a record of past results; not treated as a platform.",
+   "commitments": [],
+   "officialName": "British Columbia New Democratic Party",
+   "shortName": "BC NDP",
+   "leader": "David Eby",
+   "leaderRiding": "Vancouver-Point Grey",
+   "candidateCount": 89,
+   "candidateCountNote": "89 candidates in 89 of 93 ridings, all filed (BC Ballot, Oct 3, 2026). No candidate in Peace River North, Peace River South, Prince George-Mackenzie, Prince George-North Cariboo.",
+   "sourceUrls": [
+    "https://bcballot.ca/candidates/bc-ndp/",
+    "https://en.wikipedia.org/wiki/2026_British_Columbia_general_election",
+    "https://en.wikipedia.org/wiki/British_Columbia_New_Democratic_Party"
+   ]
+  },
+  {
+   "id": "conservative-party",
+   "name": "Conservative Party",
+   "website": "https://www.conservativebc.ca/",
+   "platformUrl": "https://www.conservativebc.ca/our-platform/",
+   "platformPublished": false,
+   "platformNote": "Platform page states 'coming soon' as of 2026-10-03.",
+   "commitments": [],
+   "officialName": "Conservative Party of British Columbia",
+   "shortName": "Conservatives",
+   "leader": "Lorne Doerkson (interim)",
+   "leaderRiding": "Cariboo-Chilcotin",
+   "candidateCount": 93,
+   "candidateCountNote": "93 candidates in 93 of 93 ridings: 87 filed, 6 announced by party but not yet filed (BC Ballot, Oct 3, 2026, pre-close). Doerkson became interim leader Sept 20, 2026 after Kerry-Lynne Findlay resigned.",
+   "sourceUrls": [
+    "https://bcballot.ca/candidates/conservative-party/",
+    "https://en.wikipedia.org/wiki/2026_British_Columbia_general_election",
+    "https://www.cbc.ca/news/canada/british-columbia/lorne-doerkson-named-b-c-conservatives-interim-leader-9.7352318"
+   ]
+  },
+  {
+   "id": "bc-green-party",
+   "name": "BC Green Party",
+   "website": "https://bcgreens.ca/",
+   "platformUrl": "https://bcgreens.ca/our-plan/",
+   "platformPublished": false,
+   "platformNote": "'Our Plan' page with priority areas is published; page states 'Full platform coming soon' as of 2026-10-03.",
+   "commitments": [],
+   "officialName": "Green Party of British Columbia",
+   "shortName": "BC Greens",
+   "leader": "Emily Lowan",
+   "leaderRiding": "Saanich North and the Islands",
+   "candidateCount": 57,
+   "candidateCountNote": "57 candidates in 57 of 93 ridings: 52 filed, 5 announced but not yet filed (BC Ballot, Oct 3, 2026, pre-close). The party's own candidates page listed 33 when checked.",
+   "sourceUrls": [
+    "https://bcballot.ca/candidates/bc-green-party/",
+    "https://bcgreens.ca/candidates-2026/",
+    "https://en.wikipedia.org/wiki/2026_British_Columbia_general_election"
+   ]
+  },
+  {
+   "id": "centrebc",
+   "name": "CentreBC",
+   "website": "https://www.centrebc.ca/",
+   "platformUrl": "https://www.centrebc.ca/our-policy/",
+   "platformPublished": false,
+   "platformNote": "Policy page describes the party's policy-development approach and focus areas; no concrete platform commitments as of 2026-10-03.",
+   "commitments": [],
+   "officialName": "CentreBC",
+   "shortName": "CentreBC",
+   "leader": "Elenore Sturko",
+   "leaderRiding": "Surrey South",
+   "candidateCount": 26,
+   "candidateCountNote": "26 candidates in 26 of 93 ridings: 21 filed, 5 announced but not yet filed (BC Ballot, Oct 3, 2026, pre-close). Sturko became leader Sept 22, 2026.",
+   "sourceUrls": [
+    "https://bcballot.ca/candidates/centrebc/",
+    "https://en.wikipedia.org/wiki/2026_British_Columbia_general_election",
+    "https://surreynowleader.com/2026/09/25/centre-bc-leader-elenore-sturko-running-in-surrey-south-for-provincial-election/"
+   ]
+  },
+  {
+   "id": "onebc",
+   "name": "OneBC",
+   "officialName": "OneBC",
+   "shortName": "OneBC",
+   "leader": "Dallas Brodie (interim)",
+   "leaderRiding": "Vancouver-Quilchena",
+   "website": "https://1bc.ca/",
+   "platformUrl": "https://1bc.ca/priorities",
+   "platformPublished": false,
+   "platformNote": "'Priorities' page lists policy priorities; no formal 2026 platform document identified as of 2026-10-03.",
+   "candidateCount": 24,
+   "candidateCountNote": "24 candidates in 24 ridings: 21 filed, 3 announced but not yet filed (BC Ballot party page, Oct 3, 2026, pre-close; BC Ballot overview showed 23). No candidates in the Nanaimo or Victoria ridings tracked here.",
+   "sourceUrls": [
+    "https://bcballot.ca/candidates/onebc/",
+    "https://1bc.ca/",
+    "https://en.wikipedia.org/wiki/2026_British_Columbia_general_election"
+   ],
+   "commitments": []
+  },
+  {
+   "id": "communist-party-of-bc",
+   "name": "Communist Party of BC",
+   "officialName": "Communist Party of British Columbia",
+   "shortName": "Communist Party",
+   "leader": "Robert Crooks",
+   "leaderRiding": "Vancouver-Strathcona",
+   "website": "https://cpcbc.ca/",
+   "platformUrl": "https://cpcbc.ca/our-platform/",
+   "platformPublished": true,
+   "platformNote": "'Our Platform' page refers to the snap election called by Premier Eby; page is undated.",
+   "candidateCount": 4,
+   "candidateCountNote": "4 filed: Cowichan Valley, Nanaimo-Lantzville, Vancouver-Hastings, Vancouver-Strathcona (BC Ballot, Oct 3, 2026, pre-close).",
+   "sourceUrls": [
+    "https://bcballot.ca/candidates/independents-and-other-parties/",
+    "https://en.wikipedia.org/wiki/Communist_Party_of_British_Columbia",
+    "https://cpcbc.ca/our-platform/"
+   ],
+   "commitments": []
+  },
+  {
+   "id": "christian-heritage-party-of-bc",
+   "name": "Christian Heritage Party of BC",
+   "officialName": "Christian Heritage Party of British Columbia",
+   "shortName": "CHP BC",
+   "leader": "Christian McCay",
+   "leaderRiding": "Langford-Highlands",
+   "website": "https://www.chpbc.ca/",
+   "platformUrl": "https://www.chpbc.ca/platform-priorities/",
+   "platformPublished": true,
+   "platformNote": "'Platform priorities' page published (stronger families, health care, affordability, safety, individual freedom, responsible government).",
+   "candidateCount": 3,
+   "candidateCountNote": "3 filed: Juan de Fuca-Malahat, Langford-Highlands, Bulkley Valley-Stikine (BC Ballot, Oct 3, 2026, pre-close).",
+   "sourceUrls": [
+    "https://bcballot.ca/candidates/independents-and-other-parties/",
+    "https://en.wikipedia.org/wiki/Christian_Heritage_Party_of_British_Columbia",
+    "https://www.chpbc.ca/"
+   ],
+   "commitments": []
+  },
+  {
+   "id": "canwest-party",
+   "name": "CanWest Party (CWP)",
+   "officialName": "CanWest Party",
+   "shortName": "CWP",
+   "leader": "Wei Ping Chen",
+   "leaderRiding": null,
+   "website": null,
+   "platformUrl": null,
+   "platformPublished": false,
+   "platformNote": "Party website not found; leader per Wikipedia list (as of June 2026); leader not shown as a candidate.",
+   "candidateCount": 1,
+   "candidateCountNote": "1 filed: Lawrence Chen, Richmond Centre (BC Ballot, Oct 3, 2026, pre-close).",
+   "sourceUrls": [
+    "https://bcballot.ca/candidates/independents-and-other-parties/",
+    "https://en.wikipedia.org/wiki/List_of_political_parties_in_British_Columbia"
+   ],
+   "commitments": []
+  },
+  {
+   "id": "freedom-party-of-bc",
+   "name": "Freedom Party of BC",
+   "officialName": "Freedom Party of BC",
+   "shortName": "Freedom Party",
+   "leader": "Amrit Birring",
+   "leaderRiding": null,
+   "website": null,
+   "platformUrl": null,
+   "platformPublished": false,
+   "platformNote": "Party website not found; leader per Wikipedia list (as of June 2026); leader not shown as a candidate.",
+   "candidateCount": 1,
+   "candidateCountNote": "1 filed: Errol Povah, Surrey-Serpentine River (BC Ballot, Oct 3, 2026, pre-close).",
+   "sourceUrls": [
+    "https://bcballot.ca/candidates/independents-and-other-parties/",
+    "https://en.wikipedia.org/wiki/List_of_political_parties_in_British_Columbia"
+   ],
+   "commitments": []
+  }
+ ],
+ "ridings": [
+  {
+   "id": "nanaimo-gabriola-island",
+   "name": "Nanaimo-Gabriola Island",
+   "coversCity": [
+    "Nanaimo"
+   ],
+   "coverageNote": "Central and southern portions of the City of Nanaimo, plus Gabriola Island, Cedar and South Wellington (Regional District of Nanaimo). Exact street-level dividing line with Nanaimo-Lantzville not verified.",
+   "races": [
+    {
+     "id": "nanaimo-gabriola-island-mla",
+     "office": "Member of the Legislative Assembly (MLA)",
+     "seats": 1,
+     "candidates": [
+      {
+       "id": "sheila-malcolmson",
+       "name": "Sheila Malcolmson",
+       "ballotName": "",
+       "incumbent": true,
+       "affiliation": {
+        "type": "party",
+        "name": "BC NDP",
+        "partyId": "bc-ndp",
+        "sourceUrl": "https://bcballot.ca/candidates/"
+       },
+       "declaredIndependent": false,
+       "nominationStatus": "confirmed",
+       "website": "",
+       "links": [],
+       "sourceUrls": [
+        "https://bcballot.ca/candidates/",
+        "https://votemate.org/bc2026provincial/candidates/",
+        "https://nanaimonewsnow.com/2026/10/01/challengers-added-for-nanaimo-oceanside-ridings-in-provincial-election/",
+        "https://en.wikipedia.org/wiki/Nanaimo-Gabriola_Island"
+       ],
+       "positions": [],
+       "nominationNote": "Nomination accepted by Elections BC ('Filed') per BC Ballot's relay of the Elections BC candidate list checked 11:09 a.m. Oct 3, 2026 (before the 1 p.m. close). The post-close official list (elections.bc.ca) could not be opened (robots-restricted), so a late withdrawal would not be reflected."
+      },
+      {
+       "id": "mark-macdonald",
+       "name": "Mark MacDonald",
+       "ballotName": "",
+       "incumbent": false,
+       "affiliation": {
+        "type": "party",
+        "name": "Conservative Party",
+        "partyId": "conservative-party",
+        "sourceUrl": "https://bcballot.ca/candidates/"
+       },
+       "declaredIndependent": false,
+       "nominationStatus": "confirmed",
+       "website": "https://conservativebc.ca/candidate/mark-macdonald/",
+       "links": [],
+       "sourceUrls": [
+        "https://bcballot.ca/candidates/",
+        "https://votemate.org/bc2026provincial/candidates/",
+        "https://nanaimonewsnow.com/2026/10/01/challengers-added-for-nanaimo-oceanside-ridings-in-provincial-election/",
+        "https://conservativebc.ca/candidate/mark-macdonald/"
+       ],
+       "positions": [],
+       "nominationNote": "Nomination accepted by Elections BC ('Filed') per BC Ballot's relay of the Elections BC candidate list checked 11:09 a.m. Oct 3, 2026 (before the 1 p.m. close). The post-close official list (elections.bc.ca) could not be opened (robots-restricted), so a late withdrawal would not be reflected."
+      },
+      {
+       "id": "anna-mary-mckenzie",
+       "name": "Anna Mary McKenzie",
+       "ballotName": "",
+       "incumbent": false,
+       "affiliation": {
+        "type": "party",
+        "name": "BC Green Party",
+        "partyId": "bc-green-party",
+        "sourceUrl": "https://bcballot.ca/candidates/"
+       },
+       "declaredIndependent": false,
+       "nominationStatus": "reported",
+       "website": "https://bcgreens.ca/candidates-2026/anna-mary-mckenzie/",
+       "links": [],
+       "sourceUrls": [
+        "https://bcballot.ca/candidates/",
+        "https://votemate.org/bc2026provincial/candidates/",
+        "https://bcgreens.ca/candidates-2026/anna-mary-mckenzie/",
+        "https://bcballot.ca/ridings/nanaimo-gabriola-island/anna-mary-mckenzie/"
+       ],
+       "positions": [],
+       "nominationNote": "Announced by party but NOT shown as filed with Elections BC as of 11:09 a.m. Oct 3, 2026 (BC Ballot). Whether the nomination was filed before the 1 p.m. close could not be verified; may not appear on the ballot."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "nanaimo-lantzville",
+   "name": "Nanaimo-Lantzville",
+   "coversCity": [
+    "Nanaimo"
+   ],
+   "coverageNote": "Northern portion of the City of Nanaimo and the adjoining District of Lantzville (plus Nanaimo C and Nanoose census subdivisions). Exact street-level dividing line with Nanaimo-Gabriola Island not verified.",
+   "races": [
+    {
+     "id": "nanaimo-lantzville-mla",
+     "office": "Member of the Legislative Assembly (MLA)",
+     "seats": 1,
+     "candidates": [
+      {
+       "id": "george-anderson",
+       "name": "George Anderson",
+       "ballotName": "",
+       "incumbent": true,
+       "affiliation": {
+        "type": "party",
+        "name": "BC NDP",
+        "partyId": "bc-ndp",
+        "sourceUrl": "https://bcballot.ca/candidates/"
+       },
+       "declaredIndependent": false,
+       "nominationStatus": "confirmed",
+       "website": "",
+       "links": [],
+       "sourceUrls": [
+        "https://bcballot.ca/candidates/",
+        "https://votemate.org/bc2026provincial/candidates/",
+        "https://nanaimonewsnow.com/2026/10/01/challengers-added-for-nanaimo-oceanside-ridings-in-provincial-election/",
+        "https://en.wikipedia.org/wiki/Nanaimo-Lantzville"
+       ],
+       "positions": [],
+       "nominationNote": "Nomination accepted by Elections BC ('Filed') per BC Ballot's relay of the Elections BC candidate list checked 11:09 a.m. Oct 3, 2026 (before the 1 p.m. close). The post-close official list (elections.bc.ca) could not be opened (robots-restricted), so a late withdrawal would not be reflected."
+      },
+      {
+       "id": "kelsey-pringle",
+       "name": "Kelsey Pringle",
+       "ballotName": "",
+       "incumbent": false,
+       "affiliation": {
+        "type": "party",
+        "name": "Conservative Party",
+        "partyId": "conservative-party",
+        "sourceUrl": "https://bcballot.ca/candidates/"
+       },
+       "declaredIndependent": false,
+       "nominationStatus": "confirmed",
+       "website": "https://conservativebc.ca/candidate/kelsey-pringle/",
+       "links": [],
+       "sourceUrls": [
+        "https://bcballot.ca/candidates/",
+        "https://votemate.org/bc2026provincial/candidates/",
+        "https://nanaimonewsnow.com/2026/10/01/challengers-added-for-nanaimo-oceanside-ridings-in-provincial-election/",
+        "https://conservativebc.ca/candidate/kelsey-pringle/"
+       ],
+       "positions": [],
+       "nominationNote": "Nomination accepted by Elections BC ('Filed') per BC Ballot's relay of the Elections BC candidate list checked 11:09 a.m. Oct 3, 2026 (before the 1 p.m. close). The post-close official list (elections.bc.ca) could not be opened (robots-restricted), so a late withdrawal would not be reflected."
+      },
+      {
+       "id": "pepper-saltman",
+       "name": "Pepper Saltman",
+       "ballotName": "",
+       "incumbent": false,
+       "affiliation": {
+        "type": "party",
+        "name": "Communist Party of BC",
+        "partyId": "communist-party-of-bc",
+        "sourceUrl": "https://bcballot.ca/candidates/independents-and-other-parties/"
+       },
+       "declaredIndependent": false,
+       "nominationStatus": "confirmed",
+       "nominationNote": "Nomination accepted by Elections BC ('Filed') per BC Ballot's relay of the Elections BC candidate list checked 11:09 a.m. Oct 3, 2026 (before the 1 p.m. close). The post-close official list (elections.bc.ca) could not be opened (robots-restricted), so a late withdrawal would not be reflected.",
+       "website": "",
+       "links": [],
+       "sourceUrls": [
+        "https://bcballot.ca/candidates/",
+        "https://bcballot.ca/candidates/independents-and-other-parties/",
+        "https://bcballot.ca/ridings/nanaimo-lantzville/pepper-saltman/",
+        "https://www.canadianelectionstracker.ca/bc"
+       ],
+       "positions": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "victoria-beacon-hill",
+   "name": "Victoria-Beacon Hill",
+   "coversCity": [
+    "Victoria"
+   ],
+   "coverageNote": "Most of the City of Victoria including the downtown core: bounded by the coastline to the south and west, Oak Bay to the east, and Bay Street and Haultain Street to the north. Victoria West is in Esquimalt-Colwood.",
+   "races": [
+    {
+     "id": "victoria-beacon-hill-mla",
+     "office": "Member of the Legislative Assembly (MLA)",
+     "seats": 1,
+     "candidates": [
+      {
+       "id": "grace-lore",
+       "name": "Grace Lore",
+       "ballotName": "",
+       "incumbent": true,
+       "affiliation": {
+        "type": "party",
+        "name": "BC NDP",
+        "partyId": "bc-ndp",
+        "sourceUrl": "https://bcballot.ca/candidates/"
+       },
+       "declaredIndependent": false,
+       "nominationStatus": "confirmed",
+       "website": "",
+       "links": [],
+       "sourceUrls": [
+        "https://bcballot.ca/candidates/",
+        "https://votemate.org/bc2026provincial/candidates/",
+        "https://en.wikipedia.org/wiki/Victoria-Beacon_Hill"
+       ],
+       "positions": [],
+       "nominationNote": "Nomination accepted by Elections BC ('Filed') per BC Ballot's relay of the Elections BC candidate list checked 11:09 a.m. Oct 3, 2026 (before the 1 p.m. close). The post-close official list (elections.bc.ca) could not be opened (robots-restricted), so a late withdrawal would not be reflected."
+      },
+      {
+       "id": "rajinder-sahota",
+       "name": "Rajinder Sahota",
+       "ballotName": "Rajinder S. Sahota",
+       "incumbent": false,
+       "affiliation": {
+        "type": "party",
+        "name": "BC Green Party",
+        "partyId": "bc-green-party",
+        "sourceUrl": "https://bcballot.ca/candidates/"
+       },
+       "declaredIndependent": false,
+       "nominationStatus": "confirmed",
+       "website": "https://bcgreens.ca/candidates-2026/rajinder-sahota/",
+       "links": [],
+       "sourceUrls": [
+        "https://bcballot.ca/candidates/",
+        "https://votemate.org/bc2026provincial/candidates/",
+        "https://bcgreens.ca/candidates-2026/rajinder-sahota/"
+       ],
+       "positions": [],
+       "nominationNote": "Nomination accepted by Elections BC ('Filed') per BC Ballot's relay of the Elections BC candidate list checked 11:09 a.m. Oct 3, 2026 (before the 1 p.m. close). The post-close official list (elections.bc.ca) could not be opened (robots-restricted), so a late withdrawal would not be reflected."
+      },
+      {
+       "id": "joachim-agou",
+       "name": "Joachim Agou",
+       "ballotName": "",
+       "incumbent": false,
+       "affiliation": {
+        "type": "party",
+        "name": "Conservative Party",
+        "partyId": "conservative-party",
+        "sourceUrl": "https://bcballot.ca/candidates/"
+       },
+       "declaredIndependent": false,
+       "nominationStatus": "reported",
+       "website": "https://conservativebc.ca/candidate/joachim-agou/",
+       "links": [
+        {
+         "label": "Campaign website",
+         "url": "https://agou.ca/"
+        }
+       ],
+       "sourceUrls": [
+        "https://bcballot.ca/candidates/",
+        "https://votemate.org/bc2026provincial/candidates/",
+        "https://conservativebc.ca/candidate/joachim-agou/",
+        "https://bcballot.ca/ridings/victoria-beacon-hill/joachim-agou/",
+        "https://agou.ca/"
+       ],
+       "positions": [],
+       "nominationNote": "Announced by party but NOT shown as filed with Elections BC as of 11:09 a.m. Oct 3, 2026 (BC Ballot). Whether the nomination was filed before the 1 p.m. close could not be verified; may not appear on the ballot."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "victoria-swan-lake",
+   "name": "Victoria-Swan Lake",
+   "coversCity": [
+    "Victoria"
+   ],
+   "coverageNote": "Northern Victoria north of Bay Street (Burnside-Gorge, Hillside-Quadra, Oaklands), plus southern Saanich (Tillicum-Gorge, Uptown, Quadra-Cedar Hill).",
+   "races": [
+    {
+     "id": "victoria-swan-lake-mla",
+     "office": "Member of the Legislative Assembly (MLA)",
+     "seats": 1,
+     "candidates": [
+      {
+       "id": "nina-krieger",
+       "name": "Nina Krieger",
+       "ballotName": "",
+       "incumbent": true,
+       "affiliation": {
+        "type": "party",
+        "name": "BC NDP",
+        "partyId": "bc-ndp",
+        "sourceUrl": "https://bcballot.ca/candidates/"
+       },
+       "declaredIndependent": false,
+       "nominationStatus": "confirmed",
+       "website": "",
+       "links": [],
+       "sourceUrls": [
+        "https://bcballot.ca/candidates/",
+        "https://votemate.org/bc2026provincial/candidates/",
+        "https://en.wikipedia.org/wiki/Victoria-Swan_Lake"
+       ],
+       "positions": [],
+       "nominationNote": "Nomination accepted by Elections BC ('Filed') per BC Ballot's relay of the Elections BC candidate list checked 11:09 a.m. Oct 3, 2026 (before the 1 p.m. close). The post-close official list (elections.bc.ca) could not be opened (robots-restricted), so a late withdrawal would not be reflected."
+      },
+      {
+       "id": "carolyn-howe",
+       "name": "Carolyn Howe",
+       "ballotName": "",
+       "incumbent": false,
+       "affiliation": {
+        "type": "party",
+        "name": "BC Green Party",
+        "partyId": "bc-green-party",
+        "sourceUrl": "https://bcballot.ca/candidates/"
+       },
+       "declaredIndependent": false,
+       "nominationStatus": "confirmed",
+       "website": "https://bcgreens.ca/candidates-2026/carolyn-howe/",
+       "links": [],
+       "sourceUrls": [
+        "https://bcballot.ca/candidates/",
+        "https://votemate.org/bc2026provincial/candidates/",
+        "https://votemate.org/bc2026provincial/candidates/?riding=2137",
+        "https://bcgreens.ca/candidates-2026/carolyn-howe/"
+       ],
+       "positions": [],
+       "nominationNote": "Nomination accepted by Elections BC ('Filed') per BC Ballot's relay of the Elections BC candidate list checked 11:09 a.m. Oct 3, 2026 (before the 1 p.m. close). The post-close official list (elections.bc.ca) could not be opened (robots-restricted), so a late withdrawal would not be reflected."
+      },
+      {
+       "id": "tim-taylor",
+       "name": "Tim Taylor",
+       "ballotName": "",
+       "incumbent": false,
+       "affiliation": {
+        "type": "party",
+        "name": "Conservative Party",
+        "partyId": "conservative-party",
+        "sourceUrl": "https://bcballot.ca/candidates/"
+       },
+       "declaredIndependent": false,
+       "nominationStatus": "confirmed",
+       "website": "https://conservativebc.ca/candidate/tim-taylor/",
+       "links": [],
+       "sourceUrls": [
+        "https://bcballot.ca/candidates/",
+        "https://votemate.org/bc2026provincial/candidates/",
+        "https://votemate.org/bc2026provincial/candidates/?riding=2137",
+        "https://conservativebc.ca/candidate/tim-taylor/"
+       ],
+       "positions": [],
+       "nominationNote": "Nomination accepted by Elections BC ('Filed') per BC Ballot's relay of the Elections BC candidate list checked 11:09 a.m. Oct 3, 2026 (before the 1 p.m. close). The post-close official list (elections.bc.ca) could not be opened (robots-restricted), so a late withdrawal would not be reflected."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "esquimalt-colwood",
+   "name": "Esquimalt-Colwood",
+   "coversCity": [
+    "Victoria"
+   ],
+   "coverageNote": "Covers only the Victoria West neighbourhood of the City of Victoria, plus Esquimalt, View Royal and Colwood.",
+   "races": [
+    {
+     "id": "esquimalt-colwood-mla",
+     "office": "Member of the Legislative Assembly (MLA)",
+     "seats": 1,
+     "candidates": [
+      {
+       "id": "darlene-rotchford",
+       "name": "Darlene Rotchford",
+       "ballotName": "",
+       "incumbent": true,
+       "affiliation": {
+        "type": "party",
+        "name": "BC NDP",
+        "partyId": "bc-ndp",
+        "sourceUrl": "https://bcballot.ca/candidates/"
+       },
+       "declaredIndependent": false,
+       "nominationStatus": "confirmed",
+       "website": "",
+       "links": [],
+       "sourceUrls": [
+        "https://bcballot.ca/candidates/",
+        "https://votemate.org/bc2026provincial/candidates/",
+        "https://en.wikipedia.org/wiki/Esquimalt-Colwood"
+       ],
+       "positions": [],
+       "nominationNote": "Nomination accepted by Elections BC ('Filed') per BC Ballot's relay of the Elections BC candidate list checked 11:09 a.m. Oct 3, 2026 (before the 1 p.m. close). The post-close official list (elections.bc.ca) could not be opened (robots-restricted), so a late withdrawal would not be reflected."
+      },
+      {
+       "id": "dave-johnston",
+       "name": "Dave Johnston",
+       "ballotName": "",
+       "incumbent": false,
+       "affiliation": {
+        "type": "party",
+        "name": "Conservative Party",
+        "partyId": "conservative-party",
+        "sourceUrl": "https://bcballot.ca/candidates/"
+       },
+       "declaredIndependent": false,
+       "nominationStatus": "confirmed",
+       "website": "https://conservativebc.ca/candidate/dave-johnston/",
+       "links": [],
+       "sourceUrls": [
+        "https://bcballot.ca/candidates/",
+        "https://votemate.org/bc2026provincial/candidates/",
+        "https://conservativebc.ca/candidate/dave-johnston/"
+       ],
+       "positions": [],
+       "nominationNote": "Nomination accepted by Elections BC ('Filed') per BC Ballot's relay of the Elections BC candidate list checked 11:09 a.m. Oct 3, 2026 (before the 1 p.m. close). The post-close official list (elections.bc.ca) could not be opened (robots-restricted), so a late withdrawal would not be reflected."
+      },
+      {
+       "id": "sidney-coles",
+       "name": "Sidney Coles",
+       "ballotName": "",
+       "incumbent": false,
+       "affiliation": {
+        "type": "party",
+        "name": "BC Green Party",
+        "partyId": "bc-green-party",
+        "sourceUrl": "https://bcballot.ca/candidates/"
+       },
+       "declaredIndependent": false,
+       "nominationStatus": "confirmed",
+       "website": "https://bcgreens.ca/candidates-2026/sidney-coles/",
+       "links": [],
+       "sourceUrls": [
+        "https://bcballot.ca/candidates/",
+        "https://votemate.org/bc2026provincial/candidates/",
+        "https://bcgreens.ca/candidates-2026/sidney-coles/"
+       ],
+       "positions": [],
+       "nominationNote": "Nomination accepted by Elections BC ('Filed') per BC Ballot's relay of the Elections BC candidate list checked 11:09 a.m. Oct 3, 2026 (before the 1 p.m. close). The post-close official list (elections.bc.ca) could not be opened (robots-restricted), so a late withdrawal would not be reflected."
+      },
+      {
+       "id": "sid-tobias",
+       "name": "Sid Tobias",
+       "ballotName": "",
+       "incumbent": false,
+       "affiliation": {
+        "type": "party",
+        "name": "CentreBC",
+        "partyId": "centrebc",
+        "sourceUrl": "https://bcballot.ca/candidates/"
+       },
+       "declaredIndependent": false,
+       "nominationStatus": "confirmed",
+       "website": "https://www.centrebc.ca/candidates/sid-tobias/",
+       "links": [],
+       "sourceUrls": [
+        "https://bcballot.ca/candidates/",
+        "https://votemate.org/bc2026provincial/candidates/",
+        "https://www.centrebc.ca/candidates/sid-tobias/"
+       ],
+       "positions": [],
+       "nominationNote": "Nomination accepted by Elections BC ('Filed') per BC Ballot's relay of the Elections BC candidate list checked 11:09 a.m. Oct 3, 2026 (before the 1 p.m. close). The post-close official list (elections.bc.ca) could not be opened (robots-restricted), so a late withdrawal would not be reflected."
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "candidateDataAsOf": {
+  "snapshot": "2026-10-03T11:09-07:00",
+  "source": "BC Ballot relay of Elections BC candidate list (bcballot.ca/candidates)",
+  "note": "Nominations closed 2026-10-03 at 1 p.m. Pacific. Elections BC's own candidate list and PDF are robots-restricted and were not accessed; no post-close source was found. 'confirmed' = nomination accepted by Elections BC before close; 'reported' = announced by party only. Re-check against elections.bc.ca/2026-provincial-election/candidate-list/.",
+  "otherCandidatesProvinceWide": "Independents: Richard Lambert (North Island), Kevin Diakiw (Surrey-White Rock), Thaelo Proctor (Kelowna Centre), Jordan Kealy (Peace River North); No affiliation: Clint Lambert (Nechako Lakes). None in the five ridings tracked here.",
+  "sourceUrls": [
+   "https://bcballot.ca/candidates/",
+   "https://bcballot.ca/candidates/independents-and-other-parties/"
+  ]
+ },
+ "removed": []
+}

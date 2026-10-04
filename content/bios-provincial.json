@@ -59,24 +59,51 @@
   "esquimalt-colwood-mla--sid-tobias": {
    "summary": "Mayor of View Royal since 2022 and a Capital Regional District director. Canadian Armed Forces veteran of nearly 25 years and former B.C. public servant.",
    "sourceUrl": "https://www.centrebc.ca/candidates/sid-tobias/"
+  },
+  "nanaimo-lantzville-mla--pepper-saltman": {
+   "summary": null,
+   "sourceUrl": null,
+   "note": "No candidate or party bio page found; BC Ballot notes no previous run on record."
   }
  },
  "affiliations": {
   "bc-ndp": {
    "blurb": null,
-   "sourceUrl": null
+   "sourceUrl": null,
+   "note": "bcndp.ca has no About/self-description page that could be opened (bcndp.ca/about returned the homepage, which describes the leader, not the party)."
   },
   "conservative-party": {
    "blurb": "Describes itself as an independent provincial party built on limited, fiscally responsible government, individual liberty, a free-enterprise economy and private property, alongside a social safety net for vulnerable people.",
    "sourceUrl": "https://www.conservativebc.ca/about_bc_conservatives"
   },
   "bc-green-party": {
-   "blurb": null,
-   "sourceUrl": null
+   "blurb": "Describes itself as North America's oldest Green party, founded in 1983, guided by sustainability, participatory democracy, social justice, ecological wisdom, non-violence and respect for diversity.",
+   "sourceUrl": "https://bcgreens.ca/about-us/"
   },
   "centrebc": {
    "blurb": "Describes itself as a pragmatic, moderate option focused on affordability, safety and opportunity, favouring evidence-based decisions, public services backed by a strong private sector, and elected officials finding common ground.",
    "sourceUrl": "https://www.centrebc.ca/"
+  },
+  "onebc": {
+   "blurb": "Describes itself as on a mission to lower taxes, defend families, reform democracy, preserve the environment, and deliver world-class health care, education and public infrastructure.",
+   "sourceUrl": "https://1bc.ca/"
+  },
+  "communist-party-of-bc": {
+   "blurb": "Describes itself as offering an anti-monopoly, working-class platform to strengthen the rights of working people, Indigenous peoples and the environment.",
+   "sourceUrl": "https://cpcbc.ca/our-platform/",
+   "note": "No About page found; wording taken from the party's platform page."
+  },
+  "christian-heritage-party-of-bc": {
+   "blurb": "Describes itself as standing on a foundation of individual dignity, personal freedoms, economic enterprise and limited government, which it says are granted by the Creator.",
+   "sourceUrl": "https://www.chpbc.ca/mission-statement/"
+  },
+  "canwest-party": {
+   "blurb": null,
+   "sourceUrl": null
+  },
+  "freedom-party-of-bc": {
+   "blurb": null,
+   "sourceUrl": null
   }
  }
 }

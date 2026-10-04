@@ -4,6 +4,8 @@ import { getVoter } from "@/lib/voter";
 import { q } from "@/lib/db";
 import { candidatesForRaces, fitFor, getGov, getIssues, positionsFor, racesFor, rankingFor, shuffleFor, viewsFor, type Race, type FitGroup } from "@/lib/data";
 import GovTabs from "@/components/GovTabs";
+import Avatar from "@/components/Avatar";
+import PartiesPanel from "@/components/PartiesPanel";
 
 export const dynamic = "force-dynamic";
 
@@ -86,7 +88,7 @@ export default async function CandidatesPage({ params, searchParams }: { params:
           {race && (
             <section aria-labelledby="race-h">
               <div className="race-head">
-                <h2 id="race-h">{race.office}{allAreas && race.area_name ? <span className="muted"> · {race.area_name}</span> : null}</h2>
+                <h2 id="race-h">{race.office}{(allAreas || govId === "province-of-bc") && race.area_name ? <span className="muted"> · {race.area_name}</span> : null}</h2>
                 <p className="small muted" style={{ margin: 0 }}>{list.length} candidates · {race.seats > 1 ? `${race.seats} seats, vote for up to ${race.seats}` : "1 seat"}</p>
               </div>
 
@@ -105,6 +107,7 @@ export default async function CandidatesPage({ params, searchParams }: { params:
                       {inGroup.map(({ c, pos, hits, others, fit }) => (
                         <li key={c.id}>
                           <Link className="cand-row" href={`/c/${encodeURIComponent(c.id)}`}>
+                            <Avatar name={c.name} />
                             <div className="cand-main">
                               <div className="cand-name">{c.name}</div>
                               <div className="cand-meta">
@@ -135,7 +138,10 @@ export default async function CandidatesPage({ params, searchParams }: { params:
             </section>
           )}
         </div>
-        <aside className="explainer-aside card">{Explainer}</aside>
+        <aside className="aside-stack">
+          <div className="explainer-aside card">{Explainer}</div>
+          {govId === "province-of-bc" && <div className="card parties-card"><PartiesPanel /></div>}
+        </aside>
       </div>
     </div>
   );
