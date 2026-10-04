@@ -13,7 +13,7 @@ export type Candidate = {
   affiliation_id: string | null; affiliation_name: string | null; affiliation_type: string | null; affiliation_source: string | null;
   affiliation_website: string | null; declared_independent: boolean; website: string | null; links: { label: string; url: string }[];
   sources: string[]; status: string; nomination_note: string | null;
-  summary: string | null; summary_source: string | null; affiliation_blurb: string | null; affiliation_platform: string | null;
+  summary: string | null; summary_source: string | null; affiliation_blurb: string | null; affiliation_platform: string | null; affiliation_leader: string | null; affiliation_leader_riding: string | null;
 };
 export type Issue = {
   id: string; government_id: string; title: string; description: string; what_it_affects: string; who_decides: string;
@@ -36,7 +36,7 @@ export async function racesFor(v: Pick<Voter, "city" | "riding">, govId: string)
 }
 export const electionFor = (govId: string) => one<Election>(`select * from elections where government_id=$1 order by voting_day limit 1`, [govId]);
 
-const CAND_SELECT = `select c.*, a.name as affiliation_name, a.type as affiliation_type, a.website as affiliation_website, a.blurb as affiliation_blurb, a.platform_url as affiliation_platform
+const CAND_SELECT = `select c.*, a.name as affiliation_name, a.type as affiliation_type, a.website as affiliation_website, a.blurb as affiliation_blurb, a.platform_url as affiliation_platform, a.leader as affiliation_leader, a.leader_riding as affiliation_leader_riding
   from candidacies c left join affiliations a on a.id=c.affiliation_id`;
 export const candidatesForRaces = (raceIds: string[]) =>
   raceIds.length ? q<Candidate>(`${CAND_SELECT} where c.race_id = any($1) and c.status <> 'withdrawn'`, [raceIds]) : Promise.resolve([] as Candidate[]);

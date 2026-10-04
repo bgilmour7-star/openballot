@@ -100,6 +100,7 @@ export default async function CandidatePage({ params, searchParams }: { params: 
             <section className="card">
               <p className="xs muted" style={{ margin: 0, fontWeight: 700, textTransform: "uppercase", letterSpacing: .5 }}>{c.affiliation_type === "party" ? "Party" : "Elector organization"}</p>
               <h2 style={{ fontSize: 18, margin: "2px 0 6px" }}>{c.affiliation_name}</h2>
+              {c.affiliation_leader && <p className="small" style={{ margin: "0 0 8px" }}>Leader: <b>{c.affiliation_leader}</b>{c.affiliation_leader_riding ? <span className="muted"> · on the ballot in {c.affiliation_leader_riding}</span> : null}</p>}
               {showBlurb ? <p className="small">{c.affiliation_blurb}</p> : <p className="small muted">A short description is being added.</p>}
               {members.length > 0 && <p className="small"><b>Also endorsed:</b> {members.slice(0, 6).map((m) => m.name).join(", ")}{members.length > 6 ? ` and ${members.length - 6} more` : ""}</p>}
               <Link className="btn secondary small" href={`/a/${c.affiliation_id}`}>About {c.affiliation_name}</Link>
