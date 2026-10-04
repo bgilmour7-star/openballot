@@ -1,4 +1,5 @@
 import Link from "next/link";
+import NextBar, { NbProgress } from "@/components/NextBar";
 import { redirect } from "next/navigation";
 import { getVoter, governmentsFor } from "@/lib/voter";
 import { COVERED_RIDINGS } from "@/lib/location";
@@ -68,6 +69,16 @@ export default async function Votes() {
       )}
       <ElectionsTimeline groups={groups} />
       <div style={{ marginTop: 16 }}><Share voterId={v.id} /></div>
+      {(() => {
+        const ordered = groups.flatMap((g) => g.elections);
+        const nextUp = ordered.find((e) => !e.ranked);
+        const done = ordered.filter((e) => e.ranked).length;
+        return (
+          <NextBar
+            status={<><b>{done === ordered.length ? "Every election ranked" : `${done} of ${ordered.length} elections ranked`}</b><NbProgress done={done} total={ordered.length} label={nextUp ? `Next up: ${nextUp.govName}` : "See who speaks to your issues"} /></>}
+            primary={nextUp ? { href: `/g/${nextUp.govId}`, label: "Rank the issues →" } : { href: `/g/${ordered[0]?.govId}/candidates`, label: "See candidates →" }} />
+        );
+      })()}
     </div>
   );
 }

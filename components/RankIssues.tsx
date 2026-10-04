@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useRef, useState, useTransition } from "react";
 import Link from "next/link";
+import NextBar, { NbProgress } from "./NextBar";
 import { saveRanking, saveView } from "@/app/actions";
 import type { Issue } from "@/lib/data";
 import IssueDetail from "./IssueDetail";
@@ -165,11 +166,12 @@ export default function RankIssues({ govId, issues, initialOrder, initialViews, 
             );
           })}
         </ol>
-        <div className="row" style={{ marginTop: 12 }}>
-          <Link className="btn" href={`/g/${govId}/candidates`}>See candidates</Link>
-          {everSaved && <Link className="btn secondary" href={`/g/${govId}/community`}>What your neighbours think</Link>}
-          <span className={`small ${topDone < TOP ? "nudge" : "muted"}`}>{topDone < TOP ? `Add your view on ${TOP - topDone} more of your top ${TOP}` : `✓ Views added on your top ${TOP}`}</span>
-        </div>
+        <NextBar
+          status={everSaved
+            ? <><b>Your top {TOP} are set</b><NbProgress done={topDone} total={TOP} label={topDone < TOP ? `Views added: ${topDone} of ${TOP} (optional)` : `✓ Views added on your top ${TOP}`} /></>
+            : <><b>Put the issues in your order</b><span className="muted">Drag, or use the arrows. Your order saves as you go.</span></>}
+          links={everSaved ? [{ href: `/g/${govId}/community`, label: "Community" }] : []}
+          primary={{ href: `/g/${govId}/candidates`, label: "See candidates →" }} />
       </div>
       {sheet && sel && (
         <div className="sheet-wrap" role="dialog" aria-modal="true" aria-label={sel.title}>

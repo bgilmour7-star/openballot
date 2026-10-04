@@ -1,11 +1,11 @@
 import Link from "next/link";
+import NextBar from "@/components/NextBar";
 import { notFound } from "next/navigation";
 import { getVoter } from "@/lib/voter";
 import { getGov, getIssues, rankingFor } from "@/lib/data";
 import { communityFor, THRESHOLD } from "@/lib/community";
 import GovTabs from "@/components/GovTabs";
 import Share from "@/components/Share";
-import Journey from "@/components/Journey";
 import { currentUser } from "@/lib/auth/server";
 import { viewsFor } from "@/lib/data";
 
@@ -52,7 +52,6 @@ export default async function CommunityPage({ params, searchParams }: { params: 
       {sp.counted && counted && <p className="counted-note">✓ Your ranking now counts in {gov.name}&apos;s community list. Thanks for adding it.</p>}
       <div className="cands-layout">
         <div>
-          {mine && <Journey govId={govId} govName={gov.name} ranked viewsDone={viewsDone} signedIn={!!user} next={`/g/${govId}/community`} />}
           {!mine ? (
             <div className="card lock">
               <p className="stand-kicker">Community priorities</p>
@@ -111,6 +110,14 @@ export default async function CommunityPage({ params, searchParams }: { params: 
               </details>
             </section>
           )}
+          <NextBar
+            status={!mine ? <><b>Your ranking comes first</b><span className="muted">Rank the issues to see the community list.</span></>
+              : counted ? <><b>✓ Your ranking counts here</b><span className="muted">You can change it any time.</span></>
+              : <><b>Your ranking isn&apos;t counted yet</b><span className="muted">A free account adds it. Your name is never shown.</span></>}
+            links={mine ? [{ href: `/g/${govId}/candidates`, label: "Candidates" }] : []}
+            primary={!mine ? { href: `/g/${govId}`, label: "Rank the issues →" }
+              : counted ? { href: "/votes", label: "Your elections →" }
+              : { href: signHref, label: "Make it count →" }} />
         </div>
         <aside className="aside-stack">
           <div className="card">

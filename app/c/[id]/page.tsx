@@ -1,4 +1,5 @@
 import Link from "next/link";
+import NextBar from "@/components/NextBar";
 import { notFound } from "next/navigation";
 import { one, q } from "@/lib/db";
 import { getCandidate, getIssues, host, positionsFor, SOURCE_LABEL } from "@/lib/data";
@@ -117,6 +118,10 @@ export default async function CandidatePage({ params, searchParams }: { params: 
           <p className="xs muted">Profile sources: {(c.sources ?? []).map((s, k) => <a key={k} href={s} target="_blank" rel="noreferrer" style={{ marginRight: 8 }}>{host(s)}</a>)} · <Link href={`/c/${encodeURIComponent(c.id)}/claim?problem=1`}>Report a problem</Link></p>
         </aside>
       </div>
+      <NextBar
+        status={<><b>{race!.office}</b><span className="muted">{race!.gov_name}{race!.seats > 1 ? ` · vote for up to ${race!.seats}` : ""}</span></>}
+        links={c.affiliation_id ? [{ href: `/a/${c.affiliation_id}`, label: `About ${c.affiliation_name}` }] : []}
+        primary={{ href: `/g/${race!.government_id}/candidates?race=${c.race_id}`, label: "Other candidates →" }} />
     </div>
   );
 }

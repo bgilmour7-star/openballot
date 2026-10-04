@@ -1,4 +1,5 @@
 import Link from "next/link";
+import NextBar from "@/components/NextBar";
 import { notFound } from "next/navigation";
 import { getGov, getIssues, host } from "@/lib/data";
 import GovTabs from "@/components/GovTabs";
@@ -48,6 +49,10 @@ export default async function HowBuilt({ params }: { params: Promise<{ gov: stri
         <h2>Sources ({sources.length})</h2>
         <ul className="small">{sources.map((s) => <li key={s}><a href={s} target="_blank" rel="noreferrer">{host(s)}</a> <span className="xs muted">{s.length > 80 ? s.slice(0, 80) + "…" : s}</span></li>)}</ul>
       </div>
+      <NextBar
+        status={<><b>Seen enough of how it&apos;s made?</b><span className="muted">Head back to your issues or candidates.</span></>}
+        links={[{ href: `/g/${govId}`, label: "Your issues" }]}
+        primary={{ href: `/g/${govId}/candidates`, label: "See candidates →" }} />
     </div>
   );
 }

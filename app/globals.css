@@ -104,7 +104,7 @@ table.adm th, table.adm td { text-align: left; border-bottom: 1px solid var(--li
 }
 
 .src, .xs, .small, .notice { overflow-wrap: anywhere; }
-main { overflow-x: hidden; }
+main { overflow-x: clip; }
 
 /* Issues: list + detail */
 .issues-layout { display: block; }
@@ -537,3 +537,42 @@ main:has(.landing) + footer.bottom { margin-top: 0; }
   .sheet-body { padding: 18px 24px 32px; }
 }
 .sheet .sides { grid-template-columns: minmax(0, 1fr); gap: 6px; }
+
+/* Sticky next-step bar (shared pattern; not on the landing page) */
+.next-bar { position: sticky; bottom: 0; z-index: 20; margin-top: 32px; padding: 12px 0; display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+  border-image: conic-gradient(#fff 0 0) fill 0 / / 0 100vmax; }
+.next-bar::before { content: ""; position: absolute; top: 0; left: -100vmax; right: -100vmax; border-top: 1px solid var(--line); box-shadow: 0 -6px 18px rgba(29,27,43,.07); pointer-events: none; }
+main:has(.next-bar) { padding-bottom: 0; }
+.nb-status { flex: 1 1 220px; min-width: 0; font-size: 14px; }
+.nb-status b { display: block; font-size: 15px; }
+.nb-actions { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-left: auto; }
+.nb-link { font-weight: 700; font-size: 15px; }
+.nb-primary { min-height: 48px; padding: 0 22px; font-size: 16px; }
+.nb-progress { display: inline-flex; align-items: center; gap: 8px; margin-top: 4px; }
+.nb-segs { display: inline-flex; gap: 4px; }
+.nb-segs i { width: 26px; height: 6px; border-radius: 3px; background: var(--line); }
+.nb-segs i.on { background: var(--accent); }
+.nb-plabel { font-size: 13px; color: var(--muted); }
+@media (max-width: 560px) {
+  .next-bar { gap: 8px; padding: 10px 0; }
+  .nb-status { flex-basis: 100%; font-size: 13px; }
+  .nb-status b { font-size: 14px; display: inline; }
+  .nb-actions { width: 100%; gap: 12px; }
+  .nb-primary { flex: 1; justify-content: center; min-height: 46px; }
+}
+/* next-bar refinements: one-line status, no-wrap actions, compact on phones */
+.next-bar { flex-wrap: nowrap; }
+.nb-status { flex: 1 1 0; }
+.nb-status > .muted { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.nb-actions { flex: none; flex-wrap: nowrap; }
+.nb-link, .nb-primary { white-space: nowrap; }
+@media (max-width: 560px) {
+  .next-bar { flex-wrap: wrap; }
+  .nb-status > .muted { display: none; }
+  .nb-status b { display: block; }
+  .nb-progress { margin-top: 2px; }
+  .nb-actions { flex: 1 1 100%; }
+  .nb-primary { padding: 0 14px; font-size: 15px; }
+}
+.nb-progress { max-width: 100%; min-width: 0; }
+.nb-plabel { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }

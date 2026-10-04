@@ -1,4 +1,5 @@
 import Link from "next/link";
+import NextBar, { NbProgress } from "@/components/NextBar";
 import { notFound } from "next/navigation";
 import { getVoter } from "@/lib/voter";
 import { q } from "@/lib/db";
@@ -139,6 +140,10 @@ export default async function CandidatesPage({ params, searchParams }: { params:
               })}
             </section>
           )}
+          <NextBar
+            status={ranking ? <><b>Grouped by your top 3</b><span className="muted">{top.map((t) => issueTitle[t]).join(" · ")}</span></> : <><b>Rank the issues first</b><span className="muted">Then candidates are grouped by what you care about.</span></>}
+            links={ranking ? [{ href: `/g/${govId}`, label: "Change ranking" }] : []}
+            primary={ranking ? { href: `/g/${govId}/community`, label: "Community →" } : { href: `/g/${govId}`, label: "Rank the issues →" }} />
         </div>
         <aside className="aside-stack">
           <div className="explainer-aside card">{Explainer}</div>

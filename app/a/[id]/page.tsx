@@ -1,4 +1,5 @@
 import Link from "next/link";
+import NextBar from "@/components/NextBar";
 import { notFound } from "next/navigation";
 import { one, q } from "@/lib/db";
 import { host, SOURCE_LABEL } from "@/lib/data";
@@ -86,6 +87,9 @@ export default async function AffiliationPage({ params }: { params: Promise<{ id
           </section>
         </aside>
       </div>
+      <NextBar
+        status={<><b>{a.name}</b><span className="muted">{a.type === "party" ? "Registered provincial party" : "Local slate"}</span></>}
+        primary={{ href: "/votes", label: "Your elections →" }} />
     </div>
   );
 }
