@@ -5,6 +5,7 @@ import { COVERED_RIDINGS } from "@/lib/location";
 import { q } from "@/lib/db";
 import { daysUntil, electionFor, fmtDate, getGov, racesFor, host } from "@/lib/data";
 import Share from "@/components/Share";
+import ElectionsTimeline, { type DayGroup, type ElectionCard } from "@/components/ElectionsTimeline";
 import { forgetLocation } from "../actions";
 
 export const dynamic = "force-dynamic";
@@ -23,12 +24,38 @@ export default async function Votes() {
     return { gov: gov!, election: election!, races, counts: Object.fromEntries(counts.map((c) => [c.race_id, c.n])), questions };
   }));
   const postal = v.postal_code ? `${v.postal_code.slice(0, 3)} ${v.postal_code.slice(3)}` : null;
-  const byDate = [...blocks].sort((a, b) => String(a.election?.voting_day).localeCompare(String(b.election?.voting_day)));
+  const isoDay = (d: unknown) => (d ? (typeof d === "string" ? d.slice(0, 10) : new Date(d as any).toISOString().slice(0, 10)) : "9999-12-31");
+  const levelLabel = (l: string) => (l === "school" ? "School board" : l === "provincial" ? "Provincial" : "City council");
+  const cards = blocks.map(({ gov, election, races, counts, questions }): ElectionCard => ({
+    govId: gov.id, govName: gov.name, levelLabel: levelLabel(gov.level), ranked: ranked.has(gov.id),
+    votingDay: isoDay(election?.voting_day),
+    votingHours: election?.voting_hours ?? null,
+    races: races.map((r) => ({ id: r.id, office: r.office, seats: r.seats, areaName: r.area_name ?? null, n: counts[r.id] ?? 0 })),
+    questions: questions.map((bq: any) => ({ id: bq.id, question: bq.question, summary: bq.summary ?? null })),
+    advance: (Array.isArray(election?.advance_voting) ? election.advance_voting : []).map((a: any) => ({
+      date: fmtDate(a.date, { weekday: "short", month: "short", day: "numeric" }), hours: a.hours ?? null, places: a.locations ?? [], note: a.note ?? null })),
+    howToVote: election?.how_to_vote ?? null, mailBallot: election?.mail_ballot ?? null,
+    officialUrl: election?.official_url ?? null, officialHost: election?.official_url ? host(election.official_url) : null,
+  }));
+  const byDay = new Map<string, ElectionCard[]>();
+  for (const c of [...cards].sort((a, b) => a.votingDay.localeCompare(b.votingDay))) byDay.set(c.votingDay, [...(byDay.get(c.votingDay) ?? []), c]);
+  const groups: DayGroup[] = [...byDay.entries()].map(([day, els]) => {
+    const early = [...new Set(els.flatMap((e) => e.advance.map((a) => a.date)))];
+    return {
+      key: day,
+      weekdayMonth: fmtDate(day, { weekday: "short" }) + " · " + fmtDate(day, { month: "short" }),
+      dayNum: fmtDate(day, { day: "numeric" }),
+      longDate: fmtDate(day, { weekday: "long", month: "long", day: "numeric" }),
+      daysLeft: daysUntil(day),
+      earlyVoting: early.length ? `Vote early: ${early.length > 3 ? `${early[0]} to ${early[early.length - 1]}` : early.join(early.length === 2 ? " and " : "; ")}. ${els.length > 1 ? "Both ballots are cast at the same place." : ""}`.trim() : null,
+      elections: els,
+    };
+  });
 
   return (
-    <div className="wrap wide">
+    <div className="wrap">
       <h1>Your elections</h1>
-      <p className="page-intro">Every election you can vote in, based on your location. For each one, put the issues in your order, then see which candidates have spoken to them. Dates and how to vote are at the bottom of each card.</p>
+      <p className="page-intro">Every election you can vote in, grouped by voting day. For each one, put the issues in your order, then see which candidates have spoken to them. Select an election for its races and how to vote.</p>
       <div className="loc-bar">
         <div>
           <div className="loc-code">{postal ?? "Your street address"}</div>
@@ -39,58 +66,7 @@ export default async function Votes() {
       {!v.city && (
         <p className="notice">Your local council and school board races aren&apos;t covered yet. Openballot covers the City of Nanaimo and the City of Victoria in this alpha. {v.riding && !COVERED_RIDINGS.includes(v.riding) ? "Your provincial riding isn't covered yet either." : ""} <Link href="/where">Wrong area? Check your street address.</Link></p>
       )}
-      <div className="votes-grid">
-      {byDate.map(({ gov, election, races, counts, questions }) => {
-        const days = daysUntil(election?.voting_day);
-        return (
-          <section className="card" key={gov.id}>
-            <div className="gov-head">
-              <div>
-                <p className="xs muted" style={{ margin: 0, textTransform: "uppercase", letterSpacing: 1, fontWeight: 700 }}>{gov.level === "school" ? "School board" : gov.level === "provincial" ? "Provincial" : "City council"}</p>
-                <h2>{gov.name}</h2>
-                <p className="small" style={{ margin: 0 }}><b>Voting day: {fmtDate(election?.voting_day, { weekday: "long", month: "long", day: "numeric" })}</b>{election?.voting_hours ? `, ${election.voting_hours}` : ""}</p>
-              </div>
-              {days != null && days >= 0 && <div style={{ textAlign: "right" }}><div className="countdown">{days}</div><div className="xs muted">{days === 1 ? "day" : "days"} left</div></div>}
-            </div>
-            <ul className="list" style={{ marginTop: 8 }}>
-              {races.map((r) => (
-                <li key={r.id} className="row between">
-                  <div><b>{r.office}</b>{r.seats > 1 ? <span className="muted"> · vote for up to {r.seats}</span> : null}<div className="xs muted">{r.area_name}</div></div>
-                  <span className="small muted">{counts[r.id] ?? 0} candidates</span>
-                </li>
-              ))}
-            </ul>
-            {questions.length > 0 && (
-              <div className="card flat" style={{ background: "var(--soft)" }}>
-                <h3>Also on this ballot</h3>
-                {questions.map((bq: any) => (
-                  <p key={bq.id} className="small"><b>{bq.question}</b><br /><span className="muted">{bq.summary}</span></p>
-                ))}
-              </div>
-            )}
-            <div className="row" style={{ marginTop: 12 }}>
-              <Link className="btn" href={`/g/${gov.id}`}>{ranked.has(gov.id) ? "Review your issues" : "Rank the issues"}</Link>
-              <Link className="btn secondary" href={`/g/${gov.id}/candidates`}>See candidates</Link>
-              {ranked.has(gov.id) ? <span className="badge done">Ranked</span> : <span className="badge todo">Not ranked yet</span>}
-            </div>
-            <details style={{ marginTop: 12 }}>
-              <summary className="small" style={{ cursor: "pointer", color: "var(--action)", fontWeight: 700 }}>When and how to vote</summary>
-              <div className="small" style={{ marginTop: 8 }}>
-                {Array.isArray(election?.advance_voting) && election.advance_voting.length > 0 && (
-                  <p><b>Advance voting:</b> {election.advance_voting.map((a: any) => fmtDate(a.date)).join(", ")}
-                    {election.advance_voting[0]?.hours ? ` (${election.advance_voting[0].hours})` : ""}
-                    {election.advance_voting[0]?.locations?.length ? ` at ${[...new Set(election.advance_voting.flatMap((a: any) => a.locations ?? []))].join("; ")}` : ""}
-                    {election.advance_voting[0]?.note ? `. ${election.advance_voting[0].note}` : ""}</p>
-                )}
-                {election?.how_to_vote && <p>{election.how_to_vote}</p>}
-                {election?.mail_ballot && <p><b>By mail:</b> {election.mail_ballot}</p>}
-                {election?.official_url && <p>Official source: <a href={election.official_url} target="_blank" rel="noreferrer">{host(election.official_url)}</a></p>}
-              </div>
-            </details>
-          </section>
-        );
-      })}
-      </div>
+      <ElectionsTimeline groups={groups} />
       <div style={{ marginTop: 16 }}><Share voterId={v.id} /></div>
     </div>
   );
