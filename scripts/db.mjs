@@ -84,6 +84,9 @@ await sql.query(`alter table affiliations add column if not exists leader_riding
 await sql.query(`alter table affiliations add column if not exists candidate_count int`);
 await sql.query(`alter table affiliations add column if not exists positions_note text`);
 await sql.query(`alter table voters add column if not exists exclude_from_results boolean default false`);
+// Sides on an issue's A/B question: proposed by research, shown to voters only once an admin approves.
+for (const col of ["lean_state text", "proposed_lean integer", "lean_quote text", "lean_reason text", "lean_reviewed_by text", "lean_reviewed_at timestamptz"])
+  await sql.query(`alter table positions add column if not exists ${col}`);
 await sql.query(`create table if not exists affiliation_positions (
   id serial primary key, affiliation_id text not null references affiliations(id) on delete cascade,
   issue_id text references issues(id) on delete set null, summary text not null, source_url text,
@@ -131,6 +134,15 @@ async function syncPartyPositions() {
   if (ops.length) { await sql.transaction(ops); console.log(`[db] party positions synced (${ops.length})`); }
 }
 
+async function backfillLeanProposals() {
+  let list; try { list = read("leans-proposed-2026.json"); } catch { return; }
+  const ups = list.map((x) => sql.query(
+    `update positions set proposed_lean=$4, lean_quote=$5, lean_reason=$6, lean_state='proposed'
+      where candidacy_id=$1 and issue_id=$2 and left(summary, 80)=$3 and lean_state is null`,
+    [x.candidacy_id, x.issue_id, x.summary_key, x.no_side ? null : x.proposed_lean, x.quote ?? null, x.reason ?? null]));
+  if (ups.length) { await sql.transaction(ups); console.log(`[db] side proposals loaded (${ups.length})`); }
+}
+
 async function backfillBios() {
   const ups = [];
   for (const f of ["bios-nanaimo.json", "bios-victoria.json", "bios-provincial.json"]) {
@@ -149,7 +161,7 @@ try {
   const ups = Object.entries(t.issues ?? {}).map(([id, v]) =>
     sql.query(`update issues set tradeoffs=$2 where id=$1 and tradeoffs is null`, [id, JSON.stringify(v)]));
   const [{ n: have }] = await sql`select count(*)::int as n from governments`;
-  if (have > 0) { if (ups.length) { await sql.transaction(ups); console.log(`[db] trade-offs backfilled (${ups.length})`); } await syncProvincial(); await syncPartyPositions(); await backfillBios(); }
+  if (have > 0) { if (ups.length) { await sql.transaction(ups); console.log(`[db] trade-offs backfilled (${ups.length})`); } await syncProvincial(); await syncPartyPositions(); await backfillBios(); await backfillLeanProposals(); }
 } catch (e) { console.log("[db] no trade-offs file yet", String(e).slice(0, 80)); }
 
 const [{ n }] = await sql`select count(*)::int as n from governments`;
@@ -297,3 +309,4 @@ try {
 await syncProvincial();
 await syncPartyPositions();
 await backfillBios();
+await backfillLeanProposals();

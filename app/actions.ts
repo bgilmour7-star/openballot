@@ -85,8 +85,11 @@ export async function submitClaim(formData: FormData) {
   const name = clip(formData.get("name"), 200);
   const email = clip(formData.get("email"), 200);
   const proof = clip(formData.get("proof_url"), 500);
-  const message = clip(formData.get("message"), 5000);
+  let message = clip(formData.get("message"), 5000);
   if (!name || !email.includes("@")) redirect(`/c/${encodeURIComponent(candidacyId)}/claim?err=1`);
+  // Self-reported sides on the issue questions, kept with the request for the admin to apply after verifying.
+  const sides = [...formData.entries()].filter(([k]) => k.startsWith("side__")).map(([k, val]) => `${k.slice(6)}: ${String(val).slice(0, 2)}`);
+  if (sides.length) message = `${message}\n\n[Self-reported sides, -2 = strongly A … 2 = strongly B]\n${sides.join("\n")}`.slice(0, 8000);
   const v = await ensureVoter();
   await q(`insert into claim_requests (candidacy_id, name, email, proof_url, message) values ($1,$2,$3,$4,$5)`,
     [candidacyId, name, email, proof, message]);

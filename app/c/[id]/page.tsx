@@ -2,7 +2,8 @@ import Link from "next/link";
 import NextBar from "@/components/NextBar";
 import { notFound } from "next/navigation";
 import { one, q } from "@/lib/db";
-import { getCandidate, getIssues, host, positionsFor, SOURCE_LABEL } from "@/lib/data";
+import { getCandidate, getIssues, host, positionsFor, rankingFor, SOURCE_LABEL, stanceOn, viewsFor, viewWords, type Stance } from "@/lib/data";
+import { getVoter } from "@/lib/voter";
 import Avatar from "@/components/Avatar";
 
 export const dynamic = "force-dynamic";
@@ -28,9 +29,20 @@ export default async function CandidatePage({ params, searchParams }: { params: 
   const showBlurb = !!c.affiliation_blurb && (blurbGap?.n ?? 1) === 0;
   const showSummary = (completeness?.missing ?? 1) === 0 && !!c.summary;
   const issueTitle = Object.fromEntries(issues.map((i) => [i.id, i.title]));
+  const issueById = Object.fromEntries(issues.map((i) => [i.id, i]));
+  // The voter's own inputs: their ranking orders everything below, and their views are compared with approved sides.
+  const v = await getVoter();
+  const [ranking, views] = await Promise.all([rankingFor(v?.id, race!.government_id), viewsFor(v?.id)]);
+  const rankIdx = (issueId: string | null) => {
+    if (!issueId) return 999;
+    const k = ranking?.indexOf(issueId) ?? -1;
+    return k >= 0 ? k : 100 + issues.findIndex((i) => i.id === issueId);
+  };
+  const top = (ranking ?? []).slice(0, 3).filter((id) => issueById[id]);
+  const firstName = c.name.split(" ")[0];
   const own = positions.filter((p) => !p.inherited);
-  const party = positions.filter((p) => p.inherited && p.issue_id).sort((a, b) => issues.findIndex((i) => i.id === a.issue_id) - issues.findIndex((i) => i.id === b.issue_id));
-  const onIssues = own.filter((p) => p.issue_id);
+  const party = positions.filter((p) => p.inherited && p.issue_id).sort((a, b) => rankIdx(a.issue_id) - rankIdx(b.issue_id));
+  const onIssues = own.filter((p) => p.issue_id).sort((a, b) => rankIdx(a.issue_id) - rankIdx(b.issue_id));
   const other = own.filter((p) => !p.issue_id);
   const noStance = issues.filter((i) => !positions.some((p) => p.issue_id === i.id));
   const partyNote = c.affiliation_id ? await one<{ positions_note: string | null }>(`select positions_note from affiliations where id=$1`, [c.affiliation_id]) : null;
@@ -38,6 +50,9 @@ export default async function CandidatePage({ params, searchParams }: { params: 
     <div className="pos">
       <p className="xs muted" style={{ margin: 0, fontWeight: 700, textTransform: p.issue_id ? "none" : "capitalize" }}>{p.issue_id ? issueTitle[p.issue_id] : p.topic}</p>
       <p style={{ margin: "2px 0" }}>{p.summary}</p>
+      {p.issue_id && p.lean_state === "approved" && issueById[p.issue_id] && (
+        <p className="reading">{p.lean == null || p.lean === 0 ? "Openballot's reading: no clear side on " : `Openballot's reading: ${Math.abs(p.lean) === 2 ? "strongly" : "leans"} ${p.lean < 0 ? "A" : "B"}, "${p.lean < 0 ? issueById[p.issue_id].pole_a : issueById[p.issue_id].pole_b}"`}{p.lean == null || p.lean === 0 ? `"${issueById[p.issue_id].question}"` : ""}</p>
+      )}
       <p className="src">{SOURCE_LABEL[p.source_type] ?? "Source"}{p.source_url ? <> · <a href={p.source_url} target="_blank" rel="noreferrer">{host(p.source_url)}</a></> : null}</p>
     </div>
   );
@@ -63,9 +78,46 @@ export default async function CandidatePage({ params, searchParams }: { params: 
 
       <div className="profile-layout">
         <div>
+          {top.length > 0 ? (
+            <section className="card you-card" aria-labelledby="you-h">
+              <h2 id="you-h">You and {firstName}</h2>
+              <p className="xs muted" style={{ marginTop: 0 }}>Your top 3 issues, in your order.</p>
+              <ol className="you-list">
+                {top.map((iid, k) => {
+                  const i = issueById[iid];
+                  const st: Stance = stanceOn(positions, iid, views[iid]);
+                  const theirs = positions.find((p) => p.issue_id === iid && !p.inherited) ?? positions.find((p) => p.issue_id === iid);
+                  const mine = viewWords(i, views[iid]);
+                  return (
+                    <li key={iid} className="you-row">
+                      <p className="you-issue"><span className="rank-num sm">{k + 1}</span>{i.title}</p>
+                      <div className="you-grid">
+                        <div>
+                          <p className="you-k">You</p>
+                          {mine ? <p className="small" style={{ margin: 0 }}>{mine}</p> : <p className="small" style={{ margin: 0 }}><Link href={`/g/${race!.government_id}`}>Add your view</Link> <span className="muted">to compare</span></p>}
+                        </div>
+                        <div>
+                          <p className="you-k">{firstName}{theirs?.inherited ? ` (via ${theirs.affiliation_name})` : ""}</p>
+                          {theirs ? <p className="small" style={{ margin: 0 }}>{theirs.summary}{theirs.source_url ? <> <a className="xs" href={theirs.source_url} target="_blank" rel="noreferrer">{host(theirs.source_url)}</a></> : null}</p> : <p className="small muted" style={{ margin: 0 }}>Nothing on record yet.</p>}
+                        </div>
+                      </div>
+                      <p className={`stance st-${st.kind}`} style={{ margin: "8px 0 0" }}><span className="st-dot" aria-hidden /><span><b>{st.kind === "similar" ? "Similar to your view" : st.kind === "different" ? "Different from your view" : st.kind === "their-side" ? `Leans ${st.side}` : st.kind === "no-side" ? "No clear side on this question" : "Nothing on record"}</b>{st.kind === "similar" ? <span className="muted"> · you both lean {st.side}</span> : st.kind === "different" ? <span className="muted"> · {firstName} leans {st.side}{st.inherited ? " (party position)" : ""}</span> : st.kind === "their-side" ? <span className="muted"> · {st.side === "A" ? i.pole_a : i.pole_b}</span> : null}</span></p>
+                    </li>
+                  );
+                })}
+              </ol>
+              <p className="xs muted" style={{ marginBottom: 0 }}>Sides are Openballot&apos;s reading of each statement, checked by a person. This is never a recommendation. Are you {c.name}? <Link href={`/c/${encodeURIComponent(c.id)}/claim`}>Claim this profile</Link> to correct a reading or state your side.</p>
+            </section>
+          ) : (
+            <section className="card you-card">
+              <h2>You and {firstName}</h2>
+              <p className="small muted">Rank the issues for {race!.gov_name} and this section will compare {firstName}&apos;s positions with what matters to you.</p>
+              <Link className="btn secondary small" href={`/g/${race!.government_id}`}>Rank the issues</Link>
+            </section>
+          )}
           <section className="card">
             <h2>Positions on the issues</h2>
-            <p className="xs muted">Neutral summaries of public statements, each linked to its source. Not anyone&apos;s exact words.</p>
+            <p className="xs muted">Neutral summaries of public statements, each linked to its source. Not anyone&apos;s exact words.{top.length ? " Ordered by your ranking." : ""}</p>
             <h3 style={{ marginTop: 12 }}>{c.name}&apos;s own statements</h3>
             {onIssues.length === 0 && other.length === 0 && <p className="small muted">None on record yet.</p>}
             {onIssues.map((p) => <Pos key={p.id} p={p} />)}

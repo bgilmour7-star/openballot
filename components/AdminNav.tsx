@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-const ITEMS: [string, string][] = [["/admin", "Measures"], ["/admin/community", "Community"], ["/admin/locations", "Locations"], ["/admin/requests", "Requests"], ["/admin/feedback", "Feedback"], ["/admin/candidates", "Candidates"],
+const ITEMS: [string, string][] = [["/admin", "Measures"], ["/admin/community", "Community"], ["/admin/locations", "Locations"], ["/admin/requests", "Requests"], ["/admin/feedback", "Feedback"], ["/admin/candidates", "Candidates"], ["/admin/leans", "Sides"],
   ["/admin/issues", "Issues"], ["/admin/elections", "Elections"], ["/admin/affiliations", "Affiliations"], ["/admin/audit", "Change log"]];
 export default function AdminNav() {
   const path = usePathname();

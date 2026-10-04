@@ -3,7 +3,7 @@ import NextBar, { NbProgress } from "@/components/NextBar";
 import { notFound } from "next/navigation";
 import { getVoter } from "@/lib/voter";
 import { q } from "@/lib/db";
-import { candidatesForRaces, fitFor, getGov, getIssues, positionsFor, racesFor, rankingFor, shuffleFor, viewsFor, type Race, type FitGroup } from "@/lib/data";
+import { candidatesForRaces, fitFor, stanceOn, type Stance, getGov, getIssues, positionsFor, racesFor, rankingFor, shuffleFor, viewsFor, type Race, type FitGroup } from "@/lib/data";
 import GovTabs from "@/components/GovTabs";
 import Avatar from "@/components/Avatar";
 import PartiesPanel from "@/components/PartiesPanel";
@@ -15,6 +15,16 @@ const GROUPS: { key: FitGroup; label: string; hint: string }[] = [
   { key: "some", label: "Speaks to one of your top issues", hint: "A sourced position on 1 of them" },
   { key: "unknown", label: "Nothing on record yet for your top issues", hint: "No sourced position on any of them yet" },
 ];
+
+function stanceText(st: Stance) {
+  switch (st.kind) {
+    case "similar": return "Similar to your view";
+    case "different": return "Different from your view";
+    case "their-side": return `Leans ${st.side}`;
+    case "no-side": return "No clear side";
+    default: return "Nothing on record";
+  }
+}
 
 export default async function CandidatesPage({ params, searchParams }: { params: Promise<{ gov: string }>; searchParams: Promise<Record<string, string>> }) {
   const { gov: govId } = await params;
@@ -118,17 +128,22 @@ export default async function CandidatesPage({ params, searchParams }: { params:
                                 {c.incumbent && <span>Incumbent</span>}
                                 {c.status === "unconfirmed" && <span className="badge todo">Nomination not yet confirmed</span>}
                               </div>
-                              {hits.length + others.length > 0 ? (
+                              {ranking ? (
+                                <ul className="stances" aria-label="On your top 3 issues">
+                                  {top.map((t) => { const st = stanceOn(pos, t, views[t]); return (
+                                    <li key={t} className={`stance st-${st.kind}`}><span className="st-dot" aria-hidden /><span className="st-issue">{issueTitle[t]}</span><span className="st-label">{stanceText(st)}</span></li>
+                                  ); })}
+                                </ul>
+                              ) : hits.length + others.length > 0 ? (
                                 <div className="chips">
-                                  {hits.map((t) => <span key={t} className="chip hit">{issueTitle[t]}</span>)}
-                                  {others.slice(0, 3).map((t) => <span key={t} className="chip">{issueTitle[t]}</span>)}
-                                  {others.length > 3 && <span className="chip">+{others.length - 3} more</span>}
+                                  {others.slice(0, 4).map((t) => <span key={t} className="chip">{issueTitle[t]}</span>)}
+                                  {others.length > 4 && <span className="chip">+{others.length - 4} more</span>}
                                 </div>
                               ) : (
                                 <p className="xs muted" style={{ margin: "6px 0 0" }}>{pos.length ? "Positions on other topics only" : "No stance yet on any issue"}</p>
                               )}
+                              {ranking && others.length > 0 && <p className="xs muted" style={{ margin: "6px 0 0" }}>Also on: {others.slice(0, 3).map((t) => issueTitle[t]).join(", ")}{others.length > 3 ? ` and ${others.length - 3} more` : ""}</p>}
                               {pos.some((p) => p.inherited) && <p className="xs muted" style={{ margin: "4px 0 0" }}>Includes {c.affiliation_type === "party" ? "party" : "slate"} positions</p>}
-                              {fit.agree + fit.differ > 0 && <p className="xs muted" style={{ margin: "4px 0 0" }}>Where tagged: {fit.agree} similar to your view, {fit.differ} different</p>}
                             </div>
                             <span className="chev" aria-hidden>›</span>
                           </Link>

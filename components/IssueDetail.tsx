@@ -3,8 +3,8 @@ import type { Issue } from "@/lib/data";
 
 const host = (u: string) => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return u; } };
 
-export default function IssueDetail({ issue: i, rank, flip, value, onPick, onPrev, onNext }: {
-  issue: Issue; rank: number; flip: boolean; value: number | undefined;
+export default function IssueDetail({ issue: i, rank, flip, value, onPick, onPrev, onNext, speakers, candidatesHref }: {
+  issue: Issue; rank: number; flip: boolean; value: number | undefined; speakers?: number; candidatesHref?: string;
   onPick: (canonical: number) => void; onPrev?: () => void; onNext?: () => void;
 }) {
   const left = flip ? i.pole_b : i.pole_a, right = flip ? i.pole_a : i.pole_b;
@@ -64,6 +64,13 @@ export default function IssueDetail({ issue: i, rank, flip, value, onPick, onPre
         <p className="xs muted" style={{ margin: "8px 0 0" }}>Pick the option closer to your view. Trade-offs are a balanced summary, not a prediction. Tap your choice again to clear it.</p>
       </section>
 
+      {candidatesHref && (
+        <a className="speakers" href={candidatesHref}>
+          <span><b>{speakers ? `${speakers} ${speakers === 1 ? "candidate has" : "candidates have"} said something about this` : "No candidate on your ballot has said anything about this yet"}</b>
+          <span className="xs muted" style={{ display: "block" }}>{speakers ? (value != null ? "See where they stand compared with your view" : "Add your view above to compare") : "We add positions as candidates publish them"}</span></span>
+          {speakers ? <span className="chev" aria-hidden>›</span> : null}
+        </a>
+      )}
       <dl className="facts small">
         <dt>Who it affects</dt><dd>{i.what_it_affects}</dd>
         <dt>What this government can do</dt><dd>{i.who_decides}</dd>

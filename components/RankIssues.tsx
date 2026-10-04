@@ -8,9 +8,9 @@ import IssueDetail from "./IssueDetail";
 
 const TOP = 3;
 
-export default function RankIssues({ govId, issues, initialOrder, initialViews, saved, flip, community, signedIn, govName }: {
+export default function RankIssues({ govId, issues, initialOrder, initialViews, saved, flip, community, signedIn, govName, speakers = {} }: {
   govId: string; issues: Issue[]; initialOrder: string[]; initialViews: Record<string, number>; saved: boolean; flip: Record<string, boolean>;
-  community?: Record<string, number>; signedIn: boolean; govName: string;
+  community?: Record<string, number>; signedIn: boolean; govName: string; speakers?: Record<string, number>;
 }) {
   const byId = Object.fromEntries(issues.map((i) => [i.id, i]));
   const [order, setOrder] = useState(initialOrder);
@@ -120,6 +120,7 @@ export default function RankIssues({ govId, issues, initialOrder, initialViews, 
     const idx = order.indexOf(id);
     return (
       <IssueDetail issue={byId[id]} rank={idx + 1} flip={flip[id]} value={views[id]} onPick={(c) => pick(id, c)}
+        speakers={speakers[id] ?? 0} candidatesHref={`/g/${govId}/candidates`}
         onPrev={idx > 0 ? () => setSelected(order[idx - 1]) : undefined}
         onNext={idx < order.length - 1 ? () => setSelected(order[idx + 1]) : undefined} />
     );

@@ -20,7 +20,7 @@ export type Issue = {
   question: string; pole_a: string; pole_b: string; sources: string[]; sort: number;
   tradeoffs: { context?: string; a: { gains: string[]; costs: string[] }; b: { gains: string[]; costs: string[] } } | null;
 };
-export type Position = { id: number; candidacy_id: string; issue_id: string | null; topic: string | null; summary: string; source_url: string | null; source_type: string; lean: number | null; inherited?: boolean; affiliation_name?: string | null };
+export type Position = { id: number; candidacy_id: string; issue_id: string | null; topic: string | null; summary: string; source_url: string | null; source_type: string; lean: number | null; lean_state?: string | null; lean_quote?: string | null; inherited?: boolean; affiliation_name?: string | null };
 
 export const getGov = (id: string) => one<Gov>(`select * from governments where id=$1`, [id]);
 export const getIssues = (govId: string) =>
@@ -44,10 +44,13 @@ export const getCandidate = (id: string) => one<Candidate>(`${CAND_SELECT} where
 /** A candidate's own positions plus their affiliation's positions (labelled as inherited). */
 export const positionsFor = (candIds: string[]) =>
   candIds.length ? q<Position>(`
-    select id, candidacy_id, issue_id, topic, summary, source_url, source_type, lean, false as inherited, null::text as affiliation_name
+    select id, candidacy_id, issue_id, topic, summary, source_url, source_type,
+        case when lean_state = 'approved' then lean end as lean, lean_state, case when lean_state = 'approved' then lean_quote end as lean_quote,
+        false as inherited, null::text as affiliation_name
       from positions where candidacy_id = any($1)
     union all
-    select -ap.id as id, c.id as candidacy_id, ap.issue_id, null as topic, ap.summary, ap.source_url, ap.source_type, ap.lean, true as inherited, a.name as affiliation_name
+    select -ap.id as id, c.id as candidacy_id, ap.issue_id, null as topic, ap.summary, ap.source_url, ap.source_type, ap.lean, 'approved' as lean_state, null::text as lean_quote,
+        true as inherited, a.name as affiliation_name
       from candidacies c join affiliation_positions ap on ap.affiliation_id=c.affiliation_id join affiliations a on a.id=c.affiliation_id
       where c.id = any($1)
     order by inherited, id`, [candIds]) : Promise.resolve([] as Position[]);
@@ -85,6 +88,33 @@ export function fitFor(positions: Position[], top: string[], views: Record<strin
   }
   const group: FitGroup = covered.size >= 2 ? "strong" : covered.size === 1 ? "some" : "unknown";
   return { group, covered: [...covered], agree, differ };
+}
+
+/** Where a candidate stands on one issue's A/B question, compared with the voter's view. Only approved sides count. */
+export type Stance = { kind: "similar" | "different" | "their-side" | "no-side" | "none"; side?: "A" | "B"; strong?: boolean; inherited?: boolean };
+export function stanceOn(positions: Position[], issueId: string, view: number | undefined): Stance {
+  const ps = positions.filter((p) => p.issue_id === issueId);
+  if (!ps.length) return { kind: "none" };
+  const sided = (list: Position[]) => list.filter((p) => p.lean != null && p.lean !== 0);
+  const own = sided(ps.filter((p) => !p.inherited));
+  const use = own.length ? own : sided(ps);
+  if (!use.length) return { kind: "no-side" };
+  const total = use.reduce((a, p) => a + (p.lean as number), 0);
+  if (total === 0) return { kind: "no-side" };
+  const side = total < 0 ? "A" : "B";
+  const strong = use.every((p) => Math.abs(p.lean as number) === 2);
+  const inherited = !own.length;
+  if (view == null || view === 0) return { kind: "their-side", side, strong, inherited };
+  return { kind: Math.sign(view) === Math.sign(total) ? "similar" : "different", side, strong, inherited };
+}
+export const STANCE_LABEL: Record<Stance["kind"], string> = {
+  similar: "Similar to your view", different: "Different from your view", "their-side": "Takes a side", "no-side": "No clear side", none: "Nothing on record",
+};
+/** The voter's own view as plain words, e.g. "Lean B · Grow more gradually". */
+export function viewWords(issue: { pole_a: string; pole_b: string }, value: number | undefined) {
+  if (value == null) return null;
+  if (value === 0) return "Unsure, or in between";
+  return `${Math.abs(value) === 2 ? "Strongly" : "Lean"} ${value < 0 ? "A" : "B"} · ${value < 0 ? issue.pole_a : issue.pole_b}`;
 }
 
 export const SOURCE_LABEL: Record<string, string> = {

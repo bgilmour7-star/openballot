@@ -56,10 +56,10 @@ export async function savePosition(f: FormData) {
   if (!vals[2]) redirect(`/admin/candidates/${encodeURIComponent(cand)}?err=summary`);
   if (pid) {
     const before = await one(`select * from positions where id=$1`, [pid]);
-    await q(`update positions set issue_id=$2, topic=$3, summary=$4, source_url=$5, source_type=$6, lean=$7, updated_at=now() where id=$1`, [pid, ...vals]);
+    await q(`update positions set issue_id=$2, topic=$3, summary=$4, source_url=$5, source_type=$6, lean=$7, lean_state=case when $7::int is not null then 'approved' else lean_state end, lean_reviewed_by=case when $7::int is not null then $8 else lean_reviewed_by end, updated_at=now() where id=$1`, [pid, ...vals, a.email]);
     await audit(a.email, "position", pid, "update", before, vals);
   } else {
-    const r = await one<{ id: number }>(`insert into positions (candidacy_id, issue_id, topic, summary, source_url, source_type, lean) values ($1,$2,$3,$4,$5,$6,$7) returning id`, [cand, ...vals]);
+    const r = await one<{ id: number }>(`insert into positions (candidacy_id, issue_id, topic, summary, source_url, source_type, lean, lean_state) values ($1,$2,$3,$4,$5,$6,$7, case when $7::int is not null then 'approved' end) returning id`, [cand, ...vals]);
     await audit(a.email, "position", String(r!.id), "create", null, vals);
   }
   revalidatePath("/", "layout");
@@ -135,4 +135,32 @@ export async function setExclude(f: FormData) {
   await q(`update voters set exclude_from_results=$2 where lower(email)=$1`, [email, exclude]);
   await audit(a.email, "voter", email, exclude ? "exclude" : "include", null, { exclude });
   redirect(`/admin/community?saved=1`);
+}
+
+export async function reviewLean(f: FormData) {
+  const a = await requireAdmin();
+  const id = s(f, "id", 20)!;
+  const side = s(f, "side", 6);
+  const act = s(f, "do", 10);
+  const back = s(f, "back", 300) ?? "";
+  const before = await one(`select lean, lean_state, proposed_lean from positions where id=$1`, [id]);
+  if (act === "hide") {
+    await q(`update positions set lean=null, lean_state='rejected', lean_reviewed_by=$2, lean_reviewed_at=now() where id=$1`, [id, a.email]);
+  } else {
+    const lean = side == null || side === "none" ? null : Math.max(-2, Math.min(2, Number(side)));
+    await q(`update positions set lean=$2, lean_state='approved', lean_reviewed_by=$3, lean_reviewed_at=now() where id=$1`, [id, lean, a.email]);
+  }
+  await audit(a.email, "position_side", id, act === "hide" ? "hide" : "approve", before, { side });
+  revalidatePath("/", "layout");
+  const keep = back.startsWith("?") ? back.replace(/[&?]saved=1/, "") : "?";
+  redirect(`/admin/leans${keep}${keep.length > 1 ? "&" : ""}saved=1`);
+}
+
+export async function approveAllNoSide() {
+  const a = await requireAdmin();
+  const rows = await q<{ id: number }>(`update positions set lean=null, lean_state='approved', lean_reviewed_by=$1, lean_reviewed_at=now()
+    where lean_state='proposed' and proposed_lean is null returning id`, [a.email]);
+  await audit(a.email, "position_side", "bulk", "approve_no_side", null, { count: rows.length });
+  revalidatePath("/", "layout");
+  redirect(`/admin/leans?saved=1`);
 }
