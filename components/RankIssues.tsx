@@ -4,7 +4,6 @@ import Link from "next/link";
 import { saveRanking, saveView } from "@/app/actions";
 import type { Issue } from "@/lib/data";
 import IssueDetail from "./IssueDetail";
-import Journey from "./Journey";
 
 const TOP = 3;
 
@@ -128,7 +127,6 @@ export default function RankIssues({ govId, issues, initialOrder, initialViews, 
   return (
     <div className="issues-layout">
       <div>
-        <Journey govId={govId} govName={govName} ranked={everSaved} viewsDone={topDone} signedIn={signedIn} next={`/g/${govId}/community`} />
         <div className="row between" style={{ alignItems: "flex-end" }}>
           <div>
             <h2 style={{ margin: 0 }}>Which issues matter most to you?</h2>
@@ -137,7 +135,10 @@ export default function RankIssues({ govId, issues, initialOrder, initialViews, 
         </div>
         <div className="row between xs" style={{ margin: "10px 0 6px", minHeight: 20 }}>
           <span aria-live="polite" className="muted">{announce}</span>
-          <span className={`badge ${status === "saved" ? "ok" : ""}`}>{status === "saving" ? "Saving…" : status === "saved" ? (signedIn ? "✓ Saved to your account" : "✓ Saved on this device") : "Move an issue to save your order"}</span>
+          <span className="row" style={{ gap: 10, alignItems: "center" }}>
+            <span className={`badge ${status === "saved" ? "ok" : ""}`}>{status === "saving" ? "Saving…" : status === "saved" ? (signedIn ? "✓ Saved to your account" : "✓ Saved on this device") : "Move an issue to save your order"}</span>
+            {everSaved && !signedIn && <Link className="count-link" href={`/signin?next=${encodeURIComponent(`/g/${govId}/community`)}&gov=${encodeURIComponent(govId)}`}>Make it count ›</Link>}
+          </span>
         </div>
         <ol className="rank-list">
           {order.map((id, idx) => {

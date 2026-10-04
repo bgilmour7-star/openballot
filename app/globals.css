@@ -524,3 +524,4 @@ main:has(.landing) + footer.bottom { margin-top: 0; }
   .drawer-body { padding: 18px 24px 32px; }
 }
 @media (prefers-reduced-motion: reduce) { .drawer { animation: none; } }
+.count-link { font-weight: 700; font-size: 13px; white-space: nowrap; }
