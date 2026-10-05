@@ -107,6 +107,15 @@ export function stanceOn(positions: Position[], issueId: string, view: number | 
   if (view == null || view === 0) return { kind: "their-side", side, strong, inherited };
   return { kind: Math.sign(view) === Math.sign(total) ? "similar" : "different", side, strong, inherited };
 }
+export function stanceText(st: Stance) {
+  switch (st.kind) {
+    case "similar": return "Similar to your view";
+    case "different": return "Different from your view";
+    case "their-side": return `Leans ${st.side}`;
+    case "no-side": return "No clear side";
+    default: return "Nothing on record";
+  }
+}
 export const STANCE_LABEL: Record<Stance["kind"], string> = {
   similar: "Similar to your view", different: "Different from your view", "their-side": "Takes a side", "no-side": "No clear side", none: "Nothing on record",
 };

@@ -3,8 +3,9 @@ import NextBar, { NbProgress } from "@/components/NextBar";
 import { notFound } from "next/navigation";
 import { getVoter } from "@/lib/voter";
 import { q } from "@/lib/db";
-import { candidatesForRaces, fitFor, stanceOn, type Stance, getGov, getIssues, positionsFor, racesFor, rankingFor, shuffleFor, viewsFor, type Race, type FitGroup } from "@/lib/data";
+import { candidatesForRaces, fitFor, stanceOn, stanceText, getGov, getIssues, positionsFor, racesFor, rankingFor, shuffleFor, viewsFor, type Race, type FitGroup } from "@/lib/data";
 import GovTabs from "@/components/GovTabs";
+import { alignment, fullOrder } from "@/lib/alignment";
 import Avatar from "@/components/Avatar";
 import PartiesPanel from "@/components/PartiesPanel";
 
@@ -15,16 +16,6 @@ const GROUPS: { key: FitGroup; label: string; hint: string }[] = [
   { key: "some", label: "Speaks to one of your top issues", hint: "A sourced position on 1 of them" },
   { key: "unknown", label: "Nothing on record yet for your top issues", hint: "No sourced position on any of them yet" },
 ];
-
-function stanceText(st: Stance) {
-  switch (st.kind) {
-    case "similar": return "Similar to your view";
-    case "different": return "Different from your view";
-    case "their-side": return `Leans ${st.side}`;
-    case "no-side": return "No clear side";
-    default: return "Nothing on record";
-  }
-}
 
 export default async function CandidatesPage({ params, searchParams }: { params: Promise<{ gov: string }>; searchParams: Promise<Record<string, string>> }) {
   const { gov: govId } = await params;
@@ -45,6 +36,9 @@ export default async function CandidatesPage({ params, searchParams }: { params:
   const positions = await positionsFor(cands.map((c) => c.id));
   const issueTitle = Object.fromEntries(issues.map((i) => [i.id, i.title]));
   const top = (ranking ?? []).slice(0, 3);
+  const order = fullOrder(ranking, issues.map((i) => i.id));
+  const rest = ranking ? order.slice(3) : [];
+  const rankOf = Object.fromEntries(order.map((id, k) => [id, k + 1]));
   const seed = v?.id ?? "anon";
   const list = race ? shuffleFor(cands, seed + race.id) : [];
   const rows = list.map((c) => {
@@ -52,7 +46,7 @@ export default async function CandidatesPage({ params, searchParams }: { params:
     const issueIds = [...new Set(pos.map((p) => p.issue_id).filter(Boolean) as string[])];
     const hits = issueIds.filter((t) => top.includes(t)).sort((a, b) => top.indexOf(a) - top.indexOf(b));
     const others = issueIds.filter((t) => !top.includes(t));
-    return { c, pos, hits, others, fit: fitFor(pos, top, views) };
+    return { c, pos, hits, others, fit: fitFor(pos, top, views), align: alignment(pos, order, views) };
   });
 
   const Explainer = (
@@ -114,9 +108,12 @@ export default async function CandidatesPage({ params, searchParams }: { params:
                       <h3>{g.label}</h3>
                       <span className="pill">{inGroup.length}</span>
                       <span className="xs muted fit-hint">{g.hint}</span>
+                      {ranking && inGroup.length >= 2 && race && (
+                        <Link className="compare-link" href={`/g/${govId}/compare?race=${race.id}&group=${g.key}`}>Compare these {inGroup.length} →</Link>
+                      )}
                     </div>
                     <ul className="cand-list">
-                      {inGroup.map(({ c, pos, hits, others, fit }) => (
+                      {inGroup.map(({ c, pos, hits, others, fit, align }) => (
                         <li key={c.id}>
                           <Link className="cand-row" href={`/c/${encodeURIComponent(c.id)}`}>
                             <Avatar name={c.name} />
@@ -142,7 +139,19 @@ export default async function CandidatesPage({ params, searchParams }: { params:
                               ) : (
                                 <p className="xs muted" style={{ margin: "6px 0 0" }}>{pos.length ? "Positions on other topics only" : "No stance yet on any issue"}</p>
                               )}
-                              {ranking && others.length > 0 && <p className="xs muted" style={{ margin: "6px 0 0" }}>Also on: {others.slice(0, 3).map((t) => issueTitle[t]).join(", ")}{others.length > 3 ? ` and ${others.length - 3} more` : ""}</p>}
+                              {rest.length > 0 && (
+                                <div className="rest-strip">
+                                  <span className="xs muted">Rest of your list</span>
+                                  <span className="rest-dots">
+                                    {rest.map((t) => { const st = stanceOn(pos, t, views[t]); return (
+                                      <span key={t} className={`rest-dot st-${st.kind}`} title={`#${rankOf[t]} ${issueTitle[t]}: ${stanceText(st)}`}><span className="st-dot" /></span>
+                                    ); })}
+                                  </span>
+                                  <span className="sr-only">{rest.map((t) => `#${rankOf[t]} ${issueTitle[t]}: ${stanceText(stanceOn(pos, t, views[t]))}`).join(". ")}</span>
+                                  <span className="xs muted">{rest.filter((t) => pos.some((p) => p.issue_id === t)).length} of {rest.length} on record</span>
+                                </div>
+                              )}
+                              {align.score != null && <p className="align-line"><b>{align.score}% aligned</b> <span className="muted">across your whole list · {align.shared} issues with a side</span></p>}
                               {pos.some((p) => p.inherited) && <p className="xs muted" style={{ margin: "4px 0 0" }}>Includes {c.affiliation_type === "party" ? "party" : "slate"} positions</p>}
                             </div>
                             <span className="chev" aria-hidden>›</span>
@@ -162,7 +171,7 @@ export default async function CandidatesPage({ params, searchParams }: { params:
         </div>
         <aside className="aside-stack">
           <div className="explainer-aside card">{Explainer}</div>
-          {govId === "province-of-bc" && <div className="card parties-card"><PartiesPanel /></div>}
+          {govId === "province-of-bc" && <div className="card parties-card"><PartiesPanel order={ranking ? order : []} views={views} /></div>}
         </aside>
       </div>
     </div>

@@ -2,7 +2,8 @@ import Link from "next/link";
 import NextBar from "@/components/NextBar";
 import { notFound } from "next/navigation";
 import { one, q } from "@/lib/db";
-import { getCandidate, getIssues, host, positionsFor, rankingFor, SOURCE_LABEL, stanceOn, viewsFor, viewWords, type Stance } from "@/lib/data";
+import { getCandidate, getIssues, host, positionsFor, rankingFor, SOURCE_LABEL, stanceOn, stanceText, viewsFor, viewWords, type Stance } from "@/lib/data";
+import { alignment, fullOrder } from "@/lib/alignment";
 import { getVoter } from "@/lib/voter";
 import { flipFor } from "@/lib/flip";
 import ViewDrawerButton from "@/components/ViewDrawerButton";
@@ -41,6 +42,9 @@ export default async function CandidatePage({ params, searchParams }: { params: 
     return k >= 0 ? k : 100 + issues.findIndex((i) => i.id === issueId);
   };
   const top = (ranking ?? []).slice(0, 3).filter((id) => issueById[id]);
+  const order = fullOrder(ranking, issues.map((i) => i.id));
+  const restIds = ranking ? order.slice(3) : [];
+  const align = alignment(positions, order, views);
   const firstName = c.name.split(" ")[0];
   const own = positions.filter((p) => !p.inherited);
   const party = positions.filter((p) => p.inherited && p.issue_id).sort((a, b) => rankIdx(a.issue_id) - rankIdx(b.issue_id));
@@ -110,6 +114,26 @@ export default async function CandidatePage({ params, searchParams }: { params: 
                   );
                 })}
               </ol>
+              {restIds.length > 0 && (
+                <div className="you-rest">
+                  <p className="you-k" style={{ marginBottom: 6 }}>The rest of your list</p>
+                  <ul>
+                    {restIds.map((iid) => { const st = stanceOn(positions, iid, views[iid]); return (
+                      <li key={iid} className={`stance st-${st.kind}`}>
+                        <span className="rest-rank">{order.indexOf(iid) + 1}</span>
+                        <span className="st-dot" aria-hidden />
+                        <span className="you-rest-t">{issueById[iid].title}</span>
+                        <span className="you-rest-s">{stanceText(st)}</span>
+                      </li>
+                    ); })}
+                  </ul>
+                </div>
+              )}
+              <p className="align-line" style={{ margin: "0 0 10px" }}>
+                {align.score != null
+                  ? <><b>{align.score}% aligned across your whole list</b> <span className="muted">· based on {align.shared} issues where you both have a side, weighted by your order</span></>
+                  : <span className="muted">An overall alignment number appears once {firstName} has a side on at least 5 of your issues{align.shared ? ` (${align.shared} so far)` : ""}.</span>}
+              </p>
               <p className="xs muted" style={{ marginBottom: 0 }}>Sides are Openballot&apos;s reading of each statement, checked by a person. This is never a recommendation. Are you {c.name}? <Link href={`/c/${encodeURIComponent(c.id)}/claim`}>Claim this profile</Link> to correct a reading or state your side.</p>
             </section>
           ) : (
