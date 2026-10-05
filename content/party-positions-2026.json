@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-03",
-  "note": "Positions paraphrased neutrally from each party's own published materials (platforms, policy pages, campaign releases) as of 2026-10-03; 'news' entries report explicit party commitments. lean places a position on the issue's viewQuestion scale: -2 strongly poleA, +2 strongly poleB, 0 mixed, null if it does not map clearly. Absence of an issue means no clear position was found, not that the party has none. Campaign positions may change; most parties had not published full platforms.",
+  "generatedAt": "2026-10-05",
+  "note": "Positions paraphrased neutrally from each party's own published materials (platforms, policy pages, campaign releases) as of 2026-10-05; 'news' entries report explicit party commitments. lean places a position on the issue's viewQuestion scale: -2 strongly poleA, +2 strongly poleB, 0 mixed, null if it does not map clearly. Absence of an issue means no clear position was found, not that the party has none. Campaign positions may change; most parties had not published full platforms.",
   "parties": {
     "bc-ndp": {
       "platformPublished": false,
-      "statusNote": "No full 2026 platform published; positions from 2026 campaign releases, the 'Action for You' page, and news reports.",
+      "statusNote": "No full 2026 platform published as of 2026-10-05; positions from 2026 campaign releases, the 'Action for You' page, and news reports.",
       "positions": [
         {
           "issueId": "province-of-bc--cost-of-living",
@@ -36,9 +36,9 @@
         },
         {
           "issueId": "province-of-bc--provincial-deficit-and-spending",
-          "summary": "Says it would reduce the deficit by growing the economy and ending wasteful spending; no timeline given.",
-          "sourceUrl": "https://globalnews.ca/news/12076424/bc-election-eby-cut-deficit-wasteful-spending/",
-          "sourceType": "news",
+          "summary": "Would raise the top two income tax rates by two points and add a bracket over $1 million, funding health care and cost relief.",
+          "sourceUrl": "https://www.bcndp.ca/releases/build-bc-strong-eby-will-ask-wealthy-pitch-bit-more",
+          "sourceType": "party_policy_page",
           "lean": null
         },
         {
@@ -107,7 +107,7 @@
     },
     "bc-green-party": {
       "platformPublished": false,
-      "statusNote": "'Our Plan' priorities published, full platform 'coming soon'; positions from Our Plan and 2026 campaign releases.",
+      "statusNote": "'Our Plan' priorities published, full platform still 'coming soon' as of 2026-10-05; positions from Our Plan and 2026 campaign releases.",
       "positions": [
         {
           "issueId": "province-of-bc--cost-of-living",
@@ -429,8 +429,51 @@
     },
     "freedom-party-of-bc": {
       "platformPublished": false,
-      "statusNote": "Party website could not be reviewed; no published positions confirmed.",
-      "positions": []
+      "statusNote": "No 2026 platform published; positions from the undated 'Our Platform' section of the party's website (checked 2026-10-05).",
+      "positions": [
+        {
+          "issueId": "province-of-bc--cost-of-living",
+          "summary": "Calls for lowering taxes across the board, saying lower taxes would ease life for residents and spur industry growth.",
+          "sourceUrl": "https://freedompartybc.ca/",
+          "sourceType": "party_policy_page",
+          "lean": -2
+        },
+        {
+          "issueId": "province-of-bc--housing-affordability",
+          "summary": "Would end foreign ownership of B.C. housing and agricultural land and aims to make housing affordable again.",
+          "sourceUrl": "https://freedompartybc.ca/",
+          "sourceType": "party_policy_page",
+          "lean": null
+        },
+        {
+          "issueId": "province-of-bc--jobs-and-the-economy",
+          "summary": "Pledges support for the natural resource industry and lower taxes to grow industries that create jobs.",
+          "sourceUrl": "https://freedompartybc.ca/",
+          "sourceType": "party_policy_page",
+          "lean": -1
+        },
+        {
+          "issueId": "province-of-bc--crime-and-public-safety",
+          "summary": "Would explore a B.C. provincial police force in place of the RCMP and municipal police, and protect legal firearm owners.",
+          "sourceUrl": "https://freedompartybc.ca/",
+          "sourceType": "party_policy_page",
+          "lean": null
+        },
+        {
+          "issueId": "province-of-bc--indigenous-rights-and-land",
+          "summary": "Proposes meeting directly with First Nations chiefs and members to understand what reconciliation means to them.",
+          "sourceUrl": "https://freedompartybc.ca/",
+          "sourceType": "party_policy_page",
+          "lean": null
+        },
+        {
+          "issueId": "province-of-bc--resources-and-the-environment",
+          "summary": "Supports developing oil, gas, minerals, timber and agriculture, and would investigate authorities' claims about climate change.",
+          "sourceUrl": "https://freedompartybc.ca/",
+          "sourceType": "party_policy_page",
+          "lean": -2
+        }
+      ]
     }
   }
 }
