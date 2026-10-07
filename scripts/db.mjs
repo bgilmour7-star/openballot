@@ -2,7 +2,7 @@
 // Runs before `next build`. Safe to run repeatedly: the schema uses IF NOT EXISTS,
 // and content is only seeded when the governments table is empty.
 import { neon } from "@neondatabase/serverless";
-import { readFileSync } from "node:fs";
+import { readFileSync, readdirSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -68,6 +68,9 @@ const schema = [
   `create index if not exists events_name_idx on events(name, created_at)`,
   `create table if not exists postal_cache (
     postal_code text primary key, result jsonb not null, created_at timestamptz default now())`,
+  `create table if not exists municipalities (
+    id text primary key, name text not null, csd_id text unique, csd_name text, gov_id text not null,
+    school_gov_id text, live boolean not null default true, created_at timestamptz default now())`,
   `create table if not exists audit_log (
     id bigserial primary key, actor text, entity text, entity_id text, action text,
     before jsonb, after jsonb, created_at timestamptz default now())`,
@@ -155,13 +158,78 @@ async function backfillBios() {
   if (ups.length) { await sql.transaction(ups); console.log(`[db] bios backfilled (${ups.length})`); }
 }
 
+// Municipalities: the two original cities, plus one research file per municipality in content/municipal/.
+// Inserts only (on conflict do nothing) so admin edits are never overwritten; safe to repeat.
+async function syncMunicipal() {
+  const ops = [];
+  const slug = (s) => s.toLowerCase().normalize("NFKD").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+  for (const [id, name, csd, csdName, gov, school] of [
+    ["nanaimo", "City of Nanaimo", "5921007", "Nanaimo", "city-of-nanaimo", "sd68"],
+    ["victoria", "City of Victoria", "5917034", "Victoria", "city-of-victoria", "sd61"]])
+    ops.push(sql.query(`insert into municipalities (id,name,csd_id,csd_name,gov_id,school_gov_id) select $1,$2,$3,$4,$5,$6
+      where exists (select 1 from governments where id=$5) on conflict (id) do nothing`, [id, name, csd, csdName, gov, school]));
+  let files = [];
+  try { files = readdirSync(join(here, "..", "content", "municipal")).filter((f) => f.endsWith(".json")); } catch {}
+  for (const f of files) {
+    const d = read(join("municipal", f));
+    const m = d.municipality, g = d.government, e = d.election;
+    ops.push(sql.query(`insert into governments (id,name,level,how_built,sort) values ($1,$2,'municipal',$3,1) on conflict (id) do nothing`, [g.id, g.name, g.howBuilt ?? null]));
+    ops.push(sql.query(`insert into municipalities (id,name,csd_id,csd_name,gov_id) values ($1,$2,$3,$4,$5) on conflict (id) do nothing`,
+      [m.id, m.name, m.csdId ?? null, m.csdName ?? null, g.id]));
+    (d.issues ?? []).forEach((i, idx) => ops.push(sql.query(`insert into issues (id,government_id,title,description,what_it_affects,who_decides,question,pole_a,pole_b,tags,sources,sort,tradeoffs)
+      values ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13) on conflict (id) do nothing`,
+      [`${g.id}--${i.id}`, g.id, i.title, i.description, i.whatItAffects, i.whoDecides, i.viewQuestion?.question, i.viewQuestion?.poleA, i.viewQuestion?.poleB,
+       JSON.stringify(i.topicTags ?? []), JSON.stringify(i.sources ?? []), idx, i.tradeoffs ? JSON.stringify(i.tradeoffs) : null])));
+    ops.push(sql.query(`insert into elections (id,government_id,name,level,voting_day,voting_hours,advance_voting,how_to_vote,mail_ballot,official_url,sources)
+      values ($1,$2,$3,'municipal',$4,$5,$6,$7,$8,$9,$10) on conflict (id) do nothing`,
+      [e.id, g.id, e.name, e.votingDay ?? null, e.votingDayHours ?? null, JSON.stringify(e.advanceVoting ?? []), e.howToVote ?? null, e.voteByMail ?? null, e.officialUrl ?? null, JSON.stringify(e.sources ?? [])]));
+    for (const bq of e.ballotQuestions ?? [])
+      ops.push(sql.query(`insert into ballot_questions (id,election_id,question,kind,summary,sources) values ($1,$2,$3,$4,$5,$6) on conflict (id) do nothing`,
+        [bq.id, e.id, bq.question, bq.type ?? null, bq.summary ?? null, JSON.stringify(bq.sourceUrls ?? [])]));
+    const affId = new Map();
+    for (const o of d.electorOrganizations ?? []) {
+      const id = `${m.id}--${o.id ?? slug(o.name)}`;
+      affId.set(o.name.toLowerCase(), id);
+      ops.push(sql.query(`insert into affiliations (id,type,name,website,source_url,platform_url,blurb,blurb_source) values ($1,'elector_organization',$2,$3,$4,$5,$6,$7) on conflict (id) do nothing`,
+        [id, o.name, o.website ?? null, o.sourceUrl ?? o.website ?? null, o.platformUrl ?? null, o.blurb ?? null, o.blurbSource ?? null]));
+    }
+    (d.races ?? []).forEach((r, ri) => {
+      ops.push(sql.query(`insert into races (id,election_id,office,seats,area,area_name,sort) values ($1,$2,$3,$4,$5,$6,$7) on conflict (id) do nothing`,
+        [r.id, e.id, r.office, r.seats ?? 1, m.id, r.areaName ?? m.name, ri]));
+      for (const c of r.candidates ?? []) {
+        const cid = `${r.id}--${c.id}`;
+        const status = c.withdrawn ? "withdrawn" : /announced|not yet|reported/i.test(c.nominationStatus ?? "") ? "unconfirmed" : "active";
+        ops.push(sql.query(`insert into candidacies (id,race_id,name,ballot_name,incumbent,affiliation_id,affiliation_source,declared_independent,website,links,sources,status,nomination_note,summary,summary_source)
+          values ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15) on conflict (id) do nothing`,
+          [cid, r.id, c.name, c.ballotName || null, c.incumbent ?? null, c.affiliation?.name ? affId.get(c.affiliation.name.toLowerCase()) ?? null : null,
+           c.affiliation?.sourceUrl ?? null, !!c.declaredIndependent, c.website || null, JSON.stringify((c.links ?? []).filter((l) => l.url)),
+           JSON.stringify(c.sourceUrls ?? []), status, c.nominationStatus ?? null, c.summary ?? null, c.summarySource ?? null]));
+        for (const p of c.positions ?? [])
+          ops.push(sql.query(`insert into positions (candidacy_id,issue_id,topic,summary,source_url,source_type,proposed_lean,lean_reason,lean_state)
+            select $1,$2,$3,$4,$5,$6,$7,$8,'proposed' where not exists (select 1 from positions where candidacy_id=$1 and left(summary,80)=left($4,80))`,
+            [cid, p.issueId ? `${g.id}--${p.issueId}` : null, p.topic ?? null, p.summary, p.sourceUrl ?? null, p.sourceType ?? "candidate",
+             p.proposedLean ?? null, p.leanReason ?? null]));
+      }
+    });
+    // One transaction per municipality keeps each request small.
+    await sql.transaction(ops.splice(0));
+    console.log(`[db] synced ${m.id}`);
+  }
+  if (ops.length) await sql.transaction(ops);
+  // Voters located before their municipality was covered: match them now by census subdivision.
+  const r = await sql.query(`update voters v set city=m.id from postal_cache pc, municipalities m
+    where v.city is null and v.postal_code is not null and pc.postal_code='v2:'||v.postal_code and m.live
+      and ((pc.result->>'csdId')=m.csd_id or ((pc.result->>'csdId') is null and lower(pc.result->>'cityName')=lower(m.csd_name))) returning v.id`);
+  if (r.length) console.log(`[db] re-matched ${r.length} voters to new municipalities`);
+}
+
 // Backfill content added after first seed (safe to repeat: only fills empty rows).
 try {
   const t = read("tradeoffs-2026.json");
   const ups = Object.entries(t.issues ?? {}).map(([id, v]) =>
     sql.query(`update issues set tradeoffs=$2 where id=$1 and tradeoffs is null`, [id, JSON.stringify(v)]));
   const [{ n: have }] = await sql`select count(*)::int as n from governments`;
-  if (have > 0) { if (ups.length) { await sql.transaction(ups); console.log(`[db] trade-offs backfilled (${ups.length})`); } await syncProvincial(); await syncPartyPositions(); await backfillBios(); await backfillLeanProposals(); }
+  if (have > 0) { if (ups.length) { await sql.transaction(ups); console.log(`[db] trade-offs backfilled (${ups.length})`); } await syncProvincial(); await syncPartyPositions(); await syncMunicipal(); await backfillBios(); await backfillLeanProposals(); }
 } catch (e) { console.log("[db] no trade-offs file yet", String(e).slice(0, 80)); }
 
 const [{ n }] = await sql`select count(*)::int as n from governments`;
@@ -308,5 +376,6 @@ try {
 } catch {}
 await syncProvincial();
 await syncPartyPositions();
+await syncMunicipal();
 await backfillBios();
 await backfillLeanProposals();

@@ -1,0 +1,1759 @@
+{
+ "municipality": {
+  "id": "langley-township",
+  "name": "Township of Langley",
+  "csdId": "5915001",
+  "csdName": null
+ },
+ "government": {
+  "id": "township-of-langley",
+  "name": "Township of Langley",
+  "howBuilt": "This list draws on reporting from the Fort Langley Community Association all-candidates meetings for mayor and council, the Greater Langley Chamber of Commerce council debate, a Langley Farmers Institute candidate event, local news coverage of the mayoral race on taxes and debt, and the published platforms of the two elector organizations. We kept issues the Township of Langley can act on through its budget, borrowing, zoning, bylaws, roads and services. Issues mainly run by the province, such as schools and health care, are left out of this list."
+ },
+ "issues": [
+  {
+   "id": "debt-and-borrowing",
+   "title": "Township debt and borrowing",
+   "description": "How much the Township borrows to pay for roads, facilities and other projects, and how that debt is repaid.",
+   "whatItAffects": "Property taxpayers now and in future years, and how quickly new facilities and roads get built.",
+   "whoDecides": "Council approves the capital budget and borrowing bylaws, and sets the plan for repaying debt.",
+   "viewQuestion": {
+    "question": "How should the Township pay for major projects?",
+    "poleA": "Borrow now to build sooner, repaying the debt as growth brings in revenue",
+    "poleB": "Build only once a full funding plan is in place, and limit new borrowing"
+   },
+   "topicTags": [
+    "budget",
+    "taxes",
+    "infrastructure"
+   ],
+   "sources": [
+    "https://aldergrovestar.com/2026/10/02/township-mayoral-candidates-talk-taxes-debt-and-spending/",
+    "https://langleyadvancetimes.com/2026/09/23/mayoral-hopefuls-clash-at-langley-township-all-candidates-meeting/",
+    "https://langleyadvancetimes.com/2026/10/03/township-council-candidates-spar-in-debate/"
+   ],
+   "tradeoffs": {
+    "context": "Borrowing speeds up projects but commits future budgets to repayments, while waiting for funding keeps debt lower but delays what gets built.",
+    "a": {
+     "gains": [
+      "Roads and facilities could be built years sooner for a growing population",
+      "Costs are spread over the years and residents who use the facilities"
+     ],
+     "costs": [
+      "Interest payments may take up a larger share of future budgets",
+      "If growth slows, repayments may fall more on existing taxpayers"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Debt and interest costs may stay lower and more predictable",
+      "Each project would have a clear, public funding source before it starts"
+     ],
+     "costs": [
+      "Residents may wait longer for new facilities and road upgrades",
+      "Construction costs may rise while projects wait for funding"
+     ]
+    }
+   }
+  },
+  {
+   "id": "property-taxes",
+   "title": "Property taxes and spending",
+   "description": "How much property taxes rise each year and what level of services and projects they pay for.",
+   "whatItAffects": "Homeowners, renters through their rent, seniors on fixed incomes, and local businesses.",
+   "whoDecides": "Council sets the annual budget and property tax rates, and decides which services and projects to fund.",
+   "viewQuestion": {
+    "question": "What should guide yearly tax decisions?",
+    "poleA": "Keep funding services and projects, even if that means higher tax increases",
+    "poleB": "Hold tax increases as low as possible, even if some projects wait"
+   },
+   "topicTags": [
+    "taxes",
+    "budget",
+    "cost-of-living"
+   ],
+   "sources": [
+    "https://aldergrovestar.com/2026/10/02/township-mayoral-candidates-talk-taxes-debt-and-spending/",
+    "https://langleyadvancetimes.com/2026/09/23/mayoral-hopefuls-clash-at-langley-township-all-candidates-meeting/",
+    "https://langleyadvancetimes.com/2026/10/03/township-council-candidates-spar-in-debate/"
+   ],
+   "tradeoffs": {
+    "context": "Each budget balances what residents pay in taxes against the services, upkeep and projects those taxes buy.",
+    "a": {
+     "gains": [
+      "Services and maintenance could keep pace with a growing population",
+      "Planned projects could proceed on their current schedules"
+     ],
+     "costs": [
+      "Households and businesses may face larger annual tax bills",
+      "Higher costs may weigh on seniors and others on fixed incomes"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Household and business tax bills may rise more slowly",
+      "Spending may get closer scrutiny before money is committed"
+     ],
+     "costs": [
+      "Some projects or service improvements may be delayed or scaled back",
+      "Deferred maintenance can cost more to fix later"
+     ]
+    }
+   }
+  },
+  {
+   "id": "growth-and-development",
+   "title": "Pace and funding of growth",
+   "description": "How fast new neighbourhoods such as Willoughby and Brookswood grow, and whether development fees cover the roads, parks and services they need.",
+   "whatItAffects": "New and existing residents in growing areas, home buyers and renters, and builders.",
+   "whoDecides": "Council sets community plans and zoning, approves developments, and sets development cost charges and amenity contributions.",
+   "viewQuestion": {
+    "question": "How should the Township manage residential growth?",
+    "poleA": "Keep approving new housing so development fees help fund new infrastructure",
+    "poleB": "Slow or phase new growth until roads, schools and amenities catch up"
+   },
+   "topicTags": [
+    "housing",
+    "development",
+    "infrastructure"
+   ],
+   "sources": [
+    "https://langleyadvancetimes.com/2026/09/23/mayoral-hopefuls-clash-at-langley-township-all-candidates-meeting/",
+    "https://aldergrovestar.com/2026/10/02/township-mayoral-candidates-talk-taxes-debt-and-spending/",
+    "https://langleyadvancetimes.com/2026/10/03/township-council-candidates-spar-in-debate/"
+   ],
+   "tradeoffs": {
+    "context": "Growth brings new homes and development fees, but infrastructure and amenities can lag behind when it moves quickly.",
+    "a": {
+     "gains": [
+      "More homes could be built, easing pressure on prices and rents",
+      "Development fees could help pay for new roads, parks and utilities"
+     ],
+     "costs": [
+      "Traffic, schools and facilities may stay crowded while they catch up",
+      "If building slows, expected fee revenue may fall short"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Roads, parks and services may better match the number of residents",
+      "Neighbourhoods may change more gradually"
+     ],
+     "costs": [
+      "Fewer new homes could keep housing costs higher",
+      "Less development fee revenue may be available for new infrastructure"
+     ]
+    }
+   }
+  },
+  {
+   "id": "community-amenities",
+   "title": "Community centres and recreation facilities",
+   "description": "Which new facilities get built and when, such as a Willoughby community centre and pool, a performing arts centre, pools and parks.",
+   "whatItAffects": "Families, youth, seniors, sports and arts groups, and neighbourhoods waiting for facilities.",
+   "whoDecides": "Council decides which facilities to build, their timing and budget, and how they are funded.",
+   "viewQuestion": {
+    "question": "What should come first?",
+    "poleA": "Build major new facilities, like a Willoughby community centre and pool, soon",
+    "poleB": "Focus first on basics like roads, sidewalks and upkeep before major new facilities"
+   },
+   "topicTags": [
+    "recreation",
+    "parks",
+    "infrastructure"
+   ],
+   "sources": [
+    "https://langleyadvancetimes.com/2026/09/23/mayoral-hopefuls-clash-at-langley-township-all-candidates-meeting/",
+    "https://aldergrovestar.com/2026/09/24/township-council-candidates-field-flurry-of-questions/",
+    "https://langleyadvancetimes.com/2026/10/03/township-council-candidates-spar-in-debate/",
+    "https://langleystrong.ca/platform/"
+   ],
+   "tradeoffs": {
+    "context": "Large new facilities and day-to-day basics draw on the same capital budget, so moving one forward often means the other waits.",
+    "a": {
+     "gains": [
+      "Growing neighbourhoods could get recreation space and programs sooner",
+      "Facilities may ease crowding at existing centres"
+     ],
+     "costs": [
+      "Large projects may add debt or tax pressure",
+      "Smaller repairs and upgrades may be pushed back"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Sidewalks, roads and existing facilities may be kept in better shape",
+      "Less new debt may be needed in the near term"
+     ],
+     "costs": [
+      "Residents in growing areas may wait longer for new facilities",
+      "Facility costs may rise while projects are delayed"
+     ]
+    }
+   }
+  },
+  {
+   "id": "roads-and-transit",
+   "title": "Roads, traffic and transit",
+   "description": "How the Township eases congestion, including road widening, truck routes, bus rapid transit on 200 Street and preparing for SkyTrain.",
+   "whatItAffects": "Commuters, truck traffic, transit riders, pedestrians and cyclists, and neighbourhoods along busy corridors.",
+   "whoDecides": "Council funds and plans Township roads and sidewalks, sets truck routes, and works with TransLink on transit within the Township.",
+   "viewQuestion": {
+    "question": "Where should transportation money go?",
+    "poleA": "Widen roads and add capacity for cars and trucks",
+    "poleB": "Prioritize transit, walking and cycling connections"
+   },
+   "topicTags": [
+    "transportation",
+    "infrastructure"
+   ],
+   "sources": [
+    "https://langleyadvancetimes.com/2026/10/03/township-council-candidates-spar-in-debate/",
+    "https://aldergrovestar.com/2026/09/24/township-council-candidates-field-flurry-of-questions/",
+    "https://www.progressforlangley.org/accomplishments"
+   ],
+   "tradeoffs": {
+    "context": "Road space and transportation budgets are limited, so adding car capacity and building transit and walking links compete for the same resources.",
+    "a": {
+     "gains": [
+      "Driving and goods movement could become faster on key routes",
+      "Widened roads may relieve current choke points"
+     ],
+     "costs": [
+      "Wider roads are costly and can draw more traffic over time",
+      "Walking and cycling may remain less practical"
+     ]
+    },
+    "b": {
+     "gains": [
+      "More residents could get around without a car",
+      "Transit-ready corridors may support SkyTrain and nearby housing"
+     ],
+     "costs": [
+      "Drivers may face continued congestion in the short term",
+      "Transit service depends partly on TransLink decisions and funding"
+     ]
+    }
+   }
+  },
+  {
+   "id": "farmland-and-rural-land",
+   "title": "Farmland and rural areas",
+   "description": "How the Township manages farmland, rural roads and the rural plan, including uses like truck parking and farm businesses.",
+   "whatItAffects": "Farmers, rural residents, agri-tourism businesses, and the long-term supply of farmland.",
+   "whoDecides": "Council sets rural zoning and bylaws and the urban containment boundary, and enforces rules on farmland alongside the Agricultural Land Commission.",
+   "viewQuestion": {
+    "question": "How should the Township handle farm and rural land?",
+    "poleA": "Keep firm limits on non-farm uses and hold the urban boundary where it is",
+    "poleB": "Give farm businesses and rural landowners more flexibility in how land is used"
+   },
+   "topicTags": [
+    "agriculture",
+    "land-use"
+   ],
+   "sources": [
+    "https://langleyadvancetimes.com/2026/10/03/township-council-candidates-spar-in-debate/",
+    "https://langleyadvancetimes.com/2026/09/26/langley-farmers-institute-gathers-township-council-candidates/",
+    "https://langleystrong.ca/platform/"
+   ],
+   "tradeoffs": {
+    "context": "Rural land rules balance protecting farmland for the long term against the needs of the people who own and work it now.",
+    "a": {
+     "gains": [
+      "Farmland may be kept available for food production",
+      "Rural character and the urban-rural line may stay stable"
+     ],
+     "costs": [
+      "Farm businesses may face more restrictions on new ventures",
+      "Some landowners may find it harder to earn income from their land"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Farm businesses could diversify and add income more easily",
+      "Approvals for rural landowners may be simpler and faster"
+     ],
+     "costs": [
+      "Non-farm uses may gradually reduce land available for farming",
+      "Enforcement and neighbour conflicts may increase in rural areas"
+     ]
+    }
+   }
+  },
+  {
+   "id": "community-safety",
+   "title": "Community safety",
+   "description": "How the Township keeps people safe, including RCMP and firefighter staffing, bylaw enforcement, vandalism and preparing for SkyTrain stations.",
+   "whatItAffects": "Residents, businesses, people in crisis, and growing town centres.",
+   "whoDecides": "Council sets the budget for the local RCMP detachment, fire department and bylaw officers, and funds prevention and outreach programs.",
+   "viewQuestion": {
+    "question": "Where should more of the safety budget go?",
+    "poleA": "More police officers, firefighters and bylaw officers",
+    "poleB": "More prevention, education and community support programs"
+   },
+   "topicTags": [
+    "public-safety",
+    "budget"
+   ],
+   "sources": [
+    "https://aldergrovestar.com/2026/09/24/township-council-candidates-field-flurry-of-questions/",
+    "https://langleystrong.ca/platform/",
+    "https://www.progressforlangley.org/accomplishments"
+   ],
+   "tradeoffs": {
+    "context": "Safety budgets are limited, so more spending on staffing and enforcement often means less for prevention and support, and the reverse.",
+    "a": {
+     "gains": [
+      "Emergency response could keep pace with population growth",
+      "A visible presence may help people feel safer"
+     ],
+     "costs": [
+      "Staffing costs may raise taxes or take money from other services",
+      "Enforcement may not address underlying causes"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Prevention may reduce some problems before they start",
+      "Support services could reach people that enforcement does not"
+     ],
+     "costs": [
+      "Results may take longer to show",
+      "Response times may lag if staffing does not keep up with growth"
+     ]
+    }
+   }
+  },
+  {
+   "id": "council-decision-making",
+   "title": "How council makes decisions",
+   "description": "How council consults residents, shares financial information and works together, with two slates and several independents running.",
+   "whatItAffects": "All residents, community associations, and how quickly decisions and projects move.",
+   "whoDecides": "Council sets its own meeting procedures, public consultation practices, committees and what it reports publicly.",
+   "viewQuestion": {
+    "question": "How should council approach major decisions?",
+    "poleA": "Act decisively on its plan so projects are delivered on schedule",
+    "poleB": "Consult residents more widely before major decisions, even if it takes longer"
+   },
+   "topicTags": [
+    "governance"
+   ],
+   "sources": [
+    "https://aldergrovestar.com/2026/09/24/township-council-candidates-field-flurry-of-questions/",
+    "https://langleyadvancetimes.com/2026/10/03/township-council-candidates-spar-in-debate/",
+    "https://langleystrong.ca/platform/"
+   ],
+   "tradeoffs": {
+    "context": "More consultation can build trust and catch problems early, but it can also slow decisions and add cost.",
+    "a": {
+     "gains": [
+      "Projects may be delivered faster and on schedule",
+      "Clear direction may make it easier to plan ahead"
+     ],
+     "costs": [
+      "Some residents may feel their views were not considered",
+      "Problems missed early may be harder to fix later"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Residents may have more say and see more of the reasoning",
+      "Decisions may reflect a wider range of views"
+     ],
+     "costs": [
+      "Projects and approvals may take longer",
+      "Extra consultation adds staff time and cost"
+     ]
+    }
+   }
+  },
+  {
+   "id": "village-character-and-heights",
+   "title": "Building heights and community character",
+   "description": "How tall and dense new buildings can be in places like the Fort Langley village core and along major corridors.",
+   "whatItAffects": "Residents and businesses in Fort Langley and other town centres, heritage sites, and people looking for housing.",
+   "whoDecides": "Council sets community plans, zoning and height limits, and approves or rejects development proposals.",
+   "viewQuestion": {
+    "question": "How should the Township handle taller buildings in established areas?",
+    "poleA": "Allow taller, denser buildings where they add homes and shops",
+    "poleB": "Set firm height limits to protect heritage and community character"
+   },
+   "topicTags": [
+    "development",
+    "heritage",
+    "housing"
+   ],
+   "sources": [
+    "https://aldergrovestar.com/2026/09/24/township-council-candidates-field-flurry-of-questions/",
+    "https://langleyadvancetimes.com/2026/10/03/township-council-candidates-spar-in-debate/"
+   ],
+   "tradeoffs": {
+    "context": "Height rules weigh adding homes and businesses in established areas against keeping the scale and look residents value.",
+    "a": {
+     "gains": [
+      "More homes and shops could be added near existing services",
+      "Redevelopment may bring new investment to town centres"
+     ],
+     "costs": [
+      "Heritage areas may lose some of their historic scale",
+      "Taller buildings may add traffic and shade nearby"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Heritage character and village scale may be preserved",
+      "Residents may have more certainty about what can be built"
+     ],
+     "costs": [
+      "Fewer new homes may be built in established areas",
+      "Some redevelopment proposals may not go ahead"
+     ]
+    }
+   }
+  }
+ ],
+ "election": {
+  "id": "langley-township-local-2026",
+  "name": "Township of Langley general local election",
+  "level": "municipal",
+  "votingDay": "2026-10-17",
+  "votingDayHours": "8 a.m. to 8 p.m.",
+  "advanceVoting": [
+   {
+    "date": "2026-10-06",
+    "hours": "8 a.m. to 8 p.m.",
+    "locations": [
+     "salishan Place by the River, 23430 Mavis Avenue"
+    ]
+   },
+   {
+    "date": "2026-10-07",
+    "hours": "8 a.m. to 8 p.m.",
+    "locations": [
+     "Langley Events Centre, West Gym, 7888 - 200 Street"
+    ]
+   },
+   {
+    "date": "2026-10-08",
+    "hours": "8 a.m. to 8 p.m.",
+    "locations": [
+     "Langley Events Centre, West Gym, 7888 - 200 Street",
+     "George Preston Recreation Centre, 20699 - 42 Avenue"
+    ]
+   },
+   {
+    "date": "2026-10-09",
+    "hours": "8 a.m. to 8 p.m.",
+    "locations": [
+     "Aldergrove Community Centre, 27032 Fraser Highway"
+    ]
+   },
+   {
+    "date": "2026-10-10",
+    "hours": "8 a.m. to 8 p.m.",
+    "locations": [
+     "Langley Regional Airport, 5385 - 216 Street",
+     "James Kennedy Elementary School, 9060 - 212 Street"
+    ]
+   }
+  ],
+  "howToVote": "Eligible Township of Langley voters can vote at any of 15 voting places on General Voting Day (Saturday, Oct. 17, 8 a.m. to 8 p.m.) or at advance voting from Oct. 6 to Oct. 10 at the locations listed for each day. Voters not already on the voters list can register at the voting place with two acceptable pieces of ID, at least one with a signature, that together prove identity and residence; non-resident property electors must also show they have owned the property for at least 30 days. Curbside voting is available at all locations.",
+  "voteByMail": "Mail ballot voting is not available in this election, because the Township's election bylaw does not provide for it.",
+  "officialUrl": "https://www.tol.ca/en/the-township/2026-elections.aspx",
+  "sources": [
+   "https://www.tol.ca/en/the-township/2026-elections.aspx",
+   "https://www.tol.ca/en/the-township/2026-voting-dates-and-locations.aspx",
+   "https://www.tol.ca/en/the-township/voting-information-2026.aspx",
+   "https://www.tol.ca/en/the-township/candidates.aspx",
+   "https://www.tol.ca/en/the-township/about-the-candidates.aspx",
+   "https://localelections.ca/election_candidates/62_2026_candidates.html"
+  ],
+  "ballotQuestions": []
+ },
+ "electorOrganizations": [
+  {
+   "id": "langley-strong",
+   "name": "Langley Strong",
+   "website": "https://langleystrong.ca/",
+   "sourceUrl": "https://www.tol.ca/en/the-township/candidates.aspx",
+   "platformUrl": "https://langleystrong.ca/platform/",
+   "blurb": "Describes itself as a registered municipal elector organization focused on restoring trust and respect in the Township, built around fiscal responsibility, transparent governance and community wellbeing.",
+   "blurbSource": "https://langleystrong.ca/langley-strong-unveils-mayoral-candidate-as-four-sitting-township-councillors-join-team/"
+  },
+  {
+   "id": "progress-for-langley",
+   "name": "Progress for Langley",
+   "website": "https://www.progressforlangley.org/",
+   "sourceUrl": "https://www.tol.ca/en/the-township/candidates.aspx",
+   "platformUrl": "https://www.progressforlangley.org/accomplishments",
+   "blurb": "Describes itself as a team with a plan for Langley's future, centred on growth paying for growth rather than taxpayers, and points to projects completed during the 2022-2026 term.",
+   "blurbSource": "https://www.progressforlangley.org/"
+  }
+ ],
+ "races": [
+  {
+   "id": "langley-township-mayor",
+   "office": "Mayor",
+   "seats": 1,
+   "areaName": "Township of Langley",
+   "candidates": [
+    {
+     "id": "jay-lundgren",
+     "name": "Jay Lundgren",
+     "ballotName": "LUNDGREN, Jay",
+     "incumbent": false,
+     "affiliation": {
+      "name": "Langley Strong",
+      "sourceUrl": "https://www.tol.ca/en/the-township/candidates.aspx"
+     },
+     "declaredIndependent": false,
+     "website": null,
+     "links": [],
+     "sourceUrls": [
+      "https://www.tol.ca/en/the-township/candidates.aspx",
+      "https://www.tol.ca/en/the-township/about-the-candidates.aspx",
+      "https://www.tol.ca/en/the-township/resources/elections/2026/Candidate-Nomination-Package/Local/Post---Mayor---Lundgren,-Jay.pdf",
+      "https://localelections.ca/election_candidates/62_2026_candidates.html"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Vice-president of business development and partnerships at Agency Media and a partner in other businesses; former vice-president of marketing and philanthropy for Habitat for Humanity; volunteer youth sports coach.",
+     "summarySource": "https://langleystrong.ca/langley-strong-unveils-mayoral-candidate-as-four-sitting-township-councillors-join-team/",
+     "positions": [
+      {
+       "issueId": "debt-and-borrowing",
+       "topic": "debt",
+       "summary": "Proposes a forensic audit and review of Township debt, saying borrowing rather than growth is paying for growth.",
+       "sourceUrl": "https://langleyadvancetimes.com/2026/09/23/mayoral-hopefuls-clash-at-langley-township-all-candidates-meeting/",
+       "sourceType": "news",
+       "proposedLean": 2,
+       "leanReason": "Wants debt reviewed before more borrowing"
+      },
+      {
+       "issueId": "property-taxes",
+       "topic": "taxes",
+       "summary": "Says the projected 22 per cent 2027 tax increase is a real concern this time.",
+       "sourceUrl": "https://aldergrovestar.com/2026/10/02/township-mayoral-candidates-talk-taxes-debt-and-spending/",
+       "sourceType": "news",
+       "proposedLean": 1,
+       "leanReason": "Concern about tax increases"
+      },
+      {
+       "issueId": "community-amenities",
+       "topic": "Willoughby community centre",
+       "summary": "Supports a Willoughby community centre but wants a funding plan rather than more deficit spending.",
+       "sourceUrl": "https://aldergrovestar.com/2026/10/02/township-mayoral-candidates-talk-taxes-debt-and-spending/",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "Supports facility, conditions it on funding"
+      },
+      {
+       "issueId": null,
+       "topic": "economic development",
+       "summary": "Proposes attracting more businesses to broaden the tax base instead of relying mainly on residential growth.",
+       "sourceUrl": "https://aldergrovestar.com/2026/10/02/township-mayoral-candidates-talk-taxes-debt-and-spending/",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "Economic development, not on an issue scale"
+      },
+      {
+       "issueId": "property-taxes",
+       "topic": "cost of living",
+       "summary": "Pledges to hold the line on every cost the Township controls for residents on fixed incomes.",
+       "sourceUrl": "https://langleystrong.ca/news/langley-strong-to-seniors-we-will-fight-to-hold-the-line/",
+       "sourceType": "affiliation_platform",
+       "proposedLean": 2,
+       "leanReason": "Prioritizes holding costs down"
+      }
+     ]
+    },
+    {
+     "id": "eric-woodward",
+     "name": "Eric Woodward",
+     "ballotName": "WOODWARD, Eric",
+     "incumbent": true,
+     "affiliation": {
+      "name": "Progress for Langley",
+      "sourceUrl": "https://www.tol.ca/en/the-township/candidates.aspx"
+     },
+     "declaredIndependent": false,
+     "website": "https://www.progressforlangley.org/the/team/woodward",
+     "links": [],
+     "sourceUrls": [
+      "https://www.tol.ca/en/the-township/candidates.aspx",
+      "https://www.tol.ca/en/the-township/about-the-candidates.aspx",
+      "https://www.tol.ca/en/the-township/resources/elections/2026/Candidate-Nomination-Package/Local/Post---Mayor---Woodward,-Eric.pdf",
+      "https://localelections.ca/election_candidates/62_2026_candidates.html"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Langley-raised former technology entrepreneur who later renovated buildings in Fort Langley's commercial core; past president of the Fort Langley BIA; on Township council from 2018 and elected mayor in 2022.",
+     "summarySource": "https://www.progressforlangley.org/the/team/woodward",
+     "positions": [
+      {
+       "issueId": "debt-and-borrowing",
+       "topic": "debt",
+       "summary": "Defends increased borrowing for infrastructure as a sound plan, expecting regional growth revenue to allow early repayment.",
+       "sourceUrl": "https://aldergrovestar.com/2026/10/02/township-mayoral-candidates-talk-taxes-debt-and-spending/",
+       "sourceType": "news",
+       "proposedLean": -2,
+       "leanReason": "Supports borrowing repaid by growth"
+      },
+      {
+       "issueId": "property-taxes",
+       "topic": "taxes",
+       "summary": "Says the projected 2027 tax increase assumes no cost-cutting, noting the 2026 increase came in at 3.97 per cent.",
+       "sourceUrl": "https://langleyadvancetimes.com/2026/09/23/mayoral-hopefuls-clash-at-langley-township-all-candidates-meeting/",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "Disputes projection; no stated tax direction"
+      },
+      {
+       "issueId": "community-amenities",
+       "topic": "recreation facilities",
+       "summary": "Names a Willoughby recreation centre and pool as his top priority, followed by replacing the Walnut Grove fire hall.",
+       "sourceUrl": "https://langleyadvancetimes.com/2026/09/23/mayoral-hopefuls-clash-at-langley-township-all-candidates-meeting/",
+       "sourceType": "news",
+       "proposedLean": -2,
+       "leanReason": "Prioritizes building major facility"
+      },
+      {
+       "issueId": "roads-and-transit",
+       "topic": "roads",
+       "summary": "Points to widening 208 Street, expanding Fraser Highway and building the 212 Connector to ease congestion.",
+       "sourceUrl": "https://www.darpanmagazine.com/people/businessleaders/building-on-progress-for-langley-eric-woodward-looks-to-the-next-four-years/",
+       "sourceType": "news",
+       "proposedLean": -1,
+       "leanReason": "Emphasizes road capacity projects"
+      },
+      {
+       "issueId": "community-safety",
+       "topic": "fire and police",
+       "summary": "Highlights adding 39 firefighters, 11 RCMP officers and the Brookswood-Fernridge fire hall.",
+       "sourceUrl": "https://www.darpanmagazine.com/people/businessleaders/building-on-progress-for-langley-eric-woodward-looks-to-the-next-four-years/",
+       "sourceType": "news",
+       "proposedLean": -1,
+       "leanReason": "Emphasizes added emergency staffing"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "langley-township-council",
+   "office": "Councillor",
+   "seats": 8,
+   "areaName": "Township of Langley",
+   "candidates": [
+    {
+     "id": "tim-baillie",
+     "name": "Tim Baillie",
+     "ballotName": "BAILLIE, Tim",
+     "incumbent": true,
+     "affiliation": {
+      "name": "Progress for Langley",
+      "sourceUrl": "https://www.tol.ca/en/the-township/candidates.aspx"
+     },
+     "declaredIndependent": false,
+     "website": null,
+     "links": [],
+     "sourceUrls": [
+      "https://www.tol.ca/en/the-township/candidates.aspx",
+      "https://www.tol.ca/en/the-township/about-the-candidates.aspx",
+      "https://www.tol.ca/en/the-township/resources/elections/2026/Candidate-Nomination-Package/Local/Post---Councillor---Baillie,-Tim.pdf",
+      "https://localelections.ca/election_candidates/62_2026_candidates.html"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "First-term councillor and retired Surrey Fire Services captain with more than 27 years of service; former vice-president of the BC Professional Fire Fighters Association.",
+     "summarySource": "https://www.progressforlangley.org/the/team/baillie",
+     "positions": [
+      {
+       "issueId": "village-character-and-heights",
+       "topic": "Fort Langley heights",
+       "summary": "Opposed a proposed four-storey building behind the Fort Langley Community Hall and supports consultation on height standards.",
+       "sourceUrl": "https://aldergrovestar.com/2026/09/24/township-council-candidates-field-flurry-of-questions/",
+       "sourceType": "news",
+       "proposedLean": 1,
+       "leanReason": "Favours height limits in village core"
+      },
+      {
+       "issueId": "property-taxes",
+       "topic": "tax projections",
+       "summary": "Disputes the projected 22 per cent tax increase, calling campaign figures political.",
+       "sourceUrl": "https://langleyadvancetimes.com/2026/10/03/township-council-candidates-spar-in-debate/",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "Disputes figure; no stated direction"
+      },
+      {
+       "issueId": "community-amenities",
+       "topic": "youth recreation",
+       "summary": "Supports expanding opportunities for youth through sports and recreation.",
+       "sourceUrl": "https://www.progressforlangley.org/the/team/baillie",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -1,
+       "leanReason": "Favours added recreation offerings"
+      }
+     ]
+    },
+    {
+     "id": "lauren-chalus",
+     "name": "Lauren Chalus",
+     "ballotName": "CHALUS, Lauren",
+     "incumbent": false,
+     "affiliation": {
+      "name": "Langley Strong",
+      "sourceUrl": "https://www.tol.ca/en/the-township/candidates.aspx"
+     },
+     "declaredIndependent": false,
+     "website": null,
+     "links": [],
+     "sourceUrls": [
+      "https://www.tol.ca/en/the-township/candidates.aspx",
+      "https://www.tol.ca/en/the-township/about-the-candidates.aspx",
+      "https://www.tol.ca/en/the-township/resources/elections/2026/Candidate-Nomination-Package/Local/Post---Councillor---Chalus,-Lauren.pdf",
+      "https://localelections.ca/election_candidates/62_2026_candidates.html"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Project engagement and relationship lead at BC Hydro; serves on the Township's Heritage Advisory Committee.",
+     "summarySource": "https://langleystrong.ca/langley-strong-announces-new-council-candidates-lauren-chalus-and-teresa-townsley/",
+     "positions": [
+      {
+       "issueId": "village-character-and-heights",
+       "topic": "Fort Langley plan",
+       "summary": "Calls for updating Fort Langley's community plan with clear height and design standards to preserve its character.",
+       "sourceUrl": "https://aldergrovestar.com/2026/09/24/township-council-candidates-field-flurry-of-questions/",
+       "sourceType": "news",
+       "proposedLean": 1,
+       "leanReason": "Favours clear limits to protect character"
+      },
+      {
+       "issueId": "roads-and-transit",
+       "topic": "transit",
+       "summary": "Supports preparing for SkyTrain through bus networks and a 'park once and walk often' approach.",
+       "sourceUrl": "https://langleyadvancetimes.com/2026/10/03/township-council-candidates-spar-in-debate/",
+       "sourceType": "news",
+       "proposedLean": 1,
+       "leanReason": "Emphasizes transit and walking"
+      },
+      {
+       "issueId": "community-amenities",
+       "topic": "W.C. Blair pool",
+       "summary": "Supports a long-term plan for the W.C. Blair pool in Murrayville.",
+       "sourceUrl": "https://langleystrong.ca/news/langley-strong-pledges-fair-share-for-every-langley-community-with-a-public-price-tag-on-every-promise/",
+       "sourceType": "affiliation_platform",
+       "proposedLean": null,
+       "leanReason": "Facility upkeep, no clear side"
+      }
+     ]
+    },
+    {
+     "id": "steve-ferguson",
+     "name": "Steve Ferguson",
+     "ballotName": "FERGUSON, Steve",
+     "incumbent": true,
+     "affiliation": {
+      "name": "Progress for Langley",
+      "sourceUrl": "https://www.tol.ca/en/the-township/candidates.aspx"
+     },
+     "declaredIndependent": false,
+     "website": null,
+     "links": [],
+     "sourceUrls": [
+      "https://www.tol.ca/en/the-township/candidates.aspx",
+      "https://www.tol.ca/en/the-township/about-the-candidates.aspx",
+      "https://www.tol.ca/en/the-township/resources/elections/2026/Candidate-Nomination-Package/Local/Post---Councillor---Ferguson,-Steve.pdf",
+      "https://localelections.ca/election_candidates/62_2026_candidates.html"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Long-serving incumbent councillor and former teacher and counsellor; Langley resident for more than 40 years; Metro Vancouver committee member.",
+     "summarySource": "https://www.progressforlangley.org/the/team/ferguson",
+     "positions": [
+      {
+       "issueId": "community-amenities",
+       "topic": "Marina Park",
+       "summary": "Identifies relocating Marina Park as a measurable goal for Fort Langley.",
+       "sourceUrl": "https://aldergrovestar.com/2026/09/24/township-council-candidates-field-flurry-of-questions/",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "Specific project, no clear side"
+      },
+      {
+       "issueId": "farmland-and-rural-land",
+       "topic": "farmland",
+       "summary": "Lists protecting agricultural land and food crops among his priorities.",
+       "sourceUrl": "https://www.progressforlangley.org/the/team/ferguson",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -1,
+       "leanReason": "Favours protecting farmland"
+      }
+     ]
+    },
+    {
+     "id": "shumail-javed",
+     "name": "Shumail Javed",
+     "ballotName": "JAVED, Shumail",
+     "incumbent": false,
+     "affiliation": {
+      "name": "Langley Strong",
+      "sourceUrl": "https://www.tol.ca/en/the-township/candidates.aspx"
+     },
+     "declaredIndependent": false,
+     "website": null,
+     "links": [],
+     "sourceUrls": [
+      "https://www.tol.ca/en/the-township/candidates.aspx",
+      "https://www.tol.ca/en/the-township/about-the-candidates.aspx",
+      "https://www.tol.ca/en/the-township/resources/elections/2026/Candidate-Nomination-Package/Local/Post---Councillor---Javed,-Shumail.pdf",
+      "https://localelections.ca/election_candidates/62_2026_candidates.html"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Technology executive and CEO of MaxQA Testing; Willoughby resident with an MBA from SFU; Langley Sunrise Rotary Club member.",
+     "summarySource": "https://aldergrovestar.com/2026/05/30/willoughby-businessman-joins-council-race-with-langley-strong/",
+     "positions": [
+      {
+       "issueId": null,
+       "topic": "Bedford Channel",
+       "summary": "Names dredging Bedford Channel as a priority.",
+       "sourceUrl": "https://aldergrovestar.com/2026/09/24/township-council-candidates-field-flurry-of-questions/",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "Not on an issue scale"
+      },
+      {
+       "issueId": "community-amenities",
+       "topic": "Willoughby facilities",
+       "summary": "Says Willoughby families are still waiting for a community centre and library.",
+       "sourceUrl": "https://langleystrong.ca/news/langley-strong-pledges-fair-share-for-every-langley-community-with-a-public-price-tag-on-every-promise/",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -1,
+       "leanReason": "Supports building Willoughby facilities"
+      },
+      {
+       "issueId": "council-decision-making",
+       "topic": "consultation",
+       "summary": "Says every resident deserves to be heard before decisions are made, not after.",
+       "sourceUrl": "https://aldergrovestar.com/2026/05/30/willoughby-businessman-joins-council-race-with-langley-strong/",
+       "sourceType": "news",
+       "proposedLean": 2,
+       "leanReason": "Favours consultation before decisions"
+      },
+      {
+       "issueId": null,
+       "topic": "permits",
+       "summary": "Says permit and approval delays are costly for businesses in Langley.",
+       "sourceUrl": "https://langleystrong.ca/news/langley-gets-an-f-for-small-business-langley-strong-has-the-plan-to-fix-it/",
+       "sourceType": "affiliation_platform",
+       "proposedLean": null,
+       "leanReason": "Permitting, not on an issue scale"
+      }
+     ]
+    },
+    {
+     "id": "margaret-kunst",
+     "name": "Margaret Kunst",
+     "ballotName": "KUNST, Margaret",
+     "incumbent": true,
+     "affiliation": {
+      "name": "Langley Strong",
+      "sourceUrl": "https://www.tol.ca/en/the-township/candidates.aspx"
+     },
+     "declaredIndependent": false,
+     "website": null,
+     "links": [],
+     "sourceUrls": [
+      "https://www.tol.ca/en/the-township/candidates.aspx",
+      "https://www.tol.ca/en/the-township/about-the-candidates.aspx",
+      "https://www.tol.ca/en/the-township/resources/elections/2026/Candidate-Nomination-Package/Local/Post---Councillor---Kunst,-Margaret.pdf",
+      "https://localelections.ca/election_candidates/62_2026_candidates.html"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Incumbent councillor first elected in 2018; born and raised in Langley; more than 20 years in agricultural small business.",
+     "summarySource": "https://www.tol.ca/en/the-township/candidate-profiles.aspx",
+     "positions": [
+      {
+       "issueId": "roads-and-transit",
+       "topic": "Fort Langley trucks",
+       "summary": "Proposes removing truck traffic from Fort Langley using local delivery zones and enforcement.",
+       "sourceUrl": "https://aldergrovestar.com/2026/09/24/township-council-candidates-field-flurry-of-questions/",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "Truck routing, no side on scale"
+      },
+      {
+       "issueId": "farmland-and-rural-land",
+       "topic": "farm approvals",
+       "summary": "Says farmers should get fast answers, fair rules and political support from the Township.",
+       "sourceUrl": "https://langleystrong.ca/news/langley-strong-farmland-stays-farmland-and-langleys-history-stays-standing/",
+       "sourceType": "affiliation_platform",
+       "proposedLean": 1,
+       "leanReason": "Favours easier approvals for farmers"
+      },
+      {
+       "issueId": "community-amenities",
+       "topic": "Aldergrove sidewalks",
+       "summary": "Says basics such as usable sidewalks in Aldergrove should come first.",
+       "sourceUrl": "https://langleystrong.ca/news/langley-strong-pledges-fair-share-for-every-langley-community-with-a-public-price-tag-on-every-promise/",
+       "sourceType": "affiliation_platform",
+       "proposedLean": 1,
+       "leanReason": "Emphasizes basics first"
+      }
+     ]
+    },
+    {
+     "id": "barb-martens",
+     "name": "Barb Martens",
+     "ballotName": "MARTENS, Barb",
+     "incumbent": true,
+     "affiliation": {
+      "name": "Langley Strong",
+      "sourceUrl": "https://www.tol.ca/en/the-township/candidates.aspx"
+     },
+     "declaredIndependent": false,
+     "website": null,
+     "links": [],
+     "sourceUrls": [
+      "https://www.tol.ca/en/the-township/candidates.aspx",
+      "https://www.tol.ca/en/the-township/about-the-candidates.aspx",
+      "https://www.tol.ca/en/the-township/resources/elections/2026/Candidate-Nomination-Package/Local/Post---Councillor---Martens,-Barb.pdf",
+      "https://localelections.ca/election_candidates/62_2026_candidates.html"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Incumbent councillor; spent 20 years as a Vancouver Police constable; Walnut Grove resident and founding member of BC Women in Law Enforcement.",
+     "summarySource": "https://www.tol.ca/en/the-township/candidate-profiles.aspx",
+     "positions": [
+      {
+       "issueId": null,
+       "topic": "crosswalk vandalism",
+       "summary": "Suggests thermoplastic crosswalk markings instead of paint to reduce vandalism of rainbow crossings.",
+       "sourceUrl": "https://aldergrovestar.com/2026/09/24/township-council-candidates-field-flurry-of-questions/",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "Specific fix, not on a scale"
+      },
+      {
+       "issueId": "farmland-and-rural-land",
+       "topic": "farmland",
+       "summary": "Says farmland should stay farmland.",
+       "sourceUrl": "https://langleyadvancetimes.com/2026/10/03/township-council-candidates-spar-in-debate/",
+       "sourceType": "news",
+       "proposedLean": -2,
+       "leanReason": "Firm protection of farmland"
+      },
+      {
+       "issueId": "community-safety",
+       "topic": "staffing",
+       "summary": "Says police and fire staffing should keep pace with community growth.",
+       "sourceUrl": "https://langleystrong.ca/news/a-retired-cop-and-a-former-er-nurse-helped-write-langley-strongs-safety-plan/",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -1,
+       "leanReason": "Favours added staffing"
+      },
+      {
+       "issueId": "debt-and-borrowing",
+       "topic": "borrowing approval",
+       "summary": "Says taxpayers should have a say on every borrowing decision.",
+       "sourceUrl": "https://langleystrong.ca/news/langley-strong-pledges-forensic-audit-of-township-finances-in-first-100-days/",
+       "sourceType": "affiliation_platform",
+       "proposedLean": 2,
+       "leanReason": "Favours tighter limits on borrowing"
+      }
+     ]
+    },
+    {
+     "id": "benjamin-neff",
+     "name": "Benjamin Neff",
+     "ballotName": "NEFF, Benjamin",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://www.benjaminneff.com/",
+     "links": [
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/profile.php?id=61591674775957"
+      },
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/benjamin.d.neff/"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.tol.ca/en/the-township/candidates.aspx",
+      "https://www.tol.ca/en/the-township/about-the-candidates.aspx",
+      "https://www.tol.ca/en/the-township/resources/elections/2026/Candidate-Nomination-Package/Local/Post---Councillor---Neff,-Benjamin.pdf",
+      "https://localelections.ca/election_candidates/62_2026_candidates.html"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Owner of Hoftag Consulting, a public affairs firm; first run for Township council.",
+     "summarySource": "https://langleyadvancetimes.com/2026/07/25/consultant-runs-for-township-council-seat/",
+     "positions": [
+      {
+       "issueId": "community-safety",
+       "topic": "vandalism",
+       "summary": "Frames responses to vandalism around education rather than only crime prevention.",
+       "sourceUrl": "https://aldergrovestar.com/2026/09/24/township-council-candidates-field-flurry-of-questions/",
+       "sourceType": "news",
+       "proposedLean": 1,
+       "leanReason": "Emphasizes prevention and education"
+      },
+      {
+       "issueId": "growth-and-development",
+       "topic": "growth",
+       "summary": "Calls for thoughtful growth with clear boundaries that keeps Langley's balance of farmland and urban areas.",
+       "sourceUrl": "https://langleyadvancetimes.com/2026/10/03/township-council-candidates-spar-in-debate/",
+       "sourceType": "news",
+       "proposedLean": 1,
+       "leanReason": "Favours managed, bounded growth"
+      },
+      {
+       "issueId": "debt-and-borrowing",
+       "topic": "amenity funding",
+       "summary": "Says amenities should be funded before they are promised.",
+       "sourceUrl": "https://www.benjaminneff.com/",
+       "sourceType": "candidate",
+       "proposedLean": 1,
+       "leanReason": "Favours funding plans before building"
+      },
+      {
+       "issueId": "council-decision-making",
+       "topic": "working across views",
+       "summary": "Says councillors should build agreement across differing views rather than within one group.",
+       "sourceUrl": "https://langleyadvancetimes.com/2026/07/25/consultant-runs-for-township-council-seat/",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "Collaboration, no side on scale"
+      }
+     ]
+    },
+    {
+     "id": "june-park",
+     "name": "June Park",
+     "ballotName": "PARK, June",
+     "incumbent": false,
+     "affiliation": {
+      "name": "Progress for Langley",
+      "sourceUrl": "https://www.tol.ca/en/the-township/candidates.aspx"
+     },
+     "declaredIndependent": false,
+     "website": null,
+     "links": [],
+     "sourceUrls": [
+      "https://www.tol.ca/en/the-township/candidates.aspx",
+      "https://www.tol.ca/en/the-township/about-the-candidates.aspx",
+      "https://www.tol.ca/en/the-township/resources/elections/2026/Candidate-Nomination-Package/Local/Post---Councillor---Park,-June.pdf",
+      "https://localelections.ca/election_candidates/62_2026_candidates.html"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Executive director of the Burnaby North Road Business Improvement Association and president of the Korean Society of BC; serves on Kwantlen Polytechnic University's Board of Governors.",
+     "summarySource": "https://www.progressforlangley.org/the/team/park",
+     "positions": [
+      {
+       "issueId": "community-safety",
+       "topic": "vandalism",
+       "summary": "Says camera-only approaches are not enough and the focus should be finding vandals and reducing repair costs.",
+       "sourceUrl": "https://aldergrovestar.com/2026/09/24/township-council-candidates-field-flurry-of-questions/",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "Mixed approach, no clear side"
+      },
+      {
+       "issueId": "property-taxes",
+       "topic": "finances",
+       "summary": "Says the Township has handled pandemic-era inflation well.",
+       "sourceUrl": "https://langleyadvancetimes.com/2026/10/03/township-council-candidates-spar-in-debate/",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "Assessment, no stated direction"
+      },
+      {
+       "issueId": null,
+       "topic": "family priorities",
+       "summary": "Lists safer neighbourhoods, better roads, accessible recreation and attainable housing for families as priorities.",
+       "sourceUrl": "https://www.progressforlangley.org/the/team/park",
+       "sourceType": "affiliation_platform",
+       "proposedLean": null,
+       "leanReason": "General priorities"
+      }
+     ]
+    },
+    {
+     "id": "mike-parker",
+     "name": "Mike Parker",
+     "ballotName": "PARKER, Mike",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://mikeforlangley.ca/",
+     "links": [
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/p/Mike-Parker-Local-Government-Urbanism-61586758732991/"
+      },
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/mikeparkerlangley"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.tol.ca/en/the-township/candidates.aspx",
+      "https://www.tol.ca/en/the-township/about-the-candidates.aspx",
+      "https://www.tol.ca/en/the-township/resources/elections/2026/Candidate-Nomination-Package/Local/Post---Councillor---Parker,-Mike.pdf",
+      "https://localelections.ca/election_candidates/62_2026_candidates.html"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Background in accounting and finance; runs a local family business that makes products for salons and spas.",
+     "summarySource": "https://langleyadvancetimes.com/2026/07/08/self-styled-budget-watchdog-runs-for-langley-township-council/",
+     "positions": [
+      {
+       "issueId": "debt-and-borrowing",
+       "topic": "borrowing",
+       "summary": "Questions recent borrowing, including a loan of about $120 million through the Township's housing trust society.",
+       "sourceUrl": "https://mikeforlangley.ca/",
+       "sourceType": "candidate",
+       "proposedLean": 2,
+       "leanReason": "Critical of added borrowing"
+      },
+      {
+       "issueId": null,
+       "topic": "tax base",
+       "summary": "Supports expanding the business and industrial tax base.",
+       "sourceUrl": "https://langleyadvancetimes.com/2026/10/03/township-council-candidates-spar-in-debate/",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "Economic development, not on a scale"
+      },
+      {
+       "issueId": "roads-and-transit",
+       "topic": "transportation",
+       "summary": "Supports frequent transit, safer streets and well-maintained roads.",
+       "sourceUrl": "https://mikeforlangley.ca/",
+       "sourceType": "candidate",
+       "proposedLean": 1,
+       "leanReason": "Leans toward transit and safer streets"
+      },
+      {
+       "issueId": "community-amenities",
+       "topic": "promised amenities",
+       "summary": "Says residents who paid amenity contributions should see a library, pool and recreation centre delivered.",
+       "sourceUrl": "https://mikeforlangley.ca/",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Supports delivering facilities"
+      },
+      {
+       "issueId": "growth-and-development",
+       "topic": "housing location",
+       "summary": "Wants affordable housing located near transit, jobs and services to lower total living costs.",
+       "sourceUrl": "https://mikeforlangley.ca/",
+       "sourceType": "candidate",
+       "proposedLean": null,
+       "leanReason": "Location preference, no pace side"
+      }
+     ]
+    },
+    {
+     "id": "michael-pratt",
+     "name": "Michael V. Pratt",
+     "ballotName": "PRATT, Michael V.",
+     "incumbent": true,
+     "affiliation": {
+      "name": "Progress for Langley",
+      "sourceUrl": "https://www.tol.ca/en/the-township/candidates.aspx"
+     },
+     "declaredIndependent": false,
+     "website": null,
+     "links": [],
+     "sourceUrls": [
+      "https://www.tol.ca/en/the-township/candidates.aspx",
+      "https://www.tol.ca/en/the-township/about-the-candidates.aspx",
+      "https://www.tol.ca/en/the-township/resources/elections/2026/Candidate-Nomination-Package/Local/Post---Councillor---Pratt,-Michael.pdf",
+      "https://localelections.ca/election_candidates/62_2026_candidates.html"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "First-term councillor and lifelong Langley resident; owns an urban planning company and holds a master's in urban studies from SFU.",
+     "summarySource": "https://www.progressforlangley.org/the/team/pratt",
+     "positions": [
+      {
+       "issueId": "roads-and-transit",
+       "topic": "Fort Langley truck route",
+       "summary": "Says a Fort Langley truck bypass route is approved and awaiting TransLink and Agricultural Land Commission clearance.",
+       "sourceUrl": "https://aldergrovestar.com/2026/09/24/township-council-candidates-field-flurry-of-questions/",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "Status update, no clear side"
+      },
+      {
+       "issueId": "community-amenities",
+       "topic": "Willoughby community centre",
+       "summary": "Names a new Willoughby community centre as a priority.",
+       "sourceUrl": "https://langleyadvancetimes.com/2026/10/03/township-council-candidates-spar-in-debate/",
+       "sourceType": "news",
+       "proposedLean": -2,
+       "leanReason": "Prioritizes building major facility"
+      },
+      {
+       "issueId": "growth-and-development",
+       "topic": "growth",
+       "summary": "Supports phased, orderly growth into complete communities and identifies Brookswood as the next growth area.",
+       "sourceUrl": "https://langleyadvancetimes.com/2026/10/03/township-council-candidates-spar-in-debate/",
+       "sourceType": "news",
+       "proposedLean": -1,
+       "leanReason": "Supports continued planned growth"
+      }
+     ]
+    },
+    {
+     "id": "sarb-rai",
+     "name": "Sarb Rai",
+     "ballotName": "RAI, Sarb",
+     "incumbent": false,
+     "affiliation": {
+      "name": "Progress for Langley",
+      "sourceUrl": "https://www.tol.ca/en/the-township/candidates.aspx"
+     },
+     "declaredIndependent": false,
+     "website": null,
+     "links": [],
+     "sourceUrls": [
+      "https://www.tol.ca/en/the-township/candidates.aspx",
+      "https://www.tol.ca/en/the-township/about-the-candidates.aspx",
+      "https://www.tol.ca/en/the-township/resources/elections/2026/Candidate-Nomination-Package/Local/Post---Councillor---Rai,-Sarb.pdf",
+      "https://localelections.ca/election_candidates/62_2026_candidates.html"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Langley school trustee and longtime Canada Border Services Agency employee; Langley resident for more than 25 years.",
+     "summarySource": "https://www.progressforlangley.org/the/team/rai",
+     "positions": [
+      {
+       "issueId": "roads-and-transit",
+       "topic": "200 Street",
+       "summary": "Supports bus rapid transit on 200 Street along with widening 200 Street and improving 86 Avenue.",
+       "sourceUrl": "https://langleyadvancetimes.com/2026/10/03/township-council-candidates-spar-in-debate/",
+       "sourceType": "news",
+       "proposedLean": 0,
+       "leanReason": "Supports both road and transit upgrades"
+      },
+      {
+       "issueId": "roads-and-transit",
+       "topic": "truck rerouting",
+       "summary": "Says next steps for rerouting trucks are securing approvals and funding road construction.",
+       "sourceUrl": "https://aldergrovestar.com/2026/09/24/township-council-candidates-field-flurry-of-questions/",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "Process step, no clear side"
+      }
+     ]
+    },
+    {
+     "id": "kim-richter",
+     "name": "Kim Richter",
+     "ballotName": "RICHTER, Kim",
+     "incumbent": true,
+     "affiliation": {
+      "name": "Langley Strong",
+      "sourceUrl": "https://www.tol.ca/en/the-township/candidates.aspx"
+     },
+     "declaredIndependent": false,
+     "website": "https://langleystrong.ca/",
+     "links": [
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/KimRichterTOL/"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.tol.ca/en/the-township/candidates.aspx",
+      "https://www.tol.ca/en/the-township/about-the-candidates.aspx",
+      "https://www.tol.ca/en/the-township/resources/elections/2026/Candidate-Nomination-Package/Local/Post---Councillor---Richter,-Kim.pdf",
+      "https://localelections.ca/election_candidates/62_2026_candidates.html"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Incumbent councillor with more than 20 years of council experience; business management professor.",
+     "summarySource": "https://www.tol.ca/en/the-township/candidate-profiles.aspx",
+     "positions": [
+      {
+       "issueId": "debt-and-borrowing",
+       "topic": "debt",
+       "summary": "Says the Township has run its borrowing up to the maximum.",
+       "sourceUrl": "https://langleyadvancetimes.com/2026/10/03/township-council-candidates-spar-in-debate/",
+       "sourceType": "news",
+       "proposedLean": 2,
+       "leanReason": "Critical of debt levels"
+      },
+      {
+       "issueId": "community-amenities",
+       "topic": "performing arts centre",
+       "summary": "Calls for delivering a long-overdue performing arts centre.",
+       "sourceUrl": "https://aldergrovestar.com/2026/09/24/township-council-candidates-field-flurry-of-questions/",
+       "sourceType": "news",
+       "proposedLean": -1,
+       "leanReason": "Supports building a facility"
+      },
+      {
+       "issueId": "farmland-and-rural-land",
+       "topic": "rural Langley",
+       "summary": "Says rural Langley makes up half the Township and should not be an afterthought.",
+       "sourceUrl": "https://langleystrong.ca/news/langley-strong-pledges-fair-share-for-every-langley-community-with-a-public-price-tag-on-every-promise/",
+       "sourceType": "affiliation_platform",
+       "proposedLean": null,
+       "leanReason": "Attention to rural areas, no side"
+      }
+     ]
+    },
+    {
+     "id": "rob-rindt",
+     "name": "Rob Rindt",
+     "ballotName": "RINDT, Rob",
+     "incumbent": true,
+     "affiliation": {
+      "name": "Progress for Langley",
+      "sourceUrl": "https://www.tol.ca/en/the-township/candidates.aspx"
+     },
+     "declaredIndependent": false,
+     "website": null,
+     "links": [],
+     "sourceUrls": [
+      "https://www.tol.ca/en/the-township/candidates.aspx",
+      "https://www.tol.ca/en/the-township/about-the-candidates.aspx",
+      "https://www.tol.ca/en/the-township/resources/elections/2026/Candidate-Nomination-Package/Local/Post---Councillor---Rindt,-Rob.pdf",
+      "https://localelections.ca/election_candidates/62_2026_candidates.html"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "First-term councillor and third-generation Glen Valley farmer; general manager of Western Turf Farms and co-founder of a local distillery.",
+     "summarySource": "https://www.progressforlangley.org/the/team/rindt",
+     "positions": [
+      {
+       "issueId": "farmland-and-rural-land",
+       "topic": "agriculture",
+       "summary": "Supports keeping farming viable by letting agriculture modernize and evolve while protecting rural character.",
+       "sourceUrl": "https://www.progressforlangley.org/the/team/rindt",
+       "sourceType": "affiliation_platform",
+       "proposedLean": 1,
+       "leanReason": "Favours flexibility for farm operations"
+      }
+     ]
+    },
+    {
+     "id": "tess-rouse",
+     "name": "Tess Rouse",
+     "ballotName": "ROUSE, Tess",
+     "incumbent": false,
+     "affiliation": {
+      "name": "Progress for Langley",
+      "sourceUrl": "https://www.tol.ca/en/the-township/candidates.aspx"
+     },
+     "declaredIndependent": false,
+     "website": null,
+     "links": [],
+     "sourceUrls": [
+      "https://www.tol.ca/en/the-township/candidates.aspx",
+      "https://www.tol.ca/en/the-township/about-the-candidates.aspx",
+      "https://www.tol.ca/en/the-township/resources/elections/2026/Candidate-Nomination-Package/Local/Post---Councillor---Rouse,-Tess.pdf",
+      "https://localelections.ca/election_candidates/62_2026_candidates.html"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Lifelong Langley resident with more than 16 years in local, regional and provincial government, including over a decade in the Township's engineering division; now works for the Province.",
+     "summarySource": "https://www.progressforlangley.org/the/team/rouse",
+     "positions": [
+      {
+       "issueId": "community-amenities",
+       "topic": "programs",
+       "summary": "Emphasizes supporting existing programs such as Langley Events Centre summer concerts.",
+       "sourceUrl": "https://aldergrovestar.com/2026/09/24/township-council-candidates-field-flurry-of-questions/",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "Programs, no clear side"
+      },
+      {
+       "issueId": "council-decision-making",
+       "topic": "role of government",
+       "summary": "Says municipalities are not profit-driven businesses and should not be run like them.",
+       "sourceUrl": "https://langleyadvancetimes.com/2026/10/03/township-council-candidates-spar-in-debate/",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "Philosophy, not on scale"
+      },
+      {
+       "issueId": "growth-and-development",
+       "topic": "sustainable growth",
+       "summary": "Supports sustainable growth that preserves community character, improves mobility and protects natural spaces.",
+       "sourceUrl": "https://www.progressforlangley.org/the/team/rouse",
+       "sourceType": "affiliation_platform",
+       "proposedLean": null,
+       "leanReason": "General principle"
+      }
+     ]
+    },
+    {
+     "id": "resha-sabti",
+     "name": "Resha Sabti",
+     "ballotName": "SABTI, Resha",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://www.reshasabti.ca/",
+     "links": [
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/ReshaSabtiTOL"
+      },
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/reshasabti4tol"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.tol.ca/en/the-township/candidates.aspx",
+      "https://www.tol.ca/en/the-township/about-the-candidates.aspx",
+      "https://www.tol.ca/en/the-township/resources/elections/2026/Candidate-Nomination-Package/Local/Post---Councillor---Sabti,-Resha.pdf",
+      "https://localelections.ca/election_candidates/62_2026_candidates.html"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Professional environmental engineer; ran in the Township's October 2025 council byelection.",
+     "summarySource": "https://langleyadvancetimes.com/2026/05/22/resha-sabti-to-run-for-langley-township-council-again/",
+     "positions": [
+      {
+       "issueId": "community-amenities",
+       "topic": "arts and sports",
+       "summary": "Raises concerns about recent arts grant cuts and supports funding for sports and arts.",
+       "sourceUrl": "https://aldergrovestar.com/2026/09/24/township-council-candidates-field-flurry-of-questions/",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "Program funding, no facility side"
+      },
+      {
+       "issueId": "property-taxes",
+       "topic": "budgeting",
+       "summary": "Says services come with costs and supports realistic budgeting while monitoring Township spending.",
+       "sourceUrl": "https://langleyadvancetimes.com/2026/05/22/resha-sabti-to-run-for-langley-township-council-again/",
+       "sourceType": "news",
+       "proposedLean": -1,
+       "leanReason": "Accepts costs of services"
+      },
+      {
+       "issueId": null,
+       "topic": "e-scooter safety",
+       "summary": "Advocates for electric kick scooter safety for children.",
+       "sourceUrl": "https://langleyadvancetimes.com/2026/05/22/resha-sabti-to-run-for-langley-township-council-again/",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "Not on an issue scale"
+      }
+     ]
+    },
+    {
+     "id": "andy-shen",
+     "name": "Andy Shen",
+     "ballotName": "SHEN, Andy",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://elect.andyshen.ca/",
+     "links": [
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/andyshen4tol"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.tol.ca/en/the-township/candidates.aspx",
+      "https://www.tol.ca/en/the-township/about-the-candidates.aspx",
+      "https://www.tol.ca/en/the-township/resources/elections/2026/Candidate-Nomination-Package/Local/Post---Councillor---Shen,-Andy.pdf",
+      "https://localelections.ca/election_candidates/62_2026_candidates.html"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Public affairs professional working in government, health care and public policy; runs a social media account featuring local deals.",
+     "summarySource": "https://langleyadvancetimes.com/2026/09/24/shen-runs-as-independent-in-langley-township/",
+     "positions": [
+      {
+       "issueId": "growth-and-development",
+       "topic": "infrastructure first",
+       "summary": "Wants infrastructure built before growth arrives rather than after.",
+       "sourceUrl": "https://langleyadvancetimes.com/2026/09/24/shen-runs-as-independent-in-langley-township/",
+       "sourceType": "news",
+       "proposedLean": 1,
+       "leanReason": "Infrastructure before growth"
+      },
+      {
+       "issueId": "property-taxes",
+       "topic": "taxes",
+       "summary": "Wants to stop taxes rising every year without clear returns.",
+       "sourceUrl": "https://langleyadvancetimes.com/2026/09/24/shen-runs-as-independent-in-langley-township/",
+       "sourceType": "news",
+       "proposedLean": 2,
+       "leanReason": "Favours holding taxes down"
+      },
+      {
+       "issueId": "community-safety",
+       "topic": "police and fire",
+       "summary": "Supports investing in police and firefighting services.",
+       "sourceUrl": "https://langleyadvancetimes.com/2026/09/24/shen-runs-as-independent-in-langley-township/",
+       "sourceType": "news",
+       "proposedLean": -2,
+       "leanReason": "Favours more emergency staffing"
+      },
+      {
+       "issueId": null,
+       "topic": "business and tourism",
+       "summary": "Supports small businesses and tourism, linking them to cultural attractions.",
+       "sourceUrl": "https://aldergrovestar.com/2026/09/24/township-council-candidates-field-flurry-of-questions/",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "Economic, not on a scale"
+      }
+     ]
+    },
+    {
+     "id": "michele-st-germain",
+     "name": "Michele St. Germain",
+     "ballotName": "ST. GERMAIN, Michele",
+     "incumbent": false,
+     "affiliation": {
+      "name": "Progress for Langley",
+      "sourceUrl": "https://www.tol.ca/en/the-township/candidates.aspx"
+     },
+     "declaredIndependent": false,
+     "website": null,
+     "links": [],
+     "sourceUrls": [
+      "https://www.tol.ca/en/the-township/candidates.aspx",
+      "https://www.tol.ca/en/the-township/about-the-candidates.aspx",
+      "https://www.tol.ca/en/the-township/resources/elections/2026/Candidate-Nomination-Package/Local/Post---Councillor---St-Germain,-Michele.pdf",
+      "https://localelections.ca/election_candidates/62_2026_candidates.html"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Lifelong Langley resident, small business owner and second-generation farmer, with a background in bookkeeping, agricultural sales and real estate.",
+     "summarySource": "https://www.progressforlangley.org/the/team/stgermain",
+     "positions": [
+      {
+       "issueId": "village-character-and-heights",
+       "topic": "density location",
+       "summary": "Supports limiting higher-density projects to major corridors such as 200 Street.",
+       "sourceUrl": "https://langleyadvancetimes.com/2026/10/03/township-council-candidates-spar-in-debate/",
+       "sourceType": "news",
+       "proposedLean": 0,
+       "leanReason": "Density on corridors, limits elsewhere"
+      },
+      {
+       "issueId": "council-decision-making",
+       "topic": "listening first",
+       "summary": "Stresses listening to residents before putting housing affordability solutions in place.",
+       "sourceUrl": "https://aldergrovestar.com/2026/09/24/township-council-candidates-field-flurry-of-questions/",
+       "sourceType": "news",
+       "proposedLean": 1,
+       "leanReason": "Favours consultation first"
+      }
+     ]
+    },
+    {
+     "id": "teresa-townsley",
+     "name": "Teresa Townsley",
+     "ballotName": "TOWNSLEY, Teresa",
+     "incumbent": false,
+     "affiliation": {
+      "name": "Langley Strong",
+      "sourceUrl": "https://www.tol.ca/en/the-township/candidates.aspx"
+     },
+     "declaredIndependent": false,
+     "website": null,
+     "links": [],
+     "sourceUrls": [
+      "https://www.tol.ca/en/the-township/candidates.aspx",
+      "https://www.tol.ca/en/the-township/about-the-candidates.aspx",
+      "https://www.tol.ca/en/the-township/resources/elections/2026/Candidate-Nomination-Package/Local/Post---Councillor---Townsley,-Teresa.pdf",
+      "https://localelections.ca/election_candidates/62_2026_candidates.html"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Founded Festina Lente Estate Winery in 2016; former emergency room nurse and Delta school board vice-chair; former co-chair of the Langley Farmers' Institute.",
+     "summarySource": "https://langleystrong.ca/langley-strong-announces-new-council-candidates-lauren-chalus-and-teresa-townsley/",
+     "positions": [
+      {
+       "issueId": "debt-and-borrowing",
+       "topic": "debt",
+       "summary": "Raises concerns about the Township's large debt and its remaining borrowing capacity.",
+       "sourceUrl": "https://langleyadvancetimes.com/2026/10/03/township-council-candidates-spar-in-debate/",
+       "sourceType": "news",
+       "proposedLean": 2,
+       "leanReason": "Critical of debt levels"
+      },
+      {
+       "issueId": null,
+       "topic": "permit service standards",
+       "summary": "Calls for service standards on permitting and development decisions to lower costs for businesses.",
+       "sourceUrl": "https://aldergrovestar.com/2026/09/24/township-council-candidates-field-flurry-of-questions/",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "Permitting, not on a scale"
+      },
+      {
+       "issueId": "farmland-and-rural-land",
+       "topic": "farm rules",
+       "summary": "Wants fair rules for farmers whether or not their land is in the Agricultural Land Reserve.",
+       "sourceUrl": "https://langleystrong.ca/news/langley-strong-farmland-stays-farmland-and-langleys-history-stays-standing/",
+       "sourceType": "affiliation_platform",
+       "proposedLean": 1,
+       "leanReason": "Favours fairer rules for farm operators"
+      },
+      {
+       "issueId": "community-safety",
+       "topic": "prevention",
+       "summary": "Says prevention beats response in community safety.",
+       "sourceUrl": "https://langleystrong.ca/news/a-retired-cop-and-a-former-er-nurse-helped-write-langley-strongs-safety-plan/",
+       "sourceType": "affiliation_platform",
+       "proposedLean": 1,
+       "leanReason": "Emphasizes prevention"
+      }
+     ]
+    },
+    {
+     "id": "leith-white",
+     "name": "Leith White",
+     "ballotName": "WHITE, Leith",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://www.leithwhite.ca/",
+     "links": [
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/leithwhite.LC"
+      },
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/leithwhite.lc/"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.tol.ca/en/the-township/candidates.aspx",
+      "https://www.tol.ca/en/the-township/about-the-candidates.aspx",
+      "https://www.tol.ca/en/the-township/resources/elections/2026/Candidate-Nomination-Package/Local/Post---Councillor---White,-Leith.pdf",
+      "https://localelections.ca/election_candidates/62_2026_candidates.html"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "City of Langley councillor since 2022 and 30-year Township resident; former pastor of Langley Vineyard church and executive at several retailers.",
+     "summarySource": "https://langleyadvancetimes.com/2026/05/26/langley-city-councillor-leith-white-will-be-running-for-township-council/",
+     "positions": [
+      {
+       "issueId": "roads-and-transit",
+       "topic": "bus rapid transit",
+       "summary": "Strongly supports planned bus rapid transit on 200 Street.",
+       "sourceUrl": "https://langleyadvancetimes.com/2026/10/03/township-council-candidates-spar-in-debate/",
+       "sourceType": "news",
+       "proposedLean": 2,
+       "leanReason": "Strong transit support"
+      },
+      {
+       "issueId": "farmland-and-rural-land",
+       "topic": "ALR and boundary",
+       "summary": "Supports protecting green space, the Agricultural Land Reserve and the urban containment boundary.",
+       "sourceUrl": "https://www.leithwhite.ca/",
+       "sourceType": "candidate",
+       "proposedLean": -2,
+       "leanReason": "Firm protection of boundary and farmland"
+      },
+      {
+       "issueId": "community-amenities",
+       "topic": "fundamentals first",
+       "summary": "Prioritizes roads, utilities and parks over major facilities until planning and funding are in place.",
+       "sourceUrl": "https://www.leithwhite.ca/",
+       "sourceType": "candidate",
+       "proposedLean": 2,
+       "leanReason": "Basics before major facilities"
+      },
+      {
+       "issueId": "community-safety",
+       "topic": "balanced approach",
+       "summary": "Supports balanced RCMP resourcing and visible bylaw enforcement alongside support services for social disorder.",
+       "sourceUrl": "https://www.leithwhite.ca/",
+       "sourceType": "candidate",
+       "proposedLean": 0,
+       "leanReason": "Balances enforcement and support"
+      },
+      {
+       "issueId": "growth-and-development",
+       "topic": "growth funding",
+       "summary": "Wants new amenities funded by developers through development cost charges rather than existing taxpayers.",
+       "sourceUrl": "https://www.leithwhite.ca/",
+       "sourceType": "candidate",
+       "proposedLean": null,
+       "leanReason": "Who pays, not pace"
+      }
+     ]
+    },
+    {
+     "id": "blair-whitmarsh",
+     "name": "Blair Whitmarsh",
+     "ballotName": "WHITMARSH, Blair",
+     "incumbent": true,
+     "affiliation": {
+      "name": "Langley Strong",
+      "sourceUrl": "https://www.tol.ca/en/the-township/candidates.aspx"
+     },
+     "declaredIndependent": false,
+     "website": null,
+     "links": [],
+     "sourceUrls": [
+      "https://www.tol.ca/en/the-township/candidates.aspx",
+      "https://www.tol.ca/en/the-township/about-the-candidates.aspx",
+      "https://www.tol.ca/en/the-township/resources/elections/2026/Candidate-Nomination-Package/Local/Post---Councillor---Whitmarsh,-Blair.pdf",
+      "https://localelections.ca/election_candidates/62_2026_candidates.html"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Incumbent councillor; came to Langley in 1984 to attend Trinity Western and first served on council in 2014; ran for mayor in 2022.",
+     "summarySource": "https://www.tol.ca/en/the-township/candidate-profiles.aspx",
+     "positions": [
+      {
+       "issueId": "village-character-and-heights",
+       "topic": "Fort Langley heights",
+       "summary": "Calls for considerable public consultation on building heights in the Fort Langley core to protect heritage.",
+       "sourceUrl": "https://aldergrovestar.com/2026/09/24/township-council-candidates-field-flurry-of-questions/",
+       "sourceType": "news",
+       "proposedLean": 1,
+       "leanReason": "Favours protecting heritage scale"
+      },
+      {
+       "issueId": "roads-and-transit",
+       "topic": "Glover Road",
+       "summary": "Suggests widening Glover Road, calling it a choke point.",
+       "sourceUrl": "https://langleyadvancetimes.com/2026/10/03/township-council-candidates-spar-in-debate/",
+       "sourceType": "news",
+       "proposedLean": -2,
+       "leanReason": "Favours road widening"
+      },
+      {
+       "issueId": "debt-and-borrowing",
+       "topic": "debt repayment",
+       "summary": "Says no one at Township Hall can show a plan to pay back the debt.",
+       "sourceUrl": "https://langleystrong.ca/news/langley-strong-pledges-forensic-audit-of-township-finances-in-first-100-days/",
+       "sourceType": "affiliation_platform",
+       "proposedLean": 2,
+       "leanReason": "Critical of debt approach"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "notes": "Official candidate list (tol.ca Candidates and About the Candidates pages) shows 2 mayoral and 20 council candidates for 8 council seats; no ballot questions. The declaration-of-candidates PDF was not posted/located, so ballotName uses the tol.ca listing format (SURNAME, given name); localelections.ca shows middle initials for some (e.g. Jay B Lundgren, Eric J Woodward, Tim J Baillie). Incumbency per localelections.ca: Woodward (mayor) and councillors Baillie, Ferguson, Kunst, Martens, Pratt, Richter, Rindt, Whitmarsh; Whitmarsh won an October 2025 byelection. Sarb Rai is a sitting school trustee and Leith White a sitting City of Langley councillor (not Township incumbents). csdId 5915001 (Langley, district municipality) is from knowledge, not verified on the StatCan site this session. Several bios for incumbents (Kunst, Martens, Richter, Whitmarsh) rely on the Township's 2022 candidate profiles page. Many positions come from Langley Strong news releases quoting individual candidates (sourceType affiliation_platform); Progress for Langley candidate pages give few specific policy positions, so PFL newcomers (Park, Rai, Rouse, St. Germain) and Rindt have thinner records; Rindt did not attend the Sept. 23 Fort Langley forum and has one position. Resha Sabti's website (reshasabti.ca) was a placeholder with no platform; Andy Shen's campaign site could not be fetched (permission not granted), so his positions come from news. Initial direct fetches of some candidate sites and tol.ca pages were withdrawn for lack of permission and retried after search; the web search budget ran out before a dedicated housing/density search, so the housing-related issues rest on forum coverage. A provincial election is noted by the Township as occurring Oct. 24, 2026 (out of scope)."
+}

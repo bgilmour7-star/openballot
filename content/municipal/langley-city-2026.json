@@ -1,0 +1,1693 @@
+{
+ "municipality": {
+  "id": "langley-city",
+  "name": "City of Langley",
+  "csdId": "5915002",
+  "csdName": null
+ },
+ "government": {
+  "id": "city-of-langley",
+  "name": "City of Langley",
+  "howBuilt": "This list draws on City of Langley election and budget information, the platforms of the two elector organizations, official candidate profiles, and local news coverage of the 2026 campaign, including the 2026 budget, the end of the shared RCMP detachment with the Township, and the facility opinion vote. We kept issues the City of Langley can act on through zoning, its budget, bylaws, streets, parks, and services. Issues mainly run by the province, such as health care and mental health services, are left out of this list."
+ },
+ "issues": [
+  {
+   "id": "housing-growth-and-density",
+   "title": "Housing growth and density",
+   "description": "How much new housing Langley City allows, what kinds of buildings, and where they go as SkyTrain arrives.",
+   "whatItAffects": "Renters, buyers, families, seniors, and people living in single-family neighbourhoods.",
+   "whoDecides": "Council sets zoning and the Official Community Plan, approves rezonings and housing agreements, and sets development charges.",
+   "viewQuestion": {
+    "question": "How should the city approach new housing?",
+    "poleA": "Allow more apartments and mixed-use buildings in more parts of the city",
+    "poleB": "Keep larger buildings near SkyTrain and downtown, and protect single-family areas"
+   },
+   "topicTags": [
+    "housing",
+    "cost-of-living",
+    "growth"
+   ],
+   "sources": [
+    "https://langleyadvancetimes.com/2026/02/02/video-proposed-langley-city-rental-building-to-provide-below-market-rents/",
+    "https://langleyadvancetimes.com/2026/06/01/four-new-candidates-declare-for-langley-city-election/",
+    "https://www.votealc.com/platform",
+    "https://www.langleycityfirst.ca/our-platform"
+   ],
+   "tradeoffs": {
+    "context": "Housing decisions trade how fast and where new homes get built against how much existing neighbourhoods change.",
+    "a": {
+     "gains": [
+      "More homes, including rentals, could be built sooner across the city",
+      "More people near shops and transit may support local businesses"
+     ],
+     "costs": [
+      "Single-family streets may see more traffic, parking pressure, and change in character",
+      "Pipes, roads, and schools may need upgrades sooner"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Established neighbourhoods may keep their current scale and feel",
+      "Growth can be focused where SkyTrain and services already are"
+     ],
+     "costs": [
+      "Fewer new homes could keep rents and prices higher for longer",
+      "Fewer housing choices may be available outside the downtown and station areas"
+     ]
+    }
+   }
+  },
+  {
+   "id": "property-taxes-and-spending",
+   "title": "Property taxes and city spending",
+   "description": "How much property taxes rise each year and what the city spends money on.",
+   "whatItAffects": "Homeowners, renters (through rent), businesses, and everyone who uses city services.",
+   "whoDecides": "Council adopts the annual budget and five-year financial plan, sets the tax rate, and decides staffing and project spending.",
+   "viewQuestion": {
+    "question": "What should guide the city budget?",
+    "poleA": "Keep adding staff and services as the city grows, even if taxes rise",
+    "poleB": "Hold tax increases down, even if some services or projects wait"
+   },
+   "topicTags": [
+    "taxes",
+    "budget",
+    "cost-of-living"
+   ],
+   "sources": [
+    "https://fvcurrent.com/p/langley-city-adopts-2026-budget-focused-on-safety-infrastructure",
+    "https://aldergrovestar.com/2026/07/18/new-slate-organized-in-langley-city-by-councillor/"
+   ],
+   "tradeoffs": {
+    "context": "Budgets are limited, so more spending on staff and services usually means higher taxes, and lower taxes usually mean doing less.",
+    "a": {
+     "gains": [
+      "More police, firefighters, and services could keep pace with growth",
+      "Projects and repairs may happen sooner"
+     ],
+     "costs": [
+      "Property tax bills may keep rising faster than inflation",
+      "Higher costs may pass through to renters and businesses"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Tax bills may grow more slowly for owners, renters, and businesses",
+      "Spending reviews may find savings in existing budgets"
+     ],
+     "costs": [
+      "Some new staff, services, or projects may be delayed or dropped",
+      "Deferred spending may cost more later"
+     ]
+    }
+   }
+  },
+  {
+   "id": "community-safety",
+   "title": "Community safety",
+   "description": "How the city responds to crime, disorder, and safety concerns downtown and in parks, now that the shared RCMP detachment with the Township is ending.",
+   "whatItAffects": "Residents, business owners, visitors, and people living on the street.",
+   "whoDecides": "Council funds the City's RCMP contract, firefighters, bylaw and community safety officers, and decides how much goes to enforcement versus prevention programs.",
+   "viewQuestion": {
+    "question": "Where should the city put more of its safety budget?",
+    "poleA": "More police, bylaw, and community safety officers",
+    "poleB": "More prevention, outreach, and community-led programs"
+   },
+   "topicTags": [
+    "public-safety",
+    "policing"
+   ],
+   "sources": [
+    "https://www.langleyunion.ca/township-led-rcmp-split-adds-900-000-to-langley-city-budget/",
+    "https://fvcurrent.com/p/langley-city-adopts-2026-budget-focused-on-safety-infrastructure",
+    "https://www.votealc.com/platform",
+    "https://www.langleycityfirst.ca/our-platform"
+   ],
+   "tradeoffs": {
+    "context": "Safety budgets are limited, so more spending on enforcement often means less for prevention, and the reverse.",
+    "a": {
+     "gains": [
+      "A visible patrol presence may help people feel safer downtown and in parks",
+      "Faster response to calls about crime and disorder"
+     ],
+     "costs": [
+      "Policing costs may raise taxes or take money from other services",
+      "Enforcement may move problems elsewhere rather than resolve them"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Programs may address some causes of disorder before they escalate",
+      "Residents and groups get a bigger role in shaping safety"
+     ],
+     "costs": [
+      "Results may take longer to show",
+      "Some residents may feel less safe without more officers on patrol"
+     ]
+    }
+   }
+  },
+  {
+   "id": "roads-cycling-and-getting-around",
+   "title": "Roads, cycling, and getting around",
+   "description": "How the city spends on streets: road repairs, sidewalks, bike lanes, e-mobility, and connections to the new SkyTrain stations.",
+   "whatItAffects": "Drivers, cyclists, pedestrians, transit riders, seniors, and businesses that rely on parking and deliveries.",
+   "whoDecides": "Council sets the city's transportation budget and street design for city roads; TransLink and the province run transit and SkyTrain.",
+   "viewQuestion": {
+    "question": "What should the city prioritize on its streets?",
+    "poleA": "Expand bike lanes and other travel options alongside road upkeep",
+    "poleB": "Focus street budgets on road, sidewalk, and crosswalk repairs"
+   },
+   "topicTags": [
+    "transportation",
+    "infrastructure"
+   ],
+   "sources": [
+    "https://aldergrovestar.com/2026/07/18/new-slate-organized-in-langley-city-by-councillor/",
+    "https://sfb.nathanpachal.com/2026/09/langley-city-first-platform.html",
+    "https://www.votealc.com/platform"
+   ],
+   "tradeoffs": {
+    "context": "Street budgets are limited, so money for new travel options competes with money for repairing existing roads and sidewalks.",
+    "a": {
+     "gains": [
+      "More people may be able to bike, scoot, or walk safely to SkyTrain",
+      "Fewer car trips may ease congestion over time"
+     ],
+     "costs": [
+      "Less money may be left for road resurfacing",
+      "Some road space or parking may be reallocated"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Potholes, sidewalks, and crosswalks may be fixed sooner",
+      "Drivers may see smoother roads and fewer disruptions"
+     ],
+     "costs": [
+      "Fewer safe routes for people who bike or use e-mobility",
+      "Fewer travel choices as the city grows around SkyTrain"
+     ]
+    }
+   }
+  },
+  {
+   "id": "recreation-and-arts-facilities",
+   "title": "Recreation and arts facilities",
+   "description": "Whether to keep planning an expanded Timms Community Centre with a performing arts centre and a year-round Al Anderson Pool.",
+   "whatItAffects": "Families, seniors, swimmers, arts groups, and taxpayers who would fund the projects.",
+   "whoDecides": "Council decides whether to continue planning and how to fund the projects; any borrowing would need a separate approval by electors.",
+   "viewQuestion": {
+    "question": "How should the city approach new facilities?",
+    "poleA": "Keep planning the arts centre and year-round pool expansions",
+    "poleB": "Pause major facility projects and focus on maintaining what exists"
+   },
+   "topicTags": [
+    "recreation",
+    "arts-culture",
+    "budget"
+   ],
+   "sources": [
+    "https://langleyadvancetimes.com/2026/07/20/langley-city-will-hold-separate-ballot-on-new-arts-centre-and-pool-expansion/",
+    "https://fvcurrent.com/p/langley-city-voters-will-weigh-in-on-two-facility-expansions-this-fall"
+   ],
+   "tradeoffs": {
+    "context": "Major facilities can add long-term amenities, but they come with construction and operating costs that affect taxes.",
+    "a": {
+     "gains": [
+      "Year-round swimming and a local performing arts venue",
+      "More space for programs as the population grows"
+     ],
+     "costs": [
+      "Large capital and operating costs, possibly with borrowing",
+      "Other projects may compete for the same funds"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Lower long-term costs and less pressure on taxes",
+      "Budget can go to upkeep of existing facilities"
+     ],
+     "costs": [
+      "Residents may keep travelling elsewhere for year-round swimming and performances",
+      "Construction costs may be higher if projects are revived later"
+     ]
+    }
+   }
+  },
+  {
+   "id": "relationship-with-the-township",
+   "title": "Relationship with the Township and amalgamation",
+   "description": "Whether Langley City should stay a separate municipality or consider merging with the Township of Langley, amid disputes over shared services such as policing.",
+   "whatItAffects": "All City residents and businesses, City services and finances, and casino revenue the City now keeps.",
+   "whoDecides": "Council can negotiate service agreements and could ask residents for their view, but any amalgamation would require provincial approval and votes.",
+   "viewQuestion": {
+    "question": "What should the city's stance be on the Township?",
+    "poleA": "Keep Langley City a separate municipality",
+    "poleB": "Be open to merging with the Township if residents vote for it"
+   },
+   "topicTags": [
+    "governance",
+    "regional"
+   ],
+   "sources": [
+    "https://thetyee.ca/Analysis/2025/10/17/BC-2026-Municipal-Election-Hot-Spots/",
+    "https://langleyadvancetimes.com/2025/11/27/majority-would-like-to-see-langley-city-township-merge-poll/",
+    "https://www.votealc.com/platform"
+   ],
+   "tradeoffs": {
+    "context": "Staying separate keeps local control, while merging could change costs, services, and representation.",
+    "a": {
+     "gains": [
+      "Residents keep a council focused only on the City",
+      "The City keeps control of its own budget and revenues"
+     ],
+     "costs": [
+      "Disputes over shared services may continue",
+      "Some services may cost more to run separately"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Shared services and planning could be simpler across both Langleys",
+      "Residents get a direct say on the question"
+     ],
+     "costs": [
+      "City residents would be a small share of a larger municipality's voters",
+      "A merger process could take years and cost money to study"
+     ]
+    }
+   }
+  },
+  {
+   "id": "local-economy-and-downtown",
+   "title": "Local economy and downtown",
+   "description": "How the city supports businesses, downtown Langley, and new jobs as SkyTrain arrives.",
+   "whatItAffects": "Business owners, workers, students, and people who shop and visit downtown.",
+   "whoDecides": "Council sets business licensing, permits, land use, business tax rates, and economic development programs such as the Innovation District plan.",
+   "viewQuestion": {
+    "question": "How should the city support local business?",
+    "poleA": "Use city plans and programs to attract new businesses and jobs",
+    "poleB": "Cut costs and red tape and let businesses lead growth"
+   },
+   "topicTags": [
+    "economy",
+    "downtown"
+   ],
+   "sources": [
+    "https://sfb.nathanpachal.com/2026/09/langley-city-first-platform-economic.html",
+    "https://www.votealc.com/platform"
+   ],
+   "tradeoffs": {
+    "context": "City-led economic programs can attract investment but cost money, while lighter regulation leaves more to the market.",
+    "a": {
+     "gains": [
+      "New programs and hubs may draw entrepreneurs and employers",
+      "Planned districts can tie jobs to SkyTrain and Kwantlen"
+     ],
+     "costs": [
+      "Programs cost money and results can be uncertain",
+      "City priorities may not match what businesses want"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Lower costs and faster permits may help existing businesses",
+      "Less spending on programs may ease taxes"
+     ],
+     "costs": [
+      "Less coordinated planning for new job areas",
+      "Growth may depend more on outside market conditions"
+     ]
+    }
+   }
+  },
+  {
+   "id": "parks-trails-and-trees",
+   "title": "Parks, trails, and trees",
+   "description": "How the city looks after its parks, trails, washrooms, and tree canopy as it grows.",
+   "whatItAffects": "Park and trail users, families, seniors, and nearby residents.",
+   "whoDecides": "Council sets the parks budget, maintenance levels, tree protection rules, and development requirements for green space.",
+   "viewQuestion": {
+    "question": "What should the parks budget focus on?",
+    "poleA": "Upgrade and expand parks, trails, and the tree canopy",
+    "poleB": "Focus on keeping existing parks clean, safe, and maintained"
+   },
+   "topicTags": [
+    "parks",
+    "environment"
+   ],
+   "sources": [
+    "https://www.langleycityfirst.ca/our-platform",
+    "https://www.votealc.com/platform",
+    "https://langleyadvancetimes.com/2026/09/25/election-retired-geologist-running-for-langley-city-council/"
+   ],
+   "tradeoffs": {
+    "context": "Parks money is limited, so building new features competes with maintaining and securing what already exists.",
+    "a": {
+     "gains": [
+      "Wider, accessible trails and more shade and green space",
+      "More outdoor space for a growing population"
+     ],
+     "costs": [
+      "Higher capital and upkeep costs",
+      "Upgrades may compete with basic maintenance"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Existing parks and washrooms may be cleaner and feel safer",
+      "Lower long-term costs"
+     ],
+     "costs": [
+      "Fewer new trails, trees, and park features",
+      "Green space may not keep pace with growth"
+     ]
+    }
+   }
+  }
+ ],
+ "election": {
+  "id": "langley-city-local-2026",
+  "name": "City of Langley general local election",
+  "level": "municipal",
+  "votingDay": "2026-10-17",
+  "votingDayHours": "8 a.m. to 8 p.m.",
+  "advanceVoting": [
+   {
+    "date": "2026-10-06",
+    "hours": "1 p.m. to 8 p.m.",
+    "locations": [
+     "Timms Community Centre, 20399 Douglas Crescent"
+    ]
+   },
+   {
+    "date": "2026-10-07",
+    "hours": "8 a.m. to 8 p.m.",
+    "locations": [
+     "Timms Community Centre, 20399 Douglas Crescent"
+    ]
+   },
+   {
+    "date": "2026-10-08",
+    "hours": "8:30 a.m. to 4:30 p.m.",
+    "locations": [
+     "Timms Community Centre, 20399 Douglas Crescent"
+    ]
+   },
+   {
+    "date": "2026-10-14",
+    "hours": "8 a.m. to 8 p.m.",
+    "locations": [
+     "Timms Community Centre, 20399 Douglas Crescent"
+    ]
+   }
+  ],
+  "howToVote": "City of Langley voters can vote at Timms Community Centre (20399 Douglas Crescent) on General Voting Day, Saturday, Oct. 17, from 8 a.m. to 8 p.m., or at one of four advance voting days there. Voters already on the provincial voters list need no documents; others can register at the voting place with two pieces of ID that together show identity and residential address, at least one with a signature. Non-resident property electors had to register by Sept. 16.",
+  "voteByMail": "Mail ballot applications had to be received by 4:30 p.m. Sept. 29 for mailed delivery; completed ballots must reach the City before 8 p.m. Oct. 17, by mail, the City Hall drop box, or in person.",
+  "officialUrl": "https://www.langleycity.ca/city-hall/local-election",
+  "sources": [
+   "https://www.langleycity.ca/city-hall/local-election",
+   "https://www.langleycity.ca/city-hall/local-elections",
+   "https://www.langleycity.ca/media/file/2026-election-declaration-candidatespdf",
+   "https://localelections.ca/election_candidates/61_2026_candidates.html",
+   "https://aldergrovestar.com/2026/09/11/two-run-for-langley-city-mayors-seat-15-for-council-seats/"
+  ],
+  "ballotQuestions": [
+   {
+    "id": "langley-city-2026-facility-planning-opinion-vote",
+    "question": "Do you support Langley City continuing planning work on: expanding Timms Community Centre, combined with a new Performing Arts and Cultural Centre; and expanding Al Anderson Pool to provide year-round access?",
+    "type": "other",
+    "summary": "A non-binding Community Opinion Vote asking whether the next council should keep planning two facility expansions. It does not authorize construction or borrowing, which would need a separate approval process.",
+    "sourceUrls": [
+     "https://www.langleycity.ca/city-hall/local-election",
+     "https://langleyadvancetimes.com/2026/07/20/langley-city-will-hold-separate-ballot-on-new-arts-centre-and-pool-expansion/"
+    ]
+   }
+  ]
+ },
+ "electorOrganizations": [
+  {
+   "id": "achieving-for-langley-city",
+   "name": "Achieving for Langley City",
+   "website": "https://www.votealc.com/",
+   "sourceUrl": "https://www.langleycity.ca/media/file/2026-election-declaration-candidatespdf",
+   "platformUrl": "https://www.votealc.com/platform",
+   "blurb": "Describes itself as an independent team that will listen to residents and make every tax dollar count, with priorities including safer streets, core services and responsible growth.",
+   "blurbSource": "https://www.votealc.com/"
+  },
+  {
+   "id": "langley-city-first",
+   "name": "Langley City First",
+   "website": "https://www.langleycityfirst.ca/",
+   "sourceUrl": "https://www.langleycity.ca/media/file/2026-election-declaration-candidatespdf",
+   "platformUrl": "https://www.langleycityfirst.ca/our-platform",
+   "blurb": "Describes itself as a team of long-time Langley City residents and independents focused on public safety, business growth and accountable local government.",
+   "blurbSource": "https://www.langleycityfirst.ca/"
+  }
+ ],
+ "races": [
+  {
+   "id": "langley-city-mayor",
+   "office": "Mayor",
+   "seats": 1,
+   "areaName": "City of Langley",
+   "candidates": [
+    {
+     "id": "delaney-mack",
+     "name": "Delaney Mack",
+     "ballotName": "Mack, Delaney",
+     "incumbent": false,
+     "affiliation": {
+      "name": "Achieving for Langley City",
+      "sourceUrl": "https://www.langleycity.ca/media/file/2026-election-declaration-candidatespdf"
+     },
+     "declaredIndependent": false,
+     "website": "https://www.votealc.com/mackformayor",
+     "links": [
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/mackforlangleycity2"
+      },
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/mackforlangleycity"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.langleycity.ca/media/file/2026-election-declaration-candidatespdf",
+      "https://www.langleycity.ca/city-hall/local-election",
+      "https://localelections.ca/election_candidates/61_2026_candidates.html"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Current Langley City councillor and small business owner.",
+     "summarySource": "https://www.langleycity.ca/city-hall/local-election",
+     "positions": [
+      {
+       "issueId": "property-taxes-and-spending",
+       "topic": "taxes/budget",
+       "summary": "Says taxes should stay reasonable; challenges spending increases and wants more transparency on costs such as consultants.",
+       "sourceUrl": "https://www.votealc.com/mackformayor",
+       "sourceType": "candidate",
+       "proposedLean": 2,
+       "leanReason": "Calls for restraint on tax and spending increases"
+      },
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "housing",
+       "summary": "Opposes development she says does not respect established neighbourhoods; wants infrastructure in place to support growth.",
+       "sourceUrl": "https://www.votealc.com/mackformayor",
+       "sourceType": "candidate",
+       "proposedLean": 1,
+       "leanReason": "Emphasizes protecting existing neighbourhoods"
+      },
+      {
+       "issueId": "roads-cycling-and-getting-around",
+       "topic": "roads/bike lanes",
+       "summary": "Questions investment in bike lanes while roads deteriorate.",
+       "sourceUrl": "https://aldergrovestar.com/2026/07/18/new-slate-organized-in-langley-city-by-councillor/",
+       "sourceType": "news",
+       "proposedLean": 2,
+       "leanReason": "Prefers road upkeep over bike lanes"
+      },
+      {
+       "issueId": "relationship-with-the-township",
+       "topic": "amalgamation",
+       "summary": "Says the question of amalgamation should be put to a vote of residents rather than decided by officials.",
+       "sourceUrl": "https://www.langleyunion.ca/delaney-mack-and-achieving-for-langley-city-what-the-slate-promises-and-what-her-council-votes-show/",
+       "sourceType": "news",
+       "proposedLean": 1,
+       "leanReason": "Open to a residents' vote on merging"
+      },
+      {
+       "issueId": "community-safety",
+       "topic": "public safety",
+       "summary": "Slate platform calls for more RCMP officers, community safety officers and firefighters, a mental health nurse, and targeting repeat property offenders.",
+       "sourceUrl": "https://www.votealc.com/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -1,
+       "leanReason": "Mainly adds enforcement staff"
+      }
+     ]
+    },
+    {
+     "id": "nathan-pachal",
+     "name": "Nathan Pachal",
+     "ballotName": "Pachal, Nathan",
+     "incumbent": true,
+     "affiliation": {
+      "name": "Langley City First",
+      "sourceUrl": "https://www.langleycity.ca/media/file/2026-election-declaration-candidatespdf"
+     },
+     "declaredIndependent": false,
+     "website": "https://www.langleycityfirst.ca",
+     "links": [
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/nathan.pachal"
+      },
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/nathan.pachal"
+      },
+      {
+       "label": "YouTube",
+       "url": "https://www.youtube.com/@langleycityfirst"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.langleycity.ca/media/file/2026-election-declaration-candidatespdf",
+      "https://www.langleycity.ca/city-hall/local-election",
+      "https://localelections.ca/election_candidates/61_2026_candidates.html"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Incumbent mayor of Langley City, elected in 2022; says he has been involved in Langley City civic life for over two decades.",
+     "summarySource": "https://www.langleycity.ca/city-hall/local-election",
+     "positions": [
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "housing",
+       "summary": "Supports continued reform of local bylaws for housing affordability and mixed-use areas to live, work and play.",
+       "sourceUrl": "https://sfb.nathanpachal.com/2026/09/langley-city-first-platform-housing.html",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Favours bylaw changes to enable more housing"
+      },
+      {
+       "issueId": "community-safety",
+       "topic": "public safety",
+       "summary": "Supports hiring more police and firefighters, expanding proactive patrols, and implementing the Citizens' Assembly community safety recommendations.",
+       "sourceUrl": "https://sfb.nathanpachal.com/2026/09/langley-city-first-platform-public.html",
+       "sourceType": "candidate",
+       "proposedLean": 0,
+       "leanReason": "Combines enforcement and community-led measures"
+      },
+      {
+       "issueId": "roads-cycling-and-getting-around",
+       "topic": "transportation",
+       "summary": "Supports a transportation system with choices, road and sidewalk maintenance, the SkyTrain extension, and a safety-focused e-mobility plan.",
+       "sourceUrl": "https://sfb.nathanpachal.com/2026/09/langley-city-first-platform.html",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Favours more travel options alongside upkeep"
+      },
+      {
+       "issueId": "local-economy-and-downtown",
+       "topic": "economic development",
+       "summary": "Supports the Langley Innovation District plan, including a business incubation hub for entrepreneurs.",
+       "sourceUrl": "https://sfb.nathanpachal.com/2026/09/langley-city-first-platform-economic.html",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "City-led plan to attract business"
+      },
+      {
+       "issueId": "property-taxes-and-spending",
+       "topic": "taxes/budget",
+       "summary": "Described the 2026 financial plan as investing in community safety, roads, facilities and everyday services.",
+       "sourceUrl": "https://fvcurrent.com/p/langley-city-adopts-2026-budget-focused-on-safety-infrastructure",
+       "sourceType": "news",
+       "proposedLean": -1,
+       "leanReason": "Backs budget that added staff and services"
+      },
+      {
+       "issueId": "relationship-with-the-township",
+       "topic": "amalgamation",
+       "summary": "Questioned a poll showing merger support and said he regularly hears from City residents opposed to amalgamation.",
+       "sourceUrl": "https://langleyadvancetimes.com/2025/11/27/majority-would-like-to-see-langley-city-township-merge-poll/",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "Reports residents' views without stating his own"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "langley-city-council",
+   "office": "Councillor",
+   "seats": 6,
+   "areaName": "City of Langley",
+   "candidates": [
+    {
+     "id": "paul-albrecht",
+     "name": "Paul Albrecht",
+     "ballotName": "Albrecht, Paul",
+     "incumbent": true,
+     "affiliation": {
+      "name": "Langley City First",
+      "sourceUrl": "https://www.langleycity.ca/media/file/2026-election-declaration-candidatespdf"
+     },
+     "declaredIndependent": false,
+     "website": "https://www.langleycityfirst.ca",
+     "links": [
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/langleycityfirst"
+      },
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/langleycityfirst"
+      },
+      {
+       "label": "YouTube",
+       "url": "https://www.youtube.com/@langleycityfirst"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.langleycity.ca/media/file/2026-election-declaration-candidatespdf",
+      "https://www.langleycity.ca/city-hall/local-election",
+      "https://localelections.ca/election_candidates/61_2026_candidates.html"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Incumbent councillor seeking a fourth term; recipient of the King Charles III Coronation Medal for community service.",
+     "summarySource": "https://www.langleycity.ca/city-hall/local-election",
+     "positions": [
+      {
+       "issueId": null,
+       "topic": "priorities",
+       "summary": "Says working in the best interests of Langley City and its residents is his top goal.",
+       "sourceUrl": "https://www.langleycity.ca/city-hall/local-election",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "General statement"
+      },
+      {
+       "issueId": "community-safety",
+       "topic": "public safety",
+       "summary": "Slate platform calls for hiring more police, community safety officers and firefighters, plus a volunteer safety ambassador program downtown and in parks.",
+       "sourceUrl": "https://www.langleycityfirst.ca/our-platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -1,
+       "leanReason": "Mainly adds enforcement staff, with volunteer ambassadors"
+      },
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "housing",
+       "summary": "Slate platform proposes a pre-approved housing design catalogue to speed home building, a rental maintenance bylaw, and an aging-in-place strategy.",
+       "sourceUrl": "https://www.langleycityfirst.ca/our-platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -1,
+       "leanReason": "Aims to speed up new home building"
+      },
+      {
+       "issueId": "roads-cycling-and-getting-around",
+       "topic": "transportation",
+       "summary": "Slate platform proposes a seniors' shuttle to SkyTrain, bike, scooter and car-share partnerships, and a safety-focused e-mobility plan.",
+       "sourceUrl": "https://www.langleycityfirst.ca/our-platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -1,
+       "leanReason": "Expands travel options beyond driving"
+      }
+     ]
+    },
+    {
+     "id": "shawn-caldera",
+     "name": "Shawn Caldera",
+     "ballotName": "Caldera, Shawn",
+     "incumbent": false,
+     "affiliation": {
+      "name": "Langley City First",
+      "sourceUrl": "https://www.langleycity.ca/media/file/2026-election-declaration-candidatespdf"
+     },
+     "declaredIndependent": false,
+     "website": "https://www.langleycityfirst.ca",
+     "links": [
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/langleycityfirst"
+      },
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/shawnforlangley"
+      },
+      {
+       "label": "YouTube",
+       "url": "https://youtube.com/@langleycityfirst"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.langleycity.ca/media/file/2026-election-declaration-candidatespdf",
+      "https://www.langleycity.ca/city-hall/local-election",
+      "https://localelections.ca/election_candidates/61_2026_candidates.html"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Works at Linus Media Group; says he would apply business and economic development skills on council.",
+     "summarySource": "https://www.langleycity.ca/city-hall/local-election",
+     "positions": [
+      {
+       "issueId": "local-economy-and-downtown",
+       "topic": "economic development",
+       "summary": "Says he would apply business and economic development skills to improve life in the city.",
+       "sourceUrl": "https://www.langleycity.ca/city-hall/local-election",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "Does not say which approach"
+      },
+      {
+       "issueId": "community-safety",
+       "topic": "public safety",
+       "summary": "Slate platform calls for hiring more police, community safety officers and firefighters, plus a volunteer safety ambassador program downtown and in parks.",
+       "sourceUrl": "https://www.langleycityfirst.ca/our-platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -1,
+       "leanReason": "Mainly adds enforcement staff, with volunteer ambassadors"
+      },
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "housing",
+       "summary": "Slate platform proposes a pre-approved housing design catalogue to speed home building, a rental maintenance bylaw, and an aging-in-place strategy.",
+       "sourceUrl": "https://www.langleycityfirst.ca/our-platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -1,
+       "leanReason": "Aims to speed up new home building"
+      },
+      {
+       "issueId": "roads-cycling-and-getting-around",
+       "topic": "transportation",
+       "summary": "Slate platform proposes a seniors' shuttle to SkyTrain, bike, scooter and car-share partnerships, and a safety-focused e-mobility plan.",
+       "sourceUrl": "https://www.langleycityfirst.ca/our-platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -1,
+       "leanReason": "Expands travel options beyond driving"
+      }
+     ]
+    },
+    {
+     "id": "jennifer-denman",
+     "name": "Jennifer Denman",
+     "ballotName": "Denman, Jennifer",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": null,
+     "links": [
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/jennifer.m.denman"
+      },
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/jenmandjj"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.langleycity.ca/media/file/2026-election-declaration-candidatespdf",
+      "https://www.langleycity.ca/city-hall/local-election",
+      "https://localelections.ca/election_candidates/61_2026_candidates.html"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Support worker running as an independent.",
+     "summarySource": "https://www.langleycity.ca/city-hall/local-election",
+     "positions": [
+      {
+       "issueId": null,
+       "topic": "services and support",
+       "summary": "Emphasizes accessible services and local support so residents can live with independence and dignity.",
+       "sourceUrl": "https://www.langleycity.ca/city-hall/local-election",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "General statement"
+      }
+     ]
+    },
+    {
+     "id": "gurjit-dhillon",
+     "name": "Gurjit Dhillon",
+     "ballotName": "Dhillon, Gurjit",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://www.gurjitdhillon.ca",
+     "links": [],
+     "sourceUrls": [
+      "https://www.langleycity.ca/media/file/2026-election-declaration-candidatespdf",
+      "https://www.langleycity.ca/city-hall/local-election",
+      "https://localelections.ca/election_candidates/61_2026_candidates.html"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Wood and timber technologist and strata council member, running as an independent.",
+     "summarySource": "https://www.langleycity.ca/city-hall/local-election",
+     "positions": [
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "growth and infrastructure",
+       "summary": "Concerned that development has gone ahead without enough planning for infrastructure and schools.",
+       "sourceUrl": "https://langleyadvancetimes.com/2026/06/02/last-place-candidate-to-make-second-run-for-langley-city-council/",
+       "sourceType": "news",
+       "proposedLean": 1,
+       "leanReason": "Wants growth matched to infrastructure"
+      },
+      {
+       "issueId": null,
+       "topic": "governance",
+       "summary": "Emphasizes transparency, cost control, open communication and support for living wages.",
+       "sourceUrl": "https://www.langleycity.ca/city-hall/local-election",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "General statement"
+      }
+     ]
+    },
+    {
+     "id": "bruce-downing",
+     "name": "Bruce Downing",
+     "ballotName": "Downing, Bruce",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": null,
+     "links": [],
+     "sourceUrls": [
+      "https://www.langleycity.ca/media/file/2026-election-declaration-candidatespdf",
+      "https://www.langleycity.ca/city-hall/local-election",
+      "https://localelections.ca/election_candidates/61_2026_candidates.html",
+      "https://langleyadvancetimes.com/2026/09/25/election-retired-geologist-running-for-langley-city-council/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Retired geologist who moved to Langley City in 2016; member of the Langley City Citizens’ Assembly and the Nicomekl Enhancement Society.",
+     "summarySource": "https://langleyadvancetimes.com/2026/09/25/election-retired-geologist-running-for-langley-city-council/",
+     "positions": [
+      {
+       "issueId": null,
+       "topic": "communication",
+       "summary": "Wants better communication between council, staff and residents and shorter timelines for city projects.",
+       "sourceUrl": "https://langleyadvancetimes.com/2026/09/25/election-retired-geologist-running-for-langley-city-council/",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "Governance, not on an issue scale"
+      },
+      {
+       "issueId": "roads-cycling-and-getting-around",
+       "topic": "sidewalks",
+       "summary": "Lists sidewalk and pathway safety among his focus areas.",
+       "sourceUrl": "https://langleyadvancetimes.com/2026/09/25/election-retired-geologist-running-for-langley-city-council/",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "Does not weigh bike lanes against roads"
+      },
+      {
+       "issueId": "parks-trails-and-trees",
+       "topic": "emergency preparedness",
+       "summary": "Focuses on earthquake preparedness and reducing fire hazards in the Nicomekl floodplain.",
+       "sourceUrl": "https://langleyadvancetimes.com/2026/09/25/election-retired-geologist-running-for-langley-city-council/",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "Safety focus, no stance on upgrades vs. upkeep"
+      }
+     ]
+    },
+    {
+     "id": "andrew-flitton",
+     "name": "Andrew Flitton",
+     "ballotName": "Flitton, Andrew",
+     "incumbent": false,
+     "affiliation": {
+      "name": "Achieving for Langley City",
+      "sourceUrl": "https://www.langleycity.ca/media/file/2026-election-declaration-candidatespdf"
+     },
+     "declaredIndependent": false,
+     "website": "https://www.votealc.com/theteam#andrew",
+     "links": [
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/flittonforlangleycity"
+      },
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/flittonforlangleycity"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.langleycity.ca/media/file/2026-election-declaration-candidatespdf",
+      "https://www.langleycity.ca/city-hall/local-election",
+      "https://localelections.ca/election_candidates/61_2026_candidates.html"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Works in infrastructure.",
+     "summarySource": "https://www.langleycity.ca/city-hall/local-election",
+     "positions": [
+      {
+       "issueId": "property-taxes-and-spending",
+       "topic": "taxes/budget",
+       "summary": "Focuses on public safety, properly planned infrastructure, and disciplined spending of tax dollars.",
+       "sourceUrl": "https://www.votealc.com/theteam",
+       "sourceType": "candidate",
+       "proposedLean": 1,
+       "leanReason": "Emphasizes spending discipline"
+      },
+      {
+       "issueId": "property-taxes-and-spending",
+       "topic": "taxes/budget",
+       "summary": "Slate platform proposes a full operating budget review, closer scrutiny of consultant spending, and possible administration savings to fund public safety.",
+       "sourceUrl": "https://www.votealc.com/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": 1,
+       "leanReason": "Prioritizes spending restraint and reallocation"
+      },
+      {
+       "issueId": "roads-cycling-and-getting-around",
+       "topic": "roads/bike lanes",
+       "summary": "Slate platform would halt temporary bike lanes, reduce bike lane spending, and prioritize roads, sidewalks, crosswalks and traffic calming.",
+       "sourceUrl": "https://www.votealc.com/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": 2,
+       "leanReason": "Shifts street budget from bike lanes to repairs"
+      },
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "housing",
+       "summary": "Slate platform would respect provincial density limits near SkyTrain, concentrate density north of the Nicomekl River, and strengthen tenant relocation protections.",
+       "sourceUrl": "https://www.votealc.com/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": 1,
+       "leanReason": "Focuses density near SkyTrain, limits it elsewhere"
+      },
+      {
+       "issueId": "community-safety",
+       "topic": "public safety",
+       "summary": "Slate platform calls for more RCMP officers, community safety officers and firefighters, a mental health nurse, and targeting repeat property offenders.",
+       "sourceUrl": "https://www.votealc.com/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -1,
+       "leanReason": "Mainly adds enforcement staff"
+      }
+     ]
+    },
+    {
+     "id": "michael-hylands",
+     "name": "Michael Hylands",
+     "ballotName": "Hylands, Michael",
+     "incumbent": false,
+     "affiliation": {
+      "name": "Achieving for Langley City",
+      "sourceUrl": "https://www.langleycity.ca/media/file/2026-election-declaration-candidatespdf"
+     },
+     "declaredIndependent": false,
+     "website": "https://www.votealc.com/theteam#michael",
+     "links": [
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/profile.php?id=61590188945021"
+      },
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/michaelhylandsforlangleycity"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.langleycity.ca/media/file/2026-election-declaration-candidatespdf",
+      "https://www.langleycity.ca/city-hall/local-election",
+      "https://localelections.ca/election_candidates/61_2026_candidates.html"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Mechanical engineer with 30 years in manufacturing operations management; treasurer of the Men’s Shed Langley Society.",
+     "summarySource": "https://www.langleycity.ca/city-hall/local-election",
+     "positions": [
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "housing",
+       "summary": "Said he decided to run after council approved a six-storey apartment building in a single-family neighbourhood.",
+       "sourceUrl": "https://langleyadvancetimes.com/2026/06/01/four-new-candidates-declare-for-langley-city-election/",
+       "sourceType": "news",
+       "proposedLean": 1,
+       "leanReason": "Concerned about apartments in single-family areas"
+      },
+      {
+       "issueId": "property-taxes-and-spending",
+       "topic": "capital planning",
+       "summary": "Would bring an engineering, data-driven approach to major projects, capital planning and budget decisions.",
+       "sourceUrl": "https://www.votealc.com/theteam",
+       "sourceType": "candidate",
+       "proposedLean": null,
+       "leanReason": "Approach, not a direction"
+      },
+      {
+       "issueId": "property-taxes-and-spending",
+       "topic": "taxes/budget",
+       "summary": "Slate platform proposes a full operating budget review, closer scrutiny of consultant spending, and possible administration savings to fund public safety.",
+       "sourceUrl": "https://www.votealc.com/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": 1,
+       "leanReason": "Prioritizes spending restraint and reallocation"
+      },
+      {
+       "issueId": "roads-cycling-and-getting-around",
+       "topic": "roads/bike lanes",
+       "summary": "Slate platform would halt temporary bike lanes, reduce bike lane spending, and prioritize roads, sidewalks, crosswalks and traffic calming.",
+       "sourceUrl": "https://www.votealc.com/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": 2,
+       "leanReason": "Shifts street budget from bike lanes to repairs"
+      },
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "housing",
+       "summary": "Slate platform would respect provincial density limits near SkyTrain, concentrate density north of the Nicomekl River, and strengthen tenant relocation protections.",
+       "sourceUrl": "https://www.votealc.com/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": 1,
+       "leanReason": "Focuses density near SkyTrain, limits it elsewhere"
+      },
+      {
+       "issueId": "community-safety",
+       "topic": "public safety",
+       "summary": "Slate platform calls for more RCMP officers, community safety officers and firefighters, a mental health nurse, and targeting repeat property offenders.",
+       "sourceUrl": "https://www.votealc.com/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -1,
+       "leanReason": "Mainly adds enforcement staff"
+      }
+     ]
+    },
+    {
+     "id": "jeff-jacobs",
+     "name": "Jeff Jacobs",
+     "ballotName": "Jacobs, Jeff",
+     "incumbent": false,
+     "affiliation": {
+      "name": "Langley City First",
+      "sourceUrl": "https://www.langleycity.ca/media/file/2026-election-declaration-candidatespdf"
+     },
+     "declaredIndependent": false,
+     "website": "https://www.langleycityfirst.ca",
+     "links": [
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/JeffJacobsforLangleyCityCouncil"
+      },
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/jjacobsforlangleycitycouncil"
+      },
+      {
+       "label": "YouTube",
+       "url": "https://youtube.com/@langleycityfirst"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.langleycity.ca/media/file/2026-election-declaration-candidatespdf",
+      "https://www.langleycity.ca/city-hall/local-election",
+      "https://localelections.ca/election_candidates/61_2026_candidates.html"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Municipal worker with over 20 years of experience; volunteers on a crime prevention committee.",
+     "summarySource": "https://www.langleycity.ca/city-hall/local-election",
+     "positions": [
+      {
+       "issueId": null,
+       "topic": "governance",
+       "summary": "Names transparency, accountability and meaningful decision-making as his top priorities.",
+       "sourceUrl": "https://www.langleycity.ca/city-hall/local-election",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "General statement"
+      },
+      {
+       "issueId": "community-safety",
+       "topic": "public safety",
+       "summary": "Slate platform calls for hiring more police, community safety officers and firefighters, plus a volunteer safety ambassador program downtown and in parks.",
+       "sourceUrl": "https://www.langleycityfirst.ca/our-platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -1,
+       "leanReason": "Mainly adds enforcement staff, with volunteer ambassadors"
+      },
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "housing",
+       "summary": "Slate platform proposes a pre-approved housing design catalogue to speed home building, a rental maintenance bylaw, and an aging-in-place strategy.",
+       "sourceUrl": "https://www.langleycityfirst.ca/our-platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -1,
+       "leanReason": "Aims to speed up new home building"
+      },
+      {
+       "issueId": "roads-cycling-and-getting-around",
+       "topic": "transportation",
+       "summary": "Slate platform proposes a seniors' shuttle to SkyTrain, bike, scooter and car-share partnerships, and a safety-focused e-mobility plan.",
+       "sourceUrl": "https://www.langleycityfirst.ca/our-platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -1,
+       "leanReason": "Expands travel options beyond driving"
+      }
+     ]
+    },
+    {
+     "id": "heather-jenkins",
+     "name": "Heather Jenkins",
+     "ballotName": "Jenkins, Heather",
+     "incumbent": false,
+     "affiliation": {
+      "name": "Langley City First",
+      "sourceUrl": "https://www.langleycity.ca/media/file/2026-election-declaration-candidatespdf"
+     },
+     "declaredIndependent": false,
+     "website": "https://www.langleycityfirst.ca",
+     "links": [
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/langleycityfirst"
+      },
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/langleycityfirst"
+      },
+      {
+       "label": "YouTube",
+       "url": "https://www.youtube.com/@langleycityfirst"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.langleycity.ca/media/file/2026-election-declaration-candidatespdf",
+      "https://www.langleycity.ca/city-hall/local-election",
+      "https://localelections.ca/election_candidates/61_2026_candidates.html"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Owner of 1 Fish 2 Fish Fresh Seafood; longtime volunteer director of the Downtown Langley Business Association.",
+     "summarySource": "https://www.langleycity.ca/city-hall/local-election",
+     "positions": [
+      {
+       "issueId": "local-economy-and-downtown",
+       "topic": "local business",
+       "summary": "Emphasizes supporting local businesses and community causes, drawing on her downtown business and business association experience.",
+       "sourceUrl": "https://www.langleycity.ca/city-hall/local-election",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "Does not say which approach"
+      },
+      {
+       "issueId": "community-safety",
+       "topic": "public safety",
+       "summary": "Slate platform calls for hiring more police, community safety officers and firefighters, plus a volunteer safety ambassador program downtown and in parks.",
+       "sourceUrl": "https://www.langleycityfirst.ca/our-platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -1,
+       "leanReason": "Mainly adds enforcement staff, with volunteer ambassadors"
+      },
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "housing",
+       "summary": "Slate platform proposes a pre-approved housing design catalogue to speed home building, a rental maintenance bylaw, and an aging-in-place strategy.",
+       "sourceUrl": "https://www.langleycityfirst.ca/our-platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -1,
+       "leanReason": "Aims to speed up new home building"
+      },
+      {
+       "issueId": "roads-cycling-and-getting-around",
+       "topic": "transportation",
+       "summary": "Slate platform proposes a seniors' shuttle to SkyTrain, bike, scooter and car-share partnerships, and a safety-focused e-mobility plan.",
+       "sourceUrl": "https://www.langleycityfirst.ca/our-platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -1,
+       "leanReason": "Expands travel options beyond driving"
+      }
+     ]
+    },
+    {
+     "id": "rick-orlando",
+     "name": "Rick Orlando",
+     "ballotName": "Orlando, Rick",
+     "incumbent": false,
+     "affiliation": {
+      "name": "Achieving for Langley City",
+      "sourceUrl": "https://www.langleycity.ca/media/file/2026-election-declaration-candidatespdf"
+     },
+     "declaredIndependent": false,
+     "website": "https://www.votealc.com/theteam#rick",
+     "links": [
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/profile.php?id=61590637382816"
+      },
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/rickorlandoforlangleycity"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.langleycity.ca/media/file/2026-election-declaration-candidatespdf",
+      "https://www.langleycity.ca/city-hall/local-election",
+      "https://localelections.ca/election_candidates/61_2026_candidates.html"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Mortgage broker.",
+     "summarySource": "https://www.langleycity.ca/city-hall/local-election",
+     "positions": [
+      {
+       "issueId": "property-taxes-and-spending",
+       "topic": "taxes/budget",
+       "summary": "Prioritizes restoring sound financial management to the city budget and properly planned infrastructure growth.",
+       "sourceUrl": "https://www.votealc.com/theteam",
+       "sourceType": "candidate",
+       "proposedLean": 1,
+       "leanReason": "Emphasizes budget restraint"
+      },
+      {
+       "issueId": "property-taxes-and-spending",
+       "topic": "taxes/budget",
+       "summary": "Slate platform proposes a full operating budget review, closer scrutiny of consultant spending, and possible administration savings to fund public safety.",
+       "sourceUrl": "https://www.votealc.com/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": 1,
+       "leanReason": "Prioritizes spending restraint and reallocation"
+      },
+      {
+       "issueId": "roads-cycling-and-getting-around",
+       "topic": "roads/bike lanes",
+       "summary": "Slate platform would halt temporary bike lanes, reduce bike lane spending, and prioritize roads, sidewalks, crosswalks and traffic calming.",
+       "sourceUrl": "https://www.votealc.com/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": 2,
+       "leanReason": "Shifts street budget from bike lanes to repairs"
+      },
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "housing",
+       "summary": "Slate platform would respect provincial density limits near SkyTrain, concentrate density north of the Nicomekl River, and strengthen tenant relocation protections.",
+       "sourceUrl": "https://www.votealc.com/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": 1,
+       "leanReason": "Focuses density near SkyTrain, limits it elsewhere"
+      },
+      {
+       "issueId": "community-safety",
+       "topic": "public safety",
+       "summary": "Slate platform calls for more RCMP officers, community safety officers and firefighters, a mental health nurse, and targeting repeat property offenders.",
+       "sourceUrl": "https://www.votealc.com/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -1,
+       "leanReason": "Mainly adds enforcement staff"
+      }
+     ]
+    },
+    {
+     "id": "samuel-otim",
+     "name": "Samuel Otim",
+     "ballotName": "Otim, Samuel",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": null,
+     "links": [],
+     "sourceUrls": [
+      "https://www.langleycity.ca/media/file/2026-election-declaration-candidatespdf",
+      "https://www.langleycity.ca/city-hall/local-election",
+      "https://localelections.ca/election_candidates/61_2026_candidates.html"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Economist with a PhD, running as an independent.",
+     "summarySource": "https://www.langleycity.ca/city-hall/local-election",
+     "positions": [
+      {
+       "issueId": null,
+       "topic": "priorities",
+       "summary": "Names community safety, coordinated growth and infrastructure, and a strong local economy as his priorities.",
+       "sourceUrl": "https://www.langleycity.ca/city-hall/local-election",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "General statement"
+      }
+     ]
+    },
+    {
+     "id": "simi-rajput",
+     "name": "Simi Rajput",
+     "ballotName": "Rajput, Simi",
+     "incumbent": false,
+     "affiliation": {
+      "name": "Achieving for Langley City",
+      "sourceUrl": "https://www.langleycity.ca/media/file/2026-election-declaration-candidatespdf"
+     },
+     "declaredIndependent": false,
+     "website": "https://www.votealc.com/theteam#simi",
+     "links": [
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/profile.php?id=61590354177174"
+      },
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/simi.rajputforlangleycitybc"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.langleycity.ca/media/file/2026-election-declaration-candidatespdf",
+      "https://www.langleycity.ca/city-hall/local-election",
+      "https://localelections.ca/election_candidates/61_2026_candidates.html"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Health-care leader and former director at BC Women’s and Children’s Hospital.",
+     "summarySource": "https://www.langleycity.ca/city-hall/local-election",
+     "positions": [
+      {
+       "issueId": "property-taxes-and-spending",
+       "topic": "taxes/budget",
+       "summary": "Focuses on responsible financial management, transparent decision-making and planning for the city's future.",
+       "sourceUrl": "https://www.votealc.com/theteam",
+       "sourceType": "candidate",
+       "proposedLean": null,
+       "leanReason": "Does not state a direction on taxes"
+      },
+      {
+       "issueId": "property-taxes-and-spending",
+       "topic": "taxes/budget",
+       "summary": "Slate platform proposes a full operating budget review, closer scrutiny of consultant spending, and possible administration savings to fund public safety.",
+       "sourceUrl": "https://www.votealc.com/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": 1,
+       "leanReason": "Prioritizes spending restraint and reallocation"
+      },
+      {
+       "issueId": "roads-cycling-and-getting-around",
+       "topic": "roads/bike lanes",
+       "summary": "Slate platform would halt temporary bike lanes, reduce bike lane spending, and prioritize roads, sidewalks, crosswalks and traffic calming.",
+       "sourceUrl": "https://www.votealc.com/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": 2,
+       "leanReason": "Shifts street budget from bike lanes to repairs"
+      },
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "housing",
+       "summary": "Slate platform would respect provincial density limits near SkyTrain, concentrate density north of the Nicomekl River, and strengthen tenant relocation protections.",
+       "sourceUrl": "https://www.votealc.com/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": 1,
+       "leanReason": "Focuses density near SkyTrain, limits it elsewhere"
+      },
+      {
+       "issueId": "community-safety",
+       "topic": "public safety",
+       "summary": "Slate platform calls for more RCMP officers, community safety officers and firefighters, a mental health nurse, and targeting repeat property offenders.",
+       "sourceUrl": "https://www.votealc.com/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -1,
+       "leanReason": "Mainly adds enforcement staff"
+      }
+     ]
+    },
+    {
+     "id": "mike-solyom",
+     "name": "Mike Solyom",
+     "ballotName": "Solyom, Mike",
+     "incumbent": true,
+     "affiliation": {
+      "name": "Langley City First",
+      "sourceUrl": "https://www.langleycity.ca/media/file/2026-election-declaration-candidatespdf"
+     },
+     "declaredIndependent": false,
+     "website": "https://www.langleycityfirst.ca",
+     "links": [
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/langleycityfirst"
+      },
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/langleycityfirst"
+      },
+      {
+       "label": "YouTube",
+       "url": "https://www.youtube.com/@langleycityfirst"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.langleycity.ca/media/file/2026-election-declaration-candidatespdf",
+      "https://www.langleycity.ca/city-hall/local-election",
+      "https://localelections.ca/election_candidates/61_2026_candidates.html"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Incumbent councillor first elected in 2022; economics professor at Douglas College.",
+     "summarySource": "https://www.langleycity.ca/city-hall/local-election",
+     "positions": [
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "housing",
+       "summary": "Focuses on advancing housing affordability and expanding mixed-use development.",
+       "sourceUrl": "https://www.langleycity.ca/city-hall/local-election",
+       "sourceType": "official_guide",
+       "proposedLean": -1,
+       "leanReason": "Supports more mixed-use housing"
+      },
+      {
+       "issueId": "community-safety",
+       "topic": "public safety",
+       "summary": "Slate platform calls for hiring more police, community safety officers and firefighters, plus a volunteer safety ambassador program downtown and in parks.",
+       "sourceUrl": "https://www.langleycityfirst.ca/our-platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -1,
+       "leanReason": "Mainly adds enforcement staff, with volunteer ambassadors"
+      },
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "housing",
+       "summary": "Slate platform proposes a pre-approved housing design catalogue to speed home building, a rental maintenance bylaw, and an aging-in-place strategy.",
+       "sourceUrl": "https://www.langleycityfirst.ca/our-platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -1,
+       "leanReason": "Aims to speed up new home building"
+      },
+      {
+       "issueId": "roads-cycling-and-getting-around",
+       "topic": "transportation",
+       "summary": "Slate platform proposes a seniors' shuttle to SkyTrain, bike, scooter and car-share partnerships, and a safety-focused e-mobility plan.",
+       "sourceUrl": "https://www.langleycityfirst.ca/our-platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -1,
+       "leanReason": "Expands travel options beyond driving"
+      }
+     ]
+    },
+    {
+     "id": "scott-thompson",
+     "name": "Scott Thompson",
+     "ballotName": "Thompson, Scott",
+     "incumbent": false,
+     "affiliation": {
+      "name": "Achieving for Langley City",
+      "sourceUrl": "https://www.langleycity.ca/media/file/2026-election-declaration-candidatespdf"
+     },
+     "declaredIndependent": false,
+     "website": "https://www.votealc.com/theteam#scott",
+     "links": [
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/profile.php?id=61590072942758"
+      },
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/scottthompsonforlangleycitybc"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.langleycity.ca/media/file/2026-election-declaration-candidatespdf",
+      "https://www.langleycity.ca/city-hall/local-election",
+      "https://localelections.ca/election_candidates/61_2026_candidates.html"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Has worked 25 years in local and regional government.",
+     "summarySource": "https://www.langleycity.ca/city-hall/local-election",
+     "positions": [
+      {
+       "issueId": "property-taxes-and-spending",
+       "topic": "taxes/budget",
+       "summary": "Focuses on managing property tax increases and accountability in major planning decisions.",
+       "sourceUrl": "https://www.votealc.com/theteam",
+       "sourceType": "candidate",
+       "proposedLean": 1,
+       "leanReason": "Aims to limit tax increases"
+      },
+      {
+       "issueId": "community-safety",
+       "topic": "policing",
+       "summary": "Wants a responsible RCMP policing transition and public safety preparation ahead of the 2029 SkyTrain extension.",
+       "sourceUrl": "https://www.votealc.com/theteam",
+       "sourceType": "candidate",
+       "proposedLean": null,
+       "leanReason": "Does not say enforcement or prevention"
+      },
+      {
+       "issueId": "property-taxes-and-spending",
+       "topic": "taxes/budget",
+       "summary": "Slate platform proposes a full operating budget review, closer scrutiny of consultant spending, and possible administration savings to fund public safety.",
+       "sourceUrl": "https://www.votealc.com/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": 1,
+       "leanReason": "Prioritizes spending restraint and reallocation"
+      },
+      {
+       "issueId": "roads-cycling-and-getting-around",
+       "topic": "roads/bike lanes",
+       "summary": "Slate platform would halt temporary bike lanes, reduce bike lane spending, and prioritize roads, sidewalks, crosswalks and traffic calming.",
+       "sourceUrl": "https://www.votealc.com/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": 2,
+       "leanReason": "Shifts street budget from bike lanes to repairs"
+      },
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "housing",
+       "summary": "Slate platform would respect provincial density limits near SkyTrain, concentrate density north of the Nicomekl River, and strengthen tenant relocation protections.",
+       "sourceUrl": "https://www.votealc.com/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": 1,
+       "leanReason": "Focuses density near SkyTrain, limits it elsewhere"
+      },
+      {
+       "issueId": "community-safety",
+       "topic": "public safety",
+       "summary": "Slate platform calls for more RCMP officers, community safety officers and firefighters, a mental health nurse, and targeting repeat property offenders.",
+       "sourceUrl": "https://www.votealc.com/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -1,
+       "leanReason": "Mainly adds enforcement staff"
+      }
+     ]
+    },
+    {
+     "id": "val-van-den-broek",
+     "name": "Val van den Broek",
+     "ballotName": "van den Broek, Val",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://www.val4langleycity.ca/",
+     "links": [
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/p/Vote-Val-4-Langley-61580931823684/"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.langleycity.ca/media/file/2026-election-declaration-candidatespdf",
+      "https://www.langleycity.ca/city-hall/local-election",
+      "https://localelections.ca/election_candidates/61_2026_candidates.html",
+      "https://langleyadvancetimes.com/2026/08/31/former-langley-city-mayor-van-den-broek-announces-campaign/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Former Langley City mayor and councillor; reports 25 years of service with the RCMP, the Township of Langley and Langley City Hall.",
+     "summarySource": "https://langleyadvancetimes.com/2026/08/31/former-langley-city-mayor-van-den-broek-announces-campaign/",
+     "positions": [
+      {
+       "issueId": "property-taxes-and-spending",
+       "topic": "taxes/budget",
+       "summary": "Opposes steep tax increases, citing a 38.52% rise over four years, and would shift money from discretionary projects to core services.",
+       "sourceUrl": "https://www.val4langleycity.ca/",
+       "sourceType": "candidate",
+       "proposedLean": 2,
+       "leanReason": "Seeks to limit taxes and discretionary spending"
+      },
+      {
+       "issueId": "community-safety",
+       "topic": "public safety",
+       "summary": "Proposes community safety officers trained in mental health support, keeping RCMP service, and backing Block Watch and Business Watch programs.",
+       "sourceUrl": "https://www.val4langleycity.ca/",
+       "sourceType": "candidate",
+       "proposedLean": 0,
+       "leanReason": "Mixes enforcement and community programs"
+      },
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "housing",
+       "summary": "Supports family-friendly housing density near transit.",
+       "sourceUrl": "https://langleyadvancetimes.com/2026/08/31/former-langley-city-mayor-van-den-broek-announces-campaign/",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "Doesn't address areas away from transit"
+      }
+     ]
+    },
+    {
+     "id": "rosemary-wallace",
+     "name": "Rosemary Wallace",
+     "ballotName": "Wallace, Rosemary",
+     "incumbent": true,
+     "affiliation": {
+      "name": "Langley City First",
+      "sourceUrl": "https://www.langleycity.ca/media/file/2026-election-declaration-candidatespdf"
+     },
+     "declaredIndependent": false,
+     "website": "https://www.langleycityfirst.ca",
+     "links": [
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/langleycityfirst"
+      },
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/langleycityfirst"
+      },
+      {
+       "label": "YouTube",
+       "url": "https://www.youtube.com/@langleycityfirst"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.langleycity.ca/media/file/2026-election-declaration-candidatespdf",
+      "https://www.langleycity.ca/city-hall/local-election",
+      "https://localelections.ca/election_candidates/61_2026_candidates.html"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Incumbent councillor and 30-year Langley City resident; former president of the Langley Arts Council.",
+     "summarySource": "https://www.langleycity.ca/city-hall/local-election",
+     "positions": [
+      {
+       "issueId": "recreation-and-arts-facilities",
+       "topic": "arts and culture",
+       "summary": "Emphasizes bringing people together through arts, culture and community events.",
+       "sourceUrl": "https://www.langleycity.ca/city-hall/local-election",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "Does not address the facility projects directly"
+      },
+      {
+       "issueId": "community-safety",
+       "topic": "public safety",
+       "summary": "Slate platform calls for hiring more police, community safety officers and firefighters, plus a volunteer safety ambassador program downtown and in parks.",
+       "sourceUrl": "https://www.langleycityfirst.ca/our-platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -1,
+       "leanReason": "Mainly adds enforcement staff, with volunteer ambassadors"
+      },
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "housing",
+       "summary": "Slate platform proposes a pre-approved housing design catalogue to speed home building, a rental maintenance bylaw, and an aging-in-place strategy.",
+       "sourceUrl": "https://www.langleycityfirst.ca/our-platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -1,
+       "leanReason": "Aims to speed up new home building"
+      },
+      {
+       "issueId": "roads-cycling-and-getting-around",
+       "topic": "transportation",
+       "summary": "Slate platform proposes a seniors' shuttle to SkyTrain, bike, scooter and car-share partnerships, and a safety-focused e-mobility plan.",
+       "sourceUrl": "https://www.langleycityfirst.ca/our-platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -1,
+       "leanReason": "Expands travel options beyond driving"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "notes": "Ballot names are built as 'Surname, Given name' from the official Declaration of Candidates (Sept. 11, 2026); the PDF text extraction did not show exact legal/usual-name formatting, so verify against the PDF. Heather Jenkins appears in Langley Advance Times as Heather Creelman-Jenkins; the official list shows Heather Jenkins. Delaney Mack is a sitting councillor running for mayor (incumbent=false for the mayor race). Val van den Broek is a former mayor (2018-2022) and councillor, not a current incumbent. Incumbent councillors running: Albrecht, Solyom, Wallace. The declaration fetch summary once mentioned 17 councillor names but listed 16; the City page, localelections.ca and news all confirm 16. Langley City First's platform is published on the slate site and on Mayor Pachal's South Fraser Blog (sfb.nathanpachal.com, used as a candidate source). Slate council candidates with only general personal statements carry their slate's platform positions (sourceType affiliation_platform). Jennifer Denman and Samuel Otim have no website; only their official City profiles were found (general priorities, no issue stance). One Mack position (amalgamation) is from The Langley Union, a local online outlet, reporting her quote. CBC mayoral video (cbc.ca/player/play/video/9.7335882) and a CBC article returned 403. No report of the Oct. 5 Chamber all-candidates forum was found yet. csdId 5915002 = Langley, City (CY), per StatCan 2021 Census Profile search result (5915001 is the Township). Ballot question is a non-binding Community Opinion Vote; wording as reported by Langley Advance Times (City page links to details)."
+}

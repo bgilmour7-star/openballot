@@ -1,4 +1,4 @@
-import { q } from "./db";
+import { one, q } from "./db";
 import { adminEmails } from "./auth/server";
 import { COVERED_RIDINGS } from "./location";
 
@@ -12,15 +12,14 @@ export type Community = {
   signed: Layer; anon: Layer; refs: { source: string; n: number; pct: number }[];
 };
 
-function cityFor(govId: string) {
-  if (govId === "city-of-nanaimo" || govId === "sd68") return "nanaimo";
-  if (govId === "city-of-victoria" || govId === "sd61") return "victoria";
-  return null;
+async function cityFor(govId: string) {
+  const m = await one<{ id: string }>(`select id from municipalities where gov_id=$1 or school_gov_id=$1 limit 1`, [govId]);
+  return m?.id ?? null;
 }
 
 /** Rankings for a government from people located in its area. Admin and excluded accounts never count. */
 async function rowsFor(govId: string, riding?: string | null): Promise<Row[]> {
-  const city = cityFor(govId);
+  const city = await cityFor(govId);
   const params: unknown[] = [govId, adminEmails()];
   let where = `r.government_id=$1 and coalesce(v.exclude_from_results,false)=false and (v.email is null or lower(v.email) <> all($2))`;
   if (city) { params.push(city); where += ` and v.city=$${params.length}`; }

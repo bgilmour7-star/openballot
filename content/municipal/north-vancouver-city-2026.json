@@ -1,0 +1,1798 @@
+{
+ "municipality": {
+  "id": "north-vancouver-city",
+  "name": "City of North Vancouver",
+  "csdId": "5915051",
+  "csdName": null
+ },
+ "government": {
+  "id": "city-of-north-vancouver",
+  "name": "City of North Vancouver",
+  "howBuilt": "This issue list draws on City of North Vancouver candidate websites and platforms, city news releases and news coverage of the 2026 campaign, including the North Shore wastewater plant costs and the 2025 parking plan. It keeps issues that city council can act on, such as zoning, the budget, parking, streets, city land and facilities. Provincial matters such as health care, and regional or provincial decisions such as bridge funding, are left out except where council has a direct role."
+ },
+ "issues": [
+  {
+   "id": "housing-growth-and-density",
+   "title": "Housing growth and density",
+   "description": "How quickly and in what form the city should add new homes through rezoning, pre-zoning and its community plan.",
+   "whatItAffects": "Housing supply and prices, neighbourhood scale, traffic and demand on schools, utilities and parks.",
+   "whoDecides": "Council sets the Official Community Plan, zoning and rezoning decisions, within provincial housing-target and pre-zoning rules.",
+   "viewQuestion": {
+    "question": "How should the city approach new housing over the next four years?",
+    "poleA": "Add more homes of many types sooner, including through pre-zoning and faster approvals",
+    "poleB": "Pace new homes to area plans and infrastructure, with more case-by-case review"
+   },
+   "topicTags": [
+    "housing",
+    "development",
+    "planning"
+   ],
+   "sources": [
+    "https://lindabuchanan.ca/housing",
+    "https://vote.kurvers.net/platform/growth-and-planning/",
+    "https://mcgraw4mayor.ca/issues",
+    "https://krishnanorthvan.ca/priorities"
+   ],
+   "tradeoffs": {
+    "context": "Housing choices trade how fast new homes arrive against how much and how quickly neighbourhoods change.",
+    "a": {
+     "gains": [
+      "More homes could be built sooner, easing pressure on rents and prices",
+      "Clearer rules may shorten approval times for builders"
+     ],
+     "costs": [
+      "Roads, pipes and schools may lag behind new residents",
+      "Neighbourhoods may change faster than some residents want"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Growth may be easier to match with services and infrastructure",
+      "Residents may have more say on individual projects"
+     ],
+     "costs": [
+      "Fewer or slower new homes could keep prices higher",
+      "Longer reviews may add cost and uncertainty to projects"
+     ]
+    }
+   }
+  },
+  {
+   "id": "property-taxes-spending-and-debt",
+   "title": "Property taxes, spending and debt",
+   "description": "How much the city should raise property taxes and utility fees, borrow, and spend on capital projects, including rising regional sewage costs.",
+   "whatItAffects": "Property tax and utility bills for owners and renters, city debt levels and the services and projects the budget funds.",
+   "whoDecides": "Council adopts the annual budget, five-year financial plan, tax rates, utility fees and borrowing; wastewater plant cost-sharing is set regionally by Metro Vancouver.",
+   "viewQuestion": {
+    "question": "What should guide the city's budget?",
+    "poleA": "Hold down tax and utility increases by limiting new spending and borrowing",
+    "poleB": "Keep investing in services and infrastructure even if taxes rise more"
+   },
+   "topicTags": [
+    "taxes",
+    "budget",
+    "infrastructure"
+   ],
+   "sources": [
+    "https://www.ctvnews.ca/vancouver/article/north-shore-mayors-want-premier-to-mandate-equitable-funding-for-new-wastewater-treatment-plant/",
+    "https://mcgraw4mayor.ca/issues",
+    "https://kizatt.ca/platform",
+    "https://rguy4northvan.ca/blog.html",
+    "https://donbell.ca/"
+   ],
+   "tradeoffs": {
+    "context": "Budget choices trade lower bills now against the level of services and the condition of city assets later.",
+    "a": {
+     "gains": [
+      "Smaller increases in tax and utility bills for households and businesses",
+      "Less debt may leave more room for future emergencies"
+     ],
+     "costs": [
+      "Some services, maintenance or projects may be delayed or reduced",
+      "Deferred upkeep can cost more when it is finally done"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Services, facilities and infrastructure may be maintained or expanded",
+      "Projects can proceed before costs rise further"
+     ],
+     "costs": [
+      "Higher tax and utility bills for owners, and often renters",
+      "More borrowing adds interest costs to future budgets"
+     ]
+    }
+   }
+  },
+  {
+   "id": "streets-and-transportation",
+   "title": "Street space and getting around",
+   "description": "How the city divides street space among driving, transit, walking, cycling and micromobility, and what it advocates for on rapid transit and bridges.",
+   "whatItAffects": "Commute times, congestion, road safety, bus reliability and the feel of main streets like Lonsdale.",
+   "whoDecides": "Council controls city streets, its mobility plan, traffic calming and bike lanes; TransLink and the province fund rapid transit and highway crossings.",
+   "viewQuestion": {
+    "question": "How should city streets be used?",
+    "poleA": "Give more street space to transit, walking and cycling, even if driving lanes are reduced",
+    "poleB": "Keep main roads flowing for vehicles and limit reductions in driving lanes"
+   },
+   "topicTags": [
+    "transportation",
+    "transit",
+    "traffic"
+   ],
+   "sources": [
+    "https://www.tonyvalente.ca/policy",
+    "https://kizatt.ca/platform",
+    "https://vote.kurvers.net/platform/getting-around/",
+    "https://hollyback.ca/my-priorities"
+   ],
+   "tradeoffs": {
+    "context": "Street space is fixed, so adding room for one way of travel usually means less for another.",
+    "a": {
+     "gains": [
+      "Faster, more reliable buses and safer walking and cycling routes",
+      "May reduce car trips over time as other options improve"
+     ],
+     "costs": [
+      "Drivers may face slower trips or fewer lanes",
+      "Projects can disrupt businesses and residents during construction"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Vehicle traffic and deliveries may move more smoothly on arterials",
+      "Fewer changes to roads residents already rely on"
+     ],
+     "costs": [
+      "Transit, walking and cycling improvements may come more slowly",
+      "Congestion may persist as the population grows"
+     ]
+    }
+   }
+  },
+  {
+   "id": "pay-parking",
+   "title": "Pay parking and curb access",
+   "description": "Whether to keep, adjust or roll back the city's expanded pay parking introduced under its 2025 Curb Access and Parking Plan.",
+   "whatItAffects": "Cost and availability of street parking for residents, visitors and customers of local businesses, and city parking revenue.",
+   "whoDecides": "Council sets parking zones, rates, hours and permit rules by bylaw.",
+   "viewQuestion": {
+    "question": "What should the city do with its pay parking system?",
+    "poleA": "Keep pay parking largely as is to manage curb demand and turnover",
+    "poleB": "Scale back pay parking hours or areas and revise the plan"
+   },
+   "topicTags": [
+    "parking",
+    "transportation",
+    "business"
+   ],
+   "sources": [
+    "https://globalnews.ca/news/11143802/north-vancouver-pay-parking",
+    "https://kizatt.ca/platform",
+    "https://www.shahriari.ca/",
+    "https://donbell.ca/",
+    "https://krishnanorthvan.ca/priorities"
+   ],
+   "tradeoffs": {
+    "context": "Parking policy trades easy, low-cost parking against turnover, curb space for other uses and city revenue.",
+    "a": {
+     "gains": [
+      "More open spaces through turnover for shoppers and deliveries",
+      "Parking revenue helps fund city services"
+     ],
+     "costs": [
+      "Visitors, workers and some businesses pay more to park",
+      "Some drivers may avoid paid areas or park in nearby streets"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Lower parking costs for residents, visitors and customers",
+      "Evening and weekend visits may be easier for some businesses"
+     ],
+     "costs": [
+      "Spaces may fill up more, making parking harder to find",
+      "Lost revenue may need to be made up elsewhere in the budget"
+     ]
+    }
+   }
+  },
+  {
+   "id": "renter-protections",
+   "title": "Protections for renters",
+   "description": "How strongly the city should protect tenants displaced when older rental buildings are redeveloped.",
+   "whatItAffects": "Compensation, relocation help and return rights for renters, and the cost of redeveloping older rental buildings.",
+   "whoDecides": "Council sets the tenant displacement policy and rental-replacement conditions through rezoning and bylaws, alongside provincial tenancy law.",
+   "viewQuestion": {
+    "question": "How far should city tenant protections go?",
+    "poleA": "Require stronger compensation and right-to-return terms for displaced renters",
+    "poleB": "Keep requirements moderate so rental redevelopment stays viable"
+   },
+   "topicTags": [
+    "housing",
+    "renters"
+   ],
+   "sources": [
+    "https://lindabuchanan.ca/housing",
+    "https://vote.kurvers.net/platform/housing/",
+    "https://kizatt.ca/platform"
+   ],
+   "tradeoffs": {
+    "context": "Tenant rules trade security for current renters against the pace and cost of replacing older buildings.",
+    "a": {
+     "gains": [
+      "Displaced renters may be able to stay in the community",
+      "Long-term tenants get more certainty during redevelopment"
+     ],
+     "costs": [
+      "Higher costs may delay or cancel some rental projects",
+      "Costs may be passed on in rents for new units"
+     ]
+    },
+    "b": {
+     "gains": [
+      "More rental redevelopment may proceed, adding new units",
+      "Simpler rules may speed up approvals"
+     ],
+     "costs": [
+      "Displaced renters may have to leave the city",
+      "Less certainty for long-term tenants in older buildings"
+     ]
+    }
+   }
+  },
+  {
+   "id": "city-owned-land",
+   "title": "Use of city-owned land",
+   "description": "Whether city-owned sites, such as the 100 block of East 1st Street, should be used for housing or development, or kept as public space or park.",
+   "whatItAffects": "Supply of parks and open space, potential housing or revenue from city land, and how dense areas like Lower Lonsdale feel.",
+   "whoDecides": "Council decides the zoning, sale, lease or park designation of land the city owns.",
+   "viewQuestion": {
+    "question": "How should the city use land it owns?",
+    "poleA": "Use suitable city land for housing or development, including below-market homes",
+    "poleB": "Keep key city land public, as park or open space, rather than develop or sell it"
+   },
+   "topicTags": [
+    "parks",
+    "housing",
+    "land use"
+   ],
+   "sources": [
+    "https://vote.kurvers.net/platform/growth-and-planning/",
+    "https://mcgraw4mayor.ca/issues",
+    "https://kizatt.ca/platform",
+    "https://northvandrew.ca/platform.html"
+   ],
+   "tradeoffs": {
+    "context": "City land is limited, so each site used for one purpose is unavailable for another.",
+    "a": {
+     "gains": [
+      "New homes or below-market units on land the city controls",
+      "Sales or leases can bring revenue for other city priorities"
+     ],
+     "costs": [
+      "Less green and open space in growing neighbourhoods",
+      "Land sold may not be available for future public needs"
+     ]
+    },
+    "b": {
+     "gains": [
+      "More parks and open space for a denser population",
+      "The city keeps long-term control of the land"
+     ],
+     "costs": [
+      "Fewer opportunities to add housing the city can steer",
+      "Lost revenue and ongoing park costs"
+     ]
+    }
+   }
+  },
+  {
+   "id": "public-input-and-transparency",
+   "title": "Public input and how decisions are made",
+   "description": "How much consultation, public input time and reporting the city should provide before and after major decisions.",
+   "whatItAffects": "How residents are heard on projects and budgets, and how long approvals and decisions take.",
+   "whoDecides": "Council sets its procedure bylaw, engagement processes and reporting practices.",
+   "viewQuestion": {
+    "question": "How should council balance consultation and speed?",
+    "poleA": "Expand consultation and public input before major decisions, even if it takes longer",
+    "poleB": "Streamline processes so decisions and approvals move faster"
+   },
+   "topicTags": [
+    "governance",
+    "transparency"
+   ],
+   "sources": [
+    "https://mcgraw4mayor.ca/issues",
+    "https://kizatt.ca/platform",
+    "https://hollyback.ca/my-priorities",
+    "https://vote.kurvers.net/platform/getting-things-done/"
+   ],
+   "tradeoffs": {
+    "context": "More input can improve decisions and trust but adds time and cost.",
+    "a": {
+     "gains": [
+      "Residents may have more influence on decisions that affect them",
+      "Concerns may surface before projects are approved"
+     ],
+     "costs": [
+      "Decisions and approvals may take longer",
+      "More engagement processes add staff costs"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Projects and permits may move ahead faster",
+      "Lower process costs for the city and applicants"
+     ],
+     "costs": [
+      "Some residents may feel less heard",
+      "Problems may be found later, after decisions are made"
+     ]
+    }
+   }
+  },
+  {
+   "id": "childcare-and-community-facilities",
+   "title": "Child care, recreation and community facilities",
+   "description": "How much the city should invest in child care spaces, recreation centres, fields and other community facilities as it grows.",
+   "whatItAffects": "Access to child care and recreation, facility upkeep costs and the city's capital budget.",
+   "whoDecides": "Council funds and builds city facilities, secures amenities from developers and partners with senior governments on child care.",
+   "viewQuestion": {
+    "question": "How much should the city invest in community facilities?",
+    "poleA": "Expand child care, recreation and community facilities to keep up with growth",
+    "poleB": "Focus on maintaining existing facilities and limit new capital spending"
+   },
+   "topicTags": [
+    "childcare",
+    "recreation",
+    "budget"
+   ],
+   "sources": [
+    "https://lindabuchanan.ca/",
+    "https://angelagirard.ca/",
+    "https://donbell.ca/",
+    "https://rguy4northvan.ca/blog.html"
+   ],
+   "tradeoffs": {
+    "context": "New facilities serve a growing population but bring building, staffing and upkeep costs.",
+    "a": {
+     "gains": [
+      "More child care spaces and recreation options",
+      "Facilities keep pace as more residents arrive"
+     ],
+     "costs": [
+      "Higher capital and operating costs, often paid through taxes",
+      "More borrowing may be needed"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Lower capital spending and less new debt",
+      "Existing facilities may be better maintained"
+     ],
+     "costs": [
+      "Waitlists for child care and programs may grow",
+      "Facilities may become crowded as the city grows"
+     ]
+    }
+   }
+  },
+  {
+   "id": "trees-and-climate",
+   "title": "Trees, climate and resilience",
+   "description": "How strongly the city should protect trees, expand its canopy and require climate measures in buildings and infrastructure.",
+   "whatItAffects": "Urban tree cover, summer heat, stormwater, emissions and development costs.",
+   "whoDecides": "Council sets tree bylaws, development requirements, climate targets and infrastructure spending.",
+   "viewQuestion": {
+    "question": "How strongly should the city prioritize trees and climate measures?",
+    "poleA": "Strengthen tree protection and climate requirements, even if projects cost more",
+    "poleB": "Keep requirements flexible to limit costs and delays for homes and projects"
+   },
+   "topicTags": [
+    "environment",
+    "climate",
+    "trees"
+   ],
+   "sources": [
+    "https://jessicamcilroy.com/at-city-hall",
+    "https://donbell.ca/",
+    "https://northvandrew.ca/platform.html",
+    "https://jullian4northvan.ca/platform"
+   ],
+   "tradeoffs": {
+    "context": "Climate and tree rules bring long-term benefits but can add upfront cost and complexity.",
+    "a": {
+     "gains": [
+      "More shade and cooler streets during heat waves",
+      "Better handling of stormwater and lower emissions"
+     ],
+     "costs": [
+      "Higher costs and longer timelines for some projects",
+      "Fewer homes may fit on some sites"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Lower costs and simpler approvals for builders",
+      "More flexibility in site design"
+     ],
+     "costs": [
+      "Tree canopy may shrink as sites redevelop",
+      "Higher long-term climate and heat risks"
+     ]
+    }
+   }
+  }
+ ],
+ "election": {
+  "id": "north-vancouver-city-local-2026",
+  "name": "City of North Vancouver general local election",
+  "level": "municipal",
+  "votingDay": "2026-10-17",
+  "votingDayHours": "8 a.m. to 8 p.m.",
+  "advanceVoting": [
+   {
+    "date": "2026-10-07",
+    "hours": "8 a.m. to 8 p.m.",
+    "locations": [
+     "City Hall, 141 West 14th Street, North Vancouver"
+    ]
+   },
+   {
+    "date": "2026-10-10",
+    "hours": "10 a.m. to 4 p.m.",
+    "locations": [
+     "City Hall, 141 West 14th Street, North Vancouver"
+    ]
+   },
+   {
+    "date": "2026-10-13",
+    "hours": "10 a.m. to 7 p.m.",
+    "locations": [
+     "City Hall, 141 West 14th Street, North Vancouver"
+    ]
+   },
+   {
+    "date": "2026-10-14",
+    "hours": "8 a.m. to 8 p.m.",
+    "locations": [
+     "City Hall, 141 West 14th Street, North Vancouver"
+    ]
+   },
+   {
+    "date": "2026-10-15",
+    "hours": "10 a.m. to 6 p.m.",
+    "locations": [
+     "City Hall, 141 West 14th Street, North Vancouver"
+    ]
+   }
+  ],
+  "howToVote": "Eligible City of North Vancouver electors can vote on General Voting Day, Saturday, Oct. 17 (8 a.m. to 8 p.m.), at voting places including schools, Harry Jerome Community Recreation Centre, John Braithwaite Community Centre and The Pipe Shop, or at advance voting at City Hall on Oct. 7, 10, 13, 14 and 15. Voters who are not already registered can register at the voting place by showing two pieces of ID that together prove identity and residential address, at least one with a signature; non-resident property electors also need proof of property ownership. Check cnv.org/vote for the full list of voting places and accepted ID.",
+  "voteByMail": "Mail ballot voting was available to electors who applied by Oct. 1, 2026; the city's election page has instructions for returning mail ballots.",
+  "officialUrl": "https://www.cnv.org/City-Hall/General-Local-Election/2026-General-Local-Election",
+  "sources": [
+   "https://www.cnv.org/City-Hall/General-Local-Election/2026-General-Local-Election",
+   "https://www.cnv.org/vote",
+   "https://www.cnv.org/City-Hall/News-Room/Whats-New/2026/9/1/Apply-to-vote-by-mail-before-October-1",
+   "https://www.cnv.org/City-Hall/News-Room/Whats-New/2026/9/15/Candidates-announced-for-the-2026-General-Local-Election",
+   "https://www.shahriari.ca/get-involved",
+   "https://donbell.ca/"
+  ],
+  "ballotQuestions": []
+ },
+ "electorOrganizations": [],
+ "races": [
+  {
+   "id": "north-vancouver-city-mayor",
+   "office": "Mayor",
+   "seats": 1,
+   "areaName": "City of North Vancouver",
+   "candidates": [
+    {
+     "id": "linda-buchanan",
+     "name": "Linda Buchanan",
+     "ballotName": "BUCHANAN, Linda",
+     "incumbent": true,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://lindabuchanan.ca/",
+     "links": [
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/BuchananforCNV/"
+      }
+     ],
+     "sourceUrls": [
+      "https://lindabuchanan.ca/",
+      "https://www.cnv.org/City-Hall/Mayor-Council/mayor-linda-buchanan",
+      "https://lindabuchanan.ca/about",
+      "https://lindabuchanan.ca/housing",
+      "https://lindabuchanan.ca/a-strong-economy-and-fiscal-resilience/",
+      "https://northvanvotes.ca/candidates/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Mayor since 2018 and a city councillor from 2011 to 2018; previously a North Vancouver school trustee. Worked about 30 years as a public health nurse and was born and raised in North Vancouver.",
+     "summarySource": "https://lindabuchanan.ca/about",
+     "positions": [
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "housing supply",
+       "summary": "Supports delivering hundreds of new homes of many types, including ground-oriented and missing-middle housing and below-market rentals.",
+       "sourceUrl": "https://lindabuchanan.ca/housing",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Favours adding more homes of several types"
+      },
+      {
+       "issueId": "renter-protections",
+       "topic": "tenant displacement",
+       "summary": "Commits to strengthening the city's residential tenant displacement policy and updating its mid-market rental policy.",
+       "sourceUrl": "https://lindabuchanan.ca/housing",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Supports stronger tenant protections"
+      },
+      {
+       "issueId": "streets-and-transportation",
+       "topic": "rapid transit",
+       "summary": "Champions Burrard Inlet Rapid Transit and regional transit links for the North Shore.",
+       "sourceUrl": "https://lindabuchanan.ca/",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Prioritizes transit investment"
+      },
+      {
+       "issueId": "childcare-and-community-facilities",
+       "topic": "child care and recreation",
+       "summary": "Highlights new child care spaces and delivering the Harry Jerome Community Recreation Centre.",
+       "sourceUrl": "https://lindabuchanan.ca/",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Supports expanding city facilities and services"
+      },
+      {
+       "issueId": "property-taxes-spending-and-debt",
+       "topic": "2026 budget",
+       "summary": "Highlights a 2026 financial plan with a 0.9% operating tax increase plus 2% for capital, and longer-term asset and reserve planning.",
+       "sourceUrl": "https://lindabuchanan.ca/a-strong-economy-and-fiscal-resilience/",
+       "sourceType": "candidate",
+       "proposedLean": null,
+       "leanReason": "Cites both restraint and capital investment"
+      }
+     ]
+    },
+    {
+     "id": "oliver-king",
+     "name": "Oliver King",
+     "ballotName": "KING, Oliver",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://kingofparliament.ca/",
+     "links": [],
+     "sourceUrls": [
+      "https://kingofparliament.ca/",
+      "https://northvanvotes.ca/candidates/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": null,
+     "summarySource": null,
+     "positions": []
+    },
+    {
+     "id": "dave-kurvers",
+     "name": "Dave Kurvers",
+     "ballotName": "KURVERS, Dave",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://vote.kurvers.net/",
+     "links": [],
+     "sourceUrls": [
+      "https://vote.kurvers.net/",
+      "https://vote.kurvers.net/platform/growth-and-planning/",
+      "https://vote.kurvers.net/platform/housing/",
+      "https://vote.kurvers.net/platform/getting-around/",
+      "https://vote.kurvers.net/platform/getting-things-done/",
+      "https://northvanvotes.ca/candidates/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Has worked more than three decades in B.C.'s film and television industry and served on Elections BC's Election Advisory Committee.",
+     "summarySource": "https://vote.kurvers.net/",
+     "positions": [
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "growth and pre-zoning",
+       "summary": "Would seek a provincial exemption from pre-zoning rules and require a city-planned alternative when developers seek major plan amendments.",
+       "sourceUrl": "https://vote.kurvers.net/platform/growth-and-planning/",
+       "sourceType": "candidate",
+       "proposedLean": 1,
+       "leanReason": "Favours slower, plan-led growth"
+      },
+      {
+       "issueId": "city-owned-land",
+       "topic": "East First Street lands",
+       "summary": "Would reverse residential zoning of city-owned East First Street lands and designate them a park; opposes selling public land.",
+       "sourceUrl": "https://vote.kurvers.net/platform/growth-and-planning/",
+       "sourceType": "candidate",
+       "proposedLean": 2,
+       "leanReason": "Keep city land public as park"
+      },
+      {
+       "issueId": "renter-protections",
+       "topic": "right to return",
+       "summary": "Proposes a right for long-term renters displaced by redevelopment to return at comparable rents, with moving and interim housing help.",
+       "sourceUrl": "https://vote.kurvers.net/platform/housing/",
+       "sourceType": "candidate",
+       "proposedLean": -2,
+       "leanReason": "Stronger tenant protections"
+      },
+      {
+       "issueId": "streets-and-transportation",
+       "topic": "transit and curb space",
+       "summary": "Opposes elevated SkyTrain on the North Shore; supports cycling routes where they make sense and curb space for loading and accessible parking.",
+       "sourceUrl": "https://vote.kurvers.net/platform/getting-around/",
+       "sourceType": "candidate",
+       "proposedLean": null,
+       "leanReason": "Mixed; does not clearly favour either pole"
+      },
+      {
+       "issueId": "public-input-and-transparency",
+       "topic": "permit timelines",
+       "summary": "Proposes set permit turnaround times, capital project dashboards for projects over $10 million, and budget stress tests.",
+       "sourceUrl": "https://vote.kurvers.net/platform/getting-things-done/",
+       "sourceType": "candidate",
+       "proposedLean": null,
+       "leanReason": "Both faster permits and more reporting"
+      },
+      {
+       "issueId": "property-taxes-spending-and-debt",
+       "topic": "tax increases",
+       "summary": "Would keep annual tax increases close to inflation where practical and direct growth revenue first to reserves, infrastructure or debt reduction.",
+       "sourceUrl": "https://vote.kurvers.net/platform/getting-things-done/",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Limit tax increases and new spending"
+      },
+      {
+       "issueId": "pay-parking",
+       "topic": "curb and payment",
+       "summary": "Wants curb space kept for short-term access and deliveries, opposes app-only parking payment and supports permits for resident work vehicles.",
+       "sourceUrl": "https://vote.kurvers.net/platform/getting-around/",
+       "sourceType": "candidate",
+       "proposedLean": null,
+       "leanReason": "Adjusts parking design; no clear stance on scaling back"
+      }
+     ]
+    },
+    {
+     "id": "mike-mcgraw",
+     "name": "Mike McGraw",
+     "ballotName": "MCGRAW, Mike",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://mcgraw4mayor.ca/",
+     "links": [],
+     "sourceUrls": [
+      "https://mcgraw4mayor.ca/",
+      "https://mcgraw4mayor.ca/about",
+      "https://mcgraw4mayor.ca/issues",
+      "https://northvanvotes.ca/candidates/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Founder of a local software company and a former school trustee; has served on the library board and is a strata council president. Has lived in North Vancouver for decades.",
+     "summarySource": "https://mcgraw4mayor.ca/about",
+     "positions": [
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "density and infrastructure",
+       "summary": "Says infrastructure must be planned before density, and wants a full Capilano Mall and Marine Drive plan before individual rezonings.",
+       "sourceUrl": "https://mcgraw4mayor.ca/issues",
+       "sourceType": "candidate",
+       "proposedLean": 1,
+       "leanReason": "Growth tied to plans and infrastructure first"
+      },
+      {
+       "issueId": "city-owned-land",
+       "topic": "public land",
+       "summary": "Wants the 100 block of East 1st Street as parkland and all options examined before selling significant public land.",
+       "sourceUrl": "https://mcgraw4mayor.ca/issues",
+       "sourceType": "candidate",
+       "proposedLean": 2,
+       "leanReason": "Keep city land as park"
+      },
+      {
+       "issueId": "property-taxes-spending-and-debt",
+       "topic": "debt and wastewater costs",
+       "summary": "Proposes a long-term capital and debt plan and pressing Metro Vancouver for fairer sharing of wastewater plant costs.",
+       "sourceUrl": "https://mcgraw4mayor.ca/issues",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Emphasizes limiting costs and borrowing"
+      },
+      {
+       "issueId": "public-input-and-transparency",
+       "topic": "public input",
+       "summary": "Would hold consultation before major decisions, expand verbal public input at council, and publish a major-project accountability dashboard.",
+       "sourceUrl": "https://mcgraw4mayor.ca/issues",
+       "sourceType": "candidate",
+       "proposedLean": -2,
+       "leanReason": "More consultation before decisions"
+      },
+      {
+       "issueId": "renter-protections",
+       "topic": "renters",
+       "summary": "Supports a meaningful right to return for tenants and a city-run renter concierge service.",
+       "sourceUrl": "https://mcgraw4mayor.ca/issues",
+       "sourceType": "candidate",
+       "proposedLean": -2,
+       "leanReason": "Stronger tenant protections"
+      },
+      {
+       "issueId": "streets-and-transportation",
+       "topic": "mobility planning",
+       "summary": "Calls for walking, cycling and transit capacity alongside the roads residents rely on, with projects modelled together and results measured.",
+       "sourceUrl": "https://mcgraw4mayor.ca/issues",
+       "sourceType": "candidate",
+       "proposedLean": null,
+       "leanReason": "Balances modes; no clear side"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "north-vancouver-city-council",
+   "office": "Councillor",
+   "seats": 6,
+   "areaName": "City of North Vancouver",
+   "candidates": [
+    {
+     "id": "sean-alexander",
+     "name": "Sean Alexander",
+     "ballotName": "ALEXANDER, Sean",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://www.seanfornorthvan.ca/",
+     "links": [],
+     "sourceUrls": [
+      "https://www.seanfornorthvan.ca/",
+      "https://northvanvotes.ca/candidates/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": null,
+     "summarySource": null,
+     "positions": []
+    },
+    {
+     "id": "holly-back",
+     "name": "Holly Back",
+     "ballotName": "BACK, Holly",
+     "incumbent": true,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://hollyback.ca/",
+     "links": [
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/holly.back.52/"
+      },
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/hollybacknv/"
+      }
+     ],
+     "sourceUrls": [
+      "https://hollyback.ca/",
+      "https://hollyback.ca/about",
+      "https://hollyback.ca/my-priorities",
+      "https://northvanvotes.ca/candidates/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "City councillor since 2014 and former North Vancouver school trustee; ran a salon and school on Lonsdale for 20 years and taught at Carson Graham. Born and raised in North Vancouver.",
+     "summarySource": "https://hollyback.ca/about",
+     "positions": [
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "housing options",
+       "summary": "Supports pre-zoning for smaller lots, workforce housing, below-market units, coach houses and rent-to-own options.",
+       "sourceUrl": "https://hollyback.ca/my-priorities",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Favours more housing options"
+      },
+      {
+       "issueId": "public-input-and-transparency",
+       "topic": "public input",
+       "summary": "Supports increasing public input time at council from two to three minutes.",
+       "sourceUrl": "https://hollyback.ca/my-priorities",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "More public input"
+      },
+      {
+       "issueId": null,
+       "topic": "Ironworkers bridge",
+       "summary": "Names Ironworkers Memorial Bridge congestion a top priority and would press senior governments for lanes, transit or a new bridge.",
+       "sourceUrl": "https://hollyback.ca/my-priorities",
+       "sourceType": "candidate",
+       "proposedLean": null,
+       "leanReason": "Regional advocacy, outside city control"
+      },
+      {
+       "issueId": null,
+       "topic": "shelter space",
+       "summary": "Supports more emergency shelter space and warming centres.",
+       "sourceUrl": "https://hollyback.ca/my-priorities",
+       "sourceType": "candidate",
+       "proposedLean": null,
+       "leanReason": "Not on an issue scale"
+      }
+     ]
+    },
+    {
+     "id": "don-bell",
+     "name": "Don Bell",
+     "ballotName": "BELL, Don",
+     "incumbent": true,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://donbell.ca/",
+     "links": [
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/don.bellnorthvancouver"
+      },
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/donbellnorthvancouver"
+      }
+     ],
+     "sourceUrls": [
+      "https://donbell.ca/",
+      "https://northvanvotes.ca/candidates/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "City councillor and former MP for North Vancouver, District of North Vancouver mayor and school board chair; a North Vancouver resident for over 57 years who owned a small retail business.",
+     "summarySource": "https://donbell.ca/",
+     "positions": [
+      {
+       "issueId": "property-taxes-spending-and-debt",
+       "topic": "tax increases",
+       "summary": "Prioritizes reducing tax increases for residents and businesses and supports an independent inquiry into wastewater plant costs.",
+       "sourceUrl": "https://donbell.ca/",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Limit tax increases"
+      },
+      {
+       "issueId": "pay-parking",
+       "topic": "adjustments",
+       "summary": "Says pay parking created unintended consequences that can be mitigated with some adjustments.",
+       "sourceUrl": "https://donbell.ca/",
+       "sourceType": "candidate",
+       "proposedLean": 1,
+       "leanReason": "Revise pay parking"
+      },
+      {
+       "issueId": "trees-and-climate",
+       "topic": "tree canopy",
+       "summary": "Would improve protection of mature trees and expand the city's tree canopy.",
+       "sourceUrl": "https://donbell.ca/",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Prioritizes tree protection"
+      },
+      {
+       "issueId": "childcare-and-community-facilities",
+       "topic": "recreation and child care",
+       "summary": "Supports expanding recreation and sports facilities, courts, parks and child care access for a growing population.",
+       "sourceUrl": "https://donbell.ca/",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Expand facilities"
+      },
+      {
+       "issueId": "public-input-and-transparency",
+       "topic": "engagement",
+       "summary": "Wants more effective direct public engagement and transparency with better ways to connect with council.",
+       "sourceUrl": "https://donbell.ca/",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "More engagement"
+      }
+     ]
+    },
+    {
+     "id": "tammy-bentz",
+     "name": "Tammy Bentz",
+     "ballotName": "BENTZ, Tammy",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://tammybentz.ca/",
+     "links": [],
+     "sourceUrls": [
+      "https://tammybentz.ca/",
+      "https://northvanvotes.ca/candidates/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "BCIT instructor and stage and screen actor, writer and director; a former national councillor of the Canadian Actors' Equity Association who ran federally for the NDP in North Vancouver in 2021.",
+     "summarySource": "https://tammybentz.ca/",
+     "positions": []
+    },
+    {
+     "id": "anna-boltenko",
+     "name": "Anna Boltenko",
+     "ballotName": "BOLTENKO, Anna",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://boltenko4northvancouver.ca/",
+     "links": [],
+     "sourceUrls": [
+      "https://boltenko4northvancouver.ca/",
+      "https://northvanvotes.ca/candidates/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Leadership coach and founder of the North Shore Kids Festival; has served over eight years on city advisory committees, including chairing the Social Planning Advisory Committee, and sits on the Advisory Planning Commission.",
+     "summarySource": "https://boltenko4northvancouver.ca/",
+     "positions": [
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "growth and infrastructure",
+       "summary": "Says new residential development must be matched by roads, transit, childcare, schools, recreation and utilities.",
+       "sourceUrl": "https://boltenko4northvancouver.ca/",
+       "sourceType": "candidate",
+       "proposedLean": 1,
+       "leanReason": "Growth paced with infrastructure"
+      },
+      {
+       "issueId": "public-input-and-transparency",
+       "topic": "transparency",
+       "summary": "Wants City Hall to communicate openly about budgets, procurement and neighbourhood impacts, with early public engagement.",
+       "sourceUrl": "https://boltenko4northvancouver.ca/",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "More engagement"
+      },
+      {
+       "issueId": "streets-and-transportation",
+       "topic": "street design",
+       "summary": "Supports street and public space improvements for people walking, cycling, using transit, pushing strollers or with disabilities.",
+       "sourceUrl": "https://boltenko4northvancouver.ca/",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "More space for active modes"
+      },
+      {
+       "issueId": "childcare-and-community-facilities",
+       "topic": "families",
+       "summary": "Supports safe play spaces, childcare access, recreation programs and children's mental health prevention.",
+       "sourceUrl": "https://boltenko4northvancouver.ca/",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Expand community services"
+      }
+     ]
+    },
+    {
+     "id": "david-brun",
+     "name": "David Brun",
+     "ballotName": "BRUN, David",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": null,
+     "links": [],
+     "sourceUrls": [
+      "https://northvanvotes.ca/candidates/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": null,
+     "summarySource": null,
+     "positions": []
+    },
+    {
+     "id": "jeremy-cato",
+     "name": "Jeremy Cato",
+     "ballotName": "CATO, Jeremy",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://www.jeremy-cato.ca/",
+     "links": [
+      {
+       "label": "YouTube",
+       "url": "https://www.youtube.com/@thenorthshorewithjeremycato"
+      },
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/jeremycatocnv/"
+      },
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/JeremyCatoCNV"
+      },
+      {
+       "label": "Substack",
+       "url": "https://substack.com/@jeremycato"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.jeremy-cato.ca/",
+      "https://jeremy-cato.ca/",
+      "https://www.jeremy-cato.ca/new-page-4",
+      "https://northvanvotes.ca/candidates/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Creator of a YouTube channel on North Shore civic issues; says he has spent four years studying the city's finances and plans.",
+     "summarySource": "https://jeremy-cato.ca/",
+     "positions": [
+      {
+       "issueId": "streets-and-transportation",
+       "topic": "road capacity",
+       "summary": "Opposes net road capacity reductions on bridge-feeding corridors until funded transit alternatives exist.",
+       "sourceUrl": "https://www.jeremy-cato.ca/new-page-4",
+       "sourceType": "candidate",
+       "proposedLean": 1,
+       "leanReason": "Keep road capacity for vehicles"
+      },
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "growth and transportation",
+       "summary": "Would link major rezonings to named transportation infrastructure requests and coordinate traffic and growth decisions.",
+       "sourceUrl": "https://www.jeremy-cato.ca/new-page-4",
+       "sourceType": "candidate",
+       "proposedLean": 1,
+       "leanReason": "Growth tied to infrastructure"
+      },
+      {
+       "issueId": "property-taxes-spending-and-debt",
+       "topic": "finances",
+       "summary": "Proposes a debt dashboard and a reserve-floor policy, citing a historic debt-servicing load.",
+       "sourceUrl": "https://www.jeremy-cato.ca/new-page-4",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Emphasis on limiting debt"
+      },
+      {
+       "issueId": "city-owned-land",
+       "topic": "old ICBC block",
+       "summary": "Proposes the old ICBC site as a mix of community hub, cultural centre, housing and business centre.",
+       "sourceUrl": "https://www.jeremy-cato.ca/new-page-4",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Develop city-linked site for mixed uses"
+      }
+     ]
+    },
+    {
+     "id": "angela-girard",
+     "name": "Angela Girard",
+     "ballotName": "GIRARD, Angela",
+     "incumbent": true,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://angelagirard.ca/",
+     "links": [
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/angelagirard.northvan"
+      },
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/angelagirard.northvan"
+      }
+     ],
+     "sourceUrls": [
+      "https://angelagirard.ca/",
+      "https://northvanvotes.ca/candidates/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "City of North Vancouver councillor since 2018, seeking a third term.",
+     "summarySource": "https://angelagirard.ca/",
+     "positions": [
+      {
+       "issueId": "renter-protections",
+       "topic": "tenant protections",
+       "summary": "Cites strengthening tenant protections during redevelopment and the city's high rate of rental housing construction.",
+       "sourceUrl": "https://angelagirard.ca/",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Supports stronger protections"
+      },
+      {
+       "issueId": "childcare-and-community-facilities",
+       "topic": "child care and recreation",
+       "summary": "Highlights expanding child care, including on city land, and delivering Harry Jerome and Silver Harbour centres.",
+       "sourceUrl": "https://angelagirard.ca/",
+       "sourceType": "candidate",
+       "proposedLean": -2,
+       "leanReason": "Expand facilities"
+      },
+      {
+       "issueId": "trees-and-climate",
+       "topic": "cooling",
+       "summary": "Advocated a cooling strategy limiting indoor temperatures to 26 C in multi-unit buildings.",
+       "sourceUrl": "https://angelagirard.ca/",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Supports climate requirements"
+      },
+      {
+       "issueId": "streets-and-transportation",
+       "topic": "active transportation",
+       "summary": "Cites a 2026 HUB Cycling award for the city's active transportation work.",
+       "sourceUrl": "https://angelagirard.ca/",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Supports active transportation"
+      }
+     ]
+    },
+    {
+     "id": "guy-heywood",
+     "name": "Guy Heywood",
+     "ballotName": "HEYWOOD, Guy",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://rguy4northvan.ca/",
+     "links": [],
+     "sourceUrls": [
+      "https://rguy4northvan.ca/",
+      "https://rguy4northvan.ca/about.html",
+      "https://rguy4northvan.ca/blog.html",
+      "https://northvanvotes.ca/candidates/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Former two-term City of North Vancouver councillor and three-term school trustee; a CPA who has advised companies and First Nations on financing. Has lived in North Vancouver for decades.",
+     "summarySource": "https://rguy4northvan.ca/about.html",
+     "positions": [
+      {
+       "issueId": "property-taxes-spending-and-debt",
+       "topic": "fiscal situation",
+       "summary": "Says the city's finances and rising utility and property tax bills are hurting affordability for homeowners and renters.",
+       "sourceUrl": "https://rguy4northvan.ca/",
+       "sourceType": "candidate",
+       "proposedLean": -2,
+       "leanReason": "Focus on reducing tax and fee pressure"
+      },
+      {
+       "issueId": "childcare-and-community-facilities",
+       "topic": "Harry Jerome centre",
+       "summary": "Argues the Harry Jerome recreation centre decision badly strained city finances.",
+       "sourceUrl": "https://rguy4northvan.ca/blog.html",
+       "sourceType": "candidate",
+       "proposedLean": 1,
+       "leanReason": "Critical of large facility spending"
+      },
+      {
+       "issueId": "public-input-and-transparency",
+       "topic": "consultation",
+       "summary": "Criticizes current public consultation as costly and says the city does not listen to what residents want.",
+       "sourceUrl": "https://rguy4northvan.ca/blog.html",
+       "sourceType": "candidate",
+       "proposedLean": null,
+       "leanReason": "Wants responsiveness but critical of consultation processes"
+      }
+     ]
+    },
+    {
+     "id": "ken-izatt",
+     "name": "Ken Izatt",
+     "ballotName": "IZATT, Ken",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://kizatt.ca/",
+     "links": [
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/profile.php?id=100084211260424"
+      },
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/northvanken/"
+      },
+      {
+       "label": "YouTube",
+       "url": "https://www.youtube.com/@KenIzatt"
+      }
+     ],
+     "sourceUrls": [
+      "https://kizatt.ca/",
+      "https://kizatt.ca/platform",
+      "https://northvanvotes.ca/candidates/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "North Vancouver resident for more than 45 years, recently retired from a business career; served six years on the city's Social Planning Advisory Committee and as treasurer of the MONOVA friends society.",
+     "summarySource": "https://kizatt.ca/",
+     "positions": [
+      {
+       "issueId": "pay-parking",
+       "topic": "paid parking hours",
+       "summary": "Would end paid parking at 6 p.m., review the whole parking system and add accessible spaces.",
+       "sourceUrl": "https://kizatt.ca/platform",
+       "sourceType": "candidate",
+       "proposedLean": 2,
+       "leanReason": "Scale back pay parking"
+      },
+      {
+       "issueId": "property-taxes-spending-and-debt",
+       "topic": "spending priorities",
+       "summary": "Would prioritize infrastructure, safety and maintenance over discretionary spending and challenge regional wastewater cost-sharing.",
+       "sourceUrl": "https://kizatt.ca/platform",
+       "sourceType": "candidate",
+       "proposedLean": -2,
+       "leanReason": "Limit spending to hold down increases"
+      },
+      {
+       "issueId": "streets-and-transportation",
+       "topic": "arterial roads",
+       "summary": "Would review the 2022 Mobility Plan and keep main arterials like Lonsdale and Keith Road flowing rather than reduce road space.",
+       "sourceUrl": "https://kizatt.ca/platform",
+       "sourceType": "candidate",
+       "proposedLean": 2,
+       "leanReason": "Prioritize vehicle flow"
+      },
+      {
+       "issueId": "renter-protections",
+       "topic": "displaced tenants",
+       "summary": "Proposes a binding bylaw guaranteeing compensation and right of first refusal for displaced tenants.",
+       "sourceUrl": "https://kizatt.ca/platform",
+       "sourceType": "candidate",
+       "proposedLean": -2,
+       "leanReason": "Stronger protections"
+      },
+      {
+       "issueId": "city-owned-land",
+       "topic": "East 1st Street",
+       "summary": "Would convert the vacant 100 block of East 1st Street into a permanent public park.",
+       "sourceUrl": "https://kizatt.ca/platform",
+       "sourceType": "candidate",
+       "proposedLean": 2,
+       "leanReason": "Keep city land as park"
+      }
+     ]
+    },
+    {
+     "id": "jullian-kolstee",
+     "name": "Jullian Kolstee",
+     "ballotName": "KOLSTEE, Jullian",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://jullian4northvan.ca/",
+     "links": [
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/jkolstee"
+      },
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/julliankolstee/"
+      },
+      {
+       "label": "Bluesky",
+       "url": "https://bsky.app/profile/jkolstee.bsky.social"
+      }
+     ],
+     "sourceUrls": [
+      "https://jullian4northvan.ca/",
+      "https://jullian4northvan.ca/platform",
+      "https://northvanvotes.ca/candidates/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Improv theatre coach, performer and culture strategist for a medical device manufacturer; grew up in North Vancouver and attended Capilano University.",
+     "summarySource": "https://jullian4northvan.ca/",
+     "positions": [
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "housing mix",
+       "summary": "Supports mixed-use density along transit corridors, small-scale multi-unit homes in residential areas and more non-market housing.",
+       "sourceUrl": "https://jullian4northvan.ca/platform",
+       "sourceType": "candidate",
+       "proposedLean": -2,
+       "leanReason": "Favours more homes and density"
+      },
+      {
+       "issueId": "renter-protections",
+       "topic": "tenants",
+       "summary": "Supports stronger tenant protections alongside expanded non-market housing.",
+       "sourceUrl": "https://jullian4northvan.ca/platform",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Stronger protections"
+      },
+      {
+       "issueId": "streets-and-transportation",
+       "topic": "transit and active travel",
+       "summary": "Would advocate for bus rapid transit expansion and build out active transportation networks.",
+       "sourceUrl": "https://jullian4northvan.ca/platform",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "More space for transit and active modes"
+      },
+      {
+       "issueId": "property-taxes-spending-and-debt",
+       "topic": "accountability",
+       "summary": "Would pursue a public inquiry into the wastewater treatment plant and monitor city debt and reserves.",
+       "sourceUrl": "https://jullian4northvan.ca/platform",
+       "sourceType": "candidate",
+       "proposedLean": null,
+       "leanReason": "Oversight, no clear side on tax levels"
+      },
+      {
+       "issueId": "trees-and-climate",
+       "topic": "climate resilience",
+       "summary": "Proposes increasing tree canopy, improving drainage and reviewing emergency plans to reduce climate risks.",
+       "sourceUrl": "https://jullian4northvan.ca/platform",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Prioritizes climate measures"
+      }
+     ]
+    },
+    {
+     "id": "max-lai",
+     "name": "Max Lai",
+     "ballotName": "LAI, Max",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://maxlai.ca/",
+     "links": [
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/MaxLaiNV/"
+      },
+      {
+       "label": "X",
+       "url": "https://x.com/maxlaiNV"
+      },
+      {
+       "label": "YouTube",
+       "url": "http://www.youtube.com/@maxlaiNV"
+      }
+     ],
+     "sourceUrls": [
+      "https://maxlai.ca/",
+      "https://maxlai.ca/housing/",
+      "https://maxlai.ca/transportation/",
+      "https://maxlai.ca/cost-of-living/",
+      "https://northvanvotes.ca/candidates/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Education assistant born on the North Shore; studied political science at Simon Fraser University. Running for council for the first time.",
+     "summarySource": "https://maxlai.ca/",
+     "positions": [
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "multiplexes and zoning",
+       "summary": "Would expand the Housing Initiatives Grant and simplify zoning so homeowners can convert single-family lots into multiplexes.",
+       "sourceUrl": "https://maxlai.ca/housing/",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Favours enabling more homes"
+      },
+      {
+       "issueId": null,
+       "topic": "inclusionary housing",
+       "summary": "Proposes that new rental developments secure at least 30% of units as affordable and 20% for workers earning $30,000-$80,000.",
+       "sourceUrl": "https://maxlai.ca/housing/",
+       "sourceType": "candidate",
+       "proposedLean": null,
+       "leanReason": "Affordability requirement; not on an issue scale"
+      },
+      {
+       "issueId": "streets-and-transportation",
+       "topic": "transit",
+       "summary": "Supports updating the mobility strategy with a detailed transit plan and more than one bus rapid transit line on the North Shore.",
+       "sourceUrl": "https://maxlai.ca/transportation/",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Prioritizes transit investment"
+      },
+      {
+       "issueId": null,
+       "topic": "cost of living",
+       "summary": "Supports a $25 low-income transit pass and a city-operated, not-for-profit grocery store.",
+       "sourceUrl": "https://maxlai.ca/cost-of-living/",
+       "sourceType": "candidate",
+       "proposedLean": null,
+       "leanReason": "Not tied to an issue scale"
+      }
+     ]
+    },
+    {
+     "id": "jessica-mcilroy",
+     "name": "Jessica McIlroy",
+     "ballotName": "MCILROY, Jessica",
+     "incumbent": true,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://jessicamcilroy.com/",
+     "links": [
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/CouncillorJessicaMcIlroy"
+      },
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/jessmcilroy"
+      }
+     ],
+     "sourceUrls": [
+      "https://jessicamcilroy.com/",
+      "https://jessicamcilroy.com/about",
+      "https://jessicamcilroy.com/at-city-hall",
+      "https://northvanvotes.ca/candidates/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "City councillor since 2018 and North Vancouver resident since 2006; has worked over 20 years in sustainability leadership roles, including as a non-profit executive director.",
+     "summarySource": "https://jessicamcilroy.com/about",
+     "positions": [
+      {
+       "issueId": "trees-and-climate",
+       "topic": "climate action",
+       "summary": "Chairs the city's Climate and Environment Task Force and has championed updated emissions targets and climate resilience funding.",
+       "sourceUrl": "https://jessicamcilroy.com/at-city-hall",
+       "sourceType": "candidate",
+       "proposedLean": -2,
+       "leanReason": "Prioritizes climate action"
+      },
+      {
+       "issueId": "streets-and-transportation",
+       "topic": "mobility",
+       "summary": "Supports more mobility options and has pursued intersection safety measures and speed limit pilots.",
+       "sourceUrl": "https://jessicamcilroy.com/at-city-hall",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "More travel options and safety measures"
+      },
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "housing options",
+       "summary": "Lists expanding a diversity of housing options for all residents as a goal.",
+       "sourceUrl": "https://jessicamcilroy.com/",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Favours more housing options"
+      }
+     ]
+    },
+    {
+     "id": "krishna-raisinghani",
+     "name": "Krishna Raisinghani",
+     "ballotName": "RAISINGHANI, Krishna",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://krishnanorthvan.ca/",
+     "links": [
+      {
+       "label": "Instagram",
+       "url": "https://instagram.com/krishnanorthvan"
+      },
+      {
+       "label": "Facebook",
+       "url": "https://facebook.com/krishnanorthvan"
+      }
+     ],
+     "sourceUrls": [
+      "https://krishnanorthvan.ca/",
+      "https://krishnanorthvan.ca/priorities",
+      "https://northvanvotes.ca/candidates/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Chair of the city's Advisory Planning Commission with nearly two decades in strategy, finance and planning roles; grew up on the North Shore.",
+     "summarySource": "https://krishnanorthvan.ca/",
+     "positions": [
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "growth",
+       "summary": "Supports diverse housing types and streamlined approvals, with infrastructure developed alongside growth and targets for essential worker housing.",
+       "sourceUrl": "https://krishnanorthvan.ca/priorities",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "More homes with infrastructure"
+      },
+      {
+       "issueId": "renter-protections",
+       "topic": "displaced tenants",
+       "summary": "Would strengthen renter protections with relocation support and return pathways for displaced tenants.",
+       "sourceUrl": "https://krishnanorthvan.ca/priorities",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Stronger protections"
+      },
+      {
+       "issueId": "pay-parking",
+       "topic": "parking review",
+       "summary": "Would reassess pay parking rates and policies and publish yearly reports on outcomes.",
+       "sourceUrl": "https://krishnanorthvan.ca/priorities",
+       "sourceType": "candidate",
+       "proposedLean": 1,
+       "leanReason": "Open to revising pay parking"
+      },
+      {
+       "issueId": "public-input-and-transparency",
+       "topic": "accountability",
+       "summary": "Proposes earlier engagement, quarterly scorecards on progress and costs, and quarterly community office hours.",
+       "sourceUrl": "https://krishnanorthvan.ca/priorities",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "More engagement and reporting"
+      }
+     ]
+    },
+    {
+     "id": "andrew-robertson",
+     "name": "Andrew Robertson",
+     "ballotName": "ROBERTSON, Andrew",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://northvandrew.ca/",
+     "links": [
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/northvandrewrobertson/"
+      },
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/profile.php?id=61593030053074"
+      },
+      {
+       "label": "Bluesky",
+       "url": "https://bsky.app/profile/akhrobertson.bsky.social"
+      }
+     ],
+     "sourceUrls": [
+      "https://northvandrew.ca/",
+      "https://northvandrew.ca/about.html",
+      "https://northvandrew.ca/platform.html",
+      "https://northvanvotes.ca/candidates/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Medical physicist and clinical investigator at BC Cancer and UBC clinical instructor; grew up in North Vancouver and is president of the BC Association of Medical Physicists.",
+     "summarySource": "https://northvandrew.ca/about.html",
+     "positions": [
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "housing types",
+       "summary": "Supports townhomes, rowhouses and multiplexes, fewer barriers to multigenerational homes, and lower permitting delays for new homes.",
+       "sourceUrl": "https://northvandrew.ca/platform.html",
+       "sourceType": "candidate",
+       "proposedLean": -2,
+       "leanReason": "Favours more homes, faster"
+      },
+      {
+       "issueId": "city-owned-land",
+       "topic": "non-market housing",
+       "summary": "Would expand non-market housing through dedicating city land and explore community land trusts.",
+       "sourceUrl": "https://northvandrew.ca/platform.html",
+       "sourceType": "candidate",
+       "proposedLean": -2,
+       "leanReason": "Use city land for housing"
+      },
+      {
+       "issueId": "streets-and-transportation",
+       "topic": "transit and cycling",
+       "summary": "Supports more transit, North Shore rapid transit, better bus stops and complete cycling networks.",
+       "sourceUrl": "https://northvandrew.ca/platform.html",
+       "sourceType": "candidate",
+       "proposedLean": -2,
+       "leanReason": "More space for transit and active modes"
+      },
+      {
+       "issueId": "trees-and-climate",
+       "topic": "tree canopy",
+       "summary": "Would grow the tree canopy, retain trees in developments and use green stormwater infrastructure.",
+       "sourceUrl": "https://northvandrew.ca/platform.html",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Prioritizes trees and climate"
+      },
+      {
+       "issueId": "renter-protections",
+       "topic": "displaced renters",
+       "summary": "Supports protecting renters displaced by development.",
+       "sourceUrl": "https://northvandrew.ca/platform.html",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Supports protections"
+      }
+     ]
+    },
+    {
+     "id": "shervin-shahriari",
+     "name": "Shervin Shahriari",
+     "ballotName": "SHAHRIARI, Shervin",
+     "incumbent": true,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://www.shahriari.ca/",
+     "links": [],
+     "sourceUrls": [
+      "https://www.shahriari.ca/",
+      "https://www.shahriari.ca/policy",
+      "https://northvanvotes.ca/candidates/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "City councillor since 2022; business and project management lecturer at Langara and former senior planning manager at TransLink. Moved to North Vancouver in 1984 and chaired the city library board.",
+     "summarySource": "https://www.shahriari.ca/",
+     "positions": [
+      {
+       "issueId": "pay-parking",
+       "topic": "seven-day pay parking",
+       "summary": "Opposed expanding pay parking to seven days a week, 9 a.m. to 9 p.m.",
+       "sourceUrl": "https://www.shahriari.ca/",
+       "sourceType": "candidate",
+       "proposedLean": 1,
+       "leanReason": "Opposed pay parking expansion"
+      },
+      {
+       "issueId": "public-input-and-transparency",
+       "topic": "engagement",
+       "summary": "Calls for thorough community engagement before any major decision.",
+       "sourceUrl": "https://www.shahriari.ca/policy",
+       "sourceType": "candidate",
+       "proposedLean": -2,
+       "leanReason": "More consultation"
+      },
+      {
+       "issueId": "trees-and-climate",
+       "topic": "mature trees",
+       "summary": "Prioritizes retaining mature healthy trees and heritage buildings in development.",
+       "sourceUrl": "https://www.shahriari.ca/policy",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Prioritizes tree retention"
+      },
+      {
+       "issueId": "property-taxes-spending-and-debt",
+       "topic": "financial analysis",
+       "summary": "Calls for stronger financial analysis before approving new projects and raised concerns about wastewater plant costs.",
+       "sourceUrl": "https://www.shahriari.ca/policy",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Caution on spending"
+      },
+      {
+       "issueId": null,
+       "topic": "off-street parking",
+       "summary": "Would require new developments to provide adequate off-street parking.",
+       "sourceUrl": "https://www.shahriari.ca/policy",
+       "sourceType": "candidate",
+       "proposedLean": null,
+       "leanReason": "Development parking requirement"
+      }
+     ]
+    },
+    {
+     "id": "lailani-tumaneng",
+     "name": "Lailani Tumaneng",
+     "ballotName": "TUMANENG, Lailani",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": null,
+     "links": [],
+     "sourceUrls": [
+      "https://reyfortmedia.com/2026/08/27/from-caring-for-patients-to-school-board-lailani-tumaneng-eyes-seat-on-north-vancouver-council/",
+      "https://northvanvotes.ca/candidates/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Registered nurse with 26 years at Vancouver Coastal Health and a North Vancouver school trustee elected in 2022; has lived in North Vancouver for more than 30 years.",
+     "summarySource": "https://reyfortmedia.com/2026/08/27/from-caring-for-patients-to-school-board-lailani-tumaneng-eyes-seat-on-north-vancouver-council/",
+     "positions": [
+      {
+       "issueId": null,
+       "topic": "priorities",
+       "summary": "Names community safety, climate change and sustainability, affordable housing and equitable governance as her main focus areas.",
+       "sourceUrl": "https://reyfortmedia.com/2026/08/27/from-caring-for-patients-to-school-board-lailani-tumaneng-eyes-seat-on-north-vancouver-council/",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "General priorities; no side on an issue scale"
+      }
+     ]
+    },
+    {
+     "id": "tony-valente",
+     "name": "Tony Valente",
+     "ballotName": "VALENTE, Tony",
+     "incumbent": true,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://www.tonyvalente.ca/",
+     "links": [],
+     "sourceUrls": [
+      "https://www.tonyvalente.ca/",
+      "https://www.tonyvalente.ca/about-tony",
+      "https://www.tonyvalente.ca/policy",
+      "https://northvanvotes.ca/candidates/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "City councillor seeking re-election; senior director of infrastructure and capital projects at a B.C. Crown corporation, former chair of HUB Cycling's North Shore committee and holds a UBC MBA.",
+     "summarySource": "https://www.tonyvalente.ca/about-tony",
+     "positions": [
+      {
+       "issueId": "streets-and-transportation",
+       "topic": "transportation choices",
+       "summary": "Supports protected mobility lanes, e-bike safety and more bus and walking options to give residents choices beyond driving.",
+       "sourceUrl": "https://www.tonyvalente.ca/",
+       "sourceType": "candidate",
+       "proposedLean": -2,
+       "leanReason": "More street space for non-car modes"
+      },
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "housing options",
+       "summary": "Supports more housing options, including condos, apartments and duplexes.",
+       "sourceUrl": "https://www.tonyvalente.ca/",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Favours more housing types"
+      },
+      {
+       "issueId": "renter-protections",
+       "topic": "redevelopment",
+       "summary": "Supports strengthening renter protections during redevelopment.",
+       "sourceUrl": "https://www.tonyvalente.ca/policy",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Stronger protections"
+      },
+      {
+       "issueId": "streets-and-transportation",
+       "topic": "bus rapid transit",
+       "summary": "Supports bus rapid transit with dedicated lanes and a new Second Narrows crossing that enables transit.",
+       "sourceUrl": "https://www.tonyvalente.ca/policy",
+       "sourceType": "candidate",
+       "proposedLean": -2,
+       "leanReason": "Dedicated street space for transit"
+      },
+      {
+       "issueId": "childcare-and-community-facilities",
+       "topic": "public spaces",
+       "summary": "Supports more parklets, pocket parks, dog parks, street trees and courts as neighbourhoods densify.",
+       "sourceUrl": "https://www.tonyvalente.ca/policy",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Expand public amenities"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "notes": "City of North Vancouver (not the District). 4 mayoral and 18 council candidates for 6 seats; the candidate list matches the city's 2026 announcement and an independent listing (northvanvotes.ca), used only to confirm names and websites, since cnv.org pages load content by script and the fetch tool could not read the official candidate list, profiles or voting details. Advance voting dates, hours and voting places come from candidate websites (shahriari.ca/get-involved, corroborated by donbell.ca) restating city information; verify at cnv.org/vote. No elector organizations or ballot questions were found for the city. The six incumbent councillors (Back, Bell, Girard, McIlroy, Shahriari, Valente) and Mayor Buchanan are running again; incumbency is confirmed by 2022 results (Global News). Guy Heywood is a former two-term councillor. North Shore News Q&A with all candidates returned 403 and could not be used. No position statements found for Oliver King (website kingofparliament.ca would not resolve), Sean Alexander (site loads content by script; not read), David Brun (no website or coverage found) or Tammy Bentz (tammybentz.ca still shows her 2021 federal NDP page; bio is from it). Lailani Tumaneng has no website; her bio and priorities come from a Reyfort Media profile. Some positions from the earlier run (Boltenko, Buchanan, Kurvers, McGraw) were kept as written; Buchanan, Kurvers and McGraw pages were re-checked. Tony Valente's first-election year was not stated consistently on his site and is omitted. csdId 5915051 not re-verified against StatCan this run. Leans are proposals for review."
+}

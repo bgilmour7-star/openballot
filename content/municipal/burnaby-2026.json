@@ -1,0 +1,3103 @@
+{
+ "municipality": {
+  "id": "burnaby",
+  "name": "City of Burnaby",
+  "csdId": "5915025",
+  "csdName": "Burnaby"
+ },
+ "government": {
+  "id": "city-of-burnaby",
+  "name": "City of Burnaby",
+  "howBuilt": "This list draws on the City of Burnaby's official candidate profiles, elector organization platforms, a Burnaby Heights Merchants Association mayoral questionnaire, and news coverage of the campaign, the 2026 budget, multiplex zoning changes, the Royal Oak supportive housing debate and Hastings Street bus lanes. We kept issues the City of Burnaby can act on through zoning, its budget, policing funding, streets, parks and council procedures. Matters mainly run by the province, such as hospital funding and schools, are left out."
+ },
+ "issues": [
+  {
+   "id": "neighbourhood-housing-and-density",
+   "title": "New housing in neighbourhoods",
+   "description": "How much multiplex and mid-size housing is allowed on residential streets, and how big new buildings can be.",
+   "whatItAffects": "Homeowners, renters, families looking for ground-oriented homes, and people living next to new buildings.",
+   "whoDecides": "Council sets zoning rules for building size, height, lot coverage and parking, within the minimums required by provincial housing law.",
+   "viewQuestion": {
+    "question": "How should the city handle multiplexes and mid-size housing in residential neighbourhoods?",
+    "poleA": "Allow more multiplexes and mid-size buildings across neighbourhoods",
+    "poleB": "Limit building size and require more parking to fit neighbourhood character"
+   },
+   "topicTags": [
+    "housing",
+    "land-use"
+   ],
+   "sources": [
+    "https://dailyhive.com/vancouver/burnaby-small-scale-multi-unit-housing-policy-amendments",
+    "https://ca.news.yahoo.com/against-giant-burnaby-political-status-130026974.html",
+    "https://www.burnabyfirst.ca/platform"
+   ],
+   "tradeoffs": {
+    "context": "Multiplex rules trade how many new homes can be built against how much existing streets change.",
+    "a": {
+     "gains": [
+      "More homes could be built on existing lots, adding supply",
+      "More families may find ground-oriented homes below detached-house prices"
+     ],
+     "costs": [
+      "Neighbours may see more height, shade and less on-street parking",
+      "Pipes, schools and roads may need upgrades sooner"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Streets may keep their current scale and look",
+      "Parking pressure on residential streets may be lower"
+     ],
+     "costs": [
+      "Fewer new homes may be built, keeping prices higher",
+      "Smaller allowable buildings may make some projects not worth building"
+     ]
+    }
+   }
+  },
+  {
+   "id": "property-taxes-and-city-spending",
+   "title": "Property taxes and city spending",
+   "description": "How much property tax rises each year and how the city pays for big projects like new community centres.",
+   "whatItAffects": "Homeowners, renters through their rent, businesses, and everyone who uses city facilities and services.",
+   "whoDecides": "Council adopts the yearly financial plan, sets the tax rate and levies, and decides which capital projects go ahead.",
+   "viewQuestion": {
+    "question": "How should the city balance its budget?",
+    "poleA": "Freeze or cap tax increases, even if some projects wait",
+    "poleB": "Keep investing in facilities and services, even if taxes rise more"
+   },
+   "topicTags": [
+    "taxes-budget",
+    "cost-of-living"
+   ],
+   "sources": [
+    "https://www.burnaby.ca/our-city/news/2026-01-28/burnaby-keeps-tax-rates-affordable-latest-financial-plan",
+    "https://ca.news.yahoo.com/against-giant-burnaby-political-status-130026974.html",
+    "https://newburnaby.ca/platform/"
+   ],
+   "tradeoffs": {
+    "context": "Holding taxes down and keeping up a large building program pull on the same budget.",
+    "a": {
+     "gains": [
+      "Households and businesses would face smaller tax bills",
+      "Spending decisions may get closer review"
+     ],
+     "costs": [
+      "Some facilities, repairs or services may be delayed or trimmed",
+      "Reserves may be drawn down or costs pushed to future years"
+     ]
+    },
+    "b": {
+     "gains": [
+      "New community centres and services could open on schedule",
+      "Infrastructure may be kept up before costs grow"
+     ],
+     "costs": [
+      "Tax bills could rise faster than inflation",
+      "Higher costs may be passed to renters and small businesses"
+     ]
+    }
+   }
+  },
+  {
+   "id": "community-safety-and-policing",
+   "title": "Community safety and policing",
+   "description": "How the city responds to crime, disorder and people in crisis, and how many officers and outreach workers it funds.",
+   "whatItAffects": "Residents, business owners, transit users, and people experiencing mental health or addiction crises.",
+   "whoDecides": "Council funds the Burnaby RCMP detachment and bylaw officers, and decides how much to spend on crisis-response and outreach programs.",
+   "viewQuestion": {
+    "question": "Where should more of the city's safety budget go?",
+    "poleA": "Hire more police officers and expand patrols and enforcement",
+    "poleB": "Expand crisis-response teams and outreach alongside police"
+   },
+   "topicTags": [
+    "public-safety"
+   ],
+   "sources": [
+    "https://www.burnabyheights.com/news/local-election-burnaby-mayoral-candidates-share-positions-on-key-burnaby-heights-issues/",
+    "https://www.burnabyfirst.ca/platform",
+    "https://burnabygreenparty.com/our-platform/"
+   ],
+   "tradeoffs": {
+    "context": "Safety budgets are limited, so more spending on officers often means less for outreach, and the reverse.",
+    "a": {
+     "gains": [
+      "More visible patrols may help people feel safer",
+      "Officers could respond faster to calls"
+     ],
+     "costs": [
+      "Policing costs may raise taxes or crowd out other services",
+      "Enforcement may move problems elsewhere rather than resolve them"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Trained workers could handle some mental-health calls that do not need police",
+      "Outreach may address addiction and crises behind some disorder"
+     ],
+     "costs": [
+      "Results may take longer to show and be harder to measure",
+      "Some residents may see less change in street conditions"
+     ]
+    }
+   }
+  },
+  {
+   "id": "supportive-housing-and-shelters",
+   "title": "Shelters and supportive housing",
+   "description": "Where shelters and supportive housing for people leaving homelessness are located and what rules apply at those sites.",
+   "whatItAffects": "People who are unhoused, nearby residents and schools, and service providers.",
+   "whoDecides": "Council approves rezonings and city land for these sites, sets consultation requirements, and partners with BC Housing, which funds and operates most of them.",
+   "viewQuestion": {
+    "question": "How should the city handle new shelter and supportive housing sites?",
+    "poleA": "Keep approving sites so more people can move indoors",
+    "poleB": "Pause or limit new sites until stricter rules and more consultation"
+   },
+   "topicTags": [
+    "homelessness",
+    "housing",
+    "mental-health-addictions"
+   ],
+   "sources": [
+    "https://thetyee.ca/Analysis/2026/02/26/Burnaby-Supportive-Housing-Project-Goes-Down/",
+    "https://www.burnabyfirst.ca/platform",
+    "https://www.burnaby.ca/sites/default/files/acquiadam/2025-10/Burnaby-Shelter-and-Supportive-Housing-Strategy.pdf"
+   ],
+   "tradeoffs": {
+    "context": "Cities weigh adding shelter and supportive housing sites against responding to neighbourhood concerns about where they go.",
+    "a": {
+     "gains": [
+      "More people may move indoors and connect with services",
+      "Fewer people may need to sleep outside or in parks"
+     ],
+     "costs": [
+      "Nearby residents may worry about safety and disorder",
+      "Some sites may go ahead despite strong local opposition"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Neighbours may have more say and clearer rules at each site",
+      "Sites may open with more security and operating standards"
+     ],
+     "costs": [
+      "Fewer spaces may open, leaving more people unsheltered",
+      "Provincial funding may go to other cities if projects stall"
+     ]
+    }
+   }
+  },
+  {
+   "id": "affordable-rental-housing",
+   "title": "Affordable rental housing",
+   "description": "Whether and how the city builds below-market rental homes itself, through its Housing Authority and city-owned land.",
+   "whatItAffects": "Renters, lower- and middle-income households, seniors, and families priced out of the market.",
+   "whoDecides": "Council directs the Burnaby Housing Authority, decides how city land is used, and can speed approvals or waive fees for non-market housing.",
+   "viewQuestion": {
+    "question": "How directly should the city build affordable rental homes?",
+    "poleA": "Use city land and the Housing Authority to build many more non-market homes",
+    "poleB": "Rely more on private builders and senior-government funding, limiting city costs"
+   },
+   "topicTags": [
+    "housing",
+    "cost-of-living"
+   ],
+   "sources": [
+    "https://dailyhive.com/vancouver/burnaby-mayor-mike-hurley-election-platform-2026",
+    "https://burnabygreenparty.com/our-platform/",
+    "https://www.burnaby-citizens.ca/platform",
+    "https://www.burnabyfirst.ca/platform"
+   ],
+   "tradeoffs": {
+    "context": "Direct city building can add affordable homes faster, but uses city land and money that could go elsewhere.",
+    "a": {
+     "gains": [
+      "More homes could rent below market rates",
+      "The city keeps long-term control over affordability"
+     ],
+     "costs": [
+      "City land and reserves are used that could serve other needs",
+      "The city takes on construction and operating risk"
+     ]
+    },
+    "b": {
+     "gains": [
+      "City finances and land stay available for other uses",
+      "Private and senior-government partners carry more of the cost"
+     ],
+     "costs": [
+      "Fewer below-market homes may be built",
+      "Affordability may depend on outside funding decisions"
+     ]
+    }
+   }
+  },
+  {
+   "id": "transit-and-street-space",
+   "title": "Transit, traffic and street space",
+   "description": "How busy streets like Hastings are shared among buses, bikes, pedestrians, drivers and curbside parking.",
+   "whatItAffects": "Transit riders, drivers, cyclists, pedestrians, and businesses that rely on street parking.",
+   "whoDecides": "Council controls city street design, parking and sidewalks, and approves bus lanes on city roads in partnership with TransLink.",
+   "viewQuestion": {
+    "question": "How should street space be shared on busy corridors?",
+    "poleA": "Add bus lanes, bike routes and sidewalks, even if parking is lost",
+    "poleB": "Keep curbside parking and general traffic lanes for drivers and shops"
+   },
+   "topicTags": [
+    "transportation",
+    "downtown-economy"
+   ],
+   "sources": [
+    "https://dailyhive.com/vancouver/burnaby-hastings-street-translink-bus-lanes-amendment",
+    "https://www.burnabyheights.com/news/local-election-burnaby-mayoral-candidates-share-positions-on-key-burnaby-heights-issues/"
+   ],
+   "tradeoffs": {
+    "context": "Road space is fixed, so giving more to buses and bikes usually means less for parking and general traffic.",
+    "a": {
+     "gains": [
+      "Buses could run faster and more reliably",
+      "Walking and cycling may become safer"
+     ],
+     "costs": [
+      "Businesses may lose nearby customer parking",
+      "Some drivers may face slower trips or detours"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Shoppers and people with mobility needs keep convenient parking",
+      "Merchants may see less disruption"
+     ],
+     "costs": [
+      "Buses may stay slower in congested stretches",
+      "Fewer people may switch to transit, walking or cycling"
+     ]
+    }
+   }
+  },
+  {
+   "id": "council-transparency-and-engagement",
+   "title": "Council transparency and public input",
+   "description": "How council shares information and involves residents before making major decisions on projects and development.",
+   "whatItAffects": "Residents who want a say, neighbourhoods facing change, and the pace of city projects.",
+   "whoDecides": "Council sets its own meeting procedures, consultation practices and reporting to the public.",
+   "viewQuestion": {
+    "question": "How should council involve residents in decisions?",
+    "poleA": "Add town halls, question periods and longer consultation before decisions",
+    "poleB": "Keep current processes so decisions and projects move faster"
+   },
+   "topicTags": [
+    "governance"
+   ],
+   "sources": [
+    "https://ca.news.yahoo.com/against-giant-burnaby-political-status-130026974.html",
+    "https://www.burnabyfirst.ca/platform",
+    "https://newburnaby.ca/platform/"
+   ],
+   "tradeoffs": {
+    "context": "More consultation gives residents more say but adds time and cost to decisions.",
+    "a": {
+     "gains": [
+      "Residents may have more chances to be heard",
+      "Decisions may be easier for the public to understand"
+     ],
+     "costs": [
+      "Projects and housing approvals may take longer",
+      "Meetings and outreach add staff costs"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Projects and approvals may move faster",
+      "Staff time stays focused on delivering services"
+     ],
+     "costs": [
+      "Some residents may feel left out of decisions",
+      "Concerns may surface later, after plans are set"
+     ]
+    }
+   }
+  },
+  {
+   "id": "parks-trees-and-green-space",
+   "title": "Parks, trees and green space",
+   "description": "How much parkland and tree cover the city keeps and adds as it grows.",
+   "whatItAffects": "Residents who use parks and trails, wildlife habitat, and land available for other uses.",
+   "whoDecides": "Council buys and zones parkland, sets tree-protection rules, and funds park maintenance and upgrades.",
+   "viewQuestion": {
+    "question": "How should the city protect parks and trees as it grows?",
+    "poleA": "Buy more parkland and require tree protection, even if it adds costs",
+    "poleB": "Focus on maintaining existing parks, keeping land and money for other needs"
+   },
+   "topicTags": [
+    "environment",
+    "parks-recreation"
+   ],
+   "sources": [
+    "https://www.burnaby-citizens.ca/platform",
+    "https://newburnaby.ca/platform/",
+    "https://www.burnabyfirst.ca/platform"
+   ],
+   "tradeoffs": {
+    "context": "Adding parkland and protecting trees competes with land for housing and with other spending.",
+    "a": {
+     "gains": [
+      "More residents could live near a park",
+      "Tree cover may help with heat and habitat"
+     ],
+     "costs": [
+      "Buying land adds cost to the city budget",
+      "Tree rules may add cost or limits to some projects"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Money can go to upkeep of parks people already use",
+      "More land may stay available for housing and facilities"
+     ],
+     "costs": [
+      "Fast-growing areas may have less green space per person",
+      "Tree cover may grow more slowly"
+     ]
+    }
+   }
+  }
+ ],
+ "election": {
+  "id": "burnaby-local-2026",
+  "name": "City of Burnaby general local election",
+  "level": "municipal",
+  "votingDay": "2026-10-17",
+  "votingDayHours": "8 a.m. to 8 p.m.",
+  "advanceVoting": [
+   {
+    "date": "2026-10-03",
+    "hours": "8 a.m. to 8 p.m.",
+    "locations": [
+     "Six advance voting locations across Burnaby; see the City's voting locations map at https://gis.burnaby.ca/electionvotinglocations/"
+    ]
+   },
+   {
+    "date": "2026-10-07",
+    "hours": "8 a.m. to 8 p.m.",
+    "locations": [
+     "Six advance voting locations across Burnaby; see the City's voting locations map at https://gis.burnaby.ca/electionvotinglocations/"
+    ]
+   },
+   {
+    "date": "2026-10-10",
+    "hours": "8 a.m. to 8 p.m.",
+    "locations": [
+     "Six advance voting locations across Burnaby; see the City's voting locations map at https://gis.burnaby.ca/electionvotinglocations/"
+    ]
+   }
+  ],
+  "howToVote": "Burnaby voters can vote at any of 33 voting places on General Voting Day (Saturday, Oct. 17, 8 a.m. to 8 p.m.) or at six advance voting locations on Oct. 3, 7 or 10. Voters who are not already registered can register at the voting place with two pieces of ID that together prove identity and residential address, one with a signature. Non-resident property electors should contact the Burnaby Election Office.",
+  "voteByMail": "All eligible voters could apply to vote by mail from Aug. 31 to Oct. 5; completed ballots must be received by 8 p.m. on Oct. 17, by mail, at a drop box, or at any voting place.",
+  "officialUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections",
+  "sources": [
+   "https://www.burnaby.ca/our-city/mayor-and-council/elections",
+   "https://www.burnaby.ca/our-city/mayor-and-council/elections/voters",
+   "https://www.burnaby.ca/our-city/mayor-and-council/elections/mail-ballot-voting",
+   "https://www.burnaby.ca/our-city/news/2026-09-11/declaration-candidates-2026-city-burnaby-general-local-election",
+   "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting",
+   "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-mayor-candidate-profiles",
+   "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles"
+  ],
+  "ballotQuestions": []
+ },
+ "electorOrganizations": [
+  {
+   "id": "bca-burnaby-citizens-association",
+   "name": "BCA - Burnaby Citizens Association",
+   "website": "https://www.burnaby-citizens.ca/",
+   "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+   "platformUrl": "https://www.burnaby-citizens.ca/platform",
+   "blurb": "Describes itself as founded in 1955 to act on issues that matter to residents, with a focus on progressive local governance and the well-being of all citizens.",
+   "blurbSource": "https://www.burnaby-citizens.ca/about"
+  },
+  {
+   "id": "burnaby-first",
+   "name": "Burnaby First",
+   "website": "https://www.burnabyfirst.ca/",
+   "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-mayor-candidate-profiles",
+   "platformUrl": "https://www.burnabyfirst.ca/platform",
+   "blurb": "Describes itself as advocating accountability on operating costs, property tax, public safety and green spaces.",
+   "blurbSource": "https://www.burnabyfirst.ca/"
+  },
+  {
+   "id": "burnaby-green-party",
+   "name": "Burnaby Green Party",
+   "website": "https://burnabygreenparty.com/",
+   "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+   "platformUrl": "https://burnabygreenparty.com/our-platform/",
+   "blurb": "Presents a platform centred on non-market housing, faster transit, cycling and sidewalks, climate resilience, and published progress targets.",
+   "blurbSource": "https://burnabygreenparty.com/our-platform/"
+  },
+  {
+   "id": "new-burnaby-party",
+   "name": "New Burnaby Party",
+   "website": "https://newburnaby.ca/",
+   "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+   "platformUrl": "https://newburnaby.ca/platform/",
+   "blurb": "Says its platform comes from consultations with residents and covers eight areas, including public safety, taxes, parks and council independence.",
+   "blurbSource": "https://newburnaby.ca/platform/"
+  },
+  {
+   "id": "restore-burnaby-alliance",
+   "name": "Restore Burnaby Alliance",
+   "website": "https://restoreburnaby.ca/",
+   "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+   "platformUrl": "https://restoreburnaby.ca/?page_id=1282",
+   "blurb": "Describes its focus as accountability, affordability, financial responsibility and public safety, under the tagline Restore, Renew, Rebuild, Together.",
+   "blurbSource": "https://restoreburnaby.ca/"
+  }
+ ],
+ "races": [
+  {
+   "id": "burnaby-mayor",
+   "office": "Mayor",
+   "seats": 1,
+   "areaName": "City of Burnaby",
+   "candidates": [
+    {
+     "id": "michaelangelo-abcrobinhood",
+     "name": "MichaelAngelo Abcrobinhood",
+     "ballotName": "ABCROBINHOOD, MichaelAngelo",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": null,
+     "links": [],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-mayor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Burnaby resident for nearly 40 years who has owned painting, restoration and renovation businesses.",
+     "summarySource": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-mayor-candidate-profiles",
+     "positions": [
+      {
+       "issueId": "property-taxes-and-city-spending",
+       "topic": "tax relief",
+       "summary": "Proposes property-tax discounts for seniors and for homeowners who produce food.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-mayor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": -1,
+       "leanReason": "targeted tax relief"
+      },
+      {
+       "issueId": "supportive-housing-and-shelters",
+       "topic": "injection sites",
+       "summary": "Opposes injection sites and supports developing recovery centres.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-mayor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": 1,
+       "leanReason": "opposes consumption sites"
+      },
+      {
+       "issueId": null,
+       "topic": "local business",
+       "summary": "Proposes prioritizing local hiring and streamlining business licensing.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-mayor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "not on an issue scale"
+      }
+     ]
+    },
+    {
+     "id": "sabina-hsu",
+     "name": "Sabina Hsu",
+     "ballotName": "HSU, Sabina",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://canva.link/d9zaycrjok9kjkk",
+     "links": [
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/share/1YUBiQv7mp/"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-mayor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting",
+      "https://www.burnabyheights.com/news/local-election-burnaby-mayoral-candidates-share-positions-on-key-burnaby-heights-issues/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Burnaby resident for 37 years with a business administration background; set up a Block Watch program.",
+     "summarySource": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-mayor-candidate-profiles",
+     "positions": [
+      {
+       "issueId": "neighbourhood-housing-and-density",
+       "topic": "density",
+       "summary": "Proposes clustered high-rise, mixed-use development along corridors, with merchant space and a city services hub.",
+       "sourceUrl": "https://www.burnabyheights.com/news/local-election-burnaby-mayoral-candidates-share-positions-on-key-burnaby-heights-issues/",
+       "sourceType": "news",
+       "proposedLean": -1,
+       "leanReason": "supports more density on corridors"
+      },
+      {
+       "issueId": "transit-and-street-space",
+       "topic": "Hastings parking",
+       "summary": "Proposes parking inside developments to reduce curbside parking disputes while supporting transit.",
+       "sourceUrl": "https://www.burnabyheights.com/news/local-election-burnaby-mayoral-candidates-share-positions-on-key-burnaby-heights-issues/",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "hybrid approach"
+      },
+      {
+       "issueId": "community-safety-and-policing",
+       "topic": "safety",
+       "summary": "Proposes AI technology for law enforcement and skills-training programs for people with addictions.",
+       "sourceUrl": "https://www.burnabyheights.com/news/local-election-burnaby-mayoral-candidates-share-positions-on-key-burnaby-heights-issues/",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "mixes enforcement tech and programs"
+      },
+      {
+       "issueId": null,
+       "topic": "bylaws",
+       "summary": "Supports strict smoking bylaws and wildfire-risk reduction.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-mayor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "not on an issue scale"
+      }
+     ]
+    },
+    {
+     "id": "mike-hurley",
+     "name": "Mike Hurley",
+     "ballotName": "HURLEY, Mike",
+     "incumbent": true,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://www.mikehurley.ca/",
+     "links": [
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/mikehurleyformayor/"
+      },
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/MikeHurleyforMayor"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-mayor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting",
+      "https://dailyhive.com/vancouver/burnaby-mayor-mike-hurley-election-platform-2026",
+      "https://www.mikehurley.ca/about",
+      "https://www.burnabyheights.com/news/local-election-burnaby-mayoral-candidates-share-positions-on-key-burnaby-heights-issues/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Mayor since 2018, acclaimed in 2022; former Burnaby firefighter who joined the fire department in 1988.",
+     "summarySource": "https://www.mikehurley.ca/about",
+     "positions": [
+      {
+       "issueId": "affordable-rental-housing",
+       "topic": "affordable rentals",
+       "summary": "Commits to 1,000 affordable rental homes through the Burnaby Housing Authority, including family townhomes.",
+       "sourceUrl": "https://dailyhive.com/vancouver/burnaby-mayor-mike-hurley-election-platform-2026",
+       "sourceType": "news",
+       "proposedLean": -1,
+       "leanReason": "city-led rental building"
+      },
+      {
+       "issueId": "neighbourhood-housing-and-density",
+       "topic": "provincial zoning",
+       "summary": "Opposes provincial six-unit zoning rules and wants control of residential zoning returned to the city.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-mayor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": 1,
+       "leanReason": "opposes province-wide upzoning"
+      },
+      {
+       "issueId": "property-taxes-and-city-spending",
+       "topic": "taxes",
+       "summary": "Commits to staying debt-free and keeping property taxes at or below the regional average.",
+       "sourceUrl": "https://dailyhive.com/vancouver/burnaby-mayor-mike-hurley-election-platform-2026",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "no clear side"
+      },
+      {
+       "issueId": "community-safety-and-policing",
+       "topic": "safety",
+       "summary": "Supports completing the RCMP detachment expansion and crisis teams pairing officers with mental health nurses.",
+       "sourceUrl": "https://www.burnabyheights.com/news/local-election-burnaby-mayoral-candidates-share-positions-on-key-burnaby-heights-issues/",
+       "sourceType": "news",
+       "proposedLean": 0,
+       "leanReason": "supports both"
+      },
+      {
+       "issueId": "transit-and-street-space",
+       "topic": "Hastings bus lanes",
+       "summary": "Supports R2 RapidBus; council dropped bus lanes in the Heights retail stretch, and he favours exploring bus bulbs.",
+       "sourceUrl": "https://www.burnabyheights.com/news/local-election-burnaby-mayoral-candidates-share-positions-on-key-burnaby-heights-issues/",
+       "sourceType": "news",
+       "proposedLean": 0,
+       "leanReason": "partial bus lanes"
+      }
+     ]
+    },
+    {
+     "id": "bill-petrovas",
+     "name": "Bill Petrovas",
+     "ballotName": "PETROVAS, Bill",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://billpetrovas.ca/",
+     "links": [
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/billpetrovasburnaby/"
+      },
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/profile.php?id=61594035117571"
+      },
+      {
+       "label": "LinkedIn",
+       "url": "https://www.linkedin.com/in/bill-petrovas/"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-mayor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting",
+      "https://www.burnabyheights.com/news/local-election-burnaby-mayoral-candidates-share-positions-on-key-burnaby-heights-issues/",
+      "https://billpetrovas.ca/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Burnaby resident since 1967; former teacher and principal, corporate manager, COO of BC Diabetes, and Edmonds Business Association director.",
+     "summarySource": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-mayor-candidate-profiles",
+     "positions": [
+      {
+       "issueId": "transit-and-street-space",
+       "topic": "Hastings route",
+       "summary": "Prefers a Boundary Road/Lougheed rapid bus route to protect Hastings Street businesses, and wants full evidence before deciding.",
+       "sourceUrl": "https://www.burnabyheights.com/news/local-election-burnaby-mayoral-candidates-share-positions-on-key-burnaby-heights-issues/",
+       "sourceType": "news",
+       "proposedLean": 1,
+       "leanReason": "protect Hastings parking/function"
+      },
+      {
+       "issueId": "property-taxes-and-city-spending",
+       "topic": "spending",
+       "summary": "Requires full cost disclosure before approving major projects and pledges to set spending priorities.",
+       "sourceUrl": "https://billpetrovas.ca/",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "spending restraint"
+      },
+      {
+       "issueId": "council-transparency-and-engagement",
+       "topic": "accountability",
+       "summary": "Would restore public question periods after council meetings and publish results against campaign promises.",
+       "sourceUrl": "https://billpetrovas.ca/",
+       "sourceType": "candidate",
+       "proposedLean": -2,
+       "leanReason": "more public input"
+      },
+      {
+       "issueId": "affordable-rental-housing",
+       "topic": "rent-to-own",
+       "summary": "Advocates rent-to-own housing, including lease-to-own options on city land.",
+       "sourceUrl": "https://www.burnabyheights.com/news/local-election-burnaby-mayoral-candidates-share-positions-on-key-burnaby-heights-issues/",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "different model"
+      },
+      {
+       "issueId": "community-safety-and-policing",
+       "topic": "street safety",
+       "summary": "Proposes same-day graffiti removal and closer coordination among businesses, police and outreach.",
+       "sourceUrl": "https://www.burnabyheights.com/news/local-election-burnaby-mayoral-candidates-share-positions-on-key-burnaby-heights-issues/",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "mixed"
+      }
+     ]
+    },
+    {
+     "id": "hanzhi-wang",
+     "name": "Hanzhi Wang",
+     "ballotName": "WANG, Hanzhi",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://burnaby.hanzhi.io/",
+     "links": [],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-mayor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting",
+      "https://www.burnabyheights.com/news/local-election-burnaby-mayoral-candidates-share-positions-on-key-burnaby-heights-issues/",
+      "https://burnaby.hanzhi.io/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": null,
+     "summarySource": null,
+     "positions": [
+      {
+       "issueId": "neighbourhood-housing-and-density",
+       "topic": "missing middle",
+       "summary": "Supports streamlined permitting for medium-density missing-middle housing and mixed-use zoning in residential areas.",
+       "sourceUrl": "https://burnaby.hanzhi.io/",
+       "sourceType": "candidate",
+       "proposedLean": -2,
+       "leanReason": "more density"
+      },
+      {
+       "issueId": "transit-and-street-space",
+       "topic": "Hastings bus lanes",
+       "summary": "Supports bus rapid transit on Hastings with all-day transit lanes.",
+       "sourceUrl": "https://www.burnabyheights.com/news/local-election-burnaby-mayoral-candidates-share-positions-on-key-burnaby-heights-issues/",
+       "sourceType": "news",
+       "proposedLean": -2,
+       "leanReason": "bus lanes over parking"
+      },
+      {
+       "issueId": "property-taxes-and-city-spending",
+       "topic": "taxes and fees",
+       "summary": "Proposes phasing out development cost charges and moving to progressive property taxes on wealthier landowners.",
+       "sourceUrl": "https://burnaby.hanzhi.io/",
+       "sourceType": "candidate",
+       "proposedLean": null,
+       "leanReason": "tax structure, not level"
+      },
+      {
+       "issueId": "community-safety-and-policing",
+       "topic": "safety",
+       "summary": "Focuses on affordable housing, rehabilitation programs and better public-space lighting to reduce homelessness.",
+       "sourceUrl": "https://www.burnabyheights.com/news/local-election-burnaby-mayoral-candidates-share-positions-on-key-burnaby-heights-issues/",
+       "sourceType": "news",
+       "proposedLean": 1,
+       "leanReason": "prevention over enforcement"
+      },
+      {
+       "issueId": "parks-trees-and-green-space",
+       "topic": "parks",
+       "summary": "Proposes expanding park facilities and public washrooms and increasing urban tree canopy.",
+       "sourceUrl": "https://burnaby.hanzhi.io/",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "expand parks and canopy"
+      }
+     ]
+    },
+    {
+     "id": "heymann-yip",
+     "name": "Heymann Yip",
+     "ballotName": "YIP, Heymann",
+     "incumbent": false,
+     "affiliation": {
+      "name": "Burnaby First",
+      "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-mayor-candidate-profiles"
+     },
+     "declaredIndependent": false,
+     "website": "https://www.burnabyfirst.ca/",
+     "links": [
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/heymannyip/"
+      },
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/HeymannYipBurnaby"
+      },
+      {
+       "label": "X",
+       "url": "https://x.com/HeymannYip"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-mayor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting",
+      "https://www.burnabyheights.com/news/local-election-burnaby-mayoral-candidates-share-positions-on-key-burnaby-heights-issues/",
+      "https://ca.news.yahoo.com/against-giant-burnaby-political-status-130026974.html",
+      "https://www.burnabyfirst.ca/platform"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Burnaby resident for 35 years and retail entrepreneur; served on the Public Safety Committee and RCMP Community Policing Advisory Committee; co-founded Burnaby First.",
+     "summarySource": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-mayor-candidate-profiles",
+     "positions": [
+      {
+       "issueId": "community-safety-and-policing",
+       "topic": "policing",
+       "summary": "Advocates hiring more police officers, community policing and regular beat patrols.",
+       "sourceUrl": "https://www.burnabyheights.com/news/local-election-burnaby-mayoral-candidates-share-positions-on-key-burnaby-heights-issues/",
+       "sourceType": "news",
+       "proposedLean": -2,
+       "leanReason": "more officers"
+      },
+      {
+       "issueId": "transit-and-street-space",
+       "topic": "Hastings parking",
+       "summary": "Opposes removing curbside parking for bus lanes, citing seniors and people with disabilities.",
+       "sourceUrl": "https://www.burnabyheights.com/news/local-election-burnaby-mayoral-candidates-share-positions-on-key-burnaby-heights-issues/",
+       "sourceType": "news",
+       "proposedLean": 2,
+       "leanReason": "keep parking"
+      },
+      {
+       "issueId": "neighbourhood-housing-and-density",
+       "topic": "large homes",
+       "summary": "Wants to control the size of large new multi-unit homes and fit development to neighbourhood character.",
+       "sourceUrl": "https://ca.news.yahoo.com/against-giant-burnaby-political-status-130026974.html",
+       "sourceType": "news",
+       "proposedLean": 2,
+       "leanReason": "limit size"
+      },
+      {
+       "issueId": "supportive-housing-and-shelters",
+       "topic": "low-barrier housing",
+       "summary": "Burnaby First platform: pause new low-barrier housing approvals pending community engagement; no-drugs rules in transitional housing.",
+       "sourceUrl": "https://www.burnabyfirst.ca/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": 2,
+       "leanReason": "pause new sites"
+      },
+      {
+       "issueId": "parks-trees-and-green-space",
+       "topic": "green space",
+       "summary": "Founded a group to protect Fraser Foreshore wetlands; supports protecting parks from development.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-mayor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": -1,
+       "leanReason": "protect green space"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "burnaby-council",
+   "office": "Councillor",
+   "seats": 8,
+   "areaName": "City of Burnaby",
+   "candidates": [
+    {
+     "id": "akmal-bazarov",
+     "name": "Akmal Bazarov",
+     "ballotName": "BAZAROV, Akmal",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": null,
+     "links": [],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "UBC Law graduate with BCIT project management credentials and international business experience.",
+     "summarySource": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+     "positions": [
+      {
+       "issueId": "council-transparency-and-engagement",
+       "topic": "open budget",
+       "summary": "Advocates value for taxpayers, a stronger resident voice and an Open Budget Initiative.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": -1,
+       "leanReason": "more public budget access"
+      },
+      {
+       "issueId": null,
+       "topic": "housing and parking",
+       "summary": "Supports workable housing and fair parking, and promoting Burnaby globally.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "general"
+      }
+     ]
+    },
+    {
+     "id": "natalia-bember",
+     "name": "Natalia Bember",
+     "ballotName": "BEMBER, Natalia",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": null,
+     "links": [],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting",
+      "https://www.frequencynews.ca/news/burnaby-councillor-candidate-interviews-natalia-bember/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Mobility scooter user, BCIT graduate and founder of the Access World Foundation.",
+     "summarySource": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+     "positions": [
+      {
+       "issueId": "transit-and-street-space",
+       "topic": "accessibility",
+       "summary": "Priorities: ramps in older buildings, roads and sidewalks that work, and a voice for seniors, families and disabled residents.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "accessibility, not lanes vs parking"
+      },
+      {
+       "issueId": "community-safety-and-policing",
+       "topic": "safety",
+       "summary": "Aims to prioritize accessible infrastructure and safer communities.",
+       "sourceUrl": "https://www.frequencynews.ca/news/burnaby-councillor-candidate-interviews-natalia-bember/",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "no approach stated"
+      }
+     ]
+    },
+    {
+     "id": "jessica-cai",
+     "name": "Jessica Cai",
+     "ballotName": "CAI, Jessica",
+     "incumbent": false,
+     "affiliation": {
+      "name": "Restore Burnaby Alliance",
+      "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles"
+     },
+     "declaredIndependent": false,
+     "website": "https://restoreburnaby.ca",
+     "links": [
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/restoreburnaby/"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting",
+      "https://restoreburnaby.ca/?page_id=1282"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Licensed acupuncturist and Traditional Chinese Medicine practitioner since 2007.",
+     "summarySource": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+     "positions": [
+      {
+       "issueId": null,
+       "topic": "priorities",
+       "summary": "Commits to safer communities, child health, seniors' quality of life and responsible development.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "general"
+      },
+      {
+       "issueId": "supportive-housing-and-shelters",
+       "topic": "drug use and facilities",
+       "summary": "Restore Burnaby platform: rejects supervised or other hard-drug consumption sites and incompatible facilities in residential areas.",
+       "sourceUrl": "https://restoreburnaby.ca/?page_id=1282",
+       "sourceType": "affiliation_platform",
+       "proposedLean": 2,
+       "leanReason": "opposes such facilities near homes"
+      },
+      {
+       "issueId": "property-taxes-and-city-spending",
+       "topic": "taxes",
+       "summary": "Restore Burnaby platform: opposes continual property tax increases and calls for prudent management of tax dollars.",
+       "sourceUrl": "https://restoreburnaby.ca/?page_id=1282",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -2,
+       "leanReason": "opposes ongoing increases"
+      }
+     ]
+    },
+    {
+     "id": "neil-chapman",
+     "name": "Neil Chapman",
+     "ballotName": "CHAPMAN, Neil",
+     "incumbent": false,
+     "affiliation": {
+      "name": "Restore Burnaby Alliance",
+      "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles"
+     },
+     "declaredIndependent": false,
+     "website": "https://restoreburnaby.ca",
+     "links": [
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/restoreburnaby/"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting",
+      "https://restoreburnaby.ca/?page_id=1282"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Painting contractor, catering manager and founder of a keto food brand; Burnaby resident.",
+     "summarySource": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+     "positions": [
+      {
+       "issueId": "property-taxes-and-city-spending",
+       "topic": "taxes",
+       "summary": "Prioritizes accountable taxation and efficient public services.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": -1,
+       "leanReason": "restraint"
+      },
+      {
+       "issueId": "supportive-housing-and-shelters",
+       "topic": "drug use and facilities",
+       "summary": "Restore Burnaby platform: rejects supervised or other hard-drug consumption sites and incompatible facilities in residential areas.",
+       "sourceUrl": "https://restoreburnaby.ca/?page_id=1282",
+       "sourceType": "affiliation_platform",
+       "proposedLean": 2,
+       "leanReason": "opposes such facilities near homes"
+      },
+      {
+       "issueId": "property-taxes-and-city-spending",
+       "topic": "taxes",
+       "summary": "Restore Burnaby platform: opposes continual property tax increases and calls for prudent management of tax dollars.",
+       "sourceUrl": "https://restoreburnaby.ca/?page_id=1282",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -2,
+       "leanReason": "opposes ongoing increases"
+      }
+     ]
+    },
+    {
+     "id": "allen-chen",
+     "name": "Allen Chen",
+     "ballotName": "CHEN, Allen",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": null,
+     "links": [
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/drallenchenburnaby/"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Taiwan-born physician and Confederation Seniors' Centre volunteer who founded seven senior day programs.",
+     "summarySource": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+     "positions": [
+      {
+       "issueId": null,
+       "topic": "community clinics",
+       "summary": "Advocates more community-based clinics and affordable space for non-profit health providers.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "not on an issue scale"
+      },
+      {
+       "issueId": null,
+       "topic": "seniors",
+       "summary": "Supports expanded senior services.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "general"
+      }
+     ]
+    },
+    {
+     "id": "daniel-chen",
+     "name": "Daniel Chen",
+     "ballotName": "CHEN, Daniel",
+     "incumbent": false,
+     "affiliation": {
+      "name": "Burnaby First",
+      "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles"
+     },
+     "declaredIndependent": false,
+     "website": "https://bio.site/Danchen",
+     "links": [
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/danielktchen/"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting",
+      "https://www.burnabyfirst.ca/platform"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Entrepreneur with 20+ years in branding; co-founder of Burnaby First.",
+     "summarySource": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+     "positions": [
+      {
+       "issueId": "neighbourhood-housing-and-density",
+       "topic": "development",
+       "summary": "Cites concern about overdevelopment and calls for sound planning.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": 1,
+       "leanReason": "slower growth"
+      },
+      {
+       "issueId": "property-taxes-and-city-spending",
+       "topic": "taxes",
+       "summary": "Calls for fiscal responsibility so property taxes do not burden residents and businesses.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": -1,
+       "leanReason": "restraint"
+      },
+      {
+       "issueId": "community-safety-and-policing",
+       "topic": "policing",
+       "summary": "Burnaby First platform: hire more police officers to improve the resident-to-officer ratio.",
+       "sourceUrl": "https://www.burnabyfirst.ca/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -2,
+       "leanReason": "more officers"
+      },
+      {
+       "issueId": "supportive-housing-and-shelters",
+       "topic": "low-barrier housing",
+       "summary": "Burnaby First platform: pause new low-barrier housing approvals pending community engagement; no-drugs rules in transitional housing.",
+       "sourceUrl": "https://www.burnabyfirst.ca/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": 2,
+       "leanReason": "pause new sites"
+      }
+     ]
+    },
+    {
+     "id": "daniel-cheung",
+     "name": "Daniel Cheung",
+     "ballotName": "CHEUNG, Daniel",
+     "incumbent": false,
+     "affiliation": {
+      "name": "Restore Burnaby Alliance",
+      "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles"
+     },
+     "declaredIndependent": false,
+     "website": "https://restoreburnaby.ca",
+     "links": [
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/restoreburnaby/"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting",
+      "https://restoreburnaby.ca/?page_id=1282"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Master Mariner, longshoreman executive and Burnaby business owner; resident for 10+ years.",
+     "summarySource": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+     "positions": [
+      {
+       "issueId": "council-transparency-and-engagement",
+       "topic": "provincial projects",
+       "summary": "Calls for 60-day notice and public town halls on provincial projects, ending their approval loopholes.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": -2,
+       "leanReason": "more consultation"
+      },
+      {
+       "issueId": "supportive-housing-and-shelters",
+       "topic": "facility siting",
+       "summary": "Supports fair-share planning so facilities are not concentrated in transit corridors.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": 1,
+       "leanReason": "limits on siting"
+      },
+      {
+       "issueId": "supportive-housing-and-shelters",
+       "topic": "drug use and facilities",
+       "summary": "Restore Burnaby platform: rejects supervised or other hard-drug consumption sites and incompatible facilities in residential areas.",
+       "sourceUrl": "https://restoreburnaby.ca/?page_id=1282",
+       "sourceType": "affiliation_platform",
+       "proposedLean": 2,
+       "leanReason": "opposes such facilities near homes"
+      }
+     ]
+    },
+    {
+     "id": "larry-chin",
+     "name": "Larry Chin",
+     "ballotName": "CHIN, Larry",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://www.larrychinburnaby.com/",
+     "links": [
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/larrychinburnaby/"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting",
+      "https://www.larrychinburnaby.com/",
+      "https://www.frequencynews.ca/news/burnaby-councillor-candidate-interviews-larry-chin/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "UBC Engineering graduate, 30+ year Burnaby resident, technology company founder and Public Art Committee member.",
+     "summarySource": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+     "positions": [
+      {
+       "issueId": "parks-trees-and-green-space",
+       "topic": "green space",
+       "summary": "Supports protecting green spaces and agricultural land.",
+       "sourceUrl": "https://www.larrychinburnaby.com/",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "protect green space"
+      },
+      {
+       "issueId": null,
+       "topic": "priorities",
+       "summary": "Wants to improve health care infrastructure, parks and agricultural infrastructure in Burnaby.",
+       "sourceUrl": "https://www.frequencynews.ca/news/burnaby-councillor-candidate-interviews-larry-chin/",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "general"
+      }
+     ]
+    },
+    {
+     "id": "avtar-dhinsa",
+     "name": "Avtar Dhinsa",
+     "ballotName": "DHINSA, Avtar",
+     "incumbent": false,
+     "affiliation": {
+      "name": "New Burnaby Party",
+      "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles"
+     },
+     "declaredIndependent": false,
+     "website": null,
+     "links": [
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/avtardhinsa/"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting",
+      "https://newburnaby.ca/platform/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Burnaby lawyer for nearly three decades, lifelong resident, and business and real estate law lecturer.",
+     "summarySource": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+     "positions": [
+      {
+       "issueId": null,
+       "topic": "leadership",
+       "summary": "Offers practical, accountable local leadership focused on keeping Burnaby livable.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "general"
+      },
+      {
+       "issueId": "property-taxes-and-city-spending",
+       "topic": "taxes",
+       "summary": "New Burnaby platform: 0% property tax increase in the first budget, then increases capped at inflation for four years.",
+       "sourceUrl": "https://newburnaby.ca/platform/",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -2,
+       "leanReason": "tax freeze then cap"
+      },
+      {
+       "issueId": "supportive-housing-and-shelters",
+       "topic": "drug use in housing",
+       "summary": "New Burnaby platform: prohibit illicit drug use in public spaces and government-funded housing; support treatment facilities.",
+       "sourceUrl": "https://newburnaby.ca/platform/",
+       "sourceType": "affiliation_platform",
+       "proposedLean": 1,
+       "leanReason": "stricter rules for funded housing"
+      }
+     ]
+    },
+    {
+     "id": "rocky-dong",
+     "name": "Rocky Dong",
+     "ballotName": "DONG, Rocky",
+     "incumbent": false,
+     "affiliation": {
+      "name": "Restore Burnaby Alliance",
+      "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles"
+     },
+     "declaredIndependent": false,
+     "website": "https://restoreburnaby.ca",
+     "links": [
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/restoreburnaby/"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting",
+      "https://restoreburnaby.ca/?page_id=1282"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Burnaby educator for 20+ years with a computer science degree; ran for council in 2022.",
+     "summarySource": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+     "positions": [
+      {
+       "issueId": "property-taxes-and-city-spending",
+       "topic": "tax freeze",
+       "summary": "Proposes freezing property tax increases for the next four years.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": -2,
+       "leanReason": "tax freeze"
+      },
+      {
+       "issueId": null,
+       "topic": "priorities",
+       "summary": "Lists job creation, community safety, supportive housing, property rights and environmental protection as priorities.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "general"
+      },
+      {
+       "issueId": "supportive-housing-and-shelters",
+       "topic": "drug use and facilities",
+       "summary": "Restore Burnaby platform: rejects supervised or other hard-drug consumption sites and incompatible facilities in residential areas.",
+       "sourceUrl": "https://restoreburnaby.ca/?page_id=1282",
+       "sourceType": "affiliation_platform",
+       "proposedLean": 2,
+       "leanReason": "opposes such facilities near homes"
+      }
+     ]
+    },
+    {
+     "id": "ryan-erwin",
+     "name": "Ryan Erwin",
+     "ballotName": "ERWIN, Ryan",
+     "incumbent": false,
+     "affiliation": {
+      "name": "BCA - Burnaby Citizens Association",
+      "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles"
+     },
+     "declaredIndependent": false,
+     "website": "https://burnaby-citizens.ca",
+     "links": [
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/ryan4burnaby/"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting",
+      "https://www.burnaby-citizens.ca/platform"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Burnaby-born Heiltsuk First Nation lawyer; gives pro bono legal help to seniors and works as a provincial constituency advisor.",
+     "summarySource": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+     "positions": [
+      {
+       "issueId": null,
+       "topic": "approach",
+       "summary": "Describes a collaborative, community-first approach focused on results.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "general"
+      },
+      {
+       "issueId": "affordable-rental-housing",
+       "topic": "affordable rental",
+       "summary": "BCA platform: start at least 1,000 rental homes through the city Housing Authority by 2030, using city-owned land.",
+       "sourceUrl": "https://www.burnaby-citizens.ca/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -1,
+       "leanReason": "supports city-led rental building"
+      },
+      {
+       "issueId": "parks-trees-and-green-space",
+       "topic": "parks",
+       "summary": "BCA platform: buy more parkland in underserved areas and grow the urban tree canopy to 40% by 2075.",
+       "sourceUrl": "https://www.burnaby-citizens.ca/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -1,
+       "leanReason": "supports adding parkland and canopy"
+      }
+     ]
+    },
+    {
+     "id": "tina-fiorda",
+     "name": "Tina Fiorda",
+     "ballotName": "FIORDA, Tina",
+     "incumbent": false,
+     "affiliation": {
+      "name": "Restore Burnaby Alliance",
+      "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles"
+     },
+     "declaredIndependent": false,
+     "website": "https://restoreburnaby.ca",
+     "links": [
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/restoreburnaby/"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting",
+      "https://restoreburnaby.ca/?page_id=1282"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Fashion and costume designer with about 100 film credits over 26 years; Burnaby North Secondary graduate.",
+     "summarySource": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+     "positions": [
+      {
+       "issueId": "property-taxes-and-city-spending",
+       "topic": "spending",
+       "summary": "Says she would judge proposals by whether they work, what they really cost, and who is accountable.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "no clear side"
+      },
+      {
+       "issueId": "supportive-housing-and-shelters",
+       "topic": "drug use and facilities",
+       "summary": "Restore Burnaby platform: rejects supervised or other hard-drug consumption sites and incompatible facilities in residential areas.",
+       "sourceUrl": "https://restoreburnaby.ca/?page_id=1282",
+       "sourceType": "affiliation_platform",
+       "proposedLean": 2,
+       "leanReason": "opposes such facilities near homes"
+      },
+      {
+       "issueId": "property-taxes-and-city-spending",
+       "topic": "taxes",
+       "summary": "Restore Burnaby platform: opposes continual property tax increases and calls for prudent management of tax dollars.",
+       "sourceUrl": "https://restoreburnaby.ca/?page_id=1282",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -2,
+       "leanReason": "opposes ongoing increases"
+      }
+     ]
+    },
+    {
+     "id": "gulam-firdos",
+     "name": "Gulam Firdos",
+     "ballotName": "FIRDOS, Gulam",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": null,
+     "links": [],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "City planner and former Board of Variance member.",
+     "summarySource": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+     "positions": [
+      {
+       "issueId": "neighbourhood-housing-and-density",
+       "topic": "permits",
+       "summary": "Advocates faster building permits and a universally adaptable Official Community Plan.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": -1,
+       "leanReason": "faster approvals"
+      },
+      {
+       "issueId": "affordable-rental-housing",
+       "topic": "social housing",
+       "summary": "Supports social housing for low-income residents and seniors.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": -1,
+       "leanReason": "more social housing"
+      },
+      {
+       "issueId": "council-transparency-and-engagement",
+       "topic": "consultation",
+       "summary": "Supports meaningful public consultation.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": -1,
+       "leanReason": "more consultation"
+      }
+     ]
+    },
+    {
+     "id": "joel-gibbs",
+     "name": "Joel Gibbs",
+     "ballotName": "GIBBS, Joel",
+     "incumbent": false,
+     "affiliation": {
+      "name": "Burnaby Green Party",
+      "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles"
+     },
+     "declaredIndependent": false,
+     "website": "https://joelgibbs.ca/",
+     "links": [],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting",
+      "https://joelgibbs.ca/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Burnaby renter running with the Burnaby Green Party.",
+     "summarySource": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+     "positions": [
+      {
+       "issueId": "neighbourhood-housing-and-density",
+       "topic": "housing forms",
+       "summary": "Supports allowing housing up to four storeys in all neighbourhoods, and six for affordable housing.",
+       "sourceUrl": "https://joelgibbs.ca/",
+       "sourceType": "candidate",
+       "proposedLean": -2,
+       "leanReason": "more density"
+      },
+      {
+       "issueId": "affordable-rental-housing",
+       "topic": "non-market housing",
+       "summary": "Proposes the Housing Authority rapidly build thousands of non-market rental homes; 1,500+ per year.",
+       "sourceUrl": "https://joelgibbs.ca/",
+       "sourceType": "candidate",
+       "proposedLean": -2,
+       "leanReason": "city-led building"
+      },
+      {
+       "issueId": "transit-and-street-space",
+       "topic": "transit and streets",
+       "summary": "Proposes 20% faster buses, a cycling network in three years, and sidewalks on every street in five.",
+       "sourceUrl": "https://joelgibbs.ca/",
+       "sourceType": "candidate",
+       "proposedLean": -2,
+       "leanReason": "transit priority"
+      }
+     ]
+    },
+    {
+     "id": "garnet-heidt",
+     "name": "Garnet Heidt",
+     "ballotName": "HEIDT, Garnet",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://www.garnetforburnaby.ca/",
+     "links": [
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/garnetforburnaby/"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting",
+      "https://www.garnetforburnaby.ca/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Burnaby-born commercial pest control worker who attended council meetings for a year before running.",
+     "summarySource": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+     "positions": [
+      {
+       "issueId": "property-taxes-and-city-spending",
+       "topic": "spending",
+       "summary": "Calls for closer scrutiny of spending, citing yearly tax increases and capital project overruns.",
+       "sourceUrl": "https://www.garnetforburnaby.ca/",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "restraint"
+      },
+      {
+       "issueId": "council-transparency-and-engagement",
+       "topic": "resident input",
+       "summary": "Wants resident input to reach council before decisions are finalized.",
+       "sourceUrl": "https://www.garnetforburnaby.ca/",
+       "sourceType": "candidate",
+       "proposedLean": -2,
+       "leanReason": "more input"
+      },
+      {
+       "issueId": "neighbourhood-housing-and-density",
+       "topic": "growth",
+       "summary": "Wants small businesses and neighbours included in development decisions before approval.",
+       "sourceUrl": "https://www.garnetforburnaby.ca/",
+       "sourceType": "candidate",
+       "proposedLean": null,
+       "leanReason": "process, not scale"
+      }
+     ]
+    },
+    {
+     "id": "darren-inouye",
+     "name": "Darren Inouye",
+     "ballotName": "INOUYE, Darren",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": null,
+     "links": [
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/burnabydarren/"
+      },
+      {
+       "label": "X",
+       "url": "https://x.com/bbydarren"
+      },
+      {
+       "label": "Bluesky",
+       "url": "https://bsky.app/profile/burnabydarren.bsky.social"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Software developer and SFU biochemistry and computer science graduate; ten years on the Special Olympics BC Leadership Council.",
+     "summarySource": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+     "positions": [
+      {
+       "issueId": null,
+       "topic": "recreation",
+       "summary": "Emphasizes recreation and a city people can call home through all stages of life.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "general"
+      }
+     ]
+    },
+    {
+     "id": "joe-keithley",
+     "name": "Joe Keithley",
+     "ballotName": "KEITHLEY, Joe",
+     "incumbent": true,
+     "affiliation": {
+      "name": "BCA - Burnaby Citizens Association",
+      "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles"
+     },
+     "declaredIndependent": false,
+     "website": "https://burnaby-citizens.ca",
+     "links": [],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting",
+      "https://www.frequencynews.ca/news/burnaby-councillor-candidate-interviews-joe-keithley/",
+      "https://www.burnaby-citizens.ca/platform"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Burnaby-born councillor since 2018 seeking a third term; chairs the Environment Committee; created the Harmony for All music program.",
+     "summarySource": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+     "positions": [
+      {
+       "issueId": "parks-trees-and-green-space",
+       "topic": "parks",
+       "summary": "Cites dedicating over 25% of city land to parks and green space as Environment Committee chair.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": -1,
+       "leanReason": "expanded parkland"
+      },
+      {
+       "issueId": "property-taxes-and-city-spending",
+       "topic": "record",
+       "summary": "Cites low regional tax increases alongside three new community centres and a new library.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "both"
+      },
+      {
+       "issueId": "affordable-rental-housing",
+       "topic": "affordable rental",
+       "summary": "BCA platform: start at least 1,000 rental homes through the city Housing Authority by 2030, using city-owned land.",
+       "sourceUrl": "https://www.burnaby-citizens.ca/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -1,
+       "leanReason": "supports city-led rental building"
+      }
+     ]
+    },
+    {
+     "id": "martin-kendell",
+     "name": "Martin Kendell",
+     "ballotName": "KENDELL, Martin",
+     "incumbent": false,
+     "affiliation": {
+      "name": "Burnaby Green Party",
+      "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles"
+     },
+     "declaredIndependent": false,
+     "website": "https://martinkendell.ca/",
+     "links": [],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting",
+      "https://www.frequencynews.ca/news/burnaby-councillor-candidate-interviews-martin-kendell/",
+      "https://burnabygreenparty.com/our-platform/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "25-year Burnaby resident who founded Clean Up Burnaby; 15+ years in municipal customer service; strata council president.",
+     "summarySource": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+     "positions": [
+      {
+       "issueId": "parks-trees-and-green-space",
+       "topic": "Fraser Foreshore",
+       "summary": "Advocated a light-pollution bylaw and helped stop a proposed facility at Fraser Foreshore Park.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": -1,
+       "leanReason": "protect park land"
+      },
+      {
+       "issueId": null,
+       "topic": "priorities",
+       "summary": "Aims to improve transportation infrastructure, safety and street cleanliness.",
+       "sourceUrl": "https://www.frequencynews.ca/news/burnaby-councillor-candidate-interviews-martin-kendell/",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "general"
+      },
+      {
+       "issueId": "affordable-rental-housing",
+       "topic": "non-market housing",
+       "summary": "Green platform: build 1,500+ non-market rental homes yearly through the Housing Authority and never sell city land.",
+       "sourceUrl": "https://burnabygreenparty.com/our-platform/",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -2,
+       "leanReason": "large city-led building"
+      },
+      {
+       "issueId": "community-safety-and-policing",
+       "topic": "crisis response",
+       "summary": "Green platform: create a non-police response model for mental-health and wellness calls.",
+       "sourceUrl": "https://burnabygreenparty.com/our-platform/",
+       "sourceType": "affiliation_platform",
+       "proposedLean": 2,
+       "leanReason": "non-police crisis response"
+      }
+     ]
+    },
+    {
+     "id": "cindy-lee",
+     "name": "Cindy Lee",
+     "ballotName": "LEE, Cindy",
+     "incumbent": false,
+     "affiliation": {
+      "name": "BCA - Burnaby Citizens Association",
+      "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles"
+     },
+     "declaredIndependent": false,
+     "website": "https://burnaby-citizens.ca",
+     "links": [
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/cindy4burnaby/"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting",
+      "https://www.burnaby-citizens.ca/platform"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Burnaby lawyer; six years at S.U.C.C.E.S.S. supporting newcomers and seniors; vice-chair of the North Road BIA.",
+     "summarySource": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+     "positions": [
+      {
+       "issueId": null,
+       "topic": "priorities",
+       "summary": "Commits to supporting workers, families and local businesses.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "general"
+      },
+      {
+       "issueId": "affordable-rental-housing",
+       "topic": "affordable rental",
+       "summary": "BCA platform: start at least 1,000 rental homes through the city Housing Authority by 2030, using city-owned land.",
+       "sourceUrl": "https://www.burnaby-citizens.ca/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -1,
+       "leanReason": "supports city-led rental building"
+      },
+      {
+       "issueId": "parks-trees-and-green-space",
+       "topic": "parks",
+       "summary": "BCA platform: buy more parkland in underserved areas and grow the urban tree canopy to 40% by 2075.",
+       "sourceUrl": "https://www.burnaby-citizens.ca/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -1,
+       "leanReason": "supports adding parkland and canopy"
+      }
+     ]
+    },
+    {
+     "id": "lynette-hyerin-lee",
+     "name": "Lynette Hyerin Lee",
+     "ballotName": "LEE, Lynette Hyerin",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://www.lynettelee.ca/",
+     "links": [
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/lynetteleeofficial/"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting",
+      "https://www.lynettelee.ca/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Burnaby resident since childhood with 7+ years in public-sector health policy and an MBA; Community Safety Advisory Committee member.",
+     "summarySource": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+     "positions": [
+      {
+       "issueId": "neighbourhood-housing-and-density",
+       "topic": "growth",
+       "summary": "Wants growth matched by infrastructure and transportation, addressing concerns of renters, homeowners and condo residents.",
+       "sourceUrl": "https://www.lynettelee.ca/",
+       "sourceType": "candidate",
+       "proposedLean": null,
+       "leanReason": "no side on scale"
+      },
+      {
+       "issueId": "property-taxes-and-city-spending",
+       "topic": "taxes",
+       "summary": "Supports careful management of tax dollars with measurable results.",
+       "sourceUrl": "https://www.lynettelee.ca/",
+       "sourceType": "candidate",
+       "proposedLean": null,
+       "leanReason": "general"
+      },
+      {
+       "issueId": null,
+       "topic": "access to services",
+       "summary": "Would make city services easier to use for seniors, newcomers and people facing language barriers.",
+       "sourceUrl": "https://www.lynettelee.ca/",
+       "sourceType": "candidate",
+       "proposedLean": null,
+       "leanReason": "not on a scale"
+      }
+     ]
+    },
+    {
+     "id": "richard-t-lee",
+     "name": "Richard T. Lee",
+     "ballotName": "LEE, Richard T.",
+     "incumbent": true,
+     "affiliation": {
+      "name": "New Burnaby Party",
+      "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles"
+     },
+     "declaredIndependent": false,
+     "website": "https://newburnaby.ca",
+     "links": [
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/newburnabyparty/"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting",
+      "https://ca.news.yahoo.com/against-giant-burnaby-political-status-130026974.html",
+      "https://thetyee.ca/Analysis/2026/02/26/Burnaby-Supportive-Housing-Project-Goes-Down/",
+      "https://newburnaby.ca/platform/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Councillor since 2022; former four-term MLA for Burnaby North and Deputy Speaker; worked 22 years at TRIUMF.",
+     "summarySource": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+     "positions": [
+      {
+       "issueId": "property-taxes-and-city-spending",
+       "topic": "tax freeze",
+       "summary": "Proposes a property tax freeze in the first budget, then inflation-capped increases, without staff layoffs.",
+       "sourceUrl": "https://ca.news.yahoo.com/against-giant-burnaby-political-status-130026974.html",
+       "sourceType": "news",
+       "proposedLean": -2,
+       "leanReason": "tax freeze"
+      },
+      {
+       "issueId": "supportive-housing-and-shelters",
+       "topic": "Royal Oak project",
+       "summary": "Sought council motions to suspend talks on the Royal Oak supportive housing project, citing procedural deficiency.",
+       "sourceUrl": "https://thetyee.ca/Analysis/2026/02/26/Burnaby-Supportive-Housing-Project-Goes-Down/",
+       "sourceType": "news",
+       "proposedLean": 2,
+       "leanReason": "halt project"
+      },
+      {
+       "issueId": "council-transparency-and-engagement",
+       "topic": "accountability",
+       "summary": "Says council needs more debate, accountability and transparency.",
+       "sourceUrl": "https://ca.news.yahoo.com/against-giant-burnaby-political-status-130026974.html",
+       "sourceType": "news",
+       "proposedLean": -1,
+       "leanReason": "more open debate"
+      },
+      {
+       "issueId": "parks-trees-and-green-space",
+       "topic": "parks",
+       "summary": "New Burnaby platform: prevent any loss of parks, ensure a five-minute walk to a park, and preserve tree canopy.",
+       "sourceUrl": "https://newburnaby.ca/platform/",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -1,
+       "leanReason": "protect and expand park access"
+      }
+     ]
+    },
+    {
+     "id": "jason-martin",
+     "name": "Jason Martin",
+     "ballotName": "MARTIN, Jason",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": null,
+     "links": [],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Self-employed in production for 20+ years and former medical technician; vice-president of a 280-unit strata.",
+     "summarySource": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+     "positions": [
+      {
+       "issueId": "property-taxes-and-city-spending",
+       "topic": "spending",
+       "summary": "Says capital projects should not automatically raise taxes; would question waste and scale back ineffective programs.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": -2,
+       "leanReason": "restraint"
+      },
+      {
+       "issueId": "parks-trees-and-green-space",
+       "topic": "parks",
+       "summary": "Supports preserving parks and trees.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": -1,
+       "leanReason": "protect parks"
+      }
+     ]
+    },
+    {
+     "id": "carrie-mclaren",
+     "name": "Carrie McLaren",
+     "ballotName": "MCLAREN, Carrie",
+     "incumbent": false,
+     "affiliation": {
+      "name": "Burnaby Green Party",
+      "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles"
+     },
+     "declaredIndependent": false,
+     "website": "https://burnabygreenparty.com",
+     "links": [
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/burnabygreenparty/"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting",
+      "https://burnabygreenparty.com/our-platform/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Director of a Burnaby non-profit housing provider and housing co-op board member; BCIT and Capilano University graduate.",
+     "summarySource": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+     "positions": [
+      {
+       "issueId": "affordable-rental-housing",
+       "topic": "housing",
+       "summary": "Prioritizes expanding affordable housing and states housing is a human right.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": -2,
+       "leanReason": "more affordable housing"
+      },
+      {
+       "issueId": null,
+       "topic": "climate",
+       "summary": "Supports climate action, inclusive neighbourhoods and a stronger local economy.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "general"
+      },
+      {
+       "issueId": "transit-and-street-space",
+       "topic": "transit and sidewalks",
+       "summary": "Green platform: make peak buses 20% faster with transit priority and add sidewalks on every street within five years.",
+       "sourceUrl": "https://burnabygreenparty.com/our-platform/",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -2,
+       "leanReason": "transit priority and sidewalks"
+      }
+     ]
+    },
+    {
+     "id": "nash-milani",
+     "name": "Nash Milani",
+     "ballotName": "MILANI, Nash",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": null,
+     "links": [
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/milaniforburnaby2026/"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Former third-generation City of Burnaby employee and former federal Green Party candidate.",
+     "summarySource": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+     "positions": [
+      {
+       "issueId": "neighbourhood-housing-and-density",
+       "topic": "condo development",
+       "summary": "Wants less condo overdevelopment and rejects projects lacking amenities or diverse housing.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": 1,
+       "leanReason": "slower growth"
+      },
+      {
+       "issueId": null,
+       "topic": "recreation and transit",
+       "summary": "Supports repairing recreation centres and improving traffic and transit.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "general"
+      },
+      {
+       "issueId": null,
+       "topic": "contracts",
+       "summary": "Proposes ending city partnerships with American companies.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "not on a scale"
+      }
+     ]
+    },
+    {
+     "id": "ragina-naidu",
+     "name": "Ragina Naidu",
+     "ballotName": "NAIDU, Ragina",
+     "incumbent": false,
+     "affiliation": {
+      "name": "Restore Burnaby Alliance",
+      "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles"
+     },
+     "declaredIndependent": false,
+     "website": "https://restoreburnaby.ca",
+     "links": [
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/restoreburnaby/"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting",
+      "https://restoreburnaby.ca/?page_id=1282"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Scientist, entrepreneur and business leader with a background in cancer drug research.",
+     "summarySource": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+     "positions": [
+      {
+       "issueId": null,
+       "topic": "priorities",
+       "summary": "Priorities include affordability, responsible spending, community safety and support for seniors and families.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "general"
+      },
+      {
+       "issueId": "supportive-housing-and-shelters",
+       "topic": "drug use and facilities",
+       "summary": "Restore Burnaby platform: rejects supervised or other hard-drug consumption sites and incompatible facilities in residential areas.",
+       "sourceUrl": "https://restoreburnaby.ca/?page_id=1282",
+       "sourceType": "affiliation_platform",
+       "proposedLean": 2,
+       "leanReason": "opposes such facilities near homes"
+      },
+      {
+       "issueId": "property-taxes-and-city-spending",
+       "topic": "taxes",
+       "summary": "Restore Burnaby platform: opposes continual property tax increases and calls for prudent management of tax dollars.",
+       "sourceUrl": "https://restoreburnaby.ca/?page_id=1282",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -2,
+       "leanReason": "opposes ongoing increases"
+      }
+     ]
+    },
+    {
+     "id": "morgan-nicholsfigueiredo",
+     "name": "Morgan Nicholsfigueiredo",
+     "ballotName": "NICHOLSFIGUEIREDO, Morgan",
+     "incumbent": false,
+     "affiliation": {
+      "name": "New Burnaby Party",
+      "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles"
+     },
+     "declaredIndependent": false,
+     "website": "https://newburnaby.ca",
+     "links": [
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/morgannicholsfigueiredo/"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting",
+      "https://newburnaby.ca/platform/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Third-generation Burnaby resident with 30+ years in commercial property management; elected member of the city's Transportation Committee.",
+     "summarySource": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+     "positions": [
+      {
+       "issueId": null,
+       "topic": "growth",
+       "summary": "Advocates diverse housing and responsible growth with climate resilience.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "general"
+      },
+      {
+       "issueId": "parks-trees-and-green-space",
+       "topic": "green space",
+       "summary": "Supports protecting green space and expanding recreation.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": -1,
+       "leanReason": "protect green space"
+      },
+      {
+       "issueId": "property-taxes-and-city-spending",
+       "topic": "taxes",
+       "summary": "New Burnaby platform: 0% property tax increase in the first budget, then increases capped at inflation for four years.",
+       "sourceUrl": "https://newburnaby.ca/platform/",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -2,
+       "leanReason": "tax freeze then cap"
+      }
+     ]
+    },
+    {
+     "id": "rea-park",
+     "name": "Rea Park",
+     "ballotName": "PARK, Rea",
+     "incumbent": false,
+     "affiliation": {
+      "name": "BCA - Burnaby Citizens Association",
+      "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles"
+     },
+     "declaredIndependent": false,
+     "website": "https://burnaby-citizens.ca",
+     "links": [
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/rea4burnaby/"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting",
+      "https://www.burnaby-citizens.ca/platform"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Burnaby constituency advisor with a decade in front-line public service; founder of the community group CANAREA.",
+     "summarySource": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+     "positions": [
+      {
+       "issueId": "affordable-rental-housing",
+       "topic": "affordable rental",
+       "summary": "BCA platform: start at least 1,000 rental homes through the city Housing Authority by 2030, using city-owned land.",
+       "sourceUrl": "https://www.burnaby-citizens.ca/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -1,
+       "leanReason": "supports city-led rental building"
+      },
+      {
+       "issueId": "parks-trees-and-green-space",
+       "topic": "parks",
+       "summary": "BCA platform: buy more parkland in underserved areas and grow the urban tree canopy to 40% by 2075.",
+       "sourceUrl": "https://www.burnaby-citizens.ca/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -1,
+       "leanReason": "supports adding parkland and canopy"
+      },
+      {
+       "issueId": "property-taxes-and-city-spending",
+       "topic": "taxes",
+       "summary": "BCA platform: keep the city debt-free and property taxes among the lowest in Metro Vancouver.",
+       "sourceUrl": "https://www.burnaby-citizens.ca/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": null,
+       "leanReason": "no clear side between freeze and investment"
+      }
+     ]
+    },
+    {
+     "id": "janet-poon",
+     "name": "Janet Poon",
+     "ballotName": "POON, Janet",
+     "incumbent": false,
+     "affiliation": {
+      "name": "Restore Burnaby Alliance",
+      "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles"
+     },
+     "declaredIndependent": false,
+     "website": "https://restoreburnaby.ca",
+     "links": [
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/restoreburnaby/"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting",
+      "https://restoreburnaby.ca/?page_id=1282"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Former government regulator and senior compliance professional with law, accounting/finance and EMBA degrees.",
+     "summarySource": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+     "positions": [
+      {
+       "issueId": null,
+       "topic": "priorities",
+       "summary": "Priorities include affordability, safer communities, responsible growth and transparent government.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "general"
+      },
+      {
+       "issueId": "supportive-housing-and-shelters",
+       "topic": "drug use and facilities",
+       "summary": "Restore Burnaby platform: rejects supervised or other hard-drug consumption sites and incompatible facilities in residential areas.",
+       "sourceUrl": "https://restoreburnaby.ca/?page_id=1282",
+       "sourceType": "affiliation_platform",
+       "proposedLean": 2,
+       "leanReason": "opposes such facilities near homes"
+      },
+      {
+       "issueId": "property-taxes-and-city-spending",
+       "topic": "taxes",
+       "summary": "Restore Burnaby platform: opposes continual property tax increases and calls for prudent management of tax dollars.",
+       "sourceUrl": "https://restoreburnaby.ca/?page_id=1282",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -2,
+       "leanReason": "opposes ongoing increases"
+      }
+     ]
+    },
+    {
+     "id": "fiorella-ravelli",
+     "name": "Fiorella Ravelli",
+     "ballotName": "RAVELLI, Fiorella",
+     "incumbent": false,
+     "affiliation": {
+      "name": "Burnaby First",
+      "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles"
+     },
+     "declaredIndependent": false,
+     "website": "https://burnabyfirst.ca",
+     "links": [
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/fiorellaravelli.burnaby/"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting",
+      "https://www.burnabyfirst.ca/platform"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Burnaby-born; advises small and medium businesses on employment law and workplace safety.",
+     "summarySource": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+     "positions": [
+      {
+       "issueId": "property-taxes-and-city-spending",
+       "topic": "spending",
+       "summary": "Wants efficient, transparent use of city funds and long-term planning to ease the spending burden.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": -1,
+       "leanReason": "restraint"
+      },
+      {
+       "issueId": "neighbourhood-housing-and-density",
+       "topic": "multiplexes",
+       "summary": "Burnaby First platform: rezone to reflect neighbourhood character and require more on-site parking for new multi-unit housing.",
+       "sourceUrl": "https://www.burnabyfirst.ca/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": 2,
+       "leanReason": "limit size, more parking"
+      },
+      {
+       "issueId": "community-safety-and-policing",
+       "topic": "policing",
+       "summary": "Burnaby First platform: hire more police officers to improve the resident-to-officer ratio.",
+       "sourceUrl": "https://www.burnabyfirst.ca/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -2,
+       "leanReason": "more officers"
+      }
+     ]
+    },
+    {
+     "id": "konstantine-roccas",
+     "name": "Konstantine Roccas",
+     "ballotName": "ROCCAS, Konstantine",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": null,
+     "links": [
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/kosteeroccas/"
+      },
+      {
+       "label": "X",
+       "url": "https://x.com/kosteeroccas"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": null,
+     "summarySource": null,
+     "positions": [
+      {
+       "issueId": "council-transparency-and-engagement",
+       "topic": "youth involvement",
+       "summary": "Wants more young people involved in civic decisions and commits to answering every message.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": -1,
+       "leanReason": "more engagement"
+      }
+     ]
+    },
+    {
+     "id": "maita-santiago",
+     "name": "Maita Santiago",
+     "ballotName": "SANTIAGO, Maita",
+     "incumbent": true,
+     "affiliation": {
+      "name": "BCA - Burnaby Citizens Association",
+      "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles"
+     },
+     "declaredIndependent": false,
+     "website": "https://burnaby-citizens.ca",
+     "links": [
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/maitasantiago.burnaby/"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting",
+      "https://www.burnaby-citizens.ca/platform"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Councillor since 2022 and Metrotown resident; chairs the Access Advisory Committee and sits on the library board.",
+     "summarySource": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+     "positions": [
+      {
+       "issueId": "affordable-rental-housing",
+       "topic": "affordable rental",
+       "summary": "BCA platform: start at least 1,000 rental homes through the city Housing Authority by 2030, using city-owned land.",
+       "sourceUrl": "https://www.burnaby-citizens.ca/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -1,
+       "leanReason": "supports city-led rental building"
+      },
+      {
+       "issueId": "parks-trees-and-green-space",
+       "topic": "parks",
+       "summary": "BCA platform: buy more parkland in underserved areas and grow the urban tree canopy to 40% by 2075.",
+       "sourceUrl": "https://www.burnaby-citizens.ca/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -1,
+       "leanReason": "supports adding parkland and canopy"
+      },
+      {
+       "issueId": "property-taxes-and-city-spending",
+       "topic": "taxes",
+       "summary": "BCA platform: keep the city debt-free and property taxes among the lowest in Metro Vancouver.",
+       "sourceUrl": "https://www.burnaby-citizens.ca/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": null,
+       "leanReason": "no clear side between freeze and investment"
+      }
+     ]
+    },
+    {
+     "id": "tara-shushtarian",
+     "name": "Tara Shushtarian",
+     "ballotName": "SHUSHTARIAN, Tara",
+     "incumbent": false,
+     "affiliation": {
+      "name": "Burnaby Green Party",
+      "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles"
+     },
+     "declaredIndependent": false,
+     "website": "https://burnabygreenparty.com",
+     "links": [
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/tarashushtarian/"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting",
+      "https://burnabygreenparty.com/our-platform/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Environmental and social justice advocate; two terms on the city's Environment Committee; Fair Vote Canada board member.",
+     "summarySource": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+     "positions": [
+      {
+       "issueId": null,
+       "topic": "priorities",
+       "summary": "Priorities include affordable housing, transit accessibility, community safety and parks.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "general"
+      },
+      {
+       "issueId": "affordable-rental-housing",
+       "topic": "non-market housing",
+       "summary": "Green platform: build 1,500+ non-market rental homes yearly through the Housing Authority and never sell city land.",
+       "sourceUrl": "https://burnabygreenparty.com/our-platform/",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -2,
+       "leanReason": "large city-led building"
+      },
+      {
+       "issueId": "community-safety-and-policing",
+       "topic": "crisis response",
+       "summary": "Green platform: create a non-police response model for mental-health and wellness calls.",
+       "sourceUrl": "https://burnabygreenparty.com/our-platform/",
+       "sourceType": "affiliation_platform",
+       "proposedLean": 2,
+       "leanReason": "non-police crisis response"
+      }
+     ]
+    },
+    {
+     "id": "kiran-singh",
+     "name": "Kiran Singh",
+     "ballotName": "SINGH, Kiran",
+     "incumbent": false,
+     "affiliation": {
+      "name": "BCA - Burnaby Citizens Association",
+      "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles"
+     },
+     "declaredIndependent": false,
+     "website": "https://burnaby-citizens.ca/candidates/kiransingh",
+     "links": [
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/kiransingh4burnaby/"
+      },
+      {
+       "label": "X",
+       "url": "https://x.com/vancitysingh"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting",
+      "https://www.burnaby-citizens.ca/platform"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Investigative and municipal reporter, formerly a CBC News reporter and producer.",
+     "summarySource": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+     "positions": [
+      {
+       "issueId": "transit-and-street-space",
+       "topic": "transit",
+       "summary": "Advocates equitable transit and active transportation, plus arts and recreation investment.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": -1,
+       "leanReason": "supports transit and active transport"
+      },
+      {
+       "issueId": "affordable-rental-housing",
+       "topic": "affordable rental",
+       "summary": "BCA platform: start at least 1,000 rental homes through the city Housing Authority by 2030, using city-owned land.",
+       "sourceUrl": "https://www.burnaby-citizens.ca/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -1,
+       "leanReason": "supports city-led rental building"
+      },
+      {
+       "issueId": "parks-trees-and-green-space",
+       "topic": "parks",
+       "summary": "BCA platform: buy more parkland in underserved areas and grow the urban tree canopy to 40% by 2075.",
+       "sourceUrl": "https://www.burnaby-citizens.ca/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -1,
+       "leanReason": "supports adding parkland and canopy"
+      }
+     ]
+    },
+    {
+     "id": "philip-stojanovski",
+     "name": "Philip Stojanovski",
+     "ballotName": "STOJANOVSKI, Philip",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": null,
+     "links": [],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting",
+      "https://www.frequencynews.ca/news/burnaby-councillor-candidate-interviews-philip-stojanovski/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Professional workplace investigator.",
+     "summarySource": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+     "positions": [
+      {
+       "issueId": "neighbourhood-housing-and-density",
+       "topic": "planning",
+       "summary": "Wants better planning before major building approvals, citing traffic congestion from rapid growth.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": 1,
+       "leanReason": "slower approvals"
+      },
+      {
+       "issueId": null,
+       "topic": "traffic",
+       "summary": "Focuses on traffic flow, safer streets and housing affordability.",
+       "sourceUrl": "https://www.frequencynews.ca/news/burnaby-councillor-candidate-interviews-philip-stojanovski/",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "general"
+      }
+     ]
+    },
+    {
+     "id": "tom-tao",
+     "name": "Tom Tao",
+     "ballotName": "TAO, Tom",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": null,
+     "links": [
+      {
+       "label": "X",
+       "url": "https://x.com/tomshtao"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "82-year-old Burnaby resident running with a focus on seniors and future generations.",
+     "summarySource": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+     "positions": [
+      {
+       "issueId": null,
+       "topic": "night economy",
+       "summary": "Proposes a winter night economy and planning for earthquakes, water and food security.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "not on a scale"
+      },
+      {
+       "issueId": null,
+       "topic": "seniors and safety",
+       "summary": "Supports senior-friendly policies and high-rise safety measures.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "general"
+      }
+     ]
+    },
+    {
+     "id": "daniel-tetrault",
+     "name": "Daniel Tetrault",
+     "ballotName": "TETRAULT, Daniel",
+     "incumbent": true,
+     "affiliation": {
+      "name": "BCA - Burnaby Citizens Association",
+      "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles"
+     },
+     "declaredIndependent": false,
+     "website": "https://burnaby-citizens.ca",
+     "links": [
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/danieltetraultbby/"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting",
+      "https://www.burnaby-citizens.ca/platform"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Councillor since 2022; Moscrop Secondary teacher and former Burnaby Teachers' Association president; 20+ year resident.",
+     "summarySource": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+     "positions": [
+      {
+       "issueId": "affordable-rental-housing",
+       "topic": "record",
+       "summary": "Cites work to cut swim-lesson waitlists, expand sidewalks and fast-track affordable housing.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": -1,
+       "leanReason": "fast-tracked affordable housing"
+      },
+      {
+       "issueId": "parks-trees-and-green-space",
+       "topic": "parks",
+       "summary": "BCA platform: buy more parkland in underserved areas and grow the urban tree canopy to 40% by 2075.",
+       "sourceUrl": "https://www.burnaby-citizens.ca/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -1,
+       "leanReason": "supports adding parkland and canopy"
+      },
+      {
+       "issueId": "property-taxes-and-city-spending",
+       "topic": "taxes",
+       "summary": "BCA platform: keep the city debt-free and property taxes among the lowest in Metro Vancouver.",
+       "sourceUrl": "https://www.burnaby-citizens.ca/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": null,
+       "leanReason": "no clear side between freeze and investment"
+      }
+     ]
+    },
+    {
+     "id": "vincent-tong",
+     "name": "Vincent Tong",
+     "ballotName": "TONG, Vincent",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://vtbetterbc.carrd.co",
+     "links": [
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/vtbetterbc/"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Metrotown homeowner and BC Public Service professional for nine years in homelessness, disability and health services.",
+     "summarySource": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+     "positions": [
+      {
+       "issueId": "supportive-housing-and-shelters",
+       "topic": "drug houses",
+       "summary": "Opposes drug houses in neighbourhoods as part of a safe-communities priority.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": 1,
+       "leanReason": "stricter limits"
+      },
+      {
+       "issueId": "property-taxes-and-city-spending",
+       "topic": "taxes",
+       "summary": "Supports lower taxes.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": -2,
+       "leanReason": "lower taxes"
+      },
+      {
+       "issueId": "parks-trees-and-green-space",
+       "topic": "growth and green space",
+       "summary": "Supports housing growth that protects green space.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "balance"
+      }
+     ]
+    },
+    {
+     "id": "neha-unadkat",
+     "name": "Neha Unadkat",
+     "ballotName": "UNADKAT, Neha",
+     "incumbent": false,
+     "affiliation": {
+      "name": "New Burnaby Party",
+      "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles"
+     },
+     "declaredIndependent": false,
+     "website": null,
+     "links": [
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/neha_unadkat/"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting",
+      "https://newburnaby.ca/platform/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Burnaby resident for 40+ years; founding director of the Burnaby Builders and Developers Association; finance and housing background.",
+     "summarySource": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+     "positions": [
+      {
+       "issueId": null,
+       "topic": "development",
+       "summary": "Advocates transparent spending and responsible development with affordable housing.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "general"
+      },
+      {
+       "issueId": null,
+       "topic": "jobs",
+       "summary": "Supports protecting essential services and jobs, apprenticeships and skilled career pathways.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "general"
+      },
+      {
+       "issueId": "property-taxes-and-city-spending",
+       "topic": "taxes",
+       "summary": "New Burnaby platform: 0% property tax increase in the first budget, then increases capped at inflation for four years.",
+       "sourceUrl": "https://newburnaby.ca/platform/",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -2,
+       "leanReason": "tax freeze then cap"
+      }
+     ]
+    },
+    {
+     "id": "mary-b-villa-y-battenberg",
+     "name": "Mary B Villa y Battenberg",
+     "ballotName": "VILLA Y BATTENBERG, Mary B",
+     "incumbent": false,
+     "affiliation": {
+      "name": "Burnaby First",
+      "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles"
+     },
+     "declaredIndependent": false,
+     "website": "https://burnabyfirst.ca",
+     "links": [
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/maryblanca.burnaby/"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting",
+      "https://www.burnabyfirst.ca/platform"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Burnaby resident for 13 years and licensed financial professional; has organized 200+ community events.",
+     "summarySource": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+     "positions": [
+      {
+       "issueId": "neighbourhood-housing-and-density",
+       "topic": "multiplexes",
+       "summary": "Burnaby First platform: rezone to reflect neighbourhood character and require more on-site parking for new multi-unit housing.",
+       "sourceUrl": "https://www.burnabyfirst.ca/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": 2,
+       "leanReason": "limit size, more parking"
+      },
+      {
+       "issueId": "community-safety-and-policing",
+       "topic": "policing",
+       "summary": "Burnaby First platform: hire more police officers to improve the resident-to-officer ratio.",
+       "sourceUrl": "https://www.burnabyfirst.ca/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -2,
+       "leanReason": "more officers"
+      },
+      {
+       "issueId": "supportive-housing-and-shelters",
+       "topic": "low-barrier housing",
+       "summary": "Burnaby First platform: pause new low-barrier housing approvals pending community engagement; no-drugs rules in transitional housing.",
+       "sourceUrl": "https://www.burnabyfirst.ca/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": 2,
+       "leanReason": "pause new sites"
+      }
+     ]
+    },
+    {
+     "id": "james-wang",
+     "name": "James Wang",
+     "ballotName": "WANG, James",
+     "incumbent": true,
+     "affiliation": {
+      "name": "BCA - Burnaby Citizens Association",
+      "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles"
+     },
+     "declaredIndependent": false,
+     "website": "https://burnaby-citizens.ca",
+     "links": [
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/james4burnaby/"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting",
+      "https://www.burnaby-citizens.ca/platform"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Councillor and Burnaby resident for 20+ years; two-term school trustee before 2014.",
+     "summarySource": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+     "positions": [
+      {
+       "issueId": "property-taxes-and-city-spending",
+       "topic": "taxes",
+       "summary": "Commits to keeping tax increases among the lowest in the region while improving affordability.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "no clear side"
+      },
+      {
+       "issueId": "affordable-rental-housing",
+       "topic": "affordable rental",
+       "summary": "BCA platform: start at least 1,000 rental homes through the city Housing Authority by 2030, using city-owned land.",
+       "sourceUrl": "https://www.burnaby-citizens.ca/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -1,
+       "leanReason": "supports city-led rental building"
+      },
+      {
+       "issueId": "parks-trees-and-green-space",
+       "topic": "parks",
+       "summary": "BCA platform: buy more parkland in underserved areas and grow the urban tree canopy to 40% by 2075.",
+       "sourceUrl": "https://www.burnaby-citizens.ca/platform",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -1,
+       "leanReason": "supports adding parkland and canopy"
+      }
+     ]
+    },
+    {
+     "id": "david-xie",
+     "name": "David Xie",
+     "ballotName": "XIE, David",
+     "incumbent": false,
+     "affiliation": {
+      "name": "New Burnaby Party",
+      "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles"
+     },
+     "declaredIndependent": false,
+     "website": "https://newburnaby.ca/candidate/david-xie/",
+     "links": [
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/davidforburnaby/"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting",
+      "https://www.frequencynews.ca/news/burnaby-councillor-candidate-interviews-david-xie/",
+      "https://newburnaby.ca/platform/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Burnaby resident for nearly a decade with careers in hospitality and executive recruitment; UBC graduate.",
+     "summarySource": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+     "positions": [
+      {
+       "issueId": "property-taxes-and-city-spending",
+       "topic": "tax freeze",
+       "summary": "Proposes a one-year freeze on property tax increases and making it easier for businesses to open.",
+       "sourceUrl": "https://www.frequencynews.ca/news/burnaby-councillor-candidate-interviews-david-xie/",
+       "sourceType": "news",
+       "proposedLean": -2,
+       "leanReason": "tax freeze"
+      },
+      {
+       "issueId": "council-transparency-and-engagement",
+       "topic": "consultation",
+       "summary": "Has pressed officials for transparency and meaningful consultation.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": -1,
+       "leanReason": "more consultation"
+      },
+      {
+       "issueId": "supportive-housing-and-shelters",
+       "topic": "drug use in housing",
+       "summary": "New Burnaby platform: prohibit illicit drug use in public spaces and government-funded housing; support treatment facilities.",
+       "sourceUrl": "https://newburnaby.ca/platform/",
+       "sourceType": "affiliation_platform",
+       "proposedLean": 1,
+       "leanReason": "stricter rules for funded housing"
+      }
+     ]
+    },
+    {
+     "id": "sabrina-yang",
+     "name": "Sabrina Yang",
+     "ballotName": "YANG, Sabrina",
+     "incumbent": false,
+     "affiliation": {
+      "name": "New Burnaby Party",
+      "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles"
+     },
+     "declaredIndependent": false,
+     "website": "https://newburnaby.ca",
+     "links": [
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/bbyresident/"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+      "https://www.burnaby.ca/our-city/news/2026-09-21/declaration-election-voting",
+      "https://newburnaby.ca/platform/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Burnaby resident since 2009 and realtor since 2011.",
+     "summarySource": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+     "positions": [
+      {
+       "issueId": null,
+       "topic": "priorities",
+       "summary": "Focuses on neighbourhood safety and accountable, resident-focused leadership.",
+       "sourceUrl": "https://www.burnaby.ca/our-city/mayor-and-council/elections/candidates/office-of-councillor-candidate-profiles",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "general"
+      },
+      {
+       "issueId": "property-taxes-and-city-spending",
+       "topic": "taxes",
+       "summary": "New Burnaby platform: 0% property tax increase in the first budget, then increases capped at inflation for four years.",
+       "sourceUrl": "https://newburnaby.ca/platform/",
+       "sourceType": "affiliation_platform",
+       "proposedLean": -2,
+       "leanReason": "tax freeze then cap"
+      },
+      {
+       "issueId": "supportive-housing-and-shelters",
+       "topic": "drug use in housing",
+       "summary": "New Burnaby platform: prohibit illicit drug use in public spaces and government-funded housing; support treatment facilities.",
+       "sourceUrl": "https://newburnaby.ca/platform/",
+       "sourceType": "affiliation_platform",
+       "proposedLean": 1,
+       "leanReason": "stricter rules for funded housing"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "notes": "Candidate list from City of Burnaby declaration of election by voting (6 mayor, 42 councillor). Affiliations taken from the official City candidate profile pages; the declaration notice itself does not show affiliations, and the Elections BC elector organization register PDF and news-release page are robots-disallowed, so ballot affiliation names could not be cross-checked there.; Sabina Hsu's official profile lists 'Action One' as her elector organization, but news coverage (Freshet News, Burnaby Heights Merchants Association, Board of Trade) lists her as independent and no registered organization of that name could be confirmed; affiliation set to null pending verification.; Gulam Firdos's official profile lists 'Independent Liberal'; treated as independent (affiliation null), consistent with Freshet News and Frequency News.; Avtar Dhinsa's official profile shows 'New Burnaby' while other members show 'New Burnaby Party'; mapped to New Burnaby Party (Freshet News lists him on that slate). Verify ballot wording.; Ballot names use the official declaration's spelling (e.g., ABCROBINHOOD, NICHOLSFIGUEIREDO, VILLA Y BATTENBERG); display first/last names split from that.; Incumbents: Mayor Hurley; Councillors Keithley, Santiago, Tetrault, James Wang (BCA) and Richard T. Lee (New Burnaby, elected 2022 with One Burnaby). Rocky Dong ran in 2022 but was not elected.; Advance voting location names not captured: burnaby.widen.net map is robots-disallowed and the June 23, 2026 council report (escribemeetings) returned 403; locations field points to the City's interactive map.; Blocked: CBC Burnaby election preview and CBC multiplex article returned 403; burnabygreenparty.com about page had no self-description, so its blurb summarizes its platform page instead.; Many council candidates have only the official 150-word profile as a source; several slate members' positions are drawn from their elector organization's platform (sourceType affiliation_platform). Frequency News (CJSF) interviews are audio, so only their written summaries were used.; No positions found tied to issues for Darren Inouye, Allen Chen, Tom Tao beyond general priorities (positions have issueId null). Hanzhi Wang and Konstantine Roccas have no sourced background summary (null).; Mayor candidates' Burnaby Heights questionnaire (Sept. 29, 2026): ABCROBINHOOD did not respond.; csdId 5915025 (Burnaby CY) from knowledge; not re-verified on StatCan in this session.; No ballot questions found on City election pages."
+}

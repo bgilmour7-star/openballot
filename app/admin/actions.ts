@@ -2,7 +2,8 @@
 import { redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
 import { currentAdmin } from "@/lib/auth/server";
-import { one, q } from "@/lib/db";
+import { db, one, q } from "@/lib/db";
+import { refreshPostal } from "@/lib/location";
 
 async function requireAdmin() {
   const a = await currentAdmin();
@@ -163,4 +164,57 @@ export async function approveAllNoSide() {
   await audit(a.email, "position_side", "bulk", "approve_no_side", null, { count: rows.length });
   revalidatePath("/", "layout");
   redirect(`/admin/leans?saved=1`);
+}
+
+const slugify = (x: string) => x.toLowerCase().normalize("NFKD").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+
+/** Adds a municipality we don't cover yet: government, election, mayor and council races. Live immediately. */
+export async function addMunicipality(f: FormData) {
+  const a = await requireAdmin();
+  const cityName = s(f, "city_name", 200)!;
+  const legal = s(f, "legal_name", 200)!;
+  const seats = Math.max(1, Math.min(20, Number(s(f, "seats", 3) ?? 8) || 8));
+  const votingDay = s(f, "voting_day", 10) ?? "2026-10-17";
+  const back = (err: string) => redirect(`/admin/locations?err=${err}&city=${encodeURIComponent(cityName)}`);
+  // Postal codes entered in this census subdivision. Re-look them up so we learn its census code.
+  const codes = await q<{ postal_code: string }>(`select distinct v.postal_code from voters v join postal_cache pc on pc.postal_code='v2:'||v.postal_code
+    where v.city is null and lower(pc.result->>'cityName')=lower($1) limit 40`, [cityName]);
+  const csdCounts = new Map<string, number>();
+  for (const { postal_code } of codes) {
+    try { const r = await refreshPostal(postal_code); if (r.csdId) csdCounts.set(r.csdId, (csdCounts.get(r.csdId) ?? 0) + 1); } catch {}
+  }
+  const csdId = [...csdCounts.entries()].sort((x, y) => y[1] - x[1])[0]?.[0];
+  if (!csdId) back("csd");
+  if (await one(`select 1 from municipalities where csd_id=$1`, [csdId])) back("exists");
+  const govId = slugify(legal);
+  let muniId = slugify(cityName);
+  if (await one(`select 1 from municipalities where id=$1`, [muniId])) muniId = govId;
+  if (await one(`select 1 from governments where id=$1`, [govId]) || await one(`select 1 from municipalities where id=$1`, [muniId])) back("exists");
+  const electionId = `${muniId}-local-${votingDay.slice(0, 4)}`;
+  await db().transaction([
+    db().query(`insert into governments (id,name,level,sort) values ($1,$2,'municipal',1)`, [govId, legal]),
+    db().query(`insert into municipalities (id,name,csd_id,gov_id) values ($1,$2,$3,$4)`, [muniId, legal, csdId, govId]),
+    db().query(`insert into elections (id,government_id,name,level,voting_day) values ($1,$2,$3,'municipal',$4)`, [electionId, govId, `${legal} general local election`, votingDay]),
+    db().query(`insert into races (id,election_id,office,seats,area,area_name,sort) values ($1,$2,'Mayor',1,$3,$4,0)`, [`${muniId}-mayor`, electionId, muniId, legal]),
+    db().query(`insert into races (id,election_id,office,seats,area,area_name,sort) values ($1,$2,'Councillor',$3,$4,$5,1)`, [`${muniId}-council`, electionId, seats, muniId, legal]),
+  ]);
+  const moved = await q(`update voters v set city=$1 from postal_cache pc where v.city is null and pc.postal_code='v2:'||v.postal_code and pc.result->>'csdId'=$2 returning v.id`, [muniId, csdId]);
+  await audit(a.email, "municipality", muniId, "create", null, { legal, csdId, govId, electionId, seats, votingDay, votersMatched: moved.length });
+  revalidatePath("/", "layout");
+  redirect(`/admin/locations?added=${encodeURIComponent(legal)}&matched=${moved.length}&election=${electionId}&gov=${govId}`);
+}
+
+export async function addIssue(f: FormData) {
+  const a = await requireAdmin();
+  const gov = s(f, "government_id", 100)!;
+  const title = s(f, "title", 120)!;
+  const id = `${gov}--${slugify(title)}`;
+  const next = await one<{ n: number }>(`select coalesce(max(sort), -1)::int + 1 n from issues where government_id=$1`, [gov]);
+  const vals = [id, gov, title, s(f, "description", 600), s(f, "what_it_affects", 400), s(f, "who_decides", 400), s(f, "question", 300),
+    s(f, "pole_a", 300), s(f, "pole_b", 300), JSON.stringify(jsonList(s(f, "sources"))), next?.n ?? 0];
+  await q(`insert into issues (id,government_id,title,description,what_it_affects,who_decides,question,pole_a,pole_b,sources,sort) values ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11)
+    on conflict (id) do nothing`, vals);
+  await audit(a.email, "issue", id, "create", null, vals);
+  revalidatePath("/", "layout");
+  redirect(`/admin/issues/${encodeURIComponent(id)}?saved=1`);
 }

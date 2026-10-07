@@ -149,3 +149,11 @@ export function daysUntil(d: string | Date | null) {
   return Math.ceil((target - Date.now()) / 86400000);
 }
 export const host = (u?: string | null) => { try { return u ? new URL(u).hostname.replace(/^www\./, "") : ""; } catch { return u ?? ""; } };
+
+/** Municipalities we cover, by legal name (e.g. "City of Surrey"), alphabetical by place. */
+export async function coveredMunicipalities(): Promise<string[]> {
+  const rows = await q<{ name: string }>(`select name from municipalities where live`);
+  const place = (n: string) => n.replace(/^(City|District|Township|Town|Village|Corporation) of (the )?/i, "");
+  return rows.map((r) => r.name).sort((a, b) => place(a).localeCompare(place(b)) || a.localeCompare(b));
+}
+export const listJoin = (xs: string[]) => (xs.length <= 1 ? xs.join("") : `${xs.slice(0, -1).join(", ")} and ${xs[xs.length - 1]}`);

@@ -4,7 +4,7 @@ import { one, q } from "./db";
 export const VOTER_COOKIE = "ob_vid";
 export type Voter = {
   id: string; auth_user_id: string | null; email: string | null; postal_code: string | null;
-  city: "nanaimo" | "victoria" | null; riding: string | null; located_by: string | null;
+  city: string | null; riding: string | null; located_by: string | null;
 };
 const isUuid = (s?: string) => !!s && /^[0-9a-f-]{36}$/i.test(s);
 
@@ -34,10 +34,12 @@ export async function logEvent(voterId: string | null, name: string, data: Recor
 }
 
 /** Governments a located voter has votes in, in display order. */
-export function governmentsFor(v: Pick<Voter, "city" | "riding">): string[] {
+export async function governmentsFor(v: Pick<Voter, "city" | "riding">): Promise<string[]> {
   const out: string[] = [];
-  if (v.city === "nanaimo") out.push("city-of-nanaimo", "sd68");
-  if (v.city === "victoria") out.push("city-of-victoria", "sd61");
+  if (v.city) {
+    const m = await one<{ gov_id: string; school_gov_id: string | null }>(`select gov_id, school_gov_id from municipalities where id=$1`, [v.city]);
+    if (m) out.push(m.gov_id, ...(m.school_gov_id ? [m.school_gov_id] : []));
+  }
   if (v.riding) out.push("province-of-bc");
   return out;
 }

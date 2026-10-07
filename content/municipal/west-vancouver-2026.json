@@ -1,0 +1,1341 @@
+{
+ "municipality": {
+  "id": "west-vancouver",
+  "name": "District of West Vancouver",
+  "csdId": "5915055",
+  "csdName": "West Vancouver"
+ },
+ "government": {
+  "id": "district-of-west-vancouver",
+  "name": "District of West Vancouver",
+  "howBuilt": "This list draws on the District's official candidate profiles, candidates' campaign websites, the province's 2026 order on the Ambleside Centre Local Area Plan, District and news reporting on the North Shore Wastewater Treatment Plant, and news coverage of the mayoral race. We kept issues the District of West Vancouver can act on through zoning, its budget, bylaws, roads, parks, and facilities. Issues mainly run by the province, such as health care, are left out."
+ },
+ "issues": [
+  {
+   "id": "housing-growth-and-density",
+   "title": "Housing growth and density",
+   "description": "How many new homes West Vancouver adds, what types, and where, including under the Ambleside Centre Local Area Plan and provincial housing targets.",
+   "whatItAffects": "Young families, seniors looking to downsize, renters, local workers, and residents of neighbourhoods where new buildings may go.",
+   "whoDecides": "Council sets zoning and neighbourhood plans and approves rezonings, within housing targets and orders set by the province.",
+   "viewQuestion": {
+    "question": "How should West Vancouver approach new housing?",
+    "poleA": "Add more homes sooner, including more density near village centres",
+    "poleB": "Add homes gradually and keep the scale of existing neighbourhoods"
+   },
+   "topicTags": [
+    "housing",
+    "land-use",
+    "cost-of-living"
+   ],
+   "sources": [
+    "https://news.gov.bc.ca/releases/2026HMA0038-000377",
+    "https://www.frequencynews.ca/news/west-vancouver-mayor-calls-for-balanced-development-and-stronger-regional-partnerships/",
+    "https://www.peterlambur.com/",
+    "https://sharonthompsonformayor.com/",
+    "https://www.lindawatt.com/"
+   ],
+   "tradeoffs": {
+    "context": "West Vancouver must meet provincial housing targets, but how fast and where it grows is still largely set by council.",
+    "a": {
+     "gains": [
+      "More homes for young families, workers, and downsizing seniors",
+      "Meeting provincial targets may reduce the chance of further provincial orders"
+     ],
+     "costs": [
+      "Some neighbourhoods may see taller buildings, more traffic, and change in character",
+      "Roads, pipes, and services may need costly upgrades sooner"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Existing neighbourhoods may keep their current scale and feel",
+      "Growth can be matched more closely to infrastructure and evacuation capacity"
+     ],
+     "costs": [
+      "Fewer new homes could keep prices and rents high for longer",
+      "Missing targets could bring more provincial intervention in local planning"
+     ]
+    }
+   }
+  },
+  {
+   "id": "property-taxes-and-spending",
+   "title": "Property taxes and spending",
+   "description": "How much property taxes rise each year and what the District spends money on.",
+   "whatItAffects": "Homeowners, renters through their rents, local businesses, and everyone who uses District services.",
+   "whoDecides": "Council adopts the annual budget and sets the municipal property tax rate and service levels.",
+   "viewQuestion": {
+    "question": "What should guide property tax decisions?",
+    "poleA": "Keep tax increases low, even if some projects or services wait",
+    "poleB": "Invest in services and facilities, even if taxes rise more"
+   },
+   "topicTags": [
+    "taxes",
+    "budget"
+   ],
+   "sources": [
+    "https://marksager.com/priorities",
+    "https://www.leelauwestvan.ca/",
+    "https://www.kirklapointe.ca/news/",
+    "https://election.westvancouver.ca/candidates/profile/k-joseph-joe-spears"
+   ],
+   "tradeoffs": {
+    "context": "Each budget weighs keeping tax bills down against funding upkeep, services, and new projects.",
+    "a": {
+     "gains": [
+      "Smaller increases in yearly tax bills for owners and businesses",
+      "Pressure to find savings and efficiencies in District operations"
+     ],
+     "costs": [
+      "Upkeep of roads, buildings, and facilities may be delayed",
+      "Deferred work can cost more when it is eventually done"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Services and facilities may be maintained or expanded sooner",
+      "Fewer repair backlogs passed on to future years"
+     ],
+     "costs": [
+      "Higher yearly tax bills for owners, and possibly rents",
+      "Less room in household budgets as other costs also rise"
+     ]
+    }
+   }
+  },
+  {
+   "id": "wastewater-plant-costs",
+   "title": "Wastewater plant cost overruns",
+   "description": "How the District responds to large cost overruns on Metro Vancouver's North Shore Wastewater Treatment Plant, which North Shore ratepayers help pay for.",
+   "whatItAffects": "Homeowners and businesses paying the District's wastewater levy and sewer fees for years to come.",
+   "whoDecides": "Metro Vancouver runs the plant; council decides how the District passes costs to residents (levies, reserves, deferral) and what reviews or changes it pushes for.",
+   "viewQuestion": {
+    "question": "How should the District respond to the wastewater plant overruns?",
+    "poleA": "Push for inquiries and a new way of sharing costs across the region",
+    "poleB": "Focus on easing local bills through levies, reserves, and deferral options"
+   },
+   "topicTags": [
+    "taxes",
+    "utilities",
+    "regional-governance"
+   ],
+   "sources": [
+    "https://westvancouver.ca/government-administration/major-projects/north-shore-wastewater-treatment-plant",
+    "https://globalnews.ca/news/10613771/north-shore-wastewater-tax-hike/",
+    "https://www.lindawatt.com/",
+    "https://www.peterlambur.com/",
+    "https://marksager.com/priorities"
+   ],
+   "tradeoffs": {
+    "context": "The plant's costs are largely set; the choice is how much effort goes into challenging them versus managing their local impact.",
+    "a": {
+     "gains": [
+      "Could lead to more accountability and possibly a fairer regional cost split",
+      "May help prevent similar overruns on future regional projects"
+     ],
+     "costs": [
+      "Reviews take time and may not lower bills already owed",
+      "Could strain working relationships with Metro Vancouver partners"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Residents may get more predictable, spread-out bills",
+      "Staff time stays focused on local finances and services"
+     ],
+     "costs": [
+      "North Shore ratepayers may keep carrying a larger share of costs",
+      "Less pressure on the region to change how projects are overseen"
+     ]
+    }
+   }
+  },
+  {
+   "id": "pay-parking-in-parks",
+   "title": "Pay parking at parks",
+   "description": "Whether and how the District charges for parking at Ambleside Park and other waterfront and park areas.",
+   "whatItAffects": "Park visitors, nearby residents and businesses, and the District's non-tax revenue.",
+   "whoDecides": "Council sets parking bylaws, fees, and where pay parking applies.",
+   "viewQuestion": {
+    "question": "What should the District do about pay parking at parks?",
+    "poleA": "Use pay parking to manage demand and help fund park costs",
+    "poleB": "Scale back pay parking so parks stay free to visit by car"
+   },
+   "topicTags": [
+    "parks",
+    "transportation",
+    "budget"
+   ],
+   "sources": [
+    "https://election.westvancouver.ca/candidates/profile/bennett-hunter",
+    "https://www.leelauwestvan.ca/",
+    "https://www.kirklapointe.ca/news/"
+   ],
+   "tradeoffs": {
+    "context": "Parking fees raise money and free up spaces, but add a cost for people visiting parks.",
+    "a": {
+     "gains": [
+      "Revenue that can offset park costs instead of property taxes",
+      "Turnover that can make spaces easier to find at busy times"
+     ],
+     "costs": [
+      "An added cost for residents and families visiting parks",
+      "Drivers may park on nearby residential streets to avoid fees"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Parks stay easier and cheaper to visit for everyone",
+      "Fewer complaints about spillover parking on side streets"
+     ],
+     "costs": [
+      "Lost revenue may need to be made up through taxes or cuts",
+      "Busy lots may fill up more often at peak times"
+     ]
+    }
+   }
+  },
+  {
+   "id": "traffic-and-transportation",
+   "title": "Traffic and getting around",
+   "description": "How the District manages congestion on Marine Drive and other roads, and what it builds for walking, cycling, and local transit.",
+   "whatItAffects": "Commuters, students, seniors who don't drive, cyclists, and residents on busy routes.",
+   "whoDecides": "Council controls District roads, signals, bike routes, and traffic calming, and works with TransLink and the province on transit and bridges.",
+   "viewQuestion": {
+    "question": "Where should the District focus transportation spending?",
+    "poleA": "Expand walking, cycling, and local transit options",
+    "poleB": "Focus on traffic flow and road improvements for drivers"
+   },
+   "topicTags": [
+    "transportation"
+   ],
+   "sources": [
+    "https://marksager.com/",
+    "https://sharonthompsonformayor.com/",
+    "https://www.leelauwestvan.ca/",
+    "https://election.westvancouver.ca/candidates/profile/bennett-hunter"
+   ],
+   "tradeoffs": {
+    "context": "Road space and budgets are limited, so more for one way of travel often means less for another.",
+    "a": {
+     "gains": [
+      "More options for people who can't or don't want to drive",
+      "Could ease car trips over time and support climate goals"
+     ],
+     "costs": [
+      "Some road space or parking may be given up",
+      "Benefits may take years as habits change"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Shorter, more predictable trips for drivers and deliveries",
+      "Fits current travel patterns in a car-oriented community"
+     ],
+     "costs": [
+      "Fewer safe options for walking, cycling, and transit",
+      "Road capacity alone may fill up again with more traffic"
+     ]
+    }
+   }
+  },
+  {
+   "id": "community-facilities",
+   "title": "Community facilities",
+   "description": "Whether to build or expand facilities such as an arts centre, a second ice sheet, a larger seniors' centre, and library spaces.",
+   "whatItAffects": "Seniors, families, arts and sports groups, and taxpayers who fund construction and upkeep.",
+   "whoDecides": "Council decides which capital projects go ahead, how they are funded, and in what order.",
+   "viewQuestion": {
+    "question": "How should the District approach new community facilities?",
+    "poleA": "Build new facilities such as an arts centre and more ice soon",
+    "poleB": "Maintain existing facilities first and hold off on major new builds"
+   },
+   "topicTags": [
+    "recreation",
+    "arts",
+    "budget"
+   ],
+   "sources": [
+    "https://marksager.com/priorities",
+    "https://sharonthompsonformayor.com/",
+    "https://www.leelauwestvan.ca/"
+   ],
+   "tradeoffs": {
+    "context": "New facilities add programs and space but bring large building and operating costs.",
+    "a": {
+     "gains": [
+      "More space for arts, sports, and seniors' programs",
+      "Facilities could serve a growing and aging population"
+     ],
+     "costs": [
+      "Large capital costs that may require borrowing or higher taxes",
+      "New buildings add long-term staffing and upkeep costs"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Money stays focused on repairing what the District already has",
+      "Less pressure on taxes and borrowing"
+     ],
+     "costs": [
+      "Waitlists and crowding in current facilities may continue",
+      "Construction costs may be higher if projects are delayed"
+     ]
+    }
+   }
+  },
+  {
+   "id": "planning-process-and-consultation",
+   "title": "Permits, planning, and public input",
+   "description": "How quickly the District processes permits and development applications, and how much residents are consulted before decisions.",
+   "whatItAffects": "Homeowners doing renovations or coach houses, builders, small businesses, and residents who want a say in changes nearby.",
+   "whoDecides": "Council sets planning procedures, consultation practices, and staffing for permits and approvals.",
+   "viewQuestion": {
+    "question": "How should the District handle permits and planning decisions?",
+    "poleA": "Streamline approvals to cut time and cost for applicants",
+    "poleB": "Keep thorough review and public input, even if approvals take longer"
+   },
+   "topicTags": [
+    "governance",
+    "land-use"
+   ],
+   "sources": [
+    "https://sharonthompsonformayor.com/",
+    "https://election.westvancouver.ca/candidates/profile/melinda-slater",
+    "https://www.kirklapointe.ca/news/",
+    "https://election.westvancouver.ca/candidates/profile/sherry-keane"
+   ],
+   "tradeoffs": {
+    "context": "Faster approvals lower costs for applicants, while more consultation gives residents more say before decisions.",
+    "a": {
+     "gains": [
+      "Lower costs and shorter waits for homeowners and builders",
+      "Housing and business projects may get underway sooner"
+     ],
+     "costs": [
+      "Neighbours may have fewer chances to comment on changes",
+      "Problems may be caught later rather than during review"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Residents have more say in changes to their neighbourhoods",
+      "More chances to spot issues before projects are approved"
+     ],
+     "costs": [
+      "Longer, costlier approvals for small and large projects",
+      "Delays may add to housing costs"
+     ]
+    }
+   }
+  },
+  {
+   "id": "environment-and-emergency-readiness",
+   "title": "Environment and emergency readiness",
+   "description": "How much the District invests in climate action, protecting forests and shorelines, and preparing for wildfire and other emergencies.",
+   "whatItAffects": "Residents near forests and the shoreline, evacuation routes, natural areas, and the District budget.",
+   "whoDecides": "Council funds emergency planning, wildfire risk reduction, parkland protection, and climate programs for District operations.",
+   "viewQuestion": {
+    "question": "How much should the District invest in climate and emergency readiness?",
+    "poleA": "Spend more now on climate action, wildfire, and emergency readiness",
+    "poleB": "Keep these programs at current levels to limit costs"
+   },
+   "topicTags": [
+    "environment",
+    "emergency-preparedness"
+   ],
+   "sources": [
+    "https://www.peterlambur.com/",
+    "https://sharonthompsonformayor.com/",
+    "https://www.leelauwestvan.ca/",
+    "https://election.westvancouver.ca/candidates/profile/k-joseph-joe-spears"
+   ],
+   "tradeoffs": {
+    "context": "Spending on prevention now competes with other budget needs, while risks and their costs are uncertain.",
+    "a": {
+     "gains": [
+      "Better prepared for wildfire, storms, and other emergencies",
+      "More protection for forests, streams, and shorelines"
+     ],
+     "costs": [
+      "Higher costs in the budget now",
+      "Some programs may limit what can be built or where"
+     ]
+    },
+    "b": {
+     "gains": [
+      "More money left for other services or lower taxes",
+      "Fewer new rules for property owners"
+     ],
+     "costs": [
+      "Less preparation if a major emergency happens",
+      "Repair and response costs may be higher later"
+     ]
+    }
+   }
+  },
+  {
+   "id": "ambleside-waterfront",
+   "title": "Ambleside waterfront",
+   "description": "How the District plans the public waterfront at Ambleside, including new amenities, paths, and public spaces.",
+   "whatItAffects": "Park and beach users, nearby residents and businesses, and the waterfront's natural areas.",
+   "whoDecides": "Council approves waterfront plans, land use, and spending on District-owned waterfront land.",
+   "viewQuestion": {
+    "question": "What should happen on the Ambleside waterfront?",
+    "poleA": "Add more amenities, activity, and public space along the waterfront",
+    "poleB": "Keep the waterfront largely as it is, with limited change"
+   },
+   "topicTags": [
+    "parks",
+    "waterfront"
+   ],
+   "sources": [
+    "https://marksager.com/priorities",
+    "https://election.westvancouver.ca/candidates/profile/melinda-slater"
+   ],
+   "tradeoffs": {
+    "context": "New waterfront amenities could draw more people, while limited change keeps its current, quieter character.",
+    "a": {
+     "gains": [
+      "More things to do and places to gather by the water",
+      "More visitors could help nearby shops and restaurants"
+     ],
+     "costs": [
+      "Construction and operating costs for the District",
+      "More crowds, noise, and parking pressure nearby"
+     ]
+    },
+    "b": {
+     "gains": [
+      "The waterfront keeps its current open, natural feel",
+      "Lower costs for the District"
+     ],
+     "costs": [
+      "Fewer new spaces and amenities for a growing community",
+      "Less foot traffic for nearby businesses"
+     ]
+    }
+   }
+  }
+ ],
+ "election": {
+  "id": "west-vancouver-local-2026",
+  "name": "District of West Vancouver general local election",
+  "level": "municipal",
+  "votingDay": "2026-10-17",
+  "votingDayHours": "8 a.m. to 8 p.m.",
+  "advanceVoting": [
+   {
+    "date": "2026-10-07",
+    "hours": "8 a.m. to 8 p.m.",
+    "locations": [
+     "Municipal Hall, 750 17th Street"
+    ]
+   },
+   {
+    "date": "2026-10-10",
+    "hours": "8 a.m. to 8 p.m.",
+    "locations": [
+     "Municipal Hall, 750 17th Street"
+    ]
+   },
+   {
+    "date": "2026-10-12",
+    "hours": "8 a.m. to 8 p.m.",
+    "locations": [
+     "Municipal Hall, 750 17th Street"
+    ]
+   }
+  ],
+  "howToVote": "Eligible voters can vote at any of seven voting places on General Voting Day (Saturday, Oct. 17, 8 a.m.-8 p.m.) or at advance voting at Municipal Hall on Oct. 7, 10, or 12. Voters not already registered can register at the voting place with two pieces of ID that together show identity and residence, at least one with a signature; non-resident property electors also need proof of property ownership. Curbside voting is available at all voting places.",
+  "voteByMail": "Any voter could apply to vote by mail; applications were due Sept. 28, 2026, and ballots must be returned before 8 p.m. on Oct. 17 (drop boxes at Municipal Hall on voting day).",
+  "officialUrl": "https://election.westvancouver.ca/",
+  "sources": [
+   "https://election.westvancouver.ca/voters/where-to-vote",
+   "https://election.westvancouver.ca/voters/ways-vote",
+   "https://election.westvancouver.ca/voters/key-dates",
+   "https://election.westvancouver.ca/voters/vote-by-mail",
+   "https://election.westvancouver.ca/voters/register-vote",
+   "https://election.westvancouver.ca/voters/voter-identification",
+   "https://election.westvancouver.ca/general/candidate-profiles",
+   "https://westvancouver.ca/news/2026-election-candidate-nomination-period-opens-september-1"
+  ],
+  "ballotQuestions": []
+ },
+ "electorOrganizations": [],
+ "races": [
+  {
+   "id": "west-vancouver-mayor",
+   "office": "Mayor",
+   "seats": 1,
+   "areaName": "District of West Vancouver",
+   "candidates": [
+    {
+     "id": "kirk-lapointe",
+     "name": "Kirk LaPointe",
+     "ballotName": "LAPOINTE, Kirk",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://www.kirklapointe.ca",
+     "links": [],
+     "sourceUrls": [
+      "https://election.westvancouver.ca/general/candidate-profiles",
+      "https://election.westvancouver.ca/candidates/profile/kirk-lapointe",
+      "https://www.kirklapointe.ca/news/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Journalist and editor who has led newsrooms including the Vancouver Sun and Business in Vancouver; has taught at UBC's graduate journalism school since 2004.",
+     "summarySource": "https://election.westvancouver.ca/candidates/profile/kirk-lapointe",
+     "positions": [
+      {
+       "issueId": "property-taxes-and-spending",
+       "topic": "fiscal accountability",
+       "summary": "Says he would bring stronger financial accountability to District Hall.",
+       "sourceUrl": "https://www.kirklapointe.ca/news/",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Emphasis on financial discipline"
+      },
+      {
+       "issueId": "planning-process-and-consultation",
+       "topic": "public consultation",
+       "summary": "Calls for genuine public consultation and more transparent leadership.",
+       "sourceUrl": "https://www.kirklapointe.ca/news/",
+       "sourceType": "candidate",
+       "proposedLean": 1,
+       "leanReason": "Stresses more resident input"
+      }
+     ]
+    },
+    {
+     "id": "mark-sager",
+     "name": "Mark Sager",
+     "ballotName": "SAGER, Mark",
+     "incumbent": true,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://marksager.com",
+     "links": [],
+     "sourceUrls": [
+      "https://election.westvancouver.ca/general/candidate-profiles",
+      "https://election.westvancouver.ca/candidates/profile/mark-sager-0",
+      "https://marksager.com/",
+      "https://marksager.com/priorities",
+      "https://www.frequencynews.ca/news/west-vancouver-mayor-calls-for-balanced-development-and-stronger-regional-partnerships/",
+      "https://dailyhive.com/vancouver/west-vancouver-mayor-election"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Lifelong West Vancouver resident and lawyer; mayor since 2022, previously a school trustee, three-term councillor, and mayor from 1991 to 1996.",
+     "summarySource": "https://election.westvancouver.ca/candidates/profile/mark-sager-0",
+     "positions": [
+      {
+       "issueId": "property-taxes-and-spending",
+       "topic": "taxes",
+       "summary": "Aims to keep tax increases below regional averages and use investment income to reduce reliance on property taxes.",
+       "sourceUrl": "https://marksager.com/priorities",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Focus on limiting tax increases"
+      },
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "housing",
+       "summary": "Supports more senior and family housing but says municipalities need more flexibility to balance growth with neighbourhood character.",
+       "sourceUrl": "https://www.frequencynews.ca/news/west-vancouver-mayor-calls-for-balanced-development-and-stronger-regional-partnerships/",
+       "sourceType": "news",
+       "proposedLean": 1,
+       "leanReason": "Wants growth balanced with neighbourhood character"
+      },
+      {
+       "issueId": "wastewater-plant-costs",
+       "topic": "wastewater costs",
+       "summary": "Calls for transparency on wastewater plant overruns, fairer regional funding, and stronger Metro Vancouver oversight.",
+       "sourceUrl": "https://marksager.com/priorities",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Pushes for accountability and cost-sharing change"
+      },
+      {
+       "issueId": "community-facilities",
+       "topic": "facilities",
+       "summary": "Supports more seniors' space, added ice sheets, library improvements, and a new arts facility.",
+       "sourceUrl": "https://marksager.com/priorities",
+       "sourceType": "candidate",
+       "proposedLean": -2,
+       "leanReason": "Backs several new facilities"
+      },
+      {
+       "issueId": "ambleside-waterfront",
+       "topic": "waterfront",
+       "summary": "Supports new public spaces and better walking and cycling links on the waterfront while preserving its natural character.",
+       "sourceUrl": "https://marksager.com/priorities",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Favours added waterfront amenities"
+      }
+     ]
+    },
+    {
+     "id": "joe-spears",
+     "name": "Joe Spears",
+     "ballotName": "SPEARS, K. Joseph (Joe)",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://josephspears.ca",
+     "links": [],
+     "sourceUrls": [
+      "https://election.westvancouver.ca/general/candidate-profiles",
+      "https://election.westvancouver.ca/candidates/profile/k-joseph-joe-spears"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Lawyer, economist, and marine-policy specialist; former federal prosecutor and government advisor; Horseshoe Bay resident for over 30 years.",
+     "summarySource": "https://election.westvancouver.ca/candidates/profile/k-joseph-joe-spears",
+     "positions": [
+      {
+       "issueId": "property-taxes-and-spending",
+       "topic": "taxes",
+       "summary": "Says the District should solve problems through better management rather than tax increases.",
+       "sourceUrl": "https://election.westvancouver.ca/candidates/profile/k-joseph-joe-spears",
+       "sourceType": "official_guide",
+       "proposedLean": -2,
+       "leanReason": "Opposes raising taxes"
+      },
+      {
+       "issueId": "environment-and-emergency-readiness",
+       "topic": "emergency preparedness",
+       "summary": "Lists emergency preparedness among his main priorities.",
+       "sourceUrl": "https://election.westvancouver.ca/candidates/profile/k-joseph-joe-spears",
+       "sourceType": "official_guide",
+       "proposedLean": -1,
+       "leanReason": "Prioritizes emergency readiness"
+      },
+      {
+       "issueId": null,
+       "topic": "economic development",
+       "summary": "Lists economic development and transparent decision-making among his priorities.",
+       "sourceUrl": "https://election.westvancouver.ca/candidates/profile/k-joseph-joe-spears",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "No issue scale"
+      }
+     ]
+    },
+    {
+     "id": "sharon-thompson",
+     "name": "Sharon Thompson",
+     "ballotName": "THOMPSON, Sharon",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://sharonthompsonformayor.com",
+     "links": [],
+     "sourceUrls": [
+      "https://election.westvancouver.ca/general/candidate-profiles",
+      "https://election.westvancouver.ca/candidates/profile/sharon-thompson-0",
+      "https://sharonthompsonformayor.com/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Two-term West Vancouver councillor (currently serving) with about 40 years in the community and a decade of experience working with the province.",
+     "summarySource": "https://election.westvancouver.ca/candidates/profile/sharon-thompson-0",
+     "positions": [
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "housing",
+       "summary": "Supports gentle density such as duplexes, townhouses, and small multi-family homes that respect neighbourhood character.",
+       "sourceUrl": "https://sharonthompsonformayor.com/",
+       "sourceType": "candidate",
+       "proposedLean": 1,
+       "leanReason": "Prefers gradual, small-scale growth"
+      },
+      {
+       "issueId": "planning-process-and-consultation",
+       "topic": "permitting",
+       "summary": "Wants clearer permitting to reduce time and cost for residents, small businesses, and major projects.",
+       "sourceUrl": "https://sharonthompsonformayor.com/",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Favours streamlined approvals"
+      },
+      {
+       "issueId": "traffic-and-transportation",
+       "topic": "active transportation",
+       "summary": "Supports safe active routes, residential traffic calming, and managing mixed-use routes like the Spirit Trail.",
+       "sourceUrl": "https://sharonthompsonformayor.com/",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Emphasis on walking and cycling routes"
+      },
+      {
+       "issueId": "community-facilities",
+       "topic": "amenities",
+       "summary": "Would evaluate proposals for a second ice rink, a new seniors' centre, and an arts centre.",
+       "sourceUrl": "https://sharonthompsonformayor.com/",
+       "sourceType": "candidate",
+       "proposedLean": null,
+       "leanReason": "Commits to evaluation, not building"
+      },
+      {
+       "issueId": "environment-and-emergency-readiness",
+       "topic": "wildfire",
+       "summary": "Lists climate and wildfire protection among her priorities.",
+       "sourceUrl": "https://sharonthompsonformayor.com/",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Prioritizes wildfire protection"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "west-vancouver-council",
+   "office": "Councillor",
+   "seats": 6,
+   "areaName": "District of West Vancouver",
+   "candidates": [
+    {
+     "id": "earl-babich",
+     "name": "Earl Babich",
+     "ballotName": "BABICH, Earl",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": null,
+     "links": [],
+     "sourceUrls": [
+      "https://election.westvancouver.ca/general/candidate-profiles",
+      "https://election.westvancouver.ca/sites/default/files/NOMINATION%20DOCUMENTS%20E.%20BABICH%20(redacted%20for%20website).pdf"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": null,
+     "summarySource": null,
+     "positions": []
+    },
+    {
+     "id": "christine-cassidy",
+     "name": "Christine Cassidy",
+     "ballotName": "CASSIDY, Christine",
+     "incumbent": true,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://www.christinecassidy.ca",
+     "links": [],
+     "sourceUrls": [
+      "https://election.westvancouver.ca/general/candidate-profiles",
+      "https://election.westvancouver.ca/candidates/profile/christine-cassidy-0",
+      "https://www.christinecassidy.ca/biography.htm",
+      "https://westvancouver.ca/mayor-council"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Current councillor (2014-2018 and 2022-2026) with over 60 years in West Vancouver and 38 years as an investment advisor; former West Vancouver Police Board vice-chair.",
+     "summarySource": "https://www.christinecassidy.ca/biography.htm",
+     "positions": []
+    },
+    {
+     "id": "alexis-chicoine",
+     "name": "Alexis Chicoine",
+     "ballotName": "CHICOINE, Alexis",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://alexischicoine.ca",
+     "links": [],
+     "sourceUrls": [
+      "https://election.westvancouver.ca/general/candidate-profiles",
+      "https://election.westvancouver.ca/candidates/profile/alexis-chicoine-0"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Has served on District advisory committees, volunteered locally, and spoken at council.",
+     "summarySource": "https://election.westvancouver.ca/candidates/profile/alexis-chicoine-0",
+     "positions": [
+      {
+       "issueId": null,
+       "topic": "priorities",
+       "summary": "Aims to balance community character, financial responsibility, environmental sustainability, and needs at every life stage.",
+       "sourceUrl": "https://election.westvancouver.ca/candidates/profile/alexis-chicoine-0",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "General principles"
+      }
+     ]
+    },
+    {
+     "id": "ben-hunter",
+     "name": "Ben Hunter",
+     "ballotName": "HUNTER, Bennett",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://electbenhunter.ca",
+     "links": [],
+     "sourceUrls": [
+      "https://election.westvancouver.ca/general/candidate-profiles",
+      "https://election.westvancouver.ca/candidates/profile/bennett-hunter"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Grew up in West Vancouver; civil engineering background with experience in construction and education.",
+     "summarySource": "https://election.westvancouver.ca/candidates/profile/bennett-hunter",
+     "positions": [
+      {
+       "issueId": "traffic-and-transportation",
+       "topic": "congestion",
+       "summary": "Calls for a North Shore congestion management strategy, including work on bridges and downtown connections.",
+       "sourceUrl": "https://election.westvancouver.ca/candidates/profile/bennett-hunter",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "Focus on congestion, mode not specified"
+      },
+      {
+       "issueId": "pay-parking-in-parks",
+       "topic": "pay parking",
+       "summary": "Criticizes council's repeated changes to Ambleside pay parking and supports demand-based parking management.",
+       "sourceUrl": "https://election.westvancouver.ca/candidates/profile/bennett-hunter",
+       "sourceType": "official_guide",
+       "proposedLean": -1,
+       "leanReason": "Demand-based pricing implies keeping paid parking"
+      }
+     ]
+    },
+    {
+     "id": "sherry-keane",
+     "name": "Sherry Keane",
+     "ballotName": "KEANE, Sherry",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://sherrykeane.ca",
+     "links": [],
+     "sourceUrls": [
+      "https://election.westvancouver.ca/general/candidate-profiles",
+      "https://election.westvancouver.ca/candidates/profile/sherry-keane"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Third-generation West Vancouver resident with experience in operations, HR, business development, hospitality, and housing; former youth support worker.",
+     "summarySource": "https://election.westvancouver.ca/candidates/profile/sherry-keane",
+     "positions": [
+      {
+       "issueId": "planning-process-and-consultation",
+       "topic": "consultation",
+       "summary": "Says residents should be consulted before decisions on development, infrastructure, and traffic.",
+       "sourceUrl": "https://election.westvancouver.ca/candidates/profile/sherry-keane",
+       "sourceType": "official_guide",
+       "proposedLean": 1,
+       "leanReason": "Stresses consultation first"
+      },
+      {
+       "issueId": "property-taxes-and-spending",
+       "topic": "spending",
+       "summary": "Lists municipal spending and fiscal responsibility among her priorities.",
+       "sourceUrl": "https://election.westvancouver.ca/candidates/profile/sherry-keane",
+       "sourceType": "official_guide",
+       "proposedLean": -1,
+       "leanReason": "Emphasis on fiscal restraint"
+      }
+     ]
+    },
+    {
+     "id": "peter-lambur",
+     "name": "Peter Lambur",
+     "ballotName": "LAMBUR, Peter",
+     "incumbent": true,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://www.peterlambur.com",
+     "links": [],
+     "sourceUrls": [
+      "https://election.westvancouver.ca/general/candidate-profiles",
+      "https://election.westvancouver.ca/candidates/profile/peter-lambur-0",
+      "https://www.peterlambur.com/",
+      "https://westvancouver.ca/mayor-council"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Current councillor; architect and planner for 40 years and West Vancouver resident for over 35 years; sits on Metro Vancouver's Regional Planning Committee.",
+     "summarySource": "https://election.westvancouver.ca/candidates/profile/peter-lambur-0",
+     "positions": [
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "housing supply",
+       "summary": "Calls housing undersupply a chronic problem; supported Cypress Village and early stages of the Ambleside plan.",
+       "sourceUrl": "https://www.peterlambur.com/",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Supported plans adding housing"
+      },
+      {
+       "issueId": null,
+       "topic": "provincial housing rules",
+       "summary": "Concerned that provincial housing legislation has encroached on local government authority.",
+       "sourceUrl": "https://www.peterlambur.com/",
+       "sourceType": "candidate",
+       "proposedLean": null,
+       "leanReason": "Provincial matter"
+      },
+      {
+       "issueId": "wastewater-plant-costs",
+       "topic": "wastewater costs",
+       "summary": "Calls the wastewater plant tax burden on homeowners unprecedented and unacceptable.",
+       "sourceUrl": "https://www.peterlambur.com/",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Opposes current cost burden"
+      },
+      {
+       "issueId": "environment-and-emergency-readiness",
+       "topic": "climate",
+       "summary": "Advocated for the District's first climate strategy and protecting 2,500 acres as Legacy Park.",
+       "sourceUrl": "https://www.peterlambur.com/",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Supports climate and land protection"
+      }
+     ]
+    },
+    {
+     "id": "lee-lau",
+     "name": "Lee Lau",
+     "ballotName": "LAU, H. Lee",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://www.leelauwestvan.ca",
+     "links": [],
+     "sourceUrls": [
+      "https://election.westvancouver.ca/general/candidate-profiles",
+      "https://election.westvancouver.ca/candidates/profile/h-lee-lau",
+      "https://www.leelauwestvan.ca/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Neurologist and stroke lead at Lions Gate Hospital and UBC clinical assistant professor; West Vancouver resident for over 35 years.",
+     "summarySource": "https://election.westvancouver.ca/candidates/profile/h-lee-lau",
+     "positions": [
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "housing",
+       "summary": "Supports gentle density, low-rise mixed-use buildings, and multigenerational homes while protecting neighbourhood character.",
+       "sourceUrl": "https://www.leelauwestvan.ca/",
+       "sourceType": "candidate",
+       "proposedLean": 0,
+       "leanReason": "Mixes added housing with character protection"
+      },
+      {
+       "issueId": "property-taxes-and-spending",
+       "topic": "taxes",
+       "summary": "Aims to stabilize property taxes without cutting services, with independent review of District spending.",
+       "sourceUrl": "https://www.leelauwestvan.ca/",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Focus on stabilizing taxes"
+      },
+      {
+       "issueId": "traffic-and-transportation",
+       "topic": "local transit",
+       "summary": "Proposes studying a local micro-bus system, evaluating bus rapid transit, and senior shuttle options.",
+       "sourceUrl": "https://www.leelauwestvan.ca/",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Favours transit options"
+      },
+      {
+       "issueId": "pay-parking-in-parks",
+       "topic": "pay parking",
+       "summary": "Calls for an evidence-based approach to revenue sources such as pay parking.",
+       "sourceUrl": "https://www.leelauwestvan.ca/",
+       "sourceType": "candidate",
+       "proposedLean": null,
+       "leanReason": "No direction stated"
+      }
+     ]
+    },
+    {
+     "id": "rebecca-lees",
+     "name": "Rebecca Lees",
+     "ballotName": "LEES, Rebecca",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://rebeccalees.com",
+     "links": [],
+     "sourceUrls": [
+      "https://election.westvancouver.ca/general/candidate-profiles",
+      "https://election.westvancouver.ca/candidates/profile/rebecca-lees"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Born and raised in West Vancouver; business owner who raised two children in Dundarave.",
+     "summarySource": "https://election.westvancouver.ca/candidates/profile/rebecca-lees",
+     "positions": [
+      {
+       "issueId": null,
+       "topic": "priorities",
+       "summary": "Supports long-term planning and listening to residents while protecting West Vancouver's qualities.",
+       "sourceUrl": "https://election.westvancouver.ca/candidates/profile/rebecca-lees",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "General principles"
+      }
+     ]
+    },
+    {
+     "id": "mahsoo-naderi",
+     "name": "Mahsoo Naderi",
+     "ballotName": "NADERI, Mahsoo",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://mahsoonaderi.ca",
+     "links": [],
+     "sourceUrls": [
+      "https://election.westvancouver.ca/general/candidate-profiles",
+      "https://election.westvancouver.ca/candidates/profile/mahsoo-naderi"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Professional engineer and public-sector leader with over 20 years in municipal government, infrastructure, and major projects; raising two sons in West Vancouver.",
+     "summarySource": "https://election.westvancouver.ca/candidates/profile/mahsoo-naderi",
+     "positions": [
+      {
+       "issueId": "property-taxes-and-spending",
+       "topic": "finances",
+       "summary": "Lists strong financial stewardship among her priorities.",
+       "sourceUrl": "https://election.westvancouver.ca/candidates/profile/mahsoo-naderi",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "No direction on taxes vs. spending"
+      },
+      {
+       "issueId": null,
+       "topic": "growth and villages",
+       "summary": "Supports responsible growth, vibrant villages, local businesses, and reliable infrastructure and recreation facilities.",
+       "sourceUrl": "https://election.westvancouver.ca/candidates/profile/mahsoo-naderi",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "General priorities"
+      }
+     ]
+    },
+    {
+     "id": "john-oflynn",
+     "name": "John O'Flynn",
+     "ballotName": "O'FLYNN, John",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": null,
+     "links": [],
+     "sourceUrls": [
+      "https://election.westvancouver.ca/general/candidate-profiles",
+      "https://election.westvancouver.ca/candidates/profile/john-oflynn-0"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Recently retired teacher and North Shore resident since 2002; BC Soccer board director and West Van Historical Society director.",
+     "summarySource": "https://election.westvancouver.ca/candidates/profile/john-oflynn-0",
+     "positions": [
+      {
+       "issueId": null,
+       "topic": "accountability",
+       "summary": "Says he would ensure accountability for decisions and that community voices are heard.",
+       "sourceUrl": "https://election.westvancouver.ca/candidates/profile/john-oflynn-0",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "General principles"
+      }
+     ]
+    },
+    {
+     "id": "sylvia-olson",
+     "name": "Sylvia Olson",
+     "ballotName": "OLSON, Sylvia",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://sylviaforwestvan.com",
+     "links": [],
+     "sourceUrls": [
+      "https://election.westvancouver.ca/general/candidate-profiles",
+      "https://election.westvancouver.ca/candidates/profile/sylvia-olson"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "West Vancouver resident, homeowner, and business owner.",
+     "summarySource": "https://election.westvancouver.ca/candidates/profile/sylvia-olson",
+     "positions": [
+      {
+       "issueId": "property-taxes-and-spending",
+       "topic": "property taxes",
+       "summary": "Calls for discipline, transparency, and clear explanations in property-tax decisions.",
+       "sourceUrl": "https://election.westvancouver.ca/candidates/profile/sylvia-olson",
+       "sourceType": "official_guide",
+       "proposedLean": -1,
+       "leanReason": "Emphasis on tax discipline"
+      },
+      {
+       "issueId": null,
+       "topic": "policing",
+       "summary": "Supports a strong West Vancouver Police Department.",
+       "sourceUrl": "https://election.westvancouver.ca/candidates/profile/sylvia-olson",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "No matching issue"
+      },
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "community character",
+       "summary": "Commits to protecting West Vancouver's character.",
+       "sourceUrl": "https://election.westvancouver.ca/candidates/profile/sylvia-olson",
+       "sourceType": "official_guide",
+       "proposedLean": 1,
+       "leanReason": "Favours protecting existing character"
+      }
+     ]
+    },
+    {
+     "id": "annsabelle-pronych",
+     "name": "Annsabelle Pronych",
+     "ballotName": "PRONYCH, Annsabelle",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://annsabelle.com",
+     "links": [],
+     "sourceUrls": [
+      "https://election.westvancouver.ca/general/candidate-profiles",
+      "https://election.westvancouver.ca/candidates/profile/annsabelle-pronych"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Background in administration, customer service, leadership, and caregiving; has volunteered with seniors and community groups.",
+     "summarySource": "https://election.westvancouver.ca/candidates/profile/annsabelle-pronych",
+     "positions": [
+      {
+       "issueId": null,
+       "topic": "approach",
+       "summary": "Says she would listen to residents and work on practical solutions.",
+       "sourceUrl": "https://election.westvancouver.ca/candidates/profile/annsabelle-pronych",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "General principles"
+      }
+     ]
+    },
+    {
+     "id": "jay-sidhu",
+     "name": "Jay Sidhu",
+     "ballotName": "SIDHU, Jay",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://votejay.ca",
+     "links": [],
+     "sourceUrls": [
+      "https://election.westvancouver.ca/general/candidate-profiles",
+      "https://election.westvancouver.ca/candidates/profile/jay-sidhu"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Former BBC journalist of over 20 years and former constituency manager for the local MLA; serves on the library board and founded Ambleside parkrun.",
+     "summarySource": "https://election.westvancouver.ca/candidates/profile/jay-sidhu",
+     "positions": [
+      {
+       "issueId": null,
+       "topic": "priorities",
+       "summary": "Names housing, transportation, financial sustainability, and environmental resilience as key challenges, centred on residents' well-being.",
+       "sourceUrl": "https://election.westvancouver.ca/candidates/profile/jay-sidhu",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "Identifies issues without a direction"
+      }
+     ]
+    },
+    {
+     "id": "melinda-slater",
+     "name": "Melinda Slater",
+     "ballotName": "SLATER, Melinda",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://melindaslater.ca",
+     "links": [],
+     "sourceUrls": [
+      "https://election.westvancouver.ca/general/candidate-profiles",
+      "https://election.westvancouver.ca/candidates/profile/melinda-slater"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Third-generation West Vancouver resident who has followed and spoken on District planning issues for about 15 years.",
+     "summarySource": "https://election.westvancouver.ca/candidates/profile/melinda-slater",
+     "positions": [
+      {
+       "issueId": "planning-process-and-consultation",
+       "topic": "planning",
+       "summary": "Supports meaningful public engagement and community-informed planning that preserves West Vancouver's character.",
+       "sourceUrl": "https://election.westvancouver.ca/candidates/profile/melinda-slater",
+       "sourceType": "official_guide",
+       "proposedLean": 1,
+       "leanReason": "Stresses public input"
+      },
+      {
+       "issueId": "ambleside-waterfront",
+       "topic": "waterfront",
+       "summary": "Says concern about Ambleside waterfront plans first led to her involvement in local issues.",
+       "sourceUrl": "https://election.westvancouver.ca/candidates/profile/melinda-slater",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "Direction not specified"
+      }
+     ]
+    },
+    {
+     "id": "scott-snider",
+     "name": "Scott Snider",
+     "ballotName": "SNIDER, Scott",
+     "incumbent": true,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://reelectsnider2026.com",
+     "links": [],
+     "sourceUrls": [
+      "https://election.westvancouver.ca/general/candidate-profiles",
+      "https://election.westvancouver.ca/candidates/profile/scott-snider-0",
+      "https://westvancouver.ca/mayor-council"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Current councillor seeking a second term; professional mediator and lifelong West Vancouver resident.",
+     "summarySource": "https://election.westvancouver.ca/candidates/profile/scott-snider-0",
+     "positions": [
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "housing",
+       "summary": "Names housing affordability and thoughtful growth as challenges facing West Vancouver.",
+       "sourceUrl": "https://election.westvancouver.ca/candidates/profile/scott-snider-0",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "No direction stated"
+      },
+      {
+       "issueId": "environment-and-emergency-readiness",
+       "topic": "environment",
+       "summary": "Lists environmental stewardship as a challenge needing attention.",
+       "sourceUrl": "https://election.westvancouver.ca/candidates/profile/scott-snider-0",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "No spending direction"
+      }
+     ]
+    },
+    {
+     "id": "linda-watt",
+     "name": "Linda Watt",
+     "ballotName": "WATT, Linda",
+     "incumbent": true,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://www.lindawatt.com",
+     "links": [],
+     "sourceUrls": [
+      "https://election.westvancouver.ca/general/candidate-profiles",
+      "https://election.westvancouver.ca/candidates/profile/linda-watt-0",
+      "https://www.lindawatt.com/",
+      "https://westvancouver.ca/mayor-council"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Current councillor and council liaison to the Finance and Revenue Committee since its creation.",
+     "summarySource": "https://election.westvancouver.ca/candidates/profile/linda-watt-0",
+     "positions": [
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "housing",
+       "summary": "Opposes one-size-fits-all housing rules; supports family and seniors' housing planned around infrastructure and environmental limits.",
+       "sourceUrl": "https://www.lindawatt.com/",
+       "sourceType": "candidate",
+       "proposedLean": 1,
+       "leanReason": "Prefers locally paced growth"
+      },
+      {
+       "issueId": "wastewater-plant-costs",
+       "topic": "wastewater inquiry",
+       "summary": "Brought forward a motion seeking a Municipal Inspector's inquiry into the wastewater plant.",
+       "sourceUrl": "https://www.lindawatt.com/",
+       "sourceType": "candidate",
+       "proposedLean": -2,
+       "leanReason": "Led push for an inquiry"
+      },
+      {
+       "issueId": "property-taxes-and-spending",
+       "topic": "financial stewardship",
+       "summary": "Calls for rigorous scrutiny of major public expenditures.",
+       "sourceUrl": "https://www.lindawatt.com/",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Emphasis on spending scrutiny"
+      }
+     ]
+    },
+    {
+     "id": "tim-webb",
+     "name": "Tim Webb",
+     "ballotName": "WEBB, Tim",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://timwebb.ca",
+     "links": [],
+     "sourceUrls": [
+      "https://election.westvancouver.ca/general/candidate-profiles",
+      "https://election.westvancouver.ca/candidates/profile/tim-webb"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Lifelong West Vancouver resident and local business owner; chair of the Ambleside Dundarave Business Improvement Association and member of the Board of Variance.",
+     "summarySource": "https://election.westvancouver.ca/candidates/profile/tim-webb",
+     "positions": [
+      {
+       "issueId": "property-taxes-and-spending",
+       "topic": "spending",
+       "summary": "Wants taxpayers' money spent wisely while helping young families, seniors, and businesses stay.",
+       "sourceUrl": "https://election.westvancouver.ca/candidates/profile/tim-webb",
+       "sourceType": "official_guide",
+       "proposedLean": -1,
+       "leanReason": "Emphasis on careful spending"
+      }
+     ]
+    },
+    {
+     "id": "jaime-webbe",
+     "name": "Jaime Webbe",
+     "ballotName": "WEBBE, Jaime",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://jaimewebbe.com",
+     "links": [],
+     "sourceUrls": [
+      "https://election.westvancouver.ca/general/candidate-profiles",
+      "https://election.westvancouver.ca/candidates/profile/jaime-webbe"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "President and CEO of the United Nations Association in Canada with over 20 years managing budgets at the UN and World Bank; raised on the North Shore.",
+     "summarySource": "https://election.westvancouver.ca/candidates/profile/jaime-webbe",
+     "positions": []
+    }
+   ]
+  }
+ ],
+ "notes": "Candidate list from the District's candidate profiles page (4 mayor, 18 council); no official declaration-of-candidates PDF or Elections BC list could be opened (Elections BC PDF robots-disallowed), so ballotName values are built from profile names in LAST, First form and are unverified against the ballot (profile URLs suggest 'K. Joseph (Joe) Spears', 'Bennett Hunter', 'H. Lee Lau'). No elector organizations found; all candidates appear to run unaffiliated. No ballot questions found on the District election site. Seats: council of mayor + six councillors (westvancouver.ca/mayor-council). Incumbents: Sager (mayor); councillors Cassidy, Lambur, Snider, Watt seek re-election; Councillor Sharon Thompson runs for mayor (incumbent=false for the mayor race); Councillor Nora Gambioli is not on the list. Earl Babich has no profile page, only a nomination-document PDF with no machine-readable text, so no bio or positions. Cassidy and Webbe profiles/sites gave no policy statements (positions empty). Many profiles give only general principles; those are entered with issueId null. Blocked: nsnews.com and cbc.ca (403), northshoredailypost.com, thenorthshorelocal.com and kirklapointe.ca platform pages (robots fetch timeout), X (robots). Several candidate websites (josephspears.ca, electbenhunter.ca, alexischicoine.ca, sherrykeane.ca, etc.) could not be opened because fetch permission was not granted; the shared web-search budget ran out before they could be surfaced another way. csdId 5915055 is from knowledge (Greater Vancouver CD 5915), not verified on StatCan. Advance voting Oct. 12 is Thanksgiving Monday, as listed by the District."
+}

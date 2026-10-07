@@ -16,7 +16,7 @@ export default function Share({ voterId }: { voterId?: string }) {
   return (
     <div className="card">
       <h2>Pass it on</h2>
-      <p className="muted small">Know someone in Nanaimo or Victoria who&apos;s voting this month? Your link lets us see that it was shared. It never shows your rankings or any candidate.</p>
+      <p className="muted small">Know someone in BC who&apos;s voting this month? Your link lets us see that it was shared. It never shows your rankings or any candidate.</p>
       <button className="btn secondary" onClick={share}>{copied ? "Link copied" : "Share Openballot"}</button>
     </div>
   );

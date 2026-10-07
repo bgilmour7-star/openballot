@@ -1,0 +1,1032 @@
+{
+ "municipality": {
+  "id": "comox",
+  "name": "Town of Comox",
+  "csdId": "5926005",
+  "csdName": "Comox"
+ },
+ "government": {
+  "id": "town-of-comox",
+  "name": "Town of Comox",
+  "howBuilt": "This list draws on 2026 local news coverage of the Comox Official Community Plan vote, contested housing proposals, the 2026 budget and tax debate, council discussion of CFB Comox growth, the new tree protection bylaw, and candidates' own campaign announcements. We kept issues the Town of Comox can act on through zoning, its budget, bylaws, streets, parks and recreation. Provincial matters such as health care and doctor recruitment are left out of this list."
+ },
+ "issues": [
+  {
+   "id": "housing-growth-and-density",
+   "title": "Housing growth and density",
+   "description": "How much new housing Comox allows, how dense and tall it can be, and where it goes under the new Official Community Plan.",
+   "whatItAffects": "Renters, buyers, families, workers arriving with the CFB Comox expansion, and neighbours of new projects.",
+   "whoDecides": "Council adopts the Official Community Plan and zoning, and approves or rejects rezonings and development permits.",
+   "viewQuestion": {
+    "question": "How should Comox approach new housing?",
+    "poleA": "Allow more homes and higher density where the plan permits",
+    "poleB": "Grow more gradually with lower density near existing homes"
+   },
+   "topicTags": [
+    "housing",
+    "growth",
+    "land-use"
+   ],
+   "sources": [
+    "https://comoxvalleyrecord.com/2026/02/24/comox-ocp-adopted-by-narrow-margin/",
+    "https://comoxvalleyrecord.com/2026/07/10/protesters-against-aspen-east-project-attend-comox-council-meeting/",
+    "https://comoxvalleyrecord.com/2026/03/05/comox-apartment-development-paused-due-to-community-feedback/",
+    "https://comoxvalleyrecord.com/2026/07/17/cfb-comox-project-housing-and-traffic-on-agenda-at-july-8-comox-council-meeting/"
+   ],
+   "tradeoffs": {
+    "context": "Housing choices often trade how quickly new homes are built against how much existing neighbourhoods change.",
+    "a": {
+     "gains": [
+      "More homes could be built sooner for new and current residents",
+      "Compact growth may support transit, shops and walkable streets"
+     ],
+     "costs": [
+      "Neighbours may see more traffic, height and loss of trees",
+      "Pipes, roads and parks may need upgrades sooner"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Existing neighbourhoods may keep their current scale and feel",
+      "Growth may be easier to match with roads and services"
+     ],
+     "costs": [
+      "Fewer new homes could keep rents and prices higher",
+      "Some housing demand may shift to outlying areas, adding car trips"
+     ]
+    }
+   }
+  },
+  {
+   "id": "property-taxes-and-spending",
+   "title": "Property taxes and town spending",
+   "description": "How much property taxes rise each year and what the town spends on services, projects and infrastructure renewal.",
+   "whatItAffects": "Homeowners, renters through their rents, businesses, and everyone who uses town services.",
+   "whoDecides": "Council adopts the five-year financial plan and sets municipal tax rates and the infrastructure renewal levy.",
+   "viewQuestion": {
+    "question": "What should guide the town budget?",
+    "poleA": "Keep tax increases low, even if some projects wait",
+    "poleB": "Keep funding services and projects, even if taxes rise more"
+   },
+   "topicTags": [
+    "taxes",
+    "budget"
+   ],
+   "sources": [
+    "https://comoxvalleyrecord.com/2026/01/28/town-of-comox-councillor-says-tax-rates-are-unreasonable/",
+    "https://comoxvalleyrecord.com/2026/05/19/town-of-comox-adopts-2026-budget-and-tax-rates/"
+   ],
+   "tradeoffs": {
+    "context": "With limited revenue, lower tax increases usually mean doing less or doing it later.",
+    "a": {
+     "gains": [
+      "Households and businesses could face smaller yearly tax bills",
+      "Council may look harder for savings in existing programs"
+     ],
+     "costs": [
+      "Some projects or service improvements could be delayed",
+      "Deferred maintenance can cost more to fix later"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Services and planned projects may continue on schedule",
+      "Infrastructure could be renewed before it wears out"
+     ],
+     "costs": [
+      "Property tax bills could rise faster",
+      "Higher costs may add to pressure on renters and fixed incomes"
+     ]
+    }
+   }
+  },
+  {
+   "id": "infrastructure-for-growth",
+   "title": "Infrastructure for growth",
+   "description": "How the town pays for roads, water, sewer and other services needed as Comox grows, including growth tied to the CFB Comox expansion.",
+   "whatItAffects": "Residents who rely on town water, sewer and roads, developers, and future taxpayers.",
+   "whoDecides": "Council sets development cost charges and amenity contributions, plans capital projects and decides how much to borrow or levy.",
+   "viewQuestion": {
+    "question": "Who should pay most of the cost of growth-related upgrades?",
+    "poleA": "New development, through higher charges on builders",
+    "poleB": "The whole community, keeping development charges moderate"
+   },
+   "topicTags": [
+    "infrastructure",
+    "growth",
+    "budget"
+   ],
+   "sources": [
+    "https://comoxvalleyrecord.com/2026/07/17/cfb-comox-project-housing-and-traffic-on-agenda-at-july-8-comox-council-meeting/",
+    "https://comoxvalleyrecord.com/2026/05/19/town-of-comox-adopts-2026-budget-and-tax-rates/",
+    "https://comoxvalleyrecord.com/2026/07/10/protesters-against-aspen-east-project-attend-comox-council-meeting/"
+   ],
+   "tradeoffs": {
+    "context": "Upgrades for growth have to be paid for either by new development or by existing taxpayers.",
+    "a": {
+     "gains": [
+      "Existing taxpayers may carry less of the cost of growth",
+      "Upgrades could be funded as new projects arrive"
+     ],
+     "costs": [
+      "Higher charges could raise the price of new homes",
+      "Some projects may be delayed or not built"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Lower charges may help more housing get built",
+      "Costs are spread across all who benefit over time"
+     ],
+     "costs": [
+      "Existing taxpayers may pay more for upgrades",
+      "Upgrades could lag if tax revenue falls short"
+     ]
+    }
+   }
+  },
+  {
+   "id": "traffic-and-getting-around",
+   "title": "Traffic and getting around",
+   "description": "How Comox streets handle growing traffic and how space is shared among cars, parking, walking, cycling and buses.",
+   "whatItAffects": "Drivers, cyclists, pedestrians, transit riders, and residents on busy streets.",
+   "whoDecides": "Council funds street design, traffic calming, bike lanes, sidewalks and trails, and works with regional partners on transit.",
+   "viewQuestion": {
+    "question": "How should street space be used as Comox grows?",
+    "poleA": "Give more space to walking, cycling and transit",
+    "poleB": "Keep more space for driving lanes and parking"
+   },
+   "topicTags": [
+    "transportation",
+    "growth"
+   ],
+   "sources": [
+    "https://comoxvalleyrecord.com/2026/07/17/cfb-comox-project-housing-and-traffic-on-agenda-at-july-8-comox-council-meeting/"
+   ],
+   "tradeoffs": {
+    "context": "Street space is fixed, so adding room for one way of travel often takes it from another.",
+    "a": {
+     "gains": [
+      "Walking and cycling could become safer and more appealing",
+      "More trips by foot, bike or bus may ease future congestion"
+     ],
+     "costs": [
+      "Some on-street parking and driving lanes may be lost",
+      "Changes can be costly and take years to show results"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Drivers and businesses may keep familiar parking and access",
+      "Fewer construction projects may be needed in the short term"
+     ],
+     "costs": [
+      "Congestion may grow as population rises",
+      "People who do not drive may have fewer safe options"
+     ]
+    }
+   }
+  },
+  {
+   "id": "parks-trees-and-environment",
+   "title": "Parks, trees and environment",
+   "description": "How the town protects trees, green space and shorelines and prepares for climate impacts such as drought.",
+   "whatItAffects": "Property owners, park users, wildlife habitat, and the town's water supply and climate readiness.",
+   "whoDecides": "Council sets the tree protection bylaw, buys and manages parkland, and funds climate and urban forest plans.",
+   "viewQuestion": {
+    "question": "How far should the town go to protect trees and green space?",
+    "poleA": "Stronger rules and more spending to protect trees and land",
+    "poleB": "Lighter rules for owners and less spending on new land"
+   },
+   "topicTags": [
+    "environment",
+    "parks",
+    "climate"
+   ],
+   "sources": [
+    "https://comoxvalleyrecord.com/2026/06/22/comox-adopts-new-tree-protection-bylaw/",
+    "https://comoxvalleyrecord.com/2026/09/22/steve-blacklock-announces-re-election-campaign-for-comox-council/",
+    "https://comoxvalleyrecord.com/2026/09/15/jessica-wegg-is-running-for-comox-council-with-an-eye-for-climate-resiliency/"
+   ],
+   "tradeoffs": {
+    "context": "Protecting trees and green space usually trades property owner flexibility and cost for long-term environmental benefits.",
+    "a": {
+     "gains": [
+      "More tree canopy, habitat and green space could be kept",
+      "The town may be better prepared for heat and drought"
+     ],
+     "costs": [
+      "Owners may face permits and replanting costs",
+      "Buying land and running programs adds to budgets"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Owners may have more freedom on their own property",
+      "Lower spending could ease pressure on taxes"
+     ],
+     "costs": [
+      "Tree canopy and green space may shrink as the town grows",
+      "Climate impacts may cost more to handle later"
+     ]
+    }
+   }
+  },
+  {
+   "id": "youth-and-recreation",
+   "title": "Youth and recreation",
+   "description": "How much the town invests in recreation facilities and programs, especially for youth.",
+   "whatItAffects": "Young people, families, seniors and users of the community centre and parks.",
+   "whoDecides": "Council funds town recreation facilities and programs and sets fees through the budget and recreation master plan.",
+   "viewQuestion": {
+    "question": "How should the town approach recreation?",
+    "poleA": "Add facilities and low-cost programs, even at higher cost",
+    "poleB": "Keep spending steady and focus on existing facilities"
+   },
+   "topicTags": [
+    "recreation",
+    "youth"
+   ],
+   "sources": [
+    "https://comoxvalleyrecord.com/2026/05/19/town-of-comox-adopts-2026-budget-and-tax-rates/",
+    "https://comoxvalleyrecord.com/2026/09/15/jessica-wegg-is-running-for-comox-council-with-an-eye-for-climate-resiliency/",
+    "https://comoxvalleyrecord.com/2026/09/23/maureen-swift-wants-to-continue-listening-and-asking-questions-with-comox-council/",
+    "https://comoxvalleyrecord.com/2026/09/04/dr-jonathan-kerr-announces-re-election-bid-for-comox-council/"
+   ],
+   "tradeoffs": {
+    "context": "New recreation options bring community benefits but add building and operating costs.",
+    "a": {
+     "gains": [
+      "Youth and families could have more places to be active",
+      "Low-cost programs may reach people who cannot afford fees"
+     ],
+     "costs": [
+      "New facilities add long-term operating costs",
+      "Money may come from taxes or other priorities"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Spending and tax pressure may stay more predictable",
+      "Existing facilities may be better maintained"
+     ],
+     "costs": [
+      "Some groups may see few new options",
+      "Demand may outgrow facilities as the town grows"
+     ]
+    }
+   }
+  },
+  {
+   "id": "downtown-and-local-economy",
+   "title": "Downtown and local economy",
+   "description": "Where the town focuses its economic development efforts, from downtown and the marina to industrial and employment lands.",
+   "whatItAffects": "Local businesses, workers, shoppers, visitors and the town's commercial tax base.",
+   "whoDecides": "Council sets economic development strategy, zoning for commercial and industrial land, and funds downtown and marina projects.",
+   "viewQuestion": {
+    "question": "Where should the town focus economic development?",
+    "poleA": "Invest in downtown, the marina and the waterfront",
+    "poleB": "Open up more industrial and employment land elsewhere"
+   },
+   "topicTags": [
+    "economy",
+    "downtown"
+   ],
+   "sources": [
+    "https://comoxvalleyrecord.com/2026/05/19/town-of-comox-adopts-2026-budget-and-tax-rates/",
+    "https://comoxvalleyrecord.com/2026/09/25/nicole-minions-is-acclaimed-mayor-of-comox-for-a-second-term/",
+    "https://comoxvalleyrecord.com/2026/09/23/maureen-swift-wants-to-continue-listening-and-asking-questions-with-comox-council/"
+   ],
+   "tradeoffs": {
+    "context": "Economic development dollars and staff time are limited, so focusing on one area means less for another.",
+    "a": {
+     "gains": [
+      "A livelier downtown and waterfront could draw visitors and shoppers",
+      "Public spaces may benefit residents too"
+     ],
+     "costs": [
+      "Upfront costs fall on taxpayers",
+      "Benefits may be concentrated in one part of town"
+     ]
+    },
+    "b": {
+     "gains": [
+      "New businesses and jobs could broaden the tax base",
+      "Industrial land may support trades tied to growth"
+     ],
+     "costs": [
+      "Servicing new employment land can be costly",
+      "Downtown may see less direct investment"
+     ]
+    }
+   }
+  },
+  {
+   "id": "public-engagement-in-decisions",
+   "title": "Public input on major decisions",
+   "description": "How much the town consults residents before major decisions such as rezonings, plans and large projects.",
+   "whatItAffects": "Residents near proposed projects, applicants waiting on approvals, and trust in local government.",
+   "whoDecides": "Council decides how much consultation to require beyond provincial rules, including public meetings, neighbourhood planning and citizens' assemblies.",
+   "viewQuestion": {
+    "question": "How should the town balance consultation and speed?",
+    "poleA": "Consult more widely, even if decisions take longer",
+    "poleB": "Keep processes streamlined so decisions move faster"
+   },
+   "topicTags": [
+    "governance",
+    "land-use"
+   ],
+   "sources": [
+    "https://comoxvalleyrecord.com/2026/02/24/comox-ocp-adopted-by-narrow-margin/",
+    "https://comoxvalleyrecord.com/2026/07/10/protesters-against-aspen-east-project-attend-comox-council-meeting/",
+    "https://comoxvalleyrecord.com/2026/03/05/comox-apartment-development-paused-due-to-community-feedback/"
+   ],
+   "tradeoffs": {
+    "context": "More consultation can improve buy-in but usually adds time and cost to decisions.",
+    "a": {
+     "gains": [
+      "Residents may feel more heard and trust outcomes more",
+      "Local knowledge could improve projects"
+     ],
+     "costs": [
+      "Approvals and housing could take longer",
+      "Consultation adds staff costs"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Projects and homes could be approved sooner",
+      "Applicants may face more predictable timelines"
+     ],
+     "costs": [
+      "Some residents may feel left out of decisions",
+      "Concerns may surface later, after approval"
+     ]
+    }
+   }
+  }
+ ],
+ "election": {
+  "id": "comox-local-2026",
+  "name": "Town of Comox general local election",
+  "level": "municipal",
+  "votingDay": "2026-10-17",
+  "votingDayHours": "8 a.m. to 8 p.m.",
+  "advanceVoting": [
+   {
+    "date": "2026-10-07",
+    "hours": "8 a.m. to 8 p.m.",
+    "locations": [
+     "Comox Community Centre, 1855 Noel Avenue"
+    ]
+   },
+   {
+    "date": "2026-10-10",
+    "hours": "10 a.m. to 2 p.m.",
+    "locations": [
+     "Genoa Sail Building, Comox Marina"
+    ]
+   },
+   {
+    "date": "2026-10-12",
+    "hours": "10 a.m. to 2 p.m.",
+    "locations": [
+     "Genoa Sail Building, Comox Marina"
+    ]
+   },
+   {
+    "date": "2026-10-14",
+    "hours": "8 a.m. to 8 p.m.",
+    "locations": [
+     "Comox Community Centre, 1855 Noel Avenue"
+    ]
+   }
+  ],
+  "howToVote": "On General Voting Day (Saturday, Oct. 17, 8 a.m. to 8 p.m.) Comox voters cast ballots at the Comox Community Centre, 1855 Noel Avenue, or can vote early on any of four advance voting days. Voters already registered need no ID; others can register at the voting place with two pieces of ID (at least one with a signature) proving identity and residence. Non-resident property electors also need proof of ownership, such as a State of Title Certificate or current tax notice. Only the six council seats are contested; the mayor was acclaimed.",
+  "voteByMail": "All eligible electors could apply to vote by mail; the application deadline was Sept. 25, 2026, and completed ballots must reach the Town by 8 p.m. on Oct. 17 (by mail or dropped off at Town Hall). Curbside voting is available on General Voting Day for voters with mobility challenges.",
+  "officialUrl": "https://www.comox.ca/elections",
+  "sources": [
+   "https://www.comox.ca/elections",
+   "https://www.comox.ca/votingoptions",
+   "https://www.comox.ca/candidates",
+   "https://comoxvalleyrecord.com/2026/09/22/town-of-comox-offering-advanced-voting-opportunities-for-municipal-elections/",
+   "https://localelections.ca/election_candidates/19_2026_candidates.html",
+   "https://comoxvalleyrecord.com/2026/09/14/candidate-list-of-comox-valley-area/"
+  ],
+  "ballotQuestions": []
+ },
+ "electorOrganizations": [],
+ "races": [
+  {
+   "id": "comox-mayor",
+   "office": "Mayor",
+   "seats": 1,
+   "areaName": "Town of Comox",
+   "acclaimed": true,
+   "candidates": [
+    {
+     "id": "nicole-minions",
+     "name": "Nicole Minions",
+     "ballotName": "Minions, Nicole B",
+     "incumbent": true,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://www.nicoleminions.com",
+     "links": [
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/comoxforgenerations"
+      }
+     ],
+     "sourceUrls": [
+      "https://localelections.ca/election_candidates/19_2026_candidates.html",
+      "https://comoxvalleyrecord.com/2026/09/14/candidate-list-of-comox-valley-area/",
+      "https://comoxvalleyrecord.com/2026/09/25/nicole-minions-is-acclaimed-mayor-of-comox-for-a-second-term/",
+      "https://comoxvalleyrecord.com/2026/09/22/town-of-comox-offering-advanced-voting-opportunities-for-municipal-elections/",
+      "https://nicoleminions.com/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Mayor of Comox since 2022 and a councillor from 2018. Background in banking, non-profit leadership, real estate and human resources; moved to the Comox Valley in 2012. Acclaimed to a second term as mayor.",
+     "summarySource": "https://nicoleminions.com/",
+     "positions": [
+      {
+       "issueId": "property-taxes-and-spending",
+       "topic": "core services",
+       "summary": "Focuses on core services during economic pressure, favouring low-cost initiatives such as pop-ups and markets to do more with less.",
+       "sourceUrl": "https://comoxvalleyrecord.com/2026/09/25/nicole-minions-is-acclaimed-mayor-of-comox-for-a-second-term/",
+       "sourceType": "news",
+       "proposedLean": -1,
+       "leanReason": "Emphasizes doing more with less"
+      },
+      {
+       "issueId": "downtown-and-local-economy",
+       "topic": "downtown and marina",
+       "summary": "Wants to continue momentum on downtown and marina improvements.",
+       "sourceUrl": "https://comoxvalleyrecord.com/2026/09/25/nicole-minions-is-acclaimed-mayor-of-comox-for-a-second-term/",
+       "sourceType": "news",
+       "proposedLean": -1,
+       "leanReason": "Prioritizes downtown and marina"
+      },
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "Official Community Plan",
+       "summary": "Said during OCP debate that balanced growth did not require the level of density in the adopted plan.",
+       "sourceUrl": "https://comoxvalleyrecord.com/2026/02/24/comox-ocp-adopted-by-narrow-margin/",
+       "sourceType": "news",
+       "proposedLean": 1,
+       "leanReason": "Favoured less density than adopted"
+      },
+      {
+       "issueId": "parks-trees-and-environment",
+       "topic": "environment",
+       "summary": "Lists environmental protection and climate action among her priorities.",
+       "sourceUrl": "https://nicoleminions.com/",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Supports environmental protection"
+      },
+      {
+       "issueId": null,
+       "topic": "19 Wing Comox",
+       "summary": "Prioritizes closer partnership with 19 Wing Comox as the base expands.",
+       "sourceUrl": "https://comoxvalleyrecord.com/2026/09/25/nicole-minions-is-acclaimed-mayor-of-comox-for-a-second-term/",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "No side on an issue scale"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "comox-council",
+   "office": "Councillor",
+   "seats": 6,
+   "areaName": "Town of Comox",
+   "candidates": [
+    {
+     "id": "steve-blacklock",
+     "name": "Steve Blacklock",
+     "ballotName": "Blacklock, Steve",
+     "incumbent": true,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://www.steve4comox.ca",
+     "links": [
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/steve.comox"
+      },
+      {
+       "label": "X",
+       "url": "https://x.com/cvappraiser"
+      }
+     ],
+     "sourceUrls": [
+      "https://localelections.ca/election_candidates/19_2026_candidates.html",
+      "https://comoxvalleyrecord.com/2026/09/14/candidate-list-of-comox-valley-area/",
+      "https://comoxvalleyrecord.com/2026/09/22/steve-blacklock-announces-re-election-campaign-for-comox-council/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "First elected to Comox council in 2022 after finishing second in a 2021 by-election; seeking a second term.",
+     "summarySource": "https://comoxvalleyrecord.com/2026/09/22/steve-blacklock-announces-re-election-campaign-for-comox-council/",
+     "positions": [
+      {
+       "issueId": "property-taxes-and-spending",
+       "topic": "finances",
+       "summary": "Lists managing town finances sustainably as Comox grows as a campaign priority.",
+       "sourceUrl": "https://comoxvalleyrecord.com/2026/09/22/steve-blacklock-announces-re-election-campaign-for-comox-council/",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "No direction on taxes stated"
+      },
+      {
+       "issueId": "infrastructure-for-growth",
+       "topic": "infrastructure",
+       "summary": "Supports investing in infrastructure needed to support development.",
+       "sourceUrl": "https://comoxvalleyrecord.com/2026/09/22/steve-blacklock-announces-re-election-campaign-for-comox-council/",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "Funding source not specified"
+      },
+      {
+       "issueId": "youth-and-recreation",
+       "topic": "recreation",
+       "summary": "Supports adding recreation facilities for residents.",
+       "sourceUrl": "https://comoxvalleyrecord.com/2026/09/22/steve-blacklock-announces-re-election-campaign-for-comox-council/",
+       "sourceType": "news",
+       "proposedLean": -1,
+       "leanReason": "Favours new facilities"
+      },
+      {
+       "issueId": "parks-trees-and-environment",
+       "topic": "parkland",
+       "summary": "Cites council's purchase of the Newson Family Park waterfront parcel as an accomplishment.",
+       "sourceUrl": "https://comoxvalleyrecord.com/2026/09/22/steve-blacklock-announces-re-election-campaign-for-comox-council/",
+       "sourceType": "news",
+       "proposedLean": -1,
+       "leanReason": "Supports parkland acquisition"
+      },
+      {
+       "issueId": "downtown-and-local-economy",
+       "topic": "economic development",
+       "summary": "Lists economic development and support for business as a priority.",
+       "sourceUrl": "https://comoxvalleyrecord.com/2026/09/22/steve-blacklock-announces-re-election-campaign-for-comox-council/",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "Location of focus not stated"
+      }
+     ]
+    },
+    {
+     "id": "lisa-bourgeois",
+     "name": "Lisa Bourgeois",
+     "ballotName": "Bourgeois, Lisa C",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://lisaforcomox.ca",
+     "links": [],
+     "sourceUrls": [
+      "https://localelections.ca/election_candidates/19_2026_candidates.html",
+      "https://comoxvalleyrecord.com/2026/09/14/candidate-list-of-comox-valley-area/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": null,
+     "summarySource": null,
+     "positions": []
+    },
+    {
+     "id": "vivian-chislett",
+     "name": "Vivian Chislett",
+     "ballotName": "Chislett, Vivian",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": null,
+     "links": [],
+     "sourceUrls": [
+      "https://localelections.ca/election_candidates/19_2026_candidates.html",
+      "https://comoxvalleyrecord.com/2026/09/14/candidate-list-of-comox-valley-area/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": null,
+     "summarySource": null,
+     "positions": []
+    },
+    {
+     "id": "ken-grant",
+     "name": "Ken Grant",
+     "ballotName": "Grant, Ken J",
+     "incumbent": true,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": null,
+     "links": [],
+     "sourceUrls": [
+      "https://localelections.ca/election_candidates/19_2026_candidates.html",
+      "https://comoxvalleyrecord.com/2026/09/14/candidate-list-of-comox-valley-area/",
+      "https://comoxvalleyrecord.com/2026/01/28/town-of-comox-councillor-says-tax-rates-are-unreasonable/",
+      "https://comoxvalleyrecord.com/2026/07/17/cfb-comox-project-housing-and-traffic-on-agenda-at-july-8-comox-council-meeting/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Long-serving incumbent Comox councillor seeking re-election.",
+     "summarySource": "https://comoxvalleyrecord.com/2026/01/28/town-of-comox-councillor-says-tax-rates-are-unreasonable/",
+     "positions": [
+      {
+       "issueId": "property-taxes-and-spending",
+       "topic": "tax rates",
+       "summary": "Called repeated annual tax increases unreasonable and asked council to discuss changes at strategic planning.",
+       "sourceUrl": "https://comoxvalleyrecord.com/2026/01/28/town-of-comox-councillor-says-tax-rates-are-unreasonable/",
+       "sourceType": "news",
+       "proposedLean": -2,
+       "leanReason": "Opposes continued tax increases"
+      },
+      {
+       "issueId": "traffic-and-getting-around",
+       "topic": "traffic",
+       "summary": "Expects traffic to worsen with CFB Comox growth and says taxation and traffic should be council priorities.",
+       "sourceUrl": "https://comoxvalleyrecord.com/2026/07/17/cfb-comox-project-housing-and-traffic-on-agenda-at-july-8-comox-council-meeting/",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "Concern stated, no approach chosen"
+      }
+     ]
+    },
+    {
+     "id": "christopher-haslett",
+     "name": "Christopher Haslett",
+     "ballotName": "Haslett, Christopher T",
+     "incumbent": true,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": null,
+     "links": [],
+     "sourceUrls": [
+      "https://localelections.ca/election_candidates/19_2026_candidates.html",
+      "https://comoxvalleyrecord.com/2026/09/14/candidate-list-of-comox-valley-area/",
+      "https://www.comoxvalleyrecord.com/community/family-man-business-owner-chris-haslett-running-for-a-seat-on-comox-council-1636530"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Incumbent councillor first elected in 2022. Owns a Comox Valley yard maintenance business and has served on the Comox Valley Healthcare Foundation board (per 2022 profile).",
+     "summarySource": "https://www.comoxvalleyrecord.com/community/family-man-business-owner-chris-haslett-running-for-a-seat-on-comox-council-1636530",
+     "positions": []
+    },
+    {
+     "id": "jonathan-kerr",
+     "name": "Jonathan Kerr",
+     "ballotName": "Kerr, Jonathan R",
+     "incumbent": true,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://healthycomox.ca",
+     "links": [
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/HealthyComoxBC"
+      },
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/HealthyComox"
+      },
+      {
+       "label": "X",
+       "url": "https://x.com/drjonathankerr"
+      }
+     ],
+     "sourceUrls": [
+      "https://localelections.ca/election_candidates/19_2026_candidates.html",
+      "https://comoxvalleyrecord.com/2026/09/14/candidate-list-of-comox-valley-area/",
+      "https://comoxvalleyrecord.com/2026/09/04/dr-jonathan-kerr-announces-re-election-bid-for-comox-council/",
+      "https://comoxvalleyrecord.com/2026/02/24/comox-ocp-adopted-by-narrow-margin/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Family physician with a practice in downtown Comox and small business owner; first elected to council in 2022. Chairs the Comox Valley family physician recruitment and retention committee.",
+     "summarySource": "https://comoxvalleyrecord.com/2026/09/04/dr-jonathan-kerr-announces-re-election-bid-for-comox-council/",
+     "positions": [
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "Official Community Plan",
+       "summary": "Voted against the adopted OCP, saying it should be a community plan rather than a developer plan.",
+       "sourceUrl": "https://comoxvalleyrecord.com/2026/02/24/comox-ocp-adopted-by-narrow-margin/",
+       "sourceType": "news",
+       "proposedLean": 1,
+       "leanReason": "Opposed the plan's approach to growth"
+      },
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "affordable housing",
+       "summary": "Supports housing affordability initiatives, including the new regional Affordable Housing Authority.",
+       "sourceUrl": "https://comoxvalleyrecord.com/2026/09/04/dr-jonathan-kerr-announces-re-election-bid-for-comox-council/",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "Affordability, not density"
+      },
+      {
+       "issueId": "parks-trees-and-environment",
+       "topic": "climate and trees",
+       "summary": "Supports the Climate Action Plan and tree protection bylaw and protecting parks, forests and shorelines.",
+       "sourceUrl": "https://comoxvalleyrecord.com/2026/09/04/dr-jonathan-kerr-announces-re-election-bid-for-comox-council/",
+       "sourceType": "news",
+       "proposedLean": -2,
+       "leanReason": "Backs stronger protections"
+      },
+      {
+       "issueId": "youth-and-recreation",
+       "topic": "recreation",
+       "summary": "Supports funding recreation facilities for youth and seniors.",
+       "sourceUrl": "https://comoxvalleyrecord.com/2026/09/04/dr-jonathan-kerr-announces-re-election-bid-for-comox-council/",
+       "sourceType": "news",
+       "proposedLean": -1,
+       "leanReason": "Favours added recreation funding"
+      },
+      {
+       "issueId": "downtown-and-local-economy",
+       "topic": "downtown",
+       "summary": "Prioritizes support for local businesses and downtown vitality.",
+       "sourceUrl": "https://comoxvalleyrecord.com/2026/09/04/dr-jonathan-kerr-announces-re-election-bid-for-comox-council/",
+       "sourceType": "news",
+       "proposedLean": -1,
+       "leanReason": "Downtown focus"
+      }
+     ]
+    },
+    {
+     "id": "neil-ladell",
+     "name": "Neil Ladell",
+     "ballotName": "Ladell, Neil A",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://neil4comox.ca",
+     "links": [],
+     "sourceUrls": [
+      "https://localelections.ca/election_candidates/19_2026_candidates.html",
+      "https://comoxvalleyrecord.com/2026/09/14/candidate-list-of-comox-valley-area/",
+      "https://comoxvalleyrecord.com/2026/09/15/neil-ladell-is-running-for-comox-council-this-october/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Federal public servant who has worked at Fisheries and Oceans Canada and Innovation, Science and Economic Development Canada; holds a PhD in resource and environmental management from SFU. First run for office.",
+     "summarySource": "https://comoxvalleyrecord.com/2026/09/15/neil-ladell-is-running-for-comox-council-this-october/",
+     "positions": [
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "housing",
+       "summary": "Supports affordable, innovative housing while preserving Comox's community character.",
+       "sourceUrl": "https://comoxvalleyrecord.com/2026/09/15/neil-ladell-is-running-for-comox-council-this-october/",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "Balances both poles"
+      },
+      {
+       "issueId": "parks-trees-and-environment",
+       "topic": "climate resilience",
+       "summary": "Wants integrated planning for infrastructure, finances and climate pressures such as drought, plus sustainable urban forestry.",
+       "sourceUrl": "https://comoxvalleyrecord.com/2026/09/15/neil-ladell-is-running-for-comox-council-this-october/",
+       "sourceType": "news",
+       "proposedLean": -1,
+       "leanReason": "Favours climate and forest planning"
+      },
+      {
+       "issueId": "public-engagement-in-decisions",
+       "topic": "civic engagement",
+       "summary": "Wants stronger resident participation in decisions such as rezonings and infrastructure upgrades.",
+       "sourceUrl": "https://comoxvalleyrecord.com/2026/09/15/neil-ladell-is-running-for-comox-council-this-october/",
+       "sourceType": "news",
+       "proposedLean": -1,
+       "leanReason": "Favours more consultation"
+      },
+      {
+       "issueId": "youth-and-recreation",
+       "topic": "community vitality",
+       "summary": "Lists youth recreation, arts, culture and inclusive gathering spaces among priorities.",
+       "sourceUrl": "https://comoxvalleyrecord.com/2026/09/15/neil-ladell-is-running-for-comox-council-this-october/",
+       "sourceType": "news",
+       "proposedLean": -1,
+       "leanReason": "Favours more youth recreation"
+      }
+     ]
+    },
+    {
+     "id": "jenn-meilleur",
+     "name": "Jenn Meilleur",
+     "ballotName": "Meilleur, Jenn",
+     "incumbent": true,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://www.jennmeilleur.com",
+     "links": [
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/civicjenn"
+      },
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/civicjenn"
+      }
+     ],
+     "sourceUrls": [
+      "https://localelections.ca/election_candidates/19_2026_candidates.html",
+      "https://comoxvalleyrecord.com/2026/09/14/candidate-list-of-comox-valley-area/",
+      "https://comoxvalleyrecord.com/2026/09/11/jenn-meilleur-runs-for-second-term-on-comox-council/",
+      "https://comoxvalleyrecord.com/2026/02/24/comox-ocp-adopted-by-narrow-margin/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Has more than 20 years of experience in community development and sustainability in government and non-profits; completing her first term on Comox council.",
+     "summarySource": "https://comoxvalleyrecord.com/2026/09/11/jenn-meilleur-runs-for-second-term-on-comox-council/",
+     "positions": [
+      {
+       "issueId": "public-engagement-in-decisions",
+       "topic": "OCP consultation",
+       "summary": "Voted against the adopted OCP, wanting more consultation among developers, businesses and residents to resolve differing views.",
+       "sourceUrl": "https://comoxvalleyrecord.com/2026/02/24/comox-ocp-adopted-by-narrow-margin/",
+       "sourceType": "news",
+       "proposedLean": -2,
+       "leanReason": "Sought more consultation"
+      },
+      {
+       "issueId": "public-engagement-in-decisions",
+       "topic": "citizens' assemblies",
+       "summary": "Proposes neighbourhood planning and citizens' assemblies to widen democratic participation.",
+       "sourceUrl": "https://comoxvalleyrecord.com/2026/09/11/jenn-meilleur-runs-for-second-term-on-comox-council/",
+       "sourceType": "news",
+       "proposedLean": -1,
+       "leanReason": "Favours more resident input"
+      },
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "managed growth",
+       "summary": "Supports managed growth paired with housing affordability.",
+       "sourceUrl": "https://comoxvalleyrecord.com/2026/09/11/jenn-meilleur-runs-for-second-term-on-comox-council/",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "Balances both poles"
+      },
+      {
+       "issueId": "parks-trees-and-environment",
+       "topic": "climate and ecosystems",
+       "summary": "Prioritizes ecosystem health, climate adaptation, and food and water security.",
+       "sourceUrl": "https://comoxvalleyrecord.com/2026/09/11/jenn-meilleur-runs-for-second-term-on-comox-council/",
+       "sourceType": "news",
+       "proposedLean": -1,
+       "leanReason": "Favours environmental action"
+      },
+      {
+       "issueId": "youth-and-recreation",
+       "topic": "youth and inclusion",
+       "summary": "Prioritizes youth wellness and inclusive services for people with disabilities.",
+       "sourceUrl": "https://comoxvalleyrecord.com/2026/09/11/jenn-meilleur-runs-for-second-term-on-comox-council/",
+       "sourceType": "news",
+       "proposedLean": -1,
+       "leanReason": "Favours added services"
+      }
+     ]
+    },
+    {
+     "id": "ruby-sidhu",
+     "name": "Ruby Sidhu",
+     "ballotName": "Sidhu, Ruby",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": null,
+     "links": [],
+     "sourceUrls": [
+      "https://localelections.ca/election_candidates/19_2026_candidates.html",
+      "https://comoxvalleyrecord.com/2026/09/14/candidate-list-of-comox-valley-area/",
+      "https://www.comoxvalleyrecord.com/community/ruby-sidhu-running-for-a-seat-on-comox-council-1636217"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Comox homeowner and father of two with a bachelor's degree in physics, mathematics and computer science; ran for Comox council in 2022 (per 2022 profile).",
+     "summarySource": "https://www.comoxvalleyrecord.com/community/ruby-sidhu-running-for-a-seat-on-comox-council-1636217",
+     "positions": []
+    },
+    {
+     "id": "maureen-swift",
+     "name": "Maureen Swift",
+     "ballotName": "Swift, Maureen",
+     "incumbent": true,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": null,
+     "links": [],
+     "sourceUrls": [
+      "https://localelections.ca/election_candidates/19_2026_candidates.html",
+      "https://comoxvalleyrecord.com/2026/09/14/candidate-list-of-comox-valley-area/",
+      "https://comoxvalleyrecord.com/2026/09/23/maureen-swift-wants-to-continue-listening-and-asking-questions-with-comox-council/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Incumbent Comox councillor with experience in local government and community service; describes Comox as her long-term home.",
+     "summarySource": "https://comoxvalleyrecord.com/2026/09/23/maureen-swift-wants-to-continue-listening-and-asking-questions-with-comox-council/",
+     "positions": [
+      {
+       "issueId": "downtown-and-local-economy",
+       "topic": "industrial land",
+       "summary": "Encourages development of industrial lands in Northeast Comox.",
+       "sourceUrl": "https://comoxvalleyrecord.com/2026/09/23/maureen-swift-wants-to-continue-listening-and-asking-questions-with-comox-council/",
+       "sourceType": "news",
+       "proposedLean": 1,
+       "leanReason": "Favours industrial land"
+      },
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "Northeast Comox housing",
+       "summary": "Encourages more housing options in Northeast Comox.",
+       "sourceUrl": "https://comoxvalleyrecord.com/2026/09/23/maureen-swift-wants-to-continue-listening-and-asking-questions-with-comox-council/",
+       "sourceType": "news",
+       "proposedLean": -1,
+       "leanReason": "Favours added housing"
+      },
+      {
+       "issueId": "traffic-and-getting-around",
+       "topic": "trails and walking",
+       "summary": "Supports expanding pedestrian and trail connections across the community.",
+       "sourceUrl": "https://comoxvalleyrecord.com/2026/09/23/maureen-swift-wants-to-continue-listening-and-asking-questions-with-comox-council/",
+       "sourceType": "news",
+       "proposedLean": -1,
+       "leanReason": "Favours walking connections"
+      },
+      {
+       "issueId": "youth-and-recreation",
+       "topic": "youth recreation",
+       "summary": "Wants to improve recreation opportunities for young residents.",
+       "sourceUrl": "https://comoxvalleyrecord.com/2026/09/23/maureen-swift-wants-to-continue-listening-and-asking-questions-with-comox-council/",
+       "sourceType": "news",
+       "proposedLean": -1,
+       "leanReason": "Favours more youth recreation"
+      },
+      {
+       "issueId": "property-taxes-and-spending",
+       "topic": "fiscal balance",
+       "summary": "Says finances should be managed by weighing what the community wants against what it needs.",
+       "sourceUrl": "https://comoxvalleyrecord.com/2026/09/23/maureen-swift-wants-to-continue-listening-and-asking-questions-with-comox-council/",
+       "sourceType": "news",
+       "proposedLean": -1,
+       "leanReason": "Emphasizes restraint"
+      }
+     ]
+    },
+    {
+     "id": "jessica-wegg",
+     "name": "Jessica Wegg",
+     "ballotName": "Wegg, Jessica A",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": null,
+     "links": [],
+     "sourceUrls": [
+      "https://localelections.ca/election_candidates/19_2026_candidates.html",
+      "https://comoxvalleyrecord.com/2026/09/14/candidate-list-of-comox-valley-area/",
+      "https://comoxvalleyrecord.com/2026/09/15/jessica-wegg-is-running-for-comox-council-with-an-eye-for-climate-resiliency/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Lawyer licensed in Canada and the US and partner in her firm, with a master's in clinical psychology; past chair of the Brooklyn PAC. Has run federally twice; first municipal campaign.",
+     "summarySource": "https://comoxvalleyrecord.com/2026/09/15/jessica-wegg-is-running-for-comox-council-with-an-eye-for-climate-resiliency/",
+     "positions": [
+      {
+       "issueId": "youth-and-recreation",
+       "topic": "youth spaces",
+       "summary": "Wants more safe, accessible and free recreation spaces for local teens.",
+       "sourceUrl": "https://comoxvalleyrecord.com/2026/09/15/jessica-wegg-is-running-for-comox-council-with-an-eye-for-climate-resiliency/",
+       "sourceType": "news",
+       "proposedLean": -2,
+       "leanReason": "Favours free youth facilities"
+      },
+      {
+       "issueId": "parks-trees-and-environment",
+       "topic": "climate resilience",
+       "summary": "Supports climate mitigation, emergency preparedness and environmental stewardship.",
+       "sourceUrl": "https://comoxvalleyrecord.com/2026/09/15/jessica-wegg-is-running-for-comox-council-with-an-eye-for-climate-resiliency/",
+       "sourceType": "news",
+       "proposedLean": -1,
+       "leanReason": "Favours climate action"
+      },
+      {
+       "issueId": "property-taxes-and-spending",
+       "topic": "spending transparency",
+       "summary": "Pledges transparent tracking of town spending, prioritizing residents' interests over developer and corporate profits.",
+       "sourceUrl": "https://comoxvalleyrecord.com/2026/09/15/jessica-wegg-is-running-for-comox-council-with-an-eye-for-climate-resiliency/",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "No tax direction stated"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "notes": "Mayor Nicole Minions was acclaimed (only candidate), so there is no mayoral vote; race kept with acclaimed flag. csdId 5926005 taken from the StatCan 2021 Focus on Geography URL (dguid 2021A00055926005) in search results; the page itself returned 404, so not fully verified. Official candidate list (comox.ca/runningforoffice) and voting-dates page could not be opened (permission prompts timed out); candidate names/ballot names come from localelections.ca (linked from comox.ca/elections) and the Comox Valley Record list; ballotName formats may differ from the official ballot. Advance voting details come from the Comox Valley Record. Candidate websites (steve4comox.ca, lisaforcomox.ca, healthycomox.ca, neil4comox.ca, jennmeilleur.com main pages, nicoleminions.com sub-pages) and comox.ca sub-pages could not be opened for the same reason; nicoleminions.com home page was read. jennmeilleur.com/general-6 still shows 2022 voting info. CHEK News Comox candidate guide is robots-disallowed; MyComoxValleyNow returned 403; CHLY forum report returned 429. LUSH Valley food-security survey responses (Google Drive) not reviewed. No positions found for Lisa Bourgeois, Vivian Chislett (Record list spells 'Vivan'), Christopher Haslett or Ruby Sidhu in 2026 sources; Haslett and Sidhu bios come from their 2022 Record campaign profiles and their 2022 platform positions were deliberately not used. Haslett's and Grant's statements at 2026 council meetings were limited. OCP adopted 4-3 in Feb 2026: Minions, Kerr and Meilleur against; a supporting quote is attributed to 'Coun. Maureen Smith' (likely Swift, but not used). By elimination Swift, Grant, Haslett and Blacklock voted in favour, but the article does not name them, so no positions were assigned from that. No elector organizations appear on candidate listings. No ballot questions found. Kerr's physician-recruitment work is provincial-adjacent and not mapped to an issue."
+}

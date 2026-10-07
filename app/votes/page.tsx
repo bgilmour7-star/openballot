@@ -4,7 +4,7 @@ import { redirect } from "next/navigation";
 import { getVoter, governmentsFor } from "@/lib/voter";
 import { COVERED_RIDINGS } from "@/lib/location";
 import { q } from "@/lib/db";
-import { daysUntil, electionFor, fmtDate, getGov, racesFor, host } from "@/lib/data";
+import { coveredMunicipalities, listJoin, daysUntil, electionFor, fmtDate, getGov, racesFor, host } from "@/lib/data";
 import Share from "@/components/Share";
 import ElectionsTimeline, { type DayGroup, type ElectionCard } from "@/components/ElectionsTimeline";
 import { forgetLocation } from "../actions";
@@ -14,7 +14,7 @@ export const dynamic = "force-dynamic";
 export default async function Votes() {
   const v = await getVoter();
   if (!v || (!v.city && !v.riding)) redirect("/");
-  const govIds = governmentsFor(v).filter((g) => g !== "province-of-bc" || COVERED_RIDINGS.includes(v.riding ?? ""));
+  const govIds = (await governmentsFor(v)).filter((g) => g !== "province-of-bc" || COVERED_RIDINGS.includes(v.riding ?? ""));
   const rankings = await q<{ government_id: string }>(`select government_id from rankings where voter_id=$1`, [v.id]);
   const ranked = new Set(rankings.map((r) => r.government_id));
   const blocks = await Promise.all(govIds.map(async (gid) => {
@@ -65,7 +65,7 @@ export default async function Votes() {
         <form action={forgetLocation}><button className="btn secondary small">Change location</button></form>
       </div>
       {!v.city && (
-        <p className="notice">Your local council and school board races aren&apos;t covered yet. Openballot covers the City of Nanaimo and the City of Victoria in this alpha. {v.riding && !COVERED_RIDINGS.includes(v.riding) ? "Your provincial riding isn't covered yet either." : ""} <Link href="/where">Wrong area? Check your street address.</Link></p>
+        <p className="notice">Your local council and school board races aren&apos;t covered yet. Openballot covers {listJoin(await coveredMunicipalities())} in this alpha. {v.riding && !COVERED_RIDINGS.includes(v.riding) ? "Your provincial riding isn't covered yet either." : ""} <Link href="/where">Wrong area? Check your street address.</Link></p>
       )}
       <ElectionsTimeline groups={groups} />
       <div style={{ marginTop: 16 }}><Share voterId={v.id} /></div>

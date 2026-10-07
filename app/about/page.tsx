@@ -20,11 +20,11 @@ export default function About() {
       </div>
       <div className="card">
         <h2>Where the information comes from</h2>
-        <p className="small">Official candidate lists and guides from the City of Nanaimo, the City of Victoria and the school districts; Elections BC and reputable summaries of its candidate list; candidates&apos; own websites; and local news Q&amp;As. Gathered October 3, 2026, and updated as candidates send corrections. Each issue list has a &quot;How this list was built&quot; page.</p>
+        <p className="small">Official candidate lists and guides from each municipality and school district we cover; Elections BC and reputable summaries of its candidate list; candidates&apos; own websites; and local news Q&amp;As. Gathered from October 3, 2026, and updated as candidates send corrections. Each issue list has a &quot;How this list was built&quot; page.</p>
       </div>
       <div className="card">
         <h2>This is an alpha</h2>
-        <p className="small">Openballot is an independent project being tested with a small group in Nanaimo and Victoria. Things may be wrong or missing. Please use <b>Send feedback</b> below, and always confirm with <a href="https://elections.bc.ca/" target="_blank" rel="noreferrer">Elections BC</a> and your municipality before you vote.</p>
+        <p className="small">Openballot is an independent project being tested with a small group of BC voters. Things may be wrong or missing. Please use <b>Send feedback</b> below, and always confirm with <a href="https://elections.bc.ca/" target="_blank" rel="noreferrer">Elections BC</a> and your municipality before you vote.</p>
         <Link className="btn" href="/">Find my votes</Link>
       </div>
     </div>

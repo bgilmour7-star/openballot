@@ -1,3 +1,4 @@
+import { coveredMunicipalities } from "@/lib/data";
 import Link from "next/link";
 import { getVoter } from "@/lib/voter";
 import PostalForm from "@/components/PostalForm";
@@ -34,7 +35,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<Rec
               </>
             )}
             {sp.err && <p className="notice" style={{ marginTop: 12 }}>{ERR[sp.err] ?? "Something went wrong."}</p>}
-            <p className="coverage"><span className="dot-live" aria-hidden /> Now in alpha for elections in Nanaimo and Victoria, BC</p>
+            <p className="coverage"><span className="dot-live" aria-hidden /> Now in alpha for elections in {(await coveredMunicipalities()).length} BC municipalities</p>
           </div>
           <div className="phone-wrap" aria-hidden>
             <div className="phone">

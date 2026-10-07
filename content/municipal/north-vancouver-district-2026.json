@@ -1,0 +1,1454 @@
+{
+ "municipality": {
+  "id": "north-vancouver-district",
+  "name": "District of North Vancouver",
+  "csdId": "5915046",
+  "csdName": null
+ },
+ "government": {
+  "id": "district-of-north-vancouver",
+  "name": "District of North Vancouver",
+  "howBuilt": "This list draws on District of North Vancouver candidates' own platforms and campaign websites, local news coverage of candidate announcements, and public statements about the North Shore Wastewater Treatment Plant costs. We kept issues the District can act on through zoning, its budget, utility rates, local roads, parks, and its role at Metro Vancouver. Matters mainly run by the province or federal government, such as health care and school funding, are left out of this list."
+ },
+ "issues": [
+  {
+   "id": "housing-growth-and-density",
+   "title": "Housing growth and density",
+   "description": "How much new housing the District allows, what types, and where it goes, including town centres and existing single-family neighbourhoods.",
+   "whatItAffects": "Renters, first-time buyers, seniors looking to downsize, families, and residents of established neighbourhoods.",
+   "whoDecides": "Council sets the Official Community Plan and zoning, approves rezonings and development permits, and sets development fees and amenity requirements within provincial housing rules.",
+   "viewQuestion": {
+    "question": "How should the District approach new housing?",
+    "poleA": "Allow more homes faster, including more density across neighbourhoods",
+    "poleB": "Grow more gradually and only where transit and services are in place"
+   },
+   "topicTags": [
+    "housing",
+    "cost-of-living",
+    "development"
+   ],
+   "sources": [
+    "https://www.treybell.ca/",
+    "https://www.nieweler.ca/issues",
+    "https://catherinepopenorthvan.com/",
+    "https://heystephwilson.ca/"
+   ],
+   "tradeoffs": {
+    "context": "Housing choices often trade how quickly new homes are built against how much neighbourhoods change and how fast services keep up.",
+    "a": {
+     "gains": [
+      "More homes could be built sooner, easing pressure on rents and prices",
+      "More people living locally may support shops, transit, and workers"
+     ],
+     "costs": [
+      "Traffic, schools, and pipes may come under more strain before upgrades arrive",
+      "Some neighbourhoods may see more change in height and character"
+     ]
+    },
+    "b": {
+     "gains": [
+      "New homes may be better matched with transit, roads, and amenities",
+      "Existing neighbourhoods may keep more of their current scale and feel"
+     ],
+     "costs": [
+      "Fewer new homes could keep rents and prices higher for longer",
+      "Workers and young families may keep commuting in from elsewhere"
+     ]
+    }
+   }
+  },
+  {
+   "id": "traffic-and-transit",
+   "title": "Traffic congestion and transit",
+   "description": "How the District tackles North Shore traffic, including local road changes, transit priority, cycling routes, and advocacy for a new Second Narrows crossing and rapid transit.",
+   "whatItAffects": "Commuters, transit riders, businesses, emergency response times, and people walking and cycling.",
+   "whoDecides": "Council controls District roads, lane use, and cycling and walking networks, and advocates to TransLink and the province on bridges, highways, and rapid transit.",
+   "viewQuestion": {
+    "question": "Where should the District focus its transportation efforts?",
+    "poleA": "Give more road space and priority to transit, walking, and cycling",
+    "poleB": "Focus on road and intersection changes that move vehicle traffic"
+   },
+   "topicTags": [
+    "transportation",
+    "transit"
+   ],
+   "sources": [
+    "https://www.nieweler.ca/",
+    "https://www.treybell.ca/",
+    "https://www.northshoredailypost.com/jordan-back-seeks-third-term-on-dnv-council/",
+    "https://catherinepopenorthvan.com/",
+    "https://heystephwilson.ca/"
+   ],
+   "tradeoffs": {
+    "context": "Road space and budgets are limited, so priority for one way of travelling can mean less room or money for another.",
+    "a": {
+     "gains": [
+      "More people could travel without adding cars to crowded roads",
+      "Transit and cycling options may lower travel costs for some households"
+     ],
+     "costs": [
+      "Drivers may face fewer lanes or slower trips on some streets",
+      "Major transit depends on regional and provincial funding the District does not control"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Drivers and trades may see quicker trips on key routes",
+      "Changes to local roads can often be made sooner and more directly"
+     ],
+     "costs": [
+      "Added road capacity may fill with new traffic over time",
+      "Less space or money may be left for transit and active travel"
+     ]
+    }
+   }
+  },
+  {
+   "id": "property-taxes-and-spending",
+   "title": "Property taxes and District spending",
+   "description": "How much the District raises through property taxes and utility fees each year, and which services and projects that money pays for.",
+   "whatItAffects": "Homeowners, renters through their rent, businesses, and everyone who uses District services.",
+   "whoDecides": "Council adopts the annual budget and five-year financial plan, sets tax rates and utility fees, and decides which services and projects to fund or delay.",
+   "viewQuestion": {
+    "question": "How should the District balance its budget?",
+    "poleA": "Hold tax increases close to inflation, even if some projects wait",
+    "poleB": "Keep investing in services and infrastructure, even if taxes rise more"
+   },
+   "topicTags": [
+    "taxes-budget",
+    "cost-of-living"
+   ],
+   "sources": [
+    "https://www.treybell.ca/",
+    "https://www.aidankyle.ca/commitments",
+    "https://www.nieweler.ca/issues"
+   ],
+   "tradeoffs": {
+    "context": "Each budget weighs what residents pay this year against the services and repairs the District can afford now and later.",
+    "a": {
+     "gains": [
+      "Households and businesses may face smaller yearly tax bills",
+      "Spending decisions may get closer scrutiny"
+     ],
+     "costs": [
+      "Some repairs, facilities, or services may be delayed",
+      "Deferred upkeep can cost more when it is eventually done"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Aging facilities and infrastructure may be renewed sooner",
+      "Service levels may be kept or expanded as the population grows"
+     ],
+     "costs": [
+      "Property taxes and fees may rise faster than inflation",
+      "Higher costs may pass through to renters and small businesses"
+     ]
+    }
+   }
+  },
+  {
+   "id": "wastewater-plant-costs",
+   "title": "Wastewater plant costs and Metro Vancouver",
+   "description": "How the District responds to the rising cost of the North Shore Wastewater Treatment Plant, which is billed to North Shore residents through Metro Vancouver.",
+   "whatItAffects": "Utility bills and property taxes for District households and businesses, and the District's relationship with the region.",
+   "whoDecides": "Council sets local utility rates, appoints its Metro Vancouver board representative, and can pass resolutions, seek inquiries, or advocate for how regional costs are shared.",
+   "viewQuestion": {
+    "question": "How should the District respond to wastewater plant costs?",
+    "poleA": "Press for an independent inquiry and pursue legal or rate challenges",
+    "poleB": "Work through Metro Vancouver to share costs and reform its governance"
+   },
+   "topicTags": [
+    "taxes-budget",
+    "infrastructure",
+    "regional-governance"
+   ],
+   "sources": [
+    "https://www.newswire.ca/news-releases/mayoral-candidate-graham-alexander-files-landmark-10-billion-lawsuit-against-dnv-province-and-federal-governments-to-unseal-nswtp-secrecy-and-restore-accountability-867979819.html",
+    "https://catherinepopenorthvan.com/",
+    "https://lindamunro.ca/2026/09/01/2026-key-priorities/",
+    "https://www.nieweler.ca/issues",
+    "https://www.treybell.ca/"
+   ],
+   "tradeoffs": {
+    "context": "The District can push hard against the region on these costs or negotiate within Metro Vancouver, and each path has risks.",
+    "a": {
+     "gains": [
+      "Residents may learn more about how costs grew",
+      "Pressure may improve the odds of cost relief for North Shore payers"
+     ],
+     "costs": [
+      "Inquiries and legal action take time and money with uncertain results",
+      "Tension with regional partners may affect other shared projects"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Cost-sharing and governance changes could apply to future regional projects",
+      "The District keeps working relationships with other municipalities"
+     ],
+     "costs": [
+      "Relief for current North Shore bills may be smaller or slower",
+      "Some residents may feel past decisions go unexamined"
+     ]
+    }
+   }
+  },
+  {
+   "id": "affordable-and-supportive-housing",
+   "title": "Affordable, rental, and supportive housing",
+   "description": "Whether and how the District uses its land, fees, and approvals to add below-market rental, social, and supportive housing, and how sites are chosen.",
+   "whatItAffects": "Lower-income renters, seniors, local workers, people who are unhoused, and neighbours of proposed sites.",
+   "whoDecides": "Council can provide District-owned land, direct developer contributions to housing funds, set rental and non-market requirements, and approve sites in partnership with BC Housing.",
+   "viewQuestion": {
+    "question": "How should the District approach below-market and supportive housing?",
+    "poleA": "Use more District land and funds to add these homes across the community",
+    "poleB": "Add them more selectively, with stronger neighbourhood input on sites"
+   },
+   "topicTags": [
+    "housing",
+    "homelessness",
+    "cost-of-living"
+   ],
+   "sources": [
+    "https://www.treybell.ca/",
+    "https://catherinepopenorthvan.com/",
+    "https://heystephwilson.ca/"
+   ],
+   "tradeoffs": {
+    "context": "The District can move faster on below-market housing or spend more time on site selection and neighbourhood agreement.",
+    "a": {
+     "gains": [
+      "More people with low or moderate incomes may find homes in the District",
+      "Local workers may live closer to their jobs"
+     ],
+     "costs": [
+      "District land and funds used here are not available for other uses",
+      "Some neighbours may object to sites chosen with less consultation"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Neighbours may have more say in where projects go",
+      "Projects may face less opposition once approved"
+     ],
+     "costs": [
+      "Fewer below-market homes may be built in the near term",
+      "Longer processes may raise costs for housing partners"
+     ]
+    }
+   }
+  },
+  {
+   "id": "natural-areas-climate-and-wildfire",
+   "title": "Natural areas, climate, and wildfire",
+   "description": "How the District protects forests and habitat, prepares for wildfire, drought, and storms, and weighs climate goals in its decisions.",
+   "whatItAffects": "Residents near forested areas, parks and trail users, wildlife, and the District's infrastructure costs.",
+   "whoDecides": "Council sets land-use designations, park dedications, tree and environmental bylaws, wildfire mitigation work, and climate action spending.",
+   "viewQuestion": {
+    "question": "How should the District weigh nature protection against other needs?",
+    "poleA": "Protect more forest and habitat, and expand climate and wildfire work",
+    "poleB": "Keep current protections and focus spending on core services"
+   },
+   "topicTags": [
+    "environment",
+    "climate",
+    "parks"
+   ],
+   "sources": [
+    "https://www.treybell.ca/",
+    "https://www.nieweler.ca/issues",
+    "https://lindamunro.ca/2026/09/01/2026-key-priorities/",
+    "https://heystephwilson.ca/"
+   ],
+   "tradeoffs": {
+    "context": "Protecting more land and expanding climate work uses land and budget that could go to other priorities.",
+    "a": {
+     "gains": [
+      "More forest, habitat, and trails may be kept for the long term",
+      "Risks from wildfire and extreme weather may be reduced"
+     ],
+     "costs": [
+      "Less land may be available for housing or other uses",
+      "Added programs may add to District budgets"
+     ]
+    },
+    "b": {
+     "gains": [
+      "More budget may stay available for roads, facilities, and services",
+      "More flexibility may remain for future land-use decisions"
+     ],
+     "costs": [
+      "Some natural areas may face future development pressure",
+      "Climate and wildfire risks may grow without added work"
+     ]
+    }
+   }
+  },
+  {
+   "id": "recreation-facilities-and-childcare",
+   "title": "Recreation facilities, amenities, and childcare",
+   "description": "How quickly the District renews aging recreation centres and adds parks, sports facilities, gathering places, and childcare spaces.",
+   "whatItAffects": "Families, youth, seniors, sports groups, and neighbourhoods expecting amenities as they grow.",
+   "whoDecides": "Council decides capital spending on facilities and parks, uses amenity contributions from development, and can ease permitting or partner on childcare spaces.",
+   "viewQuestion": {
+    "question": "How should the District approach facilities and amenities?",
+    "poleA": "Build and renew facilities sooner, including through borrowing",
+    "poleB": "Phase projects over time to limit cost and borrowing"
+   },
+   "topicTags": [
+    "parks-recreation",
+    "childcare",
+    "infrastructure"
+   ],
+   "sources": [
+    "https://www.northshoredailypost.com/jordan-back-seeks-third-term-on-dnv-council/",
+    "https://www.treybell.ca/",
+    "https://catherinepopenorthvan.com/",
+    "https://heystephwilson.ca/",
+    "https://lindamunro.ca/2026/09/01/2026-key-priorities/"
+   ],
+   "tradeoffs": {
+    "context": "Facility projects are large, so timing affects both service levels and the District's budget.",
+    "a": {
+     "gains": [
+      "Residents may get updated facilities and more spaces sooner",
+      "Construction costs may be locked in before they rise further"
+     ],
+     "costs": [
+      "Borrowing and debt payments may add to taxes",
+      "Other capital projects may need to wait"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Spending may be spread out with less pressure on taxes",
+      "Projects can be adjusted as needs and costs become clearer"
+     ],
+     "costs": [
+      "Aging facilities may face higher repair costs or closures",
+      "Waitlists for programs and childcare may persist longer"
+     ]
+    }
+   }
+  },
+  {
+   "id": "amalgamation-with-city",
+   "title": "Amalgamation with the City of North Vancouver",
+   "description": "Whether the District and the City of North Vancouver should move toward merging or sharing more services.",
+   "whatItAffects": "How the North Shore is governed, local representation, and the cost of services in both municipalities.",
+   "whoDecides": "Council can study amalgamation, place a non-binding question on a future ballot, and negotiate shared services with the City; a merger also requires provincial approval.",
+   "viewQuestion": {
+    "question": "What should the District do about amalgamation?",
+    "poleA": "Hold a public vote on merging with the City",
+    "poleB": "Stay separate and cooperate on specific services"
+   },
+   "topicTags": [
+    "governance",
+    "taxes-budget"
+   ],
+   "sources": [
+    "https://www.nieweler.ca/issues",
+    "https://www.nieweler.ca/"
+   ],
+   "tradeoffs": {
+    "context": "Merging could simplify governance but would change representation and require a costly transition.",
+    "a": {
+     "gains": [
+      "One government may reduce duplication and simplify planning",
+      "Residents would have a direct say through a vote"
+     ],
+     "costs": [
+      "A merger process may be costly and take years",
+      "Some residents may feel their area has less local representation"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Each municipality keeps its own council, finances, and local priorities",
+      "Avoids the cost and disruption of a transition"
+     ],
+     "costs": [
+      "Some duplication of staff and services may continue",
+      "Coordinating across two governments may remain slower"
+     ]
+    }
+   }
+  }
+ ],
+ "election": {
+  "id": "north-vancouver-district-local-2026",
+  "name": "District of North Vancouver general local election",
+  "level": "municipal",
+  "votingDay": "2026-10-17",
+  "votingDayHours": "8 a.m. to 8 p.m.",
+  "advanceVoting": [],
+  "howToVote": "Eligible electors who are not already on the voters list can register at the voting place when they vote. To register there, you show two pieces of identification that together prove your identity and residential address, and one must include your signature, such as a driver's licence. Non-resident property electors must also show proof of their right to register for the property and, where applicable, written consent from a majority of the property's owners. Advance voting is held before general voting day, including at District Hall (355 West Queens Road), and there are more than 20 voting places on October 17; check the District's election page for advance voting dates and hours and your voting place.",
+  "voteByMail": "The District's election bylaw allows mail ballot voting; a mail ballot must be received by the Chief Election Officer before voting closes on general voting day. Application details are on the District's election page.",
+  "officialUrl": "https://www.dnv.org/government-administration/2026-general-local-election",
+  "sources": [
+   "https://docs.dnv.org/documents/declaration-of-candidates.pdf",
+   "https://localelections.ca/election_candidates/86_2026_candidates.html",
+   "https://docs.dnv.org/documents/Bylaw%206876.pdf",
+   "https://www2.gov.bc.ca//gov/content/governments/local-governments/governance-powers/general-local-elections/voting-local-elections/voter-registration-voting",
+   "https://www.northshoredailypost.com/why-vote-in-local-elections-on-north-shore/"
+  ],
+  "ballotQuestions": []
+ },
+ "electorOrganizations": [],
+ "races": [
+  {
+   "id": "north-vancouver-district-mayor",
+   "office": "Mayor",
+   "seats": 1,
+   "areaName": "District of North Vancouver",
+   "candidates": [
+    {
+     "id": "graham-alexander",
+     "name": "Graham Alexander",
+     "ballotName": "ALEXANDER, Graham",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://www.grahamgalexander.ca",
+     "links": [],
+     "sourceUrls": [
+      "https://docs.dnv.org/documents/declaration-of-candidates.pdf",
+      "https://localelections.ca/election_candidates/86_2026_candidates.html",
+      "https://www.newswire.ca/news-releases/mayoral-candidate-graham-alexander-files-landmark-10-billion-lawsuit-against-dnv-province-and-federal-governments-to-unseal-nswtp-secrecy-and-restore-accountability-867979819.html",
+      "https://www.grahamgalexander.ca"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": null,
+     "summarySource": null,
+     "positions": [
+      {
+       "issueId": "wastewater-plant-costs",
+       "topic": "wastewater plant",
+       "summary": "Has filed a lawsuit against the District and senior governments seeking disclosure on wastewater plant costs and calls for an independent review.",
+       "sourceUrl": "https://www.newswire.ca/news-releases/mayoral-candidate-graham-alexander-files-landmark-10-billion-lawsuit-against-dnv-province-and-federal-governments-to-unseal-nswtp-secrecy-and-restore-accountability-867979819.html",
+       "sourceType": "candidate",
+       "proposedLean": -2,
+       "leanReason": "Pursuing legal action and independent scrutiny"
+      },
+      {
+       "issueId": null,
+       "topic": "transparency",
+       "summary": "Objects to non-disclosure agreements limiting public access to District financial information and wants a new council to review past decisions openly.",
+       "sourceUrl": "https://www.newswire.ca/news-releases/mayoral-candidate-graham-alexander-files-landmark-10-billion-lawsuit-against-dnv-province-and-federal-governments-to-unseal-nswtp-secrecy-and-restore-accountability-867979819.html",
+       "sourceType": "candidate",
+       "proposedLean": null,
+       "leanReason": ""
+      }
+     ]
+    },
+    {
+     "id": "mike-little",
+     "name": "Mike Little",
+     "ballotName": "LITTLE, Mike",
+     "incumbent": true,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://www.mikelittle.ca",
+     "links": [],
+     "sourceUrls": [
+      "https://docs.dnv.org/documents/declaration-of-candidates.pdf",
+      "https://localelections.ca/election_candidates/86_2026_candidates.html",
+      "https://nationalnewswatch.com/2026/03/05/north-vancouver-b-c-mayors-ask-eby-for-inquiry-into-water-treatment-project",
+      "https://globalnews.ca/news/9742611/bc-housing-targets-north-vancouver-mayor-pushes-back"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Mayor of the District since 2018, re-elected in 2022, and a District councillor from 2005 to 2014; lifelong North Vancouver resident who works in shipping with a family-owned transportation company.",
+     "summarySource": "https://en.wikipedia.org/wiki/Mike_Little_(politician)",
+     "positions": [
+      {
+       "issueId": "wastewater-plant-costs",
+       "topic": "wastewater plant",
+       "summary": "As mayor in March 2026, asked the premier for a public inquiry into plant costs, a Metro Vancouver governance review, and fairer cost-sharing.",
+       "sourceUrl": "https://nationalnewswatch.com/2026/03/05/north-vancouver-b-c-mayors-ask-eby-for-inquiry-into-water-treatment-project",
+       "sourceType": "news",
+       "proposedLean": -1,
+       "leanReason": "Seeks an inquiry, alongside governance and cost-sharing reform"
+      },
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "growth and infrastructure",
+       "summary": "Said in 2023 that housing growth must be tied to transit and transportation investment, such as an Ironworkers Memorial Bridge upgrade.",
+       "sourceUrl": "https://globalnews.ca/news/9742611/bc-housing-targets-north-vancouver-mayor-pushes-back",
+       "sourceType": "news",
+       "proposedLean": 1,
+       "leanReason": "Links growth to infrastructure being in place"
+      },
+      {
+       "issueId": "affordable-and-supportive-housing",
+       "topic": "affordable housing",
+       "summary": "Said in 2023 that provincial housing targets should prioritize affordable units, which could reduce commuting.",
+       "sourceUrl": "https://globalnews.ca/news/9742611/bc-housing-targets-north-vancouver-mayor-pushes-back",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "Supports affordable units without stating how the District would add them"
+      }
+     ]
+    },
+    {
+     "id": "stephan-nieweler",
+     "name": "Stephan Nieweler",
+     "ballotName": "NIEWELER, Stephan",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://nieweler.ca",
+     "links": [
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/nieweler_dnv"
+      }
+     ],
+     "sourceUrls": [
+      "https://docs.dnv.org/documents/declaration-of-candidates.pdf",
+      "https://localelections.ca/election_candidates/86_2026_candidates.html",
+      "https://nieweler.ca",
+      "https://www.nieweler.ca/",
+      "https://www.nieweler.ca/about"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Lifelong District resident and former TransLink strategic planner who worked on Canada Line and Millennium Line projects; holds a PhD in geography and planning from SFU.",
+     "summarySource": "https://www.nieweler.ca/about",
+     "positions": [
+      {
+       "issueId": "traffic-and-transit",
+       "topic": "transportation",
+       "summary": "Proposes a new multi-modal Second Narrows crossing with rail transit, HOV and cycling lanes, and rail linking Ambleside to Metrotown.",
+       "sourceUrl": "https://www.nieweler.ca/",
+       "sourceType": "candidate",
+       "proposedLean": -2,
+       "leanReason": "Prioritizes rail, HOV and active modes over road expansion"
+      },
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "housing",
+       "summary": "Supports more housing near rapid transit using cost-effective materials and policy tools, with growth concentrated in town centres.",
+       "sourceUrl": "https://www.nieweler.ca/issues",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Supports more housing, focused in transit-oriented centres"
+      },
+      {
+       "issueId": "wastewater-plant-costs",
+       "topic": "wastewater plant",
+       "summary": "Calls for accountability from Metro representatives on cost overruns and for regional infrastructure overruns to be shared by the whole region.",
+       "sourceUrl": "https://www.nieweler.ca/issues",
+       "sourceType": "candidate",
+       "proposedLean": 1,
+       "leanReason": "Emphasizes regional cost-sharing reform"
+      },
+      {
+       "issueId": "amalgamation-with-city",
+       "topic": "amalgamation",
+       "summary": "Commits to a plebiscite on amalgamating the District and City at the 2030 municipal election.",
+       "sourceUrl": "https://www.nieweler.ca/issues",
+       "sourceType": "candidate",
+       "proposedLean": -2,
+       "leanReason": "Supports a public vote on merging"
+      },
+      {
+       "issueId": "natural-areas-climate-and-wildfire",
+       "topic": "environment",
+       "summary": "Supports moving away from fossil fuels, a long-term plan to protect ecologically sensitive sites, and an updated wildfire protection plan.",
+       "sourceUrl": "https://www.nieweler.ca/issues",
+       "sourceType": "candidate",
+       "proposedLean": -2,
+       "leanReason": "Proposes expanded protection and climate work"
+      }
+     ]
+    },
+    {
+     "id": "paolo-pucci",
+     "name": "Paolo Pucci",
+     "ballotName": "PUCCI, Paolo",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": null,
+     "links": [],
+     "sourceUrls": [
+      "https://docs.dnv.org/documents/declaration-of-candidates.pdf",
+      "https://localelections.ca/election_candidates/86_2026_candidates.html"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": null,
+     "summarySource": null,
+     "positions": []
+    },
+    {
+     "id": "max-zahedi",
+     "name": "Max Zahedi",
+     "ballotName": "ZAHEDI, Max",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://maxformayor.ca",
+     "links": [],
+     "sourceUrls": [
+      "https://docs.dnv.org/documents/declaration-of-candidates.pdf",
+      "https://localelections.ca/election_candidates/86_2026_candidates.html"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": null,
+     "summarySource": null,
+     "positions": []
+    }
+   ]
+  },
+  {
+   "id": "north-vancouver-district-council",
+   "office": "Councillor",
+   "seats": 6,
+   "areaName": "District of North Vancouver",
+   "candidates": [
+    {
+     "id": "daniel-anderson",
+     "name": "Daniel Anderson",
+     "ballotName": "ANDERSON, Daniel",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://www.voteanderson.ca",
+     "links": [],
+     "sourceUrls": [
+      "https://docs.dnv.org/documents/declaration-of-candidates.pdf",
+      "https://localelections.ca/election_candidates/86_2026_candidates.html",
+      "https://www.voteanderson.ca/",
+      "https://www.voteanderson.ca/about",
+      "https://www.voteanderson.ca/platform"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "North Vancouver school trustee elected in 2022 and chair of the district's audit committee; a teacher who moved to the North Shore in 1998, lives in Lynn Creek, and is a spokesperson for the North Shore Neighbourhoods Alliance.",
+     "summarySource": "https://www.voteanderson.ca/about",
+     "positions": [
+      {
+       "issueId": "wastewater-plant-costs",
+       "topic": "wastewater plant",
+       "summary": "Opposes the Metro Vancouver wastewater plant levy and calls for Metro reform with more transparency; has advocated for an independent inquiry and provincial relief.",
+       "sourceUrl": "https://www.voteanderson.ca/platform",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Opposes levy and has sought an inquiry, while also seeking Metro reform"
+      },
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "local planning control",
+       "summary": "Supports repealing provincial Bill 44 to restore local planning authority, with targeted density through local zoning instead of provincial mandates.",
+       "sourceUrl": "https://www.voteanderson.ca/platform",
+       "sourceType": "candidate",
+       "proposedLean": 1,
+       "leanReason": "Favours targeted, locally controlled density"
+      },
+      {
+       "issueId": "property-taxes-and-spending",
+       "topic": "budget",
+       "summary": "Commits to keeping budgets on track, restructuring District government for efficiency, and finding new revenue sources.",
+       "sourceUrl": "https://www.voteanderson.ca/platform",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Emphasizes budget restraint and efficiency"
+      },
+      {
+       "issueId": "traffic-and-transit",
+       "topic": "transit and bridges",
+       "summary": "Would advocate for reliable, affordable transit and ask the province for new options on busy central corridors and bridges.",
+       "sourceUrl": "https://www.voteanderson.ca/platform",
+       "sourceType": "candidate",
+       "proposedLean": null,
+       "leanReason": "Supports transit and new crossings without a stated mode priority"
+      }
+     ]
+    },
+    {
+     "id": "jordan-back",
+     "name": "Jordan Back",
+     "ballotName": "BACK, Jordan",
+     "incumbent": true,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://www.jordanback.net",
+     "links": [],
+     "sourceUrls": [
+      "https://docs.dnv.org/documents/declaration-of-candidates.pdf",
+      "https://localelections.ca/election_candidates/86_2026_candidates.html",
+      "https://www.jordanback.net",
+      "https://www.northshoredailypost.com/jordan-back-seeks-third-term-on-dnv-council/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Two-term District councillor first elected in 2018 and lifelong District resident; works in the outdoor advertising industry and has served on the North Vancouver Chamber and District library board.",
+     "summarySource": "https://www.northshoredailypost.com/jordan-back-seeks-third-term-on-dnv-council/",
+     "positions": [
+      {
+       "issueId": "recreation-facilities-and-childcare",
+       "topic": "recreation centres",
+       "summary": "Prioritizes renewing or replacing aging recreation centres such as Ron Andrews and Karen Magnussen with long-term planning.",
+       "sourceUrl": "https://www.northshoredailypost.com/jordan-back-seeks-third-term-on-dnv-council/",
+       "sourceType": "news",
+       "proposedLean": -1,
+       "leanReason": "Prioritizes facility renewal"
+      },
+      {
+       "issueId": "traffic-and-transit",
+       "topic": "Second Narrows",
+       "summary": "Calls for a unified North Shore push to replace the Ironworkers Memorial Second Narrows Crossing.",
+       "sourceUrl": "https://www.northshoredailypost.com/jordan-back-seeks-third-term-on-dnv-council/",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "Bridge advocacy without a mode preference stated"
+      },
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "growth",
+       "summary": "Says housing, affordability, and infrastructure need careful management as the community grows.",
+       "sourceUrl": "https://www.northshoredailypost.com/jordan-back-seeks-third-term-on-dnv-council/",
+       "sourceType": "news",
+       "proposedLean": null,
+       "leanReason": "General statement"
+      }
+     ]
+    },
+    {
+     "id": "trey-bell",
+     "name": "Trey Bell",
+     "ballotName": "BELL, Trey",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://www.treybell.ca",
+     "links": [],
+     "sourceUrls": [
+      "https://docs.dnv.org/documents/declaration-of-candidates.pdf",
+      "https://localelections.ca/election_candidates/86_2026_candidates.html",
+      "https://www.treybell.ca"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Program director at an Indigenous non-profit, former childcare leader, and president of the Parkgate Society board; grew up in Edgemont and ran for District council in 2022.",
+     "summarySource": "https://www.treybell.ca/",
+     "positions": [
+      {
+       "issueId": "property-taxes-and-spending",
+       "topic": "taxes",
+       "summary": "Aims to keep yearly tax increases near inflation, about 2 per cent, covering only operating inflation and aging infrastructure.",
+       "sourceUrl": "https://www.treybell.ca/",
+       "sourceType": "candidate",
+       "proposedLean": -2,
+       "leanReason": "Holds increases to about inflation"
+      },
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "development",
+       "summary": "Supports infill on already-disturbed land with transit in place, and opposes provincial Bill 44's limits on local control.",
+       "sourceUrl": "https://www.treybell.ca/",
+       "sourceType": "candidate",
+       "proposedLean": 1,
+       "leanReason": "Favours development only where transit and services exist"
+      },
+      {
+       "issueId": "natural-areas-climate-and-wildfire",
+       "topic": "environment",
+       "summary": "Opposes further development in forested areas and proposes designating forest around Maplewood as a municipal park.",
+       "sourceUrl": "https://www.treybell.ca/",
+       "sourceType": "candidate",
+       "proposedLean": -2,
+       "leanReason": "Proposes protecting more forest"
+      },
+      {
+       "issueId": "traffic-and-transit",
+       "topic": "transportation",
+       "summary": "Supports SkyTrain or light rail to North Vancouver, more shuttle buses and bike routes, and reconfiguring Mountain Highway lanes.",
+       "sourceUrl": "https://www.treybell.ca/",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Mostly transit and cycling, plus one road change"
+      },
+      {
+       "issueId": "wastewater-plant-costs",
+       "topic": "Metro Vancouver",
+       "summary": "Supports Metro Vancouver governance reforms such as fewer committees and lower stipends, and accountability for the sewage plant project.",
+       "sourceUrl": "https://www.treybell.ca/",
+       "sourceType": "candidate",
+       "proposedLean": 1,
+       "leanReason": "Focuses on reforming Metro governance"
+      }
+     ]
+    },
+    {
+     "id": "mathew-bond",
+     "name": "Mathew Bond",
+     "ballotName": "BOND, Mathew",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://mathewbond.com",
+     "links": [],
+     "sourceUrls": [
+      "https://docs.dnv.org/documents/declaration-of-candidates.pdf",
+      "https://localelections.ca/election_candidates/86_2026_candidates.html",
+      "https://mathewbond.com/",
+      "https://mathewbond.com/about.html"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Former two-term District councillor (2014 to 2022) and professional engineer with over 15 years on transportation infrastructure projects; past president of the North Shore Mountain Bike Association.",
+     "summarySource": "https://mathewbond.com/about.html",
+     "positions": [
+      {
+       "issueId": "wastewater-plant-costs",
+       "topic": "major project costs",
+       "summary": "Calls for careful oversight and clear accountability on major capital projects, citing wastewater plant overruns as something that must not be repeated.",
+       "sourceUrl": "https://mathewbond.com/",
+       "sourceType": "candidate",
+       "proposedLean": null,
+       "leanReason": "Focuses on future oversight without choosing an approach"
+      },
+      {
+       "issueId": "affordable-and-supportive-housing",
+       "topic": "affordable housing",
+       "summary": "Has advocated for affordable housing partnerships and says residents at every stage of life should be able to stay in North Vancouver.",
+       "sourceUrl": "https://mathewbond.com/about.html",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Supports partnerships to add affordable housing"
+      },
+      {
+       "issueId": "traffic-and-transit",
+       "topic": "active transportation",
+       "summary": "Has advocated for safer active transportation and supports responsible investment in transportation infrastructure.",
+       "sourceUrl": "https://mathewbond.com/about.html",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Emphasizes safer walking and cycling"
+      },
+      {
+       "issueId": "recreation-facilities-and-childcare",
+       "topic": "public facilities",
+       "summary": "Supports long-term, responsible investment in infrastructure and public facilities.",
+       "sourceUrl": "https://mathewbond.com/",
+       "sourceType": "candidate",
+       "proposedLean": null,
+       "leanReason": "Does not specify timing or borrowing"
+      }
+     ]
+    },
+    {
+     "id": "daina-boyd",
+     "name": "Daina Boyd",
+     "ballotName": "BOYD, Daina",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://dainaboyd.ca",
+     "links": [
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/dainaboyd"
+      }
+     ],
+     "sourceUrls": [
+      "https://docs.dnv.org/documents/declaration-of-candidates.pdf",
+      "https://localelections.ca/election_candidates/86_2026_candidates.html"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": null,
+     "summarySource": null,
+     "positions": []
+    },
+    {
+     "id": "betty-forbes",
+     "name": "Betty Forbes",
+     "ballotName": "FORBES, Betty",
+     "incumbent": true,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://bettyforbes.ca",
+     "links": [],
+     "sourceUrls": [
+      "https://docs.dnv.org/documents/declaration-of-candidates.pdf",
+      "https://localelections.ca/election_candidates/86_2026_candidates.html",
+      "https://www.nvdpl.ca/library/betty-forbes",
+      "https://www.northshoredailypost.com/dnv-council-votes-4-3-on-housing-changes-in-community/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "District councillor first elected in 2018 and fourth-generation North Vancouverite; an accountant who raised two sons in Lynn Valley and has served with local community associations.",
+     "summarySource": "https://www.nvdpl.ca/library/betty-forbes",
+     "positions": [
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "OCP housing options",
+       "summary": "In October 2025 voted for the OCP option keeping current land use with minimum provincial requirements, saying pre-zoning would limit public input.",
+       "sourceUrl": "https://www.northshoredailypost.com/dnv-council-votes-4-3-on-housing-changes-in-community/",
+       "sourceType": "news",
+       "proposedLean": 1,
+       "leanReason": "Voted for the lower-growth option"
+      },
+      {
+       "issueId": "affordable-and-supportive-housing",
+       "topic": "attainable housing",
+       "summary": "Advocates for attainable housing with costs tied to income.",
+       "sourceUrl": "https://www.nvdpl.ca/library/betty-forbes",
+       "sourceType": "official_guide",
+       "proposedLean": null,
+       "leanReason": "Goal stated without saying how the District would add these homes"
+      }
+     ]
+    },
+    {
+     "id": "jim-hanson",
+     "name": "Jim Hanson",
+     "ballotName": "HANSON, Jim",
+     "incumbent": true,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://jimhansondnv.ca",
+     "links": [],
+     "sourceUrls": [
+      "https://docs.dnv.org/documents/declaration-of-candidates.pdf",
+      "https://localelections.ca/election_candidates/86_2026_candidates.html",
+      "https://www.jimhansondnv.ca/",
+      "https://www.nvchamber.ca/wp-content/uploads/2022/10/Jim-Hanson-Q-A-DISTRICT.pdf",
+      "https://www.northshoredailypost.com/dnv-council-votes-4-3-on-housing-changes-in-community/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "District councillor since 2014, born and raised in North Vancouver; a lawyer who founded his own law firm and has been active in the Blueridge Community Association.",
+     "summarySource": "https://www.nvchamber.ca/wp-content/uploads/2022/10/Jim-Hanson-Q-A-DISTRICT.pdf",
+     "positions": [
+      {
+       "issueId": "property-taxes-and-spending",
+       "topic": "taxes",
+       "summary": "Would keep tax increases in line with inflation, with disciplined spending and fairer taxation.",
+       "sourceUrl": "https://www.jimhansondnv.ca/",
+       "sourceType": "candidate",
+       "proposedLean": -2,
+       "leanReason": "Holds increases to inflation"
+      },
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "pace of development",
+       "summary": "Would slow the pace of development to match infrastructure; in 2025 preferred the OCP option adding housing near transit on Marine Drive.",
+       "sourceUrl": "https://www.jimhansondnv.ca/",
+       "sourceType": "candidate",
+       "proposedLean": 1,
+       "leanReason": "Ties growth to infrastructure, focused near transit"
+      },
+      {
+       "issueId": "affordable-and-supportive-housing",
+       "topic": "rental and affordable housing",
+       "summary": "Prioritizes rental and affordable housing; in 2022 proposed faster approvals for such projects and continued use of District land.",
+       "sourceUrl": "https://www.nvchamber.ca/wp-content/uploads/2022/10/Jim-Hanson-Q-A-DISTRICT.pdf",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Supports using District land and faster approvals"
+      },
+      {
+       "issueId": "traffic-and-transit",
+       "topic": "transportation",
+       "summary": "Proposes a third southbound lane on the Lynn Valley-Mountain Highway cut and advocates for rapid transit investment to the North Shore.",
+       "sourceUrl": "https://www.jimhansondnv.ca/",
+       "sourceType": "candidate",
+       "proposedLean": null,
+       "leanReason": "Combines a road lane addition with transit advocacy"
+      },
+      {
+       "issueId": "natural-areas-climate-and-wildfire",
+       "topic": "environment",
+       "summary": "Would preserve parks, trails, forests, and sensitive lands, and supports climate litigation against major polluters.",
+       "sourceUrl": "https://www.jimhansondnv.ca/",
+       "sourceType": "candidate",
+       "proposedLean": -2,
+       "leanReason": "Proposes protection and added climate action"
+      },
+      {
+       "issueId": "recreation-facilities-and-childcare",
+       "topic": "childcare and facilities",
+       "summary": "Would expand childcare access and renew aging recreation centres and libraries.",
+       "sourceUrl": "https://www.jimhansondnv.ca/",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Prioritizes facility renewal and more childcare"
+      },
+      {
+       "issueId": "wastewater-plant-costs",
+       "topic": "Metro Vancouver",
+       "summary": "Supports reforming Metro Vancouver oversight and more accountability for wastewater plant costs.",
+       "sourceUrl": "https://www.jimhansondnv.ca/",
+       "sourceType": "candidate",
+       "proposedLean": 1,
+       "leanReason": "Focuses on governance reform"
+      }
+     ]
+    },
+    {
+     "id": "aidan-kyle",
+     "name": "Aidan Kyle",
+     "ballotName": "KYLE, Aidan",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://www.aidankyle.ca",
+     "links": [],
+     "sourceUrls": [
+      "https://docs.dnv.org/documents/declaration-of-candidates.pdf",
+      "https://localelections.ca/election_candidates/86_2026_candidates.html",
+      "https://www.aidankyle.ca",
+      "https://www.aidankyle.ca/about"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Lifelong District resident who has worked on film sets and later in industry relations and policy work; no prior elected office.",
+     "summarySource": "https://www.aidankyle.ca/about",
+     "positions": [
+      {
+       "issueId": "property-taxes-and-spending",
+       "topic": "taxes",
+       "summary": "Commits to keeping the budget on track and taxes fair and reasonable.",
+       "sourceUrl": "https://www.aidankyle.ca/commitments",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Emphasizes budget restraint"
+      },
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "housing",
+       "summary": "Supports homes for every stage of life, built where they belong.",
+       "sourceUrl": "https://www.aidankyle.ca/commitments",
+       "sourceType": "candidate",
+       "proposedLean": null,
+       "leanReason": "Does not specify pace or density"
+      },
+      {
+       "issueId": "recreation-facilities-and-childcare",
+       "topic": "infrastructure",
+       "summary": "Prioritizes looking after existing District assets first and planning ahead for large upcoming costs.",
+       "sourceUrl": "https://www.aidankyle.ca/commitments",
+       "sourceType": "candidate",
+       "proposedLean": 1,
+       "leanReason": "Focuses on maintenance and planning over new builds"
+      }
+     ]
+    },
+    {
+     "id": "herman-mah",
+     "name": "Herman Mah",
+     "ballotName": "MAH, Herman",
+     "incumbent": true,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://www.hermanmah.ca",
+     "links": [
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/HermanMahforCouncillorDistrictofNorthVancouver"
+      },
+      {
+       "label": "LinkedIn",
+       "url": "https://www.linkedin.com/in/hermanmah604/"
+      }
+     ],
+     "sourceUrls": [
+      "https://docs.dnv.org/documents/declaration-of-candidates.pdf",
+      "https://localelections.ca/election_candidates/86_2026_candidates.html",
+      "https://www.hermanmah.ca",
+      "https://www.hermanmah.ca/about"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "District councillor first elected in 2022 and North Shore resident for 25 years; previously worked at BC Housing and managed BCIT's downtown campus, and now consults on housing and property management for a non-profit.",
+     "summarySource": "https://www.hermanmah.ca/about",
+     "positions": [
+      {
+       "issueId": "traffic-and-transit",
+       "topic": "traffic",
+       "summary": "Lists traffic, congestion, and infrastructure among his top three priorities.",
+       "sourceUrl": "https://www.hermanmah.ca/about",
+       "sourceType": "candidate",
+       "proposedLean": null,
+       "leanReason": "Names the issue without a stated approach"
+      },
+      {
+       "issueId": "affordable-and-supportive-housing",
+       "topic": "affordable housing",
+       "summary": "Lists affordable housing with a strong sense of community among his top three priorities.",
+       "sourceUrl": "https://www.hermanmah.ca/about",
+       "sourceType": "candidate",
+       "proposedLean": null,
+       "leanReason": "Names the issue without a stated approach"
+      },
+      {
+       "issueId": null,
+       "topic": "local economy",
+       "summary": "Lists supporting and promoting the local economy among his top three priorities.",
+       "sourceUrl": "https://www.hermanmah.ca/about",
+       "sourceType": "candidate",
+       "proposedLean": null,
+       "leanReason": ""
+      }
+     ]
+    },
+    {
+     "id": "kulvir-mann",
+     "name": "Kulvir Mann",
+     "ballotName": "MANN, Kulvir",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://www.kulvirmann.ca",
+     "links": [
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/p/Elect-Kulvir-Mann-for-District-of-North-Vancouver-Councillor-61593685499934/"
+      },
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/mskulvir"
+      },
+      {
+       "label": "X",
+       "url": "https://x.com/beingkulvir"
+      }
+     ],
+     "sourceUrls": [
+      "https://docs.dnv.org/documents/declaration-of-candidates.pdf",
+      "https://localelections.ca/election_candidates/86_2026_candidates.html",
+      "https://kulvirmann.ca/",
+      "https://kulvirmann.ca/announcement/",
+      "https://kulvirmann.ca/wp-content/uploads/2026/09/KM-Postcard-BACK-V1.2B.pdf"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "District resident for 25 years who served eight years over two terms as an elected North Vancouver school trustee, including as board chair; has volunteered with North Shore organizations for over 20 years.",
+     "summarySource": "https://kulvirmann.ca/announcement/",
+     "positions": [
+      {
+       "issueId": "affordable-and-supportive-housing",
+       "topic": "housing affordability",
+       "summary": "Prioritizes housing and affordability so people of different ages, incomes, and life stages can afford to live in the District.",
+       "sourceUrl": "https://kulvirmann.ca/announcement/",
+       "sourceType": "candidate",
+       "proposedLean": null,
+       "leanReason": "Goal stated without a specific approach"
+      },
+      {
+       "issueId": "traffic-and-transit",
+       "topic": "active transportation",
+       "summary": "Prioritizes active transportation, supporting safe, accessible, and practical ways to get around the community.",
+       "sourceUrl": "https://kulvirmann.ca/announcement/",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Names active transportation as a priority"
+      },
+      {
+       "issueId": "property-taxes-and-spending",
+       "topic": "services",
+       "summary": "Commits to protecting existing community programs, services, and resources, and to responsible decision-making.",
+       "sourceUrl": "https://kulvirmann.ca/wp-content/uploads/2026/09/KM-Postcard-BACK-V1.2B.pdf",
+       "sourceType": "candidate",
+       "proposedLean": null,
+       "leanReason": "Does not address tax levels"
+      }
+     ]
+    },
+    {
+     "id": "linda-munro",
+     "name": "Linda Munro",
+     "ballotName": "MUNRO, Linda",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://www.lindamunro.ca",
+     "links": [],
+     "sourceUrls": [
+      "https://docs.dnv.org/documents/declaration-of-candidates.pdf",
+      "https://localelections.ca/election_candidates/86_2026_candidates.html",
+      "https://www.lindamunro.ca"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Former North Vancouver school trustee (2021-2026) and board chair, and former District library trustee; has more than 20 years of experience in communications and public affairs.",
+     "summarySource": "https://lindamunro.ca/about/",
+     "positions": [
+      {
+       "issueId": "affordable-and-supportive-housing",
+       "topic": "housing",
+       "summary": "Proposes exploring alternative housing options that better meet local people's needs.",
+       "sourceUrl": "https://lindamunro.ca/2026/09/01/2026-key-priorities/",
+       "sourceType": "candidate",
+       "proposedLean": null,
+       "leanReason": "General statement without a clear side"
+      },
+      {
+       "issueId": "traffic-and-transit",
+       "topic": "transportation",
+       "summary": "Calls for changes to combat traffic gridlock and encourage active transportation.",
+       "sourceUrl": "https://lindamunro.ca/2026/09/01/2026-key-priorities/",
+       "sourceType": "candidate",
+       "proposedLean": null,
+       "leanReason": "Supports both congestion relief and active travel"
+      },
+      {
+       "issueId": "recreation-facilities-and-childcare",
+       "topic": "childcare",
+       "summary": "Supports additional childcare facilities so families can find care close to home.",
+       "sourceUrl": "https://lindamunro.ca/2026/09/01/2026-key-priorities/",
+       "sourceType": "candidate",
+       "proposedLean": null,
+       "leanReason": "Does not address timing or funding"
+      },
+      {
+       "issueId": "natural-areas-climate-and-wildfire",
+       "topic": "wildfire",
+       "summary": "Proposes adding wildfire mitigation measures to the District's climate emergency action items.",
+       "sourceUrl": "https://lindamunro.ca/2026/09/01/2026-key-priorities/",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Proposes added wildfire work"
+      },
+      {
+       "issueId": "wastewater-plant-costs",
+       "topic": "wastewater plant",
+       "summary": "Advocates for accountability from Metro Vancouver on the North Shore wastewater treatment facility.",
+       "sourceUrl": "https://lindamunro.ca/2026/09/01/2026-key-priorities/",
+       "sourceType": "candidate",
+       "proposedLean": null,
+       "leanReason": "Does not specify approach"
+      },
+      {
+       "issueId": null,
+       "topic": "economy",
+       "summary": "Prioritizes keeping and growing industrial and commercial space so residents can live and work locally.",
+       "sourceUrl": "https://lindamunro.ca/2026/09/01/2026-key-priorities/",
+       "sourceType": "candidate",
+       "proposedLean": null,
+       "leanReason": ""
+      }
+     ]
+    },
+    {
+     "id": "lisa-muri",
+     "name": "Lisa Muri",
+     "ballotName": "MURI, Lisa",
+     "incumbent": true,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://lisamuri.ca",
+     "links": [
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/lisamuri/"
+      }
+     ],
+     "sourceUrls": [
+      "https://docs.dnv.org/documents/declaration-of-candidates.pdf",
+      "https://localelections.ca/election_candidates/86_2026_candidates.html",
+      "https://www.nvchamber.ca/wp-content/uploads/2022/10/Lisa-Muri-Q-A-DISTRICT.pdf",
+      "https://www.northshoredailypost.com/dnv-council-votes-4-3-on-housing-changes-in-community/",
+      "https://www.theglobeandmail.com/canada/article-rising-costs-for-planned-north-vancouver-wastewater-treatment-plant/"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "District councillor since 1996, born and raised in Deep Cove, with a small-business background; has served as the District's director on the Metro Vancouver board.",
+     "summarySource": "https://www.nvchamber.ca/wp-content/uploads/2022/10/Lisa-Muri-Q-A-DISTRICT.pdf",
+     "positions": [
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "OCP housing options",
+       "summary": "In October 2025 voted for the OCP option keeping current land use with minimum provincial requirements, and criticized provincial housing rules.",
+       "sourceUrl": "https://www.northshoredailypost.com/dnv-council-votes-4-3-on-housing-changes-in-community/",
+       "sourceType": "news",
+       "proposedLean": 2,
+       "leanReason": "Voted for the lower-growth option and opposes provincial mandates"
+      },
+      {
+       "issueId": "affordable-and-supportive-housing",
+       "topic": "social housing",
+       "summary": "In 2022 proposed placing affordable social housing on District-owned serviced lots, especially in town centres, through leases.",
+       "sourceUrl": "https://www.nvchamber.ca/wp-content/uploads/2022/10/Lisa-Muri-Q-A-DISTRICT.pdf",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Supports using District land for social housing"
+      },
+      {
+       "issueId": "wastewater-plant-costs",
+       "topic": "Metro Vancouver",
+       "summary": "Said Metro Vancouver's wastewater plant problems were more about poor communication than poor work or governance.",
+       "sourceUrl": "https://www.theglobeandmail.com/canada/article-rising-costs-for-planned-north-vancouver-wastewater-treatment-plant/",
+       "sourceType": "news",
+       "proposedLean": 1,
+       "leanReason": "Works within Metro rather than challenging it"
+      },
+      {
+       "issueId": "property-taxes-and-spending",
+       "topic": "business costs",
+       "summary": "In 2022 proposed auditing the permitting process and keeping a competitive tax base for businesses.",
+       "sourceUrl": "https://www.nvchamber.ca/wp-content/uploads/2022/10/Lisa-Muri-Q-A-DISTRICT.pdf",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Emphasizes a competitive tax base"
+      }
+     ]
+    },
+    {
+     "id": "victoria-nwabuisi",
+     "name": "Victoria Nwabuisi",
+     "ballotName": "NWABUISI, Victoria",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://victorianwabuisi.ca",
+     "links": [],
+     "sourceUrls": [
+      "https://docs.dnv.org/documents/declaration-of-candidates.pdf",
+      "https://localelections.ca/election_candidates/86_2026_candidates.html",
+      "https://victorianwabuisi.ca",
+      "https://www.victorianwabuisi.ca/about"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Works in finance and education and volunteers locally; moved to the Lynn Creek area of the District from Winnipeg.",
+     "summarySource": "https://www.victorianwabuisi.ca/about",
+     "positions": [
+      {
+       "issueId": "housing-growth-and-density",
+       "topic": "growth",
+       "summary": "Says North Vancouver can grow while preserving what makes the District special.",
+       "sourceUrl": "https://www.victorianwabuisi.ca/",
+       "sourceType": "candidate",
+       "proposedLean": null,
+       "leanReason": "Balances growth and preservation without taking a side"
+      }
+     ]
+    },
+    {
+     "id": "catherine-pope",
+     "name": "Catherine Pope",
+     "ballotName": "POPE, Catherine",
+     "incumbent": true,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://catherinepopenorthvan.com",
+     "links": [],
+     "sourceUrls": [
+      "https://docs.dnv.org/documents/declaration-of-candidates.pdf",
+      "https://localelections.ca/election_candidates/86_2026_candidates.html",
+      "https://catherinepopenorthvan.com"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Incumbent District councillor who grew up on the North Shore; spent two decades as an investigative journalist at Global TV and runs a media relations consultancy.",
+     "summarySource": "https://catherinepopenorthvan.com/",
+     "positions": [
+      {
+       "issueId": "wastewater-plant-costs",
+       "topic": "wastewater plant",
+       "summary": "Seeks a public inquiry into wastewater plant cost overruns, deferred utility bills, and independent auditor oversight at Metro Vancouver.",
+       "sourceUrl": "https://catherinepopenorthvan.com/",
+       "sourceType": "candidate",
+       "proposedLean": -2,
+       "leanReason": "Calls for an inquiry and bill deferral"
+      },
+      {
+       "issueId": "affordable-and-supportive-housing",
+       "topic": "affordable housing",
+       "summary": "Supports more rental and non-market housing, directing developer contributions to an affordable housing fund, and housing within public buildings.",
+       "sourceUrl": "https://catherinepopenorthvan.com/",
+       "sourceType": "candidate",
+       "proposedLean": -2,
+       "leanReason": "Proposes using District funds and land for below-market housing"
+      },
+      {
+       "issueId": "traffic-and-transit",
+       "topic": "transportation",
+       "summary": "Advocates a new bridge with SkyTrain access, better east-west transit, and safe connected routes for walking, cycling, and scooters.",
+       "sourceUrl": "https://catherinepopenorthvan.com/",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Emphasizes transit and active travel"
+      },
+      {
+       "issueId": "recreation-facilities-and-childcare",
+       "topic": "amenities",
+       "summary": "Supports more pickleball courts, sports fields, playgrounds, and youth and seniors programming, and protecting the tree canopy.",
+       "sourceUrl": "https://catherinepopenorthvan.com/",
+       "sourceType": "candidate",
+       "proposedLean": null,
+       "leanReason": "Supports more amenities without stating funding approach"
+      }
+     ]
+    },
+    {
+     "id": "stephanie-wilson",
+     "name": "Stephanie Wilson",
+     "ballotName": "WILSON, Stephanie",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://heystephwilson.ca",
+     "links": [],
+     "sourceUrls": [
+      "https://docs.dnv.org/documents/declaration-of-candidates.pdf",
+      "https://localelections.ca/election_candidates/86_2026_candidates.html",
+      "https://heystephwilson.ca"
+     ],
+     "nominationStatus": "Official candidate (declared)",
+     "withdrawn": false,
+     "summary": "Has worked 17 years in mental health literacy and knowledge translation in the mental health and substance use sector; holds a political science degree and co-authored the North Shore Anti-Hate Pledge.",
+     "summarySource": "https://heystephwilson.ca/",
+     "positions": [
+      {
+       "issueId": "affordable-and-supportive-housing",
+       "topic": "housing",
+       "summary": "Supports supportive, non-market social, rental, and market homes, with strong renter protections.",
+       "sourceUrl": "https://heystephwilson.ca/",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Supports adding below-market and supportive housing"
+      },
+      {
+       "issueId": "traffic-and-transit",
+       "topic": "transportation",
+       "summary": "Advocates RapidBus and bus rapid transit expansion, including to Lynn Valley and Metrotown, and expanded active transportation networks.",
+       "sourceUrl": "https://heystephwilson.ca/",
+       "sourceType": "candidate",
+       "proposedLean": -2,
+       "leanReason": "Focuses on transit and active travel"
+      },
+      {
+       "issueId": "recreation-facilities-and-childcare",
+       "topic": "recreation",
+       "summary": "Supports expanded and affordable access to facilities such as ice rinks and pools, and hosting competitions.",
+       "sourceUrl": "https://heystephwilson.ca/",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Supports expanding facilities"
+      },
+      {
+       "issueId": "natural-areas-climate-and-wildfire",
+       "topic": "climate",
+       "summary": "Supports environmental protections in municipal decisions and mitigation of wildfire, drought, and atmospheric river risks.",
+       "sourceUrl": "https://heystephwilson.ca/",
+       "sourceType": "candidate",
+       "proposedLean": -1,
+       "leanReason": "Supports added climate and hazard work"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "notes": "Candidate list (5 mayor, 15 council for 6 seats) is from the District's declaration of candidates PDF and matches localelections.ca. No elector organizations appear on either list; every candidate runs without an affiliation, so electorOrganizations is empty. Election logistics: dnv.org election pages (2026-general-local-election, information-for-voters, see-who-is-running) load their content by script and returned no text; North Shore News pages returned 403 and thenorthshorelocal.com was unreachable (robots.txt timeout). Advance voting dates and hours could not be confirmed, so advanceVoting is left empty; howToVote cites the North Shore Daily Post for District Hall (355 West Queens Road) as an advance voting place and 20+ voting places on October 17. Mail ballot text comes from the District's election bylaw (Bylaw 6876), not a 2026 notice, so application deadlines are not given. Candidates with no positions: Paolo Pucci (no campaign website found; a change.org advocacy update characterizing his stance was not used), Max Zahedi (maxformayor.ca blocked by robots.txt fetch failure), and Daina Boyd (dainaboyd.ca loads by script; her North Shore Daily Post announcement was blocked by robots.txt fetch failure). The North Shore News 2026 candidate Q&A, likely the best source for these three, returned 403. Betty Forbes's and Lisa Muri's campaign sites were unreadable (script-loaded / robots-disallowed), so their entries use a North Vancouver District Public Library board bio (Forbes), the 2022 North Vancouver Chamber candidate Q&A (Muri, Hanson), October 2025 North Shore Daily Post council-vote coverage, and a Globe and Mail article (updated February 2025) for Muri; older statements are dated in the summaries. Jim Hanson's 2026 positions come from his campaign site. Hanson has proposed a fireworks-ban question for the 2026 ballot (North Shore Daily Post headline), but no official ballot question could be confirmed, so ballotQuestions is empty. csdId 5915046 was carried over and not re-verified in this pass."
+}
