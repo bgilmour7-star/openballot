@@ -218,3 +218,13 @@ export async function addIssue(f: FormData) {
   revalidatePath("/", "layout");
   redirect(`/admin/issues/${encodeURIComponent(id)}?saved=1`);
 }
+
+/** Approve every waiting proposal as proposed (side or no side). Each stays editable in Sides. */
+export async function approveAllProposed() {
+  const a = await requireAdmin();
+  const rows = await q<{ id: number }>(`update positions set lean=proposed_lean, lean_state='approved', lean_reviewed_by=$1, lean_reviewed_at=now()
+    where lean_state='proposed' returning id`, [a.email]);
+  await audit(a.email, "position_side", "bulk", "approve_all_proposed", null, { count: rows.length });
+  revalidatePath("/", "layout");
+  redirect(`/admin/leans?saved=1`);
+}

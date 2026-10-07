@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { q } from "@/lib/db";
-import { reviewLean, approveAllNoSide } from "../actions";
+import { reviewLean, approveAllNoSide, approveAllProposed } from "../actions";
 export const dynamic = "force-dynamic";
 
 type Row = { id: number; candidacy_id: string; cand_name: string; gov_id: string; gov_name: string; issue_title: string; question: string; pole_a: string; pole_b: string;
@@ -44,6 +44,12 @@ export default async function Leans({ searchParams }: { searchParams: Promise<Re
         <form action={approveAllNoSide} className="card" style={{ display: "flex", gap: 12, alignItems: "center", flexWrap: "wrap" }}>
           <p className="small" style={{ margin: 0, flex: 1 }}><b>{noSideWaiting} proposals say &quot;no clear side&quot;.</b> Approving these is low-risk: voters will see the statement with &quot;No clear side&quot;.</p>
           <button className="btn small">Approve all no-side proposals</button>
+        </form>
+      )}
+      {show === "proposed" && rows.length > 0 && (
+        <form action={approveAllProposed} className="card" style={{ display: "flex", gap: 12, alignItems: "center", flexWrap: "wrap" }}>
+          <p className="small" style={{ margin: 0, flex: 1 }}><b>Approve every waiting proposal as suggested.</b> Sides go live for voters right away. You can still change or hide any of them later under Approved.</p>
+          <button className="btn small secondary">Approve all proposals</button>
         </form>
       )}
       {rows.length === 0 && <p className="muted">Nothing here.</p>}

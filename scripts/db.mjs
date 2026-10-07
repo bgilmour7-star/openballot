@@ -223,13 +223,24 @@ async function syncMunicipal() {
   if (r.length) console.log(`[db] re-matched ${r.length} voters to new municipalities`);
 }
 
+// One-time bulk approval of proposed sides, requested by the admin on 2026-10-07. Runs once (marked in audit_log).
+async function bulkApproveOnce() {
+  const key = "bulk-approve-2026-10-07";
+  const [done] = await sql.query(`select 1 from audit_log where entity='position_side' and entity_id=$1 limit 1`, [key]);
+  if (done) return;
+  const rows = await sql.query(`update positions set lean=proposed_lean, lean_state='approved', lean_reviewed_by='bulk approval (admin request)', lean_reviewed_at=now()
+    where lean_state='proposed' returning id`);
+  await sql.query(`insert into audit_log (actor, entity, entity_id, action, after) values ('build', 'position_side', $1, 'approve_all_proposed', $2)`, [key, JSON.stringify({ count: rows.length })]);
+  console.log(`[db] bulk-approved ${rows.length} proposed sides`);
+}
+
 // Backfill content added after first seed (safe to repeat: only fills empty rows).
 try {
   const t = read("tradeoffs-2026.json");
   const ups = Object.entries(t.issues ?? {}).map(([id, v]) =>
     sql.query(`update issues set tradeoffs=$2 where id=$1 and tradeoffs is null`, [id, JSON.stringify(v)]));
   const [{ n: have }] = await sql`select count(*)::int as n from governments`;
-  if (have > 0) { if (ups.length) { await sql.transaction(ups); console.log(`[db] trade-offs backfilled (${ups.length})`); } await syncProvincial(); await syncPartyPositions(); await syncMunicipal(); await backfillBios(); await backfillLeanProposals(); }
+  if (have > 0) { if (ups.length) { await sql.transaction(ups); console.log(`[db] trade-offs backfilled (${ups.length})`); } await syncProvincial(); await syncPartyPositions(); await syncMunicipal(); await backfillBios(); await backfillLeanProposals(); await bulkApproveOnce(); }
 } catch (e) { console.log("[db] no trade-offs file yet", String(e).slice(0, 80)); }
 
 const [{ n }] = await sql`select count(*)::int as n from governments`;
