@@ -673,3 +673,5 @@ a.speakers:hover { border-color: var(--ink); }
 .you-rest .st-similar .you-rest-s, .you-rest li.st-similar .you-rest-s { color: var(--accent-ink); font-weight: 700; }
 .you-rest li.st-different .you-rest-s { color: var(--ink); font-weight: 700; }
 .party-align { font-size: 13px; color: var(--accent-ink); }
+
+.st-on-record .st-dot { border-color: var(--muted); background: var(--soft); }

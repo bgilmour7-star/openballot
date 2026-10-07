@@ -13,7 +13,7 @@ const GROUP_LABEL: Record<string, string> = {
   strong: "speak to most of your top issues", some: "speak to one of your top issues", unknown: "have nothing on record for your top issues",
 };
 const short = (st: Stance) =>
-  st.kind === "similar" ? "Similar" : st.kind === "different" ? "Different" : st.kind === "their-side" ? `Leans ${st.side}` : st.kind === "no-side" ? "No clear side" : "Nothing on record";
+  st.kind === "similar" ? "Similar" : st.kind === "different" ? "Different" : st.kind === "their-side" ? `Leans ${st.side}` : st.kind === "no-side" ? "No clear side" : st.kind === "on-record" ? "On record" : "Nothing on record";
 
 export default async function ComparePage({ params, searchParams }: { params: Promise<{ gov: string }>; searchParams: Promise<Record<string, string>> }) {
   const { gov: govId } = await params;

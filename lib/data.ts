@@ -91,14 +91,15 @@ export function fitFor(positions: Position[], top: string[], views: Record<strin
 }
 
 /** Where a candidate stands on one issue's A/B question, compared with the voter's view. Only approved sides count. */
-export type Stance = { kind: "similar" | "different" | "their-side" | "no-side" | "none"; side?: "A" | "B"; strong?: boolean; inherited?: boolean };
+export type Stance = { kind: "similar" | "different" | "their-side" | "no-side" | "on-record" | "none"; side?: "A" | "B"; strong?: boolean; inherited?: boolean };
 export function stanceOn(positions: Position[], issueId: string, view: number | undefined): Stance {
   const ps = positions.filter((p) => p.issue_id === issueId);
   if (!ps.length) return { kind: "none" };
   const sided = (list: Position[]) => list.filter((p) => p.lean != null && p.lean !== 0);
   const own = sided(ps.filter((p) => !p.inherited));
   const use = own.length ? own : sided(ps);
-  if (!use.length) return { kind: "no-side" };
+  // Only call it "no clear side" once a person has reviewed the statement; before that it's simply on record.
+  if (!use.length) return { kind: ps.some((p) => p.lean_state === "approved") ? "no-side" : "on-record" };
   const total = use.reduce((a, p) => a + (p.lean as number), 0);
   if (total === 0) return { kind: "no-side" };
   const side = total < 0 ? "A" : "B";
@@ -113,11 +114,12 @@ export function stanceText(st: Stance) {
     case "different": return "Different from your view";
     case "their-side": return `Leans ${st.side}`;
     case "no-side": return "No clear side";
+    case "on-record": return "Position on record";
     default: return "Nothing on record";
   }
 }
 export const STANCE_LABEL: Record<Stance["kind"], string> = {
-  similar: "Similar to your view", different: "Different from your view", "their-side": "Takes a side", "no-side": "No clear side", none: "Nothing on record",
+  similar: "Similar to your view", different: "Different from your view", "their-side": "Takes a side", "no-side": "No clear side", "on-record": "Position on record", none: "Nothing on record",
 };
 /** The voter's own view as plain words, e.g. "Lean B · Grow more gradually". */
 export function viewWords(issue: { pole_a: string; pole_b: string }, value: number | undefined) {

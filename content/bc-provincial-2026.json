@@ -699,6 +699,120 @@
      ]
     }
    ]
+  },
+  {
+   "id": "port-moody-burquitlam",
+   "name": "Port Moody-Burquitlam",
+   "coversCity": "port-moody",
+   "coverageNote": "All of the City of Port Moody, plus the villages of Anmore and Belcarra, Coquitlam's Burquitlam neighbourhood north of Austin Avenue, and part of Eagle Ridge between Guildford Way and David Avenue (2023 Electoral Boundaries Commission final report as described by the Tri-City News; confirmed by BC Ballot's list of municipalities in the riding). No other provincial district contains any part of Port Moody.",
+   "coverageSources": [
+    "https://tricitynews.com/local-news/changes-may-be-coming-to-coquitlam-port-moody-provincial-ridings-6803768",
+    "https://tricitiesdispatch.com/provincial-election-ridings/",
+    "https://bcballot.ca/ridings/port-moody-burquitlam/",
+    "https://en.wikipedia.org/wiki/Port_Moody-Burquitlam"
+   ],
+   "races": [
+    {
+     "id": "port-moody-burquitlam-mla",
+     "office": "Member of the Legislative Assembly (MLA)",
+     "seats": 1,
+     "candidates": [
+      {
+       "id": "wei-chou",
+       "name": "Wei Chou",
+       "ballotName": "",
+       "incumbent": false,
+       "affiliation": {
+        "type": "party",
+        "name": "BC Green Party",
+        "partyId": "bc-green-party",
+        "sourceUrl": "https://bcballot.ca/candidates/"
+       },
+       "declaredIndependent": false,
+       "nominationStatus": "confirmed",
+       "website": "",
+       "links": [],
+       "sourceUrls": [
+        "https://bcballot.ca/candidates/",
+        "https://bcballot.ca/ridings/port-moody-burquitlam/wei-chou/",
+        "https://tricitiesdispatch.com/meet-your-provincial-candidates-in-port-moody-burquitlam/"
+       ],
+       "positions": [],
+       "nominationNote": "Listed as 'On the ballot' on BC Ballot's relay of Elections BC's final candidate list (checked by BC Ballot 1:40 a.m. Oct 6, 2026, after nominations closed Oct 3). Elections BC's own list could not be opened directly (robots-restricted)."
+      },
+      {
+       "id": "rick-glumac",
+       "name": "Rick Glumac",
+       "ballotName": "",
+       "incumbent": true,
+       "affiliation": {
+        "type": "party",
+        "name": "BC NDP",
+        "partyId": "bc-ndp",
+        "sourceUrl": "https://bcballot.ca/candidates/"
+       },
+       "declaredIndependent": false,
+       "nominationStatus": "confirmed",
+       "website": "https://portmoodyburquitlam.bcndp.ca",
+       "links": [],
+       "sourceUrls": [
+        "https://bcballot.ca/candidates/",
+        "https://bcballot.ca/mlas/rick-glumac/",
+        "https://tricitiesdispatch.com/meet-your-provincial-candidates-in-port-moody-burquitlam/",
+        "https://en.wikipedia.org/wiki/Rick_Glumac"
+       ],
+       "positions": [],
+       "nominationNote": "Listed as 'On the ballot' on BC Ballot's relay of Elections BC's final candidate list (checked by BC Ballot 1:40 a.m. Oct 6, 2026, after nominations closed Oct 3). Elections BC's own list could not be opened directly (robots-restricted)."
+      },
+      {
+       "id": "john-mcewen",
+       "name": "John McEwen",
+       "ballotName": "",
+       "incumbent": false,
+       "affiliation": {
+        "type": "party",
+        "name": "Conservative Party",
+        "partyId": "conservative-party",
+        "sourceUrl": "https://bcballot.ca/candidates/"
+       },
+       "declaredIndependent": false,
+       "nominationStatus": "confirmed",
+       "website": "https://conservativebc.ca/candidate/john-mcewen/",
+       "links": [],
+       "sourceUrls": [
+        "https://bcballot.ca/candidates/",
+        "https://bcballot.ca/ridings/port-moody-burquitlam/john-mcewen/",
+        "https://tricitiesdispatch.com/meet-your-provincial-candidates-in-port-moody-burquitlam/"
+       ],
+       "positions": [],
+       "nominationNote": "Listed as 'On the ballot' on BC Ballot's relay of Elections BC's final candidate list (checked by BC Ballot 1:40 a.m. Oct 6, 2026, after nominations closed Oct 3). Elections BC's own list could not be opened directly (robots-restricted)."
+      },
+      {
+       "id": "freddy-rawji",
+       "name": "Freddy Rawji",
+       "ballotName": "",
+       "incumbent": false,
+       "affiliation": {
+        "type": "party",
+        "name": "CentreBC",
+        "partyId": "centrebc",
+        "sourceUrl": "https://bcballot.ca/candidates/"
+       },
+       "declaredIndependent": false,
+       "nominationStatus": "confirmed",
+       "website": "https://www.centrebc.ca/candidates/freddy-rawji/",
+       "links": [],
+       "sourceUrls": [
+        "https://bcballot.ca/candidates/",
+        "https://bcballot.ca/ridings/port-moody-burquitlam/freddy-rawji/",
+        "https://tricitiesdispatch.com/meet-your-provincial-candidates-in-port-moody-burquitlam/"
+       ],
+       "positions": [],
+       "nominationNote": "Listed as 'On the ballot' on BC Ballot's relay of Elections BC's final candidate list (checked by BC Ballot 1:40 a.m. Oct 6, 2026, after nominations closed Oct 3). Elections BC's own list could not be opened directly (robots-restricted)."
+      }
+     ]
+    }
+   ]
   }
  ],
  "candidateDataAsOf": {

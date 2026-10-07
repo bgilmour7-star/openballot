@@ -13,7 +13,7 @@ const REP = "https://represent.opennorth.ca";
 const ED_SET = "british-columbia-electoral-districts-2023-redistribution";
 const CSD_SET = "census-subdivisions";
 export const COVERED_RIDINGS = [
-  "nanaimo-gabriola-island", "nanaimo-lantzville", "victoria-beacon-hill", "victoria-swan-lake", "esquimalt-colwood",
+  "nanaimo-gabriola-island", "nanaimo-lantzville", "victoria-beacon-hill", "victoria-swan-lake", "esquimalt-colwood", "port-moody-burquitlam",
 ];
 
 const slug = (s: string) => s.toLowerCase().normalize("NFKD").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");

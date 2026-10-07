@@ -108,6 +108,9 @@ async function syncProvincial() {
       on conflict (id) do update set name=excluded.name, website=coalesce(excluded.website, affiliations.website), platform_url=coalesce(excluded.platform_url, affiliations.platform_url),
         platform_note=coalesce(excluded.platform_note, affiliations.platform_note), leader=excluded.leader, leader_riding=excluded.leader_riding, candidate_count=excluded.candidate_count`,
       [x.id, x.shortName || x.name, x.website || null, (x.sourceUrls ?? [])[0] ?? x.website ?? null, x.platformUrl || null, x.platformNote ?? null, x.leader ?? null, x.leaderRiding ?? null, x.candidateCount ?? null]));
+  for (const rd of p.ridings ?? []) for (const r of rd.races ?? [])
+    ops.push(sql.query(`insert into races (id,election_id,office,seats,area,area_name,area_note,sort) values ($1,$2,$3,$4,$5,$6,$7,0) on conflict (id) do nothing`,
+      [r.id, p.election.id, r.office, r.seats ?? 1, rd.id, rd.name, rd.coverageNote ?? null]));
   for (const rd of p.ridings ?? []) for (const r of rd.races ?? []) for (const c of r.candidates ?? []) {
     const status = /reported|announced|not yet/i.test(c.nominationStatus ?? "") ? "unconfirmed" : "active";
     ops.push(sql.query(`insert into candidacies (id,race_id,name,ballot_name,incumbent,affiliation_id,affiliation_source,declared_independent,website,links,sources,status,nomination_note)
@@ -158,6 +161,43 @@ async function backfillBios() {
   if (ups.length) { await sql.transaction(ups); console.log(`[db] bios backfilled (${ups.length})`); }
 }
 
+// Issues, election, races, candidates and positions for one government's ballot (municipal or school). Inserts only.
+function syncBallot(ops, m, g, issues, e, races, affId, level) {
+  (issues ?? []).forEach((i, idx) => ops.push(sql.query(`insert into issues (id,government_id,title,description,what_it_affects,who_decides,question,pole_a,pole_b,tags,sources,sort,tradeoffs)
+    values ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13) on conflict (id) do nothing`,
+    [`${g.id}--${i.id}`, g.id, i.title, i.description, i.whatItAffects, i.whoDecides, i.viewQuestion?.question, i.viewQuestion?.poleA, i.viewQuestion?.poleB,
+     JSON.stringify(i.topicTags ?? []), JSON.stringify(i.sources ?? []), idx, i.tradeoffs ? JSON.stringify(i.tradeoffs) : null])));
+  ops.push(sql.query(`insert into elections (id,government_id,name,level,voting_day,voting_hours,advance_voting,how_to_vote,mail_ballot,official_url,sources)
+    values ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11) on conflict (id) do nothing`,
+    [e.id, g.id, e.name, level, e.votingDay ?? null, e.votingDayHours ?? null, JSON.stringify(e.advanceVoting ?? []), e.howToVote ?? null, e.voteByMail ?? null, e.officialUrl ?? null, JSON.stringify(e.sources ?? [])]));
+  // An election created as an empty shell from the admin gets its details filled in.
+  ops.push(sql.query(`update elections set voting_hours=coalesce(voting_hours,$2), advance_voting=case when advance_voting is null or advance_voting='[]'::jsonb then $3::jsonb else advance_voting end,
+    how_to_vote=coalesce(how_to_vote,$4), mail_ballot=coalesce(mail_ballot,$5), official_url=coalesce(official_url,$6),
+    sources=case when sources is null or sources='[]'::jsonb then $7::jsonb else sources end where id=$1`,
+    [e.id, e.votingDayHours ?? null, JSON.stringify(e.advanceVoting ?? []), e.howToVote ?? null, e.voteByMail ?? null, e.officialUrl ?? null, JSON.stringify(e.sources ?? [])]));
+  for (const bq of e.ballotQuestions ?? [])
+    ops.push(sql.query(`insert into ballot_questions (id,election_id,question,kind,summary,sources) values ($1,$2,$3,$4,$5,$6) on conflict (id) do nothing`,
+      [bq.id, e.id, bq.question, bq.type ?? null, bq.summary ?? null, JSON.stringify(bq.sourceUrls ?? [])]));
+  (races ?? []).forEach((r, ri) => {
+    ops.push(sql.query(`insert into races (id,election_id,office,seats,area,area_name,area_note,sort) values ($1,$2,$3,$4,$5,$6,$7,$8) on conflict (id) do nothing`,
+      [r.id, e.id, r.office, r.seats ?? 1, m.id, r.areaName ?? m.name, e.appliesTo ?? null, ri]));
+    for (const c of r.candidates ?? []) {
+      const cid = `${r.id}--${c.id}`;
+      const status = c.withdrawn ? "withdrawn" : /announced|not yet|reported/i.test(c.nominationStatus ?? "") ? "unconfirmed" : "active";
+      ops.push(sql.query(`insert into candidacies (id,race_id,name,ballot_name,incumbent,affiliation_id,affiliation_source,declared_independent,website,links,sources,status,nomination_note,summary,summary_source)
+        values ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15) on conflict (id) do nothing`,
+        [cid, r.id, c.name, c.ballotName || null, c.incumbent ?? null, c.affiliation?.name ? affId.get(c.affiliation.name.toLowerCase()) ?? null : null,
+         c.affiliation?.sourceUrl ?? null, !!c.declaredIndependent, c.website || null, JSON.stringify((c.links ?? []).filter((l) => l.url)),
+         JSON.stringify(c.sourceUrls ?? []), status, c.nominationStatus ?? null, c.summary ?? null, c.summarySource ?? null]));
+      for (const p of c.positions ?? [])
+        ops.push(sql.query(`insert into positions (candidacy_id,issue_id,topic,summary,source_url,source_type,proposed_lean,lean_reason,lean_state)
+          select $1,$2,$3,$4,$5,$6,$7,$8,'proposed' where not exists (select 1 from positions where candidacy_id=$1 and left(summary,80)=left($4,80))`,
+          [cid, p.issueId ? `${g.id}--${p.issueId}` : null, p.topic ?? null, p.summary, p.sourceUrl ?? null, p.sourceType ?? "candidate",
+           p.proposedLean ?? null, p.leanReason ?? null]));
+    }
+  });
+}
+
 // Municipalities: the two original cities, plus one research file per municipality in content/municipal/.
 // Inserts only (on conflict do nothing) so admin edits are never overwritten; safe to repeat.
 async function syncMunicipal() {
@@ -176,16 +216,9 @@ async function syncMunicipal() {
     ops.push(sql.query(`insert into governments (id,name,level,how_built,sort) values ($1,$2,'municipal',$3,1) on conflict (id) do nothing`, [g.id, g.name, g.howBuilt ?? null]));
     ops.push(sql.query(`insert into municipalities (id,name,csd_id,csd_name,gov_id) values ($1,$2,$3,$4,$5) on conflict (id) do nothing`,
       [m.id, m.name, m.csdId ?? null, m.csdName ?? null, g.id]));
-    (d.issues ?? []).forEach((i, idx) => ops.push(sql.query(`insert into issues (id,government_id,title,description,what_it_affects,who_decides,question,pole_a,pole_b,tags,sources,sort,tradeoffs)
-      values ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13) on conflict (id) do nothing`,
-      [`${g.id}--${i.id}`, g.id, i.title, i.description, i.whatItAffects, i.whoDecides, i.viewQuestion?.question, i.viewQuestion?.poleA, i.viewQuestion?.poleB,
-       JSON.stringify(i.topicTags ?? []), JSON.stringify(i.sources ?? []), idx, i.tradeoffs ? JSON.stringify(i.tradeoffs) : null])));
-    ops.push(sql.query(`insert into elections (id,government_id,name,level,voting_day,voting_hours,advance_voting,how_to_vote,mail_ballot,official_url,sources)
-      values ($1,$2,$3,'municipal',$4,$5,$6,$7,$8,$9,$10) on conflict (id) do nothing`,
-      [e.id, g.id, e.name, e.votingDay ?? null, e.votingDayHours ?? null, JSON.stringify(e.advanceVoting ?? []), e.howToVote ?? null, e.voteByMail ?? null, e.officialUrl ?? null, JSON.stringify(e.sources ?? [])]));
-    for (const bq of e.ballotQuestions ?? [])
-      ops.push(sql.query(`insert into ballot_questions (id,election_id,question,kind,summary,sources) values ($1,$2,$3,$4,$5,$6) on conflict (id) do nothing`,
-        [bq.id, e.id, bq.question, bq.type ?? null, bq.summary ?? null, JSON.stringify(bq.sourceUrls ?? [])]));
+    // Fill blanks on rows an admin may have created first (e.g. from Admin → Locations), never overwriting edits.
+    ops.push(sql.query(`update governments set how_built=coalesce(how_built,$2) where id=$1`, [g.id, g.howBuilt ?? null]));
+    ops.push(sql.query(`update municipalities set csd_name=coalesce(csd_name,$2) where id=$1`, [m.id, m.csdName ?? null]));
     const affId = new Map();
     for (const o of d.electorOrganizations ?? []) {
       const id = `${m.id}--${o.id ?? slug(o.name)}`;
@@ -193,24 +226,15 @@ async function syncMunicipal() {
       ops.push(sql.query(`insert into affiliations (id,type,name,website,source_url,platform_url,blurb,blurb_source) values ($1,'elector_organization',$2,$3,$4,$5,$6,$7) on conflict (id) do nothing`,
         [id, o.name, o.website ?? null, o.sourceUrl ?? o.website ?? null, o.platformUrl ?? null, o.blurb ?? null, o.blurbSource ?? null]));
     }
-    (d.races ?? []).forEach((r, ri) => {
-      ops.push(sql.query(`insert into races (id,election_id,office,seats,area,area_name,sort) values ($1,$2,$3,$4,$5,$6,$7) on conflict (id) do nothing`,
-        [r.id, e.id, r.office, r.seats ?? 1, m.id, r.areaName ?? m.name, ri]));
-      for (const c of r.candidates ?? []) {
-        const cid = `${r.id}--${c.id}`;
-        const status = c.withdrawn ? "withdrawn" : /announced|not yet|reported/i.test(c.nominationStatus ?? "") ? "unconfirmed" : "active";
-        ops.push(sql.query(`insert into candidacies (id,race_id,name,ballot_name,incumbent,affiliation_id,affiliation_source,declared_independent,website,links,sources,status,nomination_note,summary,summary_source)
-          values ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15) on conflict (id) do nothing`,
-          [cid, r.id, c.name, c.ballotName || null, c.incumbent ?? null, c.affiliation?.name ? affId.get(c.affiliation.name.toLowerCase()) ?? null : null,
-           c.affiliation?.sourceUrl ?? null, !!c.declaredIndependent, c.website || null, JSON.stringify((c.links ?? []).filter((l) => l.url)),
-           JSON.stringify(c.sourceUrls ?? []), status, c.nominationStatus ?? null, c.summary ?? null, c.summarySource ?? null]));
-        for (const p of c.positions ?? [])
-          ops.push(sql.query(`insert into positions (candidacy_id,issue_id,topic,summary,source_url,source_type,proposed_lean,lean_reason,lean_state)
-            select $1,$2,$3,$4,$5,$6,$7,$8,'proposed' where not exists (select 1 from positions where candidacy_id=$1 and left(summary,80)=left($4,80))`,
-            [cid, p.issueId ? `${g.id}--${p.issueId}` : null, p.topic ?? null, p.summary, p.sourceUrl ?? null, p.sourceType ?? "candidate",
-             p.proposedLean ?? null, p.leanReason ?? null]));
-      }
-    });
+    syncBallot(ops, m, g, d.issues, e, d.races, affId, "municipal");
+    // Optional school board block: a district whose trustees this municipality's voters elect.
+    if (d.school) {
+      const sg = d.school.government;
+      ops.push(sql.query(`insert into governments (id,name,level,how_built,sort) values ($1,$2,'school',$3,2) on conflict (id) do nothing`, [sg.id, sg.name, sg.howBuilt ?? null]));
+      ops.push(sql.query(`update governments set how_built=coalesce(how_built,$2) where id=$1`, [sg.id, sg.howBuilt ?? null]));
+      ops.push(sql.query(`update municipalities set school_gov_id=coalesce(school_gov_id,$2) where id=$1`, [m.id, sg.id]));
+      syncBallot(ops, m, sg, d.school.issues, d.school.election, d.school.races, affId, "school");
+    }
     // One transaction per municipality keeps each request small.
     await sql.transaction(ops.splice(0));
     console.log(`[db] synced ${m.id}`);

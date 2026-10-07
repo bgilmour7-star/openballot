@@ -1,0 +1,1934 @@
+{
+ "municipality": {
+  "id": "port-moody",
+  "name": "City of Port Moody",
+  "csdId": "5915043",
+  "csdName": "Port Moody"
+ },
+ "government": {
+  "id": "city-of-port-moody",
+  "name": "City of Port Moody",
+  "howBuilt": "This list draws on 2026 campaign coverage of Port Moody's mayor and council races from the Tri-Cities Dispatch, Freshet News, The Tyee and the Tri-City News, candidate statements on VoteMate, and recent City of Port Moody council decisions on the budget, the community plan, housing, parks and transportation, as listed in each issue's sources. We kept issues council can act on through its plans, zoning, budget and services. Issues are not ranked by importance."
+ },
+ "issues": [
+  {
+   "id": "housing-costs-and-supply",
+   "title": "Housing costs and supply",
+   "description": "How many homes get built in Port Moody, what kinds they are, and how many are priced below market, at a time when the city says most new projects cannot currently meet its 15% below-market target.",
+   "whatItAffects": "Renters, first-time buyers, seniors, families looking for larger units, and people who work in Port Moody.",
+   "whoDecides": "Council sets zoning, density bonus rules and affordable-housing requirements for new projects, and can partner with BC Housing or use city land; provincial housing laws limit some of these tools.",
+   "viewQuestion": {
+    "question": "How should the city approach new housing?",
+    "poleA": "Approve more homes, including taller buildings near SkyTrain, and accept fewer below-market units when projects would otherwise stall",
+    "poleB": "Approve fewer, more family-sized homes and hold firmer on below-market requirements, even if fewer projects go ahead"
+   },
+   "topicTags": [
+    "housing",
+    "cost-of-living"
+   ],
+   "sources": [
+    "https://tricitiesdispatch.com/affordable-housing-moody-slump/",
+    "https://www.freshetnews.ca/?p=10315",
+    "https://thetyee.ca/News/2026/06/24/Port-Moody-Split-Pro-Anti-Growth-Politics/"
+   ],
+   "tradeoffs": {
+    "context": "Housing choices trade how many homes get built against how many are affordable and suited to families.",
+    "a": {
+     "gains": [
+      "More homes could be built sooner, which may ease rents and prices",
+      "Projects may be more likely to proceed in a slow market"
+     ],
+     "costs": [
+      "Fewer new units may be priced below market",
+      "Many new units may be small and less suited to families"
+     ]
+    },
+    "b": {
+     "gains": [
+      "More new units could suit families, seniors and lower incomes",
+      "Affordability targets may stay clearer and more predictable"
+     ],
+     "costs": [
+      "Fewer projects may go ahead, slowing new supply",
+      "Rents and prices could stay higher for longer"
+     ]
+    }
+   }
+  },
+  {
+   "id": "growth-and-the-community-plan",
+   "title": "Growth and the community plan",
+   "description": "How much and how fast Port Moody grows under its new official community plan, which concentrates towers near the Moody Centre and Inlet Centre SkyTrain stations, including recently approved 39-storey towers.",
+   "whatItAffects": "All residents, especially those living near SkyTrain stations, plus future residents and local businesses.",
+   "whoDecides": "Council adopts and amends the official community plan and votes on rezonings; provincial transit-oriented rules require it to allow certain densities near SkyTrain.",
+   "viewQuestion": {
+    "question": "How should Port Moody manage growth over the next few years?",
+    "poleA": "Keep the current plan, with tall buildings near SkyTrain that bring new homes, shops and developer-funded amenities",
+    "poleB": "Revisit the plan to slow growth and favour mid-size buildings, keeping more land for jobs and parks"
+   },
+   "topicTags": [
+    "housing",
+    "land-use",
+    "growth"
+   ],
+   "sources": [
+    "https://tricitiesdispatch.com/?p=16522",
+    "https://tricitiesdispatch.com/lurbiecki-mayor-seat/",
+    "https://thetyee.ca/News/2026/06/24/Port-Moody-Split-Pro-Anti-Growth-Politics/"
+   ],
+   "tradeoffs": {
+    "context": "Growth choices trade new homes and amenities near transit against the pace of change in the city.",
+    "a": {
+     "gains": [
+      "More homes, shops and jobs may locate near SkyTrain",
+      "Developer contributions could help fund new amenities"
+     ],
+     "costs": [
+      "Traffic, schools and services may face more pressure",
+      "Neighbourhood scale and views may change noticeably"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Change may come at a pace residents find easier to absorb",
+      "More land could stay available for jobs and parks"
+     ],
+     "costs": [
+      "Fewer new homes could keep housing costs higher",
+      "Revisions may take time and may conflict with provincial rules"
+     ]
+    }
+   }
+  },
+  {
+   "id": "getting-around-the-city",
+   "title": "Getting around the city",
+   "description": "Traffic on St. Johns Street, Murray Street and the busy St. Johns overpass near Ioco Road, and how much road space goes to cars versus walking and cycling.",
+   "whatItAffects": "Drivers, commuters, transit riders, cyclists, pedestrians and businesses along St. Johns Street.",
+   "whoDecides": "Council decides city road designs, lane use, parking and pathway projects, and works with TransLink, which funds and approves some regional road and transit work.",
+   "viewQuestion": {
+    "question": "What should the city prioritize on its busiest streets?",
+    "poleA": "Add road capacity for cars, such as extra lanes and a wider overpass, to ease congestion",
+    "poleB": "Put more into walking, cycling and transit routes so fewer trips need a car"
+   },
+   "topicTags": [
+    "transportation",
+    "infrastructure"
+   ],
+   "sources": [
+    "https://www.freshetnews.ca/?p=10873",
+    "https://www.freshetnews.ca/?p=10178",
+    "https://embed-en.votemate.org/c/13478?t=policies"
+   ],
+   "tradeoffs": {
+    "context": "Street choices trade quicker relief for drivers against longer-term shifts toward other ways of travelling.",
+    "a": {
+     "gains": [
+      "Drivers may see shorter delays at busy pinch points",
+      "Road projects can be faster and cheaper to deliver"
+     ],
+     "costs": [
+      "Added lanes may fill up again as traffic grows",
+      "Less space or money may go to walking and cycling"
+     ]
+    },
+    "b": {
+     "gains": [
+      "More people may choose to walk, cycle or take transit",
+      "Streets could become safer and calmer for all users"
+     ],
+     "costs": [
+      "Drivers may face continued congestion in the short term",
+      "Benefits may depend on transit service the city does not control"
+     ]
+    }
+   }
+  },
+  {
+   "id": "property-taxes-and-city-spending",
+   "title": "Property taxes and city spending",
+   "description": "How much Port Moody raises property taxes and what it funds, after a 2026 budget that started at an 8.65% proposed increase and was cut to a provisional 4.25%.",
+   "whatItAffects": "Homeowners, renters (through rents), businesses, and everyone who uses city services, police and facilities.",
+   "whoDecides": "Council sets the annual budget and tax rate, decides service levels, fees such as paid parking, and how much to put into reserves for aging infrastructure.",
+   "viewQuestion": {
+    "question": "How should the city balance taxes and services?",
+    "poleA": "Keep tax increases low by trimming services, events or new projects",
+    "poleB": "Accept higher tax increases to maintain services and keep up with infrastructure and new facilities"
+   },
+   "topicTags": [
+    "taxes-budget",
+    "cost-of-living"
+   ],
+   "sources": [
+    "https://www.freshetnews.ca/?p=2353",
+    "https://tricitiesdispatch.com/?p=16303",
+    "https://www.freshetnews.ca/?p=7088"
+   ],
+   "tradeoffs": {
+    "context": "Budget choices trade lower tax bills against the level of services and upkeep the city can fund.",
+    "a": {
+     "gains": [
+      "Households and businesses may face smaller tax increases",
+      "Spending may be held to core needs"
+     ],
+     "costs": [
+      "Some services, events or projects could be reduced or delayed",
+      "Deferred upkeep may cost more later"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Services and community programs may be maintained",
+      "Infrastructure reserves could stay healthier over time"
+     ],
+     "costs": [
+      "Tax bills may rise faster for owners and, indirectly, renters",
+      "Higher costs may add to cost-of-living pressures"
+     ]
+    }
+   }
+  },
+  {
+   "id": "parks-and-the-waterfront",
+   "title": "Parks and the waterfront",
+   "description": "Whether and how to expand Rocky Point Park and upgrade the waterfront, including a $43-million park master plan and debate over the neighbouring Flavelle mill site.",
+   "whatItAffects": "Park users, families, downtown residents, waterfront businesses and visitors.",
+   "whoDecides": "Council approves park plans and budgets, can buy land, and sets the land-use designation of nearby sites in the community plan.",
+   "viewQuestion": {
+    "question": "How should the city improve its waterfront parks?",
+    "poleA": "Focus on upgrading the existing park space to make more of it usable",
+    "poleB": "Focus on acquiring more land to make the park physically larger"
+   },
+   "topicTags": [
+    "parks",
+    "environment"
+   ],
+   "sources": [
+    "https://tricitynews.com/local-news/port-moody-mayor-says-rocky-point-park-expansion-a-priority-as-council-approves-new-43m-master-plan-9802501",
+    "https://tricitiesdispatch.com/?p=15229",
+    "https://www.freshetnews.ca/?p=11883"
+   ],
+   "tradeoffs": {
+    "context": "Park choices trade improving the space the city already has against buying more land for a larger park.",
+    "a": {
+     "gains": [
+      "Upgrades may reach residents sooner and at a known cost",
+      "More of the existing park could become usable year-round"
+     ],
+     "costs": [
+      "The park's total size may not grow with the population",
+      "Crowding may continue at busy times"
+     ]
+    },
+    "b": {
+     "gains": [
+      "A larger park may better serve a growing downtown",
+      "More waterfront could be kept as public space long term"
+     ],
+     "costs": [
+      "Land purchase and cleanup could be very costly",
+      "Timing may depend on private owners and negotiations"
+     ]
+    }
+   }
+  },
+  {
+   "id": "recreation-and-community-facilities",
+   "title": "Recreation and community facilities",
+   "description": "Plans to replace the aging Kyle Centre with a new community centre, plaza and larger park, estimated at $30 million to $40 million, and broader demand for recreation space as the city grows.",
+   "whatItAffects": "Seniors, families, arts and recreation users, and taxpayers who would help fund new buildings.",
+   "whoDecides": "Council decides which facilities to build or renovate, their size and timing, and how to pay through reserves, borrowing, grants or developer fees.",
+   "viewQuestion": {
+    "question": "How should the city approach its community facilities?",
+    "poleA": "Build new, larger facilities now to serve a growing population, even at a higher cost",
+    "poleB": "Renovate and maintain existing facilities to keep costs and borrowing lower"
+   },
+   "topicTags": [
+    "recreation",
+    "taxes-budget"
+   ],
+   "sources": [
+    "https://tricitiesdispatch.com/kyle-centre-redevelopment-plan/",
+    "https://www.freshetnews.ca/?p=11883",
+    "https://www.freshetnews.ca/?p=10178"
+   ],
+   "tradeoffs": {
+    "context": "Facility choices trade more space for a growing city against the cost and borrowing needed to build it.",
+    "a": {
+     "gains": [
+      "More programmable space may meet growing demand",
+      "New buildings may be more efficient and accessible"
+     ],
+     "costs": [
+      "Construction costs and debt may raise property taxes",
+      "Costs could rise above early estimates"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Upfront costs and borrowing may stay lower",
+      "Existing facilities could keep serving users with less disruption"
+     ],
+     "costs": [
+      "Space may fall short as the population grows",
+      "Older buildings may need more repairs over time"
+     ]
+    }
+   }
+  },
+  {
+   "id": "child-care",
+   "title": "Child care",
+   "description": "How the city helps add child care spaces, including a proposed modular daycare at city hall and ideas to require child care space in new buildings.",
+   "whatItAffects": "Parents of young children, child care workers, employers and city staff.",
+   "whoDecides": "Council can build or lease space for child care on city land, set zoning and development requirements, and apply for provincial grants; licensing and fee subsidies are provincial.",
+   "viewQuestion": {
+    "question": "What role should the city play in child care?",
+    "poleA": "Have the city build and own child care spaces directly on city land",
+    "poleB": "Have the city encourage child care mainly through development rules and partners, rather than building it"
+   },
+   "topicTags": [
+    "child-care",
+    "families"
+   ],
+   "sources": [
+    "https://tricitiesdispatch.com/daycare-city-hall-port-moody/",
+    "https://www.freshetnews.ca/?p=11883",
+    "https://www.freshetnews.ca/?p=10178"
+   ],
+   "tradeoffs": {
+    "context": "Child care choices trade direct city involvement against relying on partners and development rules.",
+    "a": {
+     "gains": [
+      "Spaces may be delivered on city land with more city control",
+      "City-run spaces could help recruit and keep staff"
+     ],
+     "costs": [
+      "The city may take on building and operating costs",
+      "City land used for child care may not be available for other uses"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Costs may fall more on developers and operators than taxpayers",
+      "Spaces could be spread across new buildings citywide"
+     ],
+     "costs": [
+      "Spaces may arrive more slowly and less predictably",
+      "The city may have less say over fees and access"
+     ]
+    }
+   }
+  },
+  {
+   "id": "local-jobs-and-industry",
+   "title": "Local jobs and industry",
+   "description": "How much land Port Moody keeps for industry and employment, including heavy industrial sites and former industrial land near SkyTrain, as industrial taxes have fallen to about 15% of city revenue.",
+   "whatItAffects": "Workers, local businesses, industrial operators, nearby residents, and taxpayers.",
+   "whoDecides": "Council sets land-use designations and zoning for industrial and commercial land, and decides whether to allow those lands to be redeveloped for housing.",
+   "viewQuestion": {
+    "question": "How should the city use land that has been industrial?",
+    "poleA": "Protect and expand industrial and job space to support jobs and the business tax base",
+    "poleB": "Allow some industrial land to become mixed housing and commercial areas near transit"
+   },
+   "topicTags": [
+    "economy",
+    "jobs",
+    "land-use"
+   ],
+   "sources": [
+    "https://tricitiesdispatch.com/heavy-industry-study-moody/",
+    "https://tricitiesdispatch.com/?p=16522",
+    "https://www.votemate.org/c/13273?riding=813"
+   ],
+   "tradeoffs": {
+    "context": "Land choices trade keeping space for jobs and business taxes against using land for housing near transit.",
+    "a": {
+     "gains": [
+      "Local jobs and the business tax base may be protected",
+      "Residents may have more options to work close to home"
+     ],
+     "costs": [
+      "Less land may be available for new housing",
+      "Conflicts over noise and odours near homes may continue"
+     ]
+    },
+    "b": {
+     "gains": [
+      "More homes and shops could be built near transit",
+      "Redeveloped sites may bring new amenities and activity"
+     ],
+     "costs": [
+      "Some job space and industrial tax revenue could be lost",
+      "Fewer local jobs may mean longer commutes"
+     ]
+    }
+   }
+  },
+  {
+   "id": "public-input-and-how-council-decides",
+   "title": "Public input and how council decides",
+   "description": "How much weight council gives resident feedback on big decisions such as the community plan and tower approvals, alongside debate over the city's first municipal party and campaign donations.",
+   "whatItAffects": "All residents, community groups, developers, and candidates.",
+   "whoDecides": "Council sets its own consultation processes, public hearing practices and meeting rules; campaign finance rules are set by the province.",
+   "viewQuestion": {
+    "question": "How should council make major decisions?",
+    "poleA": "Give residents a larger, more direct say, such as more consultation or votes, before major decisions",
+    "poleB": "Rely on elected councillors to decide after standard consultation, so decisions stay timely"
+   },
+   "topicTags": [
+    "governance",
+    "transparency"
+   ],
+   "sources": [
+    "https://thetyee.ca/News/2026/06/24/Port-Moody-Split-Pro-Anti-Growth-Politics/",
+    "https://tricitiesdispatch.com/?p=15229",
+    "https://www.freshetnews.ca/?p=10315"
+   ],
+   "tradeoffs": {
+    "context": "Decision-making choices trade broader resident involvement against the speed and clarity of decisions.",
+    "a": {
+     "gains": [
+      "Residents may feel more heard and trust decisions more",
+      "Concerns could be raised earlier in the process"
+     ],
+     "costs": [
+      "Decisions may take longer and cost more to reach",
+      "Louder or better-organized groups may carry more weight"
+     ]
+    },
+    "b": {
+     "gains": [
+      "Decisions may be made faster and more predictably",
+      "Elected councillors may stay clearly accountable at elections"
+     ],
+     "costs": [
+      "Some residents may feel left out of major choices",
+      "Disagreements may surface later, after decisions are made"
+     ]
+    }
+   }
+  }
+ ],
+ "election": {
+  "id": "port-moody-local-2026",
+  "name": "City of Port Moody general local election",
+  "level": "municipal",
+  "votingDay": "2026-10-17",
+  "votingDayHours": "8 a.m. - 8 p.m.",
+  "advanceVoting": [
+   {
+    "date": "2026-10-07",
+    "hours": "8 a.m. - 8 p.m.",
+    "locations": [
+     "Port Moody Recreation Complex (Wellness Room), 300 Ioco Road"
+    ]
+   },
+   {
+    "date": "2026-10-10",
+    "hours": "8 a.m. - 8 p.m.",
+    "locations": [
+     "Port Moody Recreation Complex (Wellness Room), 300 Ioco Road"
+    ]
+   }
+  ],
+  "howToVote": "Port Moody voters can vote at any of four locations on General Voting Day (Saturday, Oct. 17, 8 a.m.-8 p.m.): Port Moody Recreation Complex Gymnasium (300 Ioco Road), Kyle Centre (125 Kyle Street), Heritage Mountain Community Centre (200 Panorama Place) or Glenayre Community Centre (492 Glencoe Drive); at advance voting Oct. 7 or Oct. 10; or by mail ballot. Voters choose up to one mayor, six councillors and two school trustees. The City uses the provincial voters list; voters not registered can register when they vote by showing two documents that together prove identity and residence, at least one with a signature. Non-resident property electors must also register with the City and bring proof of property ownership. Voting places are accessible and curbside voting is available.",
+  "voteByMail": "All qualified resident and non-resident property electors may vote by mail. Apply online, by PDF dropped off at City Hall (100 Newport Drive) or in person by 12 p.m. (noon) Friday, Oct. 9, 2026. Ballots must be received by 8 p.m. Saturday, Oct. 17, 2026: by mail to the Chief Election Officer, at the City Hall counter or 24-hour drop box, at Kyle Centre (Oct. 5-16, 8:30 a.m.-4 p.m.), or at any voting place during voting. Unregistered voters must include a completed registration form with copies of two IDs and a witness signature. The municipal mail ballot is separate from the Oct. 24 provincial election.",
+  "officialUrl": "https://www.portmoody.ca/city-government/elections/",
+  "sources": [
+   "https://www.portmoody.ca/city-government/elections/",
+   "https://www.portmoody.ca/city-government/elections/nominated-candidates/",
+   "https://www.portmoody.ca/city-government/elections/voting-information/",
+   "https://www.portmoody.ca/city-government/elections/voting-by-mail-ballot/",
+   "https://www.portmoody.ca/city-government/elections/frequently-asked-questions/",
+   "https://www.portmoody.ca/city-government/council/",
+   "https://votemate.org/p/289"
+  ],
+  "ballotQuestions": []
+ },
+ "electorOrganizations": [
+  {
+   "id": "port-moody-voice",
+   "name": "Port Moody Voice",
+   "website": "https://portmoodyvoice.ca",
+   "sourceUrl": "https://www.portmoody.ca/city-government/elections/nominated-candidates/",
+   "platformUrl": "https://portmoodyvoice.ca/platform",
+   "blurb": "Describes itself as supporting moderate growth, affordable and livable housing, park expansion and more transparency at city hall, and says it will not accept developer donations.",
+   "blurbSource": "https://tricitiesdispatch.com/?p=15229",
+   "endorsedCandidates": [
+    "haven-lurbiecki",
+    "alexandra-chan",
+    "mark-kunzli",
+    "reece-mack",
+    "laura-soucy"
+   ]
+  }
+ ],
+ "races": [
+  {
+   "id": "port-moody-mayor",
+   "office": "Mayor",
+   "seats": 1,
+   "areaName": "City of Port Moody",
+   "candidates": [
+    {
+     "id": "meghan-lahti",
+     "name": "Meghan Lahti",
+     "ballotName": "Lahti, Meghan",
+     "incumbent": true,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://lahti2026.com",
+     "links": [],
+     "sourceUrls": [
+      "https://www.portmoody.ca/city-government/elections/nominated-candidates/",
+      "https://www.votemate.org/c/13481?riding=813",
+      "https://www.freshetnews.ca/lahti-to-seek-re-election-as-port-moodys-mayor/",
+      "https://www.portmoody.ca/city-government/council/",
+      "https://thetyee.ca/News/2026/06/24/Port-Moody-Split-Pro-Anti-Growth-Politics/"
+     ],
+     "positions": [
+      {
+       "topic": "housing",
+       "summary": "Lists building seniors housing as a priority.",
+       "sourceUrl": "https://www.freshetnews.ca/lahti-to-seek-re-election-as-port-moodys-mayor/",
+       "issueId": "housing-costs-and-supply",
+       "proposedLean": null,
+       "leanReason": "Names seniors housing as a priority without addressing the volume vs. below-market trade-off."
+      },
+      {
+       "topic": "transportation",
+       "summary": "Supports completing the second phase of the St. Johns Street upgrade as an active transportation corridor, and a wider Barnet overpass.",
+       "sourceUrl": "https://www.freshetnews.ca/lahti-to-seek-re-election-as-port-moodys-mayor/",
+       "issueId": "getting-around-the-city",
+       "proposedLean": null,
+       "leanReason": "Supports both an active-transportation corridor and a wider overpass without prioritizing either."
+      },
+      {
+       "topic": "parks/recreation",
+       "summary": "Supports redeveloping a larger Kyle Centre with an expanded Kyle Park, and expanding Rocky Point Park.",
+       "sourceUrl": "https://www.freshetnews.ca/lahti-to-seek-re-election-as-port-moodys-mayor/",
+       "issueId": "parks-and-the-waterfront",
+       "proposedLean": 1,
+       "leanReason": "Supports expanding Kyle Park and Rocky Point Park, i.e. larger parks."
+      },
+      {
+       "topic": "development/density",
+       "summary": "Says density required near transit by provincial law should be suited to each neighbourhood.",
+       "sourceUrl": "https://thetyee.ca/News/2026/06/24/Port-Moody-Split-Pro-Anti-Growth-Politics/",
+       "issueId": "growth-and-the-community-plan",
+       "proposedLean": null,
+       "leanReason": "Says density should suit each neighbourhood; neither keeps nor revisits the plan."
+      }
+     ],
+     "summary": "Incumbent Mayor of Port Moody, first elected mayor in 2022. First elected to Port Moody council in 1996 and served eight terms as a councillor.",
+     "summarySource": "https://www.freshetnews.ca/lahti-to-seek-re-election-as-port-moodys-mayor/"
+    },
+    {
+     "id": "haven-lurbiecki",
+     "name": "Haven Lurbiecki",
+     "ballotName": "Lurbiecki, Haven",
+     "incumbent": false,
+     "affiliation": {
+      "name": "Port Moody Voice",
+      "sourceUrl": "https://www.portmoody.ca/city-government/elections/nominated-candidates/"
+     },
+     "declaredIndependent": false,
+     "website": "https://portmoodyvoice.ca",
+     "links": [
+      {
+       "label": "Port Moody Voice platform",
+       "url": "https://portmoodyvoice.ca/platform"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.portmoody.ca/city-government/elections/nominated-candidates/",
+      "https://www.votemate.org/c/13273?riding=813",
+      "https://www.portmoody.ca/city-government/council/",
+      "https://thetyee.ca/News/2026/06/24/Port-Moody-Split-Pro-Anti-Growth-Politics/",
+      "https://tricitiesdispatch.com/?p=16487"
+     ],
+     "positions": [
+      {
+       "topic": "development/density",
+       "summary": "Opposes the Moody Centre towers in the Official Community Plan; favours moderate growth with less focus on tall condo towers and small units.",
+       "sourceUrl": "https://thetyee.ca/News/2026/06/24/Port-Moody-Split-Pro-Anti-Growth-Politics/",
+       "issueId": "growth-and-the-community-plan",
+       "proposedLean": 1,
+       "leanReason": "Opposes Moody Centre towers and favours moderate growth."
+      },
+      {
+       "topic": "housing",
+       "summary": "Favours zoning that encourages affordable and below-market housing, and enforcing the city's 15% below-market requirement for larger projects.",
+       "sourceUrl": "https://thetyee.ca/News/2026/06/24/Port-Moody-Split-Pro-Anti-Growth-Politics/",
+       "issueId": "housing-costs-and-supply",
+       "proposedLean": 1,
+       "leanReason": "Favours enforcing the 15% below-market requirement, i.e. holding firm on below-market units."
+      },
+      {
+       "topic": "parks",
+       "summary": "Supports expanding Rocky Point Park.",
+       "sourceUrl": "https://www.votemate.org/c/13273?riding=813",
+       "issueId": "parks-and-the-waterfront",
+       "proposedLean": 1,
+       "leanReason": "Supports expanding Rocky Point Park."
+      },
+      {
+       "topic": "governance",
+       "summary": "Calls for transparency and deeper public engagement in city decisions; pledges to take no developer donations.",
+       "sourceUrl": "https://thetyee.ca/News/2026/06/24/Port-Moody-Split-Pro-Anti-Growth-Politics/",
+       "issueId": "public-input-and-how-council-decides",
+       "proposedLean": -1,
+       "leanReason": "Calls for deeper public engagement in city decisions."
+      }
+     ],
+     "note": "Sitting Port Moody councillor (elected 2022) running for mayor; not the incumbent mayor.",
+     "summary": "Port Moody city councillor first elected in 2022 (not the incumbent mayor), running for mayor with Port Moody Voice. Lives in Newport Village.",
+     "summarySource": "https://thetyee.ca/News/2026/06/24/Port-Moody-Split-Pro-Anti-Growth-Politics/"
+    }
+   ]
+  },
+  {
+   "id": "port-moody-council",
+   "office": "Councillor",
+   "seats": 6,
+   "areaName": "City of Port Moody",
+   "candidates": [
+    {
+     "id": "samantha-agtarap",
+     "name": "Samantha Agtarap",
+     "ballotName": "Agtarap, Samantha",
+     "incumbent": true,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://samantha-agtarap.ca",
+     "links": [
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/sam4pomo"
+      },
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/sam4pomo"
+      },
+      {
+       "label": "Bluesky",
+       "url": "https://bsky.app/profile/sam4pomo.bsky.social"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.portmoody.ca/city-government/elections/nominated-candidates/",
+      "https://www.votemate.org/c/13479?riding=813",
+      "https://www.portmoody.ca/city-government/council/"
+     ],
+     "positions": [
+      {
+       "topic": "environment/climate",
+       "summary": "Supports developing a Coastal Flood Strategy and funding flood-risk projects to plan for sea-level rise.",
+       "sourceUrl": "https://www.votemate.org/c/13479?riding=813"
+      },
+      {
+       "topic": "parks",
+       "summary": "Supports the 3-30-300 tree and park guideline and continued parkland acquisition.",
+       "sourceUrl": "https://www.votemate.org/c/13479?riding=813",
+       "issueId": "parks-and-the-waterfront",
+       "proposedLean": 1,
+       "leanReason": "Supports continued parkland acquisition."
+      },
+      {
+       "topic": "housing",
+       "summary": "Supports affordable housing through the Inclusionary Zoning Policy and exploring an arm's-length housing corporation.",
+       "sourceUrl": "https://www.votemate.org/c/13479?riding=813",
+       "issueId": "housing-costs-and-supply",
+       "proposedLean": null,
+       "leanReason": "Supports inclusionary zoning and a housing corporation without addressing the trade-off."
+      },
+      {
+       "topic": "health",
+       "summary": "Would advocate for an MRI at Eagle Ridge Hospital and for more local long-term care.",
+       "sourceUrl": "https://www.votemate.org/c/13479?riding=813"
+      }
+     ],
+     "summary": "Incumbent Port Moody councillor first elected in 2022 and a registered Professional Engineer.",
+     "summarySource": "https://www.votemate.org/c/13479?riding=813"
+    },
+    {
+     "id": "alexandra-chan",
+     "name": "Alexandra Chan",
+     "ballotName": "Chan, Alexandra",
+     "incumbent": false,
+     "affiliation": {
+      "name": "Port Moody Voice",
+      "sourceUrl": "https://www.portmoody.ca/city-government/elections/nominated-candidates/"
+     },
+     "declaredIndependent": false,
+     "website": "https://portmoodyvoice.ca",
+     "links": [],
+     "sourceUrls": [
+      "https://www.portmoody.ca/city-government/elections/nominated-candidates/",
+      "https://www.votemate.org/c/13451?riding=813",
+      "https://www.freshetnews.ca/?p=11752"
+     ],
+     "positions": [
+      {
+       "topic": "health",
+       "summary": "Would pursue a provincially funded family doctor clinic in Port Moody.",
+       "sourceUrl": "https://www.votemate.org/c/13451?riding=813"
+      },
+      {
+       "topic": "development/density",
+       "summary": "Supports slowing growth so infrastructure and amenities can keep pace.",
+       "sourceUrl": "https://www.freshetnews.ca/?p=11752",
+       "issueId": "growth-and-the-community-plan",
+       "proposedLean": 1,
+       "leanReason": "Explicitly supports slowing growth so infrastructure can keep pace."
+      },
+      {
+       "topic": "parks",
+       "summary": "Supports expanding Rocky Point Park for more green space.",
+       "sourceUrl": "https://www.votemate.org/c/13451?riding=813",
+       "issueId": "parks-and-the-waterfront",
+       "proposedLean": 1,
+       "leanReason": "Supports expanding Rocky Point Park for more green space."
+      },
+      {
+       "topic": "transportation",
+       "summary": "Supports walkable neighbourhoods, safe streets and sidewalks, and safe transportation.",
+       "sourceUrl": "https://www.votemate.org/c/13451?riding=813",
+       "issueId": "getting-around-the-city",
+       "proposedLean": null,
+       "leanReason": "General support for walkability and safe streets; no trade-off against car capacity stated."
+      }
+     ],
+     "summary": "Registered nurse with a Master of Health Leadership and Policy from UBC who mentors nursing students. Volunteers with a local hospice thrift store.",
+     "summarySource": "https://www.votemate.org/c/13451?riding=813"
+    },
+    {
+     "id": "diana-dilworth",
+     "name": "Diana Dilworth",
+     "ballotName": "Dilworth, Diana",
+     "incumbent": true,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://dianadilworth.ca",
+     "links": [
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/Diana.Dilworth"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.portmoody.ca/city-government/elections/nominated-candidates/",
+      "https://www.votemate.org/c/13687?riding=813",
+      "https://www.portmoody.ca/city-government/council/"
+     ],
+     "positions": [
+      {
+       "topic": "recreation/facilities",
+       "summary": "Supports revitalizing Moody Centre by developing a new Kyle precinct.",
+       "sourceUrl": "https://www.votemate.org/c/13687?riding=813",
+       "issueId": "recreation-and-community-facilities",
+       "proposedLean": -1,
+       "leanReason": "Supports developing a new Kyle precinct, i.e. new facilities."
+      },
+      {
+       "topic": "parks",
+       "summary": "Supports a park in each neighbourhood for gathering and recreation.",
+       "sourceUrl": "https://www.votemate.org/c/13687?riding=813",
+       "issueId": "parks-and-the-waterfront",
+       "proposedLean": null,
+       "leanReason": "Speaks to neighbourhood parks, not the waterfront upgrade-vs-acquire choice."
+      },
+      {
+       "topic": "housing",
+       "summary": "Supports partnering with non-profit and co-op housing providers and implementing the Affordable Housing Strategy and housing targets.",
+       "sourceUrl": "https://www.votemate.org/c/13687?riding=813",
+       "issueId": "housing-costs-and-supply",
+       "proposedLean": null,
+       "leanReason": "Supports non-profit partnerships and housing targets without addressing the trade-off."
+      },
+      {
+       "topic": "taxes/budget",
+       "summary": "Supports moderate, justifiable property tax increases.",
+       "sourceUrl": "https://www.votemate.org/c/13687?riding=813",
+       "issueId": "property-taxes-and-city-spending",
+       "proposedLean": null,
+       "leanReason": "Supports moderate, justified increases; neither pole."
+      }
+     ],
+     "summary": "Current Port Moody city councillor who has lived in Port Moody for more than 36 years.",
+     "summarySource": "https://www.votemate.org/c/13687?riding=813"
+    },
+    {
+     "id": "john-grasty",
+     "name": "John Grasty",
+     "ballotName": "Grasty, John",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://stoptheslate.ca",
+     "links": [],
+     "sourceUrls": [
+      "https://www.portmoody.ca/city-government/elections/nominated-candidates/",
+      "https://www.votemate.org/c/13931?riding=813"
+     ],
+     "positions": [],
+     "summary": null,
+     "summarySource": null
+    },
+    {
+     "id": "kyla-knowles",
+     "name": "Kyla Knowles",
+     "ballotName": "Knowles, Kyla",
+     "incumbent": true,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://kylaknowles.ca",
+     "links": [
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/KylaKnowlesPortMoodyCityCouncil"
+      },
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/kylalian"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.portmoody.ca/city-government/elections/nominated-candidates/",
+      "https://www.votemate.org/c/13480?riding=813",
+      "https://www.portmoody.ca/city-government/council/"
+     ],
+     "positions": [
+      {
+       "topic": "economy",
+       "summary": "Supports streamlined permitting and an industrial park in Moody Centre to broaden the business tax base.",
+       "sourceUrl": "https://www.votemate.org/c/13480?riding=813",
+       "issueId": "local-jobs-and-industry",
+       "proposedLean": -1,
+       "leanReason": "Proposes a new industrial park to broaden the business tax base."
+      },
+      {
+       "topic": "recreation/facilities",
+       "summary": "Supports replacing Kyle Centre on schedule and on budget, and building a new central library.",
+       "sourceUrl": "https://www.votemate.org/c/13480?riding=813",
+       "issueId": "recreation-and-community-facilities",
+       "proposedLean": -1,
+       "leanReason": "Supports replacing Kyle Centre and building a new central library."
+      },
+      {
+       "topic": "transportation",
+       "summary": "Proposes a comprehensive traffic review and investigating rush-hour counterflow lanes on St. Johns Street.",
+       "sourceUrl": "https://www.votemate.org/c/13480?riding=813",
+       "issueId": "getting-around-the-city",
+       "proposedLean": -1,
+       "leanReason": "Proposes investigating rush-hour counterflow lanes, a car-capacity measure."
+      },
+      {
+       "topic": "seniors",
+       "summary": "Proposes lowering free 'Super Seniors' recreation eligibility from 85 to 80 and affordable seniors housing at 45 Mary Street and the firehall lands.",
+       "sourceUrl": "https://www.votemate.org/c/13480?riding=813"
+      }
+     ],
+     "summary": "Incumbent councillor first elected in 2022. Works in board and corporate governance for a national cancer non-profit, after 15 years in corporate finance and business planning.",
+     "summarySource": "https://www.votemate.org/c/13480?riding=813"
+    },
+    {
+     "id": "mark-kunzli",
+     "name": "Mark Kunzli",
+     "ballotName": "Kunzli, Mark",
+     "incumbent": false,
+     "affiliation": {
+      "name": "Port Moody Voice",
+      "sourceUrl": "https://www.portmoody.ca/city-government/elections/nominated-candidates/"
+     },
+     "declaredIndependent": false,
+     "website": "https://portmoodyvoice.ca",
+     "links": [],
+     "sourceUrls": [
+      "https://www.portmoody.ca/city-government/elections/nominated-candidates/",
+      "https://www.votemate.org/c/13274?riding=813",
+      "https://www.freshetnews.ca/?p=9239"
+     ],
+     "positions": [
+      {
+       "topic": "governance",
+       "summary": "Wants residents to understand the reasoning behind council decisions and see commitments to the community followed through.",
+       "sourceUrl": "https://www.freshetnews.ca/?p=9239",
+       "issueId": "public-input-and-how-council-decides",
+       "proposedLean": null,
+       "leanReason": "Concerns explaining decisions and follow-through, not who decides."
+      },
+      {
+       "topic": "governance",
+       "summary": "Wants less partisanship and decisions that include many voices.",
+       "sourceUrl": "https://www.votemate.org/c/13274?riding=813",
+       "issueId": "public-input-and-how-council-decides",
+       "proposedLean": null,
+       "leanReason": "Wants less partisanship and inclusive decisions; no clear stance on consultation vs. council discretion."
+      },
+      {
+       "topic": "affordability",
+       "summary": "Raises family housing and daycare access as affordability concerns for families.",
+       "sourceUrl": "https://www.votemate.org/c/13274?riding=813",
+       "issueId": "housing-costs-and-supply",
+       "proposedLean": null,
+       "leanReason": "Raises family housing as a concern without taking a side."
+      }
+     ],
+     "summary": "Pharmacist for nearly 20 years and business owner with an MBA from UBC. Holds board roles with pharmacy associations and serves on the City's Transportation Committee.",
+     "summarySource": "https://www.votemate.org/c/13274?riding=813"
+    },
+    {
+     "id": "paul-lambert",
+     "name": "Paul Lambert",
+     "ballotName": "Lambert, Paul",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://www.paullambert.ca",
+     "links": [],
+     "sourceUrls": [
+      "https://www.portmoody.ca/city-government/elections/nominated-candidates/",
+      "https://www.votemate.org/c/13449?riding=813",
+      "https://www.freshetnews.ca/former-federal-conservative-candidate-seeking-mayors-job-in-port-moody/",
+      "https://thetyee.ca/News/2026/06/24/Port-Moody-Split-Pro-Anti-Growth-Politics/"
+     ],
+     "positions": [
+      {
+       "topic": "development/density",
+       "summary": "Supports growth that meets housing needs without overwhelming infrastructure; says he does not accept developer donations.",
+       "sourceUrl": "https://www.votemate.org/c/13449?riding=813",
+       "issueId": "growth-and-the-community-plan",
+       "proposedLean": null,
+       "leanReason": "Supports growth that does not overwhelm infrastructure; no position on the plan itself."
+      },
+      {
+       "topic": "transportation",
+       "summary": "Proposed an extra eastbound rush-hour lane on St. Johns Street and a second on Murray Street, used for parking at other times.",
+       "sourceUrl": "https://www.freshetnews.ca/former-federal-conservative-candidate-seeking-mayors-job-in-port-moody/",
+       "issueId": "getting-around-the-city",
+       "proposedLean": -1,
+       "leanReason": "Proposes added rush-hour car lanes on St. Johns and Murray Streets."
+      },
+      {
+       "topic": "taxes/budget",
+       "summary": "Aims to stop large increases in property taxes and utility fees.",
+       "sourceUrl": "https://www.votemate.org/c/13449?riding=813",
+       "issueId": "property-taxes-and-city-spending",
+       "proposedLean": -1,
+       "leanReason": "Aims to stop large tax and fee increases."
+      },
+      {
+       "topic": "child care",
+       "summary": "Proposed that new residential and commercial buildings include dedicated daycare space.",
+       "sourceUrl": "https://www.freshetnews.ca/former-federal-conservative-candidate-seeking-mayors-job-in-port-moody/",
+       "issueId": "child-care",
+       "proposedLean": 1,
+       "leanReason": "Proposes requiring daycare space in new buildings, a development-rules approach rather than city-built care."
+      }
+     ],
+     "note": "Earlier news coverage (June 2026) reported him running for mayor; the official nomination list shows him as a council candidate.",
+     "summary": "Business consultant educated in economics who has coached youth sports and served on the board of the Golden Spike Days Society.",
+     "summarySource": "https://www.votemate.org/c/13449?riding=813"
+    },
+    {
+     "id": "jeanine-longley",
+     "name": "Jeanine Longley",
+     "ballotName": "Longley, Jeanine",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://jeanineforpomo.ca",
+     "links": [],
+     "sourceUrls": [
+      "https://www.portmoody.ca/city-government/elections/nominated-candidates/",
+      "https://www.votemate.org/c/13595?riding=813"
+     ],
+     "positions": [
+      {
+       "topic": "environment/climate",
+       "summary": "Would pause new AI data centres until there is a regional plan for water and energy needs.",
+       "sourceUrl": "https://www.votemate.org/c/13595?riding=813"
+      },
+      {
+       "topic": "economy",
+       "summary": "Would protect industrial and commercial land to diversify the tax base and simplify permitting for local businesses.",
+       "sourceUrl": "https://www.votemate.org/c/13595?riding=813",
+       "issueId": "local-jobs-and-industry",
+       "proposedLean": -1,
+       "leanReason": "Expresses concern about losing industrial and commercial land for the tax base."
+      },
+      {
+       "topic": "recreation/facilities",
+       "summary": "Would build an indoor pool once the city can afford its operating costs.",
+       "sourceUrl": "https://www.votemate.org/c/13595?riding=813",
+       "issueId": "recreation-and-community-facilities",
+       "proposedLean": null,
+       "leanReason": "Wants a new pool but only when affordable; balances both poles."
+      },
+      {
+       "topic": "public safety",
+       "summary": "Supports addressing speeding through street design and community and medical responses to mental health crises.",
+       "sourceUrl": "https://www.votemate.org/c/13595?riding=813"
+      }
+     ],
+     "summary": "Director of Product Management and elected president of the professional association Product BC; previously worked for a non-profit on building energy efficiency. Volunteers with the Fringe Festival.",
+     "summarySource": "https://www.votemate.org/c/13595?riding=813"
+    },
+    {
+     "id": "amy-lubik",
+     "name": "Amy Lubik",
+     "ballotName": "Lubik, Amy",
+     "incumbent": true,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://amylubik.com",
+     "links": [
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/AmyLubikPortMoody"
+      },
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/aalubik"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.portmoody.ca/city-government/elections/nominated-candidates/",
+      "https://www.votemate.org/c/13477?riding=813",
+      "https://www.freshetnews.ca/?p=12004",
+      "https://www.portmoody.ca/city-government/council/"
+     ],
+     "positions": [
+      {
+       "topic": "environment/climate",
+       "summary": "Supports the Parkland strategy, urban forest protection and pursuing Nature Canada Bird-Friendly certification.",
+       "sourceUrl": "https://www.votemate.org/c/13477?riding=813"
+      },
+      {
+       "topic": "transportation",
+       "summary": "Supports phase two of the St. Johns Street redesign, separated bike paths and more frequent bus service in Glenayre and College Park.",
+       "sourceUrl": "https://www.votemate.org/c/13477?riding=813",
+       "issueId": "getting-around-the-city",
+       "proposedLean": 1,
+       "leanReason": "Supports the St. Johns redesign, separated bike paths and more frequent buses."
+      },
+      {
+       "topic": "housing",
+       "summary": "Prioritizes housing for all life stages and incomes, including connecting non-profits with the rental protection fund.",
+       "sourceUrl": "https://www.votemate.org/c/13477?riding=813",
+       "issueId": "housing-costs-and-supply",
+       "proposedLean": null,
+       "leanReason": "Supports housing for all incomes via non-profits; no trade-off stated."
+      },
+      {
+       "topic": "mental health",
+       "summary": "Supports a community-led crisis response team and the Port Moody Police Mental Health Officer position.",
+       "sourceUrl": "https://www.votemate.org/c/13477?riding=813"
+      }
+     ],
+     "summary": "Incumbent councillor first elected in 2018, seeking a third term. Climate change lead for public health at Fraser Health Authority.",
+     "summarySource": "https://www.freshetnews.ca/?p=12004"
+    },
+    {
+     "id": "reece-mack",
+     "name": "Reece Mack",
+     "ballotName": "Mack, Reece",
+     "incumbent": false,
+     "affiliation": {
+      "name": "Port Moody Voice",
+      "sourceUrl": "https://www.portmoody.ca/city-government/elections/nominated-candidates/"
+     },
+     "declaredIndependent": false,
+     "website": "https://portmoodyvoice.ca",
+     "links": [],
+     "sourceUrls": [
+      "https://www.portmoody.ca/city-government/elections/nominated-candidates/",
+      "https://www.votemate.org/c/13618?riding=813"
+     ],
+     "positions": [
+      {
+       "topic": "housing",
+       "summary": "Supports building homes that families and seniors can grow and age into, with supporting infrastructure and amenities.",
+       "sourceUrl": "https://www.votemate.org/c/13618?riding=813",
+       "issueId": "housing-costs-and-supply",
+       "proposedLean": null,
+       "leanReason": "Supports family and seniors homes without saying fewer homes or firmer requirements."
+      },
+      {
+       "topic": "development/density",
+       "summary": "Wants new development paired with parks, roads and services that keep pace with population growth.",
+       "sourceUrl": "https://www.votemate.org/c/13618?riding=813",
+       "issueId": "growth-and-the-community-plan",
+       "proposedLean": null,
+       "leanReason": "Wants services to keep pace with growth; no position on keeping or revisiting the plan."
+      },
+      {
+       "topic": "governance",
+       "summary": "Wants to restore meaningful public input in city decisions.",
+       "sourceUrl": "https://www.votemate.org/c/13618?riding=813",
+       "issueId": "public-input-and-how-council-decides",
+       "proposedLean": -1,
+       "leanReason": "Wants to restore meaningful public input in decisions."
+      },
+      {
+       "topic": "taxes/budget",
+       "summary": "Wants to keep city finances under control.",
+       "sourceUrl": "https://www.votemate.org/c/13618?riding=813",
+       "issueId": "property-taxes-and-city-spending",
+       "proposedLean": null,
+       "leanReason": "General fiscal-control statement without a stated trade-off."
+      }
+     ],
+     "summary": "Communications professional and public servant with a master's degree; a single father raising a family in Port Moody.",
+     "summarySource": "https://www.votemate.org/c/13618?riding=813"
+    },
+    {
+     "id": "steve-milani",
+     "name": "Steve Milani",
+     "ballotName": "Milani, Steve",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://stevemilani.ca",
+     "links": [],
+     "sourceUrls": [
+      "https://www.portmoody.ca/city-government/elections/nominated-candidates/",
+      "https://www.votemate.org/c/13452?riding=813"
+     ],
+     "positions": [
+      {
+       "topic": "development/density",
+       "summary": "Opposes the approved Official Community Plan, which he says allows 25 towers in Moody Centre, some up to 40 storeys.",
+       "sourceUrl": "https://www.votemate.org/c/13452?riding=813",
+       "issueId": "growth-and-the-community-plan",
+       "proposedLean": 1,
+       "leanReason": "Opposes the approved plan's tower density in Moody Centre."
+      },
+      {
+       "topic": "recreation/facilities",
+       "summary": "Supports restoring Kyle Centre instead of the $42M replacement chosen by council.",
+       "sourceUrl": "https://www.votemate.org/c/13452?riding=813",
+       "issueId": "recreation-and-community-facilities",
+       "proposedLean": 1,
+       "leanReason": "Prefers restoring Kyle Centre over the costlier replacement."
+      },
+      {
+       "topic": "development/density",
+       "summary": "Says development should pay its own infrastructure and amenity costs.",
+       "sourceUrl": "https://www.votemate.org/c/13452?riding=813",
+       "issueId": "growth-and-the-community-plan",
+       "proposedLean": null,
+       "leanReason": "Speaks to who pays for infrastructure, a different aspect of growth."
+      },
+      {
+       "topic": "economy",
+       "summary": "Would push for a jobs-focused district near Moody Station and a wider Barnet Highway rail overpass.",
+       "sourceUrl": "https://www.votemate.org/c/13452?riding=813",
+       "issueId": "local-jobs-and-industry",
+       "proposedLean": -1,
+       "leanReason": "Proposes a jobs-focused district, favouring job space."
+      }
+     ],
+     "summary": "Former Port Moody councillor (2018-2022) who chaired the Finance and Transportation committees. Works in property management and has lived in Moody Centre for over 25 years.",
+     "summarySource": "https://www.votemate.org/c/13452?riding=813"
+    },
+    {
+     "id": "sebastian-moon",
+     "name": "Sebastian Moon",
+     "ballotName": "Moon, Sebastian",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://sebmoon.com",
+     "links": [
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/sebastianmoon4council"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.portmoody.ca/city-government/elections/nominated-candidates/",
+      "https://www.portmoody.ca/city-government/elections/nominated-candidates/candidate-profile-sebastian-moon/",
+      "https://www.votemate.org/c/13476?riding=813"
+     ],
+     "positions": [
+      {
+       "topic": "development/density",
+       "summary": "Opposes rezoning commercial and industrial land for residential towers.",
+       "sourceUrl": "https://www.portmoody.ca/city-government/elections/nominated-candidates/candidate-profile-sebastian-moon/",
+       "issueId": "growth-and-the-community-plan",
+       "proposedLean": 1,
+       "leanReason": "Opposes rezoning job land for towers, consistent with keeping land for jobs."
+      },
+      {
+       "topic": "infrastructure",
+       "summary": "Says growth targets need a plan for roads, schools and hospital capacity.",
+       "sourceUrl": "https://www.portmoody.ca/city-government/elections/nominated-candidates/candidate-profile-sebastian-moon/"
+      },
+      {
+       "topic": "waterfront",
+       "summary": "Raises that a flood risk assessment for approved waterfront towers is scheduled for 2027, after approval.",
+       "sourceUrl": "https://www.portmoody.ca/city-government/elections/nominated-candidates/candidate-profile-sebastian-moon/",
+       "issueId": "parks-and-the-waterfront",
+       "proposedLean": null,
+       "leanReason": "Raises flood risk assessment timing, a different aspect."
+      },
+      {
+       "topic": "civic engagement",
+       "summary": "Aims to get young people informed, engaged and voting.",
+       "sourceUrl": "https://www.votemate.org/c/13476?riding=813",
+       "issueId": "public-input-and-how-council-decides",
+       "proposedLean": null,
+       "leanReason": "Concerns youth voter engagement, a different aspect."
+      }
+     ],
+     "summary": "Born and raised in Port Moody; co-founder of URSA Supplements. Holds a B.Sc. in Biology from Thompson Rivers University.",
+     "summarySource": "https://www.portmoody.ca/city-government/elections/nominated-candidates/candidate-profile-sebastian-moon/"
+    },
+    {
+     "id": "callan-morrison",
+     "name": "Callan Morrison",
+     "ballotName": "Morrison, Callan",
+     "incumbent": true,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://callanmorrison.com",
+     "links": [
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/reelectcallanmorrison"
+      },
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/reelectcallanmorrison"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.portmoody.ca/city-government/elections/nominated-candidates/",
+      "https://www.votemate.org/c/13478?riding=813",
+      "https://www.portmoody.ca/city-government/council/"
+     ],
+     "positions": [
+      {
+       "topic": "economy",
+       "summary": "Opposes any data centres in Port Moody and supports streamlined business permitting.",
+       "sourceUrl": "https://www.votemate.org/c/13478?riding=813",
+       "issueId": "local-jobs-and-industry",
+       "proposedLean": null,
+       "leanReason": "Opposes data centres and supports permitting reform; does not address converting industrial land."
+      },
+      {
+       "topic": "health",
+       "summary": "Would advocate to the province for expansion of Eagle Ridge Hospital.",
+       "sourceUrl": "https://www.votemate.org/c/13478?riding=813"
+      },
+      {
+       "topic": "public safety",
+       "summary": "Supports keeping Port Moody's municipal police force.",
+       "sourceUrl": "https://www.votemate.org/c/13478?riding=813"
+      },
+      {
+       "topic": "parks",
+       "summary": "Supports expanding parks, playgrounds and green spaces.",
+       "sourceUrl": "https://www.votemate.org/c/13478?riding=813",
+       "issueId": "parks-and-the-waterfront",
+       "proposedLean": null,
+       "leanReason": "General support for expanding parks and playgrounds; not specific to upgrade vs. acquisition."
+      }
+     ],
+     "summary": "Incumbent councillor first elected in 2022; 27-year Port Moody resident and lacrosse coach for 17 years. Co-recipient of the 2022 Tri-Cities Chamber Small Business of the Year Award.",
+     "summarySource": "https://www.votemate.org/c/13478?riding=813"
+    },
+    {
+     "id": "tracey-schaeffer",
+     "name": "Tracey Schaeffer",
+     "ballotName": "Schaeffer, Tracey",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": "https://traceyforyou.ca",
+     "links": [
+      {
+       "label": "Facebook",
+       "url": "https://www.facebook.com/Traceyforyou.ca"
+      },
+      {
+       "label": "Instagram",
+       "url": "https://www.instagram.com/portmoodytracey"
+      }
+     ],
+     "sourceUrls": [
+      "https://www.portmoody.ca/city-government/elections/nominated-candidates/",
+      "https://www.portmoody.ca/city-government/elections/nominated-candidates/candidate-profile-tracey-schaeffer/",
+      "https://www.votemate.org/c/13450?riding=813"
+     ],
+     "positions": [
+      {
+       "topic": "recreation/facilities",
+       "summary": "Would prioritize finding funding for an indoor aquatic centre.",
+       "sourceUrl": "https://www.votemate.org/c/13450?riding=813",
+       "issueId": "recreation-and-community-facilities",
+       "proposedLean": -1,
+       "leanReason": "Prioritizes funding a new indoor aquatic centre."
+      },
+      {
+       "topic": "parks",
+       "summary": "Would include public washrooms in the city's plan to improve its park network.",
+       "sourceUrl": "https://www.votemate.org/c/13450?riding=813",
+       "issueId": "parks-and-the-waterfront",
+       "proposedLean": -1,
+       "leanReason": "Proposes amenity upgrades (washrooms) to existing parks."
+      },
+      {
+       "topic": "transportation",
+       "summary": "Supports separating cars, e-bikes and scooters, and pedestrians, toward a 15-minute city.",
+       "sourceUrl": "https://www.votemate.org/c/13450?riding=813",
+       "issueId": "getting-around-the-city",
+       "proposedLean": 1,
+       "leanReason": "Supports separating modes toward a 15-minute city, favouring active travel."
+      },
+      {
+       "topic": "housing",
+       "summary": "Supports family-sized homes, including units with space for working from home.",
+       "sourceUrl": "https://www.votemate.org/c/13450?riding=813",
+       "issueId": "housing-costs-and-supply",
+       "proposedLean": null,
+       "leanReason": "Supports family-sized homes but does not address fewer homes or below-market requirements."
+      }
+     ],
+     "summary": "Over 20 years in television as a story producer, production coordinator and assistant director, and a former language teacher. Member of the City's Land Use Committee; volunteers with POMOarts and Food Link.",
+     "summarySource": "https://www.portmoody.ca/city-government/elections/nominated-candidates/candidate-profile-tracey-schaeffer/"
+    },
+    {
+     "id": "laura-soucy",
+     "name": "Laura Soucy",
+     "ballotName": "Soucy, Laura",
+     "incumbent": false,
+     "affiliation": {
+      "name": "Port Moody Voice",
+      "sourceUrl": "https://www.portmoody.ca/city-government/elections/nominated-candidates/"
+     },
+     "declaredIndependent": false,
+     "website": "https://portmoodyvoice.ca",
+     "links": [],
+     "sourceUrls": [
+      "https://www.portmoody.ca/city-government/elections/nominated-candidates/",
+      "https://www.votemate.org/c/13336?riding=813",
+      "https://www.freshetnews.ca/?p=10315"
+     ],
+     "positions": [
+      {
+       "topic": "housing",
+       "summary": "Supports more affordable and diverse housing for families and seniors.",
+       "sourceUrl": "https://www.freshetnews.ca/?p=10315",
+       "issueId": "housing-costs-and-supply",
+       "proposedLean": null,
+       "leanReason": "General support for affordable, diverse housing; no trade-off stated."
+      },
+      {
+       "topic": "development/density",
+       "summary": "Says many approved small-unit condo towers do not meet local families' needs or incomes.",
+       "sourceUrl": "https://www.freshetnews.ca/?p=10315",
+       "issueId": "growth-and-the-community-plan",
+       "proposedLean": null,
+       "leanReason": "Critiques unit mix of approved towers; does not say to keep or revisit the plan."
+      },
+      {
+       "topic": "governance",
+       "summary": "Supports more meaningful civic engagement.",
+       "sourceUrl": "https://www.votemate.org/c/13336?riding=813",
+       "issueId": "public-input-and-how-council-decides",
+       "proposedLean": -1,
+       "leanReason": "Supports more meaningful civic engagement."
+      },
+      {
+       "topic": "economy",
+       "summary": "Supports stronger local economic opportunities.",
+       "sourceUrl": "https://www.votemate.org/c/13336?riding=813",
+       "issueId": "local-jobs-and-industry",
+       "proposedLean": null,
+       "leanReason": "General support for local economic opportunity."
+      }
+     ],
+     "summary": "Works in the non-profit and co-op housing sector; board member of a women's housing society since 2021. Has lived in Port Moody for about 50 years.",
+     "summarySource": "https://www.votemate.org/c/13336?riding=813"
+    },
+    {
+     "id": "peter-thomasen",
+     "name": "Peter Thomasen",
+     "ballotName": "Thomasen, Peter",
+     "incumbent": false,
+     "affiliation": null,
+     "declaredIndependent": false,
+     "website": null,
+     "links": [],
+     "sourceUrls": [
+      "https://www.portmoody.ca/city-government/elections/nominated-candidates/",
+      "https://www.votemate.org/c/13932?riding=813"
+     ],
+     "positions": [],
+     "summary": null,
+     "summarySource": null
+    }
+   ]
+  }
+ ],
+ "school": {
+  "government": {
+   "id": "sd43",
+   "name": "School District 43 (Coquitlam)",
+   "howBuilt": "This list draws on statements from Port Moody's 2026 school trustee candidates reported by Freshet News, SD43 board meeting minutes and budget releases, and news coverage of school planning, safety and funding in the Tri-Cities, as listed in each issue's sources. Issues focus on what the SD43 board can do and how it affects Port Moody students. Issues are not ranked by importance."
+  },
+  "issues": [
+   {
+    "id": "district-budget-and-funding",
+    "title": "District budget and funding",
+    "description": "How SD43 balances its budget when it says provincial grants have not kept up with rising costs, while enrolment and international student revenue came in below forecasts.",
+    "whatItAffects": "Students, teachers, support staff, and families across Port Moody, Coquitlam, Port Coquitlam, Anmore and Belcarra.",
+    "whoDecides": "The board adopts the annual budget and decides where to cut or spend, but most funding is set by the province and the board must balance its budget.",
+    "viewQuestion": {
+     "question": "How should the board handle tight budgets?",
+     "poleA": "Protect classroom staffing and supports first, and cut elsewhere, such as administration or extra programs",
+     "poleB": "Keep a broad mix of programs and services, and accept leaner staffing or larger reductions in some areas"
+    },
+    "topicTags": [
+     "education",
+     "taxes-budget"
+    ],
+    "sources": [
+     "https://www.sd43.bc.ca/budget/Documents/20260428_SD43%2026-27%20budget%20release_int.pdf",
+     "https://tricitynews.com/local-news/sd43-grants-arent-keeping-up-it-needs-help-for-the-next-budget-9936445",
+     "https://media.sd43.bc.ca/media/Default/medialib/2026-02-10-regular-public-board-meeting-minutes.8c41f211767.pdf"
+    ],
+    "tradeoffs": {
+     "context": "Budget choices trade protecting classroom staffing against keeping a wider range of programs and services.",
+     "a": {
+      "gains": [
+       "Class sizes and direct student supports may be protected",
+       "Spending may stay focused on core teaching"
+      ],
+      "costs": [
+       "Some programs or services outside classrooms could be cut",
+       "Administrative capacity may be stretched"
+      ]
+     },
+     "b": {
+      "gains": [
+       "Students may keep access to a broad mix of programs",
+       "Services that families rely on may continue"
+      ],
+      "costs": [
+       "Classroom staffing may become leaner",
+       "Reductions may be spread in ways that are harder to see"
+      ]
+     }
+    }
+   },
+   {
+    "id": "planning-schools-for-growth",
+    "title": "Planning schools for growth",
+    "description": "Where and when SD43 plans new schools as Port Moody adds thousands of homes, including a proposed school site at the Flavelle mill waterfront that Port Moody council first rejected and then accepted in 2025.",
+    "whatItAffects": "Families in growing neighbourhoods, students at crowded schools, and city and district taxpayers.",
+    "whoDecides": "The board proposes school sites and capital projects and asks the province for funding; the city must accept the site plan, and the province decides which projects get built.",
+    "viewQuestion": {
+     "question": "How should the district plan for new schools?",
+     "poleA": "Secure school sites early, before new neighbourhoods are built, even if some plans change",
+     "poleB": "Wait for confirmed development and enrolment before committing to new school sites"
+    },
+    "topicTags": [
+     "education",
+     "growth",
+     "infrastructure"
+    ],
+    "sources": [
+     "https://tricitiesdispatch.com/?p=13804",
+     "https://tricitiesdispatch.com/school-site-proposal-reversed/",
+     "https://www.freshetnews.ca/green-launches-bid-for-port-moody-trustee-seat/"
+    ],
+    "tradeoffs": {
+     "context": "School planning choices trade securing sites early against waiting for clearer growth and enrolment.",
+     "a": {
+      "gains": [
+       "Schools may be ready closer to when families move in",
+       "Land may be secured before prices or options change"
+      ],
+      "costs": [
+       "Sites may be planned for developments that change or stall",
+       "Early plans may cause friction with cities and landowners"
+      ]
+     },
+     "b": {
+      "gains": [
+       "Plans may better match actual development and enrolment",
+       "Fewer resources may be spent on sites never used"
+      ],
+      "costs": [
+       "Students may face crowding or portables while schools catch up",
+       "Suitable land may be harder or costlier to find later"
+      ]
+     }
+    }
+   },
+   {
+    "id": "support-for-diverse-learners",
+    "title": "Support for diverse learners",
+    "description": "How SD43 supports a growing number of students with disabilities or diverse needs and English language learners, after adding 42 education assistant positions in 2025-26.",
+    "whatItAffects": "Students with diverse needs, English language learners, their families, teachers and education assistants.",
+    "whoDecides": "The board decides how much of its budget goes to education assistants, specialist teachers and support services, within provincial funding and policy.",
+    "viewQuestion": {
+     "question": "How should the district support students with extra learning needs?",
+     "poleA": "Add more education assistants and specialist staff, even if it means less funding elsewhere",
+     "poleB": "Hold support staffing steady and focus on training and classroom strategies for all teachers"
+    },
+    "topicTags": [
+     "education",
+     "accessibility"
+    ],
+    "sources": [
+     "https://media.sd43.bc.ca/media/Default/medialib/2026-02-10-regular-public-board-meeting-minutes.8c41f211767.pdf",
+     "https://www.freshetnews.ca/thompson-is-first-port-moody-candidate-to-launch-sd43-campaign/"
+    ],
+    "tradeoffs": {
+     "context": "Support choices trade adding specialized staff against spreading resources across all classrooms.",
+     "a": {
+      "gains": [
+       "Students with extra needs may get more one-on-one help",
+       "Teachers may have more hands-on support in class"
+      ],
+      "costs": [
+       "Less funding may be left for other programs",
+       "Staff may be hard to hire in a tight labour market"
+      ]
+     },
+     "b": {
+      "gains": [
+       "Budgets may stay steadier for other priorities",
+       "Training may help teachers support all students"
+      ],
+      "costs": [
+       "Some students may get less individual help",
+       "Teacher workload may stay high in complex classrooms"
+      ]
+     }
+    }
+   },
+   {
+    "id": "school-safety-and-student-wellbeing",
+    "title": "School safety and student well-being",
+    "description": "How SD43 keeps schools safe and supports student well-being, after threatening calls led to hold-and-secure lockdowns at Tri-Cities schools, including Port Moody's Glenayre Elementary, in early 2026, and concerns about youth vaping.",
+    "whatItAffects": "Students, parents, school staff and local police.",
+    "whoDecides": "The board sets district safety, emergency and student-conduct policies and funds counselling and well-being programs; police handle criminal threats.",
+    "viewQuestion": {
+     "question": "Where should the district focus on safety and well-being?",
+     "poleA": "Put more into physical security, emergency preparedness and clear rules",
+     "poleB": "Put more into counselling, mental health and prevention programs"
+    },
+    "topicTags": [
+     "education",
+     "public-safety",
+     "health"
+    ],
+    "sources": [
+     "https://www.freshetnews.ca/?p=5960",
+     "https://www.freshetnews.ca/green-launches-bid-for-port-moody-trustee-seat/",
+     "https://www.freshetnews.ca/thompson-is-first-port-moody-candidate-to-launch-sd43-campaign/"
+    ],
+    "tradeoffs": {
+     "context": "Safety choices trade investment in security and rules against investment in prevention and mental health.",
+     "a": {
+      "gains": [
+       "Schools may respond faster and more consistently in emergencies",
+       "Clear rules may help families know what to expect"
+      ],
+      "costs": [
+       "Less funding may be left for counselling and prevention",
+       "Some students may feel schools are less welcoming"
+      ]
+     },
+     "b": {
+      "gains": [
+       "Students may get help earlier, before problems grow",
+       "Supports may address causes such as stress or vaping"
+      ],
+      "costs": [
+       "Physical security upgrades may be slower",
+       "Results may take longer to show and be harder to measure"
+      ]
+     }
+    }
+   },
+   {
+    "id": "child-care-at-schools",
+    "title": "Child care at schools",
+    "description": "Whether SD43 should use school space and buildings for child care, such as the planned conversion of Port Moody's vacant Ioco School into a child care centre.",
+    "whatItAffects": "Parents of young and school-aged children, child care providers and schools short on space.",
+    "whoDecides": "The board decides whether to offer school space or buildings for child care and applies for provincial grants; the province sets child care funding and licensing.",
+    "viewQuestion": {
+     "question": "What role should the district play in child care?",
+     "poleA": "Make more school space and buildings available for child care and before- and after-school care",
+     "poleB": "Keep school space focused on classrooms and leave child care mainly to other providers"
+    },
+    "topicTags": [
+     "child-care",
+     "education"
+    ],
+    "sources": [
+     "https://media.sd43.bc.ca/media/Default/medialib/2026-02-10-regular-public-board-meeting-minutes.8c41f211767.pdf",
+     "https://tricitiesdispatch.com/ioco-school-childcare-space/",
+     "https://tricitynews.com/local-news/ambitious-bc-plan-to-make-schools-responsible-for-daycare-hits-snag-in-coquitlam-3278854"
+    ],
+    "tradeoffs": {
+     "context": "Child care choices trade convenient care on school grounds against keeping school space for classrooms.",
+     "a": {
+      "gains": [
+       "Families may get care at the same site as school",
+       "Unused or older buildings could be put to good use"
+      ],
+      "costs": [
+       "Space may be needed for classrooms as enrolment grows",
+       "District staff time and costs may rise"
+      ]
+     },
+     "b": {
+      "gains": [
+       "School space may stay available for classes and programs",
+       "The district may stay focused on education"
+      ],
+      "costs": [
+       "Families may face fewer or less convenient care options",
+       "Child care may be harder to find near schools"
+      ]
+     }
+    }
+   },
+   {
+    "id": "specialized-programs-and-career-pathways",
+    "title": "Specialized programs and career pathways",
+    "description": "How much SD43 invests in programs of choice and career pathways, such as dual-credit trades training with post-secondary schools, compared with core programs in every school.",
+    "whatItAffects": "Secondary students, families choosing programs, local employers and post-secondary partners.",
+    "whoDecides": "The board decides which specialized and career programs to offer, where, and how they are funded within its budget.",
+    "viewQuestion": {
+     "question": "How should the district balance specialized programs and core programs?",
+     "poleA": "Expand programs of choice and career pathways such as trades and academies",
+     "poleB": "Focus resources on core programs available at every neighbourhood school"
+    },
+    "topicTags": [
+     "education",
+     "jobs"
+    ],
+    "sources": [
+     "https://www.freshetnews.ca/green-launches-bid-for-port-moody-trustee-seat/",
+     "https://www.sd43.bc.ca/careerprograms/train-in-trades"
+    ],
+    "tradeoffs": {
+     "context": "Program choices trade specialized and career options against stronger core programs at every school.",
+     "a": {
+      "gains": [
+       "Students may get more paths into trades and post-secondary",
+       "Partnerships may connect students with local employers"
+      ],
+      "costs": [
+       "Costs and seats may favour students who can travel or apply",
+       "Less funding may be left for neighbourhood schools"
+      ]
+     },
+     "b": {
+      "gains": [
+       "All students may get similar programs close to home",
+       "Funding may stay focused on core learning"
+      ],
+      "costs": [
+       "Fewer specialized options may be available",
+       "Some students may look elsewhere for programs they want"
+      ]
+     }
+    }
+   },
+   {
+    "id": "trustee-accountability-and-transparency",
+    "title": "Board accountability and transparency",
+    "description": "How openly the SD43 board makes and explains decisions on budgets and planning, and how closely it works with Port Moody council, after disagreements over the school site plan.",
+    "whatItAffects": "Parents, students, staff, and Port Moody residents and council.",
+    "whoDecides": "The board sets its own meeting, consultation and reporting practices and decides how it works with city councils.",
+    "viewQuestion": {
+     "question": "How should the board engage the public and the city?",
+     "poleA": "Expand public consultation and joint planning with the city before major decisions",
+     "poleB": "Keep consultation focused and let the board and staff move decisions forward on schedule"
+    },
+    "topicTags": [
+     "governance",
+     "education"
+    ],
+    "sources": [
+     "https://tricitiesdispatch.com/school-site-proposal-reversed/",
+     "https://www.freshetnews.ca/green-launches-bid-for-port-moody-trustee-seat/",
+     "https://www.freshetnews.ca/thompson-is-first-port-moody-candidate-to-launch-sd43-campaign/"
+    ],
+    "tradeoffs": {
+     "context": "Engagement choices trade broader consultation and joint planning against keeping decisions on schedule.",
+     "a": {
+      "gains": [
+       "Parents and cities may better understand board decisions",
+       "Joint planning may reduce conflicts over growth"
+      ],
+      "costs": [
+       "Decisions may take longer to reach",
+       "Consultation may add staff time and costs"
+      ]
+     },
+     "b": {
+      "gains": [
+       "Decisions such as budgets may stay on schedule",
+       "Staff time may stay focused on schools"
+      ],
+      "costs": [
+       "Some families may feel less involved",
+       "Disagreements with cities may surface later"
+      ]
+     }
+    }
+   }
+  ],
+  "election": {
+   "id": "sd43-trustee-2026",
+   "name": "School District 43 (Coquitlam) trustee election",
+   "level": "school",
+   "appliesTo": "Port Moody voters elect 2 of School District 43's 9 trustees (Coquitlam 4, Port Coquitlam 2, Port Moody 2, Anmore/Belcarra 1). Anmore and Belcarra form their own separate trustee area. Port Moody's trustee vote is run by the City alongside the municipal election, at the same places and times; non-resident property electors living in Coquitlam, Port Coquitlam, Anmore or Belcarra cannot vote for Port Moody trustees.",
+   "votingDay": "2026-10-17",
+   "votingDayHours": "8 a.m. - 8 p.m.",
+   "advanceVoting": [
+    {
+     "date": "2026-10-07",
+     "hours": "8 a.m. - 8 p.m.",
+     "locations": [
+      "Port Moody Recreation Complex (Wellness Room), 300 Ioco Road"
+     ]
+    },
+    {
+     "date": "2026-10-10",
+     "hours": "8 a.m. - 8 p.m.",
+     "locations": [
+      "Port Moody Recreation Complex (Wellness Room), 300 Ioco Road"
+     ]
+    }
+   ],
+   "howToVote": "School trustee ballots are issued at the same City of Port Moody voting places, advance voting days and mail ballot process as the municipal election. Port Moody voters choose up to two trustee candidates.",
+   "officialUrl": "https://sd43.bc.ca/elections",
+   "sources": [
+    "https://sd43.bc.ca/elections",
+    "https://sd43.bc.ca/board-members-trustee-information",
+    "https://www.portmoody.ca/city-government/elections/nominated-candidates/",
+    "https://www.portmoody.ca/city-government/elections/voting-information/",
+    "https://www.portmoody.ca/city-government/elections/voting-by-mail-ballot/",
+    "https://www.freshetnews.ca/green-launches-bid-for-port-moody-trustee-seat/"
+   ]
+  },
+  "races": [
+   {
+    "id": "sd43-port-moody-trustee",
+    "office": "School Trustee (Port Moody)",
+    "seats": 2,
+    "areaName": "Port Moody trustee seats",
+    "candidates": [
+     {
+      "id": "emily-cheadle",
+      "name": "Emily Cheadle",
+      "ballotName": "Cheadle, Emily",
+      "incumbent": false,
+      "affiliation": null,
+      "declaredIndependent": false,
+      "website": "https://emilycheadle.com",
+      "links": [
+       {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/cheadle.forsd43"
+       }
+      ],
+      "sourceUrls": [
+       "https://www.portmoody.ca/city-government/elections/nominated-candidates/",
+       "https://www.votemate.org/c/13933?riding=813"
+      ],
+      "positions": [
+       {
+        "topic": "governance",
+        "summary": "Plans to listen to families and community members and bring their concerns to the district.",
+        "sourceUrl": "https://www.votemate.org/c/13933?riding=813",
+        "issueId": "trustee-accountability-and-transparency",
+        "proposedLean": null,
+        "leanReason": "Commits to listening to families; does not address expanding consultation vs. schedule."
+       }
+      ],
+      "summary": "Former paralegal of about a decade who moved into labour relations work with unions. Volunteers with the Pleasantside PAC.",
+      "summarySource": "https://www.votemate.org/c/13933?riding=813"
+     },
+     {
+      "id": "tracy-green",
+      "name": "Tracy Green",
+      "ballotName": "Green, Tracy",
+      "incumbent": false,
+      "affiliation": null,
+      "declaredIndependent": false,
+      "website": "https://tracygreen.ca",
+      "links": [
+       {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/tracy.green.sd43"
+       },
+       {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/tracygreenbc"
+       },
+       {
+        "label": "Bluesky",
+        "url": "https://bsky.app/profile/tracygreenbc.bsky.social"
+       }
+      ],
+      "sourceUrls": [
+       "https://www.portmoody.ca/city-government/elections/nominated-candidates/",
+       "https://www.votemate.org/c/13483?riding=813",
+       "https://www.freshetnews.ca/green-launches-bid-for-port-moody-trustee-seat/"
+      ],
+      "positions": [
+       {
+        "topic": "programs",
+        "summary": "Supports stronger post-secondary pathways and partnerships with trades, industry and post-secondary institutions.",
+        "sourceUrl": "https://www.freshetnews.ca/green-launches-bid-for-port-moody-trustee-seat/",
+        "issueId": "specialized-programs-and-career-pathways",
+        "proposedLean": -1,
+        "leanReason": "Supports stronger trades and post-secondary pathways."
+       },
+       {
+        "topic": "school facilities",
+        "summary": "Supports planning new schools before new neighbourhoods are built.",
+        "sourceUrl": "https://www.freshetnews.ca/green-launches-bid-for-port-moody-trustee-seat/",
+        "issueId": "planning-schools-for-growth",
+        "proposedLean": -1,
+        "leanReason": "Supports planning schools before new neighbourhoods are built."
+       },
+       {
+        "topic": "student safety",
+        "summary": "Prioritizes school safety and well-being; supports stronger provincial vaping rules.",
+        "sourceUrl": "https://www.freshetnews.ca/green-launches-bid-for-port-moody-trustee-seat/",
+        "issueId": "school-safety-and-student-wellbeing",
+        "proposedLean": null,
+        "leanReason": "Supports safety and vaping rules but does not prioritize security vs. counselling."
+       },
+       {
+        "topic": "budget",
+        "summary": "Supports fiscal responsibility and transparency in the district.",
+        "sourceUrl": "https://www.freshetnews.ca/green-launches-bid-for-port-moody-trustee-seat/",
+        "issueId": "district-budget-and-funding",
+        "proposedLean": null,
+        "leanReason": "General fiscal-responsibility statement."
+       }
+      ],
+      "summary": "Former Anmore village councillor with a career in the environmental and learning sectors. Served on a committee that helped get Eagle Mountain Middle School built; volunteers with the Mossom Creek hatchery.",
+      "summarySource": "https://www.freshetnews.ca/green-launches-bid-for-port-moody-trustee-seat/"
+     },
+     {
+      "id": "jessica-morrison",
+      "name": "Jessica Morrison",
+      "ballotName": "Morrison, Jessica",
+      "incumbent": false,
+      "affiliation": null,
+      "declaredIndependent": false,
+      "website": "https://jessicaforsd43.com",
+      "links": [
+       {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/jessicaforsd43"
+       },
+       {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/jessicaforsd43"
+       }
+      ],
+      "sourceUrls": [
+       "https://www.portmoody.ca/city-government/elections/nominated-candidates/",
+       "https://www.votemate.org/c/13934?riding=813"
+      ],
+      "positions": [
+       {
+        "topic": "student safety",
+        "summary": "Prioritizes keeping schools safe and well-supported.",
+        "sourceUrl": "https://www.votemate.org/c/13934?riding=813",
+        "issueId": "school-safety-and-student-wellbeing",
+        "proposedLean": null,
+        "leanReason": "General safety and support statement."
+       },
+       {
+        "topic": "school facilities",
+        "summary": "Lists planning for growth as a priority.",
+        "sourceUrl": "https://www.votemate.org/c/13934?riding=813",
+        "issueId": "planning-schools-for-growth",
+        "proposedLean": null,
+        "leanReason": "Names planning for growth without a timing stance."
+       },
+       {
+        "topic": "budget",
+        "summary": "Lists fiscal responsibility and accountability as priorities.",
+        "sourceUrl": "https://www.votemate.org/c/13934?riding=813",
+        "issueId": "district-budget-and-funding",
+        "proposedLean": null,
+        "leanReason": "General fiscal-responsibility statement."
+       }
+      ],
+      "summary": "Former fundraiser and events coordinator for BC Children's Hospital Foundation and former small business owner; has lived in Port Moody for 20 years.",
+      "summarySource": "https://www.votemate.org/c/13934?riding=813"
+     },
+     {
+      "id": "carola-thompson",
+      "name": "Carola Thompson",
+      "ballotName": "Thompson, Carola",
+      "incumbent": false,
+      "affiliation": null,
+      "declaredIndependent": false,
+      "website": "https://vote4carola.ca",
+      "links": [
+       {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/carolaforschooltrustee"
+       }
+      ],
+      "sourceUrls": [
+       "https://www.portmoody.ca/city-government/elections/nominated-candidates/",
+       "https://www.votemate.org/c/13448?riding=813",
+       "https://www.freshetnews.ca/thompson-is-first-port-moody-candidate-to-launch-sd43-campaign/"
+      ],
+      "positions": [
+       {
+        "topic": "staffing",
+        "summary": "Supports advocating for student and staff resources.",
+        "sourceUrl": "https://www.freshetnews.ca/thompson-is-first-port-moody-candidate-to-launch-sd43-campaign/",
+        "issueId": "district-budget-and-funding",
+        "proposedLean": null,
+        "leanReason": "Advocacy for resources does not address how to handle cuts."
+       },
+       {
+        "topic": "student supports",
+        "summary": "Supports student well-being and belonging.",
+        "sourceUrl": "https://www.freshetnews.ca/thompson-is-first-port-moody-candidate-to-launch-sd43-campaign/",
+        "issueId": "support-for-diverse-learners",
+        "proposedLean": null,
+        "leanReason": "General well-being statement; does not address staffing vs. training."
+       },
+       {
+        "topic": "budget",
+        "summary": "Emphasizes overseeing financial management in the district.",
+        "sourceUrl": "https://www.freshetnews.ca/thompson-is-first-port-moody-candidate-to-launch-sd43-campaign/",
+        "issueId": "district-budget-and-funding",
+        "proposedLean": null,
+        "leanReason": "General financial-oversight statement."
+       }
+      ],
+      "summary": "Urban planner, CEO and managing partner of CityState Consulting Group, and creator of the Future City Builders education program. Port Moody resident for more than 20 years.",
+      "summarySource": "https://www.freshetnews.ca/thompson-is-first-port-moody-candidate-to-launch-sd43-campaign/"
+     }
+    ]
+   }
+  ]
+ },
+ "notes": "Port Moody elects 2 of SD43's 9 trustees (Coquitlam 4, Port Coquitlam 2, Port Moody 2, Anmore/Belcarra 1). Candidate details mostly from VoteMate and local news; most official city candidate profiles could not be opened. Proposed sides are research drafts for admin review."
+}
